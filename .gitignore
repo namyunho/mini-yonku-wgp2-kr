@@ -1,0 +1,55 @@
+# 핵심 불변식: 원본 ROM·디스크 이미지·저작 자산은 절대 커밋하지 않는다.
+# 저장소에는 패치 파일·추출 스크립트·번역 데이터만 둔다.
+
+# 원본·출력 이미지 디렉토리
+roms/
+out/
+
+# ROM 카트리지 이미지
+*.sfc
+*.smc
+*.gen
+*.bin
+*.gg
+*.pce
+*.sms
+*.nes
+*.gb
+*.gba
+*.nds
+*.n64
+*.z64
+*.v64
+
+# 디스크 이미지
+*.iso
+*.cue
+*.img
+*.chd
+*.gdi
+*.cdi
+*.ccd
+*.mds
+*.mdf
+
+# 압축 원본 / 덤프
+*.zip
+*.7z
+*.rar
+
+# 빌드 산출물 / 임시
+build/
+dist/
+tmp/
+target/
+*.log
+
+# Python 캐시
+__pycache__/
+*.pyc
+
+# OS / 에디터
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

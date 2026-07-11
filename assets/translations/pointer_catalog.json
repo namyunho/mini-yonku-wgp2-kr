@@ -1,0 +1,314 @@
+{
+ "parser": "$C1:9554",
+ "funnel": "single parser; all dialogue routed here",
+ "call_sites": [
+  {
+   "site": "$C3:7899",
+   "dbr": "$C7 (PEA #$C700)",
+   "ptr_src": "slot $7EC58B,X (VM)",
+   "block": "c7_race"
+  },
+  {
+   "site": "$C3:7F08",
+   "dbr": "$C7 (PEA #$C700)",
+   "ptr_src": "slot $7EC58B,X (VM)",
+   "block": "c7_race"
+  },
+  {
+   "site": "$D0:506A",
+   "dbr": "$D0 (PHK/PLB)",
+   "ptr_src": "A (caller)",
+   "block": "d0_story"
+  },
+  {
+   "site": "$D0:516A",
+   "dbr": "ambient $D0",
+   "ptr_src": "$1268",
+   "block": "d0_story"
+  },
+  {
+   "site": "$C1:2248",
+   "dbr": "dyn $7F64EA -> $C1/$7E/$00",
+   "ptr_src": "$7F64E8 (chan A)",
+   "block": "c1_ui / WRAM"
+  },
+  {
+   "site": "$C1:6E8B",
+   "dbr": "dyn $7F8E1A -> $C1/$00",
+   "ptr_src": "$7F8E18 (chan B)",
+   "block": "c1_ui"
+  },
+  {
+   "site": "$C1:7D18",
+   "dbr": "dyn $7F8046 -> $C1/$00",
+   "ptr_src": "$7F8044 (chan C)",
+   "block": "c1_ui"
+  }
+ ],
+ "non_static_sinks": {
+  "$7E": "WRAM dynamic buffers (composed names/numbers, e.g. $7EA5E6)",
+  "$00": "empty/clear (no message)"
+ },
+ "blocks": {
+  "c7_race": {
+   "bank": 199,
+   "span": "$89E2..$A01D",
+   "n_messages": 232,
+   "contiguous": true,
+   "sources": {
+    "vm_opcodes": {
+     "count": 77,
+     "opcodes": "$C3 EF CB / D4 CB",
+     "range": "$89E2..$9929"
+    },
+    "tables": [
+     {
+      "at": "C7:A1AD",
+      "count": 87,
+      "range": "$9932..$9FFD"
+     }
+    ],
+    "inline": 3
+   },
+   "distinct_entry_ptrs": 166
+  },
+  "d0_story": {
+   "bank": 208,
+   "span": "$C80B..$E819",
+   "n_messages": 404,
+   "contiguous": true,
+   "sources": {
+    "tables": [
+     {
+      "at": "D0:C778",
+      "count": 5,
+      "range": "$C817..$C850"
+     },
+     {
+      "at": "D0:C784",
+      "count": 5,
+      "range": "$C85A..$C893"
+     },
+     {
+      "at": "D0:C790",
+      "count": 5,
+      "range": "$C8A0..$C8DF"
+     },
+     {
+      "at": "D0:C79C",
+      "count": 5,
+      "range": "$C8EE..$C924"
+     },
+     {
+      "at": "D0:C7AA",
+      "count": 5,
+      "range": "$C932..$C96A"
+     },
+     {
+      "at": "D0:C7B6",
+      "count": 5,
+      "range": "$C976..$C9A3"
+     },
+     {
+      "at": "D0:C7C2",
+      "count": 5,
+      "range": "$C9AF..$C9EE"
+     },
+     {
+      "at": "D0:C7CE",
+      "count": 5,
+      "range": "$C9F9..$CA26"
+     },
+     {
+      "at": "D0:C7DA",
+      "count": 5,
+      "range": "$CA31..$CA64"
+     },
+     {
+      "at": "D0:C7E6",
+      "count": 4,
+      "range": "$CA80..$CABF"
+     },
+     {
+      "at": "D0:C7F0",
+      "count": 4,
+      "range": "$CADB..$CB27"
+     },
+     {
+      "at": "D0:C7FA",
+      "count": 4,
+      "range": "$CB37..$CBA8"
+     },
+     {
+      "at": "D0:E828",
+      "count": 5,
+      "range": "$D057..$D075"
+     },
+     {
+      "at": "D0:E834",
+      "count": 5,
+      "range": "$CA3D..$CA64"
+     },
+     {
+      "at": "D0:E84C",
+      "count": 5,
+      "range": "$E6B9..$E6E7"
+     },
+     {
+      "at": "D0:E860",
+      "count": 10,
+      "range": "$E7EB..$E819"
+     },
+     {
+      "at": "D0:E87E",
+      "count": 5,
+      "range": "$CD30..$CD30"
+     },
+     {
+      "at": "D0:E892",
+      "count": 4,
+      "range": "$CE1F..$CE51"
+     },
+     {
+      "at": "D0:F78B",
+      "count": 16,
+      "range": "$D0DB..$D105"
+     },
+     {
+      "at": "D0:F967",
+      "count": 10,
+      "range": "$D7A4..$D870"
+     },
+     {
+      "at": "D0:FA5B",
+      "count": 16,
+      "range": "$E091..$E2C7"
+     },
+     {
+      "at": "D0:FA83",
+      "count": 52,
+      "range": "$E110..$E4DD"
+     },
+     {
+      "at": "D0:FAF3",
+      "count": 16,
+      "range": "$E369..$E4D1"
+     },
+     {
+      "at": "D0:FB1B",
+      "count": 16,
+      "range": "$E404..$E52C"
+     },
+     {
+      "at": "D0:FB45",
+      "count": 5,
+      "range": "$E53D..$E568"
+     },
+     {
+      "at": "D0:FB59",
+      "count": 5,
+      "range": "$E57F..$E5AB"
+     }
+    ],
+    "inline": {
+     "count": 71,
+     "note": "LDA #ptr; STA $1268 (+auto-advance $C06699)"
+    }
+   },
+   "distinct_entry_ptrs": 271
+  },
+  "c1_ui": {
+   "bank": 193,
+   "fragmented": true,
+   "note": "dialogue clusters interleaved with binary data (single-glyph noise excluded)",
+   "clusters": [
+    {
+     "name": "setting_save",
+     "span": "$C868..$C980",
+     "n_messages": 11,
+     "starts": [
+      "C868",
+      "C889",
+      "C89D",
+      "C8AE",
+      "C8C3",
+      "C8EF",
+      "C8F7",
+      "C922",
+      "C92A",
+      "C93C",
+      "C96A"
+     ]
+    },
+    {
+     "name": "machine_names",
+     "span": "$C981..$C9C0",
+     "n_messages": 6,
+     "starts": [
+      "C981",
+      "C98A",
+      "C994",
+      "C99D",
+      "C9A9",
+      "C9B6"
+     ]
+    },
+    {
+     "name": "garage_grid",
+     "span": "$CE53..$CF1E",
+     "n_messages": 6,
+     "starts": [
+      "CE53",
+      "CE7C",
+      "CEA0",
+      "CEBC",
+      "CEE5",
+      "CEF7"
+     ]
+    },
+    {
+     "name": "formation",
+     "span": "$CFDC..$D183",
+     "n_messages": 14,
+     "starts": [
+      "CFDC",
+      "CFFD",
+      "D019",
+      "D036",
+      "D059",
+      "D07B",
+      "D09B",
+      "D0BA",
+      "D0D0",
+      "D0F0",
+      "D10C",
+      "D135",
+      "D155",
+      "D174"
+     ]
+    }
+   ],
+   "n_dialogue_messages": 37,
+   "sources": {
+    "tables": [
+     {
+      "at": "C1:C501",
+      "count": 6,
+      "range": "$C981..$C9B6"
+     },
+     {
+      "at": "C1:C50F",
+      "count": 6,
+      "range": "$C817..$C85B"
+     },
+     {
+      "at": "C1:CF90",
+      "count": 8,
+      "range": "$D059..$D135"
+     }
+    ],
+    "inline": 26
+   }
+  }
+ }
+}
