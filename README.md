@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="intro.png" alt="미니사구 렛츠&고!! POWER WGP2 — 타이틀 화면(한글)" width="512">
+  <br>
+  <sub>타이틀 화면 (SFC 네이티브 256×224, 2× 표시)</sub>
+</p>
+
 # ミニ四駆 レッツ&ゴー!! POWER WGP2 — 한글 패치 프로젝트
 
 SNES(Super Famicom) 게임 **「ミニ四駆 レッツ&ゴー!! POWER WGP2」**(미니욘쿠 렛츠&고!! 파워 WGP2)의
