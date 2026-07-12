@@ -105,7 +105,7 @@
         "0x03D261:$CBEF"
       ],
       "flags": [],
-      "text_kr": "영광의 골인까지 얼마 안 남았다！{end}"
+      "text_kr": "골인까지 얼마 안 남았다！{end}"
     },
     {
       "entry_id": 2,
@@ -137,7 +137,7 @@
         "0x03D275:$CBEF"
       ],
       "flags": [],
-      "text_kr": "TRF 빅토리즈로 좁혀졌다！{end}"
+      "text_kr": "TRF 빅토리즈로{nl}좁혀졌다！{end}"
     },
     {
       "entry_id": 4,
@@ -217,7 +217,7 @@
         "0x03D337:$CBD4"
       ],
       "flags": [],
-      "text_kr": "조금만 더！！ 벅블레이더！！！{end}"
+      "text_kr": "조금만 더！！{nl}벅블레이더！！！{end}"
     },
     {
       "entry_id": 9,
@@ -729,7 +729,7 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "맵 화면에서 Y버튼을 누르면{nl}바뀌는 모드야{nl}머신 성능을 보거나{nl}파츠를 바꿀 수 있어{end}"
+      "text_kr": "맵에서 Y버튼을 누르면{nl}바뀌는 모드야{nl}머신 성능을 보거나{nl}파츠를 바꿀 수 있어{end}"
     },
     {
       "entry_id": 41,
@@ -841,7 +841,7 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "세팅 모드에서{nl}머신과 파츠 성능을 나타내는{nl}파라미터 설명이야{end}"
+      "text_kr": "세팅 모드에서{nl}머신・파츠 성능을 나타내는{nl}파라미터 설명이야{end}"
     },
     {
       "entry_id": 48,
@@ -1113,7 +1113,7 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "머신 위에서 누르면{nl}순서를 바꿀 수 있어{nl}머신과 머신 사이에서 누르면{nl}포메이션을 짤 수 있어{end}"
+      "text_kr": "머신 위에서 누르면{nl}순서를 바꿀 수 있어{nl}머신 사이에서 누르면{nl}포메이션을 짤 수 있어{end}"
     },
     {
       "entry_id": 65,
@@ -1145,7 +1145,7 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "코스에서 머신을 달리는 화면{nl}레이스에서의 머신{nl}조작 설명이야{end}"
+      "text_kr": "코스에서 머신 달리는 화면{nl}레이스에서의 머신{nl}조작 설명이야{end}"
     },
     {
       "entry_id": 67,
@@ -1353,7 +1353,7 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "게임 중 BGM을 들을 수 있어{nl}위아래 키로 BGM을 골라{nl}A버튼을 눌러 줘{nl}조금 시간이 걸릴 수도 있어{end}"
+      "text_kr": "BGM을 들을 수 있어{nl}위아래 키로 BGM을 골라{nl}A버튼을 눌러 줘{nl}시간이 좀 걸릴 수 있어{end}"
     },
     {
       "entry_id": 80,
@@ -1513,7 +1513,7 @@
         "0x03EA1D:$CBEF"
       ],
       "flags": [],
-      "text_kr": "이 오오가미의 과학력과 고대의 힘이{nl}융합한 최강의 미니사구{nl}피라미탈 스핑크스의{nl}진정한 힘을 보여주마{end}"
+      "text_kr": "오오가미 과학과 고대 힘이{nl}융합한 최강의 미니사구{nl}피라미탈 스핑크스의{nl}진정한 힘을 보여주마{end}"
     },
     {
       "entry_id": 90,
@@ -1737,7 +1737,7 @@
         "0x03ECA5:$CBEF"
       ],
       "flags": [],
-      "text_kr": "오오가미{nl}「후하하하하하！！{nl}멍청한 것들이 쓸데없는 짓을！{nl}{end}"
+      "text_kr": "오오가미{nl}「후하하하하하！！{nl}멍청이들이 쓸데없는 짓을！{nl}{end}"
     },
     {
       "entry_id": 104,
@@ -2073,7 +2073,7 @@
         "0x03F0A3:$CBEF"
       ],
       "flags": [],
-      "text_kr": "료{nl}「피라미탈 스핑크스를{nl}믿어 줄 수 있는 건 너뿐이다！{end}"
+      "text_kr": "료{nl}「피라미탈 스핑크스를{nl}믿어 줄 사람은 너뿐이다！{end}"
     },
     {
       "entry_id": 125,
@@ -2201,7 +2201,7 @@
         "0x03F20B:$CBEF"
       ],
       "flags": [],
-      "text_kr": "토우키치{nl}「해냈굽쇼！{nl}드디어 오오가미를 이겼굽쇼！！{end}"
+      "text_kr": "토우키치{nl}「해냈굽쇼！{nl}오오가미를 이겼굽쇼！！{end}"
     },
     {
       "entry_id": 133,
@@ -2217,7 +2217,7 @@
         "0x03F237:$CBEF"
       ],
       "flags": [],
-      "text_kr": "오오가미{nl}「또다시 또다시 애송이에게…{nl}애송이들에게 졌단 말인가…{nl}{end}"
+      "text_kr": "오오가미{nl}「또다시 애송이한테…{nl}애송이들에게 졌다니…{nl}{end}"
     },
     {
       "entry_id": 134,
@@ -4121,7 +4121,7 @@
       "text_jp": "うっせーな　だまって見てろって！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "시끄러 잠자코 보고나 있어！{end}"
+      "text_kr": "시끄러 잠자코 봐！{end}"
     },
     {
       "entry_id": 256,
@@ -4261,7 +4261,7 @@
       "text_jp": "豪くんといっしょにするなでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고랑 똑같이 취급하지 말라굽쇼！{end}"
+      "text_kr": "고랑 취급하지 말라굽쇼！{end}"
     },
     {
       "entry_id": 266,
@@ -4569,7 +4569,7 @@
       "text_jp": "さあ　もりあがってきたぞぉ！{nl}次は連続コーナーがたちふさがる{nl}ワクワクの第2セクションだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "자 달아오르기 시작했다！{nl}다음은 연속 코너가 가로막는{nl}두근두근 제2섹션이다！{end}"
+      "text_kr": "달아오르기 시작했다！{nl}연속 코너가 가로막는{nl}두근두근 제2섹션이다！{end}"
     },
     {
       "entry_id": 288,
@@ -4639,7 +4639,7 @@
       "text_jp": "レッドフラッグがふられているが{nl}両チームともレースをやめない！{nl}そのままファイナルに{nl}とつにゅうだ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "레드 플래그가 내걸렸는데도{nl}양 팀 모두 레이스를 멈추지 않는다！{nl}그대로 파이널에{nl}돌입한다！！{end}"
+      "text_kr": "레드 플래그가 내걸렸는데도{nl}양 팀 다 멈추지 않는다！{nl}그대로 파이널에{nl}돌입한다！！{end}"
     },
     {
       "entry_id": 293,
@@ -4765,7 +4765,7 @@
       "text_jp": "カイ{nl}「ミシェル！{nl}ここがふんばりどころですよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "카이{nl}「미셸！{nl}여기가 버텨야 할 고비예요！{end}"
+      "text_kr": "카이{nl}「미셸！{nl}버텨야 할 고비예요！{end}"
     },
     {
       "entry_id": 302,
@@ -4793,7 +4793,7 @@
       "text_jp": "カイ{nl}「クレモンティーヌ！　今です！{nl}自分の力を信じなさい！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "카이{nl}「크레몬티누！ 지금이에요！{nl}자신의 힘을 믿어요！{end}"
+      "text_kr": "카이{nl}「크레몬티누 지금이에요！{nl}자신의 힘을 믿어요！{end}"
     },
     {
       "entry_id": 304,
@@ -5171,7 +5171,7 @@
       "text_jp": "アーム{nl}「ゆけ　シュヴァリエ・ド・ローズ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "아무{nl}「가라 슈발리에 드 로즈！！{end}"
+      "text_kr": "아무{nl}「가라 슈발리에드로즈！！{end}"
     },
     {
       "entry_id": 331,
@@ -5255,7 +5255,7 @@
       "text_jp": "リオン{nl}「いっけぇ！　ガンブラスター！！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "리온{nl}「가라앗！ 건 블래스터！！！{end}"
+      "text_kr": "리온{nl}「가라 건블래스터！！！{end}"
     },
     {
       "entry_id": 337,
@@ -5605,7 +5605,7 @@
       "text_jp": "ライトニングドリフトでゲス！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "라이트닝 드리프트다굽쇼！！{end}"
+      "text_kr": "라이트닝 드리프트굽쇼！！{end}"
     },
     {
       "entry_id": 362,
@@ -6319,7 +6319,7 @@
       "text_jp": "ん？　烈人形の声に{nl}トライダガーが反応している！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "응？ 레츠 인형 소리에{nl}트라이대거가 반응하고 있어！{end}"
+      "text_kr": "응？ 레츠 인형 소리에{nl}트라이대거가 반응했어！{end}"
     },
     {
       "entry_id": 413,
@@ -6515,7 +6515,7 @@
       "text_jp": "まこと{nl}「ビクトリーズ！{nl}聞いてください！！{nl}この会場のファンの声を！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "마코토{nl}「빅토리즈！{nl}들어주세요！！{nl}이 경기장 팬들의 목소리를！！{end}"
+      "text_kr": "마코토{nl}「빅토리즈！{nl}들어주세요！！{nl}이 경기장 팬 목소리를！！{end}"
     },
     {
       "entry_id": 427,
@@ -6613,7 +6613,7 @@
       "text_jp": "（マシンの爆走ポイント回復！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "（머신의 폭주 포인트 회복！）{end}"
+      "text_kr": "（머신 폭주포인트 회복！）{end}"
     },
     {
       "entry_id": 434,
@@ -6655,7 +6655,7 @@
       "text_jp": "（全員のマシンの爆走ポイント回復！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "（전원 머신의 폭주 포인트 회복！）{end}"
+      "text_kr": "（전원 폭주포인트 회복！）{end}"
     },
     {
       "entry_id": 437,
@@ -6683,7 +6683,7 @@
       "text_jp": "（全員のマシンのダメージ回復！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "（전원 머신의 데미지 회복！）{end}"
+      "text_kr": "（전원 데미지 회복！）{end}"
     },
     {
       "entry_id": 439,
@@ -6697,7 +6697,7 @@
       "text_jp": "（マシンのGPチップのレベルアップ！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "（머신의 GP칩 레벨 업！）{end}"
+      "text_kr": "（머신 GP칩 레벨업！）{end}"
     },
     {
       "entry_id": 440,
@@ -6711,7 +6711,7 @@
       "text_jp": "（マシンのコーナリング性能アップ！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "（머신의 코너링 성능 업！）{end}"
+      "text_kr": "（코너링 성능 업！）{end}"
     },
     {
       "entry_id": 441,
@@ -6795,7 +6795,7 @@
       "text_jp": "『爆走ポイントを使って爆走だ！{nl}　　　（Bボタンで爆走）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "『폭주 포인트를 써서 폭주다！{nl}　　　（B버튼으로 폭주）{end}"
+      "text_kr": "『폭주포인트로 폭주！{nl}　　　（B버튼으로 폭주）{end}"
     },
     {
       "entry_id": 447,
@@ -6809,7 +6809,7 @@
       "text_jp": "『爆走ゲージてんめつで必殺技だ{nl}　　　（Bボタンで必殺技）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "『폭주 게이지 점멸이면 필살기다{nl}　　　（B버튼으로 필살기）{end}"
+      "text_kr": "『게이지 점멸이면 필살기{nl}　　（B버튼으로 필살기）{end}"
     },
     {
       "entry_id": 448,
@@ -6823,7 +6823,7 @@
       "text_jp": "『爆走ポイントは回復するよ{nl}（Aボタンで爆走ポイント回復）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "『폭주 포인트는 회복돼{nl}（A버튼으로 폭주 포인트 회복）{end}"
+      "text_kr": "『폭주 포인트는 회복돼{nl}（A버튼으로 BP 회복）{end}"
     },
     {
       "entry_id": 449,
@@ -6837,7 +6837,7 @@
       "text_jp": "『操作するマシンを変えてみよう{nl}（LRボタンで　マシンチェンジ）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "『조작할 머신을 바꿔 보자{nl}（LR버튼으로 머신 체인지）{end}"
+      "text_kr": "『조작할 머신을 바꿔 보자{nl}（LR버튼 머신 체인지）{end}"
     },
     {
       "entry_id": 450,
@@ -6851,7 +6851,7 @@
       "text_jp": "『Bボタンは必殺技！{nl}でもWGP本番までのお楽しみ{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "『B버튼은 필살기！{nl}하지만 WGP 본선까지 기대해{end}"
+      "text_kr": "『B버튼은 필살기！{nl}WGP 본선까지 기대해{end}"
     },
     {
       "entry_id": 451,
@@ -6865,7 +6865,7 @@
       "text_jp": "『Aボタンは爆走ポイント回復！{nl}たくさん回復させよう！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "『A버튼은 폭주 포인트 회복！{nl}많이 회복시키자！{end}"
+      "text_kr": "『A버튼은 BP 회복！{nl}많이 회복시키자！{end}"
     },
     {
       "entry_id": 452,
@@ -6921,7 +6921,7 @@
       "text_jp": "『Lボタンでドライバーチェンジ！{nl}　　　（ひとり前のドライバーへ）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "『L버튼으로 드라이버 체인지！{nl}　　　（한 명 앞 드라이버로）{end}"
+      "text_kr": "『L로 드라이버 체인지！{nl}　（이전 드라이버로）{end}"
     },
     {
       "entry_id": 456,
@@ -6935,7 +6935,7 @@
       "text_jp": "『Rボタンでドライバーチェンジ！{nl}　　　（次のドライバーへ）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "『R버튼으로 드라이버 체인지！{nl}　　　（다음 드라이버로）{end}"
+      "text_kr": "『R로 드라이버 체인지！{nl}　（다음 드라이버로）{end}"
     },
     {
       "entry_id": 457,
@@ -6991,7 +6991,7 @@
       "text_jp": "土屋博士{nl}「ドライバーチェンジしてるかい？{nl}　　　　（LRボタン）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「드라이버 체인지 하고 있나？{nl}　　　　（LR버튼）{end}"
+      "text_kr": "츠치야 박사{nl}「드라이버 체인지 했나？{nl}　　　　（LR버튼）{end}"
     },
     {
       "entry_id": 461,
@@ -7005,7 +7005,7 @@
       "text_jp": "ジュン{nl}「コーナーではソニック{nl}直線ではマグナムならいいのに…{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "준{nl}「코너에선 소닉{nl}직선에선 매그넘이면 좋을 텐데…{end}"
+      "text_kr": "준{nl}「코너에선 소닉{nl}직선엔 매그넘이 좋은데…{end}"
     },
     {
       "entry_id": 462,
@@ -7033,7 +7033,7 @@
       "text_jp": "烈{nl}「豪！　そろそろ起きてくれよ！{nl}　　（STARTボタンでおわる）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "레츠{nl}「고！ 슬슬 좀 일어나 줘！{nl}　　（START 버튼으로 종료）{end}"
+      "text_kr": "레츠{nl}「고！ 슬슬 일어나 줘！{nl}　（START로 종료）{end}"
     },
     {
       "entry_id": 464,
@@ -7047,7 +7047,7 @@
       "text_jp": "土屋博士{nl}「いろいろな機能を確かめるんだ！{nl}WGPではいっしゅんのはんだん{nl}ミスが勝敗を分けるからね{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「여러 기능을 확인해 두는 거다！{nl}WGP에선 한순간의 판단{nl}미스가 승패를 가르니까{end}"
+      "text_kr": "츠치야 박사{nl}「여러 기능을 확인해 둬！{nl}WGP에선 한순간의 판단{nl}미스가 승패를 가르니까{end}"
     },
     {
       "entry_id": 465,
@@ -7075,7 +7075,7 @@
       "text_jp": "土屋博士{nl}「Bボタンは必殺技！{nl}WGP本番で1度だけ使用可能{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「B버튼은 필살기！{nl}WGP 본선에서 딱 한 번 사용 가능{end}"
+      "text_kr": "츠치야 박사{nl}「B버튼은 필살기！{nl}본선에서 딱 1회 사용 가능{end}"
     },
     {
       "entry_id": 467,
@@ -7103,7 +7103,7 @@
       "text_jp": "土屋博士{nl}「Xボタンでマシンチェンジ！{nl}　　　　（一つ前のマシンへ）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「X버튼으로 머신 체인지！{nl}　　　　（한 대 앞 머신으로）{end}"
+      "text_kr": "츠치야 박사{nl}「X로 머신 체인지！{nl}　　（이전 머신으로）{end}"
     },
     {
       "entry_id": 469,
@@ -7117,7 +7117,7 @@
       "text_jp": "土屋博士{nl}「Yボタンでレースアイテム使用！{nl}風輪町の仲間が応援してくれる！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「Y버튼으로 레이스 아이템 사용！{nl}풍륜동 동료들이 응원해 준다！{end}"
+      "text_kr": "츠치야 박사{nl}「Y로 아이템 사용！{nl}풍륜동 동료가 응원해 줘！{end}"
     },
     {
       "entry_id": 470,
@@ -7131,7 +7131,7 @@
       "text_jp": "土屋博士{nl}「Yボタンでレースアイテム使用！{nl}このWGPでは使えないぞ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「Y버튼으로 레이스 아이템 사용！{nl}이번 WGP에선 못 쓴다！{end}"
+      "text_kr": "츠치야 박사{nl}「Y로 아이템 사용！{nl}이번 WGP에선 못 쓴다！{end}"
     },
     {
       "entry_id": 471,
@@ -7201,7 +7201,7 @@
       "text_jp": "土屋博士{nl}「コーナー直前だ！　Aボタンで{nl}コーナリングマシンを前に出し{nl}フォーメーションを引っぱれ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「코너 직전이다！ A버튼으로{nl}코너링 머신을 앞에 내세워{nl}포메이션을 끌어라！{end}"
+      "text_kr": "츠치야 박사{nl}「코너 직전！ A버튼으로{nl}코너링 머신을 앞에 내세워{nl}포메이션을 끌어라！{end}"
     },
     {
       "entry_id": 476,
@@ -7243,7 +7243,7 @@
       "text_jp": "土屋博士{nl}「フォーメーションを組んでいない{nl}マシンなら爆走も必殺技も{nl}出せる　　（Bボタンで爆走！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「포메이션을 짜지 않은{nl}머신이면 폭주도 필살기도{nl}낼 수 있다　（B버튼으로 폭주！）{end}"
+      "text_kr": "츠치야 박사{nl}「포메이션 안 짠{nl}머신은 폭주・필살기 가능{nl}（B버튼으로 폭주！）{end}"
     },
     {
       "entry_id": 479,
@@ -7271,7 +7271,7 @@
       "text_jp": "土屋博士{nl}「マシンは切りかえているかい？{nl}　　　（Aボタンで次のマシン）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「머신은 바꿔 주고 있나？{nl}　　　（A버튼으로 다음 머신）{end}"
+      "text_kr": "츠치야 박사{nl}「머신은 바꿔 주고 있나？{nl}　（A로 다음 머신）{end}"
     },
     {
       "entry_id": 481,
@@ -7285,7 +7285,7 @@
       "text_jp": "土屋博士{nl}「爆走ポイントを回復して{nl}いるかい？{nl}　　　（Aボタンで回復！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「폭주 포인트를 회복하고{nl}있나？{nl}　　　（A버튼으로 회복！）{end}"
+      "text_kr": "츠치야 박사{nl}「폭주 포인트를 회복하고{nl}있나？{nl}　（A버튼으로 회복！）{end}"
     },
     {
       "entry_id": 482,
@@ -7313,7 +7313,7 @@
       "text_jp": "土屋博士{nl}「マシンは切りかえているかい？{nl}　　　（Xボタンで一つ前のマシン）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「머신은 바꿔 주고 있나？{nl}　　　（X버튼으로 한 대 앞 머신）{end}"
+      "text_kr": "츠치야 박사{nl}「머신은 바꿔 주고 있나？{nl}　（X로 이전 머신）{end}"
     },
     {
       "entry_id": 484,
@@ -7355,7 +7355,7 @@
       "text_jp": "土屋博士{nl}「もうそろそろ練習は{nl}いいんじゃないか？{nl}（STARTボタンで　終了）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「이제 슬슬 연습은{nl}됐지 않나？{nl}（START 버튼으로 종료）{end}"
+      "text_kr": "츠치야 박사{nl}「이제 슬슬 연습은{nl}됐지 않나？{nl}（START로 종료）{end}"
     },
     {
       "entry_id": 487,
@@ -8125,7 +8125,7 @@
       "text_jp": "アーム{nl}「オレを　おこらせたいのか？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "아무{nl}「날 화나게 하고 싶은 거냐？{end}"
+      "text_kr": "아무{nl}「날 화나게 하려는 거냐？{end}"
     },
     {
       "entry_id": 542,
@@ -8195,7 +8195,7 @@
       "text_jp": "ルキノ{nl}「そんなにつぶしてほしいのか？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "루키노{nl}「그렇게 뭉개지고 싶은 거냐？{end}"
+      "text_kr": "루키노{nl}「그렇게 뭉개지고 싶나？{end}"
     },
     {
       "entry_id": 547,
@@ -8797,7 +8797,7 @@
       "text_jp": "ミハエル{nl}「ベルクカイザーは止められない！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "미하엘{nl}「베르크카이저는 멈출 수 없다！{end}"
+      "text_kr": "미하엘{nl}「베르크카이저를{nl}멈출 순 없다！{end}"
     },
     {
       "entry_id": 590,
@@ -8951,7 +8951,7 @@
       "text_jp": "まきかえせ　ネオトライダガー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "되받아쳐라 네오 트라이대거！{end}"
+      "text_kr": "받아쳐라 네오 트라이대거！{end}"
     },
     {
       "entry_id": 601,
@@ -8993,7 +8993,7 @@
       "text_jp": "ふんばるでゲス　スピンバイパー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "버티는 거굽쇼 스핀 바이퍼！{end}"
+      "text_kr": "버텨굽쇼 스핀 바이퍼！{end}"
     },
     {
       "entry_id": 604,
@@ -9133,7 +9133,7 @@
       "text_jp": "豪{nl}「あいつらなに話してんだ？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고{nl}「저놈들 무슨 얘기 하는 거야？{end}"
+      "text_kr": "고{nl}「저놈들 무슨 얘기해？{end}"
     },
     {
       "entry_id": 614,
@@ -9259,7 +9259,7 @@
       "text_jp": "ジュリオ{nl}「あいつらなに考えてんのかしら！{nl}こんな所でブーストなんか{nl}使っちゃって…{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "줄리오{nl}「저놈들 무슨 생각인 거야！{nl}이런 데서 부스트 같은 걸{nl}써 버리다니…{end}"
+      "text_kr": "줄리오{nl}「저놈들 무슨 생각이야！{nl}이런 데서 부스트 같은 걸{nl}써 버리다니…{end}"
     },
     {
       "entry_id": 623,
@@ -9343,7 +9343,7 @@
       "text_jp": "ブレット{nl}「これが　今年からとうさいした{nl}S・E・C{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "브렛{nl}「이게 바로 올해부터 탑재한{nl}S・E・C{end}"
+      "text_kr": "브렛{nl}「올해부터 탑재한{nl}S・E・C{end}"
     },
     {
       "entry_id": 629,
@@ -9371,7 +9371,7 @@
       "text_jp": "エッジ{nl}「こいつのおかげで{nl}パワーブースターが1レースに{nl}2回以上使えるというわけさ{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "엣지{nl}「이 녀석 덕분에{nl}파워 부스터를 한 레이스에{nl}두 번 이상 쓸 수 있다는 거지{end}"
+      "text_kr": "엣지{nl}「이 녀석 덕분에{nl}파워 부스터를 한 레이스에{nl}2회 이상 쓸 수 있게 되지{end}"
     },
     {
       "entry_id": 631,
@@ -9693,7 +9693,7 @@
       "text_jp": "コースやガレージのマシンを選べるよ{nl}{nl}{nl}Aボタンで決定　Bボタンで中止{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "코스와 개러지 머신을 고를 수 있어{nl}{nl}{nl}A버튼 결정　B버튼 취소{end}"
+      "text_kr": "개러지 머신을 고를 수 있어{nl}{nl}{nl}A버튼 결정　B버튼 취소{end}"
     },
     {
       "entry_id": 654,
@@ -9735,7 +9735,7 @@
       "text_jp": "最初に操作するマシンを選ぼう{nl}{nl}{nl}Aボタンで決定　Bボタンでもどる{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "처음에 조작할 머신을 고르자{nl}{nl}{nl}A버튼 결정　B버튼 뒤로{end}"
+      "text_kr": "먼저 조작할 머신을 고르자{nl}{nl}{nl}A버튼 결정　B버튼 뒤로{end}"
     },
     {
       "entry_id": 657,
@@ -9749,7 +9749,7 @@
       "text_jp": "一台もエントリーされていません！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "출전한 머신이 한 대도 없어！{end}"
+      "text_kr": "출전 머신이 한 대도 없어！{end}"
     },
     {
       "entry_id": 658,
@@ -9889,7 +9889,7 @@
       "text_jp": "フォーメーションの順番や{nl}組み合わせは自由にできる{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "포메이션 순서나{nl}조합은 자유롭게 정할 수 있어{end}"
+      "text_kr": "포메이션 순서나{nl}조합은 자유롭게 정해{end}"
     },
     {
       "entry_id": 668,
@@ -9959,7 +9959,7 @@
       "text_jp": "リレーの順番はどうする？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "릴레이 순서는 어떻게 할래？{end}"
+      "text_kr": "릴레이 순서는 어떻게？{end}"
     }
   ]
 }

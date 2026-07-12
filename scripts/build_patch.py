@@ -19,9 +19,11 @@ ONE_BYTE_MAX = 0xF0       # idx < 0xF0 → 1바이트 인코딩
 BIN_GLYPH_BYTES = 32
 
 # 재배치 자유공간 (뱅크, snes주소, 파일오프셋, 용량)
+# d0는 한글이 원본영역(8206B)에 들어가므로 in-place(base=$C80B) → DBR 패치 불필요.
 FREE = {
-    'c7_race': (0xC7, 0xB49B, (0x07 << 16) | 0xB49B, 19301),
-    'c1_ui':   (0xC1, 0x9843, (0x01 << 16) | 0x9843, 10173),
+    'c7_race':  (0xC7, 0xB49B, (0x07 << 16) | 0xB49B, 19301),
+    'c1_ui':    (0xC1, 0x9843, (0x01 << 16) | 0x9843, 10173),
+    'd0_story': (0xD0, 0xC80B, (0x10 << 16) | 0xC80B, 8206),
 }
 
 def foff(b, a): return ((b & 0x3F) << 16) | a
@@ -64,7 +66,7 @@ def ink_width(px):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--blocks', nargs='+', default=['c7_race', 'c1_ui'])
+    ap.add_argument('--blocks', nargs='+', default=['c7_race', 'c1_ui', 'd0_story'])
     ap.add_argument('--out', default='out/wgp2_kr.smc')
     a = ap.parse_args()
 
@@ -143,6 +145,19 @@ def main():
         if not toks or toks[-1] != ('ctrl', 'end', b''):
             toks.append(('ctrl', 'end', b''))
         return toks
+
+    # ---- 줄 폭 가드: 한 줄 ≤ 13 (글자=1, 반각공백=0.5, 전각공백=1) ----
+    def line_units(ln): return sum(0.5 if c == ' ' else 1.0 for c in ln)
+    over = []
+    for bid, es in blocks.items():
+        for x in es:
+            for ln in re.sub(r'\{end\}|\{trunc[0-9A-Fa-f]+\}', '', x['text_kr']).split('{nl}'):
+                if line_units(ln) > 13:
+                    over.append((x['entry_id'], line_units(ln), ln))
+    if over:
+        for eid, u, ln in over[:20]:
+            print(f"  줄폭초과 #{eid} u={u}: 「{ln}」")
+        sys.exit(f"줄 폭 규칙 위반 {len(over)}줄 (>13). 번역 조정 필요")
 
     enc = {}   # entry_id -> bytes
     for bid, es in blocks.items():
