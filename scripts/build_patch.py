@@ -68,6 +68,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--blocks', nargs='+', default=['c7_race', 'c1_ui', 'd0_story'])
     ap.add_argument('--out', default='out/wgp2_kr.smc')
+    ap.add_argument('--kor-adv', type=int, default=13,
+                    help='한글 글리프 균일 advance(px). 0 이하면 기존 글리프별 ink+2 방식.')
     a = ap.parse_args()
 
     rom = bytearray(open(ROMPATH, 'rb').read())
@@ -123,7 +125,10 @@ def main():
     for c, idx in kor2idx.items():
         px = decode_bin_glyph(binf, gm[c], -2)   # binyshift -2 (게임 상단정렬)
         encode_glyph(rom, idx, px)
-        rom[WIDTH_BASE + idx] = min(16, ink_width(px) + 2)   # advance
+        # 한글은 모아쓰기 정사각 블록 → advance 균일 고정(기본 13px). 글리프별 ink+2는
+        # 간격 불균일 + 넓어서 초상화 조언상자 잘림 유발 → 고정폭으로 교정.
+        rom[WIDTH_BASE + idx] = (min(16, a.kor_adv) if a.kor_adv > 0
+                                 else min(16, ink_width(px) + 2))
         inj += 1
 
     # ---- 메시지 재인코딩 ----
@@ -164,61 +169,84 @@ def main():
         for x in es:
             enc[x['entry_id']] = encode(to_tokens(x['text_kr']))
 
-    # ---- 재배치 + 포인터 패치 ----
+    # ---- 하이브리드 삽입: 제자리(fit) + 자유공간 재배치(초과·커버된 것) ----
+    # 원칙: 원본 포인터를 최대한 그대로 둠(주소 고정) → 미커버 포인터도 안전.
+    #  - fit(한글 ≤ 원본 slot): 원래 주소에 그대로 덮어씀. 포인터 손 안 댐.
+    #  - 초과 + 포인터 커버됨: 자유공간(동일 뱅크)으로 옮기고 그 포인터만 패치.
+    #       원본 slot은 손대지 않음 → 혹시 숨은 미커버 포인터가 있어도 (엉뚱한 한글이 아니라)
+    #       원본 일본어를 읽어 최악이 '깨진 글자'에 그침(잘못된 대사 아님).
+    #  - 초과 + 미커버: 옮길 포인터를 몰라 재배치 불가 → 원본 유지(추후 축약/발굴).
+    # 재배치 자유공간(동일 뱅크, 텍스트/코드와 비겹침 확인): 0xFF 런.
+    RELOC = {
+        'c7_race':  (0xC7, 0xB49B, 0x10000 - 0xB49B),   # 19301B
+        'c1_ui':    (0xC1, 0xD5CB, 0x10000 - 0xD5CB),   # 10805B
+        'd0_story': (0xD0, 0xA42F, 0xB000  - 0xA42F),   # 3025B (텍스트 $C80B 앞의 미사용 런)
+    }
     report = {}
+    overflow_uncov = []
+    verify = []          # (bank, addr, entry_id) 검증 대상 (fit + reloc)
     for bid, es in blocks.items():
-        bank, snes0, file0, cap = FREE[bid]
-        es_sorted = sorted(es, key=lambda x: int(x['addr'].split(':')[1], 16))
-        old2new = {}
-        cur = snes0
-        blob = bytearray()
-        for x in es_sorted:
-            old = int(x['addr'].split(':')[1], 16)
-            old2new[old] = cur
+        bank = int(es[0]['addr'].split(':')[0].replace('$', ''), 16)
+        rbank, rstart, rcap = RELOC[bid]
+        targets = {}
+        for loc, t, kind in pmap[bid]['pointers']:
+            targets.setdefault(t, []).append(loc)
+        cur = rstart
+        written = reloc = ov = 0
+        for x in es:
+            addr = int(x['addr'].split(':')[1], 16)
             b = enc[x['entry_id']]
-            blob += b
-            cur += len(b)
-        if len(blob) > cap:
-            sys.exit(f"{bid}: 재배치 {len(blob)}B > 자유공간 {cap}B")
-        rom[file0:file0 + len(blob)] = blob
-        # 포인터 패치
-        patched = 0
-        for loc, old_target, kind in pmap[bid]['pointers']:
-            if old_target in old2new:
-                struct.pack_into('<H', rom, loc, old2new[old_target])
-                patched += 1
-        report[bid] = (len(es), len(blob), cap, patched, len(pmap[bid]['pointers']), old2new, bank)
+            if len(b) <= x['n_bytes']:                      # fit → 제자리
+                o = foff(bank, addr); rom[o:o + len(b)] = b
+                verify.append((bank, addr, x['entry_id'])); written += 1
+            elif addr in targets:                           # 초과+커버 → 재배치
+                if cur - rstart + len(b) > rcap:
+                    sys.exit(f"{bid}: 재배치 공간 부족 ({cur - rstart + len(b)} > {rcap})")
+                o = foff(rbank, cur); rom[o:o + len(b)] = b
+                for loc in targets[addr]:
+                    struct.pack_into('<H', rom, loc, cur)   # 포인터 패치
+                verify.append((rbank, cur, x['entry_id'])); cur += len(b); reloc += 1
+            else:                                           # 초과+미커버 → 원본 유지
+                overflow_uncov.append((bid, x['entry_id'], addr, x['n_bytes'], len(b), x['text_kr']))
+                ov += 1
+        report[bid] = (len(es), written, reloc, ov, bank, cur - rstart, rcap)
 
     # ---- 출력 ----
     import os
     os.makedirs('out', exist_ok=True)
     open(a.out, 'wb').write(rom)
 
-    # ---- 역검증: 새 위치에서 재디코드 == text_kr ----
+    # ---- 역검증: 각 삽입/재배치 위치에서 재디코드 == text_kr ----
     idx2char = {i: c for c, i in char2idx.items()}
+    enc_of = {x['entry_id']: x for es in blocks.values() for x in es}
     def decode_at(bank, addr):
         o = foff(bank, addr); s = o
         while rom[o] != 0x00:
             b = rom[o]; o += 2 if (1 <= b <= 4 or b == 7) else 1
-        toks = decode(rom[s:o+1])
-        return render(toks, idx2char)
+        return render(decode(rom[s:o + 1]), idx2char)
+    vloc = {eid: (bk, ad) for bk, ad, eid in verify}
     print(f"\n=== 폰트: 한글 {inj} 글리프 주입 (자유슬롯 {len(alloc)}, 음절 {len(syllables)}) ===")
-    total_ok = total = 0
-    for bid, (nmsg, blen, cap, patched, nptr, old2new, bank) in report.items():
-        ok = 0
+    total_ok = total_ins = total = 0
+    for bid, (nmsg, written, reloc, ov, bank, rused, rcap) in report.items():
+        ok = 0; ins = written + reloc
         for x in blocks[bid]:
-            old = int(x['addr'].split(':')[1], 16)
-            got = decode_at(bank, old2new[old])
-            want = render(decode(bytes.fromhex('')), None)  # placeholder
-            # 기대값 = text_kr에서 {trunc}→{end} 정규화 후 렌더 비교
+            if x['entry_id'] not in vloc:
+                continue                                    # 미커버 초과 → 검증 제외
+            bk, ad = vloc[x['entry_id']]
+            got = decode_at(bk, ad)
             exp = re.sub(r'\{trunc[0-9A-Fa-f]+\}', '{end}', x['text_kr'])
             if not exp.endswith('{end}'): exp += '{end}'
             ok += (got == exp)
-        total_ok += ok; total += nmsg
-        print(f"{bid:8s}: msgs {nmsg} | 재배치 {blen}/{cap}B | 포인터패치 {patched}/{nptr} | 역검증 {ok}/{nmsg}")
-    print(f"\n역검증 합계: {total_ok}/{total}  -> {a.out}")
-    if total_ok != total:
-        sys.exit("역검증 실패 (일부 메시지 불일치)")
+        total_ok += ok; total_ins += ins; total += nmsg
+        print(f"{bid:8s}: msgs {nmsg} | 제자리 {written} + 재배치 {reloc}({rused}/{rcap}B) "
+              f"| 미커버초과 {ov} | 역검증 {ok}/{ins}")
+    print(f"\n역검증 합계(삽입분): {total_ok}/{total_ins}  | 전체메시지 {total}  -> {a.out}")
+    if overflow_uncov:
+        print(f"\n⚠️ 미커버 초과 {len(overflow_uncov)}개 (포인터 미상 → 재배치 불가, 원본 유지):")
+        for bid, eid, addr, slot, klen, kr in overflow_uncov:
+            print(f"  [{bid}] id={eid} @${addr:04X} slot={slot} kr={klen} (+{klen - slot}) {kr!r}")
+    if total_ok != total_ins:
+        sys.exit("역검증 실패 (삽입분 일부 불일치)")
 
 if __name__ == '__main__':
     main()

@@ -361,7 +361,8 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "다음 페이지로 넘어가{end}"
+      "text_kr": "다음 페이지로 넘겨{end}",
+      "text_kr_full": "다음 페이지로 넘어가{end}"
     },
     {
       "entry_id": 18,
@@ -505,7 +506,8 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "「목차」로 돌아가려면{nl}셀렉트 버튼{nl}이 모드에서 나가려면{nl}B버튼을 눌러 줘{end}"
+      "text_kr": "「목차」로 돌아가려면{nl}셀렉트{nl}이 모드에서 나가려면{nl}B버튼을 눌러 줘{end}",
+      "text_kr_full": "「목차」로 돌아가려면{nl}셀렉트 버튼{nl}이 모드에서 나가려면{nl}B버튼을 눌러 줘{end}"
     },
     {
       "entry_id": 27,
@@ -889,7 +891,8 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "이 파라미터가 높을수록{nl}최고 속도가 늘어나{end}"
+      "text_kr": "이 값이 높을수록{nl}최고 속도가 늘어나{end}",
+      "text_kr_full": "이 파라미터가 높을수록{nl}최고 속도가 늘어나{end}"
     },
     {
       "entry_id": 51,
@@ -1289,7 +1292,8 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "테스트 모드야{nl}이걸 보고 있다는 건{nl}게임을 클리어했다는 거네{nl}축하해♥{end}"
+      "text_kr": "테스트 모드야{nl}이걸 본다는 건{nl}게임을 클리어했다는 거네{nl}축하해♥{end}",
+      "text_kr_full": "테스트 모드야{nl}이걸 보고 있다는 건{nl}게임을 클리어했다는 거네{nl}축하해♥{end}"
     },
     {
       "entry_id": 76,
@@ -1321,7 +1325,8 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "위아래 키로{nl}누구 얼굴인지 골라 줘{end}"
+      "text_kr": "위아래 키로{nl}얼굴을 골라 줘{end}",
+      "text_kr_full": "위아래 키로{nl}누구 얼굴인지 골라 줘{end}"
     },
     {
       "entry_id": 78,
@@ -4625,7 +4630,8 @@
       "text_jp": "レースの様子がおかしいぞ！？{nl}これは明らかにバトルレースが{nl}行なわれている！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "레이스 상황이 이상하다！？{nl}이건 명백히 배틀 레이스가{nl}벌어지고 있다！！{end}"
+      "text_kr": "레이스 상황이 이상하다！？{nl}이건 명백히 배틀 레이스가{nl}벌어진다！！{end}",
+      "text_kr_full": "레이스 상황이 이상하다！？{nl}이건 명백히 배틀 레이스가{nl}벌어지고 있다！！{end}"
     },
     {
       "entry_id": 292,
@@ -4639,7 +4645,8 @@
       "text_jp": "レッドフラッグがふられているが{nl}両チームともレースをやめない！{nl}そのままファイナルに{nl}とつにゅうだ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "레드 플래그가 내걸렸는데도{nl}양 팀 다 멈추지 않는다！{nl}그대로 파이널에{nl}돌입한다！！{end}"
+      "text_kr": "레드 플래그가 걸렸는데도{nl}양 팀 다 안 멈춘다！{nl}그대로 파이널에{nl}돌입한다！！{end}",
+      "text_kr_full": "레드 플래그가 내걸렸는데도{nl}양 팀 다 멈추지 않는다！{nl}그대로 파이널에{nl}돌입한다！！{end}"
     },
     {
       "entry_id": 293,
@@ -6095,7 +6102,8 @@
       "text_jp": "あのじじぃ〜！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "저 영감탱이〜！{end}"
+      "text_kr": "저 영감！{end}",
+      "text_kr_full": "저 영감탱이〜！{end}"
     },
     {
       "entry_id": 397,
@@ -6123,7 +6131,8 @@
       "text_jp": "応援するって{nl}そういうことか…{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "응원한다는 게{nl}그런 뜻이었나…{end}"
+      "text_kr": "응원한단 게{nl}그런 뜻이었나…{end}",
+      "text_kr_full": "응원한다는 게{nl}그런 뜻이었나…{end}"
     },
     {
       "entry_id": 399,
@@ -6403,7 +6412,8 @@
       "text_jp": "男だな…{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "사나이로군…{end}"
+      "text_kr": "사나이군…{end}",
+      "text_kr_full": "사나이로군…{end}"
     },
     {
       "entry_id": 419,
@@ -6571,7 +6581,8 @@
       "text_jp": "みててくれ！{nl}必ず勝ってみせる！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "지켜봐 줘！{nl}반드시 이겨 보이겠어！{end}"
+      "text_kr": "지켜봐 줘！{nl}반드시 이긴다！{end}",
+      "text_kr_full": "지켜봐 줘！{nl}반드시 이겨 보이겠어！{end}"
     },
     {
       "entry_id": 431,
@@ -7411,7 +7422,8 @@
       "text_jp": "FOX1{nl}「そんな！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "FOX1{nl}「그럴 수가！{end}"
+      "text_kr": "FOX1{nl}「설마！{end}",
+      "text_kr_full": "FOX1{nl}「그럴 수가！{end}"
     },
     {
       "entry_id": 491,
@@ -7439,7 +7451,8 @@
       "text_jp": "FOX3{nl}「速い！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "FOX3{nl}「빠르다！{end}"
+      "text_kr": "FOX3{nl}「빨라！{end}",
+      "text_kr_full": "FOX3{nl}「빠르다！{end}"
     },
     {
       "entry_id": 493,
@@ -7467,7 +7480,8 @@
       "text_jp": "ジュリアナ{nl}「そんな！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "쥴리아나{nl}「그럴 수가！{end}"
+      "text_kr": "쥴리아나{nl}「설마！{end}",
+      "text_kr_full": "쥴리아나{nl}「그럴 수가！{end}"
     },
     {
       "entry_id": 495,
@@ -7481,7 +7495,8 @@
       "text_jp": "サリマ{nl}「クッ　まだだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "사리마{nl}「큭 아직이야！{end}"
+      "text_kr": "사리마{nl}「아직이야！{end}",
+      "text_kr_full": "사리마{nl}「큭 아직이야！{end}"
     },
     {
       "entry_id": 496,
@@ -7635,7 +7650,8 @@
       "text_jp": "クラージュ{nl}「そうあわてるなよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "쿠라주{nl}「그렇게 서두르지 마！{end}"
+      "text_kr": "쿠라주{nl}「서두르지 마！{end}",
+      "text_kr_full": "쿠라주{nl}「그렇게 서두르지 마！{end}"
     },
     {
       "entry_id": 507,
@@ -7663,7 +7679,8 @@
       "text_jp": "シャリテ{nl}「バカな！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "샤리테{nl}「말도 안 돼！{end}"
+      "text_kr": "샤리테{nl}「설마！{end}",
+      "text_kr_full": "샤리테{nl}「말도 안 돼！{end}"
     },
     {
       "entry_id": 509,
@@ -8811,7 +8828,8 @@
       "text_jp": "シュミット{nl}「キミたちには悪いが{nl}勝たせてもらうよ{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "슈미트{nl}「너희에겐 미안하지만{nl}이기게 해주겠어{end}"
+      "text_kr": "슈미트{nl}「너희에겐 미안하지만{nl}이기겠어{end}",
+      "text_kr_full": "슈미트{nl}「너희에겐 미안하지만{nl}이기게 해주겠어{end}"
     },
     {
       "entry_id": 591,
@@ -9469,7 +9487,8 @@
       "text_jp": "これでいい？{nl}　　　いいよ{nl}　　　だめ{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "이대로 괜찮아？{nl}　　　좋아{nl}　　　안돼{end}"
+      "text_kr": "이대로 괜찮아？{nl}　좋아{nl}　안돼{end}",
+      "text_kr_full": "이대로 괜찮아？{nl}　　　좋아{nl}　　　안돼{end}"
     },
     {
       "entry_id": 638,
