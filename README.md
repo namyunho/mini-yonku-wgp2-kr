@@ -25,7 +25,7 @@ SNES(Super Famicom) 게임 **「ミニ四駆 レッツ&ゴー!! POWER WGP2」**(
 | 대사 완전성 확정 | ✅ 완료 (정적 텍스트 뱅크 `$C7/$D0/$C1` 권위 열거) |
 | 추출·라운드트립 | ✅ 완료 (**정적 대사 673개**, `encode(parse)==raw==ROM` 전량 무손실) |
 | 전 블록 포인터 카탈로그 | ✅ 완료 (VM opcode·ROM 테이블·인라인 즉치 3경로) |
-| 번역 | ⬜ 착수 예정 (`text_jp` → 한글) |
+| 번역 | 🟡 진행 (`text_jp` → 한글; **c1_ui 37 완료**, 용어집 확립) |
 | 재삽입·빌드·검증 | ⬜ 미착수 |
 
 ### 확정 대사 블록 (673)
@@ -34,7 +34,7 @@ SNES(Super Famicom) 게임 **「ミニ四駆 レッツ&ゴー!! POWER WGP2」**(
 |------|------|------|------|
 | `c7_race` | `$C7:89E2` | 232 | 레이스 중계·조작 안내 |
 | `d0_story` | `$D0:C80B` | 404 | 스토리/배틀 서사(캐릭터·마신명·필살기) |
-| `c1_*` (4클러스터) | `$C1` | 37 | 세팅·마신명·가레지·포메이션 UI |
+| `c1_*` (4클러스터) | `$C1` | 37 | 세팅·마신명·개러지·포메이션 UI |
 
 ## 저장소 구조
 
@@ -43,7 +43,7 @@ docs/        역공학 결과 정본(SSOT) — 단계별 01~07
 assets/
   fonts/            한글 TTF·비트맵 폰트 + 라이선스
   translations/     dialogue.json(673 대사) · pointer_catalog.json
-  translation_guide/ glyph_table.tsv(1008 글리프) · 용어 통일
+  translation_guide/ glossary.md(용어집) · glyph_table.tsv(1008 글리프)
 scripts/     Python 분석·추출·디코드 도구 + Mesen2 Lua
 src/         Rust 파이프라인(kr-patch-wgp2 크레이트)
 roms/ out/ tmp/   비커밋 (원본 ROM·산출물·임시 파일)
@@ -58,6 +58,15 @@ roms/ out/ tmp/   비커밋 (원본 ROM·산출물·임시 파일)
 - [docs/05-poc-hangul-font](docs/05-poc-hangul-font.md) — PoC(한글 렌더)
 - [docs/06-dialogue-extraction](docs/06-dialogue-extraction.md) — 추출·라운드트립
 - [docs/07-dialogue-completeness](docs/07-dialogue-completeness.md) — 완전성 확정 + 포인터 카탈로그
+
+## 번역 용어집 (고유명사·용어 통일)
+
+번역 시 인명·마신명·팀명·UI 용어를 일관 적용하기 위한 정본 → **[assets/translation_guide/glossary.md](assets/translation_guide/glossary.md)**
+
+- **명명 정책**: 1차 = **일본 원어 음차**(세이바 고 등). 한국 방영판(「우리는 챔피언」) 로컬명은 병기·학습만, 차후 별도 "한국명 버전"용. MAX(3기)·Return Racers 계열은 이 게임 범위 밖 → 미사용.
+- **호칭 규칙**: 원문이 이름만 부르는 호격(`ゴー！`)은 성을 붙이지 않고 형태 유지 → 「고!」(❌「세이바 고!」).
+- **TRF 빅토리즈 6종 머신·파일럿**: 비트 매그넘(세이바 고)·버스터 소닉(세이바 레츠)·네오 트라이대거 ZMC(타카바 료)·스핀 바이퍼(미쿠니 토우키치)·프로토 세이버 EVO(제이)·비크 스파이더(오키타 카이).
+- **WGP 10개국 대표팀** 로스터·에이스 머신, **UI 용어**(머신·개러지·세팅·포메이션·파츠·그리드, 조작 안내 「A버튼 결정」) 수록.
 
 ## 시작하기
 

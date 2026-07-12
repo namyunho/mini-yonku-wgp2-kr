@@ -48,6 +48,11 @@ target/
 __pycache__/
 *.pyc
 
+# 번역 참고용 웹 스크랩(저작권·용량) — glossary.md로 갈무리, 로컬 전용
+*.mhtml
+*.mht
+*_files/
+
 # OS / 에디터
 .DS_Store
 Thumbs.db
