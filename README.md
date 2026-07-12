@@ -32,7 +32,7 @@ SNES(Super Famicom) 게임 **「ミニ四駆 レッツ&ゴー!! POWER WGP2」**(
 | 추출·라운드트립 | ✅ 완료 (**정적 대사 673개**, `encode(parse)==raw==ROM` 전량 무손실) |
 | 전 블록 포인터 카탈로그 | ✅ 완료 (VM opcode·ROM 테이블·인라인 즉치 3경로) |
 | 번역 | ✅ 완료 (**673/673** `text_kr`; c1_ui 37·d0_story 404·c7_race 232 전량, 용어집·줄폭 규칙 적용) |
-| 재삽입·빌드·검증 | ⬜ 미착수 (다음 단계) |
+| 재삽입·빌드·검증 | 🟡 파서 673 재삽입 완료(`build_patch.py`, 역검증 673/673) · **어드벤처 스토리는 별개 압축 엔진**으로 미처리 → [docs/08](docs/08-adventure-text-engine.md) |
 
 ### 확정 대사 블록 (673)
 
@@ -63,7 +63,8 @@ roms/ out/ tmp/   비커밋 (원본 ROM·산출물·임시 파일)
 - [docs/04-dialogue-encoding](docs/04-dialogue-encoding.md) — 대사 인코딩 역공학
 - [docs/05-poc-hangul-font](docs/05-poc-hangul-font.md) — PoC(한글 렌더)
 - [docs/06-dialogue-extraction](docs/06-dialogue-extraction.md) — 추출·라운드트립
-- [docs/07-dialogue-completeness](docs/07-dialogue-completeness.md) — 완전성 확정 + 포인터 카탈로그
+- [docs/07-dialogue-completeness](docs/07-dialogue-completeness.md) — 파서 대사 완전성 + 포인터 카탈로그
+- [docs/08-adventure-text-engine](docs/08-adventure-text-engine.md) — ⚠️ 어드벤처/스토리 텍스트 = 별개 압축 엔진(673 밖, 해독 진행 중)
 
 ## 번역 용어집 (고유명사·용어 통일)
 
