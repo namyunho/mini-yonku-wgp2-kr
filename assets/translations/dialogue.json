@@ -89,7 +89,7 @@
         "0x03D257:$CBEF"
       ],
       "flags": [],
-      "text_kr": "자 제1회 세계 그랑프리도{nl}드디어 막바지!{end}"
+      "text_kr": "자 제1회 세계 그랑프리도{nl}드디어 막바지！{end}"
     },
     {
       "entry_id": 1,
@@ -105,7 +105,7 @@
         "0x03D261:$CBEF"
       ],
       "flags": [],
-      "text_kr": "영광의 골인까지 얼마 안 남았다!{end}"
+      "text_kr": "영광의 골인까지 얼마 안 남았다！{end}"
     },
     {
       "entry_id": 2,
@@ -137,7 +137,7 @@
         "0x03D275:$CBEF"
       ],
       "flags": [],
-      "text_kr": "TRF 빅토리즈로 좁혀졌다!{end}"
+      "text_kr": "TRF 빅토리즈로 좁혀졌다！{end}"
     },
     {
       "entry_id": 4,
@@ -153,7 +153,7 @@
         "0x03D299:$CBEF"
       ],
       "flags": [],
-      "text_kr": "간다굽쇼!! 고!!{end}"
+      "text_kr": "간다굽쇼！！ 고！！{end}"
     },
     {
       "entry_id": 5,
@@ -169,7 +169,7 @@
         "0x03D2BD:$CBEF"
       ],
       "flags": [],
-      "text_kr": "고!! 머신을 믿어라!!{end}"
+      "text_kr": "고！！ 머신을 믿어라！！{end}"
     },
     {
       "entry_id": 6,
@@ -185,7 +185,7 @@
         "0x03D2E1:$CBEF"
       ],
       "flags": [],
-      "text_kr": "고! 나머진 맡겼다!!!{end}"
+      "text_kr": "고！ 나머진 맡겼다！！！{end}"
     },
     {
       "entry_id": 7,
@@ -201,7 +201,7 @@
         "0x03D305:$CBEF"
       ],
       "flags": [],
-      "text_kr": "가라!! 고~!!!{end}"
+      "text_kr": "가라！！ 고〜！！！{end}"
     },
     {
       "entry_id": 8,
@@ -217,7 +217,7 @@
         "0x03D337:$CBD4"
       ],
       "flags": [],
-      "text_kr": "조금만 더!! 벅블레이더!!!{end}"
+      "text_kr": "조금만 더！！ 벅블레이더！！！{end}"
     },
     {
       "entry_id": 9,
@@ -233,7 +233,7 @@
         "0x03D369:$CBD4"
       ],
       "flags": [],
-      "text_kr": "못 보내!!!{end}"
+      "text_kr": "못 보내！！！{end}"
     },
     {
       "entry_id": 10,
@@ -249,7 +249,7 @@
         "0x03D39B:$CBD4"
       ],
       "flags": [],
-      "text_kr": "우오오오오~!{end}"
+      "text_kr": "우오오오오〜！{end}"
     },
     {
       "entry_id": 11,
@@ -265,7 +265,7 @@
         "0x03D3A9:$CBD4"
       ],
       "flags": [],
-      "text_kr": "가랏~!! 매그넘!!!{end}"
+      "text_kr": "가랏〜！！ 매그넘！！！{end}"
     },
     {
       "entry_id": 12,
@@ -281,7 +281,7 @@
         "0x03D3E1:$CBEF"
       ],
       "flags": [],
-      "text_kr": "제1회 세계 그랑프리를{nl}제패한 것은{nl}TRF 빅토리즈!!{end}"
+      "text_kr": "제1회 세계 그랑프리를{nl}제패한 것은{nl}TRF 빅토리즈！！{end}"
     },
     {
       "entry_id": 13,
@@ -297,7 +297,7 @@
         "0x03D3EB:$CBEF"
       ],
       "flags": [],
-      "text_kr": "아이젠 볼프{nl}아스트로 레인저스를{nl}꺾은 대역전 승리다~!!{end}"
+      "text_kr": "아이젠 볼프{nl}아스트로 레인저스를{nl}꺾은 대역전 승리다〜！！{end}"
     },
     {
       "entry_id": 14,
@@ -313,7 +313,7 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "그런 데 누르면 안 돼!{end}"
+      "text_kr": "그런 데 누르면 안 돼！{end}"
     },
     {
       "entry_id": 15,
@@ -329,7 +329,7 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "바이바~이{end}"
+      "text_kr": "바이바〜이{end}"
     },
     {
       "entry_id": 16,
@@ -473,7 +473,7 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "레이디 파이터{nl}「자자자 자~안{nl}레이디 파이터의 조작 설명{end}"
+      "text_kr": "레이디 파이터{nl}「자자자 자〜안{nl}레이디 파이터의 조작 설명{end}"
     },
     {
       "entry_id": 25,
@@ -521,7 +521,7 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "이제 궁금한 건{nl}없으려나?{end}"
+      "text_kr": "이제 궁금한 건{nl}없으려나？{end}"
     },
     {
       "entry_id": 28,
@@ -537,7 +537,7 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "언니 맘에{nl}들었으려나?{end}"
+      "text_kr": "언니 맘에{nl}들었으려나？{end}"
     },
     {
       "entry_id": 29,
@@ -713,7 +713,7 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "재빨리 파츠를 바꾸거나{nl}머신 성능을 보고 싶을 땐{nl}이 버튼으로 단축!{end}"
+      "text_kr": "재빨리 파츠를 바꾸거나{nl}머신 성능을 보고 싶을 땐{nl}이 버튼으로 단축！{end}"
     },
     {
       "entry_id": 40,
@@ -1385,7 +1385,7 @@
         "0x03E8E9:$CBEF"
       ],
       "flags": [],
-      "text_kr": "오오가미{nl}「쓸모없는 것…{nl}이렇게 된 이상 내 손으로{nl}놈들을 묻어 주마!{end}"
+      "text_kr": "오오가미{nl}「쓸모없는 것…{nl}이렇게 된 이상 내 손으로{nl}놈들을 묻어 주마！{end}"
     },
     {
       "entry_id": 82,
@@ -1401,7 +1401,7 @@
         "0x03E8FB:$CBEF"
       ],
       "flags": [],
-      "text_kr": "라!{nl}피라미탈 스핑크스를{nl}오토 모드로 전환해라!{end}"
+      "text_kr": "라！{nl}피라미탈 스핑크스를{nl}오토 모드로 전환해라！{end}"
     },
     {
       "entry_id": 83,
@@ -1433,7 +1433,7 @@
         "0x03E953:$CBEF"
       ],
       "flags": [],
-      "text_kr": "오오가미{nl}「칫{nl}최면이 풀리기 시작했나{nl}그럼 강제 해제다!{end}"
+      "text_kr": "오오가미{nl}「칫{nl}최면이 풀리기 시작했나{nl}그럼 강제 해제다！{end}"
     },
     {
       "entry_id": 85,
@@ -1449,7 +1449,7 @@
         "0x03E987:$CBEF"
       ],
       "flags": [],
-      "text_kr": "라{nl}「오… 오오가미이이이!{end}"
+      "text_kr": "라{nl}「오… 오오가미이이이！{end}"
     },
     {
       "entry_id": 86,
@@ -1481,7 +1481,7 @@
         "0x03E9DF:$CBEF"
       ],
       "flags": [],
-      "text_kr": "고{nl}「저 자식~!{end}"
+      "text_kr": "고{nl}「저 자식〜！{end}"
     },
     {
       "entry_id": 88,
@@ -1497,7 +1497,7 @@
         "0x03EA0B:$CBEF"
       ],
       "flags": [],
-      "text_kr": "오오가미{nl}「후하하하하!!{nl}각오해라 빅토리즈{end}"
+      "text_kr": "오오가미{nl}「후하하하하！！{nl}각오해라 빅토리즈{end}"
     },
     {
       "entry_id": 89,
@@ -1529,7 +1529,7 @@
         "0x03EA4D:$CBEF"
       ],
       "flags": [],
-      "text_kr": "미하엘{nl}「그렇게는 안 된다!{end}"
+      "text_kr": "미하엘{nl}「그렇게는 안 된다！{end}"
     },
     {
       "entry_id": 91,
@@ -1545,7 +1545,7 @@
         "0x03EA79:$CBEF"
       ],
       "flags": [],
-      "text_kr": "오오가미{nl}「뭐라고!?{end}"
+      "text_kr": "오오가미{nl}「뭐라고！？{end}"
     },
     {
       "entry_id": 92,
@@ -1561,7 +1561,7 @@
         "0x03EAA5:$CBEF"
       ],
       "flags": [],
-      "text_kr": "레츠{nl}「미하엘!{end}"
+      "text_kr": "레츠{nl}「미하엘！{end}"
     },
     {
       "entry_id": 93,
@@ -1593,7 +1593,7 @@
         "0x03EB05:$CBEF"
       ],
       "flags": [],
-      "text_kr": "카를로{nl}「놈들을 쓰러뜨릴 건 나다{nl}영감 당신은{nl}부르지도 않았다고!{end}"
+      "text_kr": "카를로{nl}「놈들을 쓰러뜨릴 건 나다{nl}영감 당신은{nl}부르지도 않았다고！{end}"
     },
     {
       "entry_id": 95,
@@ -1609,7 +1609,7 @@
         "0x03EB31:$CBEF"
       ],
       "flags": [],
-      "text_kr": "고{nl}「너 너희들!{end}"
+      "text_kr": "고{nl}「너 너희들！{end}"
     },
     {
       "entry_id": 96,
@@ -1641,7 +1641,7 @@
         "0x03EB91:$CBEF"
       ],
       "flags": [],
-      "text_kr": "유리{nl}「나머진 우리에게 맡겨라!{end}"
+      "text_kr": "유리{nl}「나머진 우리에게 맡겨라！{end}"
     },
     {
       "entry_id": 98,
@@ -1657,7 +1657,7 @@
         "0x03EBC1:$CBEF"
       ],
       "flags": [],
-      "text_kr": "호왕{nl}「괜찮은 거냐구!?{end}"
+      "text_kr": "호왕{nl}「괜찮은 거냐구！？{end}"
     },
     {
       "entry_id": 99,
@@ -1673,7 +1673,7 @@
         "0x03EBED:$CBEF"
       ],
       "flags": [],
-      "text_kr": "토우키치{nl}「다들!{end}"
+      "text_kr": "토우키치{nl}「다들！{end}"
     },
     {
       "entry_id": 100,
@@ -1689,7 +1689,7 @@
         "0x03EC1D:$CBEF"
       ],
       "flags": [],
-      "text_kr": "디아나{nl}「감히 우리 WGP를{nl}더럽혀 주다니!{end}"
+      "text_kr": "디아나{nl}「감히 우리 WGP를{nl}더럽혀 주다니！{end}"
     },
     {
       "entry_id": 101,
@@ -1705,7 +1705,7 @@
         "0x03EC4D:$CBEF"
       ],
       "flags": [],
-      "text_kr": "카이{nl}「더 이상{nl}제멋대로는 못 하게 해요!{end}"
+      "text_kr": "카이{nl}「더 이상{nl}제멋대로는 못 하게 해요！{end}"
     },
     {
       "entry_id": 102,
@@ -1721,7 +1721,7 @@
         "0x03EC79:$CBEF"
       ],
       "flags": [],
-      "text_kr": "료{nl}「카이!{end}"
+      "text_kr": "료{nl}「카이！{end}"
     },
     {
       "entry_id": 103,
@@ -1737,7 +1737,7 @@
         "0x03ECA5:$CBEF"
       ],
       "flags": [],
-      "text_kr": "오오가미{nl}「후하하하하하!!{nl}멍청한 것들이 쓸데없는 짓을!{nl}{end}"
+      "text_kr": "오오가미{nl}「후하하하하하！！{nl}멍청한 것들이 쓸데없는 짓을！{nl}{end}"
     },
     {
       "entry_id": 104,
@@ -1753,7 +1753,7 @@
         "0x03ECB7:$CBEF"
       ],
       "flags": [],
-      "text_kr": "좋다!{nl}한꺼번에 뭉개 주마!{nl}가라 피라미탈 스핑크스!!{end}"
+      "text_kr": "좋다！{nl}한꺼번에 뭉개 주마！{nl}가라 피라미탈 스핑크스！！{end}"
     },
     {
       "entry_id": 105,
@@ -1769,7 +1769,7 @@
         "0x03ECF3:$CBEF"
       ],
       "flags": [],
-      "text_kr": "오오가미{nl}「어떻게 된 거야!?{nl}왜 안 움직여!{nl}{end}"
+      "text_kr": "오오가미{nl}「어떻게 된 거야！？{nl}왜 안 움직여！{nl}{end}"
     },
     {
       "entry_id": 106,
@@ -1785,7 +1785,7 @@
         "0x03ED05:$CBEF"
       ],
       "flags": [],
-      "text_kr": "가라! 가는 거다!{nl}피라미탈 스핑크스!{end}"
+      "text_kr": "가라！ 가는 거다！{nl}피라미탈 스핑크스！{end}"
     },
     {
       "entry_id": 107,
@@ -1801,7 +1801,7 @@
         "0x03ED31:$CBEF"
       ],
       "flags": [],
-      "text_kr": "라{nl}「우오오오오오!!{end}"
+      "text_kr": "라{nl}「우오오오오오！！{end}"
     },
     {
       "entry_id": 108,
@@ -1817,7 +1817,7 @@
         "0x03ED5D:$CBEF"
       ],
       "flags": [],
-      "text_kr": "오오가미{nl}「뭐라고!!{end}"
+      "text_kr": "오오가미{nl}「뭐라고！！{end}"
     },
     {
       "entry_id": 109,
@@ -1833,7 +1833,7 @@
         "0x03ED89:$CBEF"
       ],
       "flags": [],
-      "text_kr": "고{nl}「라!?{end}"
+      "text_kr": "고{nl}「라！？{end}"
     },
     {
       "entry_id": 110,
@@ -1849,7 +1849,7 @@
         "0x03EDB5:$CBEF"
       ],
       "flags": [],
-      "text_kr": "오오가미{nl}「왜지!?{nl}스피릿 컨트롤 장치는{nl}해제했을 텐데!{end}"
+      "text_kr": "오오가미{nl}「왜지！？{nl}스피릿 컨트롤 장치는{nl}해제했을 텐데！{end}"
     },
     {
       "entry_id": 111,
@@ -1865,7 +1865,7 @@
         "0x03EDE1:$CBEF"
       ],
       "flags": [],
-      "text_kr": "라{nl}「멈춰라!{nl}피라미탈 스핑크스!{end}"
+      "text_kr": "라{nl}「멈춰라！{nl}피라미탈 스핑크스！{end}"
     },
     {
       "entry_id": 112,
@@ -1881,7 +1881,7 @@
         "0x03EE0D:$CBEF"
       ],
       "flags": [],
-      "text_kr": "오오가미{nl}「뭉개라!{nl}뭉개는 거다!!{end}"
+      "text_kr": "오오가미{nl}「뭉개라！{nl}뭉개는 거다！！{end}"
     },
     {
       "entry_id": 113,
@@ -1897,7 +1897,7 @@
         "0x03EE39:$CBEF"
       ],
       "flags": [],
-      "text_kr": "라{nl}「멈춰라~!!{end}"
+      "text_kr": "라{nl}「멈춰라〜！！{end}"
     },
     {
       "entry_id": 114,
@@ -1913,7 +1913,7 @@
         "0x03EE75:$CBEF"
       ],
       "flags": [],
-      "text_kr": "오오가미{nl}「뭐! 그 그만둬!{nl}이대로면 머신이 폭발한다!{end}"
+      "text_kr": "오오가미{nl}「뭐！ 그 그만둬！{nl}이대로면 머신이 폭발한다！{end}"
     },
     {
       "entry_id": 115,
@@ -1945,7 +1945,7 @@
         "0x03EECD:$CBEF"
       ],
       "flags": [],
-      "text_kr": "레츠{nl}「설마!{nl}머신을 부술 셈이냐!?{end}"
+      "text_kr": "레츠{nl}「설마！{nl}머신을 부술 셈이냐！？{end}"
     },
     {
       "entry_id": 117,
@@ -1961,7 +1961,7 @@
         "0x03EEF9:$CBEF"
       ],
       "flags": [],
-      "text_kr": "고{nl}「바보 같은 짓은 그만둬!{nl}머신엔 죄가 없다고!{end}"
+      "text_kr": "고{nl}「바보 같은 짓은 그만둬！{nl}머신엔 죄가 없다고！{end}"
     },
     {
       "entry_id": 118,
@@ -1977,7 +1977,7 @@
         "0x03EF25:$CBEF"
       ],
       "flags": [],
-      "text_kr": "라{nl}「하지만 이대로면{nl}피라미탈 스핑크스의{nl}폭주는 못 막는다!{end}"
+      "text_kr": "라{nl}「하지만 이대로면{nl}피라미탈 스핑크스의{nl}폭주는 못 막는다！{end}"
     },
     {
       "entry_id": 119,
@@ -1993,7 +1993,7 @@
         "0x03EF51:$CBEF"
       ],
       "flags": [],
-      "text_kr": "미하엘{nl}「우리가 멈추겠다!{end}"
+      "text_kr": "미하엘{nl}「우리가 멈추겠다！{end}"
     },
     {
       "entry_id": 120,
@@ -2009,7 +2009,7 @@
         "0x03EF8D:$CBEF"
       ],
       "flags": [],
-      "text_kr": "여덟 명{nl}「큭!!{end}"
+      "text_kr": "여덟 명{nl}「큭！！{end}"
     },
     {
       "entry_id": 121,
@@ -2025,7 +2025,7 @@
         "0x03F01F:$CBEF"
       ],
       "flags": [],
-      "text_kr": "라{nl}「위험하다!{nl}머신에 다가오지 마!!{end}"
+      "text_kr": "라{nl}「위험하다！{nl}머신에 다가오지 마！！{end}"
     },
     {
       "entry_id": 122,
@@ -2041,7 +2041,7 @@
         "0x03F04B:$CBEF"
       ],
       "flags": [],
-      "text_kr": "레츠{nl}「라!{nl}머신을 믿는 거다!{end}"
+      "text_kr": "레츠{nl}「라！{nl}머신을 믿는 거다！{end}"
     },
     {
       "entry_id": 123,
@@ -2057,7 +2057,7 @@
         "0x03F077:$CBEF"
       ],
       "flags": [],
-      "text_kr": "라{nl}「머신을… 믿는다?{end}"
+      "text_kr": "라{nl}「머신을… 믿는다？{end}"
     },
     {
       "entry_id": 124,
@@ -2073,7 +2073,7 @@
         "0x03F0A3:$CBEF"
       ],
       "flags": [],
-      "text_kr": "료{nl}「피라미탈 스핑크스를{nl}믿어 줄 수 있는 건 너뿐이다!{end}"
+      "text_kr": "료{nl}「피라미탈 스핑크스를{nl}믿어 줄 수 있는 건 너뿐이다！{end}"
     },
     {
       "entry_id": 125,
@@ -2089,7 +2089,7 @@
         "0x03F0B5:$CBEF"
       ],
       "flags": [],
-      "text_kr": "라!!{end}"
+      "text_kr": "라！！{end}"
     },
     {
       "entry_id": 126,
@@ -2137,7 +2137,7 @@
         "0x03F129:$CBEF"
       ],
       "flags": [],
-      "text_kr": "멈추는 거다!{end}"
+      "text_kr": "멈추는 거다！{end}"
     },
     {
       "entry_id": 129,
@@ -2153,7 +2153,7 @@
         "0x03F17D:$CBEF"
       ],
       "flags": [],
-      "text_kr": "라{nl}「!!{end}"
+      "text_kr": "라{nl}「！！{end}"
     },
     {
       "entry_id": 130,
@@ -2185,7 +2185,7 @@
         "0x03F1DF:$CBEF"
       ],
       "flags": [],
-      "text_kr": "고{nl}「해냈다!{end}"
+      "text_kr": "고{nl}「해냈다！{end}"
     },
     {
       "entry_id": 132,
@@ -2201,7 +2201,7 @@
         "0x03F20B:$CBEF"
       ],
       "flags": [],
-      "text_kr": "토우키치{nl}「해냈굽쇼!{nl}드디어 오오가미를 이겼굽쇼!!{end}"
+      "text_kr": "토우키치{nl}「해냈굽쇼！{nl}드디어 오오가미를 이겼굽쇼！！{end}"
     },
     {
       "entry_id": 133,
@@ -2345,7 +2345,7 @@
         "0x03F331:$CBEF"
       ],
       "flags": [],
-      "text_kr": "레츠{nl}「좋~아!{nl}가자 다들!{end}"
+      "text_kr": "레츠{nl}「좋〜아！{nl}가자 다들！{end}"
     },
     {
       "entry_id": 142,
@@ -2361,7 +2361,7 @@
         "0x03F351:$CBEF"
       ],
       "flags": [],
-      "text_kr": "위닝 런이다!!{end}"
+      "text_kr": "위닝 런이다！！{end}"
     },
     {
       "entry_id": 143,
@@ -2377,7 +2377,7 @@
         "0x03F37D:$CBEF"
       ],
       "flags": [],
-      "text_kr": "고{nl}「오오!!{end}"
+      "text_kr": "고{nl}「오오！！{end}"
     },
     {
       "entry_id": 144,
@@ -3657,7 +3657,7 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "코너를 파고들어라!{end}"
+      "text_kr": "코너를 파고들어라！{end}"
     },
     {
       "entry_id": 224,
@@ -3673,7 +3673,7 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "날아가라 탄환 머신!{end}"
+      "text_kr": "날아가라 탄환 머신！{end}"
     },
     {
       "entry_id": 225,
@@ -3705,7 +3705,7 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "폭주! 빅토리즈!{end}"
+      "text_kr": "폭주！ 빅토리즈！{end}"
     },
     {
       "entry_id": 227,
@@ -3721,7 +3721,7 @@
       "flags": [
         "no_pointer_ref"
       ],
-      "text_kr": "팡파르 &{nl}RESULTS{end}"
+      "text_kr": "팡파르 ＆{nl}RESULTS{end}"
     },
     {
       "entry_id": 228,
@@ -3799,7 +3799,7 @@
       "text_jp": "Aおまえ　だれやねん？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "A넌 누구냐?{end}"
+      "text_kr": "A넌 누구냐？{end}"
     },
     {
       "entry_id": 233,
@@ -3813,7 +3813,7 @@
       "text_jp": "たのんだぜ　烈兄貴！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "부탁한다 레츠 형!{end}"
+      "text_kr": "부탁한다 레츠 형！{end}"
     },
     {
       "entry_id": 234,
@@ -3827,7 +3827,7 @@
       "text_jp": "タッチだ　ブッとばせリョウ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "터치다 날려버려 료!{end}"
+      "text_kr": "터치다 날려버려 료！{end}"
     },
     {
       "entry_id": 235,
@@ -3841,7 +3841,7 @@
       "text_jp": "藤吉　ヘマすんじゃねぇぞ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "토우키치 실수하지 마라!{end}"
+      "text_kr": "토우키치 실수하지 마라！{end}"
     },
     {
       "entry_id": 236,
@@ -3855,7 +3855,7 @@
       "text_jp": "お前の番だぜ　J！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "네 차례다 제이!{end}"
+      "text_kr": "네 차례다 제이！{end}"
     },
     {
       "entry_id": 237,
@@ -3869,7 +3869,7 @@
       "text_jp": "たのんだぞ　豪！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "부탁한다 고!{end}"
+      "text_kr": "부탁한다 고！{end}"
     },
     {
       "entry_id": 238,
@@ -3883,7 +3883,7 @@
       "text_jp": "まかせたよ　リョウくん！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "맡길게 료!{end}"
+      "text_kr": "맡길게 료！{end}"
     },
     {
       "entry_id": 239,
@@ -3897,7 +3897,7 @@
       "text_jp": "藤吉くん　あとはまかせた！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "토우키치 나머진 맡겼어!{end}"
+      "text_kr": "토우키치 나머진 맡겼어！{end}"
     },
     {
       "entry_id": 240,
@@ -3925,7 +3925,7 @@
       "text_jp": "思うぞんぶんカッとんでこい　豪！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "실컷 날아가 봐라 고!{end}"
+      "text_kr": "실컷 날아가 봐라 고！{end}"
     },
     {
       "entry_id": 242,
@@ -3939,7 +3939,7 @@
       "text_jp": "あとはまかせたぞ　烈！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "나머진 맡겼다 레츠!{end}"
+      "text_kr": "나머진 맡겼다 레츠！{end}"
     },
     {
       "entry_id": 243,
@@ -3953,7 +3953,7 @@
       "text_jp": "ゆだんするなよ　藤吉！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "방심하지 마라 토우키치!{end}"
+      "text_kr": "방심하지 마라 토우키치！{end}"
     },
     {
       "entry_id": 244,
@@ -3967,7 +3967,7 @@
       "text_jp": "J　おまえの走りを見せてやれ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "제이 네 주행을 보여줘라!{end}"
+      "text_kr": "제이 네 주행을 보여줘라！{end}"
     },
     {
       "entry_id": 245,
@@ -3995,7 +3995,7 @@
       "text_jp": "烈くん　スパートでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "레츠 스퍼트하는 거굽쇼!{end}"
+      "text_kr": "레츠 스퍼트하는 거굽쇼！{end}"
     },
     {
       "entry_id": 247,
@@ -4009,7 +4009,7 @@
       "text_jp": "リョウくん　まかせたでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "료 맡겼다굽쇼!{end}"
+      "text_kr": "료 맡겼다굽쇼！{end}"
     },
     {
       "entry_id": 248,
@@ -4037,7 +4037,7 @@
       "text_jp": "出番だよ　豪くん！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "나설 차례야 고!{end}"
+      "text_kr": "나설 차례야 고！{end}"
     },
     {
       "entry_id": 250,
@@ -4051,7 +4051,7 @@
       "text_jp": "烈くん　あとはまかせた！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "레츠 나머진 맡겼어!{end}"
+      "text_kr": "레츠 나머진 맡겼어！{end}"
     },
     {
       "entry_id": 251,
@@ -4065,7 +4065,7 @@
       "text_jp": "あとはよろしく　リョウくん！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "나머진 부탁해 료!{end}"
+      "text_kr": "나머진 부탁해 료！{end}"
     },
     {
       "entry_id": 252,
@@ -4079,7 +4079,7 @@
       "text_jp": "藤吉くん　がんばって！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "토우키치 힘내!{end}"
+      "text_kr": "토우키치 힘내！{end}"
     },
     {
       "entry_id": 253,
@@ -4093,7 +4093,7 @@
       "text_jp": "ああ　まかせとけって！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "그래 맡겨만 둬!{end}"
+      "text_kr": "그래 맡겨만 둬！{end}"
     },
     {
       "entry_id": 254,
@@ -4107,7 +4107,7 @@
       "text_jp": "ああ　あったりめーだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "그래 당연하지!{end}"
+      "text_kr": "그래 당연하지！{end}"
     },
     {
       "entry_id": 255,
@@ -4121,7 +4121,7 @@
       "text_jp": "うっせーな　だまって見てろって！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "시끄러 잠자코 보고나 있어!{end}"
+      "text_kr": "시끄러 잠자코 보고나 있어！{end}"
     },
     {
       "entry_id": 256,
@@ -4135,7 +4135,7 @@
       "text_jp": "よっしゃ　まかせとけって！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "좋았어 맡겨만 둬!{end}"
+      "text_kr": "좋았어 맡겨만 둬！{end}"
     },
     {
       "entry_id": 257,
@@ -4149,7 +4149,7 @@
       "text_jp": "ああ　まかせとけ豪！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "그래 맡겨둬 고!{end}"
+      "text_kr": "그래 맡겨둬 고！{end}"
     },
     {
       "entry_id": 258,
@@ -4163,7 +4163,7 @@
       "text_jp": "うん　がんばるよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "응 힘낼게!{end}"
+      "text_kr": "응 힘낼게！{end}"
     },
     {
       "entry_id": 259,
@@ -4177,7 +4177,7 @@
       "text_jp": "うん　全力でいくよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "응 전력으로 갈게!{end}"
+      "text_kr": "응 전력으로 갈게！{end}"
     },
     {
       "entry_id": 260,
@@ -4191,7 +4191,7 @@
       "text_jp": "うん　まかせといてよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "응 맡겨만 둬!{end}"
+      "text_kr": "응 맡겨만 둬！{end}"
     },
     {
       "entry_id": 261,
@@ -4205,7 +4205,7 @@
       "text_jp": "ああ　まかせておけ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "그래 맡겨둬!{end}"
+      "text_kr": "그래 맡겨둬！{end}"
     },
     {
       "entry_id": 262,
@@ -4219,7 +4219,7 @@
       "text_jp": "ああ　心配するな！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "그래 걱정 마!{end}"
+      "text_kr": "그래 걱정 마！{end}"
     },
     {
       "entry_id": 263,
@@ -4233,7 +4233,7 @@
       "text_jp": "よくがんばったな　藤吉！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "잘했다 토우키치!{end}"
+      "text_kr": "잘했다 토우키치！{end}"
     },
     {
       "entry_id": 264,
@@ -4247,7 +4247,7 @@
       "text_jp": "ごくろうだったな　J！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "수고했다 제이!{end}"
+      "text_kr": "수고했다 제이！{end}"
     },
     {
       "entry_id": 265,
@@ -4261,7 +4261,7 @@
       "text_jp": "豪くんといっしょにするなでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고랑 똑같이 취급하지 말라굽쇼!{end}"
+      "text_kr": "고랑 똑같이 취급하지 말라굽쇼！{end}"
     },
     {
       "entry_id": 266,
@@ -4289,7 +4289,7 @@
       "text_jp": "まかせてくれでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "맡겨만 달라굽쇼!{end}"
+      "text_kr": "맡겨만 달라굽쇼！{end}"
     },
     {
       "entry_id": 268,
@@ -4303,7 +4303,7 @@
       "text_jp": "おうでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "옙굽쇼!{end}"
+      "text_kr": "옙굽쇼！{end}"
     },
     {
       "entry_id": 269,
@@ -4317,7 +4317,7 @@
       "text_jp": "まかせといてよ　豪くん！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "맡겨만 둬 고!{end}"
+      "text_kr": "맡겨만 둬 고！{end}"
     },
     {
       "entry_id": 270,
@@ -4331,7 +4331,7 @@
       "text_jp": "おつかれさま　烈くん！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "수고했어 레츠!{end}"
+      "text_kr": "수고했어 레츠！{end}"
     },
     {
       "entry_id": 271,
@@ -4345,7 +4345,7 @@
       "text_jp": "うん　やってみるよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "응 해볼게!{end}"
+      "text_kr": "응 해볼게！{end}"
     },
     {
       "entry_id": 272,
@@ -4359,7 +4359,7 @@
       "text_jp": "うん　まかせといて！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "응 맡겨만 둬!{end}"
+      "text_kr": "응 맡겨만 둬！{end}"
     },
     {
       "entry_id": 273,
@@ -4373,7 +4373,7 @@
       "text_jp": "カッとべ　マグナーム！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "날아가라 매그넘~!{end}"
+      "text_kr": "날아가라 매그넘〜！{end}"
     },
     {
       "entry_id": 274,
@@ -4387,7 +4387,7 @@
       "text_jp": "いけー　ソニック！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "가라~ 소닉!{end}"
+      "text_kr": "가라〜 소닉！{end}"
     },
     {
       "entry_id": 275,
@@ -4401,7 +4401,7 @@
       "text_jp": "いけっ　ネオトライダガー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "가랏 네오 트라이대거!{end}"
+      "text_kr": "가랏 네오 트라이대거！{end}"
     },
     {
       "entry_id": 276,
@@ -4415,7 +4415,7 @@
       "text_jp": "いくでゲス　スピンバイパー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "간다굽쇼 스핀 바이퍼!{end}"
+      "text_kr": "간다굽쇼 스핀 바이퍼！{end}"
     },
     {
       "entry_id": 277,
@@ -4429,7 +4429,7 @@
       "text_jp": "いくよ　エボリューション！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "간다 에볼루션!{end}"
+      "text_kr": "간다 에볼루션！{end}"
     },
     {
       "entry_id": 278,
@@ -4443,7 +4443,7 @@
       "text_jp": "いけっ　ビークスパイダー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "가랏 비크 스파이더!{end}"
+      "text_kr": "가랏 비크 스파이더！{end}"
     },
     {
       "entry_id": 279,
@@ -4457,7 +4457,7 @@
       "text_jp": "次は　第2セクションだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "다음은 제2섹션이다!{end}"
+      "text_kr": "다음은 제2섹션이다！{end}"
     },
     {
       "entry_id": 280,
@@ -4471,7 +4471,7 @@
       "text_jp": "続いて　第3セクション！{nl}もりあがっていこうぜ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "이어서 제3섹션!{nl}달아올라 보자고!{end}"
+      "text_kr": "이어서 제3섹션！{nl}달아올라 보자고！{end}"
     },
     {
       "entry_id": 281,
@@ -4485,7 +4485,7 @@
       "text_jp": "まだまだ続くぞぉ{nl}第4セクションだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "아직 멀었다구{nl}제4섹션이다!{end}"
+      "text_kr": "아직 멀었다구{nl}제4섹션이다！{end}"
     },
     {
       "entry_id": 282,
@@ -4499,7 +4499,7 @@
       "text_jp": "最後の第5セクションだ！{nl}ラストスパートしろよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "마지막 제5섹션이다!{nl}라스트 스퍼트해!{end}"
+      "text_kr": "마지막 제5섹션이다！{nl}라스트 스퍼트해！{end}"
     },
     {
       "entry_id": 283,
@@ -4527,7 +4527,7 @@
       "text_jp": "次の第3セクションがラストだ{nl}がんばれ{nl}ここがふんばりどころだぞ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "다음 제3섹션이 마지막이다{nl}힘내라{nl}여기가 버텨야 할 고비다!{end}"
+      "text_kr": "다음 제3섹션이 마지막이다{nl}힘내라{nl}여기가 버텨야 할 고비다！{end}"
     },
     {
       "entry_id": 285,
@@ -4569,7 +4569,7 @@
       "text_jp": "さあ　もりあがってきたぞぉ！{nl}次は連続コーナーがたちふさがる{nl}ワクワクの第2セクションだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "자 달아오르기 시작했다!{nl}다음은 연속 코너가 가로막는{nl}두근두근 제2섹션이다!{end}"
+      "text_kr": "자 달아오르기 시작했다！{nl}다음은 연속 코너가 가로막는{nl}두근두근 제2섹션이다！{end}"
     },
     {
       "entry_id": 288,
@@ -4583,7 +4583,7 @@
       "text_jp": "ついにオーラス！{nl}第3セクションだ{nl}ここをクリアすれば{nl}栄光のゴールは目の前だ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "드디어 마지막!{nl}제3섹션이다{nl}여기를 클리어하면{nl}영광의 골인은 눈앞이다!{end}"
+      "text_kr": "드디어 마지막！{nl}제3섹션이다{nl}여기를 클리어하면{nl}영광의 골인은 눈앞이다！{end}"
     },
     {
       "entry_id": 289,
@@ -4625,7 +4625,7 @@
       "text_jp": "レースの様子がおかしいぞ！？{nl}これは明らかにバトルレースが{nl}行なわれている！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "레이스 상황이 이상하다!?{nl}이건 명백히 배틀 레이스가{nl}벌어지고 있다!!{end}"
+      "text_kr": "레이스 상황이 이상하다！？{nl}이건 명백히 배틀 레이스가{nl}벌어지고 있다！！{end}"
     },
     {
       "entry_id": 292,
@@ -4639,7 +4639,7 @@
       "text_jp": "レッドフラッグがふられているが{nl}両チームともレースをやめない！{nl}そのままファイナルに{nl}とつにゅうだ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "레드 플래그가 내걸렸는데도{nl}양 팀 모두 레이스를 멈추지 않는다!{nl}그대로 파이널에{nl}돌입한다!!{end}"
+      "text_kr": "레드 플래그가 내걸렸는데도{nl}양 팀 모두 레이스를 멈추지 않는다！{nl}그대로 파이널에{nl}돌입한다！！{end}"
     },
     {
       "entry_id": 293,
@@ -4653,7 +4653,7 @@
       "text_jp": "ブレット{nl}「カウントダウンカット　いくぞ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "브렛{nl}「카운트다운 컷 간다!{end}"
+      "text_kr": "브렛{nl}「카운트다운 컷 간다！{end}"
     },
     {
       "entry_id": 294,
@@ -4681,7 +4681,7 @@
       "text_jp": "カイ{nl}「ジュリアナ！{nl}最後まであきらめてはだめです！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "카이{nl}「쥴리아나!{nl}끝까지 포기하면 안 돼요!{end}"
+      "text_kr": "카이{nl}「쥴리아나！{nl}끝까지 포기하면 안 돼요！{end}"
     },
     {
       "entry_id": 296,
@@ -4695,7 +4695,7 @@
       "text_jp": "ジュリアナ{nl}「はい　コーチ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "쥴리아나{nl}「네 코치!{end}"
+      "text_kr": "쥴리아나{nl}「네 코치！{end}"
     },
     {
       "entry_id": 297,
@@ -4709,7 +4709,7 @@
       "text_jp": "カイ{nl}「サリマ！　あなたの力は{nl}こんなものじゃないでしょう！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "카이{nl}「사리마! 네 힘은{nl}이 정도가 아니잖아요!{end}"
+      "text_kr": "카이{nl}「사리마！ 네 힘은{nl}이 정도가 아니잖아요！{end}"
     },
     {
       "entry_id": 298,
@@ -4723,7 +4723,7 @@
       "text_jp": "サリマ{nl}「はい　コーチ！{nl}ダッシュだ　BSゼブラ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "사리마{nl}「네 코치!{nl}대시다 BS제브라!!{end}"
+      "text_kr": "사리마{nl}「네 코치！{nl}대시다 BS제브라！！{end}"
     },
     {
       "entry_id": 299,
@@ -4737,7 +4737,7 @@
       "text_jp": "カイ{nl}「ヴィッキー！{nl}逆転を信じるんです！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "카이{nl}「비키!{nl}역전을 믿는 거예요!{end}"
+      "text_kr": "카이{nl}「비키！{nl}역전을 믿는 거예요！{end}"
     },
     {
       "entry_id": 300,
@@ -4751,7 +4751,7 @@
       "text_jp": "ヴィッキー{nl}「はい　コーチ！{nl}負けるなっ　BSゼブラ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "비키{nl}「네 코치!{nl}지지 마 BS제브라!!{end}"
+      "text_kr": "비키{nl}「네 코치！{nl}지지 마 BS제브라！！{end}"
     },
     {
       "entry_id": 301,
@@ -4765,7 +4765,7 @@
       "text_jp": "カイ{nl}「ミシェル！{nl}ここがふんばりどころですよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "카이{nl}「미셸!{nl}여기가 버텨야 할 고비예요!{end}"
+      "text_kr": "카이{nl}「미셸！{nl}여기가 버텨야 할 고비예요！{end}"
     },
     {
       "entry_id": 302,
@@ -4779,7 +4779,7 @@
       "text_jp": "ミシェル{nl}「はい　コーチ！{nl}がんばれっ　BSゼブラ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "미셸{nl}「네 코치!{nl}힘내 BS제브라!!{end}"
+      "text_kr": "미셸{nl}「네 코치！{nl}힘내 BS제브라！！{end}"
     },
     {
       "entry_id": 303,
@@ -4793,7 +4793,7 @@
       "text_jp": "カイ{nl}「クレモンティーヌ！　今です！{nl}自分の力を信じなさい！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "카이{nl}「크레몬티누! 지금이에요!{nl}자신의 힘을 믿어요!{end}"
+      "text_kr": "카이{nl}「크레몬티누！ 지금이에요！{nl}자신의 힘을 믿어요！{end}"
     },
     {
       "entry_id": 304,
@@ -4807,7 +4807,7 @@
       "text_jp": "クレモンティーヌ{nl}「はい　コーチ！{nl}いけっ　BSゼブラ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "크레몬티누{nl}「네 코치!{nl}가라 BS제브라!!{end}"
+      "text_kr": "크레몬티누{nl}「네 코치！{nl}가라 BS제브라！！{end}"
     },
     {
       "entry_id": 305,
@@ -4821,7 +4821,7 @@
       "text_jp": "いけっ　BSゼブラ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "가라 BS제브라!!{end}"
+      "text_kr": "가라 BS제브라！！{end}"
     },
     {
       "entry_id": 306,
@@ -4835,7 +4835,7 @@
       "text_jp": "ユーリ{nl}「シベリアでの特訓を{nl}思い出すんだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "유리{nl}「시베리아에서의 특훈을{nl}떠올려라!{end}"
+      "text_kr": "유리{nl}「시베리아에서의 특훈을{nl}떠올려라！{end}"
     },
     {
       "entry_id": 307,
@@ -4849,7 +4849,7 @@
       "text_jp": "四人{nl}「オー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "네 사람{nl}「오오!{end}"
+      "text_kr": "네 사람{nl}「오오！{end}"
     },
     {
       "entry_id": 308,
@@ -4863,7 +4863,7 @@
       "text_jp": "ゆけっ　オメガ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "가라 오메가!!{end}"
+      "text_kr": "가라 오메가！！{end}"
     },
     {
       "entry_id": 309,
@@ -4877,7 +4877,7 @@
       "text_jp": "リオン{nl}「やろうぜみんな！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "리온{nl}「해보자고 다들!{end}"
+      "text_kr": "리온{nl}「해보자고 다들！{end}"
     },
     {
       "entry_id": 310,
@@ -4891,7 +4891,7 @@
       "text_jp": "ガンブラスターの力を{nl}見せてやるんだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "건 블래스터의 힘을{nl}보여주는 거다!{end}"
+      "text_kr": "건 블래스터의 힘을{nl}보여주는 거다！{end}"
     },
     {
       "entry_id": 311,
@@ -4905,7 +4905,7 @@
       "text_jp": "四人{nl}「オー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "네 사람{nl}「오오!{end}"
+      "text_kr": "네 사람{nl}「오오！{end}"
     },
     {
       "entry_id": 312,
@@ -4919,7 +4919,7 @@
       "text_jp": "いけぇー！　ガンブラスター！！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "가라앗! 건 블래스터!!!{end}"
+      "text_kr": "가라앗！ 건 블래스터！！！{end}"
     },
     {
       "entry_id": 313,
@@ -4933,7 +4933,7 @@
       "text_jp": "ホワァン{nl}「みんな　いくあるよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "호왕{nl}「다들 간다구!{end}"
+      "text_kr": "호왕{nl}「다들 간다구！{end}"
     },
     {
       "entry_id": 314,
@@ -4947,7 +4947,7 @@
       "text_jp": "四人{nl}「オー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "네 사람{nl}「오오!{end}"
+      "text_kr": "네 사람{nl}「오오！{end}"
     },
     {
       "entry_id": 315,
@@ -4961,7 +4961,7 @@
       "text_jp": "昇龍乱舞ある！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "승룡난무다구!{end}"
+      "text_kr": "승룡난무다구！{end}"
     },
     {
       "entry_id": 316,
@@ -4975,7 +4975,7 @@
       "text_jp": "ディアナ{nl}「時は来た！{nl}ゆくぞビクトリーズ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "디아나{nl}「때는 왔다!{nl}가자 빅토리즈!{end}"
+      "text_kr": "디아나{nl}「때는 왔다！{nl}가자 빅토리즈！{end}"
     },
     {
       "entry_id": 317,
@@ -4989,7 +4989,7 @@
       "text_jp": "ファイナルレボリューション！！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "파이널 레볼루션!!!{end}"
+      "text_kr": "파이널 레볼루션！！！{end}"
     },
     {
       "entry_id": 318,
@@ -5003,7 +5003,7 @@
       "text_jp": "カルロ{nl}「まだだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "카를로{nl}「아직이다!{end}"
+      "text_kr": "카를로{nl}「아직이다！{end}"
     },
     {
       "entry_id": 319,
@@ -5017,7 +5017,7 @@
       "text_jp": "ルキノ{nl}「これでも　くらいな！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "루키노{nl}「이거나 먹어라!!{end}"
+      "text_kr": "루키노{nl}「이거나 먹어라！！{end}"
     },
     {
       "entry_id": 320,
@@ -5031,7 +5031,7 @@
       "text_jp": "ジュリオ{nl}「おねんねしてなさい！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "줄리오{nl}「잘 자거라!{end}"
+      "text_kr": "줄리오{nl}「잘 자거라！{end}"
     },
     {
       "entry_id": 321,
@@ -5045,7 +5045,7 @@
       "text_jp": "リオーネ{nl}「おとなしくしてな！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "리오네{nl}「얌전히 있어!{end}"
+      "text_kr": "리오네{nl}「얌전히 있어！{end}"
     },
     {
       "entry_id": 322,
@@ -5059,7 +5059,7 @@
       "text_jp": "ゾーラ{nl}「あばよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "졸라{nl}「잘 가라!{end}"
+      "text_kr": "졸라{nl}「잘 가라！{end}"
     },
     {
       "entry_id": 323,
@@ -5073,7 +5073,7 @@
       "text_jp": "いけー！！{nl}ディオスパーダ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "가라!!{nl}디오 스파다!!{end}"
+      "text_kr": "가라！！{nl}디오 스파다！！{end}"
     },
     {
       "entry_id": 324,
@@ -5087,7 +5087,7 @@
       "text_jp": "カイ{nl}「さあ　行きましょう{nl}完全なる勝利を目ざして！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "카이{nl}「자 갑시다{nl}완전한 승리를 향해!{end}"
+      "text_kr": "카이{nl}「자 갑시다{nl}완전한 승리를 향해！{end}"
     },
     {
       "entry_id": 325,
@@ -5101,7 +5101,7 @@
       "text_jp": "四人{nl}「はい！　カイコーチ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "네 사람{nl}「네! 카이 코치!!{end}"
+      "text_kr": "네 사람{nl}「네！ 카이 코치！！{end}"
     },
     {
       "entry_id": 326,
@@ -5115,7 +5115,7 @@
       "text_jp": "いけっ　ビークスパイダー！！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "가라 비크 스파이더!!!{end}"
+      "text_kr": "가라 비크 스파이더！！！{end}"
     },
     {
       "entry_id": 327,
@@ -5129,7 +5129,7 @@
       "text_jp": "ユーリ{nl}「ここで負けるわけにはいかない！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "유리{nl}「여기서 질 수는 없다!{end}"
+      "text_kr": "유리{nl}「여기서 질 수는 없다！{end}"
     },
     {
       "entry_id": 328,
@@ -5171,7 +5171,7 @@
       "text_jp": "アーム{nl}「ゆけ　シュヴァリエ・ド・ローズ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "아무{nl}「가라 슈발리에 드 로즈!!{end}"
+      "text_kr": "아무{nl}「가라 슈발리에 드 로즈！！{end}"
     },
     {
       "entry_id": 331,
@@ -5185,7 +5185,7 @@
       "text_jp": "ホワァン{nl}「しかたないある！{nl}トン　2台で昇龍乱舞ある！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "호왕{nl}「어쩔 수 없다구!{nl}톤 두 대로 승룡난무다!{end}"
+      "text_kr": "호왕{nl}「어쩔 수 없다구！{nl}톤 두 대로 승룡난무다！{end}"
     },
     {
       "entry_id": 332,
@@ -5199,7 +5199,7 @@
       "text_jp": "トン{nl}「ああ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "톤{nl}「그래!{end}"
+      "text_kr": "톤{nl}「그래！{end}"
     },
     {
       "entry_id": 333,
@@ -5213,7 +5213,7 @@
       "text_jp": "ホワァン{nl}「いっけ〜ある！！{nl}シャイニングスコーピオン！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "호왕{nl}「가랏~! {nl}샤이닝 스콜피온!!{end}"
+      "text_kr": "호왕{nl}「가랏〜！ {nl}샤이닝 스콜피온！！{end}"
     },
     {
       "entry_id": 334,
@@ -5227,7 +5227,7 @@
       "text_jp": "リオン{nl}「ここで負けるわけにはいかない！{nl}いくぞティーグル！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "리온{nl}「여기서 질 수는 없다!{nl}가자 티글!{end}"
+      "text_kr": "리온{nl}「여기서 질 수는 없다！{nl}가자 티글！{end}"
     },
     {
       "entry_id": 335,
@@ -5241,7 +5241,7 @@
       "text_jp": "ティーグル{nl}「ああ　ぶっとばそうぜリオン！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "티글{nl}「그래 날려버리자 리온!{end}"
+      "text_kr": "티글{nl}「그래 날려버리자 리온！{end}"
     },
     {
       "entry_id": 336,
@@ -5255,7 +5255,7 @@
       "text_jp": "リオン{nl}「いっけぇ！　ガンブラスター！！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "리온{nl}「가라앗! 건 블래스터!!!{end}"
+      "text_kr": "리온{nl}「가라앗！ 건 블래스터！！！{end}"
     },
     {
       "entry_id": 337,
@@ -5269,7 +5269,7 @@
       "text_jp": "ユーリ{nl}「われわれの真の力を{nl}見せてやる！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "유리{nl}「우리의 진정한 힘을{nl}보여주마!{end}"
+      "text_kr": "유리{nl}「우리의 진정한 힘을{nl}보여주마！{end}"
     },
     {
       "entry_id": 338,
@@ -5283,7 +5283,7 @@
       "text_jp": "ゆくぞ　FOX1！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "가라 FOX1!{end}"
+      "text_kr": "가라 FOX1！{end}"
     },
     {
       "entry_id": 339,
@@ -5297,7 +5297,7 @@
       "text_jp": "FOX1{nl}「了解　リーダー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "FOX1{nl}「알겠습니다 리더!{end}"
+      "text_kr": "FOX1{nl}「알겠습니다 리더！{end}"
     },
     {
       "entry_id": 340,
@@ -5311,7 +5311,7 @@
       "text_jp": "ユーリ{nl}「いけー　オメガ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "유리{nl}「가라 오메가!!{end}"
+      "text_kr": "유리{nl}「가라 오메가！！{end}"
     },
     {
       "entry_id": 341,
@@ -5325,7 +5325,7 @@
       "text_jp": "ミハエル{nl}「シュミット　ツヴァイラケーテだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "미하엘{nl}「슈미트 츠바이라케테다!{end}"
+      "text_kr": "미하엘{nl}「슈미트 츠바이라케테다！{end}"
     },
     {
       "entry_id": 342,
@@ -5353,7 +5353,7 @@
       "text_jp": "ミハエル{nl}「ツヴァイラケーテ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "미하엘{nl}「츠바이라케테!!{end}"
+      "text_kr": "미하엘{nl}「츠바이라케테！！{end}"
     },
     {
       "entry_id": 344,
@@ -5367,7 +5367,7 @@
       "text_jp": "ツヴァイラケーテ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠바이라케테!!{end}"
+      "text_kr": "츠바이라케테！！{end}"
     },
     {
       "entry_id": 345,
@@ -5423,7 +5423,7 @@
       "text_jp": "いっけー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "가랏~!{end}"
+      "text_kr": "가랏〜！{end}"
     },
     {
       "entry_id": 349,
@@ -5437,7 +5437,7 @@
       "text_jp": "そこだ　ソニック！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "거기다 소닉!{end}"
+      "text_kr": "거기다 소닉！{end}"
     },
     {
       "entry_id": 350,
@@ -5451,7 +5451,7 @@
       "text_jp": "そこだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "거기다!{end}"
+      "text_kr": "거기다！{end}"
     },
     {
       "entry_id": 351,
@@ -5465,7 +5465,7 @@
       "text_jp": "今でゲス　スピンバイパー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "지금이굽쇼 스핀 바이퍼!{end}"
+      "text_kr": "지금이굽쇼 스핀 바이퍼！{end}"
     },
     {
       "entry_id": 352,
@@ -5479,7 +5479,7 @@
       "text_jp": "いけ　エボリューション！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "가라 에볼루션!{end}"
+      "text_kr": "가라 에볼루션！{end}"
     },
     {
       "entry_id": 353,
@@ -5493,7 +5493,7 @@
       "text_jp": "かっとべ〜　ビートマグナーム！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "날아가라~ 비트 매그넘!!{end}"
+      "text_kr": "날아가라〜 비트 매그넘！！{end}"
     },
     {
       "entry_id": 354,
@@ -5507,7 +5507,7 @@
       "text_jp": "いっけー　ソニック！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "가랏~ 소닉!{end}"
+      "text_kr": "가랏〜 소닉！{end}"
     },
     {
       "entry_id": 355,
@@ -5521,7 +5521,7 @@
       "text_jp": "いけぇ　ネオトライダガー！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "가라 네오 트라이대거!!{end}"
+      "text_kr": "가라 네오 트라이대거！！{end}"
     },
     {
       "entry_id": 356,
@@ -5535,7 +5535,7 @@
       "text_jp": "いくでゲス　スピンバイパー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "간다굽쇼 스핀 바이퍼!{end}"
+      "text_kr": "간다굽쇼 스핀 바이퍼！{end}"
     },
     {
       "entry_id": 357,
@@ -5549,7 +5549,7 @@
       "text_jp": "ハイパードルフィン走行！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "하이퍼 돌핀 주행!!{end}"
+      "text_kr": "하이퍼 돌핀 주행！！{end}"
     },
     {
       "entry_id": 358,
@@ -5563,7 +5563,7 @@
       "text_jp": "マグナ〜ム　ダイナマイト！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "매그넘~ 다이너마이트!!{end}"
+      "text_kr": "매그넘〜 다이너마이트！！{end}"
     },
     {
       "entry_id": 359,
@@ -5577,7 +5577,7 @@
       "text_jp": "バスターターンだ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "버스터 턴이다!!{end}"
+      "text_kr": "버스터 턴이다！！{end}"
     },
     {
       "entry_id": 360,
@@ -5591,7 +5591,7 @@
       "text_jp": "いけぇ　ネオトライダガー！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "가라 네오 트라이대거!!{end}"
+      "text_kr": "가라 네오 트라이대거！！{end}"
     },
     {
       "entry_id": 361,
@@ -5605,7 +5605,7 @@
       "text_jp": "ライトニングドリフトでゲス！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "라이트닝 드리프트다굽쇼!!{end}"
+      "text_kr": "라이트닝 드리프트다굽쇼！！{end}"
     },
     {
       "entry_id": 362,
@@ -5619,7 +5619,7 @@
       "text_jp": "ドルフィンエフェクト発動！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "돌핀 이펙트 발동!!{end}"
+      "text_kr": "돌핀 이펙트 발동！！{end}"
     },
     {
       "entry_id": 363,
@@ -5633,7 +5633,7 @@
       "text_jp": "ファンからの熱い声援が{nl}場内をこだまする！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "팬들의 뜨거운 성원이{nl}장내에 메아리친다!!{end}"
+      "text_kr": "팬들의 뜨거운 성원이{nl}장내에 메아리친다！！{end}"
     },
     {
       "entry_id": 364,
@@ -5647,7 +5647,7 @@
       "text_jp": "サンキュー　みんな！{nl}よ〜し　いくぜマグナム！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "생큐 다들!{nl}좋~아 간다 매그넘!{end}"
+      "text_kr": "생큐 다들！{nl}좋〜아 간다 매그넘！{end}"
     },
     {
       "entry_id": 365,
@@ -5661,7 +5661,7 @@
       "text_jp": "ありがとう　みんな！{nl}さあ　いこうソニック！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고마워 다들!{nl}자 가자 소닉!{end}"
+      "text_kr": "고마워 다들！{nl}자 가자 소닉！{end}"
     },
     {
       "entry_id": 366,
@@ -5675,7 +5675,7 @@
       "text_jp": "応援ありがとうでゲス！{nl}さあ　いくでゲス！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "성원 고맙굽쇼!{nl}자 간다굽쇼!!{end}"
+      "text_kr": "성원 고맙굽쇼！{nl}자 간다굽쇼！！{end}"
     },
     {
       "entry_id": 367,
@@ -5689,7 +5689,7 @@
       "text_jp": "すまない　みんな！{nl}いけー　トライダガー！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "미안 다들!{nl}가라 트라이대거!!{end}"
+      "text_kr": "미안 다들！{nl}가라 트라이대거！！{end}"
     },
     {
       "entry_id": 368,
@@ -5703,7 +5703,7 @@
       "text_jp": "みんなありがとう！{nl}よし　パワー全開だ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "다들 고마워!{nl}좋아 파워 전개다!!{end}"
+      "text_kr": "다들 고마워！{nl}좋아 파워 전개다！！{end}"
     },
     {
       "entry_id": 369,
@@ -5717,7 +5717,7 @@
       "text_jp": "タモツ{nl}「ビクトリーズ！{nl}わしの気合を受け取れ！{nl}ファイトーッ！　ビクトリーズ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "타모츠{nl}「빅토리즈!{nl}내 기합을 받아라!{nl}파이팅! 빅토리즈!{end}"
+      "text_kr": "타모츠{nl}「빅토리즈！{nl}내 기합을 받아라！{nl}파이팅！ 빅토리즈！{end}"
     },
     {
       "entry_id": 370,
@@ -5731,7 +5731,7 @@
       "text_jp": "サンキュー　おっちゃん！{nl}気合いが入ったぜ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "생큐 아저씨!{nl}기합이 들어갔어!{end}"
+      "text_kr": "생큐 아저씨！{nl}기합이 들어갔어！{end}"
     },
     {
       "entry_id": 371,
@@ -5745,7 +5745,7 @@
       "text_jp": "ありがとう　おっちゃん！{nl}よ〜し　パワー満タンだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고마워요 아저씨!{nl}좋~아 파워 만땅이다!{end}"
+      "text_kr": "고마워요 아저씨！{nl}좋〜아 파워 만땅이다！{end}"
     },
     {
       "entry_id": 372,
@@ -5759,7 +5759,7 @@
       "text_jp": "ありがとうでゲス！{nl}力がみなぎってきたでゲス！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고맙굽쇼!{nl}힘이 넘쳐나굽쇼!!{end}"
+      "text_kr": "고맙굽쇼！{nl}힘이 넘쳐나굽쇼！！{end}"
     },
     {
       "entry_id": 373,
@@ -5773,7 +5773,7 @@
       "text_jp": "ありがとうございます！{nl}いくぞ　トライダガー！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "감사합니다!{nl}가자 트라이대거!!{end}"
+      "text_kr": "감사합니다！{nl}가자 트라이대거！！{end}"
     },
     {
       "entry_id": 374,
@@ -5787,7 +5787,7 @@
       "text_jp": "ありがとうございます！{nl}がんばろう　エボリューション！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "감사합니다!{nl}힘내자 에볼루션!{end}"
+      "text_kr": "감사합니다！{nl}힘내자 에볼루션！{end}"
     },
     {
       "entry_id": 375,
@@ -5801,7 +5801,7 @@
       "text_jp": "校長先生{nl}「ビクトリーズ！{nl}ワシがついとるぞー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "교장 선생님{nl}「빅토리즈!{nl}내가 지켜보고 있다!{end}"
+      "text_kr": "교장 선생님{nl}「빅토리즈！{nl}내가 지켜보고 있다！{end}"
     },
     {
       "entry_id": 376,
@@ -5815,7 +5815,7 @@
       "text_jp": "校長！　うおお！{nl}負けられねぇぞ！　みんな！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "교장 선생님! 우오오!{nl}질 수 없어! 다들!{end}"
+      "text_kr": "교장 선생님！ 우오오！{nl}질 수 없어！ 다들！{end}"
     },
     {
       "entry_id": 377,
@@ -5829,7 +5829,7 @@
       "text_jp": "校長先生　来てくれたんですね！{nl}よ〜し　みんないくぞ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "교장 선생님 와 주셨군요!{nl}좋~아 다들 간다!!{end}"
+      "text_kr": "교장 선생님 와 주셨군요！{nl}좋〜아 다들 간다！！{end}"
     },
     {
       "entry_id": 378,
@@ -5843,7 +5843,7 @@
       "text_jp": "おうでゲス！{nl}ワテの走りをみるでゲス！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "옙굽쇼!{nl}제 주행을 보시라굽쇼!!{end}"
+      "text_kr": "옙굽쇼！{nl}제 주행을 보시라굽쇼！！{end}"
     },
     {
       "entry_id": 379,
@@ -5857,7 +5857,7 @@
       "text_jp": "フッ{nl}必ず勝ってみせますよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "흥{nl}반드시 이겨 보이죠!{end}"
+      "text_kr": "흥{nl}반드시 이겨 보이죠！{end}"
     },
     {
       "entry_id": 380,
@@ -5871,7 +5871,7 @@
       "text_jp": "フフッ{nl}よ〜し　みんながんばろう！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "후훗{nl}좋~아 다들 힘내자!{end}"
+      "text_kr": "후훗{nl}좋〜아 다들 힘내자！{end}"
     },
     {
       "entry_id": 381,
@@ -5885,7 +5885,7 @@
       "text_jp": "黒沢{nl}「なに　チンタラやってんだよ！{nl}こんな相手{nl}さっさとブッちぎれ〜！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "쿠로사와{nl}「뭘 꾸물대는 거야!{nl}이런 상대{nl}얼른 따돌려버려~!!{end}"
+      "text_kr": "쿠로사와{nl}「뭘 꾸물대는 거야！{nl}이런 상대{nl}얼른 따돌려버려〜！！{end}"
     },
     {
       "entry_id": 382,
@@ -5899,7 +5899,7 @@
       "text_jp": "ああ！　いわれなくても{nl}ブッちぎってやるぜ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "그래! 말 안 해도{nl}따돌려주마!!{end}"
+      "text_kr": "그래！ 말 안 해도{nl}따돌려주마！！{end}"
     },
     {
       "entry_id": 383,
@@ -5913,7 +5913,7 @@
       "text_jp": "黒沢くん！{nl}よ〜し　いこうソニック！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "쿠로사와!{nl}좋~아 가자 소닉!{end}"
+      "text_kr": "쿠로사와！{nl}좋〜아 가자 소닉！{end}"
     },
     {
       "entry_id": 384,
@@ -5927,7 +5927,7 @@
       "text_jp": "おう　ブッちぎるでゲス{nl}スピンバイパー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "그래 따돌린다굽쇼{nl}스핀 바이퍼!{end}"
+      "text_kr": "그래 따돌린다굽쇼{nl}스핀 바이퍼！{end}"
     },
     {
       "entry_id": 385,
@@ -5941,7 +5941,7 @@
       "text_jp": "ああ！{nl}いくぞ　ネオトライダガー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "그래!{nl}가자 네오 트라이대거!{end}"
+      "text_kr": "그래！{nl}가자 네오 트라이대거！{end}"
     },
     {
       "entry_id": 386,
@@ -5955,7 +5955,7 @@
       "text_jp": "うん　がんばるよ黒沢くん！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "응 힘낼게 쿠로사와!{end}"
+      "text_kr": "응 힘낼게 쿠로사와！{end}"
     },
     {
       "entry_id": 387,
@@ -5969,7 +5969,7 @@
       "text_jp": "改造{nl}「烈！　豪！{nl}藤吉君！　J君！　リョウ君！{nl}ヤマトダマシイを見せてやれ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "카이조우{nl}「레츠! 고!{nl}토우키치! 제이! 료!{nl}투혼을 보여줘라!{end}"
+      "text_kr": "카이조우{nl}「레츠！ 고！{nl}토우키치！ 제이！ 료！{nl}투혼을 보여줘라！{end}"
     },
     {
       "entry_id": 388,
@@ -5983,7 +5983,7 @@
       "text_jp": "サンキュー　とうちゃん！！{nl}パワー全開だぜ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "생큐 아빠!!{nl}파워 전개다!{end}"
+      "text_kr": "생큐 아빠！！{nl}파워 전개다！{end}"
     },
     {
       "entry_id": 389,
@@ -5997,7 +5997,7 @@
       "text_jp": "とうさん　ありがとう！！{nl}よ〜し　パワー満タンだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "아버지 고마워요!!{nl}좋~아 파워 만땅이다!{end}"
+      "text_kr": "아버지 고마워요！！{nl}좋〜아 파워 만땅이다！{end}"
     },
     {
       "entry_id": 390,
@@ -6011,7 +6011,7 @@
       "text_jp": "ありがとうでゲス！{nl}気合いが入ったでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고맙굽쇼!{nl}기합이 들어갔굽쇼!{end}"
+      "text_kr": "고맙굽쇼！{nl}기합이 들어갔굽쇼！{end}"
     },
     {
       "entry_id": 391,
@@ -6025,7 +6025,7 @@
       "text_jp": "フッ{nl}パワーがみなぎってきたぜ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "흥{nl}파워가 넘쳐난다!{end}"
+      "text_kr": "흥{nl}파워가 넘쳐난다！{end}"
     },
     {
       "entry_id": 392,
@@ -6039,7 +6039,7 @@
       "text_jp": "フフッ{nl}勇気がわいてきたよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "후훗{nl}용기가 솟아난다!{end}"
+      "text_kr": "후훗{nl}용기가 솟아난다！{end}"
     },
     {
       "entry_id": 393,
@@ -6053,7 +6053,7 @@
       "text_jp": "鉄心{nl}「今じゃ！　ギャルども！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "텟신{nl}「지금이다! 아가씨들!!{end}"
+      "text_kr": "텟신{nl}「지금이다！ 아가씨들！！{end}"
     },
     {
       "entry_id": 394,
@@ -6067,7 +6067,7 @@
       "text_jp": "ギャルたち{nl}「キャー！　レ・ヴァンクール！！{nl}がんばってぇ〜！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "아가씨들{nl}「꺄~! 레 방쿠르!!{nl}힘내요~!{end}"
+      "text_kr": "아가씨들{nl}「꺄〜！ 레 방쿠르！！{nl}힘내요〜！{end}"
     },
     {
       "entry_id": 395,
@@ -6081,7 +6081,7 @@
       "text_jp": "鉄心{nl}「ディ〜ア〜ナ〜ちゅわ〜ん！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "텟신{nl}「디~아~나~쨩!!{end}"
+      "text_kr": "텟신{nl}「디〜아〜나〜쨩！！{end}"
     },
     {
       "entry_id": 396,
@@ -6095,7 +6095,7 @@
       "text_jp": "あのじじぃ〜！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "저 영감탱이~!{end}"
+      "text_kr": "저 영감탱이〜！{end}"
     },
     {
       "entry_id": 397,
@@ -6109,7 +6109,7 @@
       "text_jp": "ん？　マグナムの様子が{nl}おかしいぞ！？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "응? 매그넘 상태가{nl}이상한데!?{end}"
+      "text_kr": "응？ 매그넘 상태가{nl}이상한데！？{end}"
     },
     {
       "entry_id": 398,
@@ -6137,7 +6137,7 @@
       "text_jp": "あれ！？　ソニックの様子が{nl}おかしいぞ！？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "어라!? 소닉 상태가{nl}이상한데!?{end}"
+      "text_kr": "어라！？ 소닉 상태가{nl}이상한데！？{end}"
     },
     {
       "entry_id": 400,
@@ -6151,7 +6151,7 @@
       "text_jp": "と　とんでもないじいさんでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "터 터무니없는 영감이굽쇼!{end}"
+      "text_kr": "터 터무니없는 영감이굽쇼！{end}"
     },
     {
       "entry_id": 401,
@@ -6165,7 +6165,7 @@
       "text_jp": "おや？{nl}スピンバイパー！？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "어라?{nl}스핀 바이퍼!?{end}"
+      "text_kr": "어라？{nl}스핀 바이퍼！？{end}"
     },
     {
       "entry_id": 402,
@@ -6193,7 +6193,7 @@
       "text_jp": "ん？　トライダガーの{nl}様子がおかしい！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "응? 트라이대거{nl}상태가 이상해!{end}"
+      "text_kr": "응？ 트라이대거{nl}상태가 이상해！{end}"
     },
     {
       "entry_id": 404,
@@ -6221,7 +6221,7 @@
       "text_jp": "あれ？　どうしたエボリューション！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "어라? 왜 그래 에볼루션!{end}"
+      "text_kr": "어라？ 왜 그래 에볼루션！{end}"
     },
     {
       "entry_id": 406,
@@ -6235,7 +6235,7 @@
       "text_jp": "チイコ{nl}「烈さまぁ〜{nl}愛してますわぁ〜！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "치이코{nl}「레츠 님~{nl}사랑해요~!!{end}"
+      "text_kr": "치이코{nl}「레츠 님〜{nl}사랑해요〜！！{end}"
     },
     {
       "entry_id": 407,
@@ -6249,7 +6249,7 @@
       "text_jp": "烈人形1{nl}「チイコチャン　スキダ！{nl}チイコチャン　スキダ！{nl}チイコチャン　スキダ♥{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "레츠 인형1{nl}「치이코쨩 좋아해!{nl}치이코쨩 좋아해!{nl}치이코쨩 좋아해♥{end}"
+      "text_kr": "레츠 인형1{nl}「치이코쨩 좋아해！{nl}치이코쨩 좋아해！{nl}치이코쨩 좋아해♥{end}"
     },
     {
       "entry_id": 408,
@@ -6263,7 +6263,7 @@
       "text_jp": "烈人形2{nl}「チイコチャン　スキダ！{nl}チイコチャン　スキダ！{nl}チイコチャン　スキダ♥{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "레츠 인형2{nl}「치이코쨩 좋아해!{nl}치이코쨩 좋아해!{nl}치이코쨩 좋아해♥{end}"
+      "text_kr": "레츠 인형2{nl}「치이코쨩 좋아해！{nl}치이코쨩 좋아해！{nl}치이코쨩 좋아해♥{end}"
     },
     {
       "entry_id": 409,
@@ -6277,7 +6277,7 @@
       "text_jp": "お！　烈兄貴人形の声に{nl}マグナムが反応している！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "오! 레츠 형 인형 소리에{nl}매그넘이 반응하고 있어!{end}"
+      "text_kr": "오！ 레츠 형 인형 소리에{nl}매그넘이 반응하고 있어！{end}"
     },
     {
       "entry_id": 410,
@@ -6291,7 +6291,7 @@
       "text_jp": "あれ？　ロボットの声に{nl}ソニックが反応している！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "어라? 로봇 소리에{nl}소닉이 반응하고 있어!{end}"
+      "text_kr": "어라？ 로봇 소리에{nl}소닉이 반응하고 있어！{end}"
     },
     {
       "entry_id": 411,
@@ -6305,7 +6305,7 @@
       "text_jp": "ん？　烈くん人形の声に{nl}スピンバイパーが！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "응? 레츠 인형 소리에{nl}스핀 바이퍼가!{end}"
+      "text_kr": "응？ 레츠 인형 소리에{nl}스핀 바이퍼가！{end}"
     },
     {
       "entry_id": 412,
@@ -6319,7 +6319,7 @@
       "text_jp": "ん？　烈人形の声に{nl}トライダガーが反応している！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "응? 레츠 인형 소리에{nl}트라이대거가 반응하고 있어!{end}"
+      "text_kr": "응？ 레츠 인형 소리에{nl}트라이대거가 반응하고 있어！{end}"
     },
     {
       "entry_id": 413,
@@ -6333,7 +6333,7 @@
       "text_jp": "あれ？　烈くん人形の声に{nl}エボリューションが反応してる！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "어라? 레츠 형 인형 소리에{nl}에볼루션이 반응하고 있어!{end}"
+      "text_kr": "어라？ 레츠 형 인형 소리에{nl}에볼루션이 반응하고 있어！{end}"
     },
     {
       "entry_id": 414,
@@ -6347,7 +6347,7 @@
       "text_jp": "校長先生{nl}「ビクトリーズ！{nl}ワシのハダカおどりを{nl}見るのじゃ〜！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "교장 선생님{nl}「빅토리즈!{nl}내 알몸 댄스를{nl}보아라~!!{end}"
+      "text_kr": "교장 선생님{nl}「빅토리즈！{nl}내 알몸 댄스를{nl}보아라〜！！{end}"
     },
     {
       "entry_id": 415,
@@ -6361,7 +6361,7 @@
       "text_jp": "す　すげえ…{nl}本当にやりやがったぜ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "저 저 대단해…{nl}정말로 해버렸어!{end}"
+      "text_kr": "저 저 대단해…{nl}정말로 해버렸어！{end}"
     },
     {
       "entry_id": 416,
@@ -6389,7 +6389,7 @@
       "text_jp": "うわぁ〜{nl}本当にやってるでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "우와~{nl}정말 하고 있굽쇼!{end}"
+      "text_kr": "우와〜{nl}정말 하고 있굽쇼！{end}"
     },
     {
       "entry_id": 418,
@@ -6431,7 +6431,7 @@
       "text_jp": "良江{nl}「ビクトリーズ！　こんなところで{nl}負けるんじゃないわよー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "요시에{nl}「빅토리즈! 이런 데서{nl}지면 안 된다~!{end}"
+      "text_kr": "요시에{nl}「빅토리즈！ 이런 데서{nl}지면 안 된다〜！{end}"
     },
     {
       "entry_id": 421,
@@ -6445,7 +6445,7 @@
       "text_jp": "わかってらぁ！　かあちゃん！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "알고 있다구! 엄마!!{end}"
+      "text_kr": "알고 있다구！ 엄마！！{end}"
     },
     {
       "entry_id": 422,
@@ -6459,7 +6459,7 @@
       "text_jp": "かあさん！　ありがとう！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "어머니! 고마워요!!{end}"
+      "text_kr": "어머니！ 고마워요！！{end}"
     },
     {
       "entry_id": 423,
@@ -6473,7 +6473,7 @@
       "text_jp": "ありがとうでゲス！{nl}そのパワーいただきでゲス！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고맙굽쇼!{nl}그 파워 받아가굽쇼!!{end}"
+      "text_kr": "고맙굽쇼！{nl}그 파워 받아가굽쇼！！{end}"
     },
     {
       "entry_id": 424,
@@ -6487,7 +6487,7 @@
       "text_jp": "フッ　負けられないな{nl}トライダガー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "흥 질 수 없지{nl}트라이대거!{end}"
+      "text_kr": "흥 질 수 없지{nl}트라이대거！{end}"
     },
     {
       "entry_id": 425,
@@ -6501,7 +6501,7 @@
       "text_jp": "ありがとう！！{nl}がんばります！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고마워요!!{nl}힘낼게요!{end}"
+      "text_kr": "고마워요！！{nl}힘낼게요！{end}"
     },
     {
       "entry_id": 426,
@@ -6515,7 +6515,7 @@
       "text_jp": "まこと{nl}「ビクトリーズ！{nl}聞いてください！！{nl}この会場のファンの声を！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "마코토{nl}「빅토리즈!{nl}들어주세요!!{nl}이 경기장 팬들의 목소리를!!{end}"
+      "text_kr": "마코토{nl}「빅토리즈！{nl}들어주세요！！{nl}이 경기장 팬들의 목소리를！！{end}"
     },
     {
       "entry_id": 427,
@@ -6529,7 +6529,7 @@
       "text_jp": "なんだか元気がでてきたぜ！{nl}いっけー　マグナ〜ム！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "왠지 힘이 솟아나!{nl}가랏~ 매그넘~!!{end}"
+      "text_kr": "왠지 힘이 솟아나！{nl}가랏〜 매그넘〜！！{end}"
     },
     {
       "entry_id": 428,
@@ -6543,7 +6543,7 @@
       "text_jp": "みんなありがとう！{nl}いこうソニック！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "다들 고마워!{nl}가자 소닉!{end}"
+      "text_kr": "다들 고마워！{nl}가자 소닉！{end}"
     },
     {
       "entry_id": 429,
@@ -6557,7 +6557,7 @@
       "text_jp": "ありがとうでゲス！{nl}負けられないでゲスよ{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고맙굽쇼!{nl}질 수 없굽쇼{end}"
+      "text_kr": "고맙굽쇼！{nl}질 수 없굽쇼{end}"
     },
     {
       "entry_id": 430,
@@ -6571,7 +6571,7 @@
       "text_jp": "みててくれ！{nl}必ず勝ってみせる！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "지켜봐 줘!{nl}반드시 이겨 보이겠어!{end}"
+      "text_kr": "지켜봐 줘！{nl}반드시 이겨 보이겠어！{end}"
     },
     {
       "entry_id": 431,
@@ -6585,7 +6585,7 @@
       "text_jp": "そうだねみんな！{nl}負けるわけにはいかないよね！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "그래 다들!{nl}질 수는 없지!{end}"
+      "text_kr": "그래 다들！{nl}질 수는 없지！{end}"
     },
     {
       "entry_id": 432,
@@ -6599,7 +6599,7 @@
       "text_jp": "（全員のマシンが爆走！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "（전원의 머신이 폭주!）{end}"
+      "text_kr": "（전원의 머신이 폭주！）{end}"
     },
     {
       "entry_id": 433,
@@ -6613,7 +6613,7 @@
       "text_jp": "（マシンの爆走ポイント回復！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "（머신의 폭주 포인트 회복!）{end}"
+      "text_kr": "（머신의 폭주 포인트 회복！）{end}"
     },
     {
       "entry_id": 434,
@@ -6627,7 +6627,7 @@
       "text_jp": "（全員のマシンの{nl}コーナリング性能が上がった！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "（전원 머신의{nl}코너링 성능이 올랐다!）{end}"
+      "text_kr": "（전원 머신의{nl}코너링 성능이 올랐다！）{end}"
     },
     {
       "entry_id": 435,
@@ -6641,7 +6641,7 @@
       "text_jp": "（全員のマシンが爆走！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "（전원의 머신이 폭주!）{end}"
+      "text_kr": "（전원의 머신이 폭주！）{end}"
     },
     {
       "entry_id": 436,
@@ -6655,7 +6655,7 @@
       "text_jp": "（全員のマシンの爆走ポイント回復！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "（전원 머신의 폭주 포인트 회복!）{end}"
+      "text_kr": "（전원 머신의 폭주 포인트 회복！）{end}"
     },
     {
       "entry_id": 437,
@@ -6669,7 +6669,7 @@
       "text_jp": "（マシンのコーナリング性能ダウン{nl}スピード性能アップ！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "（머신의 코너링 성능 다운{nl}스피드 성능 업!）{end}"
+      "text_kr": "（머신의 코너링 성능 다운{nl}스피드 성능 업！）{end}"
     },
     {
       "entry_id": 438,
@@ -6683,7 +6683,7 @@
       "text_jp": "（全員のマシンのダメージ回復！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "（전원 머신의 데미지 회복!）{end}"
+      "text_kr": "（전원 머신의 데미지 회복！）{end}"
     },
     {
       "entry_id": 439,
@@ -6697,7 +6697,7 @@
       "text_jp": "（マシンのGPチップのレベルアップ！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "（머신의 GP칩 레벨 업!）{end}"
+      "text_kr": "（머신의 GP칩 레벨 업！）{end}"
     },
     {
       "entry_id": 440,
@@ -6711,7 +6711,7 @@
       "text_jp": "（マシンのコーナリング性能アップ！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "（머신의 코너링 성능 업!）{end}"
+      "text_kr": "（머신의 코너링 성능 업！）{end}"
     },
     {
       "entry_id": 441,
@@ -6725,7 +6725,7 @@
       "text_jp": "（全員のマシンのダメージと{nl}爆走ポイント回復！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "（전원 머신의 데미지와{nl}폭주 포인트 회복!）{end}"
+      "text_kr": "（전원 머신의 데미지와{nl}폭주 포인트 회복！）{end}"
     },
     {
       "entry_id": 442,
@@ -6739,7 +6739,7 @@
       "text_jp": "ブレット{nl}「なに！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "브렛{nl}「뭐라고!!{end}"
+      "text_kr": "브렛{nl}「뭐라고！！{end}"
     },
     {
       "entry_id": 443,
@@ -6753,7 +6753,7 @@
       "text_jp": "「豪！　起きろ〜！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "「고! 일어나~!{end}"
+      "text_kr": "「고！ 일어나〜！{end}"
     },
     {
       "entry_id": 444,
@@ -6795,7 +6795,7 @@
       "text_jp": "『爆走ポイントを使って爆走だ！{nl}　　　（Bボタンで爆走）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "『폭주 포인트를 써서 폭주다!{nl}　　　（B버튼으로 폭주）{end}"
+      "text_kr": "『폭주 포인트를 써서 폭주다！{nl}　　　（B버튼으로 폭주）{end}"
     },
     {
       "entry_id": 447,
@@ -6851,7 +6851,7 @@
       "text_jp": "『Bボタンは必殺技！{nl}でもWGP本番までのお楽しみ{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "『B버튼은 필살기!{nl}하지만 WGP 본선까지 기대해{end}"
+      "text_kr": "『B버튼은 필살기！{nl}하지만 WGP 본선까지 기대해{end}"
     },
     {
       "entry_id": 451,
@@ -6865,7 +6865,7 @@
       "text_jp": "『Aボタンは爆走ポイント回復！{nl}たくさん回復させよう！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "『A버튼은 폭주 포인트 회복!{nl}많이 회복시키자!{end}"
+      "text_kr": "『A버튼은 폭주 포인트 회복！{nl}많이 회복시키자！{end}"
     },
     {
       "entry_id": 452,
@@ -6879,7 +6879,7 @@
       "text_jp": "『爆走ゲージがてんめつすると{nl}必殺技準備OK！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "『폭주 게이지가 점멸하면{nl}필살기 준비 OK!{end}"
+      "text_kr": "『폭주 게이지가 점멸하면{nl}필살기 준비 OK！{end}"
     },
     {
       "entry_id": 453,
@@ -6893,7 +6893,7 @@
       "text_jp": "『Xボタンでフォーメーションマシン{nl}チェンジ！（今は使えない）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "『X버튼으로 포메이션 머신{nl}체인지!（지금은 못 써）{end}"
+      "text_kr": "『X버튼으로 포메이션 머신{nl}체인지！（지금은 못 써）{end}"
     },
     {
       "entry_id": 454,
@@ -6907,7 +6907,7 @@
       "text_jp": "『Yボタンでチーム爆走！{nl}みんなで爆走しよう！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "『Y버튼으로 팀 폭주!{nl}다 같이 폭주하자!{end}"
+      "text_kr": "『Y버튼으로 팀 폭주！{nl}다 같이 폭주하자！{end}"
     },
     {
       "entry_id": 455,
@@ -6921,7 +6921,7 @@
       "text_jp": "『Lボタンでドライバーチェンジ！{nl}　　　（ひとり前のドライバーへ）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "『L버튼으로 드라이버 체인지!{nl}　　　（한 명 앞 드라이버로）{end}"
+      "text_kr": "『L버튼으로 드라이버 체인지！{nl}　　　（한 명 앞 드라이버로）{end}"
     },
     {
       "entry_id": 456,
@@ -6935,7 +6935,7 @@
       "text_jp": "『Rボタンでドライバーチェンジ！{nl}　　　（次のドライバーへ）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "『R버튼으로 드라이버 체인지!{nl}　　　（다음 드라이버로）{end}"
+      "text_kr": "『R버튼으로 드라이버 체인지！{nl}　　　（다음 드라이버로）{end}"
     },
     {
       "entry_id": 457,
@@ -6963,7 +6963,7 @@
       "text_jp": "土屋博士{nl}「爆走しないで勝てるほど{nl}レースはあまくないぞ！{nl}（Bボタンで爆走）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「폭주 없이 이길 만큼{nl}레이스는 만만치 않아!{nl}（B버튼으로 폭주）{end}"
+      "text_kr": "츠치야 박사{nl}「폭주 없이 이길 만큼{nl}레이스는 만만치 않아！{nl}（B버튼으로 폭주）{end}"
     },
     {
       "entry_id": 459,
@@ -6977,7 +6977,7 @@
       "text_jp": "土屋博士{nl}「爆走ポイントを{nl}回復させているかい？{nl}（AボタンでBP回復）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「폭주 포인트를{nl}회복시키고 있나?{nl}（A버튼으로 BP 회복）{end}"
+      "text_kr": "츠치야 박사{nl}「폭주 포인트를{nl}회복시키고 있나？{nl}（A버튼으로 BP 회복）{end}"
     },
     {
       "entry_id": 460,
@@ -6991,7 +6991,7 @@
       "text_jp": "土屋博士{nl}「ドライバーチェンジしてるかい？{nl}　　　　（LRボタン）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「드라이버 체인지 하고 있나?{nl}　　　　（LR버튼）{end}"
+      "text_kr": "츠치야 박사{nl}「드라이버 체인지 하고 있나？{nl}　　　　（LR버튼）{end}"
     },
     {
       "entry_id": 461,
@@ -7019,7 +7019,7 @@
       "text_jp": "豪{nl}「そんな都合のいいこと{nl}あるわけないだろ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고{nl}「그런 편리한 게{nl}있을 리 없잖아!{end}"
+      "text_kr": "고{nl}「그런 편리한 게{nl}있을 리 없잖아！{end}"
     },
     {
       "entry_id": 463,
@@ -7033,7 +7033,7 @@
       "text_jp": "烈{nl}「豪！　そろそろ起きてくれよ！{nl}　　（STARTボタンでおわる）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "레츠{nl}「고! 슬슬 좀 일어나 줘!{nl}　　（START 버튼으로 종료）{end}"
+      "text_kr": "레츠{nl}「고！ 슬슬 좀 일어나 줘！{nl}　　（START 버튼으로 종료）{end}"
     },
     {
       "entry_id": 464,
@@ -7047,7 +7047,7 @@
       "text_jp": "土屋博士{nl}「いろいろな機能を確かめるんだ！{nl}WGPではいっしゅんのはんだん{nl}ミスが勝敗を分けるからね{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「여러 기능을 확인해 두는 거다!{nl}WGP에선 한순간의 판단{nl}미스가 승패를 가르니까{end}"
+      "text_kr": "츠치야 박사{nl}「여러 기능을 확인해 두는 거다！{nl}WGP에선 한순간의 판단{nl}미스가 승패를 가르니까{end}"
     },
     {
       "entry_id": 465,
@@ -7061,7 +7061,7 @@
       "text_jp": "土屋博士{nl}「Bボタンで爆走！{nl}フォーメーション中は使えない{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「B버튼으로 폭주!{nl}포메이션 중엔 못 쓴다{end}"
+      "text_kr": "츠치야 박사{nl}「B버튼으로 폭주！{nl}포메이션 중엔 못 쓴다{end}"
     },
     {
       "entry_id": 466,
@@ -7075,7 +7075,7 @@
       "text_jp": "土屋博士{nl}「Bボタンは必殺技！{nl}WGP本番で1度だけ使用可能{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「B버튼은 필살기!{nl}WGP 본선에서 딱 한 번 사용 가능{end}"
+      "text_kr": "츠치야 박사{nl}「B버튼은 필살기！{nl}WGP 본선에서 딱 한 번 사용 가능{end}"
     },
     {
       "entry_id": 467,
@@ -7089,7 +7089,7 @@
       "text_jp": "土屋博士{nl}「Aボタンでマシンチェンジ！{nl}　　　　（次のマシンへ）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「A버튼으로 머신 체인지!{nl}　　　　（다음 머신으로）{end}"
+      "text_kr": "츠치야 박사{nl}「A버튼으로 머신 체인지！{nl}　　　　（다음 머신으로）{end}"
     },
     {
       "entry_id": 468,
@@ -7103,7 +7103,7 @@
       "text_jp": "土屋博士{nl}「Xボタンでマシンチェンジ！{nl}　　　　（一つ前のマシンへ）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「X버튼으로 머신 체인지!{nl}　　　　（한 대 앞 머신으로）{end}"
+      "text_kr": "츠치야 박사{nl}「X버튼으로 머신 체인지！{nl}　　　　（한 대 앞 머신으로）{end}"
     },
     {
       "entry_id": 469,
@@ -7117,7 +7117,7 @@
       "text_jp": "土屋博士{nl}「Yボタンでレースアイテム使用！{nl}風輪町の仲間が応援してくれる！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「Y버튼으로 레이스 아이템 사용!{nl}풍륜동 동료들이 응원해 준다!{end}"
+      "text_kr": "츠치야 박사{nl}「Y버튼으로 레이스 아이템 사용！{nl}풍륜동 동료들이 응원해 준다！{end}"
     },
     {
       "entry_id": 470,
@@ -7131,7 +7131,7 @@
       "text_jp": "土屋博士{nl}「Yボタンでレースアイテム使用！{nl}このWGPでは使えないぞ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「Y버튼으로 레이스 아이템 사용!{nl}이번 WGP에선 못 쓴다!{end}"
+      "text_kr": "츠치야 박사{nl}「Y버튼으로 레이스 아이템 사용！{nl}이번 WGP에선 못 쓴다！{end}"
     },
     {
       "entry_id": 471,
@@ -7145,7 +7145,7 @@
       "text_jp": "土屋博士{nl}「Lボタンでグループチェンジ！{nl}　　　　（一つ前のグループへ）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「L버튼으로 그룹 체인지!{nl}　　　　（한 그룹 앞으로）{end}"
+      "text_kr": "츠치야 박사{nl}「L버튼으로 그룹 체인지！{nl}　　　　（한 그룹 앞으로）{end}"
     },
     {
       "entry_id": 472,
@@ -7159,7 +7159,7 @@
       "text_jp": "土屋博士{nl}「Lボタンでグループチェンジ！{nl}　　　　（一つ前のグループへ）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「L버튼으로 그룹 체인지!{nl}　　　　（한 그룹 앞으로）{end}"
+      "text_kr": "츠치야 박사{nl}「L버튼으로 그룹 체인지！{nl}　　　　（한 그룹 앞으로）{end}"
     },
     {
       "entry_id": 473,
@@ -7173,7 +7173,7 @@
       "text_jp": "土屋博士{nl}「Rボタンでグループチェンジ！{nl}　　　　（次のグループへ）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「R버튼으로 그룹 체인지!{nl}　　　　（다음 그룹으로）{end}"
+      "text_kr": "츠치야 박사{nl}「R버튼으로 그룹 체인지！{nl}　　　　（다음 그룹으로）{end}"
     },
     {
       "entry_id": 474,
@@ -7187,7 +7187,7 @@
       "text_jp": "土屋博士{nl}「Rボタンでグループチェンジ！{nl}　　　　（次のグループへ）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「R버튼으로 그룹 체인지!{nl}　　　　（다음 그룹으로）{end}"
+      "text_kr": "츠치야 박사{nl}「R버튼으로 그룹 체인지！{nl}　　　　（다음 그룹으로）{end}"
     },
     {
       "entry_id": 475,
@@ -7201,7 +7201,7 @@
       "text_jp": "土屋博士{nl}「コーナー直前だ！　Aボタンで{nl}コーナリングマシンを前に出し{nl}フォーメーションを引っぱれ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「코너 직전이다! A버튼으로{nl}코너링 머신을 앞에 내세워{nl}포메이션을 끌어라!{end}"
+      "text_kr": "츠치야 박사{nl}「코너 직전이다！ A버튼으로{nl}코너링 머신을 앞에 내세워{nl}포메이션을 끌어라！{end}"
     },
     {
       "entry_id": 476,
@@ -7215,7 +7215,7 @@
       "text_jp": "土屋博士{nl}「今度は直線だ！{nl}高速マシンで{nl}フォーメーションを引っぱれ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「이번엔 직선이다!{nl}고속 머신으로{nl}포메이션을 끌어라!{end}"
+      "text_kr": "츠치야 박사{nl}「이번엔 직선이다！{nl}고속 머신으로{nl}포메이션을 끌어라！{end}"
     },
     {
       "entry_id": 477,
@@ -7243,7 +7243,7 @@
       "text_jp": "土屋博士{nl}「フォーメーションを組んでいない{nl}マシンなら爆走も必殺技も{nl}出せる　　（Bボタンで爆走！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「포메이션을 짜지 않은{nl}머신이면 폭주도 필살기도{nl}낼 수 있다　（B버튼으로 폭주!）{end}"
+      "text_kr": "츠치야 박사{nl}「포메이션을 짜지 않은{nl}머신이면 폭주도 필살기도{nl}낼 수 있다　（B버튼으로 폭주！）{end}"
     },
     {
       "entry_id": 479,
@@ -7271,7 +7271,7 @@
       "text_jp": "土屋博士{nl}「マシンは切りかえているかい？{nl}　　　（Aボタンで次のマシン）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「머신은 바꿔 주고 있나?{nl}　　　（A버튼으로 다음 머신）{end}"
+      "text_kr": "츠치야 박사{nl}「머신은 바꿔 주고 있나？{nl}　　　（A버튼으로 다음 머신）{end}"
     },
     {
       "entry_id": 481,
@@ -7285,7 +7285,7 @@
       "text_jp": "土屋博士{nl}「爆走ポイントを回復して{nl}いるかい？{nl}　　　（Aボタンで回復！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「폭주 포인트를 회복하고{nl}있나?{nl}　　　（A버튼으로 회복!）{end}"
+      "text_kr": "츠치야 박사{nl}「폭주 포인트를 회복하고{nl}있나？{nl}　　　（A버튼으로 회복！）{end}"
     },
     {
       "entry_id": 482,
@@ -7299,7 +7299,7 @@
       "text_jp": "土屋博士{nl}「グループチェンジを{nl}うまく活用するんだ！{nl}　（L／Rでグループチェンジ）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「그룹 체인지를{nl}잘 활용하는 거다!{nl}　（L／R로 그룹 체인지）{end}"
+      "text_kr": "츠치야 박사{nl}「그룹 체인지를{nl}잘 활용하는 거다！{nl}　（L／R로 그룹 체인지）{end}"
     },
     {
       "entry_id": 483,
@@ -7313,7 +7313,7 @@
       "text_jp": "土屋博士{nl}「マシンは切りかえているかい？{nl}　　　（Xボタンで一つ前のマシン）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「머신은 바꿔 주고 있나?{nl}　　　（X버튼으로 한 대 앞 머신）{end}"
+      "text_kr": "츠치야 박사{nl}「머신은 바꿔 주고 있나？{nl}　　　（X버튼으로 한 대 앞 머신）{end}"
     },
     {
       "entry_id": 484,
@@ -7327,7 +7327,7 @@
       "text_jp": "土屋博士{nl}「レースアイテム起動も{nl}わすれるな！{nl}　　　　　（Yボタン！）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「레이스 아이템 기동도{nl}잊지 마라!{nl}　　　　　（Y버튼!）{end}"
+      "text_kr": "츠치야 박사{nl}「레이스 아이템 기동도{nl}잊지 마라！{nl}　　　　　（Y버튼！）{end}"
     },
     {
       "entry_id": 485,
@@ -7341,7 +7341,7 @@
       "text_jp": "土屋博士{nl}「練習を終了する時は{nl}言ってくれ！{nl}（STARTボタン）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「연습을 끝낼 때는{nl}말해 줘!{nl}（START 버튼）{end}"
+      "text_kr": "츠치야 박사{nl}「연습을 끝낼 때는{nl}말해 줘！{nl}（START 버튼）{end}"
     },
     {
       "entry_id": 486,
@@ -7355,7 +7355,7 @@
       "text_jp": "土屋博士{nl}「もうそろそろ練習は{nl}いいんじゃないか？{nl}（STARTボタンで　終了）{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "츠치야 박사{nl}「이제 슬슬 연습은{nl}됐지 않나?{nl}（START 버튼으로 종료）{end}"
+      "text_kr": "츠치야 박사{nl}「이제 슬슬 연습은{nl}됐지 않나？{nl}（START 버튼으로 종료）{end}"
     },
     {
       "entry_id": 487,
@@ -7369,7 +7369,7 @@
       "text_jp": "ブレット{nl}「なに！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "브렛{nl}「뭐라고!{end}"
+      "text_kr": "브렛{nl}「뭐라고！{end}"
     },
     {
       "entry_id": 488,
@@ -7383,7 +7383,7 @@
       "text_jp": "ミハエル{nl}「なに！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "미하엘{nl}「뭐라고!{end}"
+      "text_kr": "미하엘{nl}「뭐라고！{end}"
     },
     {
       "entry_id": 489,
@@ -7397,7 +7397,7 @@
       "text_jp": "ユーリ{nl}「クッ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "유리{nl}「큭!{end}"
+      "text_kr": "유리{nl}「큭！{end}"
     },
     {
       "entry_id": 490,
@@ -7411,7 +7411,7 @@
       "text_jp": "FOX1{nl}「そんな！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "FOX1{nl}「그럴 수가!{end}"
+      "text_kr": "FOX1{nl}「그럴 수가！{end}"
     },
     {
       "entry_id": 491,
@@ -7425,7 +7425,7 @@
       "text_jp": "FOX2{nl}「え！？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "FOX2{nl}「에!?{end}"
+      "text_kr": "FOX2{nl}「에！？{end}"
     },
     {
       "entry_id": 492,
@@ -7439,7 +7439,7 @@
       "text_jp": "FOX3{nl}「速い！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "FOX3{nl}「빠르다!{end}"
+      "text_kr": "FOX3{nl}「빠르다！{end}"
     },
     {
       "entry_id": 493,
@@ -7453,7 +7453,7 @@
       "text_jp": "FOX4{nl}「なんだと！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "FOX4{nl}「뭐라고!{end}"
+      "text_kr": "FOX4{nl}「뭐라고！{end}"
     },
     {
       "entry_id": 494,
@@ -7467,7 +7467,7 @@
       "text_jp": "ジュリアナ{nl}「そんな！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "쥴리아나{nl}「그럴 수가!{end}"
+      "text_kr": "쥴리아나{nl}「그럴 수가！{end}"
     },
     {
       "entry_id": 495,
@@ -7481,7 +7481,7 @@
       "text_jp": "サリマ{nl}「クッ　まだだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "사리마{nl}「큭 아직이야!{end}"
+      "text_kr": "사리마{nl}「큭 아직이야！{end}"
     },
     {
       "entry_id": 496,
@@ -7495,7 +7495,7 @@
       "text_jp": "ヴィッキー{nl}「え？　うそ{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "비키{nl}「에? 거짓말{end}"
+      "text_kr": "비키{nl}「에？ 거짓말{end}"
     },
     {
       "entry_id": 497,
@@ -7509,7 +7509,7 @@
       "text_jp": "ミシェル{nl}「なに！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "미셸{nl}「뭐라고!{end}"
+      "text_kr": "미셸{nl}「뭐라고！{end}"
     },
     {
       "entry_id": 498,
@@ -7523,7 +7523,7 @@
       "text_jp": "クレモンティーヌ{nl}「速い！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "크레몬티누{nl}「빠르다!{end}"
+      "text_kr": "크레몬티누{nl}「빠르다！{end}"
     },
     {
       "entry_id": 499,
@@ -7551,7 +7551,7 @@
       "text_jp": "ホワァン{nl}「は　速いアル！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "호왕{nl}「빠 빠르다구!{end}"
+      "text_kr": "호왕{nl}「빠 빠르다구！{end}"
     },
     {
       "entry_id": 501,
@@ -7565,7 +7565,7 @@
       "text_jp": "カルロ{nl}「チッ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "카를로{nl}「칫!{end}"
+      "text_kr": "카를로{nl}「칫！{end}"
     },
     {
       "entry_id": 502,
@@ -7593,7 +7593,7 @@
       "text_jp": "ラー{nl}「！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "라{nl}「!!{end}"
+      "text_kr": "라{nl}「！！{end}"
     },
     {
       "entry_id": 504,
@@ -7607,7 +7607,7 @@
       "text_jp": "ディアナ{nl}「まさか！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "디아나{nl}「설마!{end}"
+      "text_kr": "디아나{nl}「설마！{end}"
     },
     {
       "entry_id": 505,
@@ -7621,7 +7621,7 @@
       "text_jp": "アーム{nl}「なまいきな！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "아무{nl}「건방지게!{end}"
+      "text_kr": "아무{nl}「건방지게！{end}"
     },
     {
       "entry_id": 506,
@@ -7635,7 +7635,7 @@
       "text_jp": "クラージュ{nl}「そうあわてるなよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "쿠라주{nl}「그렇게 서두르지 마!{end}"
+      "text_kr": "쿠라주{nl}「그렇게 서두르지 마！{end}"
     },
     {
       "entry_id": 507,
@@ -7649,7 +7649,7 @@
       "text_jp": "レゾン{nl}「フッ　なかなかやるな！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "르존{nl}「흥 제법 하는군!{end}"
+      "text_kr": "르존{nl}「흥 제법 하는군！{end}"
     },
     {
       "entry_id": 508,
@@ -7663,7 +7663,7 @@
       "text_jp": "シャリテ{nl}「バカな！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "샤리테{nl}「말도 안 돼!{end}"
+      "text_kr": "샤리테{nl}「말도 안 돼！{end}"
     },
     {
       "entry_id": 509,
@@ -7677,7 +7677,7 @@
       "text_jp": "へっへ〜んだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "헤헤~ 어때!{end}"
+      "text_kr": "헤헤〜 어때！{end}"
     },
     {
       "entry_id": 510,
@@ -7691,7 +7691,7 @@
       "text_jp": "いいぞ　ソニック！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "좋아 소닉!{end}"
+      "text_kr": "좋아 소닉！{end}"
     },
     {
       "entry_id": 511,
@@ -7705,7 +7705,7 @@
       "text_jp": "ブロックでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "블록이굽쇼!{end}"
+      "text_kr": "블록이굽쇼！{end}"
     },
     {
       "entry_id": 512,
@@ -7719,7 +7719,7 @@
       "text_jp": "ここは通すわけにはいかないよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "여긴 통과시킬 순 없어!{end}"
+      "text_kr": "여긴 통과시킬 순 없어！{end}"
     },
     {
       "entry_id": 513,
@@ -7733,7 +7733,7 @@
       "text_jp": "いかせない！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "못 보내!{end}"
+      "text_kr": "못 보내！{end}"
     },
     {
       "entry_id": 514,
@@ -7747,7 +7747,7 @@
       "text_jp": "ブレット{nl}「フッ　あじなまねを！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "브렛{nl}「흥 얕은 수를!{end}"
+      "text_kr": "브렛{nl}「흥 얕은 수를！{end}"
     },
     {
       "entry_id": 515,
@@ -7761,7 +7761,7 @@
       "text_jp": "エッジ{nl}「じゃまなんだよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "엣지{nl}「방해된다구!{end}"
+      "text_kr": "엣지{nl}「방해된다구！{end}"
     },
     {
       "entry_id": 516,
@@ -7775,7 +7775,7 @@
       "text_jp": "ジョー{nl}「もう！　どいてよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "조{nl}「정말! 비켜!{end}"
+      "text_kr": "조{nl}「정말！ 비켜！{end}"
     },
     {
       "entry_id": 517,
@@ -7789,7 +7789,7 @@
       "text_jp": "ミラー{nl}「すぐに抜いてやるよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "밀러{nl}「금방 제쳐주마!{end}"
+      "text_kr": "밀러{nl}「금방 제쳐주마！{end}"
     },
     {
       "entry_id": 518,
@@ -7803,7 +7803,7 @@
       "text_jp": "ハマー・D{nl}「じゃまだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "해머・D{nl}「방해다!{end}"
+      "text_kr": "해머・D{nl}「방해다！{end}"
     },
     {
       "entry_id": 519,
@@ -7831,7 +7831,7 @@
       "text_jp": "FOX1{nl}「クソッ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "FOX1{nl}「젠장!{end}"
+      "text_kr": "FOX1{nl}「젠장！{end}"
     },
     {
       "entry_id": 521,
@@ -7845,7 +7845,7 @@
       "text_jp": "FOX2{nl}「まだ抜ける！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "FOX2{nl}「아직 제칠 수 있어!{end}"
+      "text_kr": "FOX2{nl}「아직 제칠 수 있어！{end}"
     },
     {
       "entry_id": 522,
@@ -7859,7 +7859,7 @@
       "text_jp": "FOX3{nl}「抜いてみせる！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "FOX3{nl}「제쳐 보이겠어!{end}"
+      "text_kr": "FOX3{nl}「제쳐 보이겠어！{end}"
     },
     {
       "entry_id": 523,
@@ -7873,7 +7873,7 @@
       "text_jp": "FOX4{nl}「おのれ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "FOX4{nl}「이놈!{end}"
+      "text_kr": "FOX4{nl}「이놈！{end}"
     },
     {
       "entry_id": 524,
@@ -7901,7 +7901,7 @@
       "text_jp": "ジュリアナ{nl}「じゃまだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "쥴리아나{nl}「방해다!{end}"
+      "text_kr": "쥴리아나{nl}「방해다！{end}"
     },
     {
       "entry_id": 526,
@@ -7915,7 +7915,7 @@
       "text_jp": "サリマ{nl}「どいてろ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "사리마{nl}「비켜!{end}"
+      "text_kr": "사리마{nl}「비켜！{end}"
     },
     {
       "entry_id": 527,
@@ -7929,7 +7929,7 @@
       "text_jp": "ヴィッキー{nl}「ああ　ライン取りが！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "비키{nl}「아 라인이!{end}"
+      "text_kr": "비키{nl}「아 라인이！{end}"
     },
     {
       "entry_id": 528,
@@ -7943,7 +7943,7 @@
       "text_jp": "ミシェル{nl}「じゃまよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "미셸{nl}「방해야!{end}"
+      "text_kr": "미셸{nl}「방해야！{end}"
     },
     {
       "entry_id": 529,
@@ -7957,7 +7957,7 @@
       "text_jp": "クレモンティーヌ{nl}「なにすんのよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "크레몬티누{nl}「뭐 하는 거야!{end}"
+      "text_kr": "크레몬티누{nl}「뭐 하는 거야！{end}"
     },
     {
       "entry_id": 530,
@@ -7971,7 +7971,7 @@
       "text_jp": "リオン{nl}「そのていどか？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "리온{nl}「그 정도냐?{end}"
+      "text_kr": "리온{nl}「그 정도냐？{end}"
     },
     {
       "entry_id": 531,
@@ -7999,7 +7999,7 @@
       "text_jp": "ランクス{nl}「おお　やるじゃん！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "랑크스{nl}「오 제법인데!{end}"
+      "text_kr": "랑크스{nl}「오 제법인데！{end}"
     },
     {
       "entry_id": 533,
@@ -8013,7 +8013,7 @@
       "text_jp": "シアン{nl}「や〜ん　どいてよ〜{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "시안{nl}「야~앙 비켜~{end}"
+      "text_kr": "시안{nl}「야〜앙 비켜〜{end}"
     },
     {
       "entry_id": 534,
@@ -8041,7 +8041,7 @@
       "text_jp": "ホワァン{nl}「やるアルね！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "호왕{nl}「제법이라구!{end}"
+      "text_kr": "호왕{nl}「제법이라구！{end}"
     },
     {
       "entry_id": 536,
@@ -8055,7 +8055,7 @@
       "text_jp": "トン{nl}「あきらめないよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "톤{nl}「포기 안 해!{end}"
+      "text_kr": "톤{nl}「포기 안 해！{end}"
     },
     {
       "entry_id": 537,
@@ -8069,7 +8069,7 @@
       "text_jp": "ナン{nl}「やられたアル！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "난{nl}「당했다구!{end}"
+      "text_kr": "난{nl}「당했다구！{end}"
     },
     {
       "entry_id": 538,
@@ -8083,7 +8083,7 @@
       "text_jp": "ポン{nl}「アイヤ〜！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "폰{nl}「아이야~!{end}"
+      "text_kr": "폰{nl}「아이야〜！{end}"
     },
     {
       "entry_id": 539,
@@ -8097,7 +8097,7 @@
       "text_jp": "リーチ{nl}「まけないアルよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "리치{nl}「지지 않는다구!{end}"
+      "text_kr": "리치{nl}「지지 않는다구！{end}"
     },
     {
       "entry_id": 540,
@@ -8125,7 +8125,7 @@
       "text_jp": "アーム{nl}「オレを　おこらせたいのか？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "아무{nl}「날 화나게 하고 싶은 거냐?{end}"
+      "text_kr": "아무{nl}「날 화나게 하고 싶은 거냐？{end}"
     },
     {
       "entry_id": 542,
@@ -8139,7 +8139,7 @@
       "text_jp": "クラージュ{nl}「ちくしょう　どけよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "쿠라주{nl}「젠장 비켜!{end}"
+      "text_kr": "쿠라주{nl}「젠장 비켜！{end}"
     },
     {
       "entry_id": 543,
@@ -8167,7 +8167,7 @@
       "text_jp": "シャリテ{nl}「こざかしい！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "샤리테{nl}「잔재주를!{end}"
+      "text_kr": "샤리테{nl}「잔재주를！{end}"
     },
     {
       "entry_id": 545,
@@ -8181,7 +8181,7 @@
       "text_jp": "カルロ{nl}「どけ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "카를로{nl}「비켜!{end}"
+      "text_kr": "카를로{nl}「비켜！{end}"
     },
     {
       "entry_id": 546,
@@ -8195,7 +8195,7 @@
       "text_jp": "ルキノ{nl}「そんなにつぶしてほしいのか？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "루키노{nl}「그렇게 뭉개지고 싶은 거냐?{end}"
+      "text_kr": "루키노{nl}「그렇게 뭉개지고 싶은 거냐？{end}"
     },
     {
       "entry_id": 547,
@@ -8209,7 +8209,7 @@
       "text_jp": "ジュリオ{nl}「あ〜ら　いいどきょうね{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "줄리오{nl}「어~머 배짱 좋네{end}"
+      "text_kr": "줄리오{nl}「어〜머 배짱 좋네{end}"
     },
     {
       "entry_id": 548,
@@ -8251,7 +8251,7 @@
       "text_jp": "ミハエル{nl}「そのていどのブロックなら！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "미하엘{nl}「그 정도 블록이라면!{end}"
+      "text_kr": "미하엘{nl}「그 정도 블록이라면！{end}"
     },
     {
       "entry_id": 551,
@@ -8349,7 +8349,7 @@
       "text_jp": "ブレット{nl}「むだだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "브렛{nl}「소용없다!{end}"
+      "text_kr": "브렛{nl}「소용없다！{end}"
     },
     {
       "entry_id": 558,
@@ -8363,7 +8363,7 @@
       "text_jp": "エッジ{nl}「ヘイヘイ！{nl}それでブロックしたつもりかい？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "엣지{nl}「이봐 이봐!{nl}그걸로 블록한 셈이야?{end}"
+      "text_kr": "엣지{nl}「이봐 이봐！{nl}그걸로 블록한 셈이야？{end}"
     },
     {
       "entry_id": 559,
@@ -8377,7 +8377,7 @@
       "text_jp": "ジョー{nl}「バ〜イ♥{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "조{nl}「바~이♥{end}"
+      "text_kr": "조{nl}「바〜이♥{end}"
     },
     {
       "entry_id": 560,
@@ -8405,7 +8405,7 @@
       "text_jp": "ハマー・D{nl}「じゃまなんだよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "해머・D{nl}「방해된다구!{end}"
+      "text_kr": "해머・D{nl}「방해된다구！{end}"
     },
     {
       "entry_id": 562,
@@ -8419,7 +8419,7 @@
       "text_jp": "ユーリ{nl}「抜け！　オメガ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "유리{nl}「제쳐라! 오메가!!{end}"
+      "text_kr": "유리{nl}「제쳐라！ 오메가！！{end}"
     },
     {
       "entry_id": 563,
@@ -8433,7 +8433,7 @@
       "text_jp": "FOX1{nl}「そううまくいくかな？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "FOX1{nl}「그리 잘 될까?{end}"
+      "text_kr": "FOX1{nl}「그리 잘 될까？{end}"
     },
     {
       "entry_id": 564,
@@ -8447,7 +8447,7 @@
       "text_jp": "FOX2{nl}「まだだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "FOX2{nl}「아직이야!{end}"
+      "text_kr": "FOX2{nl}「아직이야！{end}"
     },
     {
       "entry_id": 565,
@@ -8461,7 +8461,7 @@
       "text_jp": "FOX3{nl}「どうかな！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "FOX3{nl}「어떨까!{end}"
+      "text_kr": "FOX3{nl}「어떨까！{end}"
     },
     {
       "entry_id": 566,
@@ -8475,7 +8475,7 @@
       "text_jp": "FOX4{nl}「なめるなよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "FOX4{nl}「얕보지 마!{end}"
+      "text_kr": "FOX4{nl}「얕보지 마！{end}"
     },
     {
       "entry_id": 567,
@@ -8489,7 +8489,7 @@
       "text_jp": "カイ{nl}「あまいですよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "카이{nl}「어림없어요!{end}"
+      "text_kr": "카이{nl}「어림없어요！{end}"
     },
     {
       "entry_id": 568,
@@ -8503,7 +8503,7 @@
       "text_jp": "ジュリアナ{nl}「じゃまだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "쥴리아나{nl}「방해다!{end}"
+      "text_kr": "쥴리아나{nl}「방해다！{end}"
     },
     {
       "entry_id": 569,
@@ -8517,7 +8517,7 @@
       "text_jp": "サリマ{nl}「あまいよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "사리마{nl}「어림없어!{end}"
+      "text_kr": "사리마{nl}「어림없어！{end}"
     },
     {
       "entry_id": 570,
@@ -8531,7 +8531,7 @@
       "text_jp": "ヴィッキー{nl}「まだよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "비키{nl}「아직이야!{end}"
+      "text_kr": "비키{nl}「아직이야！{end}"
     },
     {
       "entry_id": 571,
@@ -8545,7 +8545,7 @@
       "text_jp": "ミシェル{nl}「そのていどなら！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "미셸{nl}「그 정도라면!{end}"
+      "text_kr": "미셸{nl}「그 정도라면！{end}"
     },
     {
       "entry_id": 572,
@@ -8559,7 +8559,7 @@
       "text_jp": "クレモンティーヌ{nl}「抜いて！　BSゼブラ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "크레몬티누{nl}「제쳐! BS제브라!{end}"
+      "text_kr": "크레몬티누{nl}「제쳐！ BS제브라！{end}"
     },
     {
       "entry_id": 573,
@@ -8573,7 +8573,7 @@
       "text_jp": "リオン{nl}「あまいぜ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "리온{nl}「어림없어!{end}"
+      "text_kr": "리온{nl}「어림없어！{end}"
     },
     {
       "entry_id": 574,
@@ -8587,7 +8587,7 @@
       "text_jp": "ティーグル{nl}「そうはいかねぇ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "티글{nl}「그렇게는 안 되지!{end}"
+      "text_kr": "티글{nl}「그렇게는 안 되지！{end}"
     },
     {
       "entry_id": 575,
@@ -8601,7 +8601,7 @@
       "text_jp": "ランクス{nl}「それはむりだよ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "랑크스{nl}「그건 무리야!{end}"
+      "text_kr": "랑크스{nl}「그건 무리야！{end}"
     },
     {
       "entry_id": 576,
@@ -8615,7 +8615,7 @@
       "text_jp": "シアン{nl}「ヤッホ〜！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "시안{nl}「야호~!{end}"
+      "text_kr": "시안{nl}「야호〜！{end}"
     },
     {
       "entry_id": 577,
@@ -8643,7 +8643,7 @@
       "text_jp": "ホワァン{nl}「まだまだアル！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "호왕{nl}「아직 멀었다구!{end}"
+      "text_kr": "호왕{nl}「아직 멀었다구！{end}"
     },
     {
       "entry_id": 579,
@@ -8657,7 +8657,7 @@
       "text_jp": "トン{nl}「どうかな？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "톤{nl}「어떨까?{end}"
+      "text_kr": "톤{nl}「어떨까？{end}"
     },
     {
       "entry_id": 580,
@@ -8671,7 +8671,7 @@
       "text_jp": "ナン{nl}「いくアル　ドラゴン！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "난{nl}「간다 드래곤!{end}"
+      "text_kr": "난{nl}「간다 드래곤！{end}"
     },
     {
       "entry_id": 581,
@@ -8685,7 +8685,7 @@
       "text_jp": "ポン{nl}「やるアルな！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "폰{nl}「제법이라구!{end}"
+      "text_kr": "폰{nl}「제법이라구！{end}"
     },
     {
       "entry_id": 582,
@@ -8699,7 +8699,7 @@
       "text_jp": "リーチ{nl}「サイチェン！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "리치{nl}「짜이젠!{end}"
+      "text_kr": "리치{nl}「짜이젠！{end}"
     },
     {
       "entry_id": 583,
@@ -8727,7 +8727,7 @@
       "text_jp": "アーム{nl}「わたしのじゃまをするな！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "아무{nl}「내 방해를 하지 마라!{end}"
+      "text_kr": "아무{nl}「내 방해를 하지 마라！{end}"
     },
     {
       "entry_id": 585,
@@ -8741,7 +8741,7 @@
       "text_jp": "クラージュ{nl}「へっ　じゃまだぜ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "쿠라주{nl}「헷 방해다!{end}"
+      "text_kr": "쿠라주{nl}「헷 방해다！{end}"
     },
     {
       "entry_id": 586,
@@ -8755,7 +8755,7 @@
       "text_jp": "レゾン{nl}「悪あがきをするな！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "르존{nl}「발버둥 치지 마!{end}"
+      "text_kr": "르존{nl}「발버둥 치지 마！{end}"
     },
     {
       "entry_id": 587,
@@ -8783,7 +8783,7 @@
       "text_jp": "カルロ{nl}「じゃまだ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "카를로{nl}「방해다!!{end}"
+      "text_kr": "카를로{nl}「방해다！！{end}"
     },
     {
       "entry_id": 589,
@@ -8797,7 +8797,7 @@
       "text_jp": "ミハエル{nl}「ベルクカイザーは止められない！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "미하엘{nl}「베르크카이저는 멈출 수 없다!{end}"
+      "text_kr": "미하엘{nl}「베르크카이저는 멈출 수 없다！{end}"
     },
     {
       "entry_id": 590,
@@ -8895,7 +8895,7 @@
       "text_jp": "きたねぇぞ　どけ〜！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "치사하다 비켜~!{end}"
+      "text_kr": "치사하다 비켜〜！{end}"
     },
     {
       "entry_id": 597,
@@ -8909,7 +8909,7 @@
       "text_jp": "ソニック　おまえなら抜ける！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "소닉 너라면 제칠 수 있어!{end}"
+      "text_kr": "소닉 너라면 제칠 수 있어！{end}"
     },
     {
       "entry_id": 598,
@@ -8923,7 +8923,7 @@
       "text_jp": "抜くでゲス　スピンバイパー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "제친다굽쇼 스핀 바이퍼!{end}"
+      "text_kr": "제친다굽쇼 스핀 바이퍼！{end}"
     },
     {
       "entry_id": 599,
@@ -8951,7 +8951,7 @@
       "text_jp": "まきかえせ　ネオトライダガー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "되받아쳐라 네오 트라이대거!{end}"
+      "text_kr": "되받아쳐라 네오 트라이대거！{end}"
     },
     {
       "entry_id": 601,
@@ -8965,7 +8965,7 @@
       "text_jp": "マグナム！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "매그넘!!{end}"
+      "text_kr": "매그넘！！{end}"
     },
     {
       "entry_id": 602,
@@ -8979,7 +8979,7 @@
       "text_jp": "たえてくれ　ソニック！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "버텨줘 소닉!{end}"
+      "text_kr": "버텨줘 소닉！{end}"
     },
     {
       "entry_id": 603,
@@ -8993,7 +8993,7 @@
       "text_jp": "ふんばるでゲス　スピンバイパー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "버티는 거굽쇼 스핀 바이퍼!{end}"
+      "text_kr": "버티는 거굽쇼 스핀 바이퍼！{end}"
     },
     {
       "entry_id": 604,
@@ -9007,7 +9007,7 @@
       "text_jp": "がんばれ　エボリューション！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "힘내라 에볼루션!{end}"
+      "text_kr": "힘내라 에볼루션！{end}"
     },
     {
       "entry_id": 605,
@@ -9021,7 +9021,7 @@
       "text_jp": "たえろ　ネオトライダガー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "버텨라 네오 트라이대거!{end}"
+      "text_kr": "버텨라 네오 트라이대거！{end}"
     },
     {
       "entry_id": 606,
@@ -9035,7 +9035,7 @@
       "text_jp": "ハマー・D{nl}「オペレータールーム{nl}現在の天候でのS・E・Cの{nl}エネルギー転送率は？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "해머・D{nl}「오퍼레이터 룸{nl}현재 날씨에서 S・E・C의{nl}에너지 전송률은?{end}"
+      "text_kr": "해머・D{nl}「오퍼레이터 룸{nl}현재 날씨에서 S・E・C의{nl}에너지 전송률은？{end}"
     },
     {
       "entry_id": 607,
@@ -9091,7 +9091,7 @@
       "text_jp": "ブレット{nl}「しかたがない！{nl}通常通り{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "브렛{nl}「어쩔 수 없지!{nl}평소대로{end}"
+      "text_kr": "브렛{nl}「어쩔 수 없지！{nl}평소대로{end}"
     },
     {
       "entry_id": 611,
@@ -9119,7 +9119,7 @@
       "text_jp": "4人{nl}「ラジャー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "네 사람{nl}「라저!{end}"
+      "text_kr": "네 사람{nl}「라저！{end}"
     },
     {
       "entry_id": 613,
@@ -9133,7 +9133,7 @@
       "text_jp": "豪{nl}「あいつらなに話してんだ？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고{nl}「저놈들 무슨 얘기 하는 거야?{end}"
+      "text_kr": "고{nl}「저놈들 무슨 얘기 하는 거야？{end}"
     },
     {
       "entry_id": 614,
@@ -9175,7 +9175,7 @@
       "text_jp": "ブレット{nl}「いくぞ　エッジ{nl}カウントダウンカット！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "브렛{nl}「간다 엣지{nl}카운트다운 컷!!{end}"
+      "text_kr": "브렛{nl}「간다 엣지{nl}카운트다운 컷！！{end}"
     },
     {
       "entry_id": 617,
@@ -9189,7 +9189,7 @@
       "text_jp": "烈{nl}「え！？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "레츠{nl}「에!?{end}"
+      "text_kr": "레츠{nl}「에！？{end}"
     },
     {
       "entry_id": 618,
@@ -9203,7 +9203,7 @@
       "text_jp": "豪{nl}「なにぃ！？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고{nl}「뭐라고!?{end}"
+      "text_kr": "고{nl}「뭐라고！？{end}"
     },
     {
       "entry_id": 619,
@@ -9217,7 +9217,7 @@
       "text_jp": "リョウ{nl}「パワーブースターだと！？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "료{nl}「파워 부스터라고!?{end}"
+      "text_kr": "료{nl}「파워 부스터라고！？{end}"
     },
     {
       "entry_id": 620,
@@ -9231,7 +9231,7 @@
       "text_jp": "藤吉{nl}「へ！？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "토우키치{nl}「에!?{end}"
+      "text_kr": "토우키치{nl}「에！？{end}"
     },
     {
       "entry_id": 621,
@@ -9245,7 +9245,7 @@
       "text_jp": "J{nl}「！？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "제이{nl}「!?{end}"
+      "text_kr": "제이{nl}「！？{end}"
     },
     {
       "entry_id": 622,
@@ -9259,7 +9259,7 @@
       "text_jp": "ジュリオ{nl}「あいつらなに考えてんのかしら！{nl}こんな所でブーストなんか{nl}使っちゃって…{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "줄리오{nl}「저놈들 무슨 생각인 거야!{nl}이런 데서 부스트 같은 걸{nl}써 버리다니…{end}"
+      "text_kr": "줄리오{nl}「저놈들 무슨 생각인 거야！{nl}이런 데서 부스트 같은 걸{nl}써 버리다니…{end}"
     },
     {
       "entry_id": 623,
@@ -9287,7 +9287,7 @@
       "text_jp": "ブレット{nl}「エネルギー回復！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "브렛{nl}「에너지 회복!!{end}"
+      "text_kr": "브렛{nl}「에너지 회복！！{end}"
     },
     {
       "entry_id": 625,
@@ -9301,7 +9301,7 @@
       "text_jp": "ディアナ{nl}「なんだと！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "디아나{nl}「뭐라고!{end}"
+      "text_kr": "디아나{nl}「뭐라고！{end}"
     },
     {
       "entry_id": 626,
@@ -9315,7 +9315,7 @@
       "text_jp": "アーム{nl}「まさか　人工えいせいから{nl}バッテリーを{nl}きょうきゅうしているのか！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "아무{nl}「설마 인공위성에서{nl}배터리를{nl}공급하고 있는 건가!{end}"
+      "text_kr": "아무{nl}「설마 인공위성에서{nl}배터리를{nl}공급하고 있는 건가！{end}"
     },
     {
       "entry_id": 627,
@@ -9329,7 +9329,7 @@
       "text_jp": "ジュリオ{nl}「そ　そんなのありなの！？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "줄리오{nl}「그 그런 게 어딨어!?{end}"
+      "text_kr": "줄리오{nl}「그 그런 게 어딨어！？{end}"
     },
     {
       "entry_id": 628,
@@ -9357,7 +9357,7 @@
       "text_jp": "サテライト　エネルギー{nl}チャージャーだ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "새틀라이트 에너지{nl}차저다!{end}"
+      "text_kr": "새틀라이트 에너지{nl}차저다！{end}"
     },
     {
       "entry_id": 630,
@@ -9385,7 +9385,7 @@
       "text_jp": "烈{nl}「すごい！？{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "레츠{nl}「대단해!?{end}"
+      "text_kr": "레츠{nl}「대단해！？{end}"
     },
     {
       "entry_id": 632,
@@ -9399,7 +9399,7 @@
       "text_jp": "豪{nl}「きっ　きたねぇぞ！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고{nl}「치 치사하다!!{end}"
+      "text_kr": "고{nl}「치 치사하다！！{end}"
     },
     {
       "entry_id": 633,
@@ -9413,7 +9413,7 @@
       "text_jp": "リョウ{nl}「クッ！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "료{nl}「큭!{end}"
+      "text_kr": "료{nl}「큭！{end}"
     },
     {
       "entry_id": 634,
@@ -9427,7 +9427,7 @@
       "text_jp": "藤吉{nl}「ショエ〜！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "토우키치{nl}「쇼에~!{end}"
+      "text_kr": "토우키치{nl}「쇼에〜！{end}"
     },
     {
       "entry_id": 635,
