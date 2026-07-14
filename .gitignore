@@ -42,6 +42,7 @@ build/
 dist/
 tmp/
 target/
+work/
 *.log
 
 # Python 캐시

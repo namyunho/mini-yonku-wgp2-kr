@@ -94,7 +94,29 @@
 4. Mesen 확인(`shot_seq.lua` 크레딧 구간 연속캡처): **실기 화면 vs screen.bmp 인덱스 불일치 0/57344(0.000%) = 픽셀 단위 완전 일치**(잡점·누락 0).
 - 도구: `dump_credit_mid.lua`(크레딧 프레임 전체덤프+getState 전체키), `find_credit_frame.lua`, 오프라인 스프라이트 렌더(`build_credit_kr.py` 내장).
 
+## ✅ 범용 타일 그래픽 편집 도구 `scripts/gfx_io.py` (2026-07-15)
+사용자 픽셀아트 편집(포토샵/OptFix ImageStudio) 왕복 파이프라인. 편집대상 타일을 (편집용 PNG + 팔레트 + 매니페스트)로 뽑아주고, 편집본 PNG를 받아 타일로 역변환해 해제 블롭에 재기록 → `build_gfx.py`로 재압축.
+
+**교환 포맷** `work/<asset>/`:
+- `edit.png` — RGBA, 게임 정확 색상, **투명=알파0**(팔레트 인덱스0). 포토샵 편집·투명 확인.
+- `palette.act`(Adobe Color Table)·`palette.pal`(JASC)·`palette.png`(스와치) — 색상감소(4bpp=16색)용.
+- `manifest.json` — 각 편집셀(x,y,w,h)→블롭 타일 인덱스. import가 이걸로 역삽입.
+
+**두 모드** (사용자 워크플로):
+- **모드 A(타깃 타일 편집) = `--mode grid`**: 편집할 타일을 겹침 없는 격자로 팩 → 각 타일 분리 편집. **왕복 무손실(라운드트립 0 bytes 검증)**. 스프라이트 겹침 영향 없음.
+- **모드 B(풀 이미지) = `--mode screen` + 완성 이미지 제공**: 큰 이미지(타이틀 로고 등)는 사용자가 정사이즈 완성 PNG(또는 알파없는 검정배경 이미지, `black_transparent`로 검정→투명)를 주면 매니페스트대로 슬라이스·삽입. 크레딧 screen.bmp import = build_credit_kr 산출과 0 bytes 일치 검증.
+  - ⚠️ **screen 모드 export 캔버스는 참조용**: 스프라이트가 화면에서 겹치면(예 크레딧 © X52가 다음 X60과 8px 겹침) 캔버스 컴포짓에서 겹침영역 정보 손실 → 그 캔버스를 편집·재import하면 겹친 타일 깨짐. 편집은 **모드A(grid)** 쓰거나 **모드B(완성 이미지 직접 제공)**로.
+
+**사용:**
+```
+python scripts/gfx_io.py export credit --mode grid    # 타깃 편집용 격자 뽑기
+# (work/credit/edit.png 편집)
+python scripts/gfx_io.py import credit                # 편집본 → tmp/gfx_edit/<blob>.bin
+python scripts/gfx_io.py import credit --png <완성이미지.png>   # 모드B: 풀이미지 직접
+python scripts/build_gfx.py --rom out/wgp2_kr.smc --out out/wgp2_kr.smc
+```
+**에셋 레지스트리**(`ASSETS`): 블롭·bpp·팔레트·셀유도(`cells_from`)·keep_tiles·black_transparent. 현재 `credit`(OAM 스프라이트 셀). 신규 에셋은 셀유도 방식 추가(BG는 tilemap 기반 — BG 타일은 겹침없어 screen 모드 무손실).
+
 ## 다음
-1. 다른 그래픽 에셋(타이틀 로고 main_0000, 비압축 $CE 등)은 사용자가 실기 위치 지정 시 동일 방식(라이브 덤프→매핑→편집)으로.
-2. 비압축 에셋($CE 등)은 별도 직접 편집(YY-CHR ROM 오프셋).
-3. 크레딧 문구 미세조정 원하면 screen.bmp 수정 후 build_credit_kr.py 재실행.
+1. 타이틀 로고(main_0000 등 BG 4bpp)·비압축 $CE 에셋: 사용자가 실기 화면 지정 시 라이브 덤프→타일맵 기반 셀유도 추가 후 gfx_io로 편집(BG는 겹침없어 풀이미지 모드 무손실).
+2. 크레딧 문구 미세조정: screen.bmp 수정 후 `build_credit_kr.py` 또는 `gfx_io import credit --png img_tile/screen.bmp` 재실행.
