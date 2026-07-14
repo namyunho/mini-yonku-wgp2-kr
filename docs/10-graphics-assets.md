@@ -117,6 +117,36 @@ python scripts/build_gfx.py --rom out/wgp2_kr.smc --out out/wgp2_kr.smc
 ```
 **에셋 레지스트리**(`ASSETS`): 블롭·bpp·팔레트·셀유도(`cells_from`)·keep_tiles·black_transparent. 현재 `credit`(OAM 스프라이트 셀). 신규 에셋은 셀유도 방식 추가(BG는 tilemap 기반 — BG 타일은 겹침없어 screen 모드 무손실).
 
+## ✅ 타이틀 화면(PUSH START) — 코덱 RE 완료 (2026-07-15)
+타이틀 = 겹친 BG 레이어(라이브 덤프 frame3428, bgMode1). 번역대상 2개(공통 **하늘색 74,107,255=투명**, 사용자 제공 `img_tile/`):
+- **BG1(4bpp)** = 로고 「미니사구 렛츠&고 WGP2」+Nintendo아치. `credit_logo.png`(원본)/`credit_logo.bmp`(번역).
+- **BG3(2bpp)** = PUSH START(영어유지)+하단 크레딧줄. `credit.png`/`credit.bmp`.
+- BG2=구름·스프라이트96=TRF캐릭터: 번역 불필요.
+
+### ✅ 타이틀 압축 코덱 = LZSS + **2바이트 길이 헤더**
+- 래퍼 **`$C3:53C7`** = JSL 다음 인라인 3바이트(소스 롱포인터) 읽어 `JSL $C0:0D52`(LZSS) 호출. **`$C3:53EE`** = 인라인 8바이트로 DMA 실행.
+- **소스에 2바이트 길이 헤더**: 스트림은 `addr+2` 시작, 길이=addr의 LE 워드. 해제 `lzss.decompress(rom, foff(bank,addr)+2, hdr)`.
+- 로더 클러스터 `$C3:5A00~5EAF` 순차파싱(LDA#;STA$2116=VMADD / JSL$C353C7=LZSS / JSL$C353EE=DMA)으로 **각 DMA의 (VMADD, LZSS소스, size) 전량 확정**.
+
+### ✅ 로고 소스 확정·검증
+| 요소 | 소스 | 해제 | 원본압축 |
+|---|---|---|---|
+| **로고 chr** | `$C3:0E2F` | 12800B(400타일 4bpp) | 7047B(+2헤더) |
+| **로고 타일맵** | `$C7:5BF8` | 2048B(32×32) | 1107B(+2헤더) |
+- **검증**: $C3:0E2F chr + $C7:5BF8 타일맵 렌더 = `credit_logo.png` **diff 0/28757 완전일치**. 타일번호 1-384(전부<512, chr byte0), 팔레트 0,2,3,4,6,7(로고텍스트=6·7).
+- **재압축 in-place OK**: 무편집 재압축 chr 7045≤7047·타일맵 1107≤1107B.
+- 로더 전체 매핑: word$0000←$C3:0E2F(로고chr), $2000←$C7:4562, $4000←$C7:593D, $5000←$C7:5BF8(로고타일맵), $5800←$C7:604D, $6000←$C3:29B8(스프라이트).
+
+### ⚠️ 마스킹 필요 (사용자 지적: 번역은 원본 타일배치와 1:1 아님)
+번역이 원래 빈칸(타일0)에 새 잉크 추가/기존 잉크 제거 → 단순 타일 repaint 불가. 로고 진단: 263셀 변경, **25셀이 원래 타일0(빈칸)에 새 잉크**. → **이미지에서 chr+타일맵 통째 재빌드**(빈칸→타일0, 새잉크→새타일)로 마스킹 자동 해결.
+
+### 🔲 남은 구현 (다음)
+마스킹 인식 인코더: `credit_logo.bmp` 32×32 슬라이스→셀별 팔레트선택(최소오차)→타일 디듀프(+flip)→새 chr(≤400타일)+새 타일맵(2048B)→LZSS 재압축 in-place($C3:0E2F/$C7:5BF8 헤더유지, 초과시 재배치)→Mesen 검증. `scripts/build_title.py`=현재 diff/충돌 진단 단계(repaint 방식은 타일0 충돌로 미완, 재빌드로 전환 예정).
+
+### RE 도구
+`scripts/lua/`: `trace_title_dma`(타이틀 VRAM DMA), `trace_titlefill2`(벌크필러 PC), `trace_chrsrc2`(소스포인터, write콜백 우회), `trace_lzsrc750`(디컴프소스). ⚠️Mesen exec콜백 불안정($C0:0DC1 등 미발화)→write콜백/로더 정적파싱으로 우회. 로더 정적파싱이 가장 확실.
+
 ## 다음
-1. 타이틀 로고(main_0000 등 BG 4bpp)·비압축 $CE 에셋: 사용자가 실기 화면 지정 시 라이브 덤프→타일맵 기반 셀유도 추가 후 gfx_io로 편집(BG는 겹침없어 풀이미지 모드 무손실).
-2. 크레딧 문구 미세조정: screen.bmp 수정 후 `build_credit_kr.py` 또는 `gfx_io import credit --png img_tile/screen.bmp` 재실행.
+1. **타이틀 로고 마스킹 인코더 구현**(위) → 실기 검증 → 커밋.
+2. BG3 크레딧줄(`credit.bmp`) 동일 방식.
+3. 크레딧 문구 미세조정: screen.bmp 수정 후 재빌드.
