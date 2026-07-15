@@ -46,6 +46,84 @@ def decompress(rom, src_bank, src_addr, out_len, dic_off):
     return bytes(out), p
 
 
+DICT_LEN = 0x1FE4                 # 8164 — 딕셔너리는 씬테이블 $C6:9C57 직전에서 끝난다
+MAX_IDX = 0xFFFF >> 3             # 8191 — word>>3 의 이론상한 (딕셔너리가 더 짧아 실질 제약 아님)
+
+
+def compress(data, dic):
+    """디컴프의 역연산. 반환 = 압축 스트림(2바이트 길이헤더 **미포함**).
+
+    코덱: 플래그바이트(LSB first) 8비트 = 다음 8개 항목의 종류.
+      비트0 = 리터럴      -> 소스 1바이트 그대로
+      비트1 = 딕셔너리참조 -> 소스 2바이트 LE word = (index<<3)|(len-1), len=1..8
+    참조는 2바이트를 써서 len 바이트를 내므로 **len>=3 일 때만 이득**(len1=손해, len2=본전+플래그).
+    """
+    from collections import defaultdict
+    idx3 = defaultdict(list)
+    L = len(dic)
+    for i in range(L - 2):
+        idx3[bytes(dic[i:i + 3])].append(i)
+
+    out = bytearray()
+    pos, n = 0, len(data)
+    while pos < n:
+        fp = len(out)
+        out.append(0)
+        fb = 0
+        for b in range(8):
+            if pos >= n:
+                break
+            best_len = best_idx = 0
+            key = bytes(data[pos:pos + 3])
+            if len(key) == 3:
+                for c in idx3.get(key, ()):
+                    if c > MAX_IDX:
+                        continue
+                    m, lim = 3, min(8, n - pos, L - c)
+                    while m < lim and dic[c + m] == data[pos + m]:
+                        m += 1
+                    if m > best_len:
+                        best_len, best_idx = m, c
+                        if m == 8:
+                            break
+            if best_len >= 3:
+                w = (best_idx << 3) | (best_len - 1)
+                out.append(w & 0xFF); out.append((w >> 8) & 0xFF)
+                fb |= (1 << b)
+                pos += best_len
+            else:
+                out.append(data[pos]); pos += 1
+        out[fp] = fb
+    return bytes(out)
+
+
+def compress_scene(data, dic):
+    """씬 소스 형식: 2바이트 출력길이 헤더 + 압축 스트림."""
+    body = compress(data, dic)
+    return bytes([len(data) & 0xFF, (len(data) >> 8) & 0xFF]) + body
+
+
+SCENE_TBL_SNES = (0xC6, 0x9C57)   # 씬 소스 테이블 (3B/엔트리)
+N_SCENES = 250                    # id 0x00-0xF9 (단조증가 종료 지점)
+
+
+def scene_src(rom, sid):
+    """씬 id -> (bank, addr). 표 $C6:9C57, 엔트리 = {addr_lo, addr_hi, bank_delta}.
+    로더 $C0:3D1F / cmd 0x11 핸들러 $C0:4498: addr = 워드 그대로, bank = 3번째바이트 + $C4."""
+    o = foff(*SCENE_TBL_SNES) + sid * 3
+    return (0xC4 + rom[o + 2]) & 0xFF, rom[o] | (rom[o + 1] << 8)
+
+
+def decompress_scene(rom, bank, addr, dic_off):
+    """씬 소스 디컴프. 소스 선두 2바이트 = 출력길이 헤더, 스트림은 addr+2 부터.
+    (디코더 $C0:39D5: `LDA $05; BNE; LDA [$11]; STA $05` 로 A=0이면 헤더에서 길이를 읽고,
+     `INC $11`×2 는 무조건 실행 → 스트림 시작은 항상 addr+2.)"""
+    p = foff(bank, addr)
+    out_len = rom[p] | (rom[p + 1] << 8)
+    out, endp = decompress(rom, bank, (addr + 2) & 0xFFFF, out_len, dic_off)
+    return out, out_len, endp
+
+
 def render(seg, tbl):
     o = ''; i = 0
     while i < len(seg):

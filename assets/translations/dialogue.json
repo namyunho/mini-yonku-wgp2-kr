@@ -153,7 +153,7 @@
         "0x03D299:$CBEF"
       ],
       "flags": [],
-      "text_kr": "간다굽쇼！！ 고！！{end}"
+      "text_kr": "간다옵쇼！！ 고！！{end}"
     },
     {
       "entry_id": 5,
@@ -2206,7 +2206,7 @@
         "0x03F20B:$CBEF"
       ],
       "flags": [],
-      "text_kr": "토우키치{nl}「해냈굽쇼！{nl}오오가미를 이겼굽쇼！！{end}"
+      "text_kr": "토우키치{nl}「해냈옵쇼！{nl}오오가미를 이겼옵쇼！！{end}"
     },
     {
       "entry_id": 133,
@@ -3986,7 +3986,7 @@
       "text_jp": "勝手なことしちゃダメでゲスよ{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "제멋대로 굴면 안 되굽쇼{end}"
+      "text_kr": "제멋대로 굴면 안 되옵쇼{end}"
     },
     {
       "entry_id": 246,
@@ -4000,7 +4000,7 @@
       "text_jp": "烈くん　スパートでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "레츠 스퍼트하는 거굽쇼！{end}"
+      "text_kr": "레츠 스퍼트하는 거옵쇼！{end}"
     },
     {
       "entry_id": 247,
@@ -4014,7 +4014,7 @@
       "text_jp": "リョウくん　まかせたでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "료 맡겼다굽쇼！{end}"
+      "text_kr": "료 맡겼다옵쇼！{end}"
     },
     {
       "entry_id": 248,
@@ -4028,7 +4028,7 @@
       "text_jp": "まかせたでゲス　Jくん{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "맡겼다굽쇼 제이{end}"
+      "text_kr": "맡겼다옵쇼 제이{end}"
     },
     {
       "entry_id": 249,
@@ -4266,7 +4266,7 @@
       "text_jp": "豪くんといっしょにするなでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고랑 취급하지 말라굽쇼！{end}"
+      "text_kr": "고랑 취급하지 말라옵쇼！{end}"
     },
     {
       "entry_id": 266,
@@ -4280,7 +4280,7 @@
       "text_jp": "大船にのったつもりでいるでゲス{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "큰 배 탄 셈 치라굽쇼{end}"
+      "text_kr": "큰 배 탄 셈 치라옵쇼{end}"
     },
     {
       "entry_id": 267,
@@ -4294,7 +4294,7 @@
       "text_jp": "まかせてくれでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "맡겨만 달라굽쇼！{end}"
+      "text_kr": "맡겨만 달라옵쇼！{end}"
     },
     {
       "entry_id": 268,
@@ -4308,7 +4308,7 @@
       "text_jp": "おうでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "옙굽쇼！{end}"
+      "text_kr": "옙옵쇼！{end}"
     },
     {
       "entry_id": 269,
@@ -4420,7 +4420,7 @@
       "text_jp": "いくでゲス　スピンバイパー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "간다굽쇼 스핀 바이퍼！{end}"
+      "text_kr": "간다옵쇼 스핀 바이퍼！{end}"
     },
     {
       "entry_id": 277,
@@ -4602,7 +4602,7 @@
       "text_jp": "続いて　第4セクションでゲス{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "이어서 제4섹션이굽쇼{end}"
+      "text_kr": "이어서 제4섹션이옵쇼{end}"
     },
     {
       "entry_id": 290,
@@ -4616,7 +4616,7 @@
       "text_jp": "続いて　第5セクションでゲス{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "이어서 제5섹션이굽쇼{end}"
+      "text_kr": "이어서 제5섹션이옵쇼{end}"
     },
     {
       "entry_id": 291,
@@ -5472,7 +5472,7 @@
       "text_jp": "今でゲス　スピンバイパー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "지금이굽쇼 스핀 바이퍼！{end}"
+      "text_kr": "지금이옵쇼 스핀 바이퍼！{end}"
     },
     {
       "entry_id": 352,
@@ -5542,7 +5542,7 @@
       "text_jp": "いくでゲス　スピンバイパー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "간다굽쇼 스핀 바이퍼！{end}"
+      "text_kr": "간다옵쇼 스핀 바이퍼！{end}"
     },
     {
       "entry_id": 357,
@@ -5612,7 +5612,7 @@
       "text_jp": "ライトニングドリフトでゲス！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "라이트닝 드리프트굽쇼！！{end}"
+      "text_kr": "라이트닝 드리프트옵쇼！！{end}"
     },
     {
       "entry_id": 362,
@@ -5682,7 +5682,7 @@
       "text_jp": "応援ありがとうでゲス！{nl}さあ　いくでゲス！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "성원 고맙굽쇼！{nl}자 간다굽쇼！！{end}"
+      "text_kr": "성원 고맙옵쇼！{nl}자 간다옵쇼！！{end}"
     },
     {
       "entry_id": 367,
@@ -5766,7 +5766,7 @@
       "text_jp": "ありがとうでゲス！{nl}力がみなぎってきたでゲス！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고맙굽쇼！{nl}힘이 넘쳐나굽쇼！！{end}"
+      "text_kr": "고맙옵쇼！{nl}힘이 넘쳐나옵쇼！！{end}"
     },
     {
       "entry_id": 373,
@@ -5850,7 +5850,7 @@
       "text_jp": "おうでゲス！{nl}ワテの走りをみるでゲス！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "옙굽쇼！{nl}제 주행을 보시라굽쇼！！{end}"
+      "text_kr": "옙옵쇼！{nl}제 주행을 보시라옵쇼！！{end}"
     },
     {
       "entry_id": 379,
@@ -5934,7 +5934,7 @@
       "text_jp": "おう　ブッちぎるでゲス{nl}スピンバイパー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "그래 따돌린다굽쇼{nl}스핀 바이퍼！{end}"
+      "text_kr": "그래 따돌린다옵쇼{nl}스핀 바이퍼！{end}"
     },
     {
       "entry_id": 385,
@@ -6018,7 +6018,7 @@
       "text_jp": "ありがとうでゲス！{nl}気合いが入ったでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고맙굽쇼！{nl}기합이 들어갔굽쇼！{end}"
+      "text_kr": "고맙옵쇼！{nl}기합이 들어갔옵쇼！{end}"
     },
     {
       "entry_id": 391,
@@ -6160,7 +6160,7 @@
       "text_jp": "と　とんでもないじいさんでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "터 터무니없는 영감이굽쇼！{end}"
+      "text_kr": "터 터무니없는 영감이옵쇼！{end}"
     },
     {
       "entry_id": 401,
@@ -6398,7 +6398,7 @@
       "text_jp": "うわぁ〜{nl}本当にやってるでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "우와〜{nl}정말 하고 있굽쇼！{end}"
+      "text_kr": "우와〜{nl}정말 하고 있옵쇼！{end}"
     },
     {
       "entry_id": 418,
@@ -6483,7 +6483,7 @@
       "text_jp": "ありがとうでゲス！{nl}そのパワーいただきでゲス！！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고맙굽쇼！{nl}그 파워 받아가굽쇼！！{end}"
+      "text_kr": "고맙옵쇼！{nl}그 파워 받아가옵쇼！！{end}"
     },
     {
       "entry_id": 424,
@@ -6567,7 +6567,7 @@
       "text_jp": "ありがとうでゲス！{nl}負けられないでゲスよ{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "고맙굽쇼！{nl}질 수 없굽쇼{end}"
+      "text_kr": "고맙옵쇼！{nl}질 수 없옵쇼{end}"
     },
     {
       "entry_id": 430,
@@ -7722,7 +7722,7 @@
       "text_jp": "ブロックでゲス！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "블록이굽쇼！{end}"
+      "text_kr": "블록이옵쇼！{end}"
     },
     {
       "entry_id": 512,
@@ -8941,7 +8941,7 @@
       "text_jp": "抜くでゲス　スピンバイパー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "제친다굽쇼 스핀 바이퍼！{end}"
+      "text_kr": "제친다옵쇼 스핀 바이퍼！{end}"
     },
     {
       "entry_id": 599,
@@ -9011,7 +9011,7 @@
       "text_jp": "ふんばるでゲス　スピンバイパー！{end}",
       "referenced_by": [],
       "flags": [],
-      "text_kr": "버텨굽쇼 스핀 바이퍼！{end}"
+      "text_kr": "버텨옵쇼 스핀 바이퍼！{end}"
     },
     {
       "entry_id": 604,

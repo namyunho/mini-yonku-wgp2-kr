@@ -6,7 +6,7 @@
 
 Phase 1 = c7_race + c1_ui (동일 뱅크 재배치, DBR 패치 불필요).
 """
-import json, struct, sys, io, argparse
+import json, struct, sys, io, os, argparse
 from collections import Counter
 sys.path.insert(0, 'scripts')
 from decode_script import decode, render, encode, load_tbl
@@ -70,6 +70,11 @@ def main():
     ap.add_argument('--out', default='out/wgp2_kr.smc')
     ap.add_argument('--kor-adv', type=int, default=13,
                     help='한글 글리프 균일 advance(px). 0 이하면 기존 글리프별 ink+2 방식.')
+    ap.add_argument('--adv-json', default=None,
+                    help='어드벤처 번역 JSON. 주면 그 음절도 **같은 글리프 할당**에 포함한다. '
+                         '(폰트 시트는 전역 공유 → 어드벤처를 별도 할당하면 673과 충돌)')
+    ap.add_argument('--glyph-map-out', default='out/glyph_map.json',
+                    help='char->글리프인덱스 매핑 산출(어드벤처 빌더가 재사용)')
     a = ap.parse_args()
 
     rom = bytearray(open(ROMPATH, 'rb').read())
@@ -100,6 +105,17 @@ def main():
                 elif c not in (' ', '　'):
                     used_other.add(c)
 
+    # ---- 어드벤처 음절도 같은 할당에 포함(폰트 시트 전역 공유) ----
+    if a.adv_json:
+        AD = json.load(open(a.adv_json, encoding='utf-8'))
+        adv_runs = AD['runs'] if isinstance(AD, dict) else [r for s in AD for r in s['runs']]
+        for r in adv_runs:
+            for c in strip_tok(r.get('text_kr', '') or ''):
+                if 0xAC00 <= ord(c) <= 0xD7A3:
+                    freq[c] += 1
+                elif c not in (' ', '　', '\n'):
+                    used_other.add(c)
+
     # ---- 유지 문자 → 기존 게임 인덱스 (실제 쓰인 것만) ----
     keep_map = {'　': 0x001, ' ': 0x000}   # 전각공백 8px / 반각 4px
     for c in sorted(used_other):
@@ -119,6 +135,10 @@ def main():
     kor2idx = {c: alloc[i] for i, c in enumerate(syllables)}
 
     char2idx = dict(keep_map); char2idx.update(kor2idx)
+    if a.glyph_map_out:
+        os.makedirs(os.path.dirname(a.glyph_map_out) or '.', exist_ok=True)
+        json.dump({'char2idx': char2idx, 'kor_adv': a.kor_adv},
+                  open(a.glyph_map_out, 'w', encoding='utf-8'), ensure_ascii=False)
 
     # ---- 폰트 주입 (한글 글리프 + 폭) ----
     inj = 0
@@ -212,7 +232,6 @@ def main():
         report[bid] = (len(es), written, reloc, ov, bank, cur - rstart, rcap)
 
     # ---- 출력 ----
-    import os
     os.makedirs('out', exist_ok=True)
     open(a.out, 'wb').write(rom)
 
