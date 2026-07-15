@@ -1,0 +1,57 @@
+#!/usr/bin/env python3
+"""전체 한글패치 통합 빌드 — 모든 작업을 반영한 단일 ROM 생성.
+
+순서:
+ 1. build_patch.py       대사 673 한글(원본→out/wgp2_kr.smc)
+ 2. build_credit_kr.py   크레딧 화면 스프라이트 편집본(tmp/gfx_edit/vram_7000.bin)
+ 3. build_gfx.py         크레딧 화면 그래픽 LZSS 재삽입(out in-place)
+ 4. build_title_logo.py  타이틀 로고(BG1 chr+타일맵 재빌드·재배치)
+ 5. build_title_credit.py 타이틀 하단 크레딧줄(BG3 chr repaint+타일맵 마스킹·재배치)
+ 6. build_menu.py        SJIS 시작메뉴(→out/menu_test.smc) → diff를 out/wgp2_kr.smc에 통합
+ 7. BPS 배포 패치 생성(flips)
+
+산출: out/wgp2_kr.smc (통합 ROM), out/wgp2_kr.bps (배포용 차분)
+※ ROM은 비커밋. 이 스크립트+에셋으로 원본에서 재생성.
+"""
+import subprocess, sys, os, zlib, hashlib
+
+ORIG = "roms/Mini Yonku Let's & Go!! - Power WGP 2 (J) (NP).smc"
+OUT = "out/wgp2_kr.smc"
+MENU = "out/menu_test.smc"
+BPS = "out/wgp2_kr.bps"
+FLIPS = os.path.expanduser("~/tools/flips/flips.exe")
+
+def run(cmd):
+    print(f"\n$ {' '.join(cmd)}")
+    r = subprocess.run([sys.executable] + cmd if cmd[0].endswith('.py') else cmd)
+    if r.returncode != 0:
+        sys.exit(f"실패: {cmd}")
+
+def main():
+    run(["scripts/build_patch.py"])                                    # 1
+    run(["scripts/build_credit_kr.py"])                                # 2
+    run(["scripts/build_gfx.py", "--rom", OUT, "--out", OUT])          # 3
+    run(["scripts/build_title_logo.py", "--write"])                    # 4
+    run(["scripts/build_title_credit.py"])                             # 5
+    run(["scripts/build_menu.py"])                                     # 6a → menu_test.smc
+
+    # 6b: 메뉴 패치(원본 대비 변경 바이트)를 통합 ROM에 적용(충돌 없음 — 별개 영역)
+    orig = open(ORIG, 'rb').read()
+    menu = open(MENU, 'rb').read()
+    rom = bytearray(open(OUT, 'rb').read())
+    n = 0
+    for i in range(len(orig)):
+        if orig[i] != menu[i]:
+            rom[i] = menu[i]; n += 1
+    open(OUT, 'wb').write(rom)
+    print(f"\n메뉴 패치 {n}B 통합")
+
+    # 7: BPS
+    if os.path.exists(FLIPS):
+        subprocess.run([FLIPS, "--create", ORIG, OUT, BPS])
+    data = bytes(rom)
+    print(f"\n=== 통합 ROM 완성: {OUT} ===")
+    print(f"크기 {len(data)}B  CRC32 {zlib.crc32(data) & 0xffffffff:08X}  MD5 {hashlib.md5(data).hexdigest()}")
+
+if __name__ == '__main__':
+    main()
