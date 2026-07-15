@@ -105,14 +105,25 @@ def main():
                 elif c not in (' ', '　'):
                     used_other.add(c)
 
-    # ---- 어드벤처 음절도 같은 할당에 포함(폰트 시트 전역 공유) ----
+    # ---- 어드벤처 음절도 같은 할당에 포함(폰트 시트 $CA 전역 공유) ----
+    # ⚠️ 단, **1바이트 슬롯 우선권은 673에 준다**(아래 alloc 참조):
+    #    673 대사는 원본 슬롯에 갇혀(in-place) 1바이트 글리프가 초과 여부를 좌우하지만,
+    #    어드벤처는 씬 통째로 재배치하므로 1/2바이트는 압축률(~10%)에만 영향한다.
+    #    전역 빈도로 섞어 배정하면 분량 큰 어드벤처가 1바이트 슬롯을 잠식해 673 초과가 늘어난다.
+    freq_adv = Counter()
     if a.adv_json:
         AD = json.load(open(a.adv_json, encoding='utf-8'))
-        adv_runs = AD['runs'] if isinstance(AD, dict) else [r for s in AD for r in s['runs']]
+        # 지원 포맷: {'scenes':[{'runs':[…]}]} (작업파일) / {'runs':[…]} (PoC 단일씬) / [{'runs':[…]}]
+        if isinstance(AD, dict) and 'scenes' in AD:
+            adv_runs = [r for s in AD['scenes'] for r in s['runs']]
+        elif isinstance(AD, dict):
+            adv_runs = AD['runs']
+        else:
+            adv_runs = [r for s in AD for r in s['runs']]
         for r in adv_runs:
             for c in strip_tok(r.get('text_kr', '') or ''):
                 if 0xAC00 <= ord(c) <= 0xD7A3:
-                    freq[c] += 1
+                    freq_adv[c] += 1
                 elif c not in (' ', '　', '\n'):
                     used_other.add(c)
 
@@ -123,7 +134,10 @@ def main():
             sys.exit(f"게임 글리프에 없는 유지 문자: {c!r} (U+{ord(c):04X})")
         keep_map[c] = ch2idx_game[c]
     kept_indices = set(keep_map.values())
-    syllables = [c for c, _ in freq.most_common()]   # 빈도 내림차순
+    # 673 음절(빈도순) 먼저 → 그 다음 어드벤처 전용 음절(빈도순).
+    # alloc = one_byte + two_byte 이므로 이 순서가 곧 **1바이트 슬롯 우선권**이 된다.
+    syllables = [c for c, _ in freq.most_common()]
+    syllables += [c for c, _ in freq_adv.most_common() if c not in freq]
 
     # ---- 동적 글리프 할당: 자유 슬롯 = 0..0x3FF - kept ----
     free_slots = [i for i in range(MAX_GLYPH) if i not in kept_indices]
