@@ -11266,175 +11266,175 @@
      "at": 62,
      "cmd": 33,
      "text_jp": "彦佐\n「そっ　それでは\nせめてわたくしがおともを\nいたしますです　ハイ{wait}",
-     "text_kr": ""
+     "text_kr": "히코사\n「그　그러시다면\n하다못해 제가 모시고\n가겠습니다요　네{wait}"
     },
     {
      "at": 113,
      "cmd": 33,
      "text_jp": "藤吉\n「彦佐！　しつこいでゲスよ！{wait}\n",
-     "text_kr": ""
+     "text_kr": "토우키치\n「히코사！　끈질기옵쇼！{wait}\n"
     },
     {
      "at": 142,
      "cmd": 33,
      "text_jp": "ワテは一人でいくんでゲス！！{wait}",
-     "text_kr": ""
+     "text_kr": "저는 혼자 가는 거옵쇼！！{wait}"
     },
     {
      "at": 192,
      "cmd": 33,
      "text_jp": "ジュン\n「フランスチームって\nみんなカッコイイよね〜！{wait}",
-     "text_kr": ""
+     "text_kr": "준\n「프랑스 팀은\n다들 멋있지 않아〜！{wait}"
     },
     {
      "at": 224,
      "cmd": 33,
      "text_jp": "かずみ\n「そうよねぇ\nかれいっていうか　ゆうびっていうか\nとにかくビューティフルよね〜{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카즈미\n「그러니까\n화려하다 할까　우아하다 할까\n아무튼 뷰티풀하다니까〜{wait}{clear}"
     },
     {
      "at": 271,
      "cmd": 33,
      "text_jp": "ふみえ\n「そうそう\nあのブロンドのまき毛で\nくすぐられてみたいわぁ♥{wait}",
-     "text_kr": ""
+     "text_kr": "후미에\n「맞아 맞아\n그 금발 곱슬머리로\n간지럽혀지고 싶어라♥{wait}"
     },
     {
      "at": 319,
      "cmd": 33,
      "text_jp": "ジュン\n「あんたそれちょっと連うよ{wait}",
-     "text_kr": ""
+     "text_kr": "준\n「너 그거 좀 아니거든{wait}"
     },
     {
      "at": 347,
      "cmd": 33,
      "text_jp": "藤吉\n「やあやあ　みなさん{wait}\n",
-     "text_kr": ""
+     "text_kr": "토우키치\n「이야이야　여러분{wait}\n"
     },
     {
      "at": 378,
      "cmd": 33,
      "text_jp": "なんの話かと思えば\nフランスの\nレ・ヴァンクールの\n連中のことでゲスね{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "무슨 얘긴가 했더니\n프랑스\n레 방쿠르\n녀석들 얘기옵쇼？{wait}{clear}"
     },
     {
      "at": 424,
      "cmd": 33,
      "text_jp": "ジュン\n「あっ　藤吉くん！{wait}\n",
-     "text_kr": ""
+     "text_kr": "준\n「앗　토우키치！{wait}\n"
     },
     {
      "at": 448,
      "cmd": 33,
      "text_jp": "そうだ！{wait}\nねえ　今度レ・ヴァンクールと\n対戦する時　あの人たちから\nサインもらってきてよ！{wait}",
-     "text_kr": ""
+     "text_kr": "맞다！{wait}\n있잖아　다음에 레 방쿠르랑\n대전할 때　그 사람들한테\n사인 받아다 줘！{wait}"
     },
     {
      "at": 510,
      "cmd": 33,
      "text_jp": "かずみ\n「あっ　それいい！{wait}\nわたしも　わたしも！{wait}",
-     "text_kr": ""
+     "text_kr": "카즈미\n「앗　그거 좋다！{wait}\n나도　나도！{wait}"
     },
     {
      "at": 546,
      "cmd": 33,
      "text_jp": "ふみえ\n「あたしはぁ\nリーダーのディアナ様のっ！　キャハッ♥{wait}",
-     "text_kr": ""
+     "text_kr": "후미에\n「난 말이야\n리더 디아나 님 거！　꺄핫♥{wait}"
     },
     {
      "at": 593,
      "cmd": 33,
      "text_jp": "藤吉\n「ちょっ　ちょっと待つでゲス{wait}\nみんな知ってるんでゲスか？\nリーダーのディアナってやつは\n女でゲスよ！{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「자　잠깐 기다리옵쇼{wait}\n다들 알고 있사옵쇼？\n리더 디아나란 녀석은\n여자옵쇼！{wait}"
     },
     {
      "at": 663,
      "cmd": 33,
      "text_jp": "ふみえ\n「あーったりまえじゃなぁい\nもっちろん知ってるわよ！{wait}\nでもぉ　あのひとみがぁ\nステキなのよねぇ{wait}\nハァ…{wait}",
-     "text_kr": ""
+     "text_kr": "후미에\n「당〜연하잖아\n무〜론 알고 있어！{wait}\n근데〜　그 눈동자가〜\n멋지단 말이지{wait}\n하아…{wait}"
     },
     {
      "at": 729,
      "cmd": 33,
      "text_jp": "藤吉\n「ステキと言うなら{wait}\n金持ちで{wait}\nオシャレで{wait}\nカッコいいナイス・ガイが\nここにいるじゃないでゲスか",
-     "text_kr": ""
+     "text_kr": "토우키치\n「멋진 거 따지면{wait}\n돈 많고{wait}\n세련되고{wait}\n멋진 나이스 가이가\n여기 있잖사옵쇼"
     },
     {
      "at": 821,
      "cmd": 33,
      "text_jp": "藤吉\n「まったく…{wait}\n",
-     "text_kr": ""
+     "text_kr": "토우키치\n「정말이지…{wait}\n"
     },
     {
      "at": 839,
      "cmd": 33,
      "text_jp": "あんなセンスのかけらも\nないやつらの　いったいどこが\nいいんでゲスかねぇ{wait}\nあんなの歩く\nキンキラキンでゲス{wait}",
-     "text_kr": ""
+     "text_kr": "저런 센스라곤 조금도\n없는 녀석들　대체 어디가\n좋다는 거옵쇼{wait}\n저런 건 걸어다니는\n번쩍번쩍이옵쇼{wait}"
     },
     {
      "at": 899,
      "cmd": 33,
      "text_jp": "りりしい声\n「無礼であろう！{wait}",
-     "text_kr": ""
+     "text_kr": "늠름한 목소리\n「무례하도다！{wait}"
     },
     {
      "at": 944,
      "cmd": 33,
      "text_jp": "藤吉\n「なっ　なんでゲスか{wait}\nどこにいるでゲス！？{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「무　무엇이옵쇼{wait}\n어디 있는 거옵쇼！？{wait}"
     },
     {
      "at": 976,
      "cmd": 33,
      "text_jp": "りりしい声\n「ここだ！！{wait}",
-     "text_kr": ""
+     "text_kr": "늠름한 목소리\n「여기다！！{wait}"
     },
     {
      "at": 1032,
      "cmd": 33,
      "text_jp": "藤吉\n「な　な　な！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「모　모　뭐！{wait}{clear}"
     },
     {
      "at": 1051,
      "cmd": 33,
      "text_jp": "ジュン\n「レ・ヴァンクール！？{wait}",
-     "text_kr": ""
+     "text_kr": "준\n「레 방쿠르！？{wait}"
     },
     {
      "at": 1079,
      "cmd": 33,
      "text_jp": "かずみ\n「キャッ　うそっ！",
-     "text_kr": ""
+     "text_kr": "카즈미\n「꺄앗　거짓말！"
     },
     {
      "at": 1096,
      "cmd": 33,
      "text_jp": "　マジ♥{wait}",
-     "text_kr": ""
+     "text_kr": "　진짜♥{wait}"
     },
     {
      "at": 1108,
      "cmd": 33,
      "text_jp": "ディアナ\n「フランスからやってきた\n自由の戦士\nレ・ヴァンクールここに参上！{wait}",
-     "text_kr": ""
+     "text_kr": "디아나\n「프랑스에서 찾아온\n자유의 전사\n레 방쿠르 여기 등장！{wait}"
     },
     {
      "at": 1163,
      "cmd": 33,
      "text_jp": "ふみえ\n「キャー！　本物のディアナ様よ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "후미에\n「꺄〜！　진짜 디아나 님이야！{wait}{clear}"
     },
     {
      "at": 1201,
      "cmd": 33,
      "text_jp": "ディアナ\n「ボンジュール　マドモアゼル{wait}",
-     "text_kr": ""
+     "text_kr": "디아나\n「봉주르　마드모아젤{wait}"
     },
     {
      "at": 1237,
      "cmd": 33,
      "text_jp": "ふみえ　＆　かずみ\n「キャー♥\nもう死んでもいいわ！！{wait}",
-     "text_kr": ""
+     "text_kr": "후미에　＆　카즈미\n「꺄〜♥\n이제 죽어도 좋아！！{wait}"
     }
    ]
   },
@@ -11447,217 +11447,217 @@
      "at": 12,
      "cmd": 33,
      "text_jp": "レゾン\n「そこのサル！{wait}\nずいぶんと言いたいことを\n言ってくれるものだな{wait}",
-     "text_kr": ""
+     "text_kr": "르존\n「거기 원숭이！{wait}\n어지간히 하고 싶은 말을\n잘도 지껄여 주는군{wait}"
     },
     {
      "at": 63,
      "cmd": 33,
      "text_jp": "藤吉\n「サ　サル！？{wait}\n",
-     "text_kr": ""
+     "text_kr": "토우키치\n「원　원숭이！？{wait}\n"
     },
     {
      "at": 91,
      "cmd": 33,
      "text_jp": "うぬ〜　サルとはなんでゲスか\nサルとは！！{wait}\n確かににてるでゲスが\n初対面のやつにまで言われる\nすじあいはないでゲス！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "이놈〜　원숭이라니 뭐옵쇼\n원숭이라니！！{wait}\n확실히 닮긴 했옵쇼만\n초면인 자한테까지 들을\n이유는 없사옵쇼！{wait}{clear}"
     },
     {
      "at": 162,
      "cmd": 33,
      "text_jp": "ジュン\n「いつもサルの著グルミを\nわざわざ著てるくせに…{wait}",
-     "text_kr": ""
+     "text_kr": "준\n「맨날 원숭이 인형탈을\n일부러 입고 다니면서…{wait}"
     },
     {
      "at": 206,
      "cmd": 33,
      "text_jp": "クラージュ\n「サルだからサルと\n言ったまでだ！{wait}\nちなみに　フランス語では\nサルのことをサンジュと\n言うんだ{wait}\nはっはっは　どうも教養を\nひけらかしているようで\nすまないねぇ　おサルさん{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "쿠라주\n「원숭이니까 원숭이라고\n했을 뿐이다！{wait}\n참고로　프랑스어로는\n원숭이를 생주라고\n한다네{wait}\n하하하　아무래도 교양을\n뽐내는 것 같아서\n미안하군　원숭이 씨{wait}{clear}"
     },
     {
      "at": 311,
      "cmd": 33,
      "text_jp": "ジュン\n「フランス人なんだったら\nそのくらい知ってて\nあたりまえじゃない{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "준\n「프랑스 사람이라면\n그 정도는 알고 있는 게\n당연하잖아{wait}{clear}"
     },
     {
      "at": 355,
      "cmd": 33,
      "text_jp": "藤吉\n「サル　サルって\nうるさいでゲス！！！{wait}\nこんなぶじょくを受けたのは\n生まれて初めてでゲス！{wait}\nもうガマンならないでゲス！\nおりてくるでゲス！\n決闘でゲス！{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「원숭이 원숭이 하면서\n시끄럽사옵쇼！！！{wait}\n이런 모욕을 당한 건\n태어나서 처음이옵쇼！{wait}\n이제 못 참사옵쇼！\n내려오시옵쇼！\n결투옵쇼！{wait}"
     },
     {
      "at": 457,
      "cmd": 33,
      "text_jp": "シャリテ\n「貴様！　決闘の意味を\nわかってて言っているのか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "샤리테\n「이놈！　결투의 의미를\n알고나 말하는 것이냐？{wait}{clear}"
     },
     {
      "at": 507,
      "cmd": 33,
      "text_jp": "藤吉\n「なにが言いたいんでゲスか！{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「무슨 말이 하고 싶은 거옵쇼！{wait}"
     },
     {
      "at": 541,
      "cmd": 33,
      "text_jp": "ディアナ\n「命をかける覚悟があるのか\nということだ！{wait}",
-     "text_kr": ""
+     "text_kr": "디아나\n「목숨을 걸 각오가 있느냐\n하는 것이다！{wait}"
     },
     {
      "at": 583,
      "cmd": 33,
      "text_jp": "藤吉\n「もちろんでゲス！{wait}\n決闘と言えば昔から\n男のプライドと命を\nかけることになっているでゲス！{wait}\nだから…{wait}\nこのミニ四駆で勝負でゲス！{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「물론이옵쇼！{wait}\n결투라 하면 예로부터\n남자의 프라이드와 목숨을\n거는 법이 되어 있사옵쇼！{wait}\n그러니까…{wait}\n이 미니사구로 승부옵쇼！{wait}"
     },
     {
      "at": 677,
      "cmd": 33,
      "text_jp": "クラージュ\n「はぁ？{wait}",
-     "text_kr": ""
+     "text_kr": "쿠라주\n「하아？{wait}"
     },
     {
      "at": 699,
      "cmd": 33,
      "text_jp": "藤吉\n「ワテの命より大事な\nスピンバイパーで勝負でゲス！{wait}\n命より大事な物だから\nこれは十分に決闘でゲス！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「제 목숨보다 소중한\n스핀 바이퍼로 승부옵쇼！{wait}\n목숨보다 소중한 거니까\n이건 충분히 결투옵쇼！{wait}{clear}"
     },
     {
      "at": 773,
      "cmd": 33,
      "text_jp": "ジュン\n「はは…\nやっぱりこの展開かぁ{wait}",
-     "text_kr": ""
+     "text_kr": "준\n「하하…\n역시 이 전개인가{wait}"
     },
     {
      "at": 808,
      "cmd": 33,
      "text_jp": "ディアナ\n（アーム！）{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "디아나\n（아무！）{wait}{clear}"
     },
     {
      "at": 826,
      "cmd": 33,
      "text_jp": "アーム\n（どうした？）{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "아무\n（무슨 일이지？）{wait}{clear}"
     },
     {
      "at": 844,
      "cmd": 33,
      "text_jp": "ディアナ\n（確かやつは\nビクトリーズの一員だな？）{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "디아나\n（분명 저놈은\n빅토리즈의 일원이렷다？）{wait}{clear}"
     },
     {
      "at": 878,
      "cmd": 33,
      "text_jp": "アーム\n（そうだ\nスピンバイパーの三国藤吉だ）{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "아무\n（그렇다\n스핀 바이퍼 미쿠니 토우키치다）{wait}{clear}"
     },
     {
      "at": 911,
      "cmd": 33,
      "text_jp": "ディアナ\n（やつの弱点は？）{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "디아나\n（저놈의 약점은？）{wait}{clear}"
     },
     {
      "at": 934,
      "cmd": 33,
      "text_jp": "アーム\n（スピンバイパーは\nコーナリングマシンだ{wait}\nロングストレートには弱い）{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "아무\n（스핀 바이퍼는\n코너링 머신이다{wait}\n롱 스트레이트에는 약하다）{wait}{clear}"
     },
     {
      "at": 981,
      "cmd": 33,
      "text_jp": "ディアナ\n（ふふん　そうか\nこの勝負もらった！）{wait}",
-     "text_kr": ""
+     "text_kr": "디아나\n（후훗　그렇군\n이 승부 받았다！）{wait}"
     },
     {
      "at": 1021,
      "cmd": 33,
      "text_jp": "ディアナ\n「良かろう！\nその勝負\n受けて立とうではないか！{wait}\n決闘の場所は\n貴様が立っているその道！\nスーパースピードウェイだ！{wait}\nもんくはあるまいな？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "디아나\n「좋다！\n그 승부\n받아 주마！{wait}\n결투 장소는\n네놈이 서 있는 그 길！\n슈퍼 스피드웨이다！{wait}\n불만은 없겠지？{wait}{clear}"
     },
     {
      "at": 1125,
      "cmd": 33,
      "text_jp": "藤吉\n「なっ！　なんでゲス〜！？{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「뭐！　무슨 소리옵쇼〜！？{wait}"
     },
     {
      "at": 1153,
      "cmd": 33,
      "text_jp": "藤吉\n（よりにもよって\n直線コースでゲスか！{wait}\nこまったでゲス{wait}\nヒジョーにこまったでゲス！{wait}\nでっ　でも　こうなった以上\nそんなことも言ってられないで\nゲスし…）{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n（하필이면\n직선 코스라니옵쇼！{wait}\n난처하옵쇼{wait}\n엄청 난처하옵쇼！{wait}\n그　그래도　이렇게 된 이상\n그런 것도 따질 처지가\n아니옵쇼…）{wait}"
     },
     {
      "at": 1252,
      "cmd": 33,
      "text_jp": "藤吉\n「いっ　いいでゲスよ！{wait}\n望むところでゲス！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「조　좋사옵쇼！{wait}\n바라던 바옵쇼！{wait}{clear}"
     },
     {
      "at": 1287,
      "cmd": 33,
      "text_jp": "ジュン\n「藤吉くん\nアセだらだらよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "준\n「토우키치\n땀 뻘뻘이야{wait}{clear}"
     },
     {
      "at": 1319,
      "cmd": 33,
      "text_jp": "ディアナ\n「では　いくぞ！{wait}\nとあーっ！{wait}",
-     "text_kr": ""
+     "text_kr": "디아나\n「그럼　간다！{wait}\n타아앗！{wait}"
     },
     {
      "at": 1372,
      "cmd": 33,
      "text_jp": "クラージュ\n「待った　リーダー！\nここは屋根の上だぞ！！",
-     "text_kr": ""
+     "text_kr": "쿠라주\n「멈춰라　리더！\n여기는 지붕 위라고！！"
     },
     {
      "at": 1414,
      "cmd": 33,
      "text_jp": "ディアナ\n「いやぁん{wait}",
-     "text_kr": ""
+     "text_kr": "디아나\n「이야앙{wait}"
     },
     {
      "at": 1474,
      "cmd": 33,
      "text_jp": "クラージュ\n「リィーダァー！！！{wait}",
-     "text_kr": ""
+     "text_kr": "쿠라주\n「리이더어！！！{wait}"
     },
     {
      "at": 1504,
      "cmd": 33,
      "text_jp": "レゾン\n「死ぬなぁ！\nリーダー！！！{wait}",
-     "text_kr": ""
+     "text_kr": "르존\n「죽지 마라！\n리더！！！{wait}"
     },
     {
      "at": 1537,
      "cmd": 33,
      "text_jp": "シャリテ\n「リーダー\nいやだぁ！！！{wait}",
-     "text_kr": ""
+     "text_kr": "샤리테\n「리더\n싫어어！！！{wait}"
     },
     {
      "at": 1630,
      "cmd": 33,
      "text_jp": "藤吉\n「じ　自爆したでゲス！{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「자　자폭했사옵쇼！{wait}"
     },
     {
      "at": 1661,
      "cmd": 33,
      "text_jp": "かずみ\n「キャー！　落ちられたわ♥{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카즈미\n「꺄〜！　떨어지셨어♥{wait}{clear}"
     },
     {
      "at": 1697,
      "cmd": 33,
      "text_jp": "ふみえ\n「落ちるおすがたもステキー♥{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "후미에\n「떨어지는 모습도 멋져〜♥{wait}{clear}"
     },
     {
      "at": 1736,
      "cmd": 33,
      "text_jp": "ジュン\n「…友達　やめようかしら{wait}",
-     "text_kr": ""
+     "text_kr": "준\n「…친구　그만둘까 봐{wait}"
     }
    ]
   },
@@ -11670,103 +11670,103 @@
      "at": 4,
      "cmd": 33,
      "text_jp": "クラージュ\n「リィーダァー！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "쿠라주\n「리이더어！！{wait}{clear}"
     },
     {
      "at": 26,
      "cmd": 33,
      "text_jp": "レゾン\n「リーダー！\nここはベルサイユではないぞ！\nまだ死ぬには早い！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "르존\n「리더！\n여기는 베르사유가 아니다！\n아직 죽기엔 이르다！{wait}{clear}"
     },
     {
      "at": 70,
      "cmd": 33,
      "text_jp": "ディアナ\n「あ　後はたのんだぞ…\nみんな…{wait}\n",
-     "text_kr": ""
+     "text_kr": "디아나\n「뒤　뒤는 부탁한다…\n모두…{wait}\n"
     },
     {
      "at": 99,
      "cmd": 33,
      "text_jp": "ジュティーム　マドモワゼェル…{wait}\nガクッ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "주템　마드모아젤…{wait}\n픽{wait}{clear}"
     },
     {
      "at": 126,
      "cmd": 33,
      "text_jp": "シャリテ\n「いや〜！！\nリーダー！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "샤리테\n「싫어〜！！\n리더！！{wait}{clear}"
     },
     {
      "at": 151,
      "cmd": 33,
      "text_jp": "クラージュ\n「おお　神よ！\nあなたはなんとむごい\n仕打ちをされるのか！{wait}",
-     "text_kr": ""
+     "text_kr": "쿠라주\n「오오　신이시여！\n당신은 어찌 이리 잔혹한\n처사를 하시는 겁니까！{wait}"
     },
     {
      "at": 203,
      "cmd": 33,
      "text_jp": "レゾン\n「貴様ぁ！\nよくもリーダーを！！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "르존\n「이놈！\n감히 리더를！！！{wait}{clear}"
     },
     {
      "at": 233,
      "cmd": 33,
      "text_jp": "藤吉\n「なっ　なっ！\nワテはなにもしてないでゲス！{wait}\nインネンでゲス{wait}\nやつあたりでゲス！{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「뭐　뭐라고！\n저는 아무것도 안 했사옵쇼！{wait}\n생트집이옵쇼{wait}\n화풀이옵쇼！{wait}"
     },
     {
      "at": 292,
      "cmd": 33,
      "text_jp": "クラージュ\n「問答無用！\nリーダーのかたきめ！{wait}",
-     "text_kr": ""
+     "text_kr": "쿠라주\n「문답무용！\n리더의 원수 갚겠다！{wait}"
     },
     {
      "at": 333,
      "cmd": 33,
      "text_jp": "藤吉\n「うわああ〜　でゲス！{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「으와아아〜　옵쇼！{wait}"
     },
     {
      "at": 361,
      "cmd": 33,
      "text_jp": "アーム\n「二人とも少しおちつけ！{wait}\nどうせいつものしばいだ{wait}\nこのていどのことでくたばる\nディアナではない！{wait}",
-     "text_kr": ""
+     "text_kr": "아무\n「둘 다 좀 진정해라！{wait}\n어차피 늘 하던 연극이다{wait}\n이 정도로 뻗어 버릴\n디아나가 아니다！{wait}"
     },
     {
      "at": 432,
      "cmd": 33,
      "text_jp": "藤吉\n「ふつう死んでるでゲス{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「보통은 죽었사옵쇼{wait}"
     },
     {
      "at": 467,
      "cmd": 33,
      "text_jp": "アーム\n「それより三国藤吉\nレースの準備をしろ{wait}\nディアナのかわりに\nオレが相手になる{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "아무\n「그보다 미쿠니 토우키치\n레이스 준비를 해라{wait}\n디아나 대신\n내가 상대가 되겠다{wait}{clear}"
     },
     {
      "at": 524,
      "cmd": 33,
      "text_jp": "藤吉\n「ヘンなマスクなんかつけて\nなんだかあやしいやつでゲス…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「이상한 마스크 같은 거 쓰고\n어쩐지 수상한 자옵쇼…{wait}{clear}"
     },
     {
      "at": 564,
      "cmd": 33,
      "text_jp": "アーム\n「つべこべ言ってないで\n早く準備をしろ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "아무\n「이러쿵저러쿵 하지 말고\n어서 준비를 해라！{wait}{clear}"
     },
     {
      "at": 599,
      "cmd": 33,
      "text_jp": "藤吉\n「やたらえらそうな\nヤツでゲスなあ{wait}\n",
-     "text_kr": ""
+     "text_kr": "토우키치\n「되게 잘난 척하는\n녀석이옵쇼{wait}\n"
     },
     {
      "at": 628,
      "cmd": 33,
      "text_jp": "ん〜と　セッティングは\n思いきりスピード重視に\nしておいた方が良さそうで\nゲスな…{wait}",
-     "text_kr": ""
+     "text_kr": "음〜　세팅은\n힘껏 스피드 중시로\n해 두는 게 좋을 듯\n하옵쇼…{wait}"
     }
    ]
   },
