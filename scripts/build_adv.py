@@ -16,7 +16,7 @@
   - **원본 슬롯은 손대지 않는다** → 혹시 남은 참조가 있어도 최악이 원본 일본어(안전).
   - 번역이 없는 씬은 아예 건드리지 않는다(원본 그대로) → 증분 진행 가능.
 """
-import sys, json, argparse, os
+import sys, json, argparse, os, re
 sys.path.insert(0, 'scripts')
 from adv_codec import (decompress_scene, compress_scene, scene_src, foff,
                        DICT_SNES, DICT_LEN, N_SCENES)
@@ -48,15 +48,36 @@ def enc_glyph(g):
     return bytes([c]) if c < 0x100 else bytes([(c >> 8) & 0xFF, c & 0xFF])
 
 
+_CTRL = re.compile(r'c([0-9A-F])(?::([0-9A-F]{2}))?\Z')
+
+
 def encode_text(s, ch2idx, where):
+    """adv_scene.render() 의 정확한 역함수.
+
+    {wait}=0x04 / {clear}=0x06 / \\n=0x05 / {cN}=0xN / {cN:XX}=0xN,0xXX
+    (렌더는 0x07·0x08·0x09 를 1인자 {cN:XX}, 0x0A-0x0F 를 무인자 {cN} 으로 낸다)
+    """
     out = bytearray(); i = 0
     while i < len(s):
-        if s.startswith('{wait}', i):
-            out.append(0x04); i += 6
-        elif s.startswith('{clear}', i):
-            out.append(0x06); i += 7
-        elif s[i] == '\n':
+        if s[i] == '\n':
             out.append(0x05); i += 1
+        elif s[i] == '{':
+            j = s.find('}', i)
+            if j < 0:
+                sys.exit("제어 마커가 안 닫힘: %r @ %s" % (s[i:i + 12], where))
+            tok = s[i + 1:j]
+            if tok == 'wait':
+                out.append(0x04)
+            elif tok == 'clear':
+                out.append(0x06)
+            else:
+                m = _CTRL.match(tok)
+                if not m:
+                    sys.exit("알 수 없는 마커 {%s} @ %s" % (tok, where))
+                out.append(int(m.group(1), 16))
+                if m.group(2) is not None:
+                    out.append(int(m.group(2), 16))
+            i = j + 1
         else:
             ch = s[i]
             if ch not in ch2idx:

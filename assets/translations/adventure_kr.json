@@ -4263,199 +4263,199 @@
      "at": 74,
      "cmd": 33,
      "text_jp": "校長先生\n「さいテストを受けるのかね？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「재시험을 보겠는가？{wait}{clear}"
     },
     {
      "at": 105,
      "cmd": 33,
      "text_jp": "『さいテストを受ける？{c8:07}\n　　おねがいします\n　　少し待ってください{c8:00}",
-     "text_kr": ""
+     "text_kr": "『재시험을 볼까？{c8:07}\n　　부탁합니다\n　　조금만 기다려 주세요{c8:00}"
     },
     {
      "at": 171,
      "cmd": 33,
      "text_jp": "校長先生\n「ちゃんと予習してくるんだぞ{wait}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「예습 똑바로 하고 오게{wait}"
     },
     {
      "at": 230,
      "cmd": 33,
      "text_jp": "校長先生\n「おお！\nビクトリーズのしょくん{wait}\nかつやくのウワサは\n聞いとるぞ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「오오！\n빅토리즈 제군{wait}\n활약 소문은\n듣고 있네{wait}{clear}"
     },
     {
      "at": 280,
      "cmd": 33,
      "text_jp": "烈\n「こっ　校長先生！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「교　교장 선생님！{wait}{clear}"
     },
     {
      "at": 303,
      "cmd": 33,
      "text_jp": "校長先生\n「さて　キミたち{wait}\nミニ四駆もいいが勉強を\nちゃんとやっとるのかね？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「그래　자네들{wait}\n미니사구도 좋지만 공부는\n제대로 하고 있는가？{wait}{clear}"
     },
     {
      "at": 360,
      "cmd": 33,
      "text_jp": "豪\n「えっ！？{wait}\nべっ　勉強…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「엇！？{wait}\n고　공부…{wait}{clear}"
     },
     {
      "at": 385,
      "cmd": 33,
      "text_jp": "校長先生\n「そうだ　勉強だ{wait}\nそこでだ　キミたちの\nひごろの勉強ぐあいを\nみるために\nこれからテストを行なう{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「그래　공부일세{wait}\n그래서 말인데　자네들의\n평소 공부 상태를\n보기 위해\n지금부터 시험을 치르겠네{wait}{clear}"
     },
     {
      "at": 455,
      "cmd": 33,
      "text_jp": "豪\n「テストぉ〜！{wait}\nなんでいきなりそんなこと\nやんなきゃなんねぇんだよ！{wait}\n",
-     "text_kr": ""
+     "text_kr": "고\n「시험〜！{wait}\n왜 갑자기 그런 걸\n해야 되는 건데！{wait}\n"
     },
     {
      "at": 500,
      "cmd": 33,
      "text_jp": "ヘン！　オレはやだね！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "흥！　난 싫은데！！{wait}{clear}"
     },
     {
      "at": 519,
      "cmd": 33,
      "text_jp": "校長先生\n「そうか…{wait}\nならば　これからは\nミニ四駆の練習を\nひかえてもらうしかないのぉ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「그런가…{wait}\n그렇다면　앞으로는\n미니사구 연습을\n자제해 달라고 할 수밖에{wait}{clear}"
     },
     {
      "at": 586,
      "cmd": 33,
      "text_jp": "豪\n「なっ　なに〜！？{wait}\nやい　きたねぇぞ校長！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「뭐　뭐야〜！？{wait}\n야　치사하잖아 교장！！{wait}{clear}"
     },
     {
      "at": 627,
      "cmd": 33,
      "text_jp": "烈\n「こら　豪！{wait}\n校長先生にむかって\nなんて口のききかたをするんだ！{wait}\n",
-     "text_kr": ""
+     "text_kr": "레츠\n「이봐　고！{wait}\n교장 선생님한테\n그게 무슨 말버릇이야！{wait}\n"
     },
     {
      "at": 675,
      "cmd": 33,
      "text_jp": "でも　豪の言うとおり\nぬきうちテストはちょっと\nフェアじゃないですね{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "하지만　고 말대로\n기습 시험은 좀\n페어하지 않네요{wait}{clear}"
     },
     {
      "at": 718,
      "cmd": 33,
      "text_jp": "校長先生\n「ふむ　ぬきうちテストは\nアンフェアか…{wait}\nならば　烈くん{wait}\nだれか一人が代表で\nテストを受ける\nということでどうかね？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「흠　기습 시험은\n언페어인가…{wait}\n그렇다면　레츠{wait}\n누군가 한 명이 대표로\n시험을 치르는\n걸로 하면 어떻겠나？{wait}{clear}"
     },
     {
      "at": 798,
      "cmd": 33,
      "text_jp": "烈\n「わかりました\nそれならボクが受けます{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「알겠습니다\n그렇다면 제가 치르겠습니다{wait}{clear}"
     },
     {
      "at": 828,
      "cmd": 33,
      "text_jp": "校長先生\n「よろしい！{wait}\nでは　これから計算問題を\n10問出題するから\n正しい答えを選びなさい{wait}\n20秒以内に答えることが\nできたら合格だ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「좋아！{wait}\n그럼　지금부터 계산 문제를\n10문제 낼 테니\n올바른 답을 고르게{wait}\n20초 이내에 답할 수\n있으면 합격일세！{wait}{clear}"
     },
     {
      "at": 925,
      "cmd": 33,
      "text_jp": "烈\n「10問を20秒ですか！{wait}\nそれはちょっと\n時間がみじかいんじゃ…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「10문제를 20초요！{wait}\n그건 좀\n시간이 짧은데…{wait}{clear}"
     },
     {
      "at": 972,
      "cmd": 33,
      "text_jp": "校長先生\n「なぁに　答えは2つのうちから\n正しい方を選べば良いように\nしてあるからだいじょうぶじゃよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「뭘　답은 둘 중에서\n맞는 쪽을 고르면 되게\n해 뒀으니 괜찮을 걸세{wait}{clear}"
     },
     {
      "at": 1038,
      "cmd": 33,
      "text_jp": "豪\n「合格したら\nなにかくれるのか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「합격하면\n뭐 주는 거야？{wait}{clear}"
     },
     {
      "at": 1066,
      "cmd": 33,
      "text_jp": "校長先生\n「バカモン！{wait}\nテストに合格したぐらいで\n物がもらえるほど\n世の中あまくはない！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「이런 바보！{wait}\n시험에 합격한 정도로\n물건을 받을 만큼\n세상이 만만하지 않네！{wait}{clear}"
     },
     {
      "at": 1127,
      "cmd": 33,
      "text_jp": "烈\n「では　校長先生{wait}\nもし合格したら\n明日のレースにきて\n応援してもらえませんか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「그럼　교장 선생님{wait}\n만약 합격하면\n내일 레이스에 오셔서\n응원해 주시지 않겠어요？{wait}{clear}"
     },
     {
      "at": 1187,
      "cmd": 33,
      "text_jp": "校長先生\n「まあ　それくらいならよかろう{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「뭐　그 정도라면 좋겠지{wait}{clear}"
     },
     {
      "at": 1218,
      "cmd": 33,
      "text_jp": "烈\n「ありがとうございます！{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「감사합니다！{wait}"
     },
     {
      "at": 1292,
      "cmd": 33,
      "text_jp": "校長先生\n「それでは始めるぞ{wait}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「그럼 시작하겠네{wait}"
     },
     {
      "at": 1361,
      "cmd": 33,
      "text_jp": "校長先生\n「さいテストを受けつけるが\nどうするかね？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「재시험을 받아 주겠네만\n어떻게 하겠나？{wait}{clear}"
     },
     {
      "at": 1399,
      "cmd": 33,
      "text_jp": "『さいテストを受ける？{c8:07}\n　　おねがいします\n　　少し待ってください{c8:00}",
-     "text_kr": ""
+     "text_kr": "『재시험을 볼까？{c8:07}\n　　부탁합니다\n　　조금만 기다려 주세요{c8:00}"
     },
     {
      "at": 1468,
      "cmd": 33,
      "text_jp": "校長先生\n「ちゃんと予習してくるんだぞ{wait}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「예습 똑바로 하고 오게{wait}"
     },
     {
      "at": 1512,
      "cmd": 33,
      "text_jp": "校長先生\n「よろしい　みごと合格じゃ！{wait}\n",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「좋아　훌륭히 합격일세！{wait}\n"
     },
     {
      "at": 1544,
      "cmd": 33,
      "text_jp": "やくそくどおり　明日のレース\nスタンドで応援させて\nもらおう{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "약속대로　내일 레이스\n스탠드에서 응원하도록\n하겠네{wait}{clear}"
     },
     {
      "at": 1584,
      "cmd": 33,
      "text_jp": "レースアイテム\n『校長の声』を手に入れた！",
-     "text_kr": ""
+     "text_kr": "레이스 아이템\n『교장의 목소리』를 얻었다！"
     },
     {
      "at": 1714,
      "cmd": 33,
      "text_jp": "校長先生\n「なかなかやりよるわ",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「제법 잘하는구먼"
     },
     {
      "at": 1741,
      "cmd": 33,
      "text_jp": "校長先生\n「ビクトリーズよ\nがんばるんじゃぞ",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「빅토리즈여\n힘내도록 하게"
     }
    ]
   },
@@ -4468,187 +4468,187 @@
      "at": 98,
      "cmd": 33,
      "text_jp": "校長先生\n「さいテストを受けるのかね？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「재시험을 보겠는가？{wait}{clear}"
     },
     {
      "at": 129,
      "cmd": 33,
      "text_jp": "『さいテストを受ける？{c8:07}\n　　ハダカおどりをさせてやる！\n　　算数なんてゴメンだね{c8:00}",
-     "text_kr": ""
+     "text_kr": "『재시험을 볼까？{c8:07}\n　　알몸춤을 추게 해 주지！\n　　산수 따윈 사양이야{c8:00}"
     },
     {
      "at": 202,
      "cmd": 33,
      "text_jp": "校長先生\n「いつでもチャレンジ\nまっとるぞ{wait}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「언제든 도전\n기다리고 있겠네{wait}"
     },
     {
      "at": 261,
      "cmd": 33,
      "text_jp": "校長先生\n「待っておったぞ　豪くん{wait}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「기다리고 있었네　고{wait}"
     },
     {
      "at": 297,
      "cmd": 33,
      "text_jp": "豪\n「えっ！？　オレ？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「엇！？　나？{wait}{clear}"
     },
     {
      "at": 316,
      "cmd": 33,
      "text_jp": "校長先生\n「そうじゃ{wait}\n先日　たまみ先生から\nキミの成績のことで\nそうだんをうけてねぇ{wait}\nなんでもテストの\n点数が下がりっぱなし\nらしいじゃないか{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「그렇다네{wait}\n요전에　타마미 선생한테\n자네 성적 문제로\n상담을 받아서 말이야{wait}\n듣자 하니 시험\n점수가 계속 떨어지고\n있다더군{wait}{clear}"
     },
     {
      "at": 408,
      "cmd": 33,
      "text_jp": "豪\n「くっ！{wait}\n",
-     "text_kr": ""
+     "text_kr": "고\n「윽！{wait}\n"
     },
     {
      "at": 422,
      "cmd": 33,
      "text_jp": "たまみ先生〜\nよけいなことを〜{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "타마미 선생님〜\n쓸데없는 말을〜{wait}{clear}"
     },
     {
      "at": 446,
      "cmd": 33,
      "text_jp": "校長先生\n「そこで…　だ{wait}\n今からキミにテストを受けてもらう{wait}\n科目はキミのもっともニガテな\n算数だ！{wait}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「그래서…　말인데{wait}\n이제부터 자네가 시험을 보게 되네{wait}\n과목은 자네가 가장 질색하는\n산수일세！{wait}"
     },
     {
      "at": 520,
      "cmd": 33,
      "text_jp": "豪\n「さっ　算数！？{wait}\nいやだ！　絶対にいやだ！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「사　산수！？{wait}\n싫어！　절대 싫어！！{wait}{clear}"
     },
     {
      "at": 557,
      "cmd": 33,
      "text_jp": "校長先生\n「そうか…{wait}\nならば　これからは\nミニ四駆の練習を\nひかえてもらうしかないのぉ{wait}\n",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「그런가…{wait}\n그렇다면　앞으로는\n미니사구 연습을\n자제해 달라고 할 수밖에{wait}\n"
     },
     {
      "at": 616,
      "cmd": 33,
      "text_jp": "ついでに　ほしゅうなんかも\n受けてもらっちゃおうかなぁ〜{wait}",
-     "text_kr": ""
+     "text_kr": "덤으로　보충수업 같은 것도\n받게 해 버릴까 하는데〜{wait}"
     },
     {
      "at": 658,
      "cmd": 33,
      "text_jp": "豪\n「きっ　きたねぇ〜ぞ！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「치　치사하잖아〜！！{wait}{clear}"
     },
     {
      "at": 680,
      "cmd": 33,
      "text_jp": "校長先生\n「さ〜て　どうするんじゃ？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「자〜　어떻게 하겠나？{wait}{clear}"
     },
     {
      "at": 709,
      "cmd": 33,
      "text_jp": "豪\n「ぐっぐぐっ…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「으윽 으으…{wait}{clear}"
     },
     {
      "at": 726,
      "cmd": 33,
      "text_jp": "烈\n「豪　こうなったら\nやるしかないな{wait}\nテストに受かって\n思いっきりミニ四駆をやれば\nいいじゃないか{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「고　이렇게 된 이상\n할 수밖에 없어{wait}\n시험에 붙어서\n마음껏 미니사구 하면\n되잖아{wait}{clear}"
     },
     {
      "at": 790,
      "cmd": 33,
      "text_jp": "豪\n「かんたんに言うなよな〜{wait}\n",
-     "text_kr": ""
+     "text_kr": "고\n「쉽게 말하지 마〜{wait}\n"
     },
     {
      "at": 813,
      "cmd": 33,
      "text_jp": "くっそー　しょうがねぇ\n受けてやるよ！{wait}\nそのかわり　オレが合格したら\n明日のWGPをハダカおどり\nしながら応援しろよな！{wait}",
-     "text_kr": ""
+     "text_kr": "젠장　어쩔 수 없지\n봐 주겠어！{wait}\n대신　내가 합격하면\n내일 WGP를 알몸춤\n추면서 응원해라！{wait}"
     },
     {
      "at": 904,
      "cmd": 33,
      "text_jp": "校長先生\n（なに〜！\nハダカおどりじゃと〜{wait}\nそんなことをやって\n教育委員会にばれたら…{wait}\n",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n（뭐야〜！\n알몸춤이라니〜{wait}\n그런 짓을 했다가\n교육위원회에 들키면…{wait}\n"
     },
     {
      "at": 970,
      "cmd": 33,
      "text_jp": "いや　待てよ…{wait}\n相手はあの豪くんだ\n受かるわけはない！）{wait}",
-     "text_kr": ""
+     "text_kr": "아니　잠깐…{wait}\n상대는 그 고 아닌가\n붙을 리가 없지！）{wait}"
     },
     {
      "at": 1014,
      "cmd": 33,
      "text_jp": "校長先生\n「よろしい\nやくそくしようではないか{wait}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「좋아\n약속하지 않겠나{wait}"
     },
     {
      "at": 1064,
      "cmd": 33,
      "text_jp": "豪\n（なっ　なに〜\n絶対ことわってくると\n思ったのに〜！）{wait}",
-     "text_kr": ""
+     "text_kr": "고\n（뭐　뭐야〜\n분명 거절할 거라고\n생각했는데〜！）{wait}"
     },
     {
      "at": 1113,
      "cmd": 33,
      "text_jp": "校長先生\n「では　これから計算問題を\n10問出題するから\n正しい答えを選びなさい{wait}\n20秒以内に答えることが\nできたら合格だ！{wait}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「그럼　지금부터 계산 문제를\n10문제 낼 테니\n올바른 답을 고르게{wait}\n20초 이내에 답할 수\n있으면 합격일세！{wait}"
     },
     {
      "at": 1265,
      "cmd": 33,
      "text_jp": "校長先生\n「それでは始めるぞ{wait}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「그럼 시작하겠네{wait}"
     },
     {
      "at": 1334,
      "cmd": 33,
      "text_jp": "校長先生\n「さいテストを受けつけるが\nどうするかね？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「재시험을 받아 주겠네만\n어떻게 하겠나？{wait}{clear}"
     },
     {
      "at": 1372,
      "cmd": 33,
      "text_jp": "『さいテストを受ける？{c8:07}\n　　ハダカおどりをさせてやる！\n　　算数なんてゴメンだね{c8:00}",
-     "text_kr": ""
+     "text_kr": "『재시험을 볼까？{c8:07}\n　　알몸춤을 추게 해 주지！\n　　산수 따윈 사양이야{c8:00}"
     },
     {
      "at": 1445,
      "cmd": 33,
      "text_jp": "校長先生\n「いつでもチャレンジ\nまっとるぞ{wait}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「언제든 도전\n기다리고 있겠네{wait}"
     },
     {
      "at": 1497,
      "cmd": 33,
      "text_jp": "校長先生\n「なっ　ななな！{wait}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「뭐　뭐뭐뭐！{wait}"
     },
     {
      "at": 1533,
      "cmd": 33,
      "text_jp": "校長先生\n「えーい　ワシも男じゃ\nやくそくどおりハダカおどりで\n応援しようじゃないか！！{wait}",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「에라　나도 사내일세\n약속대로 알몸춤으로\n응원해 주지 않겠나！！{wait}"
     },
     {
      "at": 1589,
      "cmd": 33,
      "text_jp": "レースアイテム\n『ハダカおどり』を手に入れた！",
-     "text_kr": ""
+     "text_kr": "레이스 아이템\n『알몸춤』을 얻었다！"
     },
     {
      "at": 1718,
      "cmd": 33,
      "text_jp": "校長先生\n「とんでもないことを\nやくそくしてしまった…",
-     "text_kr": ""
+     "text_kr": "교장 선생님\n「엄청난 걸\n약속해 버렸구먼…"
     }
    ]
   },
@@ -4661,163 +4661,163 @@
      "at": 24,
      "cmd": 33,
      "text_jp": "豪\n「おお！　あの制服は…{wait}\n風輪中学校！？{wait}\n",
-     "text_kr": ""
+     "text_kr": "고\n「오오！　저 교복은…{wait}\n후우린 중학교！？{wait}\n"
     },
     {
      "at": 61,
      "cmd": 33,
      "text_jp": "とっ　年上かぁ　まいったなぁ…{wait}\nまあいいか　",
-     "text_kr": ""
+     "text_kr": "여　연상인가　이거 참…{wait}\n뭐 됐나　"
     },
     {
      "at": 92,
      "cmd": 33,
      "text_jp": "グフフフフッ！{wait}",
-     "text_kr": ""
+     "text_kr": "구후후후훗！{wait}"
     },
     {
      "at": 115,
      "cmd": 33,
      "text_jp": "豪\n「は　はじめまして！\n星馬豪です！{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「처　처음 뵙겠습니다！\n세이바 고입니다！{wait}"
     },
     {
      "at": 152,
      "cmd": 33,
      "text_jp": "ジュリオ\n「チャオ♥{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "줄리오\n「차오♥{wait}{clear}"
     },
     {
      "at": 169,
      "cmd": 33,
      "text_jp": "豪\n「いやあ　なんと言うか\n思ったとおりの美人で…{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「아니　뭐랄까\n생각한 대로 미인이라…{wait}"
     },
     {
      "at": 211,
      "cmd": 33,
      "text_jp": "豪\n「あーっ！　お前！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「아앗！　너！！{wait}{clear}"
     },
     {
      "at": 232,
      "cmd": 33,
      "text_jp": "ジュリオ\n「じゅり子でぇす\n豪さまぁ　愛してますわぁ♥{wait}",
-     "text_kr": ""
+     "text_kr": "줄리오\n「줄리코예요오\n고 님　사랑해요오♥{wait}"
     },
     {
      "at": 276,
      "cmd": 33,
      "text_jp": "豪\n「ロ　ロッソストラーダの\nジュリオぉぉ！？{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「로　롯소 스트라다의\n줄리오오오！？{wait}"
     },
     {
      "at": 331,
      "cmd": 33,
      "text_jp": "ルキノ\n「こいつバカか？\n本当にひっかかりやがったぜ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "루키노\n「이 녀석 바보냐？\n진짜로 걸려들었잖아{wait}{clear}"
     },
     {
      "at": 366,
      "cmd": 33,
      "text_jp": "ゾーラ\n「ハッハハハッ！　言ったろ\nこういうたんじゅんバカは\n図にのりやすいって{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "졸라\n「핫하하핫！　말했잖아\n이런 단순 바보는\n우쭐대기 쉽다고{wait}{clear}"
     },
     {
      "at": 415,
      "cmd": 33,
      "text_jp": "リオーネ\n「ふだんはよっぽど\nモテないんじゃねぇのか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "리오네\n「평소에 어지간히\n인기 없는 거 아니냐？{wait}{clear}"
     },
     {
      "at": 449,
      "cmd": 33,
      "text_jp": "ジュリオ\n「なぁに言ってるのよぉ{wait}\nこのじゅり子ちゃんの\nセクシーさに\nカレったらメロメロに\nなったんじゃないの{wait}\nウフフフフ♥{wait}",
-     "text_kr": ""
+     "text_kr": "줄리오\n「무슨 소리 하는 거야아{wait}\n이 줄리코의\n섹시함에\n그이가 홀딱\n반한 거 아니겠어{wait}\n우후후후후♥{wait}"
     },
     {
      "at": 529,
      "cmd": 33,
      "text_jp": "豪\n「て　てめぇら\nなんのつもりだ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「이　이 자식들\n무슨 속셈이야！{wait}{clear}"
     },
     {
      "at": 555,
      "cmd": 33,
      "text_jp": "ゾーラ\n「なんのつもりって\nお前の愛の告白を\n見物にきてやったんだよ{wait}\nホレ　早くしねぇか\nいとしのじゅり子ちゃんは\n目の前だぜぇ　わはははっ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "졸라\n「속셈이라니\n네 사랑 고백을\n구경하러 와 준 거야{wait}\n자　빨리 안 하냐\n사랑스러운 줄리코가\n눈앞에 있잖아　와하하핫！{wait}{clear}"
     },
     {
      "at": 644,
      "cmd": 33,
      "text_jp": "ジュリオ\n「好きよ　豪さまぁ♥{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "줄리오\n「좋아해요　고 님♥{wait}{clear}"
     },
     {
      "at": 668,
      "cmd": 33,
      "text_jp": "豪\n「だましたな！{wait}\n人の心をふみにじりやがって！{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「속였구나！{wait}\n남의 마음을 짓밟다니！{wait}"
     },
     {
      "at": 709,
      "cmd": 33,
      "text_jp": "ルキノ\n「それはこっちのセリフだ\n星馬豪！{wait}\nオレたちは前大会で\nオーナーのしんらいを\n失ったんだ！{wait}\nお前たちのおかげでな！{wait}",
-     "text_kr": ""
+     "text_kr": "루키노\n「그건 이쪽 대사다\n세이바 고！{wait}\n우린 지난 대회에서\n오너의 신뢰를\n잃었다！{wait}\n너희들 덕분에！{wait}"
     },
     {
      "at": 794,
      "cmd": 33,
      "text_jp": "リオーネ\n「しんらいを取りもどすのに\nどれほどの苦労をしたと思う？{wait}\nじごくのようだったよ{wait}\nぬるま湯につかった\n日本人なんかにはわからない\nヘドをはくようなじごくだ{wait}\n",
-     "text_kr": ""
+     "text_kr": "리오네\n「신뢰를 되찾는 데\n얼마나 고생한 줄 아냐？{wait}\n지옥 같았다고{wait}\n미지근한 물에 잠긴\n일본인 따위는 모를\n토악질 나는 지옥이야{wait}\n"
     },
     {
      "at": 891,
      "cmd": 33,
      "text_jp": "そこをはい登ってきたんだよ\nオレたちは！{wait}",
-     "text_kr": ""
+     "text_kr": "거기서 기어올라 온 거다\n우리는！{wait}"
     },
     {
      "at": 926,
      "cmd": 33,
      "text_jp": "ゾーラ\n「特にルキノなんて\nレギュラーにもどるのは\n大変だったんだぜぇ！{wait}\nあのプライドの高いルキノが\nオーナーに…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "졸라\n「특히 루키노는\n레귤러로 돌아오는 게\n엄청 힘들었다고！{wait}\n그 자존심 높은 루키노가\n오너한테…{wait}{clear}"
     },
     {
      "at": 995,
      "cmd": 33,
      "text_jp": "ルキノ\n「るせぇ！\nべらべらしゃべるんじゃねぇ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "루키노\n「시끄러！\n나불나불 떠들지 마！{wait}{clear}"
     },
     {
      "at": 1026,
      "cmd": 33,
      "text_jp": "リオーネ\n「心をふみにじられたのは\nオレたちの方なんだぜ\nいかれボウズ{wait}\nきょうはそのお礼が\nしたくってなぁ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "리오네\n「마음을 짓밟힌 건\n우리 쪽이라고\n미친 꼬맹아{wait}\n오늘은 그 답례를\n하고 싶어서 말이야{wait}{clear}"
     },
     {
      "at": 1090,
      "cmd": 33,
      "text_jp": "豪\n「や　やめろ！{wait}\n",
-     "text_kr": ""
+     "text_kr": "고\n「그　그만해！{wait}\n"
     },
     {
      "at": 1123,
      "cmd": 33,
      "text_jp": "豪\n「そんなの\nただの逆うらみじゃねーか！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「그런 건\n그냥 적반하장이잖아！{wait}{clear}"
     },
     {
      "at": 1153,
      "cmd": 33,
      "text_jp": "ルキノ\n「家に帰ったら　そう言って\nママンになぐさめてもらいな{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "루키노\n「집에 가면　그렇게 말하고\n엄마한테 위로나 받으시지{wait}{clear}"
     },
     {
      "at": 1194,
      "cmd": 33,
      "text_jp": "豪\n「くっ　くっそー！！{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「제　제기랄！！{wait}"
     }
    ]
   },
@@ -4830,199 +4830,199 @@
      "at": 1,
      "cmd": 33,
      "text_jp": "いあつてきな声\n「てめーら！\nなにくだらねえことしてやがる！{wait}",
-     "text_kr": ""
+     "text_kr": "위압적인 목소리\n「이 자식들！\n뭘 시시한 짓을 하고 있어！{wait}"
     },
     {
      "at": 53,
      "cmd": 33,
      "text_jp": "豪\n「カ　カルロ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「카　카를로！{wait}{clear}"
     },
     {
      "at": 70,
      "cmd": 33,
      "text_jp": "ルキノ\n「チッ\nこしぬけ野郎のご登場かよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "루키노\n「칫\n겁쟁이 자식 납시셨나{wait}{clear}"
     },
     {
      "at": 101,
      "cmd": 33,
      "text_jp": "カルロ\n「なにか言ったか　ルキノ{wait}\n",
-     "text_kr": ""
+     "text_kr": "카를로\n「뭐라고 했냐　루키노{wait}\n"
     },
     {
      "at": 125,
      "cmd": 33,
      "text_jp": "負け犬ってやつは\nそんなにコソコソ\nしゃべるものなのか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "패배자란 놈은\n그렇게 소곤소곤\n지껄이는 거냐？{wait}{clear}"
     },
     {
      "at": 162,
      "cmd": 33,
      "text_jp": "ルキノ\n「なんだとこの野郎！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "루키노\n「뭐라고 이 자식！{wait}{clear}"
     },
     {
      "at": 185,
      "cmd": 33,
      "text_jp": "カルロ\n「早く練習にもどれ　クズども！\nそれともまた　犬のクソ以下の\n生活にもどりてぇのか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카를로\n「빨리 연습하러 가라　쓰레기들！\n아니면 또　개똥만도 못한\n생활로 돌아가고 싶냐？{wait}{clear}"
     },
     {
      "at": 245,
      "cmd": 33,
      "text_jp": "ルキノ\n「へいへい　リーダー様{wait}",
-     "text_kr": ""
+     "text_kr": "루키노\n「예예　리더 님{wait}"
     },
     {
      "at": 291,
      "cmd": 33,
      "text_jp": "ルキノ\n「運が良かったな　チビ！{wait}\n続きはWGPでしてやるから\n楽しみにしてるんだな！{wait}",
-     "text_kr": ""
+     "text_kr": "루키노\n「운이 좋았군　꼬맹아！{wait}\n나머지는 WGP에서 해 주지\n기대하고 있으라고！{wait}"
     },
     {
      "at": 368,
      "cmd": 33,
      "text_jp": "豪\n「正々堂々\n1対1で勝負しろー！{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「정정당당\n1대1로 승부해라！{wait}"
     },
     {
      "at": 410,
      "cmd": 33,
      "text_jp": "ジュリオ\n「なんだったら\nかわりにこのじゅり子ちゃんが\n1対1で遊んであげるわよぉ{wait}\n",
-     "text_kr": ""
+     "text_kr": "줄리오\n「뭣하면\n대신 이 줄리코가\n1대1로 놀아 줄게에{wait}\n"
     },
     {
      "at": 461,
      "cmd": 33,
      "text_jp": "{c8:02}ボ・ウ・ヤ♥{c8:00}{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "{c8:02}꼬・맹・이♥{c8:00}{wait}{clear}"
     },
     {
      "at": 478,
      "cmd": 33,
      "text_jp": "豪\n「う　うっせー！\n早く帰れよ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「시　시끄러！\n빨리 돌아가！{wait}{clear}"
     },
     {
      "at": 509,
      "cmd": 33,
      "text_jp": "ジュリオ\n「あははははは！{wait}",
-     "text_kr": ""
+     "text_kr": "줄리오\n「아하하하하하！{wait}"
     },
     {
      "at": 613,
      "cmd": 33,
      "text_jp": "豪\n「助かったぜ\nありがとうよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「살았다\n고마워{wait}{clear}"
     },
     {
      "at": 637,
      "cmd": 33,
      "text_jp": "カルロ\n「別にてめぇのために\nやったわけじゃねえよ{wait}\n",
-     "text_kr": ""
+     "text_kr": "카를로\n「딱히 너를 위해서\n한 게 아니야{wait}\n"
     },
     {
      "at": 670,
      "cmd": 33,
      "text_jp": "こんなさわぎが\n大会本部にバレて\nチームが出場停止にでも\nなったらこまるからな{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "이런 소동이\n대회 본부에 들켜서\n팀이 출전 정지라도\n되면 곤란하니까{wait}{clear}"
     },
     {
      "at": 724,
      "cmd": 33,
      "text_jp": "豪\n「…お前\n今回もまたバトルレースを\nするつもりなのか？{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「…너\n이번에도 또 배틀 레이스를\n할 생각이냐？{wait}"
     },
     {
      "at": 770,
      "cmd": 33,
      "text_jp": "豪\n「去年のWGP\nファイナルステージで{wait}\n烈兄貴をぬいて\nトップでゴールした時の\nお前の走り\nわすれてねえぜ{wait}\n",
-     "text_kr": ""
+     "text_kr": "고\n「작년 WGP\n파이널 스테이지에서{wait}\n레츠 형을 제치고\n선두로 골인했을 때의\n네 주행\n잊지 않았어{wait}\n"
     },
     {
      "at": 841,
      "cmd": 33,
      "text_jp": "あんなすげえ走りができるのに\nどうしてアタックなんか\nしかけるんだ？{wait}\nルール連反なんか\nしなくたって\n十分勝てるじゃないか！{wait}",
-     "text_kr": ""
+     "text_kr": "그런 굉장한 주행을 할 수 있는데\n왜 어택 같은 걸\n거는 거야？{wait}\n반칙 같은 거\n안 해도\n충분히 이기잖아！{wait}"
     },
     {
      "at": 923,
      "cmd": 33,
      "text_jp": "カルロ\n「ぬくぬくとくらしてきた\nぼっちゃんには\nわからねぇだろうよ{wait}",
-     "text_kr": ""
+     "text_kr": "카를로\n「따뜻하게 살아온\n도련님은\n모르겠지{wait}"
     },
     {
      "at": 970,
      "cmd": 33,
      "text_jp": "豪\n「なっ　なんだと！\nもう一度言ってみろ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「뭐　뭐라고！\n한 번 더 말해 봐！{wait}{clear}"
     },
     {
      "at": 1002,
      "cmd": 33,
      "text_jp": "カルロ\n「ああ　何度でも\n言ってやるぜ　チビ！{wait}\nてめぇを見ていると\nムカムカするんだよ！{wait}\nてめぇも！{wait}\nてめぇの走りも！{wait}\nあの勝利の時\nまんざらでもないと\n思った自分も！{wait}\nなにもかもが気にいらねぇ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카를로\n「그래　몇 번이라도\n말해 주지　꼬맹아！{wait}\n너를 보고 있으면\n속이 뒤집힌다고！{wait}\n너도！{wait}\n네 주행도！{wait}\n그 승리의 순간\n나쁘지 않다고\n생각한 나 자신도！{wait}\n뭐 하나 마음에 안 들어！{wait}{clear}"
     },
     {
      "at": 1128,
      "cmd": 33,
      "text_jp": "豪\n「カルロ…？{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「카를로…？{wait}"
     },
     {
      "at": 1150,
      "cmd": 33,
      "text_jp": "豪\n「なあカルロ\nレースしねぇか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「야 카를로\n레이스 하지 않을래？{wait}{clear}"
     },
     {
      "at": 1175,
      "cmd": 33,
      "text_jp": "カルロ\n「レースだと？\nこのオレとか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카를로\n「레이스라고？\n이 나랑？{wait}{clear}"
     },
     {
      "at": 1201,
      "cmd": 33,
      "text_jp": "豪\n「あの時の熱いカルロと\n1対1で勝負がしてぇ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「그때의 뜨거운 카를로와\n1대1로 승부하고 싶어！{wait}{clear}"
     },
     {
      "at": 1239,
      "cmd": 33,
      "text_jp": "カルロ\n「ケッ\nやっぱりてめぇはいかれてるぜ！{wait}\n",
-     "text_kr": ""
+     "text_kr": "카를로\n「쳇\n역시 너는 미쳤어！{wait}\n"
     },
     {
      "at": 1269,
      "cmd": 33,
      "text_jp": "マシンを壊されると\nわかっていて\n勝負をいどむのか？{wait}\nオレがアタックをしかけない\nほしょうなんか\nどこにもないんだぜ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "머신이 부서질 걸\n알면서도\n승부를 걸겠다는 거냐？{wait}\n내가 어택을 걸지 않는다는\n보증 같은 건\n어디에도 없다고{wait}{clear}"
     },
     {
      "at": 1338,
      "cmd": 33,
      "text_jp": "豪\n「いや　お前は絶対に\nアタックなんてしねぇよ！{wait}\nイカサマぬきのレースで\n勝つ楽しみを知ってるもんな{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「아니　넌 절대\n어택 같은 건 안 해！{wait}\n속임수 없는 레이스에서\n이기는 즐거움을 아니까{wait}{clear}"
     },
     {
      "at": 1404,
      "cmd": 33,
      "text_jp": "カルロ\n「フッ　たいした自信だな{wait}\nいいだろう\nこうかいしてもいいのなら\nインターナショナルスクールへ\nこい{wait}",
-     "text_kr": ""
+     "text_kr": "카를로\n「훗　대단한 자신감이군{wait}\n좋아\n후회해도 괜찮다면\n인터내셔널 스쿨로\n와라{wait}"
     },
     {
      "at": 1472,
      "cmd": 33,
      "text_jp": "豪\n「よっしゃ\nそうこなくっちゃ！{wait}\nじゃ　また後でな{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「좋았어\n그렇게 나와야지！{wait}\n그럼　이따 보자{wait}"
     },
     {
      "at": 1524,
      "cmd": 33,
      "text_jp": "カルロ\n「…チッ{wait}",
-     "text_kr": ""
+     "text_kr": "카를로\n「…쳇{wait}"
     }
    ]
   },
@@ -9249,217 +9249,217 @@
      "at": 23,
      "cmd": 33,
      "text_jp": "土屋博士\n「みんな　そろったね{wait}\nそれじゃあ　さっそく\n明日のファイナルレースの\nルールを説明しよう{wait}\nまずは　全10チームを\n5チームごとにA／B\n2つのブロックにわけて\n5ヵ国たいこうレースをするんだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「모두　모였구나{wait}\n그럼　바로\n내일 파이널 레이스\n룰을 설명하마{wait}\n먼저　전 10팀을\n5팀씩 A／B\n두 블록으로 나눠서\n5개국 대항 레이스를 한단다{wait}{clear}"
     },
     {
      "at": 142,
      "cmd": 33,
      "text_jp": "烈\n「5ヵ国たいこうレースのルールは\n去年のドリームチャンスレースと\n同じなんですか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「5개국 대항 레이스 룰은\n작년 드림 찬스 레이스와\n같은 건가요？{wait}{clear}"
     },
     {
      "at": 197,
      "cmd": 33,
      "text_jp": "土屋博士\n「そのとおり{wait}\n各チームから2人の代表が\n出場して戦う5ヵ国たいこう\nバトルロイヤル武レースだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「그렇단다{wait}\n각 팀에서 2명의 대표가\n출전해 싸우는 5개국 대항\n배틀 로열 레이스야{wait}{clear}"
     },
     {
      "at": 268,
      "cmd": 33,
      "text_jp": "豪\n「そうか…{wait}\nやっぱり二人しかでられねぇのか{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「그렇구나…{wait}\n역시 둘밖에 못 나가는 건가{wait}{clear}"
     },
     {
      "at": 300,
      "cmd": 33,
      "text_jp": "J\n「そして\nAブロックとBブロックの勝者が\n優勝決定戦を行なう…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「그리고\nA블록과 B블록의 승자가\n우승 결정전을 치르는…{wait}{clear}"
     },
     {
      "at": 348,
      "cmd": 33,
      "text_jp": "土屋博士\n「そのとおりだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「그렇단다{wait}{clear}"
     },
     {
      "at": 371,
      "cmd": 33,
      "text_jp": "藤吉\n「レーサー選びは\nしんちょうに行なわなければ\nいかんでゲスなぁ{wait}\nなにしろ　ビクトリーズの運命を\nせおうようなもんでゲスからねぇ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「레이서 선발은\n신중하게 하지 않으면\n안 되옵쇼{wait}\n뭐니뭐니 해도　빅토리즈 운명을\n짊어지는 셈이니까옵쇼{wait}{clear}"
     },
     {
      "at": 451,
      "cmd": 33,
      "text_jp": "リョウ\n「博士…{wait}\nそれで　代表の2名は\n決まったんですか？{wait}",
-     "text_kr": ""
+     "text_kr": "료\n「박사님…{wait}\n그래서　대표 2명은\n정해졌나요？{wait}"
     },
     {
      "at": 499,
      "cmd": 33,
      "text_jp": "二郎丸\n「あみだくじにするんだったら\nまたオラが作るダス{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「사다리타기로 할 거면\n또 지가 만들어유{wait}{clear}"
     },
     {
      "at": 537,
      "cmd": 33,
      "text_jp": "土屋博士\n「はっはっは　二郎丸くん\nもうあみだくじはやらないよ{wait}\n今年は別の方法で\n決めようと思ってるんだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「하하하　지로마루\n이제 사다리타기는 안 한단다{wait}\n올해는 다른 방법으로\n정하려고 생각 중이야{wait}{clear}"
     },
     {
      "at": 614,
      "cmd": 33,
      "text_jp": "二郎丸\n「そうダスか{wait}\nちょっとがっかりダス…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「그런가유{wait}\n좀 아쉬워유…{wait}{clear}"
     },
     {
      "at": 650,
      "cmd": 33,
      "text_jp": "豪\n「あみだくじじゃねえとしたら\nレーサー選びが大変だな{wait}\nオレの足を引っぱらねぇ\nヤツじゃねぇとな{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「사다리타기가 아니라면\n레이서 선발이 힘들겠는데{wait}\n내 발목 안 잡을\n녀석이어야 해{wait}"
     },
     {
      "at": 720,
      "cmd": 33,
      "text_jp": "藤吉\n「まるで豪くんの出場が\n決まってるような口ぶりで\nゲスねぇ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「마치 고의 출전이\n정해진 것 같은\n말투옵쇼{wait}{clear}"
     },
     {
      "at": 765,
      "cmd": 33,
      "text_jp": "豪\n「これに勝たなきゃ\n優勝決定戦に\n進めねぇんだろう？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「이걸 이기지 못하면\n우승 결정전에\n못 나가는 거잖아？{wait}{clear}"
     },
     {
      "at": 808,
      "cmd": 33,
      "text_jp": "藤吉\n「そうでゲスよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「그렇사옵쇼{wait}{clear}"
     },
     {
      "at": 827,
      "cmd": 33,
      "text_jp": "豪\n「だったら\nこんな大事なレースにオレが\n選ばれないわけねぇじゃん！{wait}\nなんせオレはビクトリーズの\nエースなんだぜ{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「그렇다면\n이런 중요한 레이스에 내가\n안 뽑힐 리가 없잖아！{wait}\n어차피 난 빅토리즈\n에이스라고{wait}"
     },
     {
      "at": 901,
      "cmd": 33,
      "text_jp": "二郎丸\n「エースはあんちゃんダス！{wait}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「에이스는 형님이유！{wait}"
     },
     {
      "at": 934,
      "cmd": 33,
      "text_jp": "土屋博士\n「まあまあ{wait}\n",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「자자{wait}\n"
     },
     {
      "at": 959,
      "cmd": 33,
      "text_jp": "多分こういうことに\nなるだろうと思って\nいい方法を考えてあるよ{wait}\nわたしとしても\n一番調子のいいレーサーに\n出場してもらいたいしね{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "아마 이렇게 될 거라고\n생각해서\n좋은 방법을 준비해 뒀단다{wait}\n나로서도\n가장 컨디션 좋은 레이서가\n출전해 줬으면 하니까{wait}{clear}"
     },
     {
      "at": 1042,
      "cmd": 33,
      "text_jp": "リョウ\n「レーサーを選ぶのに\nレース以外の方法は\n考えられない{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「레이서를 뽑는 데\n레이스 말고 다른 방법은\n생각할 수 없다{wait}{clear}"
     },
     {
      "at": 1086,
      "cmd": 33,
      "text_jp": "土屋博士\n「そのとおりだ　リョウくん{wait}\nそういうわけで\nみんなに今からレースを\nしてもらいたいと思う{wait}\nコースは3セクションあり{wait}\nスピードコース\nコーナリングコース\nふくごうコースを用意した{wait}\nこのレースの上位二人を\nビクトリーズの代表選手と\nしたい{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「그렇단다　료{wait}\n그런 이유로\n모두 지금부터 레이스를\n해 줬으면 한다{wait}\n코스는 3섹션이 있고{wait}\n스피드 코스\n코너링 코스\n복합 코스를 준비했단다{wait}\n이 레이스 상위 두 명을\n빅토리즈 대표 선수로\n하고 싶구나{wait}{clear}"
     },
     {
      "at": 1233,
      "cmd": 33,
      "text_jp": "豪\n「なーるほどな！{wait}\nいっちゃん速いヤツが\n選ばれるってわけだな！{wait}\nおもしれぇ！\nやってやろうじゃん！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「과아연 그렇군！{wait}\n제일 빠른 녀석이\n뽑힌다는 거네！{wait}\n재밌겠어！\n한번 해 보자고！{wait}{clear}"
     },
     {
      "at": 1296,
      "cmd": 33,
      "text_jp": "土屋博士\n「この方法に対して\n反対意見はないかい？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「이 방법에 대해서\n반대 의견은 없니？{wait}{clear}"
     },
     {
      "at": 1339,
      "cmd": 33,
      "text_jp": "烈\n「反対なんてしないですよ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「반대 같은 건 안 해요！{wait}{clear}"
     },
     {
      "at": 1364,
      "cmd": 33,
      "text_jp": "J\n「自分の実力が全てって\nことですね{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「자기 실력이 전부라는\n거네요{wait}{clear}"
     },
     {
      "at": 1394,
      "cmd": 33,
      "text_jp": "リョウ\n「このメンバーでレースか…{wait}\nグレートジャパンカップを\n思い出すな{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「이 멤버로 레이스인가…{wait}\n그레이트 재팬 컵이\n떠오르는군{wait}{clear}"
     },
     {
      "at": 1440,
      "cmd": 33,
      "text_jp": "藤吉\n「2位でもいいんでゲスねぇ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「2위여도 괜찮사옵쇼{wait}{clear}"
     },
     {
      "at": 1466,
      "cmd": 33,
      "text_jp": "豪\n「なぁ　せっかくだから\nみんなバラバラに\nセッティングしねぇか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「야　기왕이니까\n다들 따로따로\n세팅하지 않을래？{wait}{clear}"
     },
     {
      "at": 1508,
      "cmd": 33,
      "text_jp": "J\n「バラバラで？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「따로따로？{wait}{clear}"
     },
     {
      "at": 1524,
      "cmd": 33,
      "text_jp": "烈\n「そうか！{wait}\nそうすればおたがいの\n手のうちを見せずにすむね{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「그렇구나！{wait}\n그러면 서로\n패를 보이지 않아도 되겠네{wait}{clear}"
     },
     {
      "at": 1566,
      "cmd": 33,
      "text_jp": "藤吉\n「レース直前まで\nナイショというわけでゲスね{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「레이스 직전까지\n비밀이라는 거옵쇼{wait}{clear}"
     },
     {
      "at": 1602,
      "cmd": 33,
      "text_jp": "リョウ\n「おもしろい！{wait}",
-     "text_kr": ""
+     "text_kr": "료\n「재밌군！{wait}"
     },
     {
      "at": 1633,
      "cmd": 33,
      "text_jp": "左右キーでレーサーを選び\n決定ボタンで決定",
-     "text_kr": ""
+     "text_kr": "좌우 키로 레이서를 고르고\n결정 버튼으로 결정"
     },
     {
      "at": 1678,
      "cmd": 33,
      "text_jp": "『本当によろしいですか？{c8:07}\n　　はい\n　　いいえ{c8:00}",
-     "text_kr": ""
+     "text_kr": "『정말 괜찮으신가요？{c8:07}\n　　예\n　　아니요{c8:00}"
     },
     {
      "at": 1735,
      "cmd": 33,
      "text_jp": "烈\n「それじゃあ　別れる前に\nパーツを分けておこう{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「그럼　헤어지기 전에\n파츠를 나눠 두자{wait}"
     },
     {
      "at": 1888,
      "cmd": 33,
      "text_jp": "土屋博士\n「じゃあ　みんな\nレースの準備に\n取りかかってくれ{wait}\nくいの残らないようにね{wait}\nそれじゃあ　準備がすんだら\nわたしに声をかけてくれたまえ{wait}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「그럼　모두\n레이스 준비에\n들어가 주렴{wait}\n후회 남지 않도록 말이야{wait}\n그럼　준비가 끝나면\n나에게 말을 걸어 주려무나{wait}"
     }
    ]
   },
@@ -9472,157 +9472,157 @@
      "at": 224,
      "cmd": 33,
      "text_jp": "豪\n「よっしゃー！\n始めようぜ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「좋았어！\n시작하자！{wait}{clear}"
     },
     {
      "at": 264,
      "cmd": 33,
      "text_jp": "烈\n「ボクも準備OKです{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「저도 준비 OK예요{wait}{clear}"
     },
     {
      "at": 301,
      "cmd": 33,
      "text_jp": "藤吉\n「いっちょやってやるでゲス{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「한판 해 보겠사옵쇼{wait}{clear}"
     },
     {
      "at": 341,
      "cmd": 33,
      "text_jp": "J\n「負けないよ　みんな！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「지지 않을 거야　모두！{wait}{clear}"
     },
     {
      "at": 377,
      "cmd": 33,
      "text_jp": "リョウ\n「勝つのはオレだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「이기는 건 나다{wait}{clear}"
     },
     {
      "at": 397,
      "cmd": 33,
      "text_jp": "土屋博士\n「それじゃあ始めようか{wait}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「그럼 시작해 볼까{wait}"
     },
     {
      "at": 870,
      "cmd": 33,
      "text_jp": "土屋博士\n「いいレースだったよ　みんな！{wait}\n",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「좋은 레이스였단다　모두！{wait}\n"
     },
     {
      "at": 912,
      "cmd": 33,
      "text_jp": "烈くん　",
-     "text_kr": ""
+     "text_kr": "레츠　"
     },
     {
      "at": 925,
      "cmd": 33,
      "text_jp": "豪くん　",
-     "text_kr": ""
+     "text_kr": "고　"
     },
     {
      "at": 938,
      "cmd": 33,
      "text_jp": "藤吉くん　",
-     "text_kr": ""
+     "text_kr": "토우키치　"
     },
     {
      "at": 953,
      "cmd": 33,
      "text_jp": "リョウくん　",
-     "text_kr": ""
+     "text_kr": "료　"
     },
     {
      "at": 967,
      "cmd": 33,
      "text_jp": "Jくん　",
-     "text_kr": ""
+     "text_kr": "제이　"
     },
     {
      "at": 987,
      "cmd": 33,
      "text_jp": "烈くん",
-     "text_kr": ""
+     "text_kr": "레츠"
     },
     {
      "at": 999,
      "cmd": 33,
      "text_jp": "豪くん",
-     "text_kr": ""
+     "text_kr": "고"
     },
     {
      "at": 1011,
      "cmd": 33,
      "text_jp": "藤吉くん",
-     "text_kr": ""
+     "text_kr": "토우키치"
     },
     {
      "at": 1025,
      "cmd": 33,
      "text_jp": "リョウくん",
-     "text_kr": ""
+     "text_kr": "료"
     },
     {
      "at": 1038,
      "cmd": 33,
      "text_jp": "Jくん",
-     "text_kr": ""
+     "text_kr": "제이"
     },
     {
      "at": 1043,
      "cmd": 33,
      "text_jp": "おめでとう！{wait}\n明日はビクトリーズの代表として\nがんばってくれたまえ{wait}\nそれにしても\n他の三人はおしかったね{wait}",
-     "text_kr": ""
+     "text_kr": "축하한다！{wait}\n내일은 빅토리즈 대표로서\n힘내 주려무나{wait}\n그건 그렇고\n다른 세 명은 아까웠구나{wait}"
     },
     {
      "at": 1142,
      "cmd": 33,
      "text_jp": "烈\n「完敗だよ{wait}\nボクなりにベストセッティングを\nしたつもりなんだけどなあ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「완패야{wait}\n나름대로 베스트 세팅을\n했다고 생각했는데{wait}{clear}"
     },
     {
      "at": 1211,
      "cmd": 33,
      "text_jp": "豪\n「くっそー\nもうちょっとだったのになぁ！{wait}\nしかたねぇ\n明日は絶対に勝てよ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「제기랄\n조금만 더 하면 됐는데！{wait}\n어쩔 수 없지\n내일은 무조건 이겨라！{wait}{clear}"
     },
     {
      "at": 1286,
      "cmd": 33,
      "text_jp": "藤吉\n「ものは相談なんでゲスが{wait}\nワテと\n交代してくれないでゲスか？\nもちろんタダとは言わな…{wait}\n",
-     "text_kr": ""
+     "text_kr": "토우키치\n「의논할 게 있사옵쇼만{wait}\n저와\n교대해 주지 않겠사옵쇼？\n물론 공짜로 하란 말은…{wait}\n"
     },
     {
      "at": 1347,
      "cmd": 33,
      "text_jp": "いや　こんなひきょうな\nことはやめるでゲス{wait}\n",
-     "text_kr": ""
+     "text_kr": "아니　이런 비겁한\n짓은 그만두겠사옵쇼{wait}\n"
     },
     {
      "at": 1375,
      "cmd": 33,
      "text_jp": "二人ともがんばるでゲスよ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "두 사람 다 힘내시옵쇼！{wait}{clear}"
     },
     {
      "at": 1417,
      "cmd": 33,
      "text_jp": "J\n「さすがだね！{wait}\nキミたち二人なら\nボクも安心してまかせられるよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「역시야！{wait}\n너희 둘이라면\n나도 안심하고 맡길 수 있어{wait}{clear}"
     },
     {
      "at": 1482,
      "cmd": 33,
      "text_jp": "リョウ\n「オレは全力で戦ったつもりだ{wait}\nだからくいはない{wait}\n明日はオレたちの分も\nがんばってくれ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「나는 전력으로 싸웠다{wait}\n그러니 후회는 없다{wait}\n내일은 우리 몫까지\n힘내 줘{wait}{clear}"
     },
     {
      "at": 1542,
      "cmd": 33,
      "text_jp": "土屋博士\n「みんなおつかれさま{wait}\n少しきゅうけいしてから\nもう一度ここへ\n集まることにしよう{wait}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「모두 수고했단다{wait}\n조금 쉬었다가\n다시 한번 여기로\n모이기로 하자{wait}"
     }
    ]
   },
@@ -9889,145 +9889,145 @@
      "at": 3,
      "cmd": 33,
      "text_jp": "烈\n「なんの機械なんだい？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「무슨 기계야？{wait}{clear}"
     },
     {
      "at": 34,
      "cmd": 33,
      "text_jp": "チイコ\n「よくぞ聞いてくださいましたわ！{wait}\n",
-     "text_kr": ""
+     "text_kr": "치이코\n「잘 물어보셨어요！{wait}\n"
     },
     {
      "at": 62,
      "cmd": 33,
      "text_jp": "ええと…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "그게 말이죠…{wait}{clear}"
     },
     {
      "at": 73,
      "cmd": 33,
      "text_jp": "マキ\n「愛の真実！　恋のトキメキ\n二人のラヴラヴ度\nチェックマシーン♥　ですわ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "마키\n「사랑의 진실！　연애의 두근두근\n두 사람의 러브러브도\n체크 머신♥　이에요{wait}{clear}"
     },
     {
      "at": 124,
      "cmd": 33,
      "text_jp": "J\n「相性うらないマシンのことだね{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「궁합 점 머신 말이구나{wait}{clear}"
     },
     {
      "at": 150,
      "cmd": 33,
      "text_jp": "チイコ\n「これで二人の相性が\nバッチリわかりますわ\n烈様♥{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코\n「이걸로 두 사람 궁합을\n확실하게 알 수 있어요\n레츠 님♥{wait}{clear}"
     },
     {
      "at": 190,
      "cmd": 33,
      "text_jp": "烈\n「相性ねえ…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「궁합이라…{wait}{clear}"
     },
     {
      "at": 212,
      "cmd": 33,
      "text_jp": "チイコ\n「あっちのイスに烈様が\nおすわりになって{wait}\n",
-     "text_kr": ""
+     "text_kr": "치이코\n「저쪽 의자에 레츠 님이\n앉으시고{wait}\n"
     },
     {
      "at": 246,
      "cmd": 33,
      "text_jp": "わたしがこっちにすわって\nスイッチをいれるだけで\nたちまち結果がでるのですのよ{wait}",
-     "text_kr": ""
+     "text_kr": "제가 이쪽에 앉아서\n스위치를 켜기만 하면\n순식간에 결과가 나온답니다{wait}"
     },
     {
      "at": 301,
      "cmd": 33,
      "text_jp": "チイコ\n（本当はイスにすわった\n相手を好きになる\nマシーンなのですけれど{wait}\nそれはナイショ♥　ですのよ）{wait}",
-     "text_kr": ""
+     "text_kr": "치이코\n（사실은 의자에 앉은\n상대를 좋아하게 되는\n머신이지만{wait}\n그건 비밀♥　이에요）{wait}"
     },
     {
      "at": 368,
      "cmd": 33,
      "text_jp": "豪\n「ウソくせぇなあ{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「뻥 같은데{wait}"
     },
     {
      "at": 396,
      "cmd": 33,
      "text_jp": "チイコ\n「しっ　失礼ですわ！{wait}\n",
-     "text_kr": ""
+     "text_kr": "치이코\n「시　실례예요！{wait}\n"
     },
     {
      "at": 416,
      "cmd": 33,
      "text_jp": "スイッチを切りかえれば\nちゃんと相性チェックも\nできますわよ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "스위치를 바꾸면\n제대로 궁합 체크도\n할 수 있는걸요！{wait}{clear}"
     },
     {
      "at": 457,
      "cmd": 33,
      "text_jp": "烈\n「スイッチを切りかえる？{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「스위치를 바꾼다고？{wait}"
     },
     {
      "at": 493,
      "cmd": 33,
      "text_jp": "チイコ\n「えっ　あ…\nなんでもありませんですわ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코\n「엇　아…\n아무것도 아니에요！{wait}{clear}"
     },
     {
      "at": 530,
      "cmd": 33,
      "text_jp": "豪\n「あやしい…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「수상한데…{wait}{clear}"
     },
     {
      "at": 550,
      "cmd": 33,
      "text_jp": "チイコ\n「そんなにあやしむのなら\n一度やっておみせしますですわ！{wait}\n",
-     "text_kr": ""
+     "text_kr": "치이코\n「그렇게 의심하신다면\n한 번 보여 드리겠어요！{wait}\n"
     },
     {
      "at": 594,
      "cmd": 33,
      "text_jp": "Jさん　そちらにおすわり\nくださいませんこと？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이 씨　저쪽에 앉아\n주시지 않겠어요？{wait}{clear}"
     },
     {
      "at": 624,
      "cmd": 33,
      "text_jp": "J\n「えっ　ボク？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「엇　내가？{wait}{clear}"
     },
     {
      "at": 640,
      "cmd": 33,
      "text_jp": "チイコ\n「わたくしとの相性チェックを\nするんですわよ{wait}",
-     "text_kr": ""
+     "text_kr": "치이코\n「저와의 궁합 체크를\n하는 거예요{wait}"
     },
     {
      "at": 694,
      "cmd": 33,
      "text_jp": "チイコ\n「スイッチのメモリを\n右に{c8:02}コチコチ…{c8:00}　と{wait}\nこれで準備できましたわ！{wait}\nさあ始めましょう{wait}",
-     "text_kr": ""
+     "text_kr": "치이코\n「스위치 눈금을\n오른쪽으로{c8:02}딸깍딸깍…{c8:00}　하고{wait}\n이걸로 준비 다 됐어요！{wait}\n자 시작해 볼까요{wait}"
     },
     {
      "at": 764,
      "cmd": 33,
      "text_jp": "チイコ\n「Jさん\nそばにあるレバーを引くのですわ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코\n「제이 씨\n옆에 있는 레버를 당기세요{wait}{clear}"
     },
     {
      "at": 796,
      "cmd": 33,
      "text_jp": "J\n「えっ！\nああ　うん{wait}",
-     "text_kr": ""
+     "text_kr": "제이\n「엇！\n아　응{wait}"
     },
     {
      "at": 816,
      "cmd": 33,
      "text_jp": "チイコ\n「じゃあ始めますわよ！{wait}\nスイッチオンですわ！{wait}",
-     "text_kr": ""
+     "text_kr": "치이코\n「그럼 시작할게요！{wait}\n스위치 온이에요！{wait}"
     }
    ]
   },
@@ -10040,211 +10040,211 @@
      "at": 19,
      "cmd": 33,
      "text_jp": "豪\n「おっ　機械が止まったぜ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「오　기계가 멈췄어{wait}{clear}"
     },
     {
      "at": 44,
      "cmd": 33,
      "text_jp": "藤吉\n「どうでもいいから\n早く終わらせてほしいでゲス{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「아무래도 좋으니\n빨리 끝내 줬으면 좋겠옵쇼{wait}"
     },
     {
      "at": 88,
      "cmd": 33,
      "text_jp": "J\n「さあ\n結果が出たはずですわ〜♥{wait}",
-     "text_kr": ""
+     "text_kr": "제이\n「자\n결과가 나왔을 거예요〜♥{wait}"
     },
     {
      "at": 122,
      "cmd": 33,
      "text_jp": "烈\n「え！？{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「어！？{wait}"
     },
     {
      "at": 141,
      "cmd": 33,
      "text_jp": "豪\n「ぎゃははは！{wait}\n",
-     "text_kr": ""
+     "text_kr": "고\n「갸하하하！{wait}\n"
     },
     {
      "at": 161,
      "cmd": 33,
      "text_jp": "お前がじょうだん言ってるの\n初めて見たぜ！{wait}\nおもしれ〜！{wait}",
-     "text_kr": ""
+     "text_kr": "네가 농담하는 거\n처음 봤다！{wait}\n웃겨〜！{wait}"
     },
     {
      "at": 213,
      "cmd": 33,
      "text_jp": "チイコ\n「じょうだんって？{wait}\nん？　なんか体が変な\n感じだなあ{wait}",
-     "text_kr": ""
+     "text_kr": "치이코\n「농담이라니？{wait}\n음？　뭔가 몸이 이상한\n느낌인데{wait}"
     },
     {
      "at": 260,
      "cmd": 33,
      "text_jp": "彦佐\n「！！{wait}\nもっ　もしやお嬢様！{wait}",
-     "text_kr": ""
+     "text_kr": "히코사\n「！！{wait}\n서　설마 아가씨！{wait}"
     },
     {
      "at": 296,
      "cmd": 33,
      "text_jp": "彦佐\n「ああっ　やっぱり！\nスイッチを間連えて\nおられますです　ハイ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "히코사\n「아앗　역시！\n스위치를 잘못 맞추고\n계십니다요　네！{wait}{clear}"
     },
     {
      "at": 346,
      "cmd": 33,
      "text_jp": "お嬢様\nこれは人格入れかえモードで\nございますです　ハイ{wait}",
-     "text_kr": ""
+     "text_kr": "아가씨\n이건 인격 교환 모드\n입니다요　네{wait}"
     },
     {
      "at": 398,
      "cmd": 33,
      "text_jp": "J？\n「ええっ！\nちゃんと右に{c8:02}コチコチ{c8:00}\nしましたわよ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이？\n「에엣！\n제대로 오른쪽으로{c8:02}딸깍딸깍{c8:00}\n했는걸요！{wait}{clear}"
     },
     {
      "at": 437,
      "cmd": 33,
      "text_jp": "彦佐\n「左に{c8:02}コチコチ{c8:00}が\nせいかいでございます　ハイ{wait}",
-     "text_kr": ""
+     "text_kr": "히코사\n「왼쪽으로{c8:02}딸깍딸깍{c8:00}이\n정답입니다요　네{wait}"
     },
     {
      "at": 486,
      "cmd": 33,
      "text_jp": "チイコなJ\n「あっ！\n",
-     "text_kr": ""
+     "text_kr": "치이코가 된 제이\n「앗！\n"
     },
     {
      "at": 508,
      "cmd": 33,
      "text_jp": "あそこにボクそっくりの人が！{wait}",
-     "text_kr": ""
+     "text_kr": "저기 나랑 똑같은 사람이！{wait}"
     },
     {
      "at": 535,
      "cmd": 33,
      "text_jp": "藤吉\n「案外ニブいでゲスなあ\nJくん{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「의외로 둔하시옵쇼\n제이{wait}"
     },
     {
      "at": 591,
      "cmd": 33,
      "text_jp": "Jなチイコ\n「ああ〜ん！\nどういたしましょう　烈様！\nですわ！{wait}",
-     "text_kr": ""
+     "text_kr": "제이가 된 치이코\n「아아〜앙！\n어떡하죠　레츠 님！\n이에요！{wait}"
     },
     {
      "at": 632,
      "cmd": 33,
      "text_jp": "烈\n「わあっ！{wait}\n",
-     "text_kr": ""
+     "text_kr": "레츠\n「와앗！{wait}\n"
     },
     {
      "at": 652,
      "cmd": 33,
      "text_jp": "なにをするんだJくん！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "뭐 하는 거야 제이！{wait}{clear}"
     },
     {
      "at": 670,
      "cmd": 33,
      "text_jp": "Jなチイコ\n「チイコですわ〜♥{wait}",
-     "text_kr": ""
+     "text_kr": "제이가 된 치이코\n「치이코예요〜♥{wait}"
     },
     {
      "at": 697,
      "cmd": 33,
      "text_jp": "豪\n「ぎゃははは！{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「갸하하하！{wait}"
     },
     {
      "at": 721,
      "cmd": 33,
      "text_jp": "烈\n「ちょっ　ちょっとはなれてよ\nJくん…{wait}\nじゃなかったチイコちゃん！{wait}\n",
-     "text_kr": ""
+     "text_kr": "레츠\n「자　잠깐 떨어져 봐\n제이…{wait}\n아니 치이코！{wait}\n"
     },
     {
      "at": 768,
      "cmd": 33,
      "text_jp": "もう一度あの機械を使えば\n元にもどるじゃないか！{wait}",
-     "text_kr": ""
+     "text_kr": "한 번 더 저 기계를 쓰면\n원래대로 돌아가잖아！{wait}"
     },
     {
      "at": 811,
      "cmd": 33,
      "text_jp": "Jなチイコ\n「そうですわ！\nさすが烈様ですわ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이가 된 치이코\n「그래요！\n역시 레츠 님이에요！{wait}{clear}"
     },
     {
      "at": 850,
      "cmd": 33,
      "text_jp": "チイコなJ\n「あれっ\nなんだかこげくさいよ？{wait}",
-     "text_kr": ""
+     "text_kr": "치이코가 된 제이\n「어라\n뭔가 탄내가 나는데？{wait}"
     },
     {
      "at": 894,
      "cmd": 33,
      "text_jp": "彦佐\n「だめです{wait}\nこしょうでございます…{wait}",
-     "text_kr": ""
+     "text_kr": "히코사\n「안 됩니다{wait}\n고장입니다요…{wait}"
     },
     {
      "at": 934,
      "cmd": 33,
      "text_jp": "チイコなJ\n「えっ！？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코가 된 제이\n「엇！？{wait}{clear}"
     },
     {
      "at": 952,
      "cmd": 33,
      "text_jp": "烈\n「こしょうだって！？{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「고장이라고！？{wait}"
     },
     {
      "at": 995,
      "cmd": 33,
      "text_jp": "チイコなJ\n「なっ　直るんですか！？{wait}",
-     "text_kr": ""
+     "text_kr": "치이코가 된 제이\n「고　고칠 수 있나요！？{wait}"
     },
     {
      "at": 1032,
      "cmd": 33,
      "text_jp": "彦佐\n「はあ　なんとも…{wait}\n少なくとも今すぐ直る\nということはないでしょうが…{wait}",
-     "text_kr": ""
+     "text_kr": "히코사\n「글쎄요　뭐라…{wait}\n적어도 당장 고쳐지는\n일은 없을 겁니다요…{wait}"
     },
     {
      "at": 1088,
      "cmd": 33,
      "text_jp": "藤吉\n「一生このままかもしれない\nってことでゲスか？{wait}\nじゃあワテはJくんのチイコと\n兄弟として生きるんでゲスか！{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「평생 이대로일지도\n모른다는 거옵쇼？{wait}\n그럼 저는 제이인 치이코랑\n남매로 살아야 하옵쇼！{wait}"
     },
     {
      "at": 1159,
      "cmd": 33,
      "text_jp": "豪\n「烈兄貴はJに\nつきまとわれるんだな！{wait}\n",
-     "text_kr": ""
+     "text_kr": "고\n「레츠 형은 제이가\n계속 따라다니겠네！{wait}\n"
     },
     {
      "at": 1195,
      "cmd": 33,
      "text_jp": "ぎゃははは！{wait}",
-     "text_kr": ""
+     "text_kr": "갸하하하！{wait}"
     },
     {
      "at": 1215,
      "cmd": 33,
      "text_jp": "彦佐\n「いや　さすがに\nそのようなことは…{wait}\nとにかく　急いで技術スタッフを\nよびますです　ハイ{wait}",
-     "text_kr": ""
+     "text_kr": "히코사\n「아니　설마\n그런 일은…{wait}\n아무튼　서둘러 기술 스태프를\n부르겠습니다요　네{wait}"
     },
     {
      "at": 1305,
      "cmd": 33,
      "text_jp": "マキ\n「あら？\nお客様のようですね{wait}",
-     "text_kr": ""
+     "text_kr": "마키\n「어머？\n손님이 오신 것 같네요{wait}"
     },
     {
      "at": 1338,
      "cmd": 33,
      "text_jp": "藤吉\n「しまったでゲス！{wait}\nきょうはロシアの\nシルバーフォックスの\nみんなが遊びにくることに\nなっていたでゲス！{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「큰일났옵쇼！{wait}\n오늘은 러시아\n실버 폭스\n애들이 놀러 오기로\n되어 있었옵쇼！{wait}"
     }
    ]
   },
@@ -10257,193 +10257,193 @@
      "at": 14,
      "cmd": 33,
      "text_jp": "マキ\n「ロシアのかたが\nおみえですわよ\n藤吉ぼっちゃま{wait}",
-     "text_kr": ""
+     "text_kr": "마키\n「러시아 손님들이\n오셨어요\n토우키치 도련님{wait}"
     },
     {
      "at": 85,
      "cmd": 33,
      "text_jp": "ユーリ\n「やあ藤吉くん{wait}\nきょうは日本の観光案内を\nしてくれるって聞いて\n楽しみにしていたんだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "유리\n「안녕 토우키치{wait}\n오늘 일본 관광 안내를\n해 준다고 들어서\n기대하고 있었어{wait}{clear}"
     },
     {
      "at": 149,
      "cmd": 33,
      "text_jp": "FOX4\n「星馬兄弟やJくんまで\nいるのか{wait}\nきょうは楽しくなりそうだな{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "FOX4\n「세이바 형제에 제이까지\n있는 건가{wait}\n오늘은 재밌어지겠는데{wait}{clear}"
     },
     {
      "at": 197,
      "cmd": 33,
      "text_jp": "藤吉\n「ひええ〜\n最悪のタイミングでゲス！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「히에엑〜\n최악의 타이밍이옵쇼！{wait}{clear}"
     },
     {
      "at": 229,
      "cmd": 33,
      "text_jp": "ユーリ\n「えっ　ボクたち\nなにかおじゃまだったのかい？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "유리\n「어　우리\n혹시 방해가 됐던 건가？{wait}{clear}"
     },
     {
      "at": 267,
      "cmd": 33,
      "text_jp": "チイコなJ\n「いやっ\nそんなおじゃまだなんて\nとんでもないよ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코가 된 제이\n「아니\n방해라니 그런\n말도 안 돼！{wait}{clear}"
     },
     {
      "at": 305,
      "cmd": 33,
      "text_jp": "ユーリ\n「えっと…\nチイコちゃんだったかな？{wait}\n藤吉くんとはいつも\n仲良くさせてもらってます{wait}\n初めまして\nかわいいお嬢さんですね{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "유리\n「음…\n치이코였던가？{wait}\n토우키치랑은 늘\n사이좋게 지내고 있어요{wait}\n처음 뵙겠습니다\n귀여운 아가씨네요{wait}{clear}"
     },
     {
      "at": 387,
      "cmd": 33,
      "text_jp": "Jなチイコ\n「いやあん　テレますわ〜♥{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이가 된 치이코\n「아이참　부끄러워요〜♥{wait}{clear}"
     },
     {
      "at": 413,
      "cmd": 33,
      "text_jp": "FOX4\n「えっ？{wait}\nいや別にキミに\n言ったわけじゃないんだけれど{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "FOX4\n「어？{wait}\n아니 딱히 너한테\n한 말은 아닌데{wait}{clear}"
     },
     {
      "at": 463,
      "cmd": 33,
      "text_jp": "チイコなJ\n「ユーリくん\nじつはこれには深いワケがあって{wait}",
-     "text_kr": ""
+     "text_kr": "치이코가 된 제이\n「유리\n실은 여기엔 깊은 사정이 있어서{wait}"
     },
     {
      "at": 514,
      "cmd": 33,
      "text_jp": "ユーリ\n「…？{wait}\n",
-     "text_kr": ""
+     "text_kr": "유리\n「…？{wait}\n"
     },
     {
      "at": 528,
      "cmd": 33,
      "text_jp": "なんだかわからないんだけど\nどうしたんだいチイコちゃん？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "뭐가 뭔지 모르겠지만\n무슨 일이야 치이코？{wait}{clear}"
     },
     {
      "at": 563,
      "cmd": 33,
      "text_jp": "Jなチイコ\n「わたくしがチイコですわ〜{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이가 된 치이코\n「제가 치이코예요〜{wait}{clear}"
     },
     {
      "at": 589,
      "cmd": 33,
      "text_jp": "FOX4\n「？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "FOX4\n「？{wait}{clear}"
     },
     {
      "at": 607,
      "cmd": 33,
      "text_jp": "豪\n「ぎゃはははは！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「갸하하하하！{wait}{clear}"
     },
     {
      "at": 631,
      "cmd": 33,
      "text_jp": "チイコなJ\n「あのね\n信じられないだろうけど\nボクがJなんだよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코가 된 제이\n「저기\n안 믿기겠지만\n내가 제이야{wait}{clear}"
     },
     {
      "at": 670,
      "cmd": 33,
      "text_jp": "ユーリ\n「え…？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "유리\n「어…？{wait}{clear}"
     },
     {
      "at": 693,
      "cmd": 33,
      "text_jp": "FOX4\n「さっきから聞いてたらなんだ！{wait}\nキミたちはボクらを\nバカにしているのか！？{wait}",
-     "text_kr": ""
+     "text_kr": "FOX4\n「아까부터 듣자 듣자 하니！{wait}\n너희들 우리를\n바보 취급하는 거냐！？{wait}"
     },
     {
      "at": 757,
      "cmd": 33,
      "text_jp": "FOX4\n「そうか　藤吉くん\nキミはボクらをからかうために\nよんだんだな！{wait}",
-     "text_kr": ""
+     "text_kr": "FOX4\n「그렇군　토우키치\n너 우리를 놀리려고\n부른 거구나！{wait}"
     },
     {
      "at": 808,
      "cmd": 33,
      "text_jp": "藤吉\n「あわわ！\nちっ　連うでゲス！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「아와와！\n아　아니옵쇼！{wait}{clear}"
     },
     {
      "at": 836,
      "cmd": 33,
      "text_jp": "ユーリ\n「やめないか　FOX4！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "유리\n「그만두지 못해　FOX4！{wait}{clear}"
     },
     {
      "at": 863,
      "cmd": 33,
      "text_jp": "FOX4\n「リーダーは人がいいから\nそうやってつけこまれるん\nですよ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "FOX4\n「리더는 사람이 좋으니까\n그렇게 이용당하는\n겁니다！{wait}{clear}"
     },
     {
      "at": 905,
      "cmd": 33,
      "text_jp": "烈\n「うそなんかじゃないんだ\nユーリくん！{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「거짓말 같은 게 아니야\n유리！{wait}"
     },
     {
      "at": 939,
      "cmd": 33,
      "text_jp": "ユーリ\n「…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "유리\n「…{wait}{clear}"
     },
     {
      "at": 952,
      "cmd": 33,
      "text_jp": "FOX4\n「じゃあこうしよう{wait}\nもし本当にこのチイコって子が\nJくんなら　ボクたちと\nごかくのレースができるはずだ{wait}\nボクたち五人と勝負して\n全員に勝てたら信じてやる！{wait}",
-     "text_kr": ""
+     "text_kr": "FOX4\n「그럼 이렇게 하지{wait}\n만약 정말 이 치이코라는 애가\n제이라면　우리랑\n대등한 레이스가 될 거다{wait}\n우리 다섯 명과 승부해서\n전원을 이기면 믿어 주지！{wait}"
     },
     {
      "at": 1063,
      "cmd": 33,
      "text_jp": "ユーリ\n「なにを言い出すんだ　FOX4！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "유리\n「무슨 소리야　FOX4！{wait}{clear}"
     },
     {
      "at": 1092,
      "cmd": 33,
      "text_jp": "FOX4\n「リーダーだって本気で\n信じてはいないでしょう？{wait}\nこの条件をクリアできるのは\nWGPレーサーだけです{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "FOX4\n「리더도 진심으로\n믿고 있진 않잖아요？{wait}\n이 조건을 통과할 수 있는 건\nWGP 레이서뿐입니다{wait}{clear}"
     },
     {
      "at": 1160,
      "cmd": 33,
      "text_jp": "ユーリ\n「それはそうだが…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "유리\n「그건 그렇지만…{wait}{clear}"
     },
     {
      "at": 1180,
      "cmd": 33,
      "text_jp": "FOX4\n「じゃあ\nインターナショナルスクールで\n待ってるぜ　{c8:02}チイコちゃん{c8:00}{wait}",
-     "text_kr": ""
+     "text_kr": "FOX4\n「그럼\n인터내셔널 스쿨에서\n기다리지　{c8:02}치이코 양{c8:00}{wait}"
     },
     {
      "at": 1240,
      "cmd": 33,
      "text_jp": "ユーリ\n「すまない\n仲間が失礼なことを言って…{wait}\n",
-     "text_kr": ""
+     "text_kr": "유리\n「미안해\n동료가 실례되는 말을 해서…{wait}\n"
     },
     {
      "at": 1275,
      "cmd": 33,
      "text_jp": "でも…　じつはボクも\n信じられないんだ{wait}\nキミたちが他人をだますような\n人じゃないとわかっている\nけれど…{wait}\n本当にキミがJくんなら\nだいじょうぶのはずだよね？{wait}\nインターナショナルスクールで\n待ってるよ{wait}",
-     "text_kr": ""
+     "text_kr": "하지만…　실은 나도\n믿기지가 않아{wait}\n너희가 남을 속일\n사람이 아니란 건 알고\n있지만…{wait}\n정말 네가 제이라면\n괜찮을 거잖아？{wait}\n인터내셔널 스쿨에서\n기다릴게{wait}"
     },
     {
      "at": 1400,
      "cmd": 33,
      "text_jp": "チイコなJ\n「とっ　とんでもないことに\nなっちゃったなあ{wait}",
-     "text_kr": ""
+     "text_kr": "치이코가 된 제이\n「어　엄청난 일이\n돼 버렸네{wait}"
     }
    ]
   },
@@ -10456,31 +10456,31 @@
      "at": 160,
      "cmd": 33,
      "text_jp": "藤吉\n「ゲスゲスゲス{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「옵쇼옵쇼옵쇼{wait}"
     },
     {
      "at": 186,
      "cmd": 33,
      "text_jp": "藤吉？\n「ひゃっはは！\nオレだよ　豪だよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치？\n「햐하하！\n나야　고라고{wait}{clear}"
     },
     {
      "at": 224,
      "cmd": 33,
      "text_jp": "豪？\n「ひええでゲス！{wait}\n豪くんが実験だなんて\n言うからでゲス！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고？\n「히에에옵쇼！{wait}\n고가 실험이라느니\n하는 소릴 해서옵쇼！{wait}{clear}"
     },
     {
      "at": 272,
      "cmd": 33,
      "text_jp": "藤吉な豪\n「おめぇだって\n喜んでたじゃねぇか！{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치가 된 고\n「너도\n좋아했잖아！{wait}"
     },
     {
      "at": 312,
      "cmd": 33,
      "text_jp": "チイコなJ\n「うわあ\nひどくなってる…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코가 된 제이\n「우와\n더 심해졌잖아…{wait}{clear}"
     }
    ]
   },
