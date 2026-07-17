@@ -7663,91 +7663,91 @@
      "at": 96,
      "cmd": 33,
      "text_jp": "土屋博士\n「よくやったね　Jくん{wait}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「잘했다　제이{wait}"
     },
     {
      "at": 130,
      "cmd": 33,
      "text_jp": "J\n「はい！{wait}",
-     "text_kr": ""
+     "text_kr": "제이\n「네！{wait}"
     },
     {
      "at": 144,
      "cmd": 33,
      "text_jp": "鉄心\n「見事じゃ{wait}",
-     "text_kr": ""
+     "text_kr": "텟신\n「훌륭하도다{wait}"
     },
     {
      "at": 178,
      "cmd": 33,
      "text_jp": "J\n「鉄心先生！{wait}\nどうもありがとうございました！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「텟신 선생님！{wait}\n정말 감사했습니다！{wait}{clear}"
     },
     {
      "at": 214,
      "cmd": 33,
      "text_jp": "鉄心\n「うむ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "텟신\n「음{wait}{clear}"
     },
     {
      "at": 229,
      "cmd": 33,
      "text_jp": "土屋博士\n「ところで鉄心先生{wait}\n気になっていたんですが\nこの新しいダンパーオイルの\n正体は　どのようなもの\nなんですか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「그런데 텟신 선생님{wait}\n궁금했는데요\n이 새 댐퍼 오일의\n정체는　어떤\n것인가요？{wait}{clear}"
     },
     {
      "at": 308,
      "cmd": 33,
      "text_jp": "鉄心\n「科学者ともあろうものが\nそんなこともわからんで\n使っていたのか？{wait}\nわしは師匠として\nはずかしいぞい{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "텟신\n「과학자란 자가\n그런 것도 모르고\n쓰고 있었더냐？{wait}\n나는 스승으로서\n부끄럽도다{wait}{clear}"
     },
     {
      "at": 385,
      "cmd": 33,
      "text_jp": "土屋博士\n「どうも　まったく\nおそれいります{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「참　정말\n송구합니다{wait}{clear}"
     },
     {
      "at": 424,
      "cmd": 33,
      "text_jp": "鉄心\n「じつはこれはな…{wait}\nわしのションベンじゃ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "텟신\n「실은 이건 말이다…{wait}\n내 오줌이니라{wait}{clear}"
     },
     {
      "at": 457,
      "cmd": 33,
      "text_jp": "土屋博士\n「へ？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「예？{wait}{clear}"
     },
     {
      "at": 476,
      "cmd": 33,
      "text_jp": "J\n「えっ！？{wait}\nえぇ〜〜〜〜〜！！",
-     "text_kr": ""
+     "text_kr": "제이\n「엇！？{wait}\n에에〜〜〜〜〜！！"
     },
     {
      "at": 511,
      "cmd": 33,
      "text_jp": "土屋博士\n「Jくん！　Jくん！\nしっかりしたまえ！{wait}\n",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「제이！　제이！\n정신 차리게！{wait}\n"
     },
     {
      "at": 551,
      "cmd": 33,
      "text_jp": "鉄心先生〜！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "텟신 선생님〜！{wait}{clear}"
     },
     {
      "at": 568,
      "cmd": 33,
      "text_jp": "鉄心\n「素直なやつをからかうのは\n楽しいわい{wait}\n",
-     "text_kr": ""
+     "text_kr": "텟신\n「순진한 녀석을 놀리는 건\n즐겁구먼{wait}\n"
     },
     {
      "at": 603,
      "cmd": 33,
      "text_jp": "ふぉっふぉっふぉ…{wait}",
-     "text_kr": ""
+     "text_kr": "호홋 호홋 호…{wait}"
     }
    ]
   },
@@ -7864,163 +7864,163 @@
      "at": 25,
      "cmd": 33,
      "text_jp": "土屋博士\n「しかし{wait}\nこうして三人が集まるのも\nひさしぶりですね{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「그나저나{wait}\n이렇게 셋이 모이는 것도\n오랜만이네요{wait}{clear}"
     },
     {
      "at": 69,
      "cmd": 33,
      "text_jp": "クスコ博士\n「そうですな…{wait}\nあのころは\nただがむしゃらに研究に\nのめりこんでいましたなあ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "쿠스코 박사\n「그러게요…{wait}\n그 시절엔\n그저 무작정 연구에\n빠져 있었지요{wait}{clear}"
     },
     {
      "at": 125,
      "cmd": 33,
      "text_jp": "鉄心\n「そうは言っても\nそのがむしゃらな研究の\nおかげで{wait}\nガンブラスターXTOという\nすごいマシンが\n完成したんじゃから{wait}\n研究者みょうりに\nつきるというものじゃのう{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "텟신\n「그렇게 말해도\n그 무작정 연구\n덕분에{wait}\n건 블래스터 XTO라는\n대단한 머신이\n완성됐으니 말이다{wait}\n연구자로서 더할 나위\n없는 영광이지 뭐냐{wait}{clear}"
     },
     {
      "at": 226,
      "cmd": 33,
      "text_jp": "クスコ博士\n「いやあ　おっしゃるとおりです\n",
-     "text_kr": ""
+     "text_kr": "쿠스코 박사\n「이야　말씀하신 대로예요\n"
     },
     {
      "at": 256,
      "cmd": 33,
      "text_jp": "ははは…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "하하하…{wait}{clear}"
     },
     {
      "at": 273,
      "cmd": 33,
      "text_jp": "鉄心\n「まあ\nそのガンブラスターといえど{wait}\nわしのZMC素材がなければ\nダメマシンだったわけじゃから\nかんしゃしてもらわんとのう{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "텟신\n「뭐\n그 건 블래스터라 해도{wait}\n내 ZMC 소재가 없었다면\n못쓸 머신이었을 테니\n감사히 여겨야 하느니라{wait}{clear}"
     },
     {
      "at": 348,
      "cmd": 33,
      "text_jp": "土屋博士\n「それをおっしゃるなら{wait}\nわたしのフルカウルボディ\n研究の成果を\nわすれてもらっては\nこまりますよ{wait}\n空力デザインあってこそ\nあれほどのスピードが\n出せるのです{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「그 말씀 하실 거면{wait}\n제 풀 카울 보디\n연구 성과를\n잊으시면\n곤란하지요{wait}\n공력 디자인이 있어야\n그만한 스피드가\n나오는 겁니다{wait}{clear}"
     },
     {
      "at": 450,
      "cmd": 33,
      "text_jp": "クスコ博士\n「二人ともなにをおっしゃる{wait}\nガンブラスターを最終的に\n完成させたのはこのわたしです{wait}\nわたしの開発したGPチップと\n内部メカの性能のおかげで\nあれだけの力をはっき\nできるのです{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "쿠스코 박사\n「두 분 다 무슨 말씀을{wait}\n건 블래스터를 최종적으로\n완성시킨 건 바로 저예요{wait}\n제가 개발한 GP칩과\n내부 메카의 성능 덕에\n그만한 힘을 발휘\n할 수 있는 거예요{wait}{clear}"
     },
     {
      "at": 565,
      "cmd": 33,
      "text_jp": "土屋博士\n「む！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「음！{wait}{clear}"
     },
     {
      "at": 584,
      "cmd": 33,
      "text_jp": "クスコ博士\n「むむ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "쿠스코 박사\n「으음！{wait}{clear}"
     },
     {
      "at": 603,
      "cmd": 33,
      "text_jp": "鉄心\n「むむむ！{wait}",
-     "text_kr": ""
+     "text_kr": "텟신\n「으으음！{wait}"
     },
     {
      "at": 661,
      "cmd": 33,
      "text_jp": "豪\n「どうしたんだ？\n博士たち{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「왜 그래？\n박사들{wait}"
     },
     {
      "at": 693,
      "cmd": 33,
      "text_jp": "藤吉\n「なにやらけんあくなムードに\nなってきたでゲス{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「뭔가 험악한 무드가\n돼 가는 거옵쇼{wait}{clear}"
     },
     {
      "at": 738,
      "cmd": 33,
      "text_jp": "鉄心\n「じゃったら\nだれのつくったマシンが\n一番優れているかで{wait}\nそれぞれの力量を\n試そうではないか{wait}\nレースで勝負じゃ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "텟신\n「그렇다면\n누가 만든 머신이\n제일 뛰어난지로{wait}\n각자의 역량을\n시험해 보지 않겠느냐{wait}\n레이스로 승부니라！{wait}{clear}"
     },
     {
      "at": 820,
      "cmd": 33,
      "text_jp": "クスコ博士\n「望むところです！\nそれならわたしは当然\nリオンのガンブラスターですな{wait}",
-     "text_kr": ""
+     "text_kr": "쿠스코 박사\n「바라던 바예요！\n그렇다면 저는 당연히\n리온의 건 블래스터지요{wait}"
     },
     {
      "at": 886,
      "cmd": 33,
      "text_jp": "鉄心\n「リョウ\nちょっとこい！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "텟신\n「료\n잠깐 오너라！{wait}{clear}"
     },
     {
      "at": 910,
      "cmd": 33,
      "text_jp": "リョウ\n「ハ？　ハイ{wait}",
-     "text_kr": ""
+     "text_kr": "료\n「하？　네{wait}"
     },
     {
      "at": 938,
      "cmd": 33,
      "text_jp": "鉄心\n「お前がわしのパートナーじゃ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "텟신\n「네가 내 파트너니라{wait}{clear}"
     },
     {
      "at": 965,
      "cmd": 33,
      "text_jp": "土屋博士\n「ずるいですよ鉄心先生！{wait}\nリョウくんのトライダガーは\nわたしが設計したマシンですよ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「치사해요 텟신 선생님！{wait}\n료의 트라이대거는\n제가 설계한 머신이라고요！{wait}{clear}"
     },
     {
      "at": 1030,
      "cmd": 33,
      "text_jp": "鉄心\n「ZMCがなかったら\n完成せんかったくせに{wait}\nえらそうなことを\nぬかすでないわ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "텟신\n「ZMC가 없었다면\n완성 못 했을 주제에{wait}\n잘난 척\n지껄이지 마라{wait}{clear}"
     },
     {
      "at": 1083,
      "cmd": 33,
      "text_jp": "土屋博士\n「うっ…　いたい所を…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「윽…　아픈 데를…{wait}{clear}"
     },
     {
      "at": 1111,
      "cmd": 33,
      "text_jp": "豪\n「なーにこまった顔してんだよ\nオレたちがいるじゃねえか！{wait}\nリオンと勝負できるんだろ？\nオレがやってやるよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「뭘 그리 곤란한 얼굴이야\n우리가 있잖아！{wait}\n리온과 승부할 수 있는 거지？\n내가 해 주지{wait}{clear}"
     },
     {
      "at": 1177,
      "cmd": 33,
      "text_jp": "土屋博士\n「しかし今のキミたちのマシンは\nキミたち自身の力でつくり上げた\n物ばかりだ…{wait}\nすでにわたしがつくったとは\n言えんよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「하지만 지금 너희 머신은\n너희 자신의 힘으로 만들어 낸\n것들뿐이야…{wait}\n이제 내가 만들었다곤\n할 수 없지{wait}{clear}"
     },
     {
      "at": 1257,
      "cmd": 33,
      "text_jp": "烈\n「そんなことはないです！{wait}\nボクのバスターソニックは\n博士がつくってくれた\nソニックセイバーや{wait}\nバンガードソニックがあったから\n完成したマシンです{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「그렇지 않아요！{wait}\n제 버스터 소닉은\n박사님이 만들어 주신\n소닉 세이버와{wait}\n뱅가드 소닉이 있었기에\n완성된 머신이에요{wait}{clear}"
     },
     {
      "at": 1345,
      "cmd": 33,
      "text_jp": "藤吉\n「そうでゲス{wait}\nワテのスピンバイパーも\nきほん設計は\n博士のスピンアックスの\nまんまでゲスよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「그렇사옵쇼{wait}\n제 스핀 바이퍼도\n기본 설계는\n박사님 스핀 액스\n그대로옵쇼{wait}{clear}"
     },
     {
      "at": 1407,
      "cmd": 33,
      "text_jp": "J\n「ボクも博士に出会わなければ\nエボリューションは\n生まれなかったと思います{wait}",
-     "text_kr": ""
+     "text_kr": "제이\n「저도 박사님을 못 만났다면\n에볼루션은\n태어나지 못했을 거예요{wait}"
     },
     {
      "at": 1466,
      "cmd": 33,
      "text_jp": "土屋博士\n「みっ　みんな…\nううっ　ありがとう…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「너　너희들…\n으윽　고맙다…{wait}{clear}"
     }
    ]
   },
@@ -8124,97 +8124,97 @@
      "at": 46,
      "cmd": 33,
      "text_jp": "土屋博士\n「いよいよリオンくんのいる\nXTOリボルバーズと\n戦う時がきたよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「드디어 리온이 있는\nXTO 리볼버즈와\n싸울 때가 왔어{wait}{clear}"
     },
     {
      "at": 99,
      "cmd": 33,
      "text_jp": "土屋博士\n「まず最初に\n言っておかなければ\nいけないことがある{wait}\n",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「우선 먼저\n말해 둬야만 할\n게 있단다{wait}\n"
     },
     {
      "at": 144,
      "cmd": 33,
      "text_jp": "みんなも\n知っているとは思うが{wait}\nわれわれビクトリーズの\n成績はげんざいのところ\n5割を切っている{wait}\n今後のレース展開に\nよゆうを持たせるためにも\n明日の試合には\nぜひ勝っておきたい{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "모두도\n알고 있으리라 생각하지만{wait}\n우리 빅토리즈의\n성적은 현재로선\n5할을 밑돌고 있어{wait}\n앞으로의 레이스 전개에\n여유를 두기 위해서라도\n내일 시합엔\n꼭 이겨 두고 싶어{wait}{clear}"
     },
     {
      "at": 258,
      "cmd": 33,
      "text_jp": "烈\n「わかりました博士{wait}\n絶対に勝ってみせます{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「알겠습니다 박사{wait}\n반드시 이겨 보이겠습니다{wait}{clear}"
     },
     {
      "at": 294,
      "cmd": 33,
      "text_jp": "土屋博士\n「たのんだよ　烈くん{wait}\n",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「부탁하마　레츠{wait}\n"
     },
     {
      "at": 321,
      "cmd": 33,
      "text_jp": "しかし\n問題の試合の相手なんだが…{wait}\nよりにもよって\nリオンくんのいる\nXTOリボルバーズに\n決定したんだ{wait}\nかなりの強敵だよ…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "하지만\n문제의 시합 상대인데…{wait}\n하필이면\n리온이 있는\nXTO 리볼버즈로\n정해졌어{wait}\n상당한 강적이야…{wait}{clear}"
     },
     {
      "at": 402,
      "cmd": 33,
      "text_jp": "豪\n「そうか　ついに対戦か{wait}\nいっちょせんぱいとして\nWGPのきびしさを\n教えてやるか{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「그렇군　드디어 대전인가{wait}\n선배로서 한 수\nWGP의 혹독함을\n가르쳐 줄까{wait}{clear}"
     },
     {
      "at": 456,
      "cmd": 33,
      "text_jp": "藤吉\n「豪くんだけは逆に\nリオンくんに教わった方が\nいいんじゃないでゲスか？{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「고만은 반대로\n리온한테 배우는 편이\n낫지 않겠옵쇼？{wait}"
     },
     {
      "at": 522,
      "cmd": 33,
      "text_jp": "豪\n「なに〜！{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「뭐라고〜！{wait}"
     },
     {
      "at": 548,
      "cmd": 33,
      "text_jp": "リョウ\n「きょうのレースはリオンの\nマシン1台だけだったが{wait}\nWGPでは\nあのガンブラスターを\n5台も相手にするんだな{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「오늘 레이스는 리온의\n머신 한 대뿐이었지만{wait}\nWGP에선\n저 건 블래스터를\n다섯 대나 상대하는 거군{wait}{clear}"
     },
     {
      "at": 618,
      "cmd": 33,
      "text_jp": "J\n「気をぬいていたら\n絶対に勝てないね…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「방심하면\n절대 못 이기겠네…{wait}{clear}"
     },
     {
      "at": 650,
      "cmd": 33,
      "text_jp": "烈\n「リオンくんの走りはきょう\n十分にみせてもらった{wait}\nだからそれ以上の走りを\n目ざせばきっと勝てるさ{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「리온의 주행은 오늘\n충분히 봤어{wait}\n그러니 그 이상의 주행을\n노리면 분명 이길 수 있어{wait}"
     },
     {
      "at": 721,
      "cmd": 33,
      "text_jp": "二郎丸\n「みんな！\n気合いダス！",
-     "text_kr": ""
+     "text_kr": "지로마루\n「모두！\n기합이유！"
     },
     {
      "at": 785,
      "cmd": 33,
      "text_jp": "土屋博士\n「そうそう{wait}\n先ほどはめいわくを\nかけたと言って\nクスコ博士がこんなものを\nくれたんだ{wait}\nせっかくだから\n使ってみたらどうだい{wait}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「참 그렇지{wait}\n아까는 폐를\n끼쳤다면서\n쿠스코 박사가 이걸\n주셨단다{wait}\n모처럼이니\n써 보는 게 어떻겠니{wait}"
     },
     {
      "at": 867,
      "cmd": 33,
      "text_jp": "オプションパーツ\n『GPチップアクセラレーター』を\n手に入れた",
-     "text_kr": ""
+     "text_kr": "옵션 파츠\n『GP칩 액셀러레이터』를\n얻었다"
     },
     {
      "at": 909,
      "cmd": 33,
      "text_jp": "土屋博士\n「それじゃあみんな\nいつものように練習開始だ{wait}\n満足できるマシンに\n仕上がったら　もう一度\nわたしに声をかけてくれたまえ{wait}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「그럼 모두\n평소처럼 연습 개시다{wait}\n만족스러운 머신으로\n완성되면　다시 한번\n나에게 말을 걸어 주렴{wait}"
     }
    ]
   },
@@ -8227,7 +8227,7 @@
      "at": 3,
      "cmd": 33,
      "text_jp": "『コンピューターだ{wait}",
-     "text_kr": ""
+     "text_kr": "『컴퓨터다{wait}"
     }
    ]
   },
@@ -8240,91 +8240,91 @@
      "at": 21,
      "cmd": 33,
      "text_jp": "豪\n「じいさん{wait}\nホワァンたちにニューマシンを\nつくってやったっての\n本当かよ！？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「할아범{wait}\n호왕네한테 뉴 머신을\n만들어 줬다는 거\n정말이야！？{wait}{clear}"
     },
     {
      "at": 76,
      "cmd": 33,
      "text_jp": "鉄心\n「ふぉっふぉっふぉっ{wait}\n",
-     "text_kr": ""
+     "text_kr": "텟신\n「호홋 호홋 홋{wait}\n"
     },
     {
      "at": 101,
      "cmd": 33,
      "text_jp": "本当じゃったら\nど〜するんじゃ？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "정말이면\n어〜쩔 거냐？{wait}{clear}"
     },
     {
      "at": 126,
      "cmd": 33,
      "text_jp": "豪\n「なっ　なにぃ！？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「뭐　뭐라고！？{wait}{clear}"
     },
     {
      "at": 145,
      "cmd": 33,
      "text_jp": "J\n「じゃあ　本当なんですか？{wait}",
-     "text_kr": ""
+     "text_kr": "제이\n「그럼　정말인 거예요？{wait}"
     },
     {
      "at": 176,
      "cmd": 33,
      "text_jp": "鉄心\n「うむ{wait}\nその名も\nシャイニングドラゴンじゃ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "텟신\n「음{wait}\n그 이름하야\n샤이닝 드래곤이니라{wait}{clear}"
     },
     {
      "at": 211,
      "cmd": 33,
      "text_jp": "藤吉\n「ワテらをうらぎったんでゲスね！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「저희를 배신한 거옵쇼！{wait}{clear}"
     },
     {
      "at": 239,
      "cmd": 33,
      "text_jp": "鉄心\n「ワシがいつお前らの\n仲間になったんじゃい{wait}\nこう見えてもミニ四駆連盟の\n名営会長じゃぞ{wait}\n世界のミニ四レーサーの\nみ〜んなに公平に手を\n差しのべてやるぎむが\nあるんじゃ{wait}",
-     "text_kr": ""
+     "text_kr": "텟신\n「내가 언제 너희\n편이 되었더냐{wait}\n이래 봬도 미니사구 연맹\n명예회장이니라{wait}\n세계 미니욘 레이서\n모〜두에게 공평하게 손을\n내밀어 줘야 할 의무가\n있느니라{wait}"
     },
     {
      "at": 370,
      "cmd": 33,
      "text_jp": "豪\n「ムキー！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「부글부글！{wait}{clear}"
     },
     {
      "at": 389,
      "cmd": 33,
      "text_jp": "鉄心\n「そーいえば",
-     "text_kr": ""
+     "text_kr": "텟신\n「그러고 보니"
     },
     {
      "at": 410,
      "cmd": 33,
      "text_jp": "次のお前らの対戦相手が\nさっきの光蝦（ゴンキ）\nじゃったかの〜？{wait}\nまあ　ワシのつくった\nシャイニングスコーピオンと\nシャイニングドラゴンを\n持っている光蝦には{wait}\n逆立ちしたって勝てんわい{wait}\n",
-     "text_kr": ""
+     "text_kr": "다음 너희 대전 상대가\n아까 그 공키\n였던가〜？{wait}\n뭐　내가 만든\n샤이닝 스콜피온과\n샤이닝 드래곤을\n가진 공키한테는{wait}\n물구나무서도 못 이기느니라{wait}\n"
     },
     {
      "at": 526,
      "cmd": 33,
      "text_jp": "ふぉっふぉっふぉっ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "호홋 호홋 홋{wait}{clear}"
     },
     {
      "at": 548,
      "cmd": 33,
      "text_jp": "リョウ\n「鉄心先生！{wait}\nいくらなんでも\nそれは言いすぎです{wait}",
-     "text_kr": ""
+     "text_kr": "료\n「텟신 선생님！{wait}\n아무리 그래도\n그건 말이 지나쳐요{wait}"
     },
     {
      "at": 594,
      "cmd": 33,
      "text_jp": "二郎丸\n「そうダス！\n言いすぎダス！{wait}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「그렇슈！\n지나치구먼유！{wait}"
     },
     {
      "at": 627,
      "cmd": 33,
      "text_jp": "鉄心\n「そ〜かい\nそれじゃ試合を\n楽しみにしとるぞ〜{wait}",
-     "text_kr": ""
+     "text_kr": "텟신\n「그〜러냐\n그럼 시합을\n기대하고 있으마〜{wait}"
     }
    ]
   },
