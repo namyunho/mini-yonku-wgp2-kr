@@ -7250,85 +7250,85 @@
      "at": 24,
      "cmd": 33,
      "text_jp": "土屋博士\n「さっそくだが\n明日の第1戦の対戦相手が\n決まったよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「곧바로 본론인데\n내일 제1전 대전 상대가\n정해졌단다{wait}{clear}"
     },
     {
      "at": 79,
      "cmd": 33,
      "text_jp": "豪\n「どこ？　どこ　どこ？{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「어디？　어디　어디？{wait}"
     },
     {
      "at": 112,
      "cmd": 33,
      "text_jp": "藤吉\n「あいかわらず豪くんは\n落ち著きがないでゲスなあ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「여전히 고는\n침착함이 없사옵쇼{wait}{clear}"
     },
     {
      "at": 151,
      "cmd": 33,
      "text_jp": "土屋博士\n「対戦チームは\nNAアストロレンジャーズだ{wait}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「대전 팀은\nNA 아스트로 레인저스다{wait}"
     },
     {
      "at": 195,
      "cmd": 33,
      "text_jp": "豪\n「よっしゃー！\nナイスタイミングだぜ！！{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「좋았어！\n나이스 타이밍이야！！{wait}"
     },
     {
      "at": 237,
      "cmd": 33,
      "text_jp": "藤吉\n「豪くん\nなにかあったんでゲスか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「고\n뭔가 있었사옵쇼？{wait}{clear}"
     },
     {
      "at": 267,
      "cmd": 33,
      "text_jp": "烈\n「うん　ちょっとね{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「응　좀 그런 게 있어{wait}{clear}"
     },
     {
      "at": 286,
      "cmd": 33,
      "text_jp": "リョウ\n「初戦からきびしい\n戦いになりそうだな{wait}",
-     "text_kr": ""
+     "text_kr": "료\n「초전부터 힘든\n싸움이 될 것 같군{wait}"
     },
     {
      "at": 324,
      "cmd": 33,
      "text_jp": "二郎丸\n「あんちゃん\nがんばるダス{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「형님\n힘내유{wait}{clear}"
     },
     {
      "at": 354,
      "cmd": 33,
      "text_jp": "J\n「どのチームが相手だろうと\nボクたちは全力で戦うだけだよ\nねっ　烈くん{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「어느 팀이 상대든\n우리는 전력으로 싸울 뿐이야\n그렇지　레츠{wait}{clear}"
     },
     {
      "at": 403,
      "cmd": 33,
      "text_jp": "烈\n「そうだね\nボクたちはチャンピオンとして\nはずかしくない戦いをしよう{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「그래\n우리는 챔피언으로서\n부끄럽지 않은 싸움을 하자{wait}{clear}"
     },
     {
      "at": 448,
      "cmd": 33,
      "text_jp": "土屋博士\n「それと試作品なんだが{wait}\nバックブレーダーとの\nレースデーターをもとに\n新しいパーツをつくったんだ{wait}\nぜひ使ってみてくれたまえ{wait}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「그리고 시작품인데{wait}\n벅블레이더와의\n레이스 데이터를 바탕으로\n새 파츠를 만들었단다{wait}\n꼭 써 봐 주려무나{wait}"
     },
     {
      "at": 530,
      "cmd": 33,
      "text_jp": "オプションパーツ\n『アストロウイング』を手に入れた",
-     "text_kr": ""
+     "text_kr": "옵션 파츠\n『아스트로 윙』을 얻었다"
     },
     {
      "at": 566,
      "cmd": 33,
      "text_jp": "土屋博士\n「それじゃあみんな\nいつものように練習開始だ{wait}\n満足できるマシンに\n仕上がったら　もう一度\nわたしに声をかけてくれたまえ{wait}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「그럼 모두\n평소처럼 연습 개시다{wait}\n만족스러운 머신으로\n완성되면　다시 한번\n나에게 말을 걸어 주렴{wait}"
     }
    ]
   },
@@ -8719,127 +8719,127 @@
      "at": 38,
      "cmd": 33,
      "text_jp": "土屋博士\n「明日の対戦相手が\nフランスのレ・ヴァンクールに\n決まったよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「내일 대전 상대가\n프랑스의 레 방쿠르로\n정해졌단다{wait}{clear}"
     },
     {
      "at": 94,
      "cmd": 33,
      "text_jp": "土屋博士\n「まず最初に\n言っておかなければ\nいけないことがある{wait}\n",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「우선 먼저\n말해 둬야만 할\n게 있단다{wait}\n"
     },
     {
      "at": 139,
      "cmd": 33,
      "text_jp": "みんなも\n知っているとは思うが{wait}\nざんねんなことに\nわれわれビクトリーズの\n成績が勝率5割を切っている{wait}\n",
-     "text_kr": ""
+     "text_kr": "모두도\n알고 있으리라 생각하지만{wait}\n안타깝게도\n우리 빅토리즈의\n성적이 승률 5할을 밑돌고 있어{wait}\n"
     },
     {
      "at": 205,
      "cmd": 33,
      "text_jp": "これからのことを考えると\n明日の試合には\nぜひ勝っておきたい{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "앞일을 생각하면\n내일 시합엔\n꼭 이겨 두고 싶어{wait}{clear}"
     },
     {
      "at": 248,
      "cmd": 33,
      "text_jp": "リョウ\n「やるしかないな…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「할 수밖에 없군…{wait}{clear}"
     },
     {
      "at": 268,
      "cmd": 33,
      "text_jp": "J\n「それで明日の対戦相手は？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「그래서 내일 대전 상대는？{wait}{clear}"
     },
     {
      "at": 296,
      "cmd": 33,
      "text_jp": "土屋博士\n「フランスのレ・ヴァンクールだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「프랑스의 레 방쿠르다{wait}{clear}"
     },
     {
      "at": 327,
      "cmd": 33,
      "text_jp": "リョウ\n「今回から新たに参加している\nチームですね{wait}\nミニ四駆界に革命を\nおこすためにやってきた\nとか言っている…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「이번부터 새로 참가하는\n팀이죠{wait}\n미니사구계에 혁명을\n일으키러 왔다\n어쩌고 하던…{wait}{clear}"
     },
     {
      "at": 402,
      "cmd": 33,
      "text_jp": "烈\n「そういえば藤吉くん\nレ・ヴァンクールに\n会ったんだって？{wait}\nどんなチームなんだい？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「그러고 보니 토우키치\n레 방쿠르를\n만났다며？{wait}\n어떤 팀이야？{wait}{clear}"
     },
     {
      "at": 457,
      "cmd": 33,
      "text_jp": "藤吉\n「とにかくヘンな連中でゲス{wait}\n",
-     "text_kr": ""
+     "text_kr": "토우키치\n「아무튼 이상한 녀석들이옵쇼{wait}\n"
     },
     {
      "at": 484,
      "cmd": 33,
      "text_jp": "マシンのことは\nやつらのキャラクターが\n強烈すぎて　注意してみている\nヒマがなかったでゲスが…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "머신에 관해선\n녀석들 캐릭터가\n너무 강렬해서　주의 깊게 볼\n틈이 없었사옵쇼만…{wait}{clear}"
     },
     {
      "at": 542,
      "cmd": 33,
      "text_jp": "豪\n「役に立たねえなぁもう{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「도움이 안 되네 정말{wait}{clear}"
     },
     {
      "at": 565,
      "cmd": 33,
      "text_jp": "J\n「これまでの試合では\n前半は負けているのに\n後半にまきかえす{wait}\nというレース展開で\n勝っているんだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「지금까지 시합에선\n전반엔 지고 있는데\n후반에 뒤집는{wait}\n레이스 전개로\n이기고 있어{wait}{clear}"
     },
     {
      "at": 633,
      "cmd": 33,
      "text_jp": "土屋博士\n「おされぎみのレースを\nまきかえす…\nフッ　まさに革命か…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「밀리던 레이스를\n뒤집는다…\n훗　그야말로 혁명인가…{wait}{clear}"
     },
     {
      "at": 680,
      "cmd": 33,
      "text_jp": "二郎丸\n「{c8:02}かくめいって{c8:00}なんダスか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「{c8:02}혁명이란{c8:00} 게 뭐유？{wait}{clear}"
     },
     {
      "at": 710,
      "cmd": 33,
      "text_jp": "藤吉\n「逆転と革命をかけているって\nことでゲスか？{wait}\nやつらがそんなことまで考えて\n走っているとは思えないで\nゲスがねぇ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「역전과 혁명을 엮었다는\n말이옵쇼？{wait}\n녀석들이 그런 것까지 생각하며\n달린다곤 생각 안 되옵\n쇼만…{wait}{clear}"
     },
     {
      "at": 786,
      "cmd": 33,
      "text_jp": "烈\n「でも　事実としてそうやって\n勝っているんだから{wait}\nなにかひみつがあるんじゃ\nないかな{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「하지만　실제로 그렇게\n이기고 있으니까{wait}\n뭔가 비밀이 있는 거\n아닐까{wait}{clear}"
     },
     {
      "at": 842,
      "cmd": 33,
      "text_jp": "豪\n「あ〜も〜！\nゴチャゴチャうっせー！{wait}\nようはブッちぎれば\nいーんだろ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「아〜정말〜！\n복잡하게 시끄러！{wait}\n요컨대 제쳐 버리면\n되는 거잖아！{wait}{clear}"
     },
     {
      "at": 888,
      "cmd": 33,
      "text_jp": "二郎丸\n「{c8:02}かくめいって{c8:00}なんダスか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「{c8:02}혁명이란{c8:00} 게 뭐유？{wait}{clear}"
     },
     {
      "at": 918,
      "cmd": 33,
      "text_jp": "土屋博士\n「それじゃあみんな\nいつものように練習開始だ{wait}\n満足できるマシンに\n仕上がったら　もう一度\nわたしに声をかけてくれたまえ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「그럼 모두\n평소처럼 연습 개시다{wait}\n만족스러운 머신으로\n완성되면　다시 한번\n나에게 말을 걸어 주렴{wait}{clear}"
     },
     {
      "at": 1004,
      "cmd": 33,
      "text_jp": "二郎丸\n「{c8:02}かくめいって{c8:00}なんダスか？{wait}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「{c8:02}혁명이란{c8:00} 게 뭐유？{wait}"
     }
    ]
   },
@@ -8865,97 +8865,97 @@
      "at": 24,
      "cmd": 33,
      "text_jp": "土屋博士\n「明日の対戦相手が決まった{wait}\n…イタリアの\nロッソストラーダだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「내일 대전 상대가 정해졌다{wait}\n…이탈리아의\n롯소 스트라다다{wait}{clear}"
     },
     {
      "at": 78,
      "cmd": 33,
      "text_jp": "藤吉\n「やつらはまだ\nバトルレースをしかけてくる\nつもりなんでゲスかねぇ？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「녀석들은 아직도\n배틀 레이스를 걸어올\n셈인 거옵쇼？{wait}{clear}"
     },
     {
      "at": 124,
      "cmd": 33,
      "text_jp": "二郎丸\n「だっ　だいじょうぶダスか\nあんちゃん！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「괘　괜찮은 거유\n형님！{wait}{clear}"
     },
     {
      "at": 157,
      "cmd": 33,
      "text_jp": "リョウ\n「心配するな二郎丸\nトライダガーはがんじょうだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「걱정 마 지로마루\n트라이대거는 튼튼하다{wait}{clear}"
     },
     {
      "at": 195,
      "cmd": 33,
      "text_jp": "烈\n「そうだよ{wait}\nそれに去年も一度\n出場停止処分を\n受けているんだから\nやりたくてもできないよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「그래{wait}\n게다가 작년에도 한 번\n출전 정지 처분을\n받았으니까\n하고 싶어도 못 해{wait}{clear}"
     },
     {
      "at": 260,
      "cmd": 33,
      "text_jp": "リョウ\n「それでも\n注意はしておいたほうが\nいいだろうな{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「그래도\n주의는 해 두는 편이\n좋겠지{wait}{clear}"
     },
     {
      "at": 297,
      "cmd": 33,
      "text_jp": "J\n「ぼうぎょ力を重点的に\nアップさせておくってこと？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「방어력을 중점적으로\n올려 두라는 거야？{wait}{clear}"
     },
     {
      "at": 334,
      "cmd": 33,
      "text_jp": "烈\n「スピードを落とさない\nていどにしないとね{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「스피드를 떨어뜨리지 않는\n선에서 해야겠지{wait}{clear}"
     },
     {
      "at": 366,
      "cmd": 33,
      "text_jp": "豪\n「そんなこと心配しなくても\nだいじょうぶだよ！{wait}\nカルロはそんなやつじゃねぇ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「그런 거 걱정 안 해도\n괜찮아！{wait}\n카를로는 그런 녀석 아냐{wait}{clear}"
     },
     {
      "at": 416,
      "cmd": 33,
      "text_jp": "二郎丸\n「どうしたんダス？{wait}\nみょうに　あいつのかたを\nもつダスな{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「왜 그러유？{wait}\n묘하게　그 녀석 편을\n드는구먼유{wait}{clear}"
     },
     {
      "at": 458,
      "cmd": 33,
      "text_jp": "藤吉\n「去年はあんなに\nきらってたのにでゲス{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「작년엔 그렇게\n싫어했으면서옵쇼{wait}{clear}"
     },
     {
      "at": 499,
      "cmd": 33,
      "text_jp": "豪\n「うっ　うっせー！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「윽　시끄러！{wait}{clear}"
     },
     {
      "at": 524,
      "cmd": 33,
      "text_jp": "土屋博士\n「まあまあ\n一応注意はしておく\nということでいいじゃないか{wait}\nわたしもめったなことは\nないと思うよ{wait}\n",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「자자\n일단 주의는 해 둔다는\n걸로 하면 되지 않겠니{wait}\n나도 어지간해선\n일 없으리라 본단다{wait}\n"
     },
     {
      "at": 593,
      "cmd": 33,
      "text_jp": "それはそうと\nこれを見てくれないか？{wait}\nウチの研究員がつくった\n試作品なんだが\nおもしろいパーツでね{wait}\n試しに使ってみて\nくれないかい？{wait}",
-     "text_kr": ""
+     "text_kr": "그건 그렇고\n이걸 봐 주지 않겠니？{wait}\n우리 연구원이 만든\n시작품인데\n재밌는 파츠란다{wait}\n시험 삼아 써 보지\n않겠니？{wait}"
     },
     {
      "at": 675,
      "cmd": 33,
      "text_jp": "オプションパーツ\n『ゴッドベアリング』を手に入れた",
-     "text_kr": ""
+     "text_kr": "옵션 파츠\n『갓 베어링』을 얻었다"
     },
     {
      "at": 711,
      "cmd": 33,
      "text_jp": "土屋博士\n「よし！\nそれじゃあいつものように\n練習開始にしよう{wait}\n満足するマシンに仕上がったら\nもう一度　わたしに声をかけて\nくれたまえ{wait}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「좋아！\n그럼 평소처럼\n연습 개시하자{wait}\n만족스러운 머신으로 완성되면\n다시 한번　나에게 말을 걸어\n주려무나{wait}"
     }
    ]
   },
@@ -8981,139 +8981,139 @@
      "at": 38,
      "cmd": 33,
      "text_jp": "土屋博士\n「みんな\n明日の対戦相手が決まったよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「모두\n내일 대전 상대가 정해졌어{wait}{clear}"
     },
     {
      "at": 79,
      "cmd": 33,
      "text_jp": "藤吉\n「このしゅんかんは\nいつもドキドキするでゲスなあ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「이 순간은\n늘 두근두근하옵쇼{wait}{clear}"
     },
     {
      "at": 115,
      "cmd": 33,
      "text_jp": "豪\n「どのチームだろうが\nかかってこいってんだ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「어느 팀이든\n덤벼 보라 그거야！{wait}{clear}"
     },
     {
      "at": 147,
      "cmd": 33,
      "text_jp": "土屋博士\n「あー…\nその対戦相手なんだが\nサバンナソルジャーズなんだ…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「어…\n그 대전 상대 말인데\n사반나 솔져스란다…{wait}{clear}"
     },
     {
      "at": 200,
      "cmd": 33,
      "text_jp": "土屋博士\n「まず最初に\n言っておかなければ\nいけないことがある{wait}\nざんねんだが\nわれわれビクトリーズの\n成績は勝率5割を切っている{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「우선 먼저\n말해 둬야만 할\n게 있어{wait}\n안타깝지만\n우리 빅토리즈의\n성적은 승률 5할을 밑돌고 있어{wait}{clear}"
     },
     {
      "at": 285,
      "cmd": 33,
      "text_jp": "最終戦までに最低でも\n勝率5割にしておかないと\n優勝は遠い存在に\nなってしまう{wait}\n",
-     "text_kr": ""
+     "text_kr": "최종전까지 최소한\n승률 5할로 해 두지 않으면\n우승은 먼 존재가\n돼 버려{wait}\n"
     },
     {
      "at": 344,
      "cmd": 33,
      "text_jp": "あと1勝…{wait}\nあと1勝でいいんだ！{wait}\n明日の試合は必ず\nものにしよう！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "앞으로 1승…{wait}\n앞으로 1승이면 돼！{wait}\n내일 시합은 반드시\n따내자！{wait}{clear}"
     },
     {
      "at": 393,
      "cmd": 33,
      "text_jp": "豪\n「博士　あと1勝だなんて\nセコいこと言わなくても{wait}\n残りのレースは\n全勝で優勝まで\nブッちぎってやるぜ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「박사　앞으로 1승이라니\n쩨쩨하게 말 안 해도{wait}\n남은 레이스는\n전승으로 우승까지\n제쳐 버릴 테니까！{wait}{clear}"
     },
     {
      "at": 464,
      "cmd": 33,
      "text_jp": "藤吉\n「自信だけは\n人一倍なんでゲスがねぇ…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「자신감만은\n남달리 넘치옵쇼…{wait}{clear}"
     },
     {
      "at": 498,
      "cmd": 33,
      "text_jp": "豪\n「なんかもんくあんのかよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「뭔가 불만 있냐{wait}{clear}"
     },
     {
      "at": 520,
      "cmd": 33,
      "text_jp": "土屋\n「まあ　まあ{wait}\n",
-     "text_kr": ""
+     "text_kr": "츠치야\n「자　자{wait}\n"
     },
     {
      "at": 538,
      "cmd": 33,
      "text_jp": "でも　それくらいの\nいきおいがなければ\n明日の対戦相手には\n勝てないかもしれない{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "하지만　그 정도\n기세가 없으면\n내일 대전 상대한테는\n못 이길지도 몰라{wait}{clear}"
     },
     {
      "at": 592,
      "cmd": 33,
      "text_jp": "烈\n「博士{wait}\n明日の対戦相手ってまさか…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「박사{wait}\n내일 대전 상대라면 설마…{wait}{clear}"
     },
     {
      "at": 628,
      "cmd": 33,
      "text_jp": "土屋博士\n「そう…{wait}\nサバンナソルジャーズなんだ…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「그래…{wait}\n사반나 솔져스란다…{wait}{clear}"
     },
     {
      "at": 664,
      "cmd": 33,
      "text_jp": "藤吉\n「マジでゲスか！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「진심이옵쇼！！{wait}{clear}"
     },
     {
      "at": 685,
      "cmd": 33,
      "text_jp": "J\n「さっき心配してたことが\n現実になっちゃったね…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「아까 걱정하던 게\n현실이 돼 버렸네…{wait}{clear}"
     },
     {
      "at": 722,
      "cmd": 33,
      "text_jp": "豪\n「じょうとうじゃねぇか{wait}\n絶対に勝ってやる！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「해볼 만하잖아{wait}\n반드시 이겨 주마！{wait}{clear}"
     },
     {
      "at": 757,
      "cmd": 33,
      "text_jp": "リョウ\n「そうだ　勝てばいいんだ{wait}\nオレたちはオレたちなりの\n走りをすればいい！{wait}",
-     "text_kr": ""
+     "text_kr": "료\n「그래　이기면 되는 거다{wait}\n우리는 우리 나름의\n주행을 하면 된다！{wait}"
     },
     {
      "at": 811,
      "cmd": 33,
      "text_jp": "二郎丸\n「かっこいいダス\nあんちゃん！{wait}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「멋있구먼유\n형님！{wait}"
     },
     {
      "at": 844,
      "cmd": 33,
      "text_jp": "J\n「そうだね{wait}\nボクたちはくいの残らない\nレースをすればいいんだ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「그래{wait}\n우리는 후회 안 남을\n레이스를 하면 되는 거야！{wait}{clear}"
     },
     {
      "at": 886,
      "cmd": 33,
      "text_jp": "烈\n「よし\nじゃあ明日にそなえて\n練習開始だ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「좋아\n그럼 내일에 대비해\n연습 개시다！{wait}{clear}"
     },
     {
      "at": 923,
      "cmd": 33,
      "text_jp": "土屋博士\n「その意気だ！\nがんばれよみんな{wait}\n",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「그 기세다！\n힘내라 모두{wait}\n"
     },
     {
      "at": 957,
      "cmd": 33,
      "text_jp": "じゃあ\n満足するマシンに仕上がったら\nもう一度　わたしに声をかけて\nくれたまえ{wait}",
-     "text_kr": ""
+     "text_kr": "그럼\n만족스러운 머신으로 완성되면\n다시 한번　나에게 말을 걸어\n주려무나{wait}"
     }
    ]
   },
@@ -9139,91 +9139,91 @@
      "at": 26,
      "cmd": 33,
      "text_jp": "二郎丸\n「お待ちかねの作戦タイムダス{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「기다리던 작전 타임이유{wait}{clear}"
     },
     {
      "at": 56,
      "cmd": 33,
      "text_jp": "土屋博士\n「次の試合の対戦相手が\nさっき発表になった{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「다음 시합 대전 상대가\n방금 발표됐어{wait}{clear}"
     },
     {
      "at": 102,
      "cmd": 33,
      "text_jp": "藤吉\n「ロシアの\nシルバーフォックスでゲスか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「러시아의\n실버 폭스옵쇼？{wait}{clear}"
     },
     {
      "at": 134,
      "cmd": 33,
      "text_jp": "土屋博士\n「よくわかったねえ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「용케 알았네{wait}{clear}"
     },
     {
      "at": 159,
      "cmd": 33,
      "text_jp": "藤吉\n「いいかげん\nパターンも読めるでゲスよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「이제 슬슬\n패턴도 읽히옵쇼{wait}{clear}"
     },
     {
      "at": 191,
      "cmd": 33,
      "text_jp": "リョウ\n「シルバーフォックスとは\n前にも戦っているから\nチームの実力はわかっているが{wait}\nまさかヤツらも以前の\nままじゃないだろう{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「실버 폭스와는\n전에도 싸웠으니\n팀 실력은 알고 있지만{wait}\n설마 녀석들도 예전\n그대로는 아니겠지{wait}{clear}"
     },
     {
      "at": 267,
      "cmd": 33,
      "text_jp": "烈\n「レベルアップしているだろうね{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「레벨업했겠지{wait}{clear}"
     },
     {
      "at": 292,
      "cmd": 33,
      "text_jp": "土屋博士\n「そこのところはどうなんだい？\nチイコくん{wait}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「그쪽은 어떻디？\n치이코{wait}"
     },
     {
      "at": 338,
      "cmd": 33,
      "text_jp": "J\n「Jです{wait}",
-     "text_kr": ""
+     "text_kr": "제이\n「제이예요{wait}"
     },
     {
      "at": 352,
      "cmd": 33,
      "text_jp": "土屋博士\n「あっ　そうかそうか\n",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「앗　그렇지 그렇지\n"
     },
     {
      "at": 378,
      "cmd": 33,
      "text_jp": "いやははははは！{wait}",
-     "text_kr": ""
+     "text_kr": "이야 하하하하하！{wait}"
     },
     {
      "at": 406,
      "cmd": 33,
      "text_jp": "J\n「確かに以前より\n速かったですよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「확실히 예전보다\n빨랐어요{wait}{clear}"
     },
     {
      "at": 435,
      "cmd": 33,
      "text_jp": "烈\n「かれらの最大の武器は\nチームプレイだ{wait}\nこちらもじっくりと調整を\nしておかなければいけないね{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「그들의 최대 무기는\n팀플레이야{wait}\n이쪽도 꼼꼼히 조정을\n해 둬야만 해{wait}{clear}"
     },
     {
      "at": 498,
      "cmd": 33,
      "text_jp": "土屋博士\n「よし！　それじゃあ\nいつものように\n練習開始にしよう{wait}\n満足するマシンに仕上がったら\nもう一度わたしに声をかけて\nくれたまえ{wait}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「좋아！　그럼\n평소처럼\n연습 개시하자{wait}\n만족스러운 머신으로 완성되면\n다시 한번 나에게 말을 걸어\n주려무나{wait}"
     },
     {
      "at": 592,
      "cmd": 33,
      "text_jp": "豪\n「ゲスゲスゲス{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「옵쇼옵쇼옵쇼{wait}{clear}"
     }
    ]
   },
