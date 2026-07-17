@@ -3313,49 +3313,49 @@
      "at": 19,
      "cmd": 33,
      "text_jp": "FOX4\n「うーん　これは確かに\nWGPレーサーのテクニックだ{wait}\nじゃあキミは本当に…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "FOX4\n「으음　이건 확실히\nWGP 레이서의 테크닉이다{wait}\n그럼 넌 정말로…{wait}{clear}"
     },
     {
      "at": 72,
      "cmd": 33,
      "text_jp": "チイコなJ\n「信じてくれたかい？{wait}",
-     "text_kr": ""
+     "text_kr": "치이코가 된 제이\n「믿어 줬어？{wait}"
     },
     {
      "at": 103,
      "cmd": 33,
      "text_jp": "彦佐\n「チイコお嬢様…{wait}\nじゃない　J様！\n機械が直りましたです　ハイ！{wait}",
-     "text_kr": ""
+     "text_kr": "히코사\n「치이코 아가씨…{wait}\n아니　제이 님！\n기계가 고쳐졌습니다　네！{wait}"
     },
     {
      "at": 161,
      "cmd": 33,
      "text_jp": "チイコなJ\n「良かった{wait}",
-     "text_kr": ""
+     "text_kr": "치이코가 된 제이\n「다행이야{wait}"
     },
     {
      "at": 186,
      "cmd": 33,
      "text_jp": "ユーリ\n「機械？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "유리\n「기계？{wait}{clear}"
     },
     {
      "at": 209,
      "cmd": 33,
      "text_jp": "チイコなJ\n「それが　ボクとチイコちゃんを\n入れかえてしまった\nげんいんなんだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코가 된 제이\n「그게　나랑 치이코를\n뒤바꿔 버린\n원인이야{wait}{clear}"
     },
     {
      "at": 255,
      "cmd": 33,
      "text_jp": "FOX4\n「そんな不思議な機械が\n本当にあるんだなあ{wait}\nさすが日本のテクノロジーだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "FOX4\n「그런 신기한 기계가\n정말 있구나{wait}\n역시 일본 기술이야{wait}{clear}"
     },
     {
      "at": 312,
      "cmd": 33,
      "text_jp": "チイコなJ\n「じゃ　ボクはこれで！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코가 된 제이\n「그럼　난 이만！{wait}{clear}"
     }
    ]
   },
@@ -3368,31 +3368,31 @@
      "at": 23,
      "cmd": 33,
      "text_jp": "豪\n「かっとべ　マグナーム！！",
-     "text_kr": ""
+     "text_kr": "고\n「날아라　매그넘！！"
     },
     {
      "at": 64,
      "cmd": 33,
      "text_jp": "烈\n「Jくん　どうしたの？{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「제이　왜 그래？{wait}"
     },
     {
      "at": 98,
      "cmd": 33,
      "text_jp": "J\n「うん　この極寒コースのせいで\n可変ボディの結合部分が\nこおっちゃったみたいなんだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「응　이 혹한 코스 탓에\n가변 바디 이음새가\n얼어붙은 것 같아{wait}{clear}"
     },
     {
      "at": 156,
      "cmd": 33,
      "text_jp": "烈\n「えっ　そんな！{wait}\nそれじゃあ\nオーロラドームのコースじゃ\nドルフィンシステムが\n使えないってことじゃないか{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「에엣　설마！{wait}\n그럼\n오로라 돔 코스에선\n돌핀 시스템을\n못 쓴단 거잖아{wait}{clear}"
     },
     {
      "at": 221,
      "cmd": 33,
      "text_jp": "J\n「うん…\nレースはあさってなのに\nなんとかしないと…{wait}",
-     "text_kr": ""
+     "text_kr": "제이\n「응…\n모레가 경기인데\n어떻게든 해야 해…{wait}"
     }
    ]
   },
@@ -3405,61 +3405,61 @@
      "at": 118,
      "cmd": 33,
      "text_jp": "豪\n「お〜！　やってる　やってる{wait}\nオレたちも早く走ろうぜ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「오〜！　한다　한다{wait}\n우리도 빨리 달리자{wait}{clear}"
     },
     {
      "at": 157,
      "cmd": 33,
      "text_jp": "烈\n「そうだな{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「그러네{wait}"
     },
     {
      "at": 183,
      "cmd": 33,
      "text_jp": "豪\n「いくぜ！　マグナム{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「간다！　매그넘{wait}"
     },
     {
      "at": 210,
      "cmd": 33,
      "text_jp": "ファイター\n「ちょっと待った　二人とも{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「잠깐만요　두 사람！{wait}"
     },
     {
      "at": 252,
      "cmd": 33,
      "text_jp": "烈\n「ファイター！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「파이터！{wait}{clear}"
     },
     {
      "at": 269,
      "cmd": 33,
      "text_jp": "豪\n「こんな所でなにやってんだ？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「여기서 뭐 해？{wait}{clear}"
     },
     {
      "at": 294,
      "cmd": 33,
      "text_jp": "ファイター\n「試合のない日はここで\n働いているんだよ{wait}\nレースある所に\nファイターありってね{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "파이터\n「시합 없는 날엔 여기서\n일하고 있어요{wait}\n레이스 있는 곳에\n파이터 있어요！！{wait}{clear}"
     },
     {
      "at": 352,
      "cmd": 33,
      "text_jp": "烈\n「なんかヒマそうだね…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「좀 한가한가 봐…{wait}{clear}"
     },
     {
      "at": 373,
      "cmd": 33,
      "text_jp": "ファイター\n「それより\nここでレースをする時は\nボクに話しかけてくれ{wait}\nあと　カウンターでは\nこのコースのベストタイムを\n教えてくれるよ{wait}\nそれじゃあ　レース開始だ！{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「그보다\n여기서 레이스할 땐\n저한테 말 걸어줘요{wait}\n또　카운터에선\n이 코스 베스트타임을\n알려준답니다{wait}\n그럼　레이스 시작！！{wait}"
     },
     {
      "at": 483,
      "cmd": 33,
      "text_jp": "ファイター\n「それじゃあ　いっくぞ〜{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「그럼　간다〜{wait}"
     }
    ]
   },
@@ -3472,61 +3472,61 @@
      "at": 12,
      "cmd": 33,
      "text_jp": "烈\n「なかなかおもしろい\nコースじゃないか{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「제법 재밌는\n코스 아니야{wait}{clear}"
     },
     {
      "at": 41,
      "cmd": 33,
      "text_jp": "豪\n「ああ！\nいいじゃんこのコース{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「오！\n좋잖아 이 코스{wait}"
     },
     {
      "at": 74,
      "cmd": 33,
      "text_jp": "いちろう　＆　おさむ\n「ビクトリーズのレッツゴー兄弟だ〜{wait}",
-     "text_kr": ""
+     "text_kr": "이치로　＆　오사무\n「빅토리즈의 렛츠고 형제다〜{wait}"
     },
     {
      "at": 119,
      "cmd": 33,
      "text_jp": "えりか　＆　いよ\n「ソニックとマグナム！\nすごい　本物だわ{wait}",
-     "text_kr": ""
+     "text_kr": "에리카　＆　이요\n「소닉이랑 매그넘！\n대단해　진짜야{wait}"
     },
     {
      "at": 158,
      "cmd": 33,
      "text_jp": "豪\n「やぁ〜　ど〜も　ど〜も\nまいっちゃうな〜\nあはははは{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「이야〜　감사　감사\n몸둘 바 모르겠네〜\n아하하하하{wait}"
     },
     {
      "at": 193,
      "cmd": 33,
      "text_jp": "えりか\n「WGP　今年も優勝してね{wait}",
-     "text_kr": ""
+     "text_kr": "에리카\n「WGP　올해도 우승해 줘{wait}"
     },
     {
      "at": 222,
      "cmd": 33,
      "text_jp": "豪\n「あったりまえじゃん\nブッちぎりで優勝してやるぜ\nあはははは{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「당연하지\n압승으로 우승해 주지\n아하하하하{wait}{clear}"
     },
     {
      "at": 264,
      "cmd": 33,
      "text_jp": "烈\n「おい　豪\nあんまり調子にのりすぎるなよ{wait}\n世界のかべはあついぞ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「이봐　고\n너무 우쭐대지 마{wait}\n세계의 벽은 높아{wait}{clear}"
     },
     {
      "at": 311,
      "cmd": 33,
      "text_jp": "豪\n「世界のかべなんて\nちょろい　ちょろい！\nあははははは{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「세계의 벽쯤\n별거 아니야！\n아하하하하하{wait}"
     },
     {
      "at": 348,
      "cmd": 33,
      "text_jp": "聞きおぼえのある声\n「ずいぶんうかれているじゃないか\nゴー・セイバ{wait}",
-     "text_kr": ""
+     "text_kr": "낯익은 목소리\n「꽤 들떴잖아\n고 세이바{wait}"
     }
    ]
   },
@@ -3666,61 +3666,61 @@
      "at": 138,
      "cmd": 33,
      "text_jp": "ブレット\n「さすがだな{wait}\nそれでこそチャンピオンだ{wait}\n試合が楽しみになってきたぜ{wait}\nじゃあな{wait}",
-     "text_kr": ""
+     "text_kr": "브렛\n「역시군{wait}\n그래야 챔피언이지{wait}\n시합이 기대되기 시작했어{wait}\n그럼 이만{wait}"
     },
     {
      "at": 229,
      "cmd": 33,
      "text_jp": "ジョー\n「バーイ♥{wait}",
-     "text_kr": ""
+     "text_kr": "조\n「바이♥{wait}"
     },
     {
      "at": 293,
      "cmd": 33,
      "text_jp": "豪\n「なんだか　なっとくいかねー！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「뭔가　납득이 안 가！{wait}{clear}"
     },
     {
      "at": 318,
      "cmd": 33,
      "text_jp": "烈\n「でも\nおかげでレースのカンを\n取りもどすことができたな{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「그래도\n덕분에 레이스 감을\n되찾을 수 있었어{wait}"
     },
     {
      "at": 367,
      "cmd": 33,
      "text_jp": "烈\n「もしかすると…{wait}\nかれらは優勝して\nうかれきっている\nボクたちにカツを入れに\nきてくれたんじゃないかな{wait}\nそんな気がするんだけれど…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「어쩌면…{wait}\n저들은 우승하고\n들떠 있는\n우리에게 기합을 넣으러\n와준 게 아닐까{wait}\n그런 느낌이 드는데…{wait}{clear}"
     },
     {
      "at": 447,
      "cmd": 33,
      "text_jp": "豪\n「まさか！{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「설마！{wait}"
     },
     {
      "at": 472,
      "cmd": 33,
      "text_jp": "豪\n「でも…　そうか　あいつら…{wait}\n",
-     "text_kr": ""
+     "text_kr": "고\n「근데…　그런가　그 녀석들…{wait}\n"
     },
     {
      "at": 496,
      "cmd": 33,
      "text_jp": "うお〜！\nなんだか知らねぇけど\n燃えてきたぜ！{wait}\n絶対　負けられねぇ！{wait}\n烈兄貴　特訓だ〜！{wait}",
-     "text_kr": ""
+     "text_kr": "우오〜！\n왠지 모르겠지만\n불타오르기 시작했어！{wait}\n절대　질 수 없어！{wait}\n레츠 형　특훈이다〜！{wait}"
     },
     {
      "at": 570,
      "cmd": 33,
      "text_jp": "烈\n「ふふっ{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「후훗{wait}"
     },
     {
      "at": 590,
      "cmd": 33,
      "text_jp": "烈\n「かれらは本気をだして\nいなかった{wait}\nそれにS・E・Cってなんだろう？{wait}\n今年は去年以上に\nきびしいグランプリに\nなりそうだ{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「저들은 전력을 내지\n않았어{wait}\n게다가 S・E・C는 뭘까？{wait}\n올핸 작년보다 더\n혹독한 그랑프리가\n될 것 같아{wait}"
     }
    ]
   },
@@ -3733,55 +3733,55 @@
      "at": 112,
      "cmd": 33,
      "text_jp": "ファイター\n「くうーっ！\nやっぱりぼくの時代は\nもう終わったんだなあ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "파이터\n「쿠우〜！\n역시 제 시대는\n이제 끝난 거군요{wait}{clear}"
     },
     {
      "at": 156,
      "cmd": 33,
      "text_jp": "豪\n「ありがとうな　ファイター{wait}\nおかげで助かったぜ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「고맙다　파이터{wait}\n덕분에 살았어{wait}{clear}"
     },
     {
      "at": 191,
      "cmd": 33,
      "text_jp": "J\n「明日の試合も\nこれでなんとかなりそうです{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「내일 시합도\n이걸로 될 듯해요{wait}{clear}"
     },
     {
      "at": 225,
      "cmd": 33,
      "text_jp": "ファイター\n「そうだ！{wait}\nレースでぼくに勝ったんだから\n記念になにか…{wait}\nこれなんかどうだい？{wait}\nぼくが昔\nグレートジャパンカップで\nグランドスラムを\n達成した時の物なんだけどね{wait}\n良かったら使ってみてよ{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「맞다！{wait}\n레이스에서 저를 이겼으니\n기념으로 뭔가…{wait}\n이런 건 어때요？{wait}\n제가 예전에\n그레이트 재팬컵에서\n그랜드슬램을\n달성했을 때 물건인데요{wait}\n괜찮으면 써 보세요{wait}"
     },
     {
      "at": 342,
      "cmd": 33,
      "text_jp": "オプションパーツ\n『伝説のシャフト』を手に入れた",
-     "text_kr": ""
+     "text_kr": "옵션파츠\n『전설의 샤프트』를 얻었다"
     },
     {
      "at": 379,
      "cmd": 33,
      "text_jp": "ファイター\n「でも　ごかいするなよ{wait}\nきょう　キミたちの練習の\n手助けをしたからって\n試合当日のぼくは\n中立だからな！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "파이터\n「하지만 오해는 마요{wait}\n오늘 여러분 연습을\n도와줬다고 해도\n시합 당일의 저는\n중립이니까요！{wait}{clear}"
     },
     {
      "at": 455,
      "cmd": 33,
      "text_jp": "藤吉\n「もちろんでゲス{wait}\nそれでこそみんなの\nミニ四ファイターでゲス！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「물론이옵쇼{wait}\n그래야 모두의\n미니사구 파이터옵쇼！{wait}{clear}"
     },
     {
      "at": 504,
      "cmd": 33,
      "text_jp": "ファイター\n「なあっはっはっはっは！\nてれるなあ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "파이터\n「나핫하하하하！\n쑥스럽네요！{wait}{clear}"
     },
     {
      "at": 536,
      "cmd": 33,
      "text_jp": "豪\n「あいかわらず口だけはうめぇな\n藤吉のやつ{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「여전히 말만은 잘해\n토우키치 녀석{wait}"
     }
    ]
   },
@@ -3909,73 +3909,73 @@
      "at": 43,
      "cmd": 33,
      "text_jp": "チイコ\n「烈様おつかれさまですわ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코\n「레츠 님 수고하셨어요{wait}{clear}"
     },
     {
      "at": 68,
      "cmd": 33,
      "text_jp": "藤吉\n「チイコ！\n少しは反省するでゲス！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「치이코！\n조금은 반성하옵쇼！！{wait}{clear}"
     },
     {
      "at": 101,
      "cmd": 33,
      "text_jp": "チイコ\n「反省してますわよ{wait}\n",
-     "text_kr": ""
+     "text_kr": "치이코\n「반성하고 있어요{wait}\n"
     },
     {
      "at": 123,
      "cmd": 33,
      "text_jp": "烈さま\nこのたびはごめいわくを\nおかけしましたですわ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠 님\n이번엔 폐를\n끼쳐드렸어요{wait}{clear}"
     },
     {
      "at": 157,
      "cmd": 33,
      "text_jp": "烈\n「いっ　いいんだよ\nさいわいなにもなかった\nことだし…{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「괜　괜찮아\n다행히 아무 일 없었\n으니까…{wait}"
     },
     {
      "at": 209,
      "cmd": 33,
      "text_jp": "チイコ\n「烈様のそういう\nお優しいところが\n大好きですわ〜♥{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코\n「레츠 님의 그런\n상냥한 점이\n너무 좋아요〜♥{wait}{clear}"
     },
     {
      "at": 251,
      "cmd": 33,
      "text_jp": "烈\n「そっ　それよりチイコちゃん\nたのみがあるんだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「그　그보다 치이코\n부탁이 있어{wait}{clear}"
     },
     {
      "at": 290,
      "cmd": 33,
      "text_jp": "チイコ\n「烈様のたのみなら\nなんでも聞きますわよ♥{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코\n「레츠 님 부탁이라면\n뭐든 들어드릴게요♥{wait}{clear}"
     },
     {
      "at": 325,
      "cmd": 33,
      "text_jp": "烈\n「人形たちを　WGPに\n連れて来てやってほしいんだ{wait}\n",
-     "text_kr": ""
+     "text_kr": "레츠\n「인형들을　WGP에\n데려와 줬으면 해{wait}\n"
     },
     {
      "at": 363,
      "cmd": 33,
      "text_jp": "こいつら　ミニ四駆が\n好きみたいだから…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "얘들　미니사구를\n좋아하는 것 같거든…{wait}{clear}"
     },
     {
      "at": 393,
      "cmd": 33,
      "text_jp": "チイコ\n「おやすいご用ですわ\nさっそく　明日の試合に\n応援に行きますわ〜{wait}",
-     "text_kr": ""
+     "text_kr": "치이코\n「쉬운 일이에요\n당장　내일 시합에\n응원하러 갈게요〜{wait}"
     },
     {
      "at": 442,
      "cmd": 33,
      "text_jp": "レースアイテム\n『愛の声援』を手に入れた",
-     "text_kr": ""
+     "text_kr": "레이스 아이템\n『사랑의 성원』을 손에 넣었다"
     }
    ]
   },
