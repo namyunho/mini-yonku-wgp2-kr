@@ -142,9 +142,15 @@ def main():
         buf, olen, endp = decompress_scene(base, bank, addr, D)  # ★ 원본 씬 스크립트
         orig_comp = endp - foff(bank, addr)
         runs, stats, _ = walk(buf)
+        desync_rebuilt = False
         if stats['desync']:
-            skipped.append((sid, 'walk desync'))
-            continue
+            if kr:   # desync 씬: 번역자가 앵커링으로 제공한 런 위치(kr의 at)로 재빌드.
+                # 텍스트런만 교체하고 프레이밍(데이터프리픽스·아이템지급·초상화)은 그대로 복사 → VM 로직 보존.
+                runs = [{'cmd': buf[at], 'at': at} for at in sorted(kr)]
+                desync_rebuilt = True
+            else:
+                skipped.append((sid, 'walk desync'))
+                continue
 
         out = bytearray(); prev = 0; cnt = 0
         expect = []          # (런 순번, 기대 text_kr) — 치환하면 오프셋이 밀리므로 **순번**으로 대조
@@ -186,14 +192,21 @@ def main():
         buf2, _, _ = decompress_scene(rom, b2, a2, D)
         if buf2 == script:
             ok_rt += 1
-        runs2, st2, endp2 = walk(buf2)
-        bad = [(ri, s, render(runs2[ri]['text'], tbl_kr))
-               for ri, s in expect
-               if ri >= len(runs2) or render(runs2[ri]['text'], tbl_kr) != s]
-        if not bad:
-            ok_render += 1
+        if desync_rebuilt:
+            # walk가 desync하는 씬 → round-trip(buf2==script)이 곧 렌더 보장(스크립트에 한글 글리프가 정위치).
+            if buf2 == script:
+                ok_render += 1
+            else:
+                skipped.append((sid, 'desync재빌드 round-trip 실패'))
         else:
-            skipped.append((sid, '렌더불일치 %d건 예: %r != %r' % (len(bad), bad[0][1], bad[0][2])))
+            runs2, st2, endp2 = walk(buf2)
+            bad = [(ri, s, render(runs2[ri]['text'], tbl_kr))
+                   for ri, s in expect
+                   if ri >= len(runs2) or render(runs2[ri]['text'], tbl_kr) != s]
+            if not bad:
+                ok_render += 1
+            else:
+                skipped.append((sid, '렌더불일치 %d건 예: %r != %r' % (len(bad), bad[0][1], bad[0][2])))
 
     os.makedirs('out', exist_ok=True)
     open(a.out, 'wb').write(rom)

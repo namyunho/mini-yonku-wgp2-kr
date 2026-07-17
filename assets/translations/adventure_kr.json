@@ -5868,10 +5868,88 @@
    "clean": false,
    "runs": [
     {
-     "at": 15,
-     "cmd": 32,
-     "text_jp": "あずあ子ずい山ずう小ずえ女ずお上ぅあいうえおぎ糸大円山3ゃあ{cC}{wait}ゃいぼ{c9:54}うゆ{c9:54}えろ{c9:54}おぃ{c9:54}くヌ{wait}ょおうくえこん\nい改造\n「じつは…{wait}{clear}要{cA}ぃ山こ円こ{clear}{cA}い烈\n「父さん\nいったいどうしたの？{wait}{clear}こん者改造\n「その…{wait}\nけっこん指輪を\nなくしてしまったんだ{wait}{clear}要{cA}ぃこ{cF}こ\n{cF}い豪\n「えええ〜！！{wait}{clear}こん脈改造\n「シーッ！{wait}\n母さんに聞こえたらマズイ！{wait}{clear}要{cA}ぃこ{cB}こ\n{cB}い豪\n「たしかに…\n母ちゃんにばれたら\nボコボコにされるぞ！{wait}{clear}こん脈改造\n「わわわ！！{wait}\nたっ　たのむ！{wait}\n母さんにばれる前に\nみつけたいんだ！{wait}\n探すのを手伝ってくれ！{wait}{clear}要{cA}ぃ山こ円こ{clear}{cA}い烈\n「どこでなくしたのか\n見当はつかないの？{wait}{clear}こん者改造\n「昨日の夜になくしたんだが…{wait}\nだいぶよっぱらっていて\nどこでなくしたか\n覚えてないんだ…{wait}{clear}要{cA}ぃこ{cC}こ\n{cC}い豪\n「それじゃ　無理だな\nあきらめるしかねえよ{wait}{clear}こん\nい改造",
-     "text_kr": ""
+     "at": 107,
+     "cmd": 33,
+     "text_jp": "",
+     "text_kr": "카이조\n「실은…{wait}{clear}"
+    },
+    {
+     "at": 135,
+     "cmd": 33,
+     "text_jp": "",
+     "text_kr": "레츠\n「아빠\n무슨 일이에요？{wait}{clear}"
+    },
+    {
+     "at": 161,
+     "cmd": 33,
+     "text_jp": "",
+     "text_kr": "카이조\n「그게…{wait}\n결혼반지를\n잃어버렸단다{wait}{clear}"
+    },
+    {
+     "at": 210,
+     "cmd": 33,
+     "text_jp": "",
+     "text_kr": "고\n「에에에〜！！{wait}{clear}"
+    },
+    {
+     "at": 227,
+     "cmd": 33,
+     "text_jp": "",
+     "text_kr": "카이조\n「쉿！{wait}\n엄마한테 들리면 큰일이야！{wait}{clear}"
+    },
+    {
+     "at": 272,
+     "cmd": 33,
+     "text_jp": "",
+     "text_kr": "고\n「하긴…\n엄마한테 들키면\n흠씬 두들겨 맞겠네！{wait}{clear}"
+    },
+    {
+     "at": 310,
+     "cmd": 33,
+     "text_jp": "",
+     "text_kr": "카이조\n「으아아！！{wait}\n부　부탁이야！{wait}\n엄마한테 들키기 전에\n찾고 싶어！{wait}\n찾는 걸 도와줘！{wait}{clear}"
+    },
+    {
+     "at": 386,
+     "cmd": 33,
+     "text_jp": "",
+     "text_kr": "레츠\n「어디서 잃어버렸는지\n짐작 안 가요？{wait}{clear}"
+    },
+    {
+     "at": 418,
+     "cmd": 33,
+     "text_jp": "",
+     "text_kr": "카이조\n「어젯밤에 잃어버렸는데…{wait}\n많이 취해 있어서\n어디서 잃어버렸는지\n기억이 안 나…{wait}{clear}"
+    },
+    {
+     "at": 490,
+     "cmd": 33,
+     "text_jp": "",
+     "text_kr": "고\n「그럼　무리네\n포기할 수밖에 없어{wait}{clear}"
+    },
+    {
+     "at": 523,
+     "cmd": 33,
+     "text_jp": "",
+     "text_kr": "카이조\n「그런 말 말아줘！{wait}\n"
+    },
+    {
+     "at": 547,
+     "cmd": 33,
+     "text_jp": "",
+     "text_kr": "아빠는　집 안을 찾을 테니\n너희는\n밖을 찾아봐줘{wait}{clear}"
+    },
+    {
+     "at": 601,
+     "cmd": 33,
+     "text_jp": "",
+     "text_kr": "레츠\n「알았어요\n찾아볼게요{wait}{clear}"
+    },
+    {
+     "at": 624,
+     "cmd": 33,
+     "text_jp": "",
+     "text_kr": "카이조\n「부탁한다\n너희만 믿는다{wait}"
     }
    ]
   },
@@ -6646,10 +6724,28 @@
    "clean": false,
    "runs": [
     {
-     "at": 35,
-     "cmd": 32,
-     "text_jp": "庫こひ{c9:21}二郎丸\n「あんちゃん\nコースにこん",
-     "text_kr": ""
+     "at": 44,
+     "cmd": 33,
+     "text_jp": "",
+     "text_kr": "지로마루\n「형님\n코스에 이런 게\n떨어져 있었구먼유{wait}"
+    },
+    {
+     "at": 80,
+     "cmd": 33,
+     "text_jp": "",
+     "text_kr": "옵션파츠\n『미스터리 웨이트』를 얻었다"
+    },
+    {
+     "at": 155,
+     "cmd": 33,
+     "text_jp": "",
+     "text_kr": "지로마루\n「형님\n오라 혼자 여기 있는 거\n외롭구먼유…{wait}{clear}"
+    },
+    {
+     "at": 228,
+     "cmd": 33,
+     "text_jp": "",
+     "text_kr": "지로마루\n「형님\n힘낼 거구먼유！{wait}{clear}"
     }
    ]
   },
