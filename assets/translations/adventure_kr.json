@@ -6195,91 +6195,91 @@
      "at": 79,
      "cmd": 33,
      "text_jp": "リョウ\n「第1戦　みさせてもらったぞ{wait}\nジュリアナたちはいい走りを\nしているな{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「제1전 잘 봤다{wait}\n쥴리아나 팀은 좋은 주행을\n하고 있더군{wait}{clear}"
     },
     {
      "at": 128,
      "cmd": 33,
      "text_jp": "カイ\n「ええ{wait}\nかのじょたちの成長ぶりには\n目をみはるものがありますね{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카이\n「네{wait}\n그녀들의 성장세는\n눈부신 데가 있네요{wait}{clear}"
     },
     {
      "at": 173,
      "cmd": 33,
      "text_jp": "リョウ\n「ところでカイ{wait}\n今年は選手として\nレースに復帰しないのか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「그런데 카이{wait}\n올해는 선수로\n레이스에 복귀 안 하냐？{wait}{clear}"
     },
     {
      "at": 220,
      "cmd": 33,
      "text_jp": "カイ\n「ははは\nそれはできませんよ{wait}\nボクが復帰すれば\nかのじょたち五人の中の\nだれかが選手から\n外れることになりますからね{wait}\nそれに　サバンナソルジャーズの\nレーサーはかのじょたちであって{wait}\nボクはあくまでコーチとして\n参加しているにすぎません{wait}\n指導者として\nかのじょたちを\n優勝に導いてあげたいと\n思っていますから{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카이\n「하하하\n그건 안 돼요{wait}\n제가 복귀하면\n그녀들 다섯 중\n누군가가 선수에서\n빠지게 되니까요{wait}\n게다가　사반나 솔져스\n레이서는 그녀들이고{wait}\n저는 어디까지나 코치로서\n참가하고 있을 뿐이에요{wait}\n지도자로서\n그녀들을\n우승으로 이끌어 주고 싶다고\n생각하고 있으니까요{wait}{clear}"
     },
     {
      "at": 405,
      "cmd": 33,
      "text_jp": "リョウ\n「そうか…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「그런가…{wait}{clear}"
     },
     {
      "at": 421,
      "cmd": 33,
      "text_jp": "カイ\n「とは言ったものの\nやっぱりボクも\nミニ四レーサーなんですよ{wait}\nレース場でのみんなを\nながめていると\nむしょうにマシンを\n走らせたくなってきて…{wait}\nきょうはここにミニ四レーサー\n沖田カイとしてやってきました{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카이\n「그렇게 말은 했지만\n역시 저도\n미니욘 레이서인걸요{wait}\n레이스장의 모두를\n바라보고 있으면\n참을 수 없이 머신을\n달리게 하고 싶어져서…{wait}\n오늘은 여기에 미니욘 레이서\n오키타 카이로서 왔어요{wait}{clear}"
     },
     {
      "at": 549,
      "cmd": 33,
      "text_jp": "カイ\n「鷹羽リョウ　あなたに\n相手になっていただこうと\n思いましてね{wait}",
-     "text_kr": ""
+     "text_kr": "카이\n「타카바 료　당신을\n상대해 주십사\n생각했거든요{wait}"
     },
     {
      "at": 601,
      "cmd": 33,
      "text_jp": "二郎丸\n「てっ\nていさつにきたんダスか！？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「저\n정찰하러 온 거유！？{wait}{clear}"
     },
     {
      "at": 633,
      "cmd": 33,
      "text_jp": "リョウ\n「二郎丸！{wait}",
-     "text_kr": ""
+     "text_kr": "료\n「지로마루！{wait}"
     },
     {
      "at": 658,
      "cmd": 33,
      "text_jp": "カイ\n「ふふっ\n連うと言ったら\nうそになりますね{wait}\n",
-     "text_kr": ""
+     "text_kr": "카이\n「후훗\n아니라고 하면\n거짓말이 되겠네요{wait}\n"
     },
     {
      "at": 691,
      "cmd": 33,
      "text_jp": "正直なところ\nチャンピオンチームの\nレーサーの走りは{wait}\nサバンナソルジャーズの\nコーチとして気になりますからね{wait}",
-     "text_kr": ""
+     "text_kr": "솔직히 말해서\n챔피언 팀의\n레이서 주행은{wait}\n사반나 솔져스\n코치로서 궁금하니까요{wait}"
     },
     {
      "at": 768,
      "cmd": 33,
      "text_jp": "リョウ\n「オレにはことわる理由などない{wait}\nそれに　今さらお前に\nかくすようなこともないからな{wait}\nその勝負　受けさせてもらおう{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「내겐 거절할 이유 따위 없다{wait}\n게다가　이제 와서 너한테\n숨길 것도 없으니까{wait}\n그 승부　받아 주지{wait}{clear}"
     },
     {
      "at": 844,
      "cmd": 33,
      "text_jp": "カイ\n「かんしゃします{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카이\n「감사합니다{wait}{clear}"
     },
     {
      "at": 862,
      "cmd": 33,
      "text_jp": "リョウ\n「勝負はこの山のコースを2周\nというのでどうだ？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「승부는 이 산 코스를 2바퀴\n도는 건 어떠냐？{wait}{clear}"
     },
     {
      "at": 901,
      "cmd": 33,
      "text_jp": "カイ\n「オフロードですか\nいいですね\n負けませんよ{wait}\nじゃあ準備ができたら\n声をかけてください{wait}",
-     "text_kr": ""
+     "text_kr": "카이\n「오프로드인가요\n좋네요\n지지 않을 거예요{wait}\n그럼 준비되면\n말을 걸어 주세요{wait}"
     }
    ]
   },
@@ -6292,151 +6292,151 @@
      "at": 99,
      "cmd": 33,
      "text_jp": "リョウ\n「いい走りじゃないか{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「좋은 주행이잖아{wait}{clear}"
     },
     {
      "at": 121,
      "cmd": 33,
      "text_jp": "カイ\n「やっぱりレースはいいですね{wait}\nひさしぶりにこうふんしました{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카이\n「역시 레이스는 좋네요{wait}\n오랜만에 흥분했어요{wait}{clear}"
     },
     {
      "at": 161,
      "cmd": 33,
      "text_jp": "リョウ\n「どうだ\nもう一度やらないか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「어때\n한 번 더 안 하겠나？{wait}{clear}"
     },
     {
      "at": 188,
      "cmd": 33,
      "text_jp": "カイ\n「もちろんです{wait}",
-     "text_kr": ""
+     "text_kr": "카이\n「물론이죠{wait}"
     },
     {
      "at": 211,
      "cmd": 33,
      "text_jp": "二郎丸\n「あんちゃん\nまただれかきたダス{wait}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「형님\n또 누가 왔슈{wait}"
     },
     {
      "at": 273,
      "cmd": 33,
      "text_jp": "少年\n「お前が沖田カイか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "소년\n「네가 오키타 카이냐？{wait}{clear}"
     },
     {
      "at": 298,
      "cmd": 33,
      "text_jp": "カイ\n「そうですが…{wait}\nあなたは確か\nエンシェントフォースのリーダー\nラー！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카이\n「그런데요…{wait}\n당신은 분명\n엔션트 포스 리더\n라！{wait}{clear}"
     },
     {
      "at": 349,
      "cmd": 33,
      "text_jp": "ラー\n「わが主の命により\nお前のマシンを\n昇天させてもらう{wait}\n",
-     "text_kr": ""
+     "text_kr": "라\n「우리 주인의 명으로\n네 머신을\n승천시켜 주마{wait}\n"
     },
     {
      "at": 392,
      "cmd": 33,
      "text_jp": "わたしと勝負しろ…{wait}",
-     "text_kr": ""
+     "text_kr": "나와 승부해라…{wait}"
     },
     {
      "at": 430,
      "cmd": 33,
      "text_jp": "カイ\n「フッ{wait}\nずいぶんとだいたんな\n挑戦のしかたですね{wait}\n",
-     "text_kr": ""
+     "text_kr": "카이\n「흥{wait}\n꽤나 대담한\n도전 방식이네요{wait}\n"
     },
     {
      "at": 467,
      "cmd": 33,
      "text_jp": "おもしろい{wait}\nやれるものなら\nやってみてはいかがですか？{wait}",
-     "text_kr": ""
+     "text_kr": "재밌네요{wait}\n할 수 있다면\n해 보시는 게 어떨까요？{wait}"
     },
     {
      "at": 514,
      "cmd": 33,
      "text_jp": "リョウ\n「その勝負\nオレも参加させてもらう{wait}",
-     "text_kr": ""
+     "text_kr": "료\n「그 승부\n나도 참가하겠다{wait}"
     },
     {
      "at": 556,
      "cmd": 33,
      "text_jp": "カイ\n「リョウくん{wait}\nこれはボクの問題です\nだまって見ていてくれませんか{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카이\n「료{wait}\n이건 제 문제예요\n잠자코 봐 주지 않겠어요{wait}{clear}"
     },
     {
      "at": 602,
      "cmd": 33,
      "text_jp": "リョウ\n「目の前で行なわれる\nバトルレースを\n放っておくわけにはいかない！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「눈앞에서 벌어지는\n배틀 레이스를\n내버려 둘 순 없다！！{wait}{clear}"
     },
     {
      "at": 651,
      "cmd": 33,
      "text_jp": "ラー\n「わたしはかまわない{wait}\nトライダガーも主の標的の一つ{wait}\nおそかれ早かれわれわれの\nえじきになる運命だ{wait}",
-     "text_kr": ""
+     "text_kr": "라\n「나는 상관없다{wait}\n트라이대거도 주인의 표적 중 하나{wait}\n조만간 우리의\n먹잇감이 될 운명이다{wait}"
     },
     {
      "at": 725,
      "cmd": 33,
      "text_jp": "リョウ\n「なに！？{wait}\nお前はいったい…{wait}",
-     "text_kr": ""
+     "text_kr": "료\n「뭐！？{wait}\n너는 대체…{wait}"
     },
     {
      "at": 771,
      "cmd": 33,
      "text_jp": "ラー\n「どうした？{wait}\nレースをするんじゃないのか？{wait}\nこのコースを3周走りぬいたら\nお前たちの勝ちだ{wait}\nだが　お前たちがクラッシュした\n時点でレースは終わりだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "라\n「무슨 일이냐？{wait}\n레이스를 하는 거 아니냐？{wait}\n이 코스를 세 바퀴 완주하면\n너희 승리다{wait}\n하지만　너희가 크래시한\n시점에 레이스는 끝이다{wait}{clear}"
     },
     {
      "at": 865,
      "cmd": 33,
      "text_jp": "カイ\n「ぬけぬけと！{wait}\n",
-     "text_kr": ""
+     "text_kr": "카이\n「뻔뻔하게도！{wait}\n"
     },
     {
      "at": 882,
      "cmd": 33,
      "text_jp": "いいでしょう\n低ぞくなバトルレーサーなどに\nボクたちは負けませんよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "좋아요\n비열한 배틀 레이서 따위한테\n우리는 지지 않아요{wait}{clear}"
     },
     {
      "at": 924,
      "cmd": 33,
      "text_jp": "ラー\n「ほざいていないで\n早く準備をしたらどうだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "라\n「지껄이지 말고\n어서 준비나 해라{wait}{clear}"
     },
     {
      "at": 958,
      "cmd": 33,
      "text_jp": "カイ\n「このレース　なるべく\n強度を上げるセッティングを\nしておいた方がいいでしょう{wait}\n試作品なのですが\nボクのつくったこのパーツを\n使ってみてください{wait}\nこういうバトルレーサーが\n相手なら役に立つかも\nしれません{wait}",
-     "text_kr": ""
+     "text_kr": "카이\n「이 레이스　되도록\n강도를 높이는 세팅을\n해 두는 편이 좋을 거예요{wait}\n시작품이지만\n제가 만든 이 파츠를\n써 보세요{wait}\n이런 배틀 레이서가\n상대라면 도움이 될지도\n몰라요{wait}"
     },
     {
      "at": 1082,
      "cmd": 33,
      "text_jp": "オプションパーツ\n『ビークプロテクター』を手に入れた",
-     "text_kr": ""
+     "text_kr": "옵션 파츠\n『비크 프로텍터』를 얻었다"
     },
     {
      "at": 1131,
      "cmd": 33,
      "text_jp": "二郎丸\n「あんちゃん\nセッティングするダスか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「형님\n세팅할 거유？{wait}{clear}"
     },
     {
      "at": 1163,
      "cmd": 33,
      "text_jp": "『どうこたえる？{c8:07}\n　　ああ！\n　　必要ない{c8:00}",
-     "text_kr": ""
+     "text_kr": "『어떻게 답할까？{c8:07}\n　　응！\n　　필요 없어{c8:00}"
     },
     {
      "at": 1222,
      "cmd": 33,
      "text_jp": "二郎丸\n「気をつけるダスよ\nあんちゃん{wait}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「조심하는 거유\n형님{wait}"
     }
    ]
   },
@@ -6449,139 +6449,139 @@
      "at": 102,
      "cmd": 33,
      "text_jp": "リョウ\n「オレたちをあまく\n見すぎていたようだな{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「우리를 너무 얕잡아\n본 모양이군{wait}{clear}"
     },
     {
      "at": 134,
      "cmd": 33,
      "text_jp": "カイ\n「トライダガーと\nビークスパイダーは{wait}\nそのていどの攻撃で\nどうにかなるような\nマシンではありませんよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카이\n「트라이대거와\n비크 스파이더는{wait}\n그 정도 공격으로\n어떻게 될 만한\n머신이 아니에요{wait}{clear}"
     },
     {
      "at": 210,
      "cmd": 33,
      "text_jp": "リョウ\n「よく走りぬいたな　カイ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「잘 완주했다　카이{wait}{clear}"
     },
     {
      "at": 234,
      "cmd": 33,
      "text_jp": "カイ\n「ビークスパイダーは\n逃げ切りましたよ{wait}\n大きな口を\nたたいていたわりに\nたいしたことは\nありませんでしたね{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카이\n「비크 스파이더는\n따돌렸어요{wait}\n큰소리치던 것에\n비하면\n대단할 건\n없었네요{wait}{clear}"
     },
     {
      "at": 314,
      "cmd": 33,
      "text_jp": "リョウ\n「いいぞ　トライダガー{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「좋아　트라이대거{wait}{clear}"
     },
     {
      "at": 336,
      "cmd": 33,
      "text_jp": "カイ\n「トライダガーは\n逃げ切りましたよ{wait}\n大きな口を\nたたいていたわりに\nたいしたことは\nありませんでしたね{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카이\n「트라이대거는\n따돌렸어요{wait}\n큰소리치던 것에\n비하면\n대단할 건\n없었네요{wait}{clear}"
     },
     {
      "at": 403,
      "cmd": 33,
      "text_jp": "リョウ\n「ネオトライダガー！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「네오 트라이대거！！{wait}{clear}"
     },
     {
      "at": 425,
      "cmd": 33,
      "text_jp": "カイ\n「ビークスパイダー！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카이\n「비크 스파이더！！{wait}{clear}"
     },
     {
      "at": 446,
      "cmd": 33,
      "text_jp": "ラー\n「しぶといな…{wait}\nあの攻撃をくらって\nマシンが粉々にならないとは{wait}\nまあいい{wait}\nきょうのところは\nこれで引き下がるとしよう{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "라\n「끈질기군…{wait}\n그 공격을 받고도\n머신이 산산조각 안 나다니{wait}\n뭐 좋다{wait}\n오늘은\n이쯤에서 물러나 주지{wait}{clear}"
     },
     {
      "at": 522,
      "cmd": 33,
      "text_jp": "カイ\n「まだこんなことを\n続けるつもりですか！？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카이\n「아직도 이런 짓을\n계속할 셈인가요！？{wait}{clear}"
     },
     {
      "at": 569,
      "cmd": 33,
      "text_jp": "ラー\n「フッ{wait}\nきょうのところは\nおとなしく引き下がるとしよう{wait}\nだが　お前たちのマシンが\n昇天する運命にあることに\nかわりはない{wait}\n次は全力で破壊する{wait}\nWGPがお前たちの\nマシンの基場だ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "라\n「흥{wait}\n오늘은\n얌전히 물러나 주지{wait}\n하지만　너희 머신이\n승천할 운명이라는 데는\n변함없다{wait}\n다음엔 전력으로 파괴한다{wait}\nWGP가 너희\n머신의 무덤이다{wait}{clear}"
     },
     {
      "at": 684,
      "cmd": 33,
      "text_jp": "ラー\n「言ったはずだ{wait}\nお前たちのマシンは\nいずれ昇天する運命だと{wait}\n次は全力で破壊する{wait}\nWGPがお前たちの\nマシンの基場だ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "라\n「말했을 텐데{wait}\n너희 머신은\n언젠가 승천할 운명이라고{wait}\n다음엔 전력으로 파괴한다{wait}\nWGP가 너희\n머신의 무덤이다{wait}{clear}"
     },
     {
      "at": 767,
      "cmd": 33,
      "text_jp": "カイ\n「あいにくですが\nボクは選手ではないので\nそれはかないませんよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카이\n「공교롭게도\n저는 선수가 아니라서\n그건 이룰 수 없어요{wait}{clear}"
     },
     {
      "at": 810,
      "cmd": 33,
      "text_jp": "ラー\n「だったら引きずり出すまでだ{wait}",
-     "text_kr": ""
+     "text_kr": "라\n「그렇다면 끌어내면 그만이다{wait}"
     },
     {
      "at": 842,
      "cmd": 33,
      "text_jp": "カイ\n「引きずり出す？\nどういうことです！？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카이\n「끌어낸다？\n무슨 소리예요！？{wait}{clear}"
     },
     {
      "at": 873,
      "cmd": 33,
      "text_jp": "ラー\n「じきにわかる{wait}",
-     "text_kr": ""
+     "text_kr": "라\n「곧 알게 된다{wait}"
     },
     {
      "at": 904,
      "cmd": 33,
      "text_jp": "カイ\n「待ちなさい！！",
-     "text_kr": ""
+     "text_kr": "카이\n「기다려요！！"
     },
     {
      "at": 934,
      "cmd": 33,
      "text_jp": "リョウ\n「だいじょうぶか？\nビークスパイダーは{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「괜찮냐？\n비크 스파이더는{wait}{clear}"
     },
     {
      "at": 968,
      "cmd": 33,
      "text_jp": "カイ\n「ええ\nなんとかだいじょうぶです{wait}\nトライダガーは？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카이\n「네\n그럭저럭 괜찮아요{wait}\n트라이대거는？{wait}{clear}"
     },
     {
      "at": 1004,
      "cmd": 33,
      "text_jp": "リョウ\n「ああ\nこっちも走れなくなるほど\nやられてはいない{wait}\nZMCボディは\nがんじょうだからな{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「그래\n이쪽도 못 달릴 만큼\n당하진 않았다{wait}\nZMC 보디는\n튼튼하니까{wait}{clear}"
     },
     {
      "at": 1061,
      "cmd": 33,
      "text_jp": "リョウ\n「それにしてもヤツはいったい…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「그건 그렇고 저놈은 대체…{wait}{clear}"
     },
     {
      "at": 1091,
      "cmd": 33,
      "text_jp": "カイ\n「かれの目は…{wait}\nむかしのボクと同じ目だった…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카이\n「그의 눈은…{wait}\n옛날의 저와 같은 눈이었어요…{wait}{clear}"
     },
     {
      "at": 1127,
      "cmd": 33,
      "text_jp": "リョウ\n「…{wait}",
-     "text_kr": ""
+     "text_kr": "료\n「…{wait}"
     }
    ]
   },
@@ -8337,157 +8337,157 @@
      "at": 12,
      "cmd": 33,
      "text_jp": "豪\n「くっそ〜\nムカつくじいさんだぜ！{wait}\n好き放題言いやがって！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「제기랄〜\n짜증 나는 영감탱이야！{wait}\n제멋대로 지껄여대고！{wait}{clear}"
     },
     {
      "at": 62,
      "cmd": 33,
      "text_jp": "リョウ\n「シャイニングドラゴンって\n言ってたな{wait}\nいったいどんなマシンなんだ？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「샤이닝 드래곤이라고\n했었지{wait}\n대체 어떤 머신이냐？{wait}{clear}"
     },
     {
      "at": 109,
      "cmd": 33,
      "text_jp": "豪\n「どんなマシンだろうと\n関係ねぇ！{wait}\nブッちぎるだけだぜ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「어떤 머신이든\n상관없어！{wait}\n제쳐 버릴 뿐이야！{wait}{clear}"
     },
     {
      "at": 156,
      "cmd": 33,
      "text_jp": "藤吉\n「本当に豪くんは\n成長という言葉とは\nむえんでゲスなあ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「정말 고는\n성장이란 말과는\n인연이 없사옵쇼{wait}{clear}"
     },
     {
      "at": 214,
      "cmd": 33,
      "text_jp": "豪\n「なんだと！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「뭐라고！{wait}{clear}"
     },
     {
      "at": 250,
      "cmd": 33,
      "text_jp": "藤吉\n「ひとりごとでゲス{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「혼잣말이옵쇼{wait}{clear}"
     },
     {
      "at": 271,
      "cmd": 33,
      "text_jp": "烈\n「やめろよ二人とも！{wait}\nケンカなんかしてたって\nしょうがないだろ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「그만해 둘 다！{wait}\n싸움 같은 거 해 봤자\n소용없잖아！{wait}{clear}"
     },
     {
      "at": 314,
      "cmd": 33,
      "text_jp": "J\n「せめてそのニューマシンが\nどんなマシンなのかわかればね{wait}\nシャイニングスコーピオン\nだけでも謎の部分が多いのに{wait}",
-     "text_kr": ""
+     "text_kr": "제이\n「적어도 그 뉴 머신이\n어떤 머신인지 알면 좋을 텐데{wait}\n샤이닝 스콜피온\n만 해도 수수께끼가 많은데{wait}"
     },
     {
      "at": 384,
      "cmd": 33,
      "text_jp": "土屋博士\n「それならわたしが知ってるよ\nJくん{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「그거라면 내가 알고 있단다\n제이{wait}{clear}"
     },
     {
      "at": 460,
      "cmd": 33,
      "text_jp": "J\n「わあっ！\n",
-     "text_kr": ""
+     "text_kr": "제이\n「와앗！\n"
     },
     {
      "at": 477,
      "cmd": 33,
      "text_jp": "博士　いつからそこに\nいたんですか！？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "박사　언제부터 거기\n있었던 거예요！？{wait}{clear}"
     },
     {
      "at": 507,
      "cmd": 33,
      "text_jp": "土屋博士\n「いま帰ったところだよ{wait}\n鉄心先生が肉まんを\n食べたいとおっしゃってね\n買い出しにいってたんだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「방금 돌아왔단다{wait}\n텟신 선생님이 고기만두를\n드시고 싶다 하셔서\n사러 갔었지{wait}{clear}"
     },
     {
      "at": 579,
      "cmd": 33,
      "text_jp": "藤吉\n「つまり\nいつもの使い走りでゲスか{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「그러니까\n늘 하는 심부름이옵쇼{wait}"
     },
     {
      "at": 616,
      "cmd": 33,
      "text_jp": "土屋博士\n「はっはっは\nなんと言うかその…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「하하하\n뭐랄까 그…{wait}{clear}"
     },
     {
      "at": 649,
      "cmd": 33,
      "text_jp": "二郎丸\n「なさけないダス{wait}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「한심하구먼유{wait}"
     },
     {
      "at": 703,
      "cmd": 33,
      "text_jp": "土屋博士\n「ところで鉄心先生は？{wait}\n早く食べないと\n肉まんが冷めてしまう{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「그런데 텟신 선생님은？{wait}\n빨리 안 먹으면\n고기만두가 식어 버려{wait}{clear}"
     },
     {
      "at": 758,
      "cmd": 33,
      "text_jp": "豪\n「あのイヤミなじいさんなら\nもう帰ったぜ{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「그 얄미운 영감탱이라면\n벌써 돌아갔어{wait}"
     },
     {
      "at": 795,
      "cmd": 33,
      "text_jp": "土屋博士\n「なっ　なにぃ！{wait}\n",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「뭐　뭐라고！{wait}\n"
     },
     {
      "at": 819,
      "cmd": 33,
      "text_jp": "ではこの大量の肉まんは\nどうすればいいんだ！？{wait}",
-     "text_kr": ""
+     "text_kr": "그럼 이 많은 고기만두는\n어쩌면 좋단 말이냐！？{wait}"
     },
     {
      "at": 863,
      "cmd": 33,
      "text_jp": "烈\n「あのぉ…　博士？{wait}\n",
-     "text_kr": ""
+     "text_kr": "레츠\n「저기…　박사？{wait}\n"
     },
     {
      "at": 881,
      "cmd": 33,
      "text_jp": "肉まんはおいといて\nシャイニングドラゴンのことを\nお聞きしたいんですけど…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고기만두는 놔두고\n샤이닝 드래곤에 대해\n여쭤보고 싶은데요…{wait}{clear}"
     },
     {
      "at": 933,
      "cmd": 33,
      "text_jp": "土屋博士\n「おおっ！　そうだったね{wait}\nシャイニングドラゴンとは\nかんたんに言うと\nシャイニングスコーピオンの\nレプリカだ{wait}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「오옷！　그랬지{wait}\n샤이닝 드래곤이란\n간단히 말하면\n샤이닝 스콜피온의\n레플리카다{wait}"
     },
     {
      "at": 1012,
      "cmd": 33,
      "text_jp": "J\n「つまりコピーですか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「그러니까 카피예요？{wait}{clear}"
     },
     {
      "at": 1032,
      "cmd": 33,
      "text_jp": "土屋博士\n「ああ　そうだ{wait}\nだがZMCボディの\nスコーピオンと比べると\n強化プラスチックのドラゴンは\n少し性能がおとるようだがね{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「아　그렇단다{wait}\n다만 ZMC 보디의\n스콜피온과 비교하면\n강화 플라스틱인 드래곤은\n조금 성능이 떨어지는 듯하지만{wait}{clear}"
     },
     {
      "at": 1113,
      "cmd": 33,
      "text_jp": "二郎丸\n「あんちゃんのZMCとは\n連うんダスか…{wait}\nちょっと安心したダス{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「형님 ZMC와는\n다른 거유…{wait}\n좀 안심했슈{wait}{clear}"
     },
     {
      "at": 1161,
      "cmd": 33,
      "text_jp": "豪\n「なんでえ{wait}\nじゃあ\nシャイニングスコーピオンにさえ\n負けなけりゃだいじょうぶって\nことじゃないか{wait}\n楽勝だぜ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「뭐야{wait}\n그럼\n샤이닝 스콜피온한테만\n안 지면 괜찮다는\n거잖아{wait}\n낙승이야！{wait}{clear}"
     }
    ]
   },
@@ -8500,139 +8500,139 @@
      "at": 13,
      "cmd": 33,
      "text_jp": "ファイター\n「博士　ここでしたか！{wait}\n見てください　ぼくのこの\nシャイニングスコーピオンを！{wait}\nついについに\nGPマシンへの改造が\n終わったんです！{wait}\nいや〜　長かったなぁ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "파이터\n「박사　여기 계셨군요！{wait}\n보세요　저의 이\n샤이닝 스콜피온을！{wait}\n드디어 드디어\nGP 머신 개조가\n끝났어요！{wait}\n이야〜　길었네요{wait}{clear}"
     },
     {
      "at": 137,
      "cmd": 33,
      "text_jp": "烈\n「ファイター！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「파이터！{wait}{clear}"
     },
     {
      "at": 154,
      "cmd": 33,
      "text_jp": "ファイター\n「おやぁ　キミたちもいたのかぁ{wait}\nちょうどいいや\nみんなにもじまんさせてくれよ！{wait}\nホラホラ　これでボクも\nワールドグランプリに\n出場できるかもしれないぜ{wait}\n",
-     "text_kr": ""
+     "text_kr": "파이터\n「어라　너희도 있었니{wait}\n마침 잘됐다\n다들한테 자랑 좀 하게 해 줘！{wait}\n봐봐　이걸로 나도\n월드 그랑프리에\n출전할 수 있을지도 몰라{wait}\n"
     },
     {
      "at": 246,
      "cmd": 33,
      "text_jp": "って\nさすがにそれは無理かぁ？\n小学生には見えないもんなぁ{wait}\nだあっはっはっは！",
-     "text_kr": ""
+     "text_kr": "랄까\n아무래도 그건 무리인가？\n초등학생으론 안 보이니까{wait}\n다핫핫핫핫！"
     },
     {
      "at": 317,
      "cmd": 33,
      "text_jp": "リョウ\n「GPマシンに改造した\nシャイニングスコーピオン！？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「GP 머신으로 개조한\n샤이닝 스콜피온！？{wait}{clear}"
     },
     {
      "at": 356,
      "cmd": 33,
      "text_jp": "ファイター\n「そうとも！{wait}\nそれがどうかしたのかい？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "파이터\n「그렇고말고！{wait}\n그게 뭐 어쨌다는 거니？{wait}{clear}"
     },
     {
      "at": 389,
      "cmd": 33,
      "text_jp": "烈\n「それだ！\nそれだよファイター！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「그거야！\n그거야 파이터！{wait}{clear}"
     },
     {
      "at": 415,
      "cmd": 33,
      "text_jp": "J\n「そうか！{wait}\nファイターに練習台に\nなってもらえばいいんだ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「그렇구나！{wait}\n파이터한테 연습 상대가\n돼 달라고 하면 되겠다！{wait}{clear}"
     },
     {
      "at": 457,
      "cmd": 33,
      "text_jp": "豪\n「ナイスだぜ　烈兄貴！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「나이스야　레츠 형！{wait}{clear}"
     },
     {
      "at": 481,
      "cmd": 33,
      "text_jp": "ファイター\n「どっ　どういうことなんだい？{wait}\n話が見えないんだけれど…{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「무　무슨 소리니？{wait}\n얘기가 안 보이는데…{wait}"
     },
     {
      "at": 532,
      "cmd": 33,
      "text_jp": "藤吉\n「次の対戦相手が\nかくかくしかじかというわけで{wait}\nファイターに手伝って\nもらいたいんでゲスよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「다음 대전 상대가\n이러쿵저러쿵 그렇단 거라서{wait}\n파이터가 도와줬으면\n하는 거옵쇼{wait}{clear}"
     },
     {
      "at": 597,
      "cmd": 33,
      "text_jp": "ファイター\n「なるほど\nそういうことか！{wait}\n",
-     "text_kr": ""
+     "text_kr": "파이터\n「그렇군\n그런 거였구나！{wait}\n"
     },
     {
      "at": 624,
      "cmd": 33,
      "text_jp": "このミニ四ファイターを\n元グランドチャンピオンレーサー\nと知っての挑戦なんだな！{wait}\nよ〜し\n受けて立とうじゃないの！{wait}",
-     "text_kr": ""
+     "text_kr": "이 미니욘 파이터를\n전 그랜드 챔피언 레이서\n인 줄 알고 도전하는 거구나！{wait}\n좋〜아\n받아 주지 않고 배기겠어！{wait}"
     },
     {
      "at": 703,
      "cmd": 33,
      "text_jp": "豪\n「よっしゃー！\nそうこなくっちゃ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「좋았어！\n그렇게 나와야지！{wait}{clear}"
     },
     {
      "at": 730,
      "cmd": 33,
      "text_jp": "二郎丸\n「本当は　ただレースが\nしたいだけじゃないダスか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "지로마루\n「사실은　그냥 레이스가\n하고 싶은 거 아니구유？{wait}{clear}"
     },
     {
      "at": 770,
      "cmd": 33,
      "text_jp": "ファイター\n「よーし！{wait}\nそうと決まれば\nボクはさっそく風輪サーキットへ\nもどってレースができるように\n準備しておくよ！{wait}\nキミたちもセッティングが\n終わったらレース場へきてくれ！{wait}\nそれじゃ！{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「좋〜아！{wait}\n그렇게 정해지면\n난 당장 후우린 서킷으로\n돌아가 레이스할 수 있게\n준비해 둘게！{wait}\n너희도 세팅이\n끝나면 레이스장으로 와 줘！{wait}\n그럼！{wait}"
     },
     {
      "at": 888,
      "cmd": 33,
      "text_jp": "土屋博士\n「待ちたまえ　ファイター！{wait}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「기다리게　파이터！{wait}"
     },
     {
      "at": 955,
      "cmd": 33,
      "text_jp": "ファイター\n「なっ　なんです博士？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "파이터\n「무　무슨 일이에요 박사？{wait}{clear}"
     },
     {
      "at": 981,
      "cmd": 33,
      "text_jp": "土屋博士\n「そのぅ…{wait}\n肉まんが大量に\nあまっているんだが\n冷めないうちに\nひとつどうかね？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「그게…{wait}\n고기만두가 잔뜩\n남아 버렸는데\n식기 전에\n하나 어떻겠나？{wait}{clear}"
     },
     {
      "at": 1042,
      "cmd": 33,
      "text_jp": "ファイター\n「ひゃっほー！{wait}\nちょうどおなかペッコペコ\nだったんですよぉ！{wait}\nいっやあ　気がきくなぁ{wait}\n全部もらって行きまっす！{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「이야호！{wait}\n마침 배가 홀쭉홀쭉\n하던 참이었어요！{wait}\n이야아　센스 있으시네{wait}\n전부 받아 갈게요！{wait}"
     },
     {
      "at": 1144,
      "cmd": 33,
      "text_jp": "ファイター\n「カーッ　うまそー！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "파이터\n「캬〜　맛있겠다！{wait}{clear}"
     },
     {
      "at": 1167,
      "cmd": 33,
      "text_jp": "土屋博士\n「あっ　いや\n全部あげるとは言って…",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「앗　아니\n전부 준다고는 안…"
     },
     {
      "at": 1210,
      "cmd": 33,
      "text_jp": "土屋博士\n「あっ　ああ…{wait}",
-     "text_kr": ""
+     "text_kr": "츠치야 박사\n「앗　아아…{wait}"
     }
    ]
   },
