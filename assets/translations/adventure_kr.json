@@ -10493,43 +10493,43 @@
      "at": 22,
      "cmd": 33,
      "text_jp": "彦佐\n「ぼっちゃま{wait}\nお車の準備が\nできましたです　ハイ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "히코사\n「도련님{wait}\n차 준비가\n다 됐습니다　네{wait}{clear}"
     },
     {
      "at": 68,
      "cmd": 33,
      "text_jp": "藤吉\n「いや　車はいいでゲス{wait}\nたまには歩いていくでゲス{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「아니　차는 됐사옵쇼{wait}\n가끔은 걸어가겠사옵쇼{wait}{clear}"
     },
     {
      "at": 107,
      "cmd": 33,
      "text_jp": "彦佐\n「それでは\nボディガードを\nおつけしますです　ハイ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "히코사\n「그러면\n보디가드를\n붙여드리겠습니다　네{wait}{clear}"
     },
     {
      "at": 144,
      "cmd": 33,
      "text_jp": "藤吉\n「彦佐！{wait}\nワテはそんなにこどもじゃ\nないでゲス{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「히코사！{wait}\n소인은 그렇게 어린애가\n아니옵쇼{wait}{clear}"
     },
     {
      "at": 182,
      "cmd": 33,
      "text_jp": "彦佐\n「でしたら　コンパニオンを\nご用意いたしますです　ハイ♥{wait}",
-     "text_kr": ""
+     "text_kr": "히코사\n「그러시면　도우미를\n준비하겠습니다　네♥{wait}"
     },
     {
      "at": 225,
      "cmd": 33,
      "text_jp": "藤吉\n「…{wait}\n",
-     "text_kr": ""
+     "text_kr": "토우키치\n「…{wait}\n"
     },
     {
      "at": 236,
      "cmd": 33,
      "text_jp": "土屋研究所ぐらい\n一人で行けるでゲスよ！{wait}\nまったくもうでゲス{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "츠치야 연구소쯤\n혼자 갈 수 있사옵쇼！{wait}\n원 참 못 말리옵쇼{wait}{clear}"
     }
    ]
   },
@@ -10542,25 +10542,25 @@
      "at": 193,
      "cmd": 33,
      "text_jp": "ファイター\n「そしてそして！\nみなさんお待ちかね！{wait}\nわれらが\nTRFビクトリーズの入場だぁ！{wait}\nせいだいなはくしゅで\nむかえてくれよ〜！！{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「그리고 그리고！\n여러분 기다리셨죠！{wait}\n우리들의\nTRF 빅토리즈 등장！{wait}\n성대한 박수로\n맞이해 주시죠〜！！{wait}"
     },
     {
      "at": 321,
      "cmd": 33,
      "text_jp": "ファイター\n「言わずと知れた栄光の\n初代WGPチャンピオンチーム",
-     "text_kr": ""
+     "text_kr": "파이터\n「두말할 것 없는 영광의\n초대 WGP 챔피언 팀"
     },
     {
      "at": 390,
      "cmd": 33,
      "text_jp": "ファイター\n「ミニ四駆はっしょうの地\n日本の意地をみせるべく\nV2をねらう！",
-     "text_kr": ""
+     "text_kr": "파이터\n「미니사구 발상의 땅\n일본의 자존심 걸고\nV2를 노린다！"
     },
     {
      "at": 458,
      "cmd": 33,
      "text_jp": "ファイター\n「以上10チームが\n今大会の出場チームだ！{wait}\n今年もアツいレースを\n期待しているぞ〜！{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「이상 10팀이\n이번 대회 출전 팀이다！{wait}\n올해도 뜨거운 레이스를\n기대하겠다〜！{wait}"
     }
    ]
   },
@@ -10573,13 +10573,13 @@
      "at": 6,
      "cmd": 33,
      "text_jp": "ファイター\n「全世界100億の\nミニ四駆ファンのみんな\nお待たせいたしました！{wait}\n第2回　ミニ4駆\nワールドグランプリを\nおっぱじめるぜ〜！{wait}\nせいだいなはくしゅで\nむかえてくれよ\n選手入場だー！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "파이터\n「전 세계 100억\n미니사구 팬 여러분\n오래 기다리셨습니다！{wait}\n제2회　미니사구\n월드 그랑프리를\n시작한다〜！{wait}\n성대한 박수로\n맞아다오\n선수 입장이다〜！！{wait}{clear}"
     },
     {
      "at": 132,
      "cmd": 33,
      "text_jp": "ファイター\n「まずはアメリカの科学の申し子\nNAアストロレンジャーズ！{wait}\nハイテク技術を駆使した\nマシンでかくじつに勝利を\nおさめていく！{wait}\n実力　チームワーク共に\n今大会トップクラスのチームだ{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「먼저 미국 과학의 총아\nNA 아스트로 레인저스！{wait}\n첨단 기술을 구사한\n머신으로 확실히 승리를\n거둬간다！{wait}\n실력　팀워크 모두\n이번 대회 톱클래스 팀이다{wait}"
     }
    ]
   },
@@ -10592,13 +10592,13 @@
      "at": 9,
      "cmd": 33,
      "text_jp": "ファイター\n「そして　アフリカの大地が\n育んだアマゾネス軍団\nサバンナソルジャーズだ！{wait}\n大会ゆいいつの\n女性だけのチーム！{wait}\nBSゼブラの持つポテンシャルを\n完全に引き出せるようになった\nかのじょたちの　今年にかける\n意気ごみはすばらしい！{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「그리고　아프리카 대지가\n길러낸 아마조네스 군단\n사반나 솔져스다！{wait}\n대회 유일의\n여성만의 팀！{wait}\nBS 제브라의 잠재력을\n완전히 끌어낼 수 있게 된\n그녀들의　올해에 거는\n각오가 대단하다！{wait}"
     },
     {
      "at": 243,
      "cmd": 33,
      "text_jp": "ファイター\n「まず最初は　荒波にもまれた\n南海の勇者\nXTOリボルバーズ！{wait}\n昨年はマシン開発が\nおくれたため　おしくも\nワールドグランプリ出場を\nだんねん{wait}\nそのくやしさをバネに\n今大会は優勝をねらう！{wait}\n使用マシン\nガンブラスターの\n性能やいかに！？{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「먼저　거친 파도에 단련된\n남해의 용자\nXTO 리볼버즈！{wait}\n작년엔 머신 개발이\n늦어져서　아쉽게도\n월드 그랑프리 출전을\n단념{wait}\n그 분함을 발판 삼아\n이번엔 우승을 노린다！{wait}\n사용 머신\n건 블래스터의\n성능은 과연！？{wait}"
     }
    ]
   },
@@ -11108,97 +11108,97 @@
      "at": 27,
      "cmd": 33,
      "text_jp": "烈\n「う〜ん　いい天気だなぁ〜{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「으〜음　날씨 좋네〜{wait}"
     },
     {
      "at": 70,
      "cmd": 33,
      "text_jp": "豪\n「まったく！\nもっとマシな起こしかたは\nないのかよ〜{wait}\nマグナムがブッちぎりで\n1位だったのに…{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「진짜！\n좀 더 나은 깨우는 법은\n없냐고〜{wait}\n매그넘이 압도적으로\n1위였는데…{wait}"
     },
     {
      "at": 141,
      "cmd": 33,
      "text_jp": "烈\n「なんでソニックが\nコースアウトなんだよ{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「왜 소닉이\n코스아웃이냐고{wait}"
     },
     {
      "at": 182,
      "cmd": 33,
      "text_jp": "豪\n「いいだろ！\nオレの夢の中なんだし…{wait}\n",
-     "text_kr": ""
+     "text_kr": "고\n「어때서！\n내 꿈속인데 뭘…{wait}\n"
     },
     {
      "at": 218,
      "cmd": 33,
      "text_jp": "それに\n今さら練習なんかしなくても\n今年のWGPもオレたちが\nブッちぎりで優勝だぜ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "게다가\n이제 와 연습 안 해도\n올해 WGP도 우리가\n압도적으로 우승이야！{wait}{clear}"
     },
     {
      "at": 274,
      "cmd": 33,
      "text_jp": "烈\n「お前…\nいつもそうやってゆだんして\nいたい目にあってるだろう！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「너…\n늘 그렇게 방심하다가\n혼쭐나곤 하잖아！{wait}{clear}"
     },
     {
      "at": 318,
      "cmd": 33,
      "text_jp": "豪\n「烈兄貴は考えすぎなんだよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「레츠 형은 생각이 너무 많아{wait}{clear}"
     },
     {
      "at": 345,
      "cmd": 33,
      "text_jp": "烈\n「言ってろ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「맘대로 해{wait}{clear}"
     },
     {
      "at": 361,
      "cmd": 33,
      "text_jp": "豪\n「それよりさぁ{wait}\n博士の所にいくには\nまだ時間があるだろ？{wait}\nこのあいだ新しくできた\nレース場にいってみようぜ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「그보다 말야{wait}\n박사 댁에 가기엔\n아직 시간 있잖아？{wait}\n얼마 전 새로 생긴\n레이스장에 가보자！{wait}{clear}"
     },
     {
      "at": 434,
      "cmd": 33,
      "text_jp": "烈\n「だめだ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「안 돼！{wait}{clear}"
     },
     {
      "at": 449,
      "cmd": 33,
      "text_jp": "豪\n「いいから　いいから{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「됐으니까　됐으니까{wait}"
     },
     {
      "at": 480,
      "cmd": 33,
      "text_jp": "烈\n「待てよ　豪ー{wait}\n",
-     "text_kr": ""
+     "text_kr": "레츠\n「기다려　고〜{wait}\n"
     },
     {
      "at": 499,
      "cmd": 33,
      "text_jp": "まったく　しょうがないな…{wait}",
-     "text_kr": ""
+     "text_kr": "원 참　못 말린다니까…{wait}"
     },
     {
      "at": 526,
      "cmd": 33,
      "text_jp": "豪\n「あった　あった{wait}\nここだよ烈兄貴{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「찾았다　찾았다{wait}\n여기야 레츠 형{wait}{clear}"
     },
     {
      "at": 556,
      "cmd": 33,
      "text_jp": "烈\n「へ〜\nりっぱな建物じゃないか{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「호〜\n훌륭한 건물이잖아{wait}{clear}"
     },
     {
      "at": 583,
      "cmd": 33,
      "text_jp": "豪\n「早く入ってみようぜ{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「빨리 들어가 보자{wait}"
     }
    ]
   },
@@ -11211,49 +11211,49 @@
      "at": 86,
      "cmd": 33,
      "text_jp": "豪\n「おっ　なんだなんだおめえら！{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「엇　뭐야 뭐야 너희들！{wait}"
     },
     {
      "at": 117,
      "cmd": 33,
      "text_jp": "藤吉\n「ははーん{wait}\nさてはワテらを\nていさつしにきたでゲスな？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「아하〜{wait}\n그러니까 소인들을\n정탐하러 왔단 거옵쇼？{wait}{clear}"
     },
     {
      "at": 157,
      "cmd": 33,
      "text_jp": "豪\n「そっ　そうなのか？\nホワァン！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「그　그런 거냐？\n호왕！{wait}{clear}"
     },
     {
      "at": 183,
      "cmd": 33,
      "text_jp": "ホワァン\n「ちっ　連うアル\nそんなことしないアルよ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "호왕\n「쳇　아니라구\n그런 짓 안 한다구！{wait}{clear}"
     },
     {
      "at": 217,
      "cmd": 33,
      "text_jp": "烈\n「そんなわけないだろ　豪{wait}\n",
-     "text_kr": ""
+     "text_kr": "레츠\n「그럴 리 없잖아　고{wait}\n"
     },
     {
      "at": 240,
      "cmd": 33,
      "text_jp": "ごめんねホワァンくん{wait}\nところできょうはいったい\nなんの用で研究所へ？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "미안해 호왕 군{wait}\n그런데 오늘은 대체\n무슨 일로 연구소에？{wait}{clear}"
     },
     {
      "at": 286,
      "cmd": 33,
      "text_jp": "ホワァン\n「えへへ{wait}\nじつは　鉄心先生に\nつくってもらったニューマシンを\nもらいにきてたアルよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "호왕\n「에헤헤{wait}\n실은　텟신 선생님이\n만들어준 새 머신을\n받으러 왔었다구{wait}{clear}"
     },
     {
      "at": 341,
      "cmd": 33,
      "text_jp": "全員\n「ニューマシン！？",
-     "text_kr": ""
+     "text_kr": "전원\n「새 머신！？"
     }
    ]
   },
@@ -11779,13 +11779,13 @@
      "at": 19,
      "cmd": 33,
      "text_jp": "豪\n「グフッ　グフフフフッ！{wait}\n",
-     "text_kr": ""
+     "text_kr": "고\n「크큭　크흐흐흐흣！{wait}\n"
     },
     {
      "at": 44,
      "cmd": 33,
      "text_jp": "いとしの豪様ですよぉ！{wait}",
-     "text_kr": ""
+     "text_kr": "사랑스러운 고 님이에요오！{wait}"
     }
    ]
   },
@@ -11798,85 +11798,85 @@
      "at": 17,
      "cmd": 33,
      "text_jp": "烈\n「明日はついに\nファイナルレースか{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「내일이면 드디어\n파이널 레이스인가{wait}{clear}"
     },
     {
      "at": 46,
      "cmd": 33,
      "text_jp": "豪\n「なんか\nアッと言うまって感じだよな{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「뭔가\n눈 깜짝할 새 같네{wait}{clear}"
     },
     {
      "at": 76,
      "cmd": 33,
      "text_jp": "藤吉\n「ウワサでゲスが…{wait}\n今年のファイナルレースは\n5ヵ国たいこうレースを\nやるらしいでゲスよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「소문이옵쇼만…{wait}\n올해 파이널 레이스는\n5개국 대항 레이스를\n한다는 모양이옵쇼{wait}{clear}"
     },
     {
      "at": 136,
      "cmd": 33,
      "text_jp": "烈\n「5ヵ国たいこうレースかぁ{wait}\n去年は代表の二人を選ぶのに\nてんやわんやだったなぁ{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「5개국 대항 레이스라…{wait}\n작년엔 대표 둘 뽑느라\n정말 난리도 아니었지{wait}"
     },
     {
      "at": 198,
      "cmd": 33,
      "text_jp": "豪\n「あーっ　そっか！\n全員でれるわけじゃねーんだ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「아앗　그렇구나！\n전부 나가는 게 아니네！{wait}{clear}"
     },
     {
      "at": 238,
      "cmd": 33,
      "text_jp": "烈\n「わすれたのか？{wait}\n去年はお前と二郎丸くんが\nギャーギャーさわぎながら\nあみだくじを作ったじゃないか{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「잊었어？{wait}\n작년엔 너랑 지로마루가\n왁자지껄 떠들면서\n사다리 뽑기 만들었잖아{wait}{clear}"
     },
     {
      "at": 308,
      "cmd": 33,
      "text_jp": "豪\n「いやー　そっかそっか\nすっかりわすれてたぜ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「이야〜　그랬지 그랬지\n까맣게 잊고 있었네！{wait}{clear}"
     },
     {
      "at": 349,
      "cmd": 33,
      "text_jp": "烈\n「今年の代表は\nどうやって選ぶんだろう？{wait}\nまた　あみだくじかなぁ？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「올해 대표는\n어떻게 뽑으려나？{wait}\n또　사다리 뽑기려나？{wait}{clear}"
     },
     {
      "at": 398,
      "cmd": 33,
      "text_jp": "藤吉\n「土屋博士がなにか\nたくらんでるみたいでゲスよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「츠치야 박사가 뭔가\n꾸미는 것 같사옵쇼{wait}{clear}"
     },
     {
      "at": 437,
      "cmd": 33,
      "text_jp": "豪\n「なっ　なぁにい〜！？{wait}\n",
-     "text_kr": ""
+     "text_kr": "고\n「뭐　뭐라고오〜！？{wait}\n"
     },
     {
      "at": 463,
      "cmd": 33,
      "text_jp": "それじゃ博士が勝手に\n決めちまうかもしれない\nじゃねぇか！{wait}\n",
-     "text_kr": ""
+     "text_kr": "그럼 박사가 멋대로\n정해버릴지도 몰라\n아니겠냐！{wait}\n"
     },
     {
      "at": 514,
      "cmd": 33,
      "text_jp": "こうしちゃいられねぇ\n行こうぜ　烈兄貴！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "이럴 때가 아니야\n가자　레츠 형！{wait}{clear}"
     },
     {
      "at": 549,
      "cmd": 33,
      "text_jp": "烈\n「いくって研究所へか？{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「간다는 게 연구소야？{wait}"
     },
     {
      "at": 574,
      "cmd": 33,
      "text_jp": "豪\n「あったりまえじゃん！\n勝手に決められてたまるかよ{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「당연한 소리지！\n멋대로 정하게 둘까 보냐{wait}"
     }
    ]
   }
