@@ -10611,61 +10611,61 @@
      "at": 69,
      "cmd": 33,
      "text_jp": "ファイター\n「ついにきた〜！！！{wait}\n第2回ワールドグランプリ\n優勝決定戦！！{wait}\n対戦カードはエジプトの\nエンシェントフォースと{wait}\n第1回ワールドグランプリの\nチャンピオン\nわれらがTRFビクトリーズだ！{wait}\nワールドチャンピオンの名営は\nはたしてどちらのチームの\nものとなるのか〜{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「드디어 왔다〜！！！{wait}\n제2회 월드 그랑프리\n우승 결정전！！{wait}\n대진 상대는 이집트의\n엔션트 포스와{wait}\n제1회 월드 그랑프리\n챔피언\n우리 TRF 빅토리즈다！{wait}\n월드 챔피언의 명예는\n과연 어느 팀의\n차지가 될 것인가〜{wait}"
     },
     {
      "at": 234,
      "cmd": 33,
      "text_jp": "豪\n「やいやい　おめ〜ら！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「어이어이　너희들〜！{wait}{clear}"
     },
     {
      "at": 255,
      "cmd": 33,
      "text_jp": "ラー\n「…{wait}",
-     "text_kr": ""
+     "text_kr": "라\n「…{wait}"
     },
     {
      "at": 273,
      "cmd": 33,
      "text_jp": "豪\n「大神のいいなりで\nマシンを走らせて\nそれで楽しいのか！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「오오가미가 시키는 대로\n머신을 달리게 하고\n그게 재밌냐！{wait}{clear}"
     },
     {
      "at": 315,
      "cmd": 33,
      "text_jp": "ラー\n「…{wait}",
-     "text_kr": ""
+     "text_kr": "라\n「…{wait}"
     },
     {
      "at": 328,
      "cmd": 33,
      "text_jp": "烈\n「豪！{wait}\nかれらの様子が\nなんだかおかしいぞ…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「고！{wait}\n저들의 모습이\n어딘가 이상한데…{wait}{clear}"
     },
     {
      "at": 364,
      "cmd": 33,
      "text_jp": "J\n「ボクもそう思っていたんだ…{wait}\nかれらの目にはかがやきがないよ\nまるでねむっているかのような{wait}\nそう　さいみんじゅつにでも\nかけられたような…{wait}",
-     "text_kr": ""
+     "text_kr": "제이\n「나도 그렇게 생각했어…{wait}\n저들 눈에는 생기가 없어\n마치 잠든 것 같은{wait}\n그래　최면술에라도\n걸린 것 같은…{wait}"
     },
     {
      "at": 452,
      "cmd": 33,
      "text_jp": "藤吉\n「大神なら\nやりかねないでゲスな…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「오오가미라면\n충분히 하고도 남을 일이옵죠…{wait}{clear}"
     },
     {
      "at": 483,
      "cmd": 33,
      "text_jp": "リョウ\n「…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「…{wait}{clear}"
     },
     {
      "at": 499,
      "cmd": 33,
      "text_jp": "ファイター\n「それじゃみんな\n準備はいいかぁ！{wait}\n第2回ワールドグランプリ\nファイナルラウンド{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「자 그럼 여러분\n준비는 됐나〜！{wait}\n제2회 월드 그랑프리\n파이널 라운드{wait}"
     }
    ]
   },
@@ -10678,25 +10678,25 @@
      "at": 448,
      "cmd": 33,
      "text_jp": "ファイター\n「ついにきたぁっ！{wait}\nいよいよWGPのクライマックス\nファイナルレースの開幕だぁ！{wait}\n",
-     "text_kr": ""
+     "text_kr": "파이터\n「드디어 왔다아！{wait}\n드디어 WGP 클라이맥스\n파이널 레이스 개막이다아！{wait}\n"
     },
     {
      "at": 504,
      "cmd": 33,
      "text_jp": "各チームから選りすぐられた\nレーサーばかりを集めて\n行なわれる{wait}\nこのバトルロイヤルレースを\n制し　優勝決定戦に進むのは\nいったいどのチームなのか！？{wait}\n始まる前から\nワクワクしてきたぞ！{wait}\n",
-     "text_kr": ""
+     "text_kr": "각 팀에서 선발된\n레이서들만 모아서\n펼쳐지는{wait}\n이 배틀로열 레이스를\n제패하고　결승에 오르는 건\n과연 어느 팀일까！？{wait}\n시작 전부터\n벌써 두근거린다！{wait}\n"
     },
     {
      "at": 618,
      "cmd": 33,
      "text_jp": "きょうはA／B\n2つのグループの\nレースじょうきょうを{wait}\n二元ちゅうけいで\nみんなのもとへ\nおとどけするぞ！{wait}\nじっきょうはもちろん\nミニ四駆の申し子こと\nミニ四ファイターだっ！{wait}\n",
-     "text_kr": ""
+     "text_kr": "오늘은 A／B\n두 그룹의\n레이스 상황을{wait}\n2원 중계로\n여러분에게\n전해드리겠다！{wait}\n실황은 물론\n미니사구의 신동\n미니욘 파이터다！{wait}\n"
     },
     {
      "at": 720,
      "cmd": 33,
      "text_jp": "それじゃみんな\nエネルギー全開で\nブッとんでくれよぉ！{wait}",
-     "text_kr": ""
+     "text_kr": "자 그럼 여러분\n에너지 풀가동으로\n신나게 날뛰어줘！{wait}"
     }
    ]
   },
@@ -10709,31 +10709,31 @@
      "at": 39,
      "cmd": 33,
      "text_jp": "ファイター\n「第2回ワールドグランプリ\n第1戦の対戦カードは…{wait}\nTRFビクトリーズ\n対\nNAアストロレンジャーズだ！{wait}\nもりあがっていこうぜ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "파이터\n「제2회 월드 그랑프리\n제1전 대진 상대는…{wait}\nTRF 빅토리즈\n대\nNA 아스트로 레인저스다！{wait}\n신나게 달려보자고！{wait}{clear}"
     },
     {
      "at": 125,
      "cmd": 33,
      "text_jp": "ブレット\n「いい走りを期待してるぜ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "브렛\n「멋진 주행 기대하겠어{wait}{clear}"
     },
     {
      "at": 152,
      "cmd": 33,
      "text_jp": "烈\n「ああ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「그래！{wait}{clear}"
     },
     {
      "at": 166,
      "cmd": 33,
      "text_jp": "豪\n「絶対に負けねぇからな！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「절대 안 질 거니까！！{wait}{clear}"
     },
     {
      "at": 192,
      "cmd": 33,
      "text_jp": "ファイター\n「それでは始めるぞー！{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「그럼 시작한다〜！{wait}"
     }
    ]
   },
@@ -10746,25 +10746,25 @@
      "at": 69,
      "cmd": 33,
      "text_jp": "ファイター\n「第2回ワールドグランプリ\nこれから対戦するのは…{wait}\nTRFビクトリーズ\n対\nサバンナソルジャーズだ！{wait}\nもりあがっていこうぜ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "파이터\n「제2회 월드 그랑프리\n이번 대전 상대는…{wait}\nTRF 빅토리즈\n대\n사반나 솔져스다！{wait}\n신나게 달려보자고！{wait}{clear}"
     },
     {
      "at": 151,
      "cmd": 33,
      "text_jp": "ジュリアナ\n「今度こそお前たちに\n正々堂々と勝つ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "쥴리아나\n「이번엔 반드시 너희를\n정정당당하게 이긴다！{wait}{clear}"
     },
     {
      "at": 191,
      "cmd": 33,
      "text_jp": "リョウ\n「ああ\n全力でこい！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「그래\n전력으로 와라！{wait}{clear}"
     },
     {
      "at": 213,
      "cmd": 33,
      "text_jp": "ファイター\n「それでは始めるぞー！{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「그럼 시작한다〜！{wait}"
     }
    ]
   },
@@ -10777,25 +10777,25 @@
      "at": 69,
      "cmd": 33,
      "text_jp": "ファイター\n「さあ！\n本日　ここオーロラドームで\n対戦するのは{wait}\nTRFビクトリーズと\nロシアからきた\n雪原のかりゅうど\nCCPシルバーフォックスだ！{wait}\nアツいレースを期待しているぞ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "파이터\n「자아！\n오늘　이곳 오로라 돔에서\n맞붙는 팀은{wait}\nTRF 빅토리즈와\n러시아에서 온\n설원의 사냥꾼\nCCP 실버 폭스다！{wait}\n뜨거운 레이스 기대하겠다！{wait}{clear}"
     },
     {
      "at": 176,
      "cmd": 33,
      "text_jp": "ユーリ\n「つらかったシベリアでの\n特訓をむだにしないためにも{wait}\nきょうはキミたちに勝つ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "유리\n「고됐던 시베리아에서의\n특훈을 헛되게 하지 않으려면{wait}\n오늘은 너희를 이긴다！{wait}{clear}"
     },
     {
      "at": 230,
      "cmd": 33,
      "text_jp": "J\n「ボクたちも負けないよ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「우리도 지지 않아！{wait}{clear}"
     },
     {
      "at": 252,
      "cmd": 33,
      "text_jp": "ファイター\n「よーし！\nそれじゃあレース開始だ〜！{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「좋았어！\n자 그럼 레이스 시작이다〜！{wait}"
     }
    ]
   },
@@ -10808,31 +10808,31 @@
      "at": 69,
      "cmd": 33,
      "text_jp": "ファイター\n「さあ！\n本日　ここアストロドームで\n対戦するのは{wait}\nTRFビクトリーズと\n南海の勇者\nXTOリボルバーズだ！{wait}\nアツいレースを期待しているぞ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "파이터\n「자아！\n오늘　이곳 아스트로 돔에서\n맞붙는 팀은{wait}\nTRF 빅토리즈와\n남해의 용자\nXTO 리볼버즈다！{wait}\n뜨거운 레이스 기대하겠다！{wait}{clear}"
     },
     {
      "at": 164,
      "cmd": 33,
      "text_jp": "リオン\n「この時を待っていたぜ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "리온\n「이 순간을 기다렸다！{wait}{clear}"
     },
     {
      "at": 189,
      "cmd": 33,
      "text_jp": "烈\n「ああ！　ボクたちもさ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「그래！　우리도 그래！{wait}{clear}"
     },
     {
      "at": 211,
      "cmd": 33,
      "text_jp": "豪\n「いくぜ！　リオン！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「간다！　리온！{wait}{clear}"
     },
     {
      "at": 231,
      "cmd": 33,
      "text_jp": "ファイター\n「よーし！\nみんな気合い入れていくぞ〜！{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「좋았어！\n다들 기합 넣고 가자〜！{wait}"
     }
    ]
   },
@@ -10845,31 +10845,31 @@
      "at": 69,
      "cmd": 33,
      "text_jp": "ファイター\n「全国100億の\nミニ四駆ファンのみんな！{wait}\nきょうはここ\n長城園サーキットから{wait}\nTRFビクトリーズと\n中国四千年の歴史が生んだ\n小四駆走行団光蝦の{wait}\nホットなレースを\nおとどけするぞ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "파이터\n「전국 100억\n미니사구 팬 여러분！{wait}\n오늘은 여기\n장성원 서킷에서{wait}\nTRF 빅토리즈와\n중국 4천년 역사가 낳은\n소사구 주행단 공키의{wait}\n뜨거운 레이스를\n전해드리겠습니다！{wait}{clear}"
     },
     {
      "at": 200,
      "cmd": 33,
      "text_jp": "ホワァン\n「絶対に負けないアルよ！{wait}\n勝ってボクの友達\nシャイニングスコーピオンの\nすごさを　みんなに\nみてもらうアル！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "호왕\n「절대 안 진다구！{wait}\n이겨서 내 친구\n샤이닝 스콜피온의\n대단함을 모두에게\n보여주겠다구！{wait}{clear}"
     },
     {
      "at": 273,
      "cmd": 33,
      "text_jp": "豪\n「いいレースしようぜ！\nホワァン{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「좋은 승부 하자！\n호왕{wait}{clear}"
     },
     {
      "at": 299,
      "cmd": 33,
      "text_jp": "ホワァン\n「もちろんアルよ　豪！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "호왕\n「물론이다구 고！{wait}{clear}"
     },
     {
      "at": 323,
      "cmd": 33,
      "text_jp": "ファイター\n「よーし！　みんな\n気合い入れていくぞ〜！{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「좋았어！ 다들\n기합 넣고 가자〜！{wait}"
     }
    ]
   },
@@ -10882,61 +10882,61 @@
      "at": 69,
      "cmd": 33,
      "text_jp": "ファイター\n「いよぉーっし！\nきょうも日本晴れだぁ！\n全世界のみんな　元気かぁ？{wait}\n本日　\nここキャッスルスタジアムで\n対戦するのは{wait}\nTRFビクトリーズと\nバラの花びらをまといやってきた\nレ・ヴァンクールだ！{wait}\n美しくもはげしい\nレース展開になりそうだぞ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "파이터\n「좋았어어어！\n오늘도 쾌청하다！\n전 세계 여러분 잘 있나！？{wait}\n오늘　\n이곳 캐슬 스타디움에서\n맞붙을 팀은{wait}\nTRF 빅토리즈와\n장미 꽃잎을 두르고 온\n레 방쿠르다！{wait}\n아름답고도 치열한\n레이스가 되겠어！{wait}{clear}"
     },
     {
      "at": 221,
      "cmd": 33,
      "text_jp": "ディアナ\n「正々堂々と戦いましょう\nムッシュ　セイバ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "디아나\n「정정당당히 겨뤄봅시다\n무슈 세이바{wait}{clear}"
     },
     {
      "at": 259,
      "cmd": 33,
      "text_jp": "烈\n「もちろんだとも{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「물론이지{wait}{clear}"
     },
     {
      "at": 277,
      "cmd": 33,
      "text_jp": "豪\n「勝つのはオレたちだけどな！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「이기는 건 우리지만！{wait}{clear}"
     },
     {
      "at": 302,
      "cmd": 33,
      "text_jp": "アーム\n「…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "아무\n「…{wait}{clear}"
     },
     {
      "at": 318,
      "cmd": 33,
      "text_jp": "J\n「！？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「！？{wait}{clear}"
     },
     {
      "at": 330,
      "cmd": 33,
      "text_jp": "藤吉\n「Jくん\nどうかしたんでゲスか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「제이 군\n무슨 일이옵죠？{wait}{clear}"
     },
     {
      "at": 358,
      "cmd": 33,
      "text_jp": "J\n「あのアームって選手\nどこかで…{wait}\n",
-     "text_kr": ""
+     "text_kr": "제이\n「저 아무란 선수\n어디선가…{wait}\n"
     },
     {
      "at": 385,
      "cmd": 33,
      "text_jp": "いや　多分気のせいだよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "아니 아마 착각이야{wait}{clear}"
     },
     {
      "at": 406,
      "cmd": 33,
      "text_jp": "ファイター\n「よーし！\nみんな気合い入れていくぞ〜！{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「좋았어！\n다들 기합 넣고 가자〜！{wait}"
     }
    ]
   },
@@ -10949,49 +10949,49 @@
      "at": 69,
      "cmd": 33,
      "text_jp": "ファイター\n「全世界のみんな！\nきょうも燃えているかーっ！？{wait}\nワールドグランプリも\n後半戦にとつにゅうして\nますますヒートアップだ！{wait}\nきょうはここ\n地中海サーキットから{wait}\nTRFビクトリーズと\nイタリアの赤い荒馬\nロッソストラーダの{wait}\nはげしいレースを\nお送りするぞぉ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "파이터\n「전 세계 여러분！\n오늘도 불타오르나！？{wait}\n월드 그랑프리도\n후반전에 접어들어\n점점 더 뜨겁다！{wait}\n오늘은 여기\n지중해 서킷에서{wait}\nTRF 빅토리즈와\n이탈리아의 붉은 야생마\n롯소 스트라다의{wait}\n치열한 레이스를\n보내드리겠다！{wait}{clear}"
     },
     {
      "at": 227,
      "cmd": 33,
      "text_jp": "豪\n「カルロ！　勝負だぜ！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「카를로！ 승부다！！{wait}{clear}"
     },
     {
      "at": 251,
      "cmd": 33,
      "text_jp": "カルロ\n「せいぜい今のうちに\nほえておくんだな　チビ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카를로\n「지금 맘껏\n짖어둬라 꼬맹이{wait}{clear}"
     },
     {
      "at": 285,
      "cmd": 33,
      "text_jp": "ルキノ\n「フン！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "루키노\n「흥！{wait}{clear}"
     },
     {
      "at": 300,
      "cmd": 33,
      "text_jp": "藤吉\n「今回は　はんそくなしで\nおねがいしたいモンでゲスねえ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「이번엔 반칙은\n없길 바라옵죠{wait}{clear}"
     },
     {
      "at": 341,
      "cmd": 33,
      "text_jp": "J\n「そういう言い方はやめなよ\n藤吉くん{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「그런 말은 그만해\n토우키치{wait}{clear}"
     },
     {
      "at": 372,
      "cmd": 33,
      "text_jp": "リョウ\n「やれるものなら\nやってみればいい{wait}\nハンパなアタックで\nどうにかなるほど\nトライダガーは\nやわじゃない！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「할 수 있으면\n해봐라{wait}\n어설픈 공격쯤엔\n트라이대거는\n흔들릴 만큼\n물러터지지 않아！{wait}{clear}"
     },
     {
      "at": 436,
      "cmd": 33,
      "text_jp": "ファイター\n「よーし！\nみんな気合い入れていくぞ〜！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "파이터\n「좋았어！\n다들 기합 넣고 가자〜！{wait}{clear}"
     }
    ]
   },
@@ -11004,43 +11004,43 @@
      "at": 69,
      "cmd": 33,
      "text_jp": "ファイター\n「全世界のミニ四駆ファンの\nみんな！{wait}\n今回のレースは\nかげろうのゆらめく\n炎のサバンナスタジアムから\nお送りするぞ！{wait}\n対戦カードは\nわれらがTRFビクトリーズと\nアフリカのしなやかなる黒ヒョウ\nサバンナソルジャーズだ！{wait}\nなお　今回のレースからは\nふりょのじこで\nケガをしてしまった\nミシェルくんにかわって{wait}\nコーチの沖田カイくんが\nレーサーとして\n参加することになったぞ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "파이터\n「전 세계 미니사구 팬\n여러분！{wait}\n이번 레이스는\n아지랑이 넘실대는\n불꽃의 사반나 스타디움에서\n보내드리겠습니다！{wait}\n대진 카드는\n우리들의 TRF 빅토리즈와\n아프리카의 유연한 흑표범\n사반나 솔져스다！{wait}\n그리고 이번 레이스부턴\n불의의 사고로\n부상당한\n미셸 대신에{wait}\n코치 오키타 카이가\n레이서로서\n참가하게 됐습니다！{wait}{clear}"
     },
     {
      "at": 289,
      "cmd": 33,
      "text_jp": "豪\n「負けねぇぞ　カイ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「안 질 거다 카이！{wait}{clear}"
     },
     {
      "at": 310,
      "cmd": 33,
      "text_jp": "カイ\n「こちらだって\nそうかんたんに勝利を\nゆずるわけにはいきませんよ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "카이\n「이쪽도\n그리 쉽게 승리를\n내줄 순 없습니다{wait}{clear}"
     },
     {
      "at": 354,
      "cmd": 33,
      "text_jp": "リョウ\n「おたがい手かげんはなしだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「서로 봐주긴 없다{wait}{clear}"
     },
     {
      "at": 379,
      "cmd": 33,
      "text_jp": "ジュリアナ\n「手かげんしている\nよゆうなんてないさ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "쥴리아나\n「봐주고 있을\n여유 따윈 없지{wait}{clear}"
     },
     {
      "at": 412,
      "cmd": 33,
      "text_jp": "烈\n「せいいっぱい楽しもう！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「힘껏 즐겨보자！{wait}{clear}"
     },
     {
      "at": 435,
      "cmd": 33,
      "text_jp": "ファイター\n「よーし！\nみんな気合い入れていくぞ〜！{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「좋았어！\n다들 기합 넣고 가자〜！{wait}"
     }
    ]
   },
@@ -11053,49 +11053,49 @@
      "at": 69,
      "cmd": 33,
      "text_jp": "ファイター\n「やあ　みんな\n元気にミニ四駆やってるかー！？{wait}\nきょうもこのミニ四ファイターが\n世界のみんなにアツいレースを\nおとどけするぞ！{wait}\nレースの舞台はなんと\n寒〜いオーロラドームだ！\nでも　出場選手のハートは\nアツく燃えているはずだぞ！{wait}\n",
-     "text_kr": ""
+     "text_kr": "파이터\n「자 여러분\n미니사구 잘 달리고 있나！？{wait}\n오늘도 이 미니욘 파이터가\n세계 모두께 뜨거운 승부를\n전해드리겠습니다！{wait}\n레이스 무대는 무려\n추운 오로라 돔이다！\n하지만 출전 선수들 가슴은\n뜨겁게 불타고 있을 거다！{wait}\n"
     },
     {
      "at": 213,
      "cmd": 33,
      "text_jp": "対戦カードはわれらが\nTRFビクトリーズと\nロシアの銀ギツネ\nCCPシルバーフォックス！{wait}\nたましいをゆさぶる\nレース展開に期待しよう！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "대진 카드는 우리들의\nTRF 빅토리즈와\n러시아의 은빛 여우\nCCP 실버 폭스！{wait}\n영혼을 뒤흔드는\n레이스를 기대하자！{wait}{clear}"
     },
     {
      "at": 295,
      "cmd": 33,
      "text_jp": "烈\n「チームワークで負けたとは\n言われたくないからね{wait}\n勝つよ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「팀워크로 졌단\n말은 듣기 싫거든{wait}\n이길 거야！{wait}{clear}"
     },
     {
      "at": 338,
      "cmd": 33,
      "text_jp": "ユーリ\n「それはおたがいさまだよ\n烈くん{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "유리\n「그건 피차일반이야\n레츠 군{wait}{clear}"
     },
     {
      "at": 366,
      "cmd": 33,
      "text_jp": "リョウ\n「本気でかかってこいよユーリ{wait}\nオレも手かげんはしない{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「진심으로 덤벼라 유리{wait}\n나도 봐주진 않는다{wait}{clear}"
     },
     {
      "at": 407,
      "cmd": 33,
      "text_jp": "ユーリ\n「わかっている{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "유리\n「알고 있단다{wait}{clear}"
     },
     {
      "at": 425,
      "cmd": 33,
      "text_jp": "豪\n「よーし\nいっちょうやったるかぁ！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「좋았어\n한판 해보자고！{wait}{clear}"
     },
     {
      "at": 452,
      "cmd": 33,
      "text_jp": "ファイター\n「じゃあみんな\n気合い入れていくぞ〜！{wait}",
-     "text_kr": ""
+     "text_kr": "파이터\n「그럼 다들\n기합 넣고 가자〜！{wait}"
     }
    ]
   },
