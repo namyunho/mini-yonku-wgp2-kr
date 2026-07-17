@@ -3539,121 +3539,121 @@
      "at": 6,
      "cmd": 33,
      "text_jp": "烈\n「アストロレンジャーズ！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「아스트로 레인저스！！{wait}{clear}"
     },
     {
      "at": 29,
      "cmd": 33,
      "text_jp": "ブレット\n「ひさしぶりだな\nセイバブラザーズ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "브렛\n「오랜만이군\n세이바 브라더스{wait}{clear}"
     },
     {
      "at": 58,
      "cmd": 33,
      "text_jp": "豪\n「やっぱり今年も出場するのか\nお前ら{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「올해도 역시 출전하는 거냐\n너희들{wait}{clear}"
     },
     {
      "at": 91,
      "cmd": 33,
      "text_jp": "エッジ\n「去年でミニ四駆の\nカリキュラムは終了したんだが{wait}\nお前たちに負けたまま\n引き下がるのはシャクだからな{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "엣지\n「작년으로 미니사구\n커리큘럼은 끝났지만{wait}\n너희에게 진 채로\n물러나는 건 분하니까{wait}{clear}"
     },
     {
      "at": 162,
      "cmd": 33,
      "text_jp": "豪\n「かわいそうだけど\n今年もオレたちが\nブッちぎりで優勝だぜ！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「안됐지만\n올해도 우리가\n압도적으로 우승이야！！{wait}{clear}"
     },
     {
      "at": 207,
      "cmd": 33,
      "text_jp": "エッジ\n「フッ{wait}\n相変わらずおめでたいやつだな{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "엣지\n「흥{wait}\n여전히 속 편한 녀석이군{wait}{clear}"
     },
     {
      "at": 247,
      "cmd": 33,
      "text_jp": "豪\n「なに〜ぃ！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「뭐라고오！！{wait}{clear}"
     },
     {
      "at": 264,
      "cmd": 33,
      "text_jp": "ブレット\n「自覚しているのか？{wait}\nお前たちは今年から追われる\n立場にあるんだぜ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "브렛\n「자각은 하고 있냐？{wait}\n너희는 올해부터 쫓기는\n입장에 있는 거다{wait}{clear}"
     },
     {
      "at": 318,
      "cmd": 33,
      "text_jp": "烈\n「追われる立場…？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「쫓기는 입장…？{wait}{clear}"
     },
     {
      "at": 340,
      "cmd": 33,
      "text_jp": "ブレット\n「そうだ{wait}\nお前たちは\n第1回WGPチャンピオンだ{wait}\n初参加の3チームをふくめ\n全ての参加国は\n全力でお前たちに\nいどんでくるだろう{wait}\nお前たちを研究しつくしてな{wait}",
-     "text_kr": ""
+     "text_kr": "브렛\n「그래{wait}\n너희는\n제1회 WGP 챔피언이다{wait}\n첫 참가 3팀을 포함해\n모든 참가국은\n전력으로 너희에게\n도전해 올 거다{wait}\n너희를 철저히 연구해서 말이다{wait}"
     },
     {
      "at": 454,
      "cmd": 33,
      "text_jp": "ブレット\n「だから\nそんなふぬけたじょうたいじゃ\nアッと言うまに負けちまうぜ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "브렛\n「그러니\n그런 얼빠진 상태로는\n순식간에 지고 만다{wait}{clear}"
     },
     {
      "at": 501,
      "cmd": 33,
      "text_jp": "豪\n「ふぬけてなんかいねー！{wait}\nオレたちと勝負しやがれ！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「얼빠지긴 누가！{wait}\n우리랑 승부하시지！！{wait}{clear}"
     },
     {
      "at": 540,
      "cmd": 33,
      "text_jp": "ブレット\n「フッ　いいだろう{wait}\nふぬけチャンピオンのウデを\n見せてもらおうか{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "브렛\n「흥　좋다{wait}\n얼빠진 챔피언 실력을\n보여 봐라{wait}{clear}"
     },
     {
      "at": 586,
      "cmd": 33,
      "text_jp": "豪\n「ムッカ〜！{wait}\nやろうぜ！　烈兄貴{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「빡치네〜！{wait}\n하자고！　레츠 형{wait}{clear}"
     },
     {
      "at": 616,
      "cmd": 33,
      "text_jp": "烈\n「あっ　ああ…{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「아　아…{wait}"
     },
     {
      "at": 636,
      "cmd": 33,
      "text_jp": "烈\n（なんでお前は\nいつもこういう\n展開になるんだよ）{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「（어째서 넌\n늘 이런\n전개가 되는 거야）{wait}"
     },
     {
      "at": 677,
      "cmd": 33,
      "text_jp": "ブレット\n「OK{wait}\nそれじゃあ\nこのコースを一人2周する\nリレーレースでどうだ？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "브렛\n「OK{wait}\n그럼\n이 코스를 한 명당 2바퀴 도는\n릴레이 레이스로 어떠냐？{wait}{clear}"
     },
     {
      "at": 725,
      "cmd": 33,
      "text_jp": "豪\n「ゴチャゴチャ言ってねーで\n早く勝負だ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「이러쿵저러쿵 떠들지 말고\n빨리 승부다{wait}{clear}"
     },
     {
      "at": 763,
      "cmd": 33,
      "text_jp": "ブレット\n「エッジ　スタンバイしろ{wait}\nS・E・Cはまだ使うなよ{wait}",
-     "text_kr": ""
+     "text_kr": "브렛\n「엣지　스탠바이해라{wait}\nS・E・C는 아직 쓰지 마라{wait}"
     },
     {
      "at": 813,
      "cmd": 33,
      "text_jp": "エッジ\n「ラジャー{wait}\n心配症だな　リーダーは{wait}",
-     "text_kr": ""
+     "text_kr": "엣지\n「라저{wait}\n걱정도 많으시네　리더는{wait}"
     }
    ]
   },
@@ -3794,109 +3794,109 @@
      "at": 88,
      "cmd": 33,
      "text_jp": "チイコ\n「烈様〜♥\nよくいらしてくださいましたわ{wait}\nいよいよ明日は\nWGPの開会武ですわね{wait}\nわたくし\nおうだんまくをはるために\nWGPのチケットをたくさん\n買いましたのよ♥{wait}",
-     "text_kr": ""
+     "text_kr": "치이코\n「레츠 님〜♥\n잘 와 주셨어요{wait}\n드디어 내일이\nWGP 개회식이네요{wait}\n저\n응원 현수막을 걸려고\nWGP 티켓을 잔뜩\n샀답니다♥{wait}"
     },
     {
      "at": 210,
      "cmd": 33,
      "text_jp": "烈\n「あのさ　チイコちゃん{wait}\nそのWGPのチケットだけど\n手に入らなかったひとに\nゆずってあげてほしいんだ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「저기 있잖아　치이코{wait}\n그 WGP 티켓 말인데\n구하지 못한 사람한테\n양보해 줬으면 해{wait}{clear}"
     },
     {
      "at": 272,
      "cmd": 33,
      "text_jp": "チイコ\n「そうですわねぇ〜{wait}\n烈様のたのみとあれば\nおゆずりいたしますが\nかわりに　ひとつ\nおねがいがございますの♥{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코\n「그렇네요〜{wait}\n레츠 님 부탁이라면\n양보해 드리겠지만\n대신에　한 가지\n부탁이 있어요♥{wait}{clear}"
     },
     {
      "at": 353,
      "cmd": 33,
      "text_jp": "烈\n「おねがい…？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「부탁…？{wait}{clear}"
     },
     {
      "at": 370,
      "cmd": 33,
      "text_jp": "チイコ\n「じつは　新しい\n烈様人形をつくろうと\n思っておりまして{wait}\nそのために烈様の\nデーターを取らせて\nいただきたいのですわ〜{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코\n「실은　새로운\n레츠 님 인형을 만들려고\n생각하고 있어서요{wait}\n그러려면 레츠 님\n데이터를 받고\n싶은 거예요〜{wait}{clear}"
     },
     {
      "at": 463,
      "cmd": 33,
      "text_jp": "烈\n「データーねぇ…{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「데이터라…{wait}"
     },
     {
      "at": 501,
      "cmd": 33,
      "text_jp": "烈\n「で　ぐたいてきには\nどうすればいいんだい？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「그래서　구체적으로는\n어떻게 하면 되는데？{wait}{clear}"
     },
     {
      "at": 537,
      "cmd": 33,
      "text_jp": "チイコ\n「マキさん\nおねがいしますわぁ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코\n「마키 씨\n부탁드려요{wait}{clear}"
     },
     {
      "at": 573,
      "cmd": 33,
      "text_jp": "マキ\n「それでは烈様{wait}\nわたくしがご案内いたします{wait}",
-     "text_kr": ""
+     "text_kr": "마키\n「그럼 레츠 님{wait}\n제가 안내해 드리겠습니다{wait}"
     },
     {
      "at": 651,
      "cmd": 33,
      "text_jp": "マキ\n「どうぞこちらへ{wait}",
-     "text_kr": ""
+     "text_kr": "마키\n「이쪽으로 오세요{wait}"
     },
     {
      "at": 679,
      "cmd": 33,
      "text_jp": "烈の声\n「なっ\nなんですかこの機械は！？{wait}",
-     "text_kr": ""
+     "text_kr": "레츠의 목소리\n「뭐\n뭐예요 이 기계는！？{wait}"
     },
     {
      "at": 727,
      "cmd": 33,
      "text_jp": "烈の声\n「わっ　わわわ",
-     "text_kr": ""
+     "text_kr": "레츠의 목소리\n「우　우와와와"
     },
     {
      "at": 758,
      "cmd": 33,
      "text_jp": "烈の声\n「なにがおこってるんだ〜！",
-     "text_kr": ""
+     "text_kr": "레츠의 목소리\n「무슨 일이 벌어지는 거야〜！"
     },
     {
      "at": 855,
      "cmd": 33,
      "text_jp": "チイコ\n「おつかれさまでしたわ〜{wait}\nはい　これが\nおやくそくのチケットですわ{wait}\nおうだんまくの4すみを\n持っていただきたいので\n4まいおわたしいたしますわ〜{wait}",
-     "text_kr": ""
+     "text_kr": "치이코\n「수고하셨어요〜{wait}\n자　이게\n약속한 티켓이에요{wait}\n현수막 네 귀퉁이를\n들어 주셨으면 해서\n네 장 드릴게요〜{wait}"
     },
     {
      "at": 939,
      "cmd": 33,
      "text_jp": "イベントアイテム\n『WGPのチケット』を4まい手に入れた",
-     "text_kr": ""
+     "text_kr": "이벤트 아이템\n『WGP 티켓』을 4장 얻었다"
     },
     {
      "at": 1006,
      "cmd": 33,
      "text_jp": "烈\n「…ありがとう{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「…고마워{wait}"
     },
     {
      "at": 1073,
      "cmd": 33,
      "text_jp": "豪\n「烈兄貴\nなんかスゲー音がしてたけど\nいったいなにをしてたんだ？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「레츠 형\n뭔가 엄청난 소리가 나던데\n대체 뭘 하고 있었어？{wait}{clear}"
     },
     {
      "at": 1133,
      "cmd": 33,
      "text_jp": "烈\n「アハッ　ハッハッ{wait}\nなんでもないよ…{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「아핫　핫핫{wait}\n아무것도 아니야…{wait}"
     }
    ]
   },
@@ -3988,139 +3988,139 @@
      "at": 159,
      "cmd": 33,
      "text_jp": "チイコ\n「とうぜん　わたくしの\nべっそうに烈様人形を\n完備するためですわ〜{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코\n「당연히　저희\n별장에 레츠 님 인형을\n완비하기 위해서예요〜{wait}{clear}"
     },
     {
      "at": 208,
      "cmd": 33,
      "text_jp": "烈\n「いったい\n何体つくったんだい？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「대체\n몇 대나 만든 거야？{wait}{clear}"
     },
     {
      "at": 236,
      "cmd": 33,
      "text_jp": "マキ\n「きょうとどきましたのは\n全部で5体なんですが{wait}\n逃げ出したのは\nテスト機とあわせて\n全部で6体です{wait}",
-     "text_kr": ""
+     "text_kr": "마키\n「오늘 도착한 건\n전부 다섯 대인데{wait}\n도망친 건\n테스트기까지 합쳐\n전부 여섯 대예요{wait}"
     },
     {
      "at": 323,
      "cmd": 33,
      "text_jp": "烈\n「そっ　そんなに…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「그　그렇게나…{wait}{clear}"
     },
     {
      "at": 342,
      "cmd": 33,
      "text_jp": "豪\n「で　なんで烈兄貴人形が\n勝手に動いてんだ？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「그래서　왜 레츠 형 인형이\n멋대로 움직이는 건데？{wait}{clear}"
     },
     {
      "at": 381,
      "cmd": 33,
      "text_jp": "マキ\n「それが　立ち上げの時に\nせいぎょ用のアンテナを\nつけわすれまして…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "마키\n「그게　기동할 때\n제어용 안테나를\n다는 걸 깜빡해서요…{wait}{clear}"
     },
     {
      "at": 429,
      "cmd": 33,
      "text_jp": "リョウ\n「勝手に動きだした\nというわけか…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "료\n「멋대로 움직이기\n시작한 거군…{wait}{clear}"
     },
     {
      "at": 460,
      "cmd": 33,
      "text_jp": "マキ\n「はい　正確には\nAIがどくじの行動を\nとっているんですが{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "마키\n「네　정확히는\nAI가 독자적인 행동을\n취하고 있는 거지만요{wait}{clear}"
     },
     {
      "at": 503,
      "cmd": 33,
      "text_jp": "J\n「AIだって！？{wait}\nあの人形には　人工知能が\nとうさいされているんですか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「AI라고！？{wait}\n저 인형에는　인공지능이\n탑재돼 있는 거예요？{wait}{clear}"
     },
     {
      "at": 553,
      "cmd": 33,
      "text_jp": "マキ\n「ええ　烈様人形のAIには\nGPチップをカスタマイズした\nものを使っております{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "마키\n「네　레츠 님 인형 AI에는\nGP칩을 커스터마이즈한\n것을 쓰고 있어요{wait}{clear}"
     },
     {
      "at": 606,
      "cmd": 33,
      "text_jp": "藤吉\n「まさかそのGPチップって\nスピンバイパーのGPチップじゃ\nないでゲしょうね？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「설마 그 GP칩이\n스핀 바이퍼 GP칩은\n아니겠사옵쇼？{wait}{clear}"
     },
     {
      "at": 657,
      "cmd": 33,
      "text_jp": "チイコ\n「そのとおりですわぁ{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코\n「맞아요{wait}{clear}"
     },
     {
      "at": 682,
      "cmd": 33,
      "text_jp": "豪\n「ぎゃはははは{wait}\n烈兄貴がスピンバイパーの\nGPチップで動いてんのか〜{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「갸하하하하{wait}\n레츠 형이 스핀 바이퍼\nGP칩으로 움직이는 거야〜{wait}{clear}"
     },
     {
      "at": 737,
      "cmd": 33,
      "text_jp": "烈\n「豪！！\nおもしろがってる\n場合じゃないぞ！{wait}\n早く探し出さないと\n町中に変なウワサが\n広まっちゃうだろう！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「고！！\n재밌어할\n때가 아니야！{wait}\n빨리 찾아내지 않으면\n온 동네에 이상한 소문이\n퍼져 버리잖아！{wait}{clear}"
     },
     {
      "at": 811,
      "cmd": 33,
      "text_jp": "豪\n「今ごろハダカで\n町中を走り回ってたりしてな{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "고\n「지금쯤 알몸으로\n온 동네를 뛰어다니고 있겠네{wait}{clear}"
     },
     {
      "at": 856,
      "cmd": 33,
      "text_jp": "烈\n「あわわわわわわ！{wait}\nみっ　みんな！　急ごう！！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "레츠\n「으아아아아아！{wait}\n어　얘들아！　서두르자！！{wait}{clear}"
     },
     {
      "at": 895,
      "cmd": 33,
      "text_jp": "J\n「待って　烈くん！{wait}\n",
-     "text_kr": ""
+     "text_kr": "제이\n「기다려　레츠！{wait}\n"
     },
     {
      "at": 918,
      "cmd": 33,
      "text_jp": "せいぎょアンテナっていうのを\nもらっておかないと\n烈くん人形を止められないんじゃ\nないかな？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제어 안테나라는 걸\n받아 두지 않으면\n레츠 인형을 못 멈추는 거\n아닐까？{wait}{clear}"
     },
     {
      "at": 974,
      "cmd": 33,
      "text_jp": "チイコ\n「そのとおりですわ〜{wait}",
-     "text_kr": ""
+     "text_kr": "치이코\n「맞아요〜{wait}"
     },
     {
      "at": 1006,
      "cmd": 33,
      "text_jp": "チイコ\n「ハイ\nこれがアンテナですわぁ{wait}\nこれを烈様人形の頭につけると\n言うことをきくように\nなりますのよ{wait}",
-     "text_kr": ""
+     "text_kr": "치이코\n「네\n이게 안테나예요{wait}\n이걸 레츠 님 인형 머리에 달면\n말을 잘 듣게\n된답니다{wait}"
     },
     {
      "at": 1069,
      "cmd": 33,
      "text_jp": "イベントアイテム\n『アンテナ』を6本手に入れた",
-     "text_kr": ""
+     "text_kr": "이벤트 아이템\n『안테나』를 6개 얻었다"
     },
     {
      "at": 1124,
      "cmd": 33,
      "text_jp": "マキ\n「烈様人形のAIですが…{wait}\nGPチップをもとにしているため\nミニ四駆に強いかんしんを\n持つようになっているんです{wait}\nですから　おそらくミニ四駆に\nかんけいのある場所に行けば\n見つかると思うんですが…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "마키\n「레츠 님 인형 AI 말인데요…{wait}\nGP칩을 기반으로 해서\n미니사구에 강한 관심을\n갖게 되어 있어요{wait}\n그러니까　아마 미니사구와\n관련 있는 장소에 가면\n찾을 수 있을 것 같은데…{wait}{clear}"
     },
     {
      "at": 1247,
      "cmd": 33,
      "text_jp": "リョウ\n「わかった{wait}",
-     "text_kr": ""
+     "text_kr": "료\n「알겠다{wait}"
     }
    ]
   },
@@ -9762,121 +9762,121 @@
      "at": 26,
      "cmd": 33,
      "text_jp": "藤吉\n「朝起きたらワテの部屋が\nとんでもないことに\nなっているでゲス！{wait}\n彦佐！　説明するでゲス！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「아침에 일어나니 제 방이\n말도 안 되는 꼴이\n돼 있사옵쇼！{wait}\n히코사！　설명하시옵쇼！{wait}{clear}"
     },
     {
      "at": 92,
      "cmd": 33,
      "text_jp": "彦佐\n「は　あの　ええと{wait}\nチイコお嬢様の\nご命令でございまして…{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "히코사\n「예　저　그게{wait}\n치이코 아가씨의\n명령이시라서요…{wait}{clear}"
     },
     {
      "at": 138,
      "cmd": 33,
      "text_jp": "藤吉\n「やっぱりそうだったんでゲスか！{wait}\n",
-     "text_kr": ""
+     "text_kr": "토우키치\n「역시 그랬사옵쇼！{wait}\n"
     },
     {
      "at": 166,
      "cmd": 33,
      "text_jp": "チイコ！　今すぐこれを\nかたづけるでゲス！{wait}",
-     "text_kr": ""
+     "text_kr": "치이코！　당장 이걸\n치우시옵쇼！{wait}"
     },
     {
      "at": 206,
      "cmd": 33,
      "text_jp": "チイコ\n「機械を置くには\nこの部屋がちょうど\n良かったのですわ〜{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코\n「기계를 두기에\n이 방이 딱\n좋았거든요〜{wait}{clear}"
     },
     {
      "at": 251,
      "cmd": 33,
      "text_jp": "藤吉\n「勝手なことを言うなでゲス！{wait}\nここはワテの部屋でゲスよ！{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「멋대로 굴지 마시옵쇼！{wait}\n여긴 제 방이옵쇼！{wait}"
     },
     {
      "at": 308,
      "cmd": 33,
      "text_jp": "チイコ\n「あら　カワイイ妹のたのみが\n聞けないと言うのですか？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코\n「어머　귀여운 여동생 부탁을\n못 들어준다는 거예요？{wait}{clear}"
     },
     {
      "at": 349,
      "cmd": 33,
      "text_jp": "藤吉\n「都合のいい時だけ\nカワイイ妹ぶるんじゃ\nないでゲス！{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「형편 좋을 때만\n귀여운 여동생인 척\n하지 마시옵쇼！{wait}"
     },
     {
      "at": 419,
      "cmd": 33,
      "text_jp": "マキ\n「お嬢様〜\n星馬烈様をお連れいたしました{wait}",
-     "text_kr": ""
+     "text_kr": "마키\n「아가씨〜\n세이바 레츠 님을 모셔 왔습니다{wait}"
     },
     {
      "at": 467,
      "cmd": 33,
      "text_jp": "チイコ\n「烈様〜♥",
-     "text_kr": ""
+     "text_kr": "치이코\n「레츠 님〜♥"
     },
     {
      "at": 490,
      "cmd": 33,
      "text_jp": "烈\n「や　やあ\nチイコちゃん{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「아　안녕\n치이코{wait}"
     },
     {
      "at": 519,
      "cmd": 33,
      "text_jp": "チイコ\n「あら？\nあなた方はなんですの？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "치이코\n「어라？\n당신들은 누구세요？{wait}{clear}"
     },
     {
      "at": 547,
      "cmd": 33,
      "text_jp": "豪\n「烈兄貴のつきそいだよ{wait}",
-     "text_kr": ""
+     "text_kr": "고\n「레츠 형 따라온 거야{wait}"
     },
     {
      "at": 578,
      "cmd": 33,
      "text_jp": "藤吉\n「豪くん！\nワテの話を聞いてほしいでゲス！{wait}\nチイコときたら\n勝手にこんな変な機械を\n持ちこんで…{wait}",
-     "text_kr": ""
+     "text_kr": "토우키치\n「고！\n제 얘기 좀 들어주시옵쇼！{wait}\n치이코로 말할 것 같으면\n멋대로 이런 이상한 기계를\n들여놓고…{wait}"
     },
     {
      "at": 655,
      "cmd": 33,
      "text_jp": "チイコ\n「人生あきらめが\nかんじんですわ　お兄様{wait}",
-     "text_kr": ""
+     "text_kr": "치이코\n「인생은 체념이\n중요한 거예요　오라버니{wait}"
     },
     {
      "at": 695,
      "cmd": 33,
      "text_jp": "烈\n「あの…\nところでチイコちゃん{wait}\nボクに用ってなんなのかな？{wait}",
-     "text_kr": ""
+     "text_kr": "레츠\n「저기…\n그런데 치이코{wait}\n나한테 볼일이 뭐야？{wait}"
     },
     {
      "at": 741,
      "cmd": 33,
      "text_jp": "チイコ\n「そうでしたわ！{wait}\nきょうはこれを見せたくって\nおよびいたしましたのよ{wait}",
-     "text_kr": ""
+     "text_kr": "치이코\n「그랬죠！{wait}\n오늘은 이걸 보여드리고 싶어서\n불러 드린 거예요{wait}"
     },
     {
      "at": 801,
      "cmd": 33,
      "text_jp": "J\n「これ…　って\nこの大きな機械のこと？{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "제이\n「이거…　라니\n이 큰 기계 말이야？{wait}{clear}"
     },
     {
      "at": 832,
      "cmd": 33,
      "text_jp": "藤吉\n「そうでゲス！{wait}\n",
-     "text_kr": ""
+     "text_kr": "토우키치\n「그렇사옵쇼！{wait}\n"
     },
     {
      "at": 854,
      "cmd": 33,
      "text_jp": "このじゃまな機械を\nどうにかしてくれでゲス！{wait}{clear}",
-     "text_kr": ""
+     "text_kr": "이 거추장스러운 기계를\n어떻게 좀 해 주시옵쇼！{wait}{clear}"
     }
    ]
   },
