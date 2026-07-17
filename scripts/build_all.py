@@ -16,14 +16,16 @@
 산출: out/wgp2_kr.smc (통합 ROM), out/wgp2_kr.bps (배포용 차분)
 ※ ROM은 비커밋. 이 스크립트+에셋으로 원본에서 재생성.
 """
-import subprocess, sys, os, zlib, hashlib
+import subprocess, sys, os, zlib, hashlib, shutil
 
 ORIG = "roms/Mini Yonku Let's & Go!! - Power WGP 2 (J) (NP).smc"
 OUT = "out/wgp2_kr.smc"
 MENU = "out/menu_test.smc"
 BPS = "out/wgp2_kr.bps"
 ADV_JSON = "assets/translations/adventure_kr.json"
-FLIPS = os.path.expanduser("~/tools/flips/flips.exe")
+# flips: PATH에 설치돼 있으면 자동 인식, 없으면 로컬 경로 폴백(맥/윈도우 공용).
+# BPS 생성(마지막 단계)에만 쓰이며 os.path.exists 가드로 없으면 건너뜀.
+FLIPS = shutil.which("flips") or os.path.expanduser("~/tools/flips/flips")
 
 def run(cmd):
     print(f"\n$ {' '.join(cmd)}")
