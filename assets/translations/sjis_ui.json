@@ -254,6 +254,13 @@
   "tierC_machines": [
     {
       "bank": "C0",
+      "addr": "EC7C",
+      "jp": "ビートマグナム",
+      "kr": "비트　매그넘",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
       "addr": "EC8B",
       "jp": "バスターソニック",
       "kr": "버스터　소닉",
@@ -363,12 +370,47 @@
       "jp": "ブラックセイバー",
       "kr": "블랙　세이버",
       "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EDA9",
+      "jp": "ビークスパイダー",
+      "kr": "비크　스파이더",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EDBA",
+      "jp": "セイバー６００",
+      "kr": "세이버　６００",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EDC9",
+      "jp": "レディセイバー",
+      "kr": "레이디　세이버",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EDD8",
+      "jp": "マックスブレイカーＺ－２",
+      "kr": "맥스　브레이커Ｚ－２",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EDF1",
+      "jp": "シャドウブレイカーＺ－３",
+      "kr": "섀도우　브레이커Ｚ－３",
+      "mode": "inplace"
     }
   ],
   "tierD_racers": [
     {
       "bank": "C0",
-      "addr": "F4B9",
+      "addr": "F4BA",
       "jp": "せいば　レツ",
       "kr": "세이바　레츠",
       "mode": "inplace"
@@ -644,6 +686,125 @@
       "addr": "F644",
       "jp": "シャリテ",
       "kr": "샤리테",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F64D",
+      "jp": "ラー",
+      "kr": "라",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F652",
+      "jp": "ホルス",
+      "kr": "호루스",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F659",
+      "jp": "アヌビス",
+      "kr": "아누비스",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F662",
+      "jp": "マート",
+      "kr": "마트",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F669",
+      "jp": "ゲフ",
+      "kr": "게프",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F66E",
+      "jp": "おきた　カイ",
+      "kr": "오키타　카이",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F67B",
+      "jp": "じろうまる",
+      "kr": "지로마루",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F686",
+      "jp": "くろさわ",
+      "kr": "쿠로사와",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F68F",
+      "jp": "まこと",
+      "kr": "마코토",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F696",
+      "jp": "てっしん",
+      "kr": "텟신",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F69F",
+      "jp": "ミニ４ファイター",
+      "kr": "미니욘　파이터",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F6B0",
+      "jp": "たまみ",
+      "kr": "타마미",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F6B7",
+      "jp": "ごうき",
+      "kr": "고키",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F6BE",
+      "jp": "タイヤけんきゅういん",
+      "kr": "타이어　연구원",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F6D3",
+      "jp": "モーターけんきゅういん",
+      "kr": "모터　연구원",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F6EA",
+      "jp": "ギヤーけんきゅういん",
+      "kr": "기어　연구원",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F6FF",
+      "jp": "バンパーけんきゅういん",
+      "kr": "범퍼　연구원",
       "mode": "inplace"
     }
   ],
