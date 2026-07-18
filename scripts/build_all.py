@@ -40,18 +40,24 @@ def main():
     run(["scripts/build_title_logo.py", "--write"])                    # 4
     run(["scripts/build_title_credit.py"])                             # 5
     run(["scripts/build_adv.py"])                                      # 6 어드벤처 재삽입(out+base→out)
-    run(["scripts/build_menu.py"])                                     # 7a → menu_test.smc
+    run(["scripts/build_sjis.py"])                                     # 7a SJIS UI 한글화 → menu_test.smc
 
-    # 6b: 메뉴 패치(원본 대비 변경 바이트)를 통합 ROM에 적용(충돌 없음 — 별개 영역)
+    # 6b: SJIS 패치(원본 대비 변경 바이트)를 통합 ROM에 적용.
+    #     충돌 가드: build_sjis가 바꾼 바이트를 이전 단계(어드벤처·그래픽)가 이미 건드렸으면 중단.
     orig = open(ORIG, 'rb').read()
     menu = open(MENU, 'rb').read()
     rom = bytearray(open(OUT, 'rb').read())
-    n = 0
+    n = 0; conflicts = []
     for i in range(len(orig)):
         if orig[i] != menu[i]:
+            if rom[i] != orig[i]:
+                conflicts.append(i)
             rom[i] = menu[i]; n += 1
+    if conflicts:
+        sys.exit(f"SJIS 영역 충돌 {len(conflicts)}B (이전 단계와 겹침): "
+                 f"{', '.join(f'0x{c:06X}' for c in conflicts[:8])}")
     open(OUT, 'wb').write(rom)
-    print(f"\n메뉴 패치 {n}B 통합")
+    print(f"\nSJIS 패치 {n}B 통합 (충돌 0)")
 
     # 7: BPS
     if os.path.exists(FLIPS):

@@ -1,0 +1,715 @@
+{
+  "_note": "System ② 비압축 SJIS UI 한글화 코퍼스. build_sjis.py 소비. bank/addr=HiROM, jp=원본 SJIS(참조), kr=한글. mode: inplace(길이<=원본슬롯) / reloc(포인터패치, S2). 메뉴 2줄은 정렬 때문에 build_sjis.py 하드코딩(여기 없음). 표기=glossary §4.",
+  "tierA_categories": [
+    {
+      "bank": "C0",
+      "addr": "EBE8",
+      "jp": "マシン",
+      "kr": "머신",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EBEF",
+      "jp": "モーター",
+      "kr": "모터",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EBF8",
+      "jp": "ギヤー",
+      "kr": "기어",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EBFF",
+      "jp": "タイヤ",
+      "kr": "타이어",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EC06",
+      "jp": "バッテリー",
+      "kr": "배터리",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EC11",
+      "jp": "バンパー",
+      "kr": "범퍼",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EC1A",
+      "jp": "オプション",
+      "kr": "옵션",
+      "mode": "inplace"
+    }
+  ],
+  "tierA_ui": [
+    {
+      "bank": "C1",
+      "addr": "C595",
+      "jp": "Ｘで　メニュー",
+      "kr": "Ｘ로　메뉴",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C1",
+      "addr": "C5A4",
+      "jp": "Ａで　けってい",
+      "kr": "Ａ로　결정",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C1",
+      "addr": "C5B3",
+      "jp": "Ｂで　もどる",
+      "kr": "Ｂ로　뒤로",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C1",
+      "addr": "C5C0",
+      "jp": "はい",
+      "kr": "예",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C1",
+      "addr": "C5C5",
+      "jp": "いいえ",
+      "kr": "아니오",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C1",
+      "addr": "C5CC",
+      "jp": "やめる",
+      "kr": "취소",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C1",
+      "addr": "C5D3",
+      "jp": "セーブ",
+      "kr": "저장",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C1",
+      "addr": "C5DA",
+      "jp": "ロード",
+      "kr": "로드",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C1",
+      "addr": "C5E1",
+      "jp": "いまのセッティングを　セーブしますか？",
+      "kr": "지금　세팅을　저장할까요？",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C1",
+      "addr": "C608",
+      "jp": "すでに　データが　あります",
+      "kr": "이미　데이터가　있습니다",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C1",
+      "addr": "C623",
+      "jp": "けして　セーブしますか？",
+      "kr": "지워서　저장할까요？",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C1",
+      "addr": "C63C",
+      "jp": "セーブしました",
+      "kr": "저장했습니다",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C1",
+      "addr": "C64B",
+      "jp": "セッティングデータを　ロードしますか？",
+      "kr": "세팅　데이터를　불러올까요？",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C1",
+      "addr": "C672",
+      "jp": "いまのセッティングは　きえます",
+      "kr": "지금　세팅은　지워집니다",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C1",
+      "addr": "C691",
+      "jp": "ロードしますか？",
+      "kr": "불러올까요？",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C1",
+      "addr": "C6A2",
+      "jp": "ロードしました",
+      "kr": "불러왔습니다",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C1",
+      "addr": "C6B1",
+      "jp": "セッティングデータが　ありません！",
+      "kr": "세팅　데이터가　없습니다！",
+      "mode": "inplace"
+    }
+  ],
+  "tierB_planets": [
+    {
+      "bank": "C0",
+      "addr": "EB77",
+      "jp": "マーキュリー",
+      "kr": "머큐리",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EB84",
+      "jp": "ヴィーナス",
+      "kr": "비너스",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EB8F",
+      "jp": "アース",
+      "kr": "어스",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EB96",
+      "jp": "マーズ",
+      "kr": "마즈",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EB9D",
+      "jp": "ジュピター",
+      "kr": "주피터",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EBA8",
+      "jp": "サタン",
+      "kr": "새턴",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EBAF",
+      "jp": "ウラヌス",
+      "kr": "우라누스",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EBB8",
+      "jp": "ネプチューン",
+      "kr": "넵튠",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EBC5",
+      "jp": "プルート",
+      "kr": "플루토",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EBCE",
+      "jp": "サン",
+      "kr": "선",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EBD3",
+      "jp": "ノヴァ",
+      "kr": "노바",
+      "mode": "inplace"
+    }
+  ],
+  "tierC_machines": [
+    {
+      "bank": "C0",
+      "addr": "EC8B",
+      "jp": "バスターソニック",
+      "kr": "버스터　소닉",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EC9C",
+      "jp": "ネオトライダガーＺＭＣ",
+      "kr": "네오　트라이대거ＺＭＣ",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "ECB3",
+      "jp": "スピンバイパー",
+      "kr": "스핀　바이퍼",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "ECC2",
+      "jp": "プロトセイバーＥＶＯ．",
+      "kr": "프로토　세이버ＥＶＯ．",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "ECD9",
+      "jp": "バックブレーダー",
+      "kr": "벅블레이더",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "ECEA",
+      "jp": "ベルクカイザーＲ",
+      "kr": "베르크카이저Ｒ",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "ECFB",
+      "jp": "ベルクカイザーＬ",
+      "kr": "베르크카이저Ｌ",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "ED0C",
+      "jp": "オメガ",
+      "kr": "오메가",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "ED13",
+      "jp": "ＢＳゼブラ",
+      "kr": "ＢＳ제브라",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "ED1E",
+      "jp": "ディオスパーダ",
+      "kr": "디오　스파다",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "ED2D",
+      "jp": "シャイニングスコーピオン",
+      "kr": "샤이닝　스콜피온",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "ED46",
+      "jp": "シャイニングドラゴン",
+      "kr": "샤이닝　드래곤",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "ED5B",
+      "jp": "ガンブラスターＸＴＯ",
+      "kr": "건　블래스터ＸＴＯ",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "ED70",
+      "jp": "レヴァンクルーズ",
+      "kr": "레방크루즈",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "ED81",
+      "jp": "ピラミタルスフィンクス",
+      "kr": "피라미탈　스핑크스",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "ED98",
+      "jp": "ブラックセイバー",
+      "kr": "블랙　세이버",
+      "mode": "inplace"
+    }
+  ],
+  "tierD_racers": [
+    {
+      "bank": "C0",
+      "addr": "F4B9",
+      "jp": "せいば　レツ",
+      "kr": "세이바　레츠",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F4C7",
+      "jp": "せいば　ゴー",
+      "kr": "세이바　고",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F4D4",
+      "jp": "たかば　リョウ",
+      "kr": "타카바　료",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F4E3",
+      "jp": "みくに　とうきち",
+      "kr": "미쿠니　토우키치",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F4F7",
+      "jp": "ブレット",
+      "kr": "브렛",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F500",
+      "jp": "エッジ",
+      "kr": "엣지",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F507",
+      "jp": "ジョー",
+      "kr": "조",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F50E",
+      "jp": "ミラー",
+      "kr": "밀러",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F515",
+      "jp": "ハマー・Ｄ",
+      "kr": "해머・Ｄ",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F520",
+      "jp": "ミハエル",
+      "kr": "미하엘",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F529",
+      "jp": "シュミット",
+      "kr": "슈미트",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F534",
+      "jp": "エーリッヒ",
+      "kr": "에리히",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F53F",
+      "jp": "アドルフ",
+      "kr": "아돌프",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F548",
+      "jp": "ヘスラー",
+      "kr": "헤슬러",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F551",
+      "jp": "ユーリ",
+      "kr": "유리",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F57C",
+      "jp": "ジュリアナ",
+      "kr": "쥴리아나",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F587",
+      "jp": "サリマ",
+      "kr": "사리마",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F58E",
+      "jp": "ヴィッキー",
+      "kr": "비키",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F599",
+      "jp": "ミシェル",
+      "kr": "미셸",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F5A2",
+      "jp": "クレモンティーヌ",
+      "kr": "크레몬티누",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F5B3",
+      "jp": "トン",
+      "kr": "톤",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F5B8",
+      "jp": "ホワァン",
+      "kr": "호왕",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F5C1",
+      "jp": "ナン",
+      "kr": "난",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F5C6",
+      "jp": "ポン",
+      "kr": "폰",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F5CB",
+      "jp": "リーチ",
+      "kr": "리치",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F5D2",
+      "jp": "カルロ",
+      "kr": "카를로",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F5D9",
+      "jp": "ルキノ",
+      "kr": "루키노",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F5E0",
+      "jp": "ジュリオ",
+      "kr": "줄리오",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F5E9",
+      "jp": "リオーネ",
+      "kr": "리오네",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F5F2",
+      "jp": "ゾーラ",
+      "kr": "졸라",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F5F9",
+      "jp": "リオン",
+      "kr": "리온",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F600",
+      "jp": "ティーグル",
+      "kr": "티글",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F60B",
+      "jp": "ランクス",
+      "kr": "랑크스",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F614",
+      "jp": "シアン",
+      "kr": "시안",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F61B",
+      "jp": "ウルス",
+      "kr": "우루스",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F622",
+      "jp": "ディアナ",
+      "kr": "디아나",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F62B",
+      "jp": "アーム",
+      "kr": "아무",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F632",
+      "jp": "クラージュ",
+      "kr": "쿠라주",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F63D",
+      "jp": "レゾン",
+      "kr": "르존",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F644",
+      "jp": "シャリテ",
+      "kr": "샤리테",
+      "mode": "inplace"
+    }
+  ],
+  "tierE_teams": [
+    {
+      "bank": "C0",
+      "addr": "F29C",
+      "jp": "ＮＡ　アストロレンジャーズ",
+      "kr": "ＮＡ　아스트로　레인저스",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F2B7",
+      "jp": "アイゼンヴォルフ",
+      "kr": "아이젠　볼프",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F2C8",
+      "jp": "ＣＣＰ　シルバーフォックス",
+      "kr": "ＣＣＰ　실버　폭스",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F2E3",
+      "jp": "サバンナソルジャーズ",
+      "kr": "사반나　솔져스",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F2F8",
+      "jp": "しょうよんくそうこうだん　ごんき",
+      "kr": "소사구주행단　공키",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F319",
+      "jp": "ロッソストラーダ",
+      "kr": "롯소　스트라다",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F32A",
+      "jp": "ＸＴＯ　リボルバーズ",
+      "kr": "ＸＴＯ　리볼버즈",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F33F",
+      "jp": "レ　ヴァンクール",
+      "kr": "레　방쿠르",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "F350",
+      "jp": "エンシェントフォース",
+      "kr": "엔션트　포스",
+      "mode": "inplace"
+    }
+  ]
+}
