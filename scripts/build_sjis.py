@@ -39,13 +39,18 @@ MENUS = [
     (0xC0, 0x71E2, "ほぞん　　　もどる　　　うつす　　　けす",   ["저장", "뒤로", "복사", "삭제"]),
 ]
 
+GLYPH_SHIFT_DOWN = 1   # 게임 $D9 폰트는 바닥정렬(행7). 8pt 한글(행0~6)을 1px 내려 바닥정렬.
+                       #  (값1=무손실 바닥정렬. 2는 최하단 1px 획이 잘려 사용자 실측상 과함)
+
 def kr_glyph_2bpp(binf, gmap, ch):
     if ch not in gmap:
         raise KeyError(f"폰트에 음절 없음: {ch!r}")
     g = binf[gmap[ch]*8: gmap[ch]*8+8]
     t = bytearray(16)
     for r in range(8):
-        t[2*r] = g[r]   # plane0 = 잉크
+        src = r - GLYPH_SHIFT_DOWN
+        if 0 <= src < 8:
+            t[2*r] = g[src]   # plane0 = 잉크 (아래로 shift)
     return bytes(t)
 
 def parse_menu_columns(orig):
@@ -153,6 +158,34 @@ def build():
     L = fo_c0(0x6F93)
     assert rom[L:L+5] == bytes([0xA9,0x7F,0x00,0x85,0x07]), rom[L:L+5].hex()
     rom[L:L+5] = bytes([0x22,0x40,0x99,0xC1, 0xEA])   # JSL $C19940 ; NOP
+
+    # 4b) 개러지·선택화면 폰트로더 훅 (트레이스 확정: 폰트를 타일256에 올리는 로더 2곳).
+    #  이 로더들은 $C0:6F43가 아니라 자체 코드라 한글이 안 실림 → 화면전환 시 한글 800 파괴 후 미복원.
+    #  훅: 폰트 DMA 트리거 `STA $420B`(8F 0B 42 00)를 JSL $C19980로 대체 → 루틴이 폰트DMA를
+    #  실행하고 이어서 한글DMA(VRAM 800)까지 발사 후 RTL. tile256 로더만 대상이라 그래픽 화면 무손상.
+    KHOOK2 = 0x9980
+    khook2 = bytes([
+        0x8F,0x0B,0x42,0x00,                      # STA $420B (원래 폰트 DMA 실행, A=01 8bit)
+        0x48,                                     # PHA
+        0xC2,0x20,                                # REP #$20
+        0xA9,vram_word&0xFF,(vram_word>>8)&0xFF, 0x8F,0x16,0x21,0x00,  # LDA #vram; STA $2116
+        0xE2,0x20, 0xA9,0x80, 0x8F,0x15,0x21,0x00,
+        0xA9,0xC1, 0x8F,0x04,0x43,0x00,
+        0xC2,0x20, 0xA9,0x01,0x18, 0x8F,0x00,0x43,0x00,
+        0xA9,src&0xFF,(src>>8)&0xFF, 0x8F,0x02,0x43,0x00,
+        0xA9,size&0xFF,(size>>8)&0xFF, 0x8F,0x05,0x43,0x00,
+        0xE2,0x20, 0xA9,0x01, 0x8F,0x0B,0x42,0x00,  # 한글 DMA 트리거
+        0x68,                                     # PLA
+        0x6B,                                     # RTL
+    ])
+    assert KHOOK2 + len(khook2) <= KBANK, "khook2가 타일뱅크 침범"
+    rom[fo_c1(KHOOK2):fo_c1(KHOOK2)+len(khook2)] = khook2
+    FONT_LOADERS = [0x1EFB, 0x307F]   # STA $420B 폰트트리거(타일256), 트레이스 확정
+    jsl = bytes([0x22, KHOOK2&0xFF, (KHOOK2>>8)&0xFF, 0xC1])
+    for t in FONT_LOADERS:
+        o = fo_c1(t)
+        assert rom[o:o+4] == bytes([0x8F,0x0B,0x42,0x00]), f"트리거 ${t:04X} 불일치 {rom[o:o+4].hex()}"
+        rom[o:o+4] = jsl
 
     # 5) 변환표: 행-오프셋[0x85] → 새 블록, 블록[i] = 0xFE00|i
     roff = TBL + (KLEAD & 0x7F) * 2

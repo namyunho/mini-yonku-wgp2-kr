@@ -5,12 +5,14 @@
 local OUT = "/Users/namyunho/Developer/mini-yonku-wgp2-kr/tmp/trace/garage_vram.txt"
 local rows = {}
 local injectRan = 0
+local injectRan2 = 0
 local seen = {}   -- 중복 억제(같은 tile범위+PC)
 
 local function flush()
   local f = io.open(OUT, "w")
   if not f then return end
-  f:write("한글인젝트 $C1:9940 exec = " .. injectRan .. "\n")
+  f:write("한글인젝트 $C1:9940(메뉴) exec = " .. injectRan .. "\n")
+  f:write("한글인젝트 $C1:9980(개러지/선택) exec = " .. injectRan2 .. "\n")
   f:write("VRAM 타일 700~1100 영역 DMA 기록:\n")
   for _, s in ipairs(rows) do f:write(s .. "\n") end
   f:close()
@@ -20,6 +22,10 @@ end
 emu.addMemoryCallback(function()
   injectRan = injectRan + 1; flush()
 end, emu.callbackType.exec, 0xC19940, 0xC19940, emu.cpuType.snes, emu.memType.snesMemory)
+
+emu.addMemoryCallback(function()
+  injectRan2 = injectRan2 + 1; flush()
+end, emu.callbackType.exec, 0xC19980, 0xC19980, emu.cpuType.snes, emu.memType.snesMemory)
 
 -- DMA 트리거($420B) → VRAM 대상 채널 중 타일 700~1100 겹치면 로깅
 emu.addMemoryCallback(function(addr, value)
@@ -38,7 +44,9 @@ emu.addMemoryCallback(function(addr, value)
         if size == 0 then size = 65536 end
         local vt = vmadd // 8
         local endt = vt + size // 16
-        if endt >= 700 and vt <= 1100 then
+        -- 개러지 폰트/한글 배치 전모: 타일 0~1100 범위의 모든 VRAM DMA 로깅
+        -- (src=$C1:9A00 = 내 한글뱅크. 이게 안 뜨면 로더 커버리지 문제 = 개러지에 한글 미로드)
+        if vt <= 1100 then
           local key = string.format("%d-%d@%02X%04X", vt, endt, pb, pc)
           if not seen[key] then
             seen[key] = true
@@ -52,4 +60,15 @@ emu.addMemoryCallback(function(addr, value)
   end
 end, emu.callbackType.write, 0x420B, 0x420B, emu.cpuType.snes, emu.memType.snesMemory)
 
-emu.displayMessage("trace", "garage VRAM trace armed")
+-- 자동 스크린샷: 90프레임마다 현재 화면을 PNG로 저장(에뮬 프레임버퍼, macOS 권한 불필요)
+local SHOT = "/Users/namyunho/Developer/mini-yonku-wgp2-kr/tmp/trace/shot.png"
+local fc = 0
+emu.addEventCallback(function()
+  fc = fc + 1
+  if fc % 90 == 0 then
+    local png = emu.takeScreenshot()
+    if png then local f = io.open(SHOT, "wb"); if f then f:write(png); f:close() end end
+  end
+end, emu.eventType.endFrame)
+
+emu.displayMessage("trace", "garage VRAM trace armed + auto-shot")
