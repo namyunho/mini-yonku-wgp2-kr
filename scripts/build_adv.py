@@ -152,17 +152,16 @@ def main():
                 skipped.append((sid, 'walk desync'))
                 continue
 
-        # ★ cmd 0x20 over-read 씬 가드(치명 버그 수정 2026-07-19):
-        #  cmd 0x20의 op이 버퍼를 넘으면(end>len)은 "단순 스킵"이 아니라 **메뉴 컨테이너**
-        #  (op 상위바이트 0x02/0x31 = 플래그)다. 추출기가 512B 스킵으로 오해→over-read→쓰레기 재구성.
-        #  앞 텍스트런만 번역해도 씬 길이가 바뀌어 **컨테이너 위치가 밀려 선택메뉴가 안 뜬다**(사용자 실측).
-        #  → 해당 씬은 **통째 원본 유지**(바이트 조작 0)로 메뉴 보호. 플레이 가능성 우선.
-        #  근본 한글화는 cmd0x20 컨테이너 포맷 RE 후 후속(후속 과제).
-        overread = any(r['cmd'] == 0x20 and r['at'] in kr and
-                       r['at'] + 1 + (buf[r['at'] + 1] | (buf[r['at'] + 2] << 8)) > len(buf)
-                       for r in runs)
-        if overread:
-            skipped.append((sid, 'over-read cmd0x20 컨테이너 → 원본유지(메뉴 보호)'))
+        # ★ cmd 0x20 씬 가드(치명 버그 수정 2026-07-19, 인게임 리셋/행 규명):
+        #  cmd 0x20은 op 크기와 무관하게 **단순 텍스트런이 아니라 특수 명령**이다 — 아이템 지급,
+        #  레벨업 표시(씬 0x69 "레벨이 올랐다" 6런), 메뉴 컨테이너(op 상위 0x02/0x31 플래그, 내부에
+        #  0x21 임베드) 등. build_adv가 이를 `newop=len(body)+2`로 재작성하면 VM 구조가 깨져
+        #  **씬 종료 후 리셋(레벨업/튜토리얼/코스 후) 또는 선택메뉴 미표시·행**(사용자 실측 다수).
+        #  앞 텍스트런만 번역해도 씬 길이가 밀려 위치 의존 컨테이너가 깨진다.
+        #  → **cmd 0x20 런을 가진 씬은 통째 원본 유지**(바이트 조작 0). 플레이 가능성 우선.
+        #  근본 한글화는 cmd 0x20 명령 포맷 역공학 후 후속 과제.
+        if any(r['cmd'] == 0x20 and r['at'] in kr for r in runs):
+            skipped.append((sid, 'cmd0x20 특수명령 씬 → 원본유지(리셋/행 방지)'))
             continue
 
         out = bytearray(); prev = 0; cnt = 0
