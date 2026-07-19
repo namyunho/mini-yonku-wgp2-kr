@@ -143,14 +143,12 @@ def main():
         orig_comp = endp - foff(bank, addr)
         runs, stats, _ = walk(buf)
         desync_rebuilt = False
+        # ★ desync 씬 원본유지(안전, 2026-07-19): walk가 desync하는 씬(0xA8·0xB2 등)은 워커가
+        #  구조를 못 잡은 것 → 앵커 기반 재빌드는 VM 유효성 미보장(round-trip 통과해도 실기 위험).
+        #  전수 안전화를 위해 **통째 원본 유지**(번역 스킵). 근본 한글화는 씬 구조 RE 후 후속.
         if stats['desync']:
-            if kr:   # desync 씬: 번역자가 앵커링으로 제공한 런 위치(kr의 at)로 재빌드.
-                # 텍스트런만 교체하고 프레이밍(데이터프리픽스·아이템지급·초상화)은 그대로 복사 → VM 로직 보존.
-                runs = [{'cmd': buf[at], 'at': at} for at in sorted(kr)]
-                desync_rebuilt = True
-            else:
-                skipped.append((sid, 'walk desync'))
-                continue
+            skipped.append((sid, 'desync 씬 → 원본유지(안전)'))
+            continue
 
         # ★ cmd 0x20 씬 가드(치명 버그 수정 2026-07-19, 인게임 리셋/행 규명):
         #  cmd 0x20은 op 크기와 무관하게 **단순 텍스트런이 아니라 특수 명령**이다 — 아이템 지급,
