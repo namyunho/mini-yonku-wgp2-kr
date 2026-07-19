@@ -152,6 +152,19 @@ def main():
                 skipped.append((sid, 'walk desync'))
                 continue
 
+        # ★ cmd 0x20 over-read 씬 가드(치명 버그 수정 2026-07-19):
+        #  cmd 0x20의 op이 버퍼를 넘으면(end>len)은 "단순 스킵"이 아니라 **메뉴 컨테이너**
+        #  (op 상위바이트 0x02/0x31 = 플래그)다. 추출기가 512B 스킵으로 오해→over-read→쓰레기 재구성.
+        #  앞 텍스트런만 번역해도 씬 길이가 바뀌어 **컨테이너 위치가 밀려 선택메뉴가 안 뜬다**(사용자 실측).
+        #  → 해당 씬은 **통째 원본 유지**(바이트 조작 0)로 메뉴 보호. 플레이 가능성 우선.
+        #  근본 한글화는 cmd0x20 컨테이너 포맷 RE 후 후속(후속 과제).
+        overread = any(r['cmd'] == 0x20 and r['at'] in kr and
+                       r['at'] + 1 + (buf[r['at'] + 1] | (buf[r['at'] + 2] << 8)) > len(buf)
+                       for r in runs)
+        if overread:
+            skipped.append((sid, 'over-read cmd0x20 컨테이너 → 원본유지(메뉴 보호)'))
+            continue
+
         out = bytearray(); prev = 0; cnt = 0
         expect = []          # (런 순번, 기대 text_kr) — 치환하면 오프셋이 밀리므로 **순번**으로 대조
         for ri, r in enumerate(runs):
