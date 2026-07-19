@@ -134,10 +134,19 @@ def main():
     grow = 0
     skipped = []
 
+    # ★ 인게임 실기 QA로 확정된 VM-붕괴 씬(원본유지). cmd0x20/desync 가드가 못 잡는 부류
+    #  (조건분기 등 런타임 제어흐름이 텍스트 밀림으로 깨져 프리즈). 정적 탐지 불가(조건분기 씬 86개 중
+    #  0xB0만 깨지는데 구별 신호 없음) → 세이브+씬트레이서로 반응적 확정 후 여기 추가.
+    #  근본 재번역은 cmd 0x54 스킵 메커니즘 RE 후 후속(docs/13).
+    FREEZE_REVERT = {0xB0}   # 카이×라 승부 후 카이 대화 프리즈(2026-07-19 실기 확정)
+
     for sid in range(N_SCENES):
         kr = kr_scenes.get(sid)
         if not kr:
             continue                                  # 번역 없는 씬 = 원본 유지
+        if sid in FREEZE_REVERT:
+            skipped.append((sid, 'VM-붕괴 확정 씬 → 원본유지(프리즈 방지)'))
+            continue
         bank, addr = scene_src(base, sid)                    # ★ 원본 표에서
         buf, olen, endp = decompress_scene(base, bank, addr, D)  # ★ 원본 씬 스크립트
         orig_comp = endp - foff(bank, addr)
