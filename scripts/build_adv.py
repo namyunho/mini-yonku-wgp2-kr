@@ -48,6 +48,35 @@ def enc_glyph(g):
     return bytes([c]) if c < 0x100 else bytes([(c >> 8) & 0xFF, c & 0xFF])
 
 
+# 위치보존 패딩 글리프 = 반각 공백(글리프 idx 0 → 바이트 0x10, 1B, 블랭크).
+# 전각(idx 1 → 0x11)보다 펜 전진이 작아 말미 자동 줄바꿈($4177) 위험이 낮다.
+# docs/14: 한글이 원본보다 짧은 cmd0x21 런은 말미에 이 글리프로 원본 바이트길이까지 채워
+#          런 총길이를 원본과 정확히 일치시킨다 → 디컴프 스크립트 길이 불변 → VM offset 보존.
+PAD_CHAR = ' '   # 반각 공백(글리프 idx0 → 1바이트 0x10, 블랭크). 위치보존 패딩 문자.
+
+
+def pad_kr(kr, pad):
+    """위치보존 패딩: kr 문자열 말미 종료 제어코드 '앞'에 공백 pad개 삽입.
+    {wait}{clear}로 끝나면 {clear} 앞에 넣어 → 화면에 찍힌 즉시 지워져 비표시 +
+    {clear} 후 펜 전진이 없어 다음 메시지 '이름칸이 안 밀린다'.
+    (2026-07-20 IDA로 VM 명령 스트림이 바이트 동일임을 확인 → 밀림은 패딩-후-{clear}
+     표시 아티팩트로 확정. cmd0x54/0x56 조건분기는 원본과 동일 동작.)
+    마커 없이 글리프로 끝나는 런은 말미에 덧붙임(트레일링 공백, 좌측정렬이라 비표시)."""
+    if pad <= 0:
+        return kr
+    if kr.endswith('}'):
+        i = kr.rfind('{')                 # 마지막 마커({wait}/{clear}) 앞
+        return kr[:i] + PAD_CHAR * pad + kr[i:]
+    return kr + PAD_CHAR * pad
+
+
+# 위치보존(패딩) 적용 씬 집합. None = 전 씬 적용(전 씬 확대 단계).
+# 2026-07-20: 0xB0 프로토타입 실기 검증 완료(프리즈 소멸·이름칸 밀림 해소) → **전 씬 확대(None)**.
+# 효과: 위치 밀림發 크래시(예 0xC7 토우키치 씬) 원천 차단. 대가: 긴 런 보유 씬은 원본유지(일본어)로
+# 되돌아감 → Codex가 retranslate_longer.json의 443 긴 런을 축약하면 재빌드 시 번역 복구.
+POSPRES = None
+
+
 _CTRL = re.compile(r'c([0-9A-F])(?::([0-9A-F]{2}))?\Z')
 
 
@@ -138,7 +167,12 @@ def main():
     #  (조건분기 등 런타임 제어흐름이 텍스트 밀림으로 깨져 프리즈). 정적 탐지 불가(조건분기 씬 86개 중
     #  0xB0만 깨지는데 구별 신호 없음) → 세이브+씬트레이서로 반응적 확정 후 여기 추가.
     #  근본 재번역은 cmd 0x54 스킵 메커니즘 RE 후 후속(docs/13).
-    FREEZE_REVERT = {0xB0}   # 카이×라 승부 후 카이 대화 프리즈(2026-07-19 실기 확정)
+    # 0xB0(카이×라 승부 후 프리즈, 2026-07-19 실기 확정)은 위치보존(POSPRES)으로 이관 —
+    # 런 바이트길이를 원본과 일치시키면 프리즈 원인(위치 밀림)이 사라진다는 가설을 실기로 검증 중.
+    # 위치보존이 실기에서 실패하면 여기로 되돌린다.
+    FREEZE_REVERT = set()
+
+    longer_runs = []   # 긴 런(패딩 불가) 축약 재번역 대상 → out/retranslate_longer.json
 
     for sid in range(N_SCENES):
         kr = kr_scenes.get(sid)
@@ -159,39 +193,69 @@ def main():
             skipped.append((sid, 'desync 씬 → 원본유지(안전)'))
             continue
 
-        # ★ cmd 0x20 씬 가드(치명 버그 수정 2026-07-19, 인게임 리셋/행 규명):
-        #  cmd 0x20은 op 크기와 무관하게 **단순 텍스트런이 아니라 특수 명령**이다 — 아이템 지급,
-        #  레벨업 표시(씬 0x69 "레벨이 올랐다" 6런), 메뉴 컨테이너(op 상위 0x02/0x31 플래그, 내부에
-        #  0x21 임베드) 등. build_adv가 이를 `newop=len(body)+2`로 재작성하면 VM 구조가 깨져
-        #  **씬 종료 후 리셋(레벨업/튜토리얼/코스 후) 또는 선택메뉴 미표시·행**(사용자 실측 다수).
-        #  앞 텍스트런만 번역해도 씬 길이가 밀려 위치 의존 컨테이너가 깨진다.
-        #  → **cmd 0x20 런을 가진 씬은 통째 원본 유지**(바이트 조작 0). 플레이 가능성 우선.
-        #  근본 한글화는 cmd 0x20 명령 포맷 역공학 후 후속 과제.
-        if any(r['cmd'] == 0x20 and r['at'] in kr for r in runs):
-            skipped.append((sid, 'cmd0x20 특수명령 씬 → 원본유지(리셋/행 방지)'))
-            continue
+        # ★ cmd 0x20 컨테이너(IDA 역공학 2026-07-20, adv_scene.walk 수정): operand는 재작성하지
+        #  않고(재작성 시 커서가 컨테이너 중간 착지→리셋) 워크가 관통해 중첩 런을 노출한다.
+        #  현재는 cmd0x20 런·중첩 런을 **원본 바이트 유지**(아직 미번역, 재추출 후 후속)하고,
+        #  같은 씬의 pre-cmd0x20 cmd0x21 런만 번역+패딩 → 씬 전체 위치보존(크래시 없음)+부분 한글화.
+        #  → 씬 통째 revert 폐기. 근본 선택지/프롬프트 한글화는 재추출→번역 후.
 
-        out = bytearray(); prev = 0; cnt = 0
+        # ★ 위치보존(docs/14): 이 씬을 패딩 경로로 처리할지 여부.
+        pospres = (POSPRES is None) or (sid in POSPRES)
+
+        # 긴 런(한글 인코딩 > 원본 텍스트 바이트) 탐지 → 리포트만(retranslate_longer.json, Codex 축약 SSOT).
+        #  위치보존은 **런 단위 원본유지**: 긴 런은 그 런만 원본 바이트(일본어, 정확히 원본 길이)로 두고
+        #  나머지 런은 번역+패딩 → 씬 전체 위치보존 유지(크래시 없음) + 긴 런만 일본어. 씬 통째 revert 안 함.
+        over = set()
+        for r in runs:
+            if r['cmd'] != 0x21 or r['at'] not in kr:
+                continue
+            _, e2 = read_text_run(buf, r['at'] + 1)
+            orig_len = e2 - r['at'] - 2            # cmd·종료자 0x00 제외한 원본 텍스트 바이트
+            klen = len(encode_text(kr[r['at']], ch2idx,
+                                   'scene 0x%02X @0x%04X' % (sid, r['at'])))
+            if klen > orig_len:
+                over.add(r['at'])
+                longer_runs.append({'scene': sid, 'at': r['at'], 'orig_len': orig_len,
+                                    'kr_len': klen, 'over': klen - orig_len,
+                                    'text_kr': kr[r['at']]})
+
+        out = bytearray(); prev = 0; cnt = 0; jp = 0
         expect = []          # (런 순번, 기대 text_kr) — 치환하면 오프셋이 밀리므로 **순번**으로 대조
         for ri, r in enumerate(runs):
             at = r['at']
-            if at not in kr:
+            # cmd0x20(컨테이너)·미번역 런·중첩 런은 원본 바이트 유지(buf 복사) → 위치보존.
+            #  cmd0x20 번역은 재추출 후 후속. cmd0x21 번역런만 아래에서 치환.
+            if at not in kr or r['cmd'] != 0x21:
                 continue
-            expect.append((ri, kr[at]))
-            if r['cmd'] == 0x21:
-                _, end = read_text_run(buf, at + 1)
-                out += buf[prev:at + 1]
-                out += encode_text(kr[at], ch2idx, 'scene 0x%02X @0x%04X' % (sid, at)) + b'\x00'
-            else:                                     # cmd 0x20: 2B 오퍼랜드 = 스킵량
-                op = buf[at + 1] | (buf[at + 2] << 8)
-                end = at + 1 + op
-                body = encode_text(kr[at], ch2idx, 'scene 0x%02X @0x%04X' % (sid, at)) + b'\x00'
-                newop = len(body) + 2                 # 커서 = p+1+op ⇒ op = 2 + 본문
-                out += buf[prev:at + 1]
-                out += bytes([newop & 0xFF, (newop >> 8) & 0xFF]) + body
+            _, end = read_text_run(buf, at + 1)
+            if pospres and at in over:
+                # 긴 런 → 이 런만 원본 바이트 유지(일본어, 정확히 원본 길이) → 위치보존.
+                # Codex 축약(retranslate_longer.json) 후 재빌드하면 번역 복구. 렌더검증 제외(원본).
+                out += buf[prev:end]                   # cmd + 원본 텍스트 + 0x00 그대로
+                jp += 1; prev = end
+                continue
+            enc = encode_text(kr[at], ch2idx, 'scene 0x%02X @0x%04X' % (sid, at))
+            out += buf[prev:at + 1]
+            if pospres:
+                # 위치보존: 원본 텍스트 바이트길이까지 공백으로 패딩(런 총길이 = 원본 일치).
+                # 패딩은 말미 종료 제어코드 '앞'에 삽입(pad_kr) → 표시 비침·이름칸 밀림 방지.
+                pad = (end - at - 2) - len(enc)
+                padded = pad_kr(kr[at], pad)
+                out += encode_text(padded, ch2idx,
+                                   'scene 0x%02X @0x%04X pad' % (sid, at)) + b'\x00'
+                expect.append((ri, padded))
+            else:
+                out += enc + b'\x00'
+                expect.append((ri, kr[at]))
             prev = end; cnt += 1
         out += buf[prev:]
         script = bytes(out)
+
+        # 번역된 런이 하나도 없으면(모든 kr 런이 긴 런→원본유지) 스크립트가 원본과 동일 → 재배치 불필요.
+        if cnt == 0:
+            if jp:
+                skipped.append((sid, '전 런이 긴 런 → 원본유지(축약 대상)'))
+            continue
 
         comp = compress_scene(script, dic)
         nb, na = al.alloc(len(comp))
@@ -231,12 +295,24 @@ def main():
     open(a.out, 'wb').write(rom)
     used, cap = al.report()
 
+    # 긴 런(축약 재번역 대상) 리포트 — Codex 축약 배치의 입력 SSOT.
+    longer_runs.sort(key=lambda x: (-x['over'], x['scene'], x['at']))
+    n_scenes_over = len({x['scene'] for x in longer_runs})
+    open('out/retranslate_longer.json', 'w', encoding='utf-8').write(
+        json.dumps({'count': len(longer_runs), 'scenes': n_scenes_over,
+                    'note': '한글 인코딩이 원본 텍스트 바이트를 초과하는 cmd0x21 런. '
+                            '의미 보존하며 원본 orig_len 바이트 이하로 축약 재번역 대상. '
+                            'over = 초과 바이트(≥이만큼 줄여야 위치보존 패딩 가능).',
+                    'runs': longer_runs}, ensure_ascii=False, indent=1))
+
     print("=== 어드벤처 재삽입 ===")
     print("  번역 반영 씬 %d / 메시지 %d" % (n_scene, n_msg))
     print("  재배치 사용 %d B / 풀 %d B (%.1f%%)" % (used, cap, 100 * used / cap))
     print("  압축 증가분 합계 %+d B" % grow)
     print("  역검증 round-trip : %d / %d" % (ok_rt, n_scene))
     print("  역검증 렌더일치   : %d / %d" % (ok_render, n_scene))
+    print("  긴 런(축약 대상)  : %d런 / %d씬 → out/retranslate_longer.json" % (
+        len(longer_runs), n_scenes_over))
     if skipped:
         print("  ⚠️ 건너뜀 %d: %s" % (len(skipped), skipped[:5]))
     print("  -> %s" % a.out)

@@ -26,8 +26,9 @@ def run_raw(buf, r):
     if r['cmd'] == 0x21:
         _, end = read_text_run(buf, r['at'] + 1)
         return buf[r['at'] + 1:end]
-    op = buf[r['at'] + 1] | (buf[r['at'] + 2] << 8)
-    return buf[r['at'] + 3:r['at'] + 1 + op]
+    # cmd0x20 컨테이너: operand(2B) 뒤 텍스트(커서+2=at+3 부터 0x00까지). walk 관통 방식과 일치.
+    _, end = read_text_run(buf, r['at'] + 3)
+    return buf[r['at'] + 3:end]
 
 
 def main():

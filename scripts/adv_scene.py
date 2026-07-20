@@ -167,16 +167,14 @@ def walk(buf, start=0, limit=None):
             runs.append({'cmd': 0x21, 'at': p, 'text': codes})
             p = p2
         elif cmd == 0x20:
-            # $C0:3FE6: 커서(=p+1, 오퍼랜드 위치) 기준 → 텍스트 = base+커서+2 = p+3,
-            #           새 커서 = 오퍼랜드 + 커서 = p+1+op.
-            op = buf[p + 1] | (buf[p + 2] << 8)
-            if op < 2:                       # 전진 없음 = 정상 스크립트가 아님
-                stats['desync'] += 1
-                return runs, stats, p
-            end = p + 1 + op
-            codes, _ = read_text_run(buf, p + 3, end=end)
+            # cmd0x20 컨테이너($C0:3FE6, IDA 역공학 2026-07-20): operand(2B) 뒤 텍스트런
+            # (커서+2=p+3 부터 0x00까지). 런타임 operand는 스킵값이나 **컨테이너 본문은 정상 중첩
+            # VM 스크립트**(cmd0x21 런들+선택지 {c8:07}…{c8:00}+cmd0x00)라 0x00 뒤부터 계속 워크한다.
+            # (operand만큼 스킵하던 옛 방식은 over-read → 중첩 런을 못 잡아 원본유지밖에 못 했음.)
+            # 근거·경로: docs/13, [[adv-cmd20-overread-bug]] 메모리. 텍스트=p+3, 헤더=cmd+operand 3B.
+            codes, p2 = read_text_run(buf, p + 3)
             runs.append({'cmd': 0x20, 'at': p, 'text': codes})
-            p = end
+            p = p2
         else:
             p = consume(buf, p + 1, cmd)
     return runs, stats, p
