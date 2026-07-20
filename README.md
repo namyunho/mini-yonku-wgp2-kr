@@ -30,11 +30,11 @@ SNES(Super Famicom) 게임 **「ミニ四駆 レッツ&ゴー!! POWER WGP2」**(
 | PoC (한글 화면 표시) | ✅ 통과 (실기 Mesen2 렌더 확인) |
 | **정적 대사 673** 추출·번역·재삽입 | ✅ 완료 (673/673 무손실, `build_patch.py`) |
 | **어드벤처 스토리 엔진** 역공학 | ✅ 완료 (씬 VM·압축 코덱·씬표 `$C6:9C57` — [docs/08](docs/08-adventure-text-engine.md)) |
-| **어드벤처 스토리 번역·재삽입** | ✅ 완료 (**1725/1725 텍스트런**, Claude+Codex 협업, desync 손상 씬은 앵커 재삽입) |
+| **어드벤처 스토리 번역·재삽입** | ✅ 번역 완료 + **위치보존 크래시 원천차단** (런 단위 패딩 → 디컴프 스크립트 길이 불변 → VM offset 보존, [docs/14](docs/14-position-preserving-translation.md)). 긴 런 Codex 3라운드 축약, cmd0x20 메뉴/선택지 한글화 진행 |
 | **그래픽 한글화**(크레딧·타이틀 로고·타이틀 크레딧줄) | ✅ 완료 (LZSS·스프라이트 재삽입, [docs/10](docs/10-graphics-assets.md)) |
 | **시작 저장메뉴**(SJIS) | ✅ 완료 (처음부터/이어하기/복사/삭제, `build_menu.py`) |
 | **SJIS 메뉴/UI 텍스트**(레이서명·팀명·파츠명·버튼 프롬프트·저장다이얼로그) | 🟡 **미번역** (조사 완료·착수 전 — [아래 참조](#남은-작업)) |
-| 인게임 QA·BPS 배포 | ⬜ 미착수 (BPS는 flips 필요) |
+| 인게임 QA·BPS 배포 | 🟡 진행 (메인스토리 **스테이지8까지 실기 크래시 없음** 확인, BPS는 flips 필요) |
 
 > **번역 현황 요약**: 게임의 **두 텍스트 시스템** 중 ①압축 글리프 시스템(어드벤처 스토리 + 정적 대사 673)은 **전량 한글화 완료**. ②비압축 **SJIS 메뉴/UI 시스템**은 시작 저장메뉴만 처리됐고 **레이서·팀·파츠명, 버튼 프롬프트, 저장/불러오기 다이얼로그 등은 아직 일본어**다.
 
@@ -84,6 +84,10 @@ roms/ out/ tmp/   비커밋 (원본 ROM·산출물·임시 파일)
 - [docs/08-adventure-text-engine](docs/08-adventure-text-engine.md) — 어드벤처/스토리 텍스트 엔진(씬 VM·코덱) 완전 해독 + 번역·재삽입
 - [docs/09-textbox-clip-investigation](docs/09-textbox-clip-investigation.md) — 대화창 클리핑·줄폭 조사
 - [docs/10-graphics-assets](docs/10-graphics-assets.md) — 그래픽 에셋(크레딧·로고) 한글화
+- [docs/13-adventure-reverted-scenes](docs/13-adventure-reverted-scenes.md) — 원본유지/재번역 추적(cmd0x20·desync)
+- [docs/14-position-preserving-translation](docs/14-position-preserving-translation.md) — 위치보존 번역(VM 크래시 원천차단)
+- [docs/15-shortening-ledger](docs/15-shortening-ledger.md) — 축약 원장(before→after, 배포 설명용)
+- [docs/16-reverse-engineering-mcp](docs/16-reverse-engineering-mcp.md) — 역공학 MCP(IDA·Ghidra) 셋업
 
 ## 번역 용어집 (고유명사·용어 통일)
 
