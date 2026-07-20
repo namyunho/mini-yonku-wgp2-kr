@@ -64,14 +64,14 @@
    "desc": "c1 클러스터4: 포메이션 메뉴/도움말(테이블 $C1:CF90)",
    "file_start": "0x01CFDC",
    "file_end": "0x01D183",
-   "messages": 14,
+   "messages": 15,
    "suspect_entries": 0,
    "pointers_found": null,
    "pointers_off_boundary": null
   }
  ],
  "stats": {
-  "total_messages": 673,
+  "total_messages": 674,
   "total_suspect": 0
  },
  "entries": [
@@ -9979,6 +9979,22 @@
    "referenced_by": [],
    "flags": [],
    "text_kr": "릴레이 순서는 어떻게？{end}"
+  },
+  {
+   "entry_id": 673,
+   "table_id": "c1_formation",
+   "addr": "$C1:CFAF",
+   "file_offset": "0x01CFAF",
+   "raw_hex": "8E7B9D4C03664D643446672523452205016C4E322148011A4C03666833058BA3C591C57BA89D5701C441484500",
+   "n_bytes": 45,
+   "n_glyphs": 37,
+   "text": "[07E][06B][08D][03C][356][03D][054][024][036][057][015][013][035][012]{nl}[15C][03E][022][011][038][10A][03C][356][058][023]{nl}[07B][093][0B5][081][0B5][06B][098][08D][047][1B4][031][038][035]{end}",
+   "text_jp": "マシンを選んでならびかえよう{nl}光っている玉を選ぶと{nl}フォーメーションが組めるよ{end}",
+   "referenced_by": [],
+   "flags": [
+    "gap_recovered_C1CFAF"
+   ],
+   "text_kr": "머신을 골라 배치하자{nl}환한 구슬을 고르면{nl}포메이션을 짤 수 있어{end}"
   }
  ]
 }
