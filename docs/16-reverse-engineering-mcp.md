@@ -85,6 +85,37 @@ Ghidra는 커뮤니티 65816/SNES 프로세서·로더가 있어(별도 확장) 
   - Mesen 자체 스크린샷(Lua `emu.takeScreenshot()`/단축키)은 자기 프레임버퍼 캡처라 **TCC 불필요**.
   - OS `screencapture`로 창을 찍으려면 호스트 앱(터미널/VSCode)에 **시스템 설정 → 개인정보 보호 및 보안 → 화면 기록** 허용 필요. AppleScript로 창 제어 시 **손쉬운 사용/자동화** 허용 필요.
 
+## 6. Codex에 RE 도구 분산 (2026-07-21)
+
+토큰 절약을 위해 **RE 작업을 Codex에도 분산**한다. Codex CLI는 `~/.codex/config.toml`의 `[mcp_servers.*]`로 MCP를 로드.
+- **기존**: `[mcp_servers.ghidra]`(→HTTP 8080 GhidraMCP 브리지), `[plugins."ida-pro-mcp@mrexodia"]`(IDA GUI HTTP 13337).
+  둘 다 **GUI 앱(Ghidra/IDA)이 켜져 HTTP 서버가 떠 있어야** 작동 → 미기동 시 사용 불가.
+- **추가(headless)**: `[mcp_servers.idalib-mcp]`(command=pipx의 `idalib-mcp`, args=`["--stdio"]`) → **GUI 없이 Codex가 직접 RE**.
+  Claude의 `.mcp.json` idalib과 동일 바이너리. 백업: scratchpad `codex_config.backup.toml`.
+- **⚠️ .i64 락 충돌 방지**: Claude와 Codex가 **같은 ROM을 idalib으로 동시에 열면 `.i64` 락 충돌**. →
+  Codex는 **사본 `roms/re_codex.smc`**(비커밋)를 열게 한다(Claude는 원본). 각자 독립 `.i64`.
+- **⚠️⚠️ headless idalib은 '신선 SNES ROM'의 `.i64`를 못 만든다**(SNES 로더 자동선택 불가 → `Failed to open database`).
+  이미 만들어진 `.i64`만 연다. 원본 `.i64`는 과거 IDA GUI에서 SNES 로더로 생성됨. **사본은 `.i64`가 없어 열기 실패** →
+  **원본 `.i64`를 사본용으로 복사**하면 됨(내용 동일이라 유효): `cp '…(J) (NP).smc.i64' roms/re_codex.smc.i64`.
+  (실패한 open이 남긴 부분 DB `re_codex.smc.id0/id1/id2/nam/til`는 먼저 삭제.) 검증: idalib idb_open(re_codex.smc) OK.
+- **MCP 승인**(Codex): idalib 첫 도구 호출 시 승인 프롬프트 → **대화형 Codex에서 1회 "Always allow"** 하면
+  비대화형(백그라운드) 실행까지 신뢰가 persist됨(2026-07-21 확인). `approval_policy` 전역 변경 불필요.
+- **⚠️ Codex 샌드박스가 IDA 파일 I/O 차단**: Codex 기본 workspace-write 샌드박스는 idalib이 여는 `~/.idapro`·`/tmp`
+  쓰기를 막아 `Failed to open database`. → RE 태스크는 **`--dangerously-bypass-approvals-and-sandbox`로 실행**
+  (RE=읽기전용 ROM 분석이라 저위험). `codex exec --dangerously-bypass-approvals-and-sandbox --skip-git-repo-check "<task>"`.
+
+### ✅ 작동 확인 레시피 (2026-07-21)
+1. Codex config에 `[mcp_servers.idalib-mcp]` 등록(위). 2. 대화형 Codex 1회 "Always allow"로 idalib 신뢰.
+3. `roms/re_codex.smc`(원본 사본) + `cp 원본.i64 → re_codex.smc.i64`. **부분 DB(`re_codex.smc.id0/id1/...`)가 있으면 삭제**
+   (강제종료·실패한 open이 남긴 잔재가 재개방을 막음 — 실제 원인이었음).
+4. `codex exec --dangerously-bypass-approvals-and-sandbox` 로 RE 태스크 → idalib idb_open(re_codex.smc)+disasm 성공.
+   실측: 0xC0400A(cmd0x21 핸들러) `LDA #$A / JSR $3E13 / LDA $9A47 / ADC $7E0001 / STA $9A6C,X` 정확히 디스어셈블.
+5. **Claude와 Codex가 re_codex.smc.i64를 동시 개방 금지**(락). Claude는 원본, Codex는 사본으로 분리.
+- **Codex RE 브리프 규약**(cold-start): idb_open(input_path=`roms/re_codex.smc` 절대경로, mode=`force_headless`) →
+  session_id를 database 인자로. **SNES `$BB:aaaa`=IDA `0xBBaaaa` 직접**. `decompile` 금지(65816 Hex-Rays 미지원)→`disasm`.
+  알려진 주소는 `define_func` 후 `disasm`. 결과는 파일(scratchpad json)로 쓰게 해 Claude가 게이트/대조.
+- 분업: Claude=전략·게이트·정답대조, Codex=반복 디스어셈블/xref 수집. 관련 [[ida-snes-re-workflow]].
+
 ## 재현/재설치 메모
 - `.mcp.json` 서버 핸드셰이크 재검증: scratchpad `mcp_probe.py`가 각 서버에 `initialize`를 보내 `serverInfo` 확인.
 - IDA 플러그인 재설치: `ida-pro-mcp --install`. 설정 JSON: `ida-pro-mcp --config`.
