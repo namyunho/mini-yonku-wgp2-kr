@@ -419,6 +419,7 @@ def main():
         print(f"\n⚠️ 미커버 초과 {len(overflow_uncov)}개 (포인터 미상 → 재배치 불가, 원본 유지):")
         for bid, eid, addr, slot, klen, kr in overflow_uncov:
             print(f"  [{bid}] id={eid} @${addr:04X} slot={slot} kr={klen} (+{klen - slot}) {kr!r}")
+        sys.exit("정적 대사 번역 미반영: 미커버 초과를 축약하거나 포인터를 발굴해야 함")
     if total_ok != total_ins:
         sys.exit("역검증 실패 (삽입분 일부 불일치)")
 

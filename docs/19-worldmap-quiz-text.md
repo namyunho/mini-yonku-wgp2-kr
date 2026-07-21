@@ -91,7 +91,7 @@ build_all.py                 SJIS 충돌 0
                              CRC32 E1657B9B
 test_roundtrip.py            681/681 PASS
 build_adv.py                 228/228 round-trip·렌더일치
-                             메시지 1715, 긴 런 0
+                             메시지 1,724, 긴 런 0
 extract_worldmap_text.py     raw==ROM + encode(parse) 350/350 PASS
 기존 glyph index diff        0
 ```
