@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """한글 대사·스테이지 제목 재삽입 빌드 (재실행 가능·자동).
 입력: dialogue.json(text_kr) + stage_titles.json(text_kr) + worldmap_text.json(kr)
+      + field_kr.json(text_kr)
       + glyph_table.tsv
       + 한글 bin 폰트 + pointer_map.json.
 과정: 동적 글리프 할당 → 폰트 시트 주입 → 메시지/제목 재인코딩
@@ -18,7 +19,7 @@ ROMPATH = "roms/Mini Yonku Let's & Go!! - Power WGP 2 (J) (NP).smc"
 STAGE_TITLE_PATH = "assets/translations/stage_titles.json"
 FONT_BASE = 0x0A1137      # $CA:1137 폰트 시트
 WIDTH_BASE = 0x0A9137     # $CA:9137 폭 테이블
-MAX_GLYPH = 0x400         # 0x000..0x3FF (시트↔폭테이블 경계)
+MAX_GLYPH = 0x3F0         # 0x000..0x3EF (+0x10 인코딩이 prefix 0x01..0x03 안에 드는 상한)
 ONE_BYTE_MAX = 0xF0       # idx < 0xF0 → 1바이트 인코딩
 BIN_GLYPH_BYTES = 32
 
@@ -94,6 +95,9 @@ def main():
     ap.add_argument('--worldmap-json', default=None,
                     help='월드맵 퀴즈 JSON. 기존 정적/어드벤처 글리프 인덱스를 보존한 채 '
                          '신규 음절·기호를 할당 끝에만 추가한다.')
+    ap.add_argument('--field-json', default=None,
+                    help='필드/NPC 번역 원장. 기존 정적/어드벤처/월드맵 글리프 인덱스를 '
+                         '보존한 채 신규 음절·기호를 할당 끝에만 추가한다.')
     ap.add_argument('--glyph-map-out', default='out/glyph_map.json',
                     help='char->글리프인덱스 매핑 산출(어드벤처 빌더가 재사용)')
     a = ap.parse_args()
@@ -191,6 +195,18 @@ def main():
                 elif c not in (' ', '　', '\n'):
                     other_world[c] += 1
 
+    # ---- 필드/NPC 코퍼스: 월드맵 뒤 append-only 입력 ----
+    freq_field = Counter()
+    other_field = Counter()
+    if a.field_json:
+        FD = json.load(open(a.field_json, encoding='utf-8'))
+        for x in FD['entries']:
+            for c in strip_tok(x['text_kr']):
+                if 0xAC00 <= ord(c) <= 0xD7A3:
+                    freq_field[c] += 1
+                elif c not in (' ', '　', '\n'):
+                    other_field[c] += 1
+
     # ---- 유지 문자 → 기존 게임 인덱스 (실제 쓰인 것만) ----
     keep_map = {'　': 0x001, ' ': 0x000}   # 전각공백 8px / 반각 4px
     for c in sorted(used_other):
@@ -209,12 +225,15 @@ def main():
     base_syllable_count = len(syllables)
     world_syllables = [c for c, _ in freq_world.most_common() if c not in syllables]
     syllables += world_syllables
+    field_syllables = [c for c, _ in freq_field.most_common() if c not in syllables]
+    syllables += field_syllables
 
     # 월드맵에서만 쓰이며 기존 keep_map에 없던 비한글 글리프는 원본 타일을
     # 새 슬롯으로 복제한다. 기존 슬롯을 뒤늦게 kept_indices에 넣지 않으므로
     # 정적/어드벤처 char2idx가 바뀌지 않는다.
+    append_other = other_world + other_field
     world_copy_chars = []
-    for c, _ in other_world.most_common():
+    for c, _ in append_other.most_common():
         if c in keep_map:
             continue
         if c not in ch2idx_game:
@@ -228,7 +247,7 @@ def main():
     alloc = one_byte + two_byte                              # 빈도순 배정: 앞=1바이트
     needed = len(syllables) + len(world_copy_chars)
     if needed > len(alloc):
-        sys.exit(f"글리프 부족: 음절+월드맵기호 {needed} > 자유슬롯 {len(alloc)}")
+        sys.exit(f"글리프 부족: 음절+추가기호 {needed} > 자유슬롯 {len(alloc)}")
     kor2idx = {c: alloc[i] for i, c in enumerate(syllables)}
     world_other2idx = {
         c: alloc[len(syllables) + i] for i, c in enumerate(world_copy_chars)

@@ -65,7 +65,26 @@ EXPECTED_DESYNC_STOPS = {"$C4:9B72": 0x184}
 EXPECTED_DESYNC_TAILS = {"$C4:9B72": "06000201290013282f00"}
 EXPECTED_TEXT_RUNS = 1411
 EXPECTED_UNIQUE_TEXT = 1340
-EXPECTED_POINTER_REFS = 1300
+EXPECTED_RAW_POINTER_MATCHES = 1300
+EXPECTED_POINTER_REFS = 1290
+
+# C2 전역 3바이트 패턴 검색은 압축 레코드 주소와 우연히 같은 타일맵/일반 데이터도
+# 잡는다. 아래 10곳은 같은 레코드의 다른 참조가 구조화된 포인터 표 안에 존재하는
+# 반면, 자신은 인접한 유효 포인터가 없고 주변이 연속 타일/일반 데이터다. 과거 Mesen
+# CDL에서도 $C2:0977/$C2:1C9D 주변 전체가 데이터 블록으로 읽힌 것이 확인됐다.
+# 이 바이트를 포인터로 고치면 월드맵 BG 타일이 깨진다.
+KNOWN_FALSE_POINTER_REFS = {
+    foff(0xC2, 0x0977),  # $C4:5000 — 타일 데이터 00 50 00
+    foff(0xC2, 0x1C9D),  # $C4:C129 — 연속 데이터 블록
+    foff(0xC2, 0x5AEB),  # $C4:5000 — 타일 데이터 00 50 00
+    foff(0xC2, 0x87F3),  # $C4:5000 — 일반 데이터
+    foff(0xC2, 0x8E13),  # $C4:FF0B — 타일 데이터 0B FF 00
+    foff(0xC2, 0x92E0),  # $C4:5000 — 타일 데이터 00 50 00
+    foff(0xC2, 0xA20F),  # $C4:5000 — 일반 데이터
+    foff(0xC2, 0xA942),  # $C6:2400 — 일반 데이터
+    foff(0xC2, 0xCD47),  # $C4:E000 — 일반 데이터
+    foff(0xC2, 0xCD6D),  # $C5:D128 — 일반 데이터
+}
 
 
 def snes(pc: int) -> str:
@@ -82,8 +101,8 @@ def run_raw(buf: bytes, run: dict) -> bytes:
     return buf[at + 3:end]
 
 
-def c2_pointer_refs(rom: bytes, bank: int, addr: int) -> list[int]:
-    """숨은 레코드의 정확한 3바이트 C2 포인터 위치를 모두 찾는다."""
+def c2_pointer_matches(rom: bytes, bank: int, addr: int) -> list[int]:
+    """C2에서 주소와 같은 3바이트 패턴을 찾는다(오탐 포함 원시 후보)."""
     pattern = bytes((addr & 0xFF, addr >> 8, bank - 0xC4))
     refs: list[int] = []
     start = 0x020000
@@ -94,6 +113,14 @@ def c2_pointer_refs(rom: bytes, bank: int, addr: int) -> list[int]:
             return refs
         refs.append(hit)
         start = hit + 1
+
+
+def c2_pointer_refs(rom: bytes, bank: int, addr: int) -> list[int]:
+    """타일/일반 데이터 오탐을 제외한 검증된 C2 포인터 위치를 돌려준다."""
+    return [
+        ref for ref in c2_pointer_matches(rom, bank, addr)
+        if ref not in KNOWN_FALSE_POINTER_REFS
+    ]
 
 
 def load_prior_runs() -> dict[tuple[str, int, int, str], dict]:
@@ -131,6 +158,7 @@ def main() -> None:
     bank_counts: Counter[int] = Counter()
     all_text: list[str] = []
     pointer_count = 0
+    raw_pointer_count = 0
     rid = 0
     zero_gaps = 0
 
@@ -139,13 +167,14 @@ def main() -> None:
 
     def append_record(pos: int, anchor_scene: int) -> int:
         """pos의 압축 레코드 하나를 검증·카탈로그하고 끝 PC를 반환."""
-        nonlocal pointer_count, rid
+        nonlocal pointer_count, raw_pointer_count, rid
         rec_bank = (pos >> 16) | 0xC0
         rec_addr = pos & 0xFFFF
         buf, out_len, end = decompress_scene(rom, rec_bank, rec_addr, dic)
         parsed_runs, stats, walk_end = walk(buf, strict=True)
         clean = not stats["desync"] and walk_end >= len(buf) - 1
-        refs = c2_pointer_refs(rom, rec_bank, rec_addr)
+        raw_refs = c2_pointer_matches(rom, rec_bank, rec_addr)
+        refs = [ref for ref in raw_refs if ref not in KNOWN_FALSE_POINTER_REFS]
         if not refs:
             raise SystemExit(f"C2 포인터 없는 숨은 레코드: {snes(pos)}")
 
@@ -189,6 +218,7 @@ def main() -> None:
         )
         bank_counts[rec_bank] += 1
         pointer_count += len(refs)
+        raw_pointer_count += len(raw_refs)
         rid += 1
         return end
 
@@ -322,6 +352,7 @@ def main() -> None:
         "text_runs": (len(all_text), EXPECTED_TEXT_RUNS),
         "unique_text": (len(set(all_text)), EXPECTED_UNIQUE_TEXT),
         "pointer_refs": (pointer_count, EXPECTED_POINTER_REFS),
+        "raw_pointer_matches": (raw_pointer_count, EXPECTED_RAW_POINTER_MATCHES),
     }
     bad = {name: pair for name, pair in checks.items() if pair[0] != pair[1]}
     if bad:
@@ -347,6 +378,8 @@ def main() -> None:
             "text_runs": len(all_text),
             "unique_text": len(set(all_text)),
             "pointer_refs": pointer_count,
+            "raw_pointer_matches": raw_pointer_count,
+            "rejected_false_pointer_refs": [snes(ref) for ref in sorted(KNOWN_FALSE_POINTER_REFS)],
         },
         "regions": gaps,
         "records": records,

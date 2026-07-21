@@ -134,6 +134,13 @@ class Allocator:
         cap = sum(p[2] for p in self.pool)
         return used, cap
 
+    def manifest(self):
+        return [
+            {"bank": bank, "addr": addr, "capacity": cap, "used": used,
+             "next_addr": addr + used, "remaining": cap - used}
+            for bank, addr, cap, used in self.pool
+        ]
+
 
 def main():
     ap = argparse.ArgumentParser()
@@ -163,6 +170,7 @@ def main():
     ok_rt = ok_render = 0
     grow = 0
     skipped = []
+    reclaimed_scene_slots = []
 
     # ★ 인게임 실기 QA로 확정된 VM-붕괴 씬(원본유지). cmd0x20/desync 가드가 못 잡는 부류
     #  (조건분기 등 런타임 제어흐름이 텍스트 밀림으로 깨져 프리즈). 정적 탐지 불가(조건분기 씬 86개 중
@@ -267,6 +275,12 @@ def main():
         rom[e] = na & 0xFF
         rom[e + 1] = (na >> 8) & 0xFF
         rom[e + 2] = (nb - 0xC4) & 0xFF
+        # 이 씬의 모든 런타임 진입은 중앙 씬표 $C6:9C57을 경유한다. 표를 새 주소로
+        # 바꾼 뒤의 원본 압축 슬롯은 필드 빌더가 2MB 내부 재배치에 사용할 수 있다.
+        if addr + orig_comp <= 0x10000:
+            reclaimed_scene_slots.append({
+                'scene': sid, 'bank': bank, 'addr': addr, 'capacity': orig_comp,
+            })
 
         grow += len(comp) - orig_comp
         n_scene += 1; n_msg += cnt
@@ -295,6 +309,12 @@ def main():
     os.makedirs('out', exist_ok=True)
     open(a.out, 'wb').write(rom)
     used, cap = al.report()
+    open('out/adv_free_manifest.json', 'w', encoding='utf-8').write(
+        json.dumps({
+            'note': 'build_adv.py 재배치 결과. build_field.py는 중앙 씬표가 더는 참조하지 않는 원본 씬 슬롯만 재사용한다.',
+            'pools': al.manifest(),
+            'reclaimed_scene_slots': reclaimed_scene_slots,
+        }, ensure_ascii=False, indent=1) + '\n')
 
     # 긴 런(축약 재번역 대상) 리포트 — Codex 축약 배치의 입력 SSOT.
     longer_runs.sort(key=lambda x: (-x['over'], x['scene'], x['at']))
