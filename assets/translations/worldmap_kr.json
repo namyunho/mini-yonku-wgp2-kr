@@ -1,0 +1,155 @@
+{
+ "schema": 1,
+ "lore_sets": [
+  {
+   "addr": "$C6:A646",
+   "question": "개회식 티켓을{nl}많이 가진 사람은？{end}",
+   "choices": ["치이코{end}", "토우키치{end}", "마코토{end}", "츠요시{end}"]
+  },
+  {
+   "addr": "$C6:A672",
+   "question": "레이스장 개장 티셔츠를{nl}늘 입는 아이는？{end}",
+   "choices": ["에리카{end}", "이요{end}", "야요이{end}", "우미{end}"]
+  },
+  {
+   "addr": "$C6:A6A1",
+   "question": "츠치야 연구소에서 마에다가{nl}주는 파츠는？{end}",
+   "choices": ["모터{end}", "기어{end}", "타이어{end}", "범퍼{end}"]
+  },
+  {
+   "addr": "$C6:A6D3",
+   "question": "오빠가 츠치야 연구소에서{nl}일하는 아이는？{end}",
+   "choices": ["카즈야{end}", "츠요시{end}", "후미에{end}", "아키라{end}"]
+  },
+  {
+   "addr": "$C6:A700",
+   "question": "상대 팀 사인을 늘{nl}갖고 싶어 하는 아이는？{end}",
+   "choices": ["츠요시{end}", "세이지{end}", "루미코{end}", "오사무{end}"]
+  },
+  {
+   "addr": "$C6:A72C",
+   "question": "리치와 폰을{nl}구별하는 특징은？{end}",
+   "choices": ["립스틱{end}", "머리 모양{end}", "속눈썹{end}", "귀걸이{end}"]
+  },
+  {
+   "addr": "$C6:A757",
+   "question": "공키의 감독 이름은？{end}",
+   "choices": ["다이산겐{end}", "잇시키{end}", "만{end}", "동남서북{end}"]
+  },
+  {
+   "addr": "$C6:A780",
+   "question": "프랑스 팀에{nl}속하지 않은 사람은？{end}",
+   "choices": ["사리마{end}", "디아나{end}", "샤리테{end}", "아무{end}"]
+  },
+  {
+   "addr": "$C6:A7A6",
+   "question": "원숭이는 프랑스어로？{end}",
+   "choices": ["생주{end}", "앙주{end}", "낭주{end}", "망주{end}"]
+  },
+  {
+   "addr": "$C6:A7C8",
+   "question": "히카루의 남친은 누구？{end}",
+   "choices": ["타츠야{end}", "켄이치{end}", "지로마루{end}", "오사무{end}"]
+  },
+  {
+   "addr": "$C6:A7EA",
+   "question": "타에코가 좋아하는{nl}이탈리아 팀 멤버는？{end}",
+   "choices": ["졸라{end}", "루로{end}", "줄리오{end}", "루키노{end}"]
+  },
+  {
+   "addr": "$C6:A812",
+   "question": "사반나 솔져스의{nl}멤버는 누구？{end}",
+   "choices": ["미셸{end}", "루키노{end}", "디아나{end}", "준{end}"]
+  },
+  {
+   "addr": "$C6:A83C",
+   "question": "야에가 지로마루에게 몇 연승？{end}",
+   "choices": ["20연승{end}", "15연승{end}", "10연승{end}", "5연승{end}"]
+  },
+  {
+   "addr": "$C6:A86A",
+   "question": "치이코가 만든 기계로{nl}치이코와 바뀐 사람은？{end}",
+   "choices": ["J{end}", "시{end}", "레{end}", "L{end}"]
+  },
+  {
+   "addr": "$C6:A88E",
+   "question": "미니욘 파이터가{nl}츠치야 박사에게 받은 것은？{end}",
+   "choices": ["고기 호빵{end}", "군고구마{end}", "교자{end}", "슈마이{end}"]
+  },
+  {
+   "addr": "$C6:A8C1",
+   "question": "오빠가 여행 중인 아이는？{end}",
+   "choices": ["모에{end}", "야에{end}", "카즈미{end}", "메구미{end}"]
+  },
+  {
+   "addr": "$C6:A8E2",
+   "question": "레이디 세이버 26은{nl}누구의 머신？{end}",
+   "choices": ["타마미{end}", "준{end}", "치이코{end}", "쿠로사와{end}"]
+  },
+  {
+   "addr": "$C6:A907",
+   "question": "레츠와 고의 아빠가 잃은 것？{end}",
+   "choices": ["반지{end}", "지갑{end}", "머신{end}", "안경{end}"]
+  },
+  {
+   "addr": "$C6:A92A",
+   "question": "엔션트 포스는{nl}어느 나라 팀？{end}",
+   "choices": ["이집트{end}", "이란{end}", "터키{end}", "페루{end}"]
+  },
+  {
+   "addr": "$C6:A952",
+   "question": "WGP 제6전에서{nl}싸운 나라는？{end}",
+   "choices": ["프랑스{end}", "러시아{end}", "중국{end}", "이탈리아{end}"]
+  },
+  {
+   "addr": "$C6:A97B",
+   "question": "고에게 러브레터를 준 사람？{end}",
+   "choices": ["줄리오{end}", "준{end}", "타마미{end}", "텟신{end}"]
+  },
+  {
+   "addr": "$C6:A9A0",
+   "question": "오로라 돔에서{nl}싸운 나라는？{end}",
+   "choices": ["러시아{end}", "중국{end}", "미국{end}", "프랑스{end}"]
+  },
+  {
+   "addr": "$C6:A9C9",
+   "question": "교장 선생님이 춘 춤은？{end}",
+   "choices": ["알몸 춤{end}", "삼바{end}", "마카레나{end}", "람바다{end}"]
+  },
+  {
+   "addr": "$C6:A9F1",
+   "question": "사반나 솔져스의{nl}코치는 누구？{end}",
+   "choices": ["오키타 카이{end}", "나카타 카이{end}", "오키타 코이{end}", "오키 카이{end}"]
+  },
+  {
+   "addr": "$C6:AA1E",
+   "question": "미쿠니가 앞 석상의{nl}가운데 원숭이는？{end}",
+   "choices": ["말하지 않는 원숭이{end}", "듣지 않는 원숭이{end}", "보지 않는 원숭이{end}", "미쿠니 토우키치{end}"]
+  },
+  {
+   "addr": "$C6:AA50",
+   "question": "공원에{nl}없는 것은？{end}",
+   "choices": ["철봉{end}", "미끄럼틀{end}", "벤치{end}", "쓰레기통{end}"]
+  },
+  {
+   "addr": "$C6:AA7A",
+   "question": "고의 이불 무늬는？{end}",
+   "choices": ["줄무늬{end}", "물방울무늬{end}", "민무늬{end}", "별{end}"]
+  },
+  {
+   "addr": "$C6:AA9A",
+   "question": "엔션트 포스의{nl}리더는 누구？{end}",
+   "choices": ["라{end}", "테{end}", "히라가나 우{end}", "가타카나 우{end}"]
+  },
+  {
+   "addr": "$C6:AAB9",
+   "question": "건 블래스터 XTO의{nl}X는 무엇의 약자？{end}",
+   "choices": ["쿠스코{end}", "크리스마스{end}", "엑스표{end}", "성인용{end}"]
+  },
+  {
+   "addr": "$C6:AAE4",
+   "question": "디아나가 떨어진 곳은？{end}",
+   "choices": ["도로{end}", "사가미 모형점{end}", "학교{end}", "타카바산{end}"]
+  }
+ ]
+}

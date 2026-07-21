@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """한글 대사·스테이지 제목 재삽입 빌드 (재실행 가능·자동).
-입력: dialogue.json(text_kr) + stage_titles.json(text_kr) + glyph_table.tsv
+입력: dialogue.json(text_kr) + stage_titles.json(text_kr) + worldmap_text.json(kr)
+      + glyph_table.tsv
       + 한글 bin 폰트 + pointer_map.json.
 과정: 동적 글리프 할당 → 폰트 시트 주입 → 메시지/제목 재인코딩
       → 자유공간 재배치 → 포인터 패치 → 역검증.
@@ -46,6 +47,20 @@ def encode_glyph(rom, n, px):
         rom[block + 2*r + 1] = left
         rom[block + 2*r]     = right
 
+def decode_game_glyph(rom, n):
+    """원본 $CA 글리프를 16x16 1bpp 픽셀로 복원한다."""
+    base = FONT_BASE + base03(n)
+    out = [[0]*16 for _ in range(16)]
+    for rf in range(16):
+        block = base if rf < 8 else base + 0x80
+        r = rf & 7
+        right = rom[block + 2*r]
+        left = rom[block + 2*r + 1]
+        for c in range(8):
+            out[rf][c] = (left >> (7 - c)) & 1
+            out[rf][8 + c] = (right >> (7 - c)) & 1
+    return out
+
 def decode_bin_glyph(bin_, bin_idx, yshift):
     off = bin_idx * BIN_GLYPH_BYTES
     g = bin_[off:off + BIN_GLYPH_BYTES]
@@ -76,11 +91,15 @@ def main():
     ap.add_argument('--adv-json', default=None,
                     help='어드벤처 번역 JSON. 주면 그 음절도 **같은 글리프 할당**에 포함한다. '
                          '(폰트 시트는 전역 공유 → 어드벤처를 별도 할당하면 673과 충돌)')
+    ap.add_argument('--worldmap-json', default=None,
+                    help='월드맵 퀴즈 JSON. 기존 정적/어드벤처 글리프 인덱스를 보존한 채 '
+                         '신규 음절·기호를 할당 끝에만 추가한다.')
     ap.add_argument('--glyph-map-out', default='out/glyph_map.json',
                     help='char->글리프인덱스 매핑 산출(어드벤처 빌더가 재사용)')
     a = ap.parse_args()
 
     rom = bytearray(open(ROMPATH, 'rb').read())
+    source_rom = bytes(rom)  # 월드맵 전용 유지문자 복제는 주입 전 원본 글리프에서 읽는다.
     D = json.load(open('assets/translations/dialogue.json', encoding='utf-8'))
     ST = json.load(open(STAGE_TITLE_PATH, encoding='utf-8'))
     tbl = load_tbl('assets/translation_guide/glyph_table.tsv')          # idx -> char (게임)
@@ -156,6 +175,22 @@ def main():
                 elif c not in (' ', '　', '\n'):
                     used_other.add(c)
 
+    # ---- 월드맵 퀴즈 코퍼스: 기존 할당을 흔들지 않는 append-only 입력 ----
+    # 이 코퍼스를 freq/used_other에 섞으면 1바이트 경계의 기존 음절이 밀려
+    # 어드벤처 위치보존 런이 다시 길어질 수 있다. 기존 할당을 먼저 완성한 뒤
+    # 월드맵 전용 신규 음절과, 기존 패치에서 보존하지 않은 원본 기호(9/÷/＝ 등)를
+    # 끝 슬롯에만 추가한다.
+    freq_world = Counter()
+    other_world = Counter()
+    if a.worldmap_json:
+        WD = json.load(open(a.worldmap_json, encoding='utf-8'))
+        for x in WD['entries']:
+            for c in strip_tok(x['kr']):
+                if 0xAC00 <= ord(c) <= 0xD7A3:
+                    freq_world[c] += 1
+                elif c not in (' ', '　', '\n'):
+                    other_world[c] += 1
+
     # ---- 유지 문자 → 기존 게임 인덱스 (실제 쓰인 것만) ----
     keep_map = {'　': 0x001, ' ': 0x000}   # 전각공백 8px / 반각 4px
     for c in sorted(used_other):
@@ -171,17 +206,35 @@ def main():
     syllables += [c for c, _ in freq_adv.most_common() if c not in freq]
     syllables += [c for c, _ in freq_titles.most_common()
                   if c not in freq and c not in freq_adv]
+    base_syllable_count = len(syllables)
+    world_syllables = [c for c, _ in freq_world.most_common() if c not in syllables]
+    syllables += world_syllables
+
+    # 월드맵에서만 쓰이며 기존 keep_map에 없던 비한글 글리프는 원본 타일을
+    # 새 슬롯으로 복제한다. 기존 슬롯을 뒤늦게 kept_indices에 넣지 않으므로
+    # 정적/어드벤처 char2idx가 바뀌지 않는다.
+    world_copy_chars = []
+    for c, _ in other_world.most_common():
+        if c in keep_map:
+            continue
+        if c not in ch2idx_game:
+            sys.exit(f"월드맵 원본 글리프에 없는 유지 문자: {c!r} (U+{ord(c):04X})")
+        world_copy_chars.append(c)
 
     # ---- 동적 글리프 할당: 자유 슬롯 = 0..0x3FF - kept ----
     free_slots = [i for i in range(MAX_GLYPH) if i not in kept_indices]
     one_byte = [i for i in free_slots if i < ONE_BYTE_MAX]   # 1바이트(≤176)
     two_byte = [i for i in free_slots if i >= ONE_BYTE_MAX]
     alloc = one_byte + two_byte                              # 빈도순 배정: 앞=1바이트
-    if len(syllables) > len(alloc):
-        sys.exit(f"글리프 부족: 음절 {len(syllables)} > 자유슬롯 {len(alloc)}")
+    needed = len(syllables) + len(world_copy_chars)
+    if needed > len(alloc):
+        sys.exit(f"글리프 부족: 음절+월드맵기호 {needed} > 자유슬롯 {len(alloc)}")
     kor2idx = {c: alloc[i] for i, c in enumerate(syllables)}
+    world_other2idx = {
+        c: alloc[len(syllables) + i] for i, c in enumerate(world_copy_chars)
+    }
 
-    char2idx = dict(keep_map); char2idx.update(kor2idx)
+    char2idx = dict(keep_map); char2idx.update(kor2idx); char2idx.update(world_other2idx)
     if a.glyph_map_out:
         os.makedirs(os.path.dirname(a.glyph_map_out) or '.', exist_ok=True)
         json.dump({'char2idx': char2idx, 'kor_adv': a.kor_adv},
@@ -197,6 +250,10 @@ def main():
         rom[WIDTH_BASE + idx] = (min(16, a.kor_adv) if a.kor_adv > 0
                                  else min(16, ink_width(px) + 2))
         inj += 1
+    for c, idx in world_other2idx.items():
+        src_idx = ch2idx_game[c]
+        encode_glyph(rom, idx, decode_game_glyph(source_rom, src_idx))
+        rom[WIDTH_BASE + idx] = source_rom[WIDTH_BASE + src_idx]
 
     # ---- 메시지 재인코딩 ----
     _TOK = re.compile(r'\[|\]|\{[^}]*\}')
@@ -311,7 +368,9 @@ def main():
             b = rom[o]; o += 2 if (1 <= b <= 4 or b == 7) else 1
         return render(decode(rom[s:o + 1]), idx2char)
     vloc = {eid: (bk, ad) for bk, ad, eid in verify}
-    print(f"\n=== 폰트: 한글 {inj} 글리프 주입 (자유슬롯 {len(alloc)}, 음절 {len(syllables)}) ===")
+    print(f"\n=== 폰트: 한글 {inj} 글리프 주입 "
+          f"(기존코퍼스 {base_syllable_count} + 월드맵 신규 {len(world_syllables)}), "
+          f"월드맵 원본기호 복제 {len(world_other2idx)}, 자유슬롯 {len(alloc)} ===")
     stage_ok = 0
     for x, nenc, addr in stage_verify:
         got = decode_at(0xC0, addr)
