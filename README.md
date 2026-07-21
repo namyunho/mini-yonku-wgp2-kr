@@ -30,14 +30,14 @@ SNES(Super Famicom) 게임 **「ミニ四駆 レッツ&ゴー!! POWER WGP2」**(
 | PoC (한글 화면 표시) | ✅ 통과 (실기 Mesen2 렌더 확인) |
 | **정적 대사 681** 추출·번역·재삽입 | ✅ 완료 (681/681 무손실, `build_patch.py` — 포메이션 안내 `$C1:CFAF` + 세팅 프리셋·평가문 등 `$C1:C501` 테이블 미캡처 고아 문자열 8건 발굴 복구 포함) |
 | **어드벤처 스토리 엔진** 역공학 | ✅ 완료 (씬 VM·압축 코덱·씬표 `$C6:9C57` — [docs/08](docs/08-adventure-text-engine.md)) |
-| **어드벤처 스토리 번역·재삽입** | ✅ 번역 완료 + **위치보존 크래시 원천차단** (런 단위 패딩 → 디컴프 스크립트 길이 불변 → VM offset 보존, [docs/14](docs/14-position-preserving-translation.md)). 긴 런 Codex 3라운드 축약, cmd0x20 메뉴/선택지 한글화 진행 |
+| **어드벤처 스토리 번역·재삽입** | ✅ **완료** — 번역 + **위치보존 크래시 원천차단** (런 단위 패딩 → 디컴프 스크립트 길이 불변 → VM offset 보존, [docs/14](docs/14-position-preserving-translation.md)). 긴 런 Codex 3라운드 축약, cmd0x20 메뉴/선택지 한글화 포함. **오프닝~엔딩 전편 실기 완주(크래시 0) 확인** |
 | **월드맵 퀴즈·정보 DB** | ✅ 70문항·350문자열 추출/번역/재삽입 완료 (`$C6:A08D` 포인터표, 350/350 왕복·역디코드 — [docs/19](docs/19-worldmap-quiz-text.md)) |
 | **장소별 필드/NPC 숨은 레코드** | 🟡 전수 발굴·카탈로그 완료 (**1,207레코드**, C2 참조 1,300개, 텍스트런 1,411/고유 1,340 — 번역·재삽입 대기, [docs/20](docs/20-field-npc-hidden-records.md)) |
 | **그래픽 한글화**(크레딧·타이틀 로고·타이틀 크레딧줄) | ✅ 완료 (LZSS·스프라이트 재삽입, [docs/10](docs/10-graphics-assets.md)) |
 | **시작 저장메뉴**(SJIS) | ✅ 완료 (처음부터/이어하기/복사/삭제, `build_menu.py`) |
 | **SJIS 메뉴/UI 텍스트**(레이서명·팀명·파츠명·버튼 프롬프트·저장다이얼로그) | 🟡 **미번역** (조사 완료·착수 전 — [아래 참조](#남은-작업)) |
 | **메뉴 소형폰트 라벨**(월드맵 X메뉴·조작방법 튜토리얼 — System④) | 🟡 규명 완료·구현 대기 (직접타일 렌더러 `$C0:1B4B` + `$D9` 8×8 폰트, `0xFE` 마커훅 설계 — [docs/18](docs/18-menu-tile-font-labels.md)) |
-| 인게임 QA·BPS 배포 | 🟡 진행 (메인스토리 **스테이지8까지 실기 크래시 없음** 확인, 통합 빌드에서 Flips 감지 시 BPS 자동 생성) |
+| 인게임 QA·BPS 배포 | 🟡 진행 (메인스토리 **오프닝~엔딩 전편 실기 완주·크래시 0** 확인, 통합 빌드에서 Flips 감지 시 BPS 자동 생성) |
 
 > **번역 현황 요약**: 정적 대사·대형 어드벤처 스토리와 월드맵 퀴즈/정보 DB는 한글화가 끝났다. 새로 확인된 장소별 **필드/NPC 숨은 압축 레코드 1,207개**는 전수 추출·주소 카탈로그화를 마쳤으며 번역·위치보존 재삽입이 다음 단계다. 비압축 **SJIS 메뉴/UI 시스템**은 시작 저장메뉴만 처리됐고 **레이서·팀·파츠명, 버튼 프롬프트, 저장/불러오기 다이얼로그 등은 아직 일본어**다.
 
@@ -99,6 +99,7 @@ roms/ out/ tmp/   비커밋 (원본 ROM·산출물·임시 파일)
 - [docs/16-reverse-engineering-mcp](docs/16-reverse-engineering-mcp.md) — 역공학 MCP(IDA·Ghidra) 셋업
 - [docs/19-worldmap-quiz-text](docs/19-worldmap-quiz-text.md) — 월드맵 퀴즈/정보 DB 70문항 추출·번역·재삽입
 - [docs/20-field-npc-hidden-records](docs/20-field-npc-hidden-records.md) — 장소별 필드/NPC 숨은 압축 레코드 전수 조사
+- [docs/21-field-position-preserving-translation](docs/21-field-position-preserving-translation.md) — 필드/NPC 위치보존 번역·재삽입 설계
 
 ## 번역 용어집 (고유명사·용어 통일)
 
