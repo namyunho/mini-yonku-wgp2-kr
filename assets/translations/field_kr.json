@@ -5,7 +5,7 @@
   "entries": 1340,
   "occurrences": 1411,
   "seeded_from_adventure": 4,
-  "translated_existing": 1030,
+  "translated_existing": 1230,
   "shortened_existing": 0
  },
  "entries": [
@@ -20974,11 +20974,11 @@
   },
   {
    "id": "F1030",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "彦佐\n「おや　藤吉ぼっちゃま{wait}\nもうお帰りになられたので？{wait}\n",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "히코사\n「이런　토우키치 도련님{wait}\n벌써 돌아오셨습니까？{wait}\n",
+   "text_kr": "히코사\n「이런　토우키치 도련님{wait}\n벌써 돌아오셨습니까？{wait}\n",
    "orig_len": 37,
    "controls": [
     "{wait}",
@@ -20995,11 +20995,11 @@
   },
   {
    "id": "F1031",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "やっぱりボディガードが\nほしくなられたので\nございますね　ハイ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "역시 보디가드가\n필요해지신\n것이군요　네",
+   "text_kr": "역시 보디가드가\n필요해지신\n것이군요　네",
    "orig_len": 32,
    "controls": [],
    "occurrences": [
@@ -21013,11 +21013,11 @@
   },
   {
    "id": "F1032",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "彦佐\n「ぼっちゃま\nお気をつけてくださいませ\nハイ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "히코사\n「도련님\n조심해서 다녀오십시오\n네",
+   "text_kr": "히코사\n「도련님\n조심해서 다녀오십시오\n네",
    "orig_len": 29,
    "controls": [],
    "occurrences": [
@@ -21031,11 +21031,11 @@
   },
   {
    "id": "F1033",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "彦佐\n「これは豪様{wait}\nいつも藤吉ぼっちゃまが\nお世話になっておりますです\nハイ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "히코사\n「고 님{wait}\n늘 토우키치 도련님이\n신세 지고 있습니다요\n네",
+   "text_kr": "히코사\n「고 님{wait}\n늘 토우키치 도련님이\n신세 지고 있습니다요\n네",
    "orig_len": 48,
    "controls": [
     "{wait}"
@@ -21051,11 +21051,11 @@
   },
   {
    "id": "F1034",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "彦佐\n「おや？　沖田カイ様{wait}\nこれはめずらしい\n",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "히코사\n「이런？　오키타 카이 님{wait}\n참 귀한 손님이군요\n",
+   "text_kr": "히코사\n「이런？　오키타 카이 님{wait}\n참 귀한 손님이군요\n",
    "orig_len": 30,
    "controls": [
     "{wait}"
@@ -21071,11 +21071,11 @@
   },
   {
    "id": "F1035",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "どうぞ　ゆっくりと\nなさっていってくださいまし\nハイ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "부디 편히\n쉬다 가십시오\n네",
+   "text_kr": "부디 편히\n쉬다 가십시오\n네",
    "orig_len": 27,
    "controls": [],
    "occurrences": [
@@ -21089,11 +21089,11 @@
   },
   {
    "id": "F1036",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "彦佐\n「ぼっちゃま{wait}\n来週　チイコお嬢様が\nおみえになるそうです　ハイ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "히코사\n「도련님{wait}\n다음 주에 치이코 아가씨가\n오신답니다요　네",
+   "text_kr": "히코사\n「도련님{wait}\n다음 주에 치이코 아가씨가\n오신답니다요　네",
    "orig_len": 42,
    "controls": [
     "{wait}"
@@ -21109,11 +21109,11 @@
   },
   {
    "id": "F1037",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "彦佐\n「明日はビクトリーズの\n代表としてがんばって\nくださいませです　ハイ！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "히코사\n「내일은 빅토리즈의\n대표로 힘내\n주십시오　네！",
+   "text_kr": "히코사\n「내일은 빅토리즈의\n대표로 힘내\n주십시오　네！",
    "orig_len": 45,
    "controls": [],
    "occurrences": [
@@ -21127,11 +21127,11 @@
   },
   {
    "id": "F1038",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "彦佐\n「フレー　フレー\nと・う・き・ち！{wait}\nでございますです　ハイ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "히코사\n「힘내라　힘내라\n토・우・키・치！{wait}\n이상입니다요　네",
+   "text_kr": "히코사\n「힘내라　힘내라\n토・우・키・치！{wait}\n이상입니다요　네",
    "orig_len": 36,
    "controls": [
     "{wait}"
@@ -21147,11 +21147,11 @@
   },
   {
    "id": "F1039",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "『藤吉がよく著ている\nサルのきぐるみだ{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "『토우키치가 자주 입는\n원숭이 인형옷이다{wait}",
+   "text_kr": "『토우키치가 자주 입는\n원숭이 인형옷이다{wait}",
    "orig_len": 24,
    "controls": [
     "{wait}"
@@ -21167,11 +21167,11 @@
   },
   {
    "id": "F1040",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "藤吉\n「ワテのお気に入りでゲス",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "토우키치\n「내가 아끼는 것이옵니다",
+   "text_kr": "토우키치\n「내가 아끼는 것이옵니다",
    "orig_len": 19,
    "controls": [],
    "occurrences": [
@@ -21185,11 +21185,11 @@
   },
   {
    "id": "F1041",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "藤吉\n「みんなの分もあるでゲス",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "토우키치\n「모두의 몫도 있사옵니다",
+   "text_kr": "토우키치\n「모두의 몫도 있사옵니다",
    "orig_len": 19,
    "controls": [],
    "occurrences": [
@@ -21203,11 +21203,11 @@
   },
   {
    "id": "F1042",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "『コンピューターのディスプレイだ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "『컴퓨터 디스플레이다",
+   "text_kr": "『컴퓨터 디스플레이다",
    "orig_len": 17,
    "controls": [],
    "occurrences": [
@@ -21221,11 +21221,11 @@
   },
   {
    "id": "F1043",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "藤吉\n「ワテのパソコンでゲス",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "토우키치\n「내 컴퓨터이옵니다",
+   "text_kr": "토우키치\n「내 컴퓨터이옵니다",
    "orig_len": 17,
    "controls": [],
    "occurrences": [
@@ -21245,11 +21245,11 @@
   },
   {
    "id": "F1044",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "『藤吉のパソコンだ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "『토우키치의 컴퓨터다",
+   "text_kr": "『토우키치의 컴퓨터다",
    "orig_len": 12,
    "controls": [],
    "occurrences": [
@@ -21263,11 +21263,11 @@
   },
   {
    "id": "F1045",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "『藤吉が集めている焼き物だ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "『토우키치가 모은 도자기다",
+   "text_kr": "『토우키치가 모은 도자기다",
    "orig_len": 19,
    "controls": [],
    "occurrences": [
@@ -21287,11 +21287,11 @@
   },
   {
    "id": "F1046",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "『風流なかざりだ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "『운치 있는 장식이다",
+   "text_kr": "『운치 있는 장식이다",
    "orig_len": 11,
    "controls": [],
    "occurrences": [
@@ -21305,11 +21305,11 @@
   },
   {
    "id": "F1047",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "『藤吉のレーサーズボックスだ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "『토우키치의 레이서즈 박스다",
+   "text_kr": "『토우키치의 레이서즈 박스다",
    "orig_len": 17,
    "controls": [],
    "occurrences": [
@@ -21323,11 +21323,11 @@
   },
   {
    "id": "F1048",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "みちのく　ひとう　ゆけむりのたび",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "미치노쿠　외딴 온천　김나는 여행",
+   "text_kr": "미치노쿠　외딴 온천　김나는 여행",
    "orig_len": 17,
    "controls": [],
    "occurrences": [
@@ -21341,11 +21341,11 @@
   },
   {
    "id": "F1049",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "あきら\n「WGPのチケット\nもう売り切れなんだ…{wait}\nキミたちのコネでなんとかならない？{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "아키라\n「WGP 티켓이\n벌써 매진됐어…{wait}\n너희 인맥으로 어떻게 안 될까？{wait}",
+   "text_kr": "아키라\n「WGP 티켓이\n벌써 매진됐어…{wait}\n너희 인맥으로 어떻게 안 될까？{wait}",
    "orig_len": 47,
    "controls": [
     "{wait}",
@@ -21362,11 +21362,11 @@
   },
   {
    "id": "F1050",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "あきら\n「おっ！　そのチケット！{wait}\nそうか…　ボクのために{wait}\nありがたくいただくよ{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "아키라\n「오！　그 티켓！{wait}\n그래…　날 위해서{wait}\n고맙게 받을게{wait}",
+   "text_kr": "아키라\n「오！　그 티켓！{wait}\n그래…　날 위해서{wait}\n고맙게 받을게{wait}",
    "orig_len": 43,
    "controls": [
     "{wait}",
@@ -21384,11 +21384,11 @@
   },
   {
    "id": "F1051",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "『どうする？{c8:07}\n　　あげる\n　　あげない{c8:00}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "『어떻게 할까？{c8:07}\n　　준다\n　　주지 않는다{c8:00}",
+   "text_kr": "『어떻게 할까？{c8:07}\n　　준다\n　　주지 않는다{c8:00}",
    "orig_len": 24,
    "controls": [
     "{c8:07}",
@@ -21423,11 +21423,11 @@
   },
   {
    "id": "F1052",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "あきら\n「いやだ〜！！{wait}\nくれるまではなれないからな！{wait}\nたのむ〜！　くれ〜！！{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "아키라\n「싫어〜！！{wait}\n줄 때까지 안 비킬 거야！{wait}\n부탁이야〜！　줘〜！！{wait}",
+   "text_kr": "아키라\n「싫어〜！！{wait}\n줄 때까지 안 비킬 거야！{wait}\n부탁이야〜！　줘〜！！{wait}",
    "orig_len": 42,
    "controls": [
     "{wait}",
@@ -21445,11 +21445,11 @@
   },
   {
    "id": "F1053",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "イベントアイテム\n『WGPのチケット』をあげた",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "이벤트 아이템\n『WGP 티켓』을 줬다",
+   "text_kr": "이벤트 아이템\n『WGP 티켓』을 줬다",
    "orig_len": 24,
    "controls": [],
    "occurrences": [
@@ -21481,11 +21481,11 @@
   },
   {
    "id": "F1054",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "あきら\n「サンキュー！{wait}\nお礼に　とっておきのダジャレを\nひろうするよ{wait}\nいくぜ！{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "아키라\n「고마워！{wait}\n보답으로 비장의 말장난을\n선보일게{wait}\n간다！{wait}",
+   "text_kr": "아키라\n「고마워！{wait}\n보답으로 비장의 말장난을\n선보일게{wait}\n간다！{wait}",
    "orig_len": 44,
    "controls": [
     "{wait}",
@@ -21503,11 +21503,11 @@
   },
   {
    "id": "F1055",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "\n…{wait}\n……{wait}\n………{wait}\n…………{wait}\nはんのうせいへん…{wait}\nふぁんのうせいへん…{wait}\nふぁんのうせいえん…{wait}\nファンのせいえん…　ぷぷぷ{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "\n…{wait}\n……{wait}\n………{wait}\n…………{wait}\n반응이 없네…{wait}\n판응이 없네…{wait}\n팬응이 없네…{wait}\n팬의 응원…　푸훗{wait}",
+   "text_kr": "\n…{wait}\n……{wait}\n………{wait}\n…………{wait}\n반응이 없네…{wait}\n판응이 없네…{wait}\n팬응이 없네…{wait}\n팬의 응원…　푸훗{wait}",
    "orig_len": 69,
    "controls": [
     "{wait}",
@@ -21530,11 +21530,11 @@
   },
   {
    "id": "F1056",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "レースアイテム\n『ファンの声援』を手に入れた！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "레이스 아이템\n『팬의 응원』을 손에 넣었다！",
+   "text_kr": "레이스 아이템\n『팬의 응원』을 손에 넣었다！",
    "orig_len": 27,
    "controls": [],
    "occurrences": [
@@ -21566,11 +21566,11 @@
   },
   {
    "id": "F1057",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "あきら\n「チケット　サンキュー！{wait}\nところで…{wait}\n",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "아키라\n「티켓　고마워！{wait}\n그런데…{wait}\n",
+   "text_kr": "아키라\n「티켓　고마워！{wait}\n그런데…{wait}\n",
    "orig_len": 26,
    "controls": [
     "{wait}",
@@ -21587,11 +21587,11 @@
   },
   {
    "id": "F1058",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "明日はいよいよ\n第2回WGPの開催日だね{wait}\nミニ四駆だけによ〜んく準備しないと\nダメでしょう…{wait}\nとかいったりなんかしちゃったりして",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "내일은 드디어\n제2회 WGP 개최일이네{wait}\n미니사구답게 사구 준비해야지\n안 되겠어…{wait}\n같은 소리나 하고 말이야",
+   "text_kr": "내일은 드디어\n제2회 WGP 개최일이네{wait}\n미니사구답게 사구 준비해야지\n안 되겠어…{wait}\n같은 소리나 하고 말이야",
    "orig_len": 78,
    "controls": [
     "{wait}",
@@ -21608,11 +21608,11 @@
   },
   {
    "id": "F1059",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "うみ\n「ちょっと聞いてよ！{wait}\n明日の開会武のチケット\nもう売り切れなんですって！{wait}\nもお〜　しんじらんな〜い！{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "우미\n「내 말 좀 들어 봐！{wait}\n내일 개막식 티켓이\n벌써 매진됐대！{wait}\n정말〜　믿을 수 없어〜！{wait}",
+   "text_kr": "우미\n「내 말 좀 들어 봐！{wait}\n내일 개막식 티켓이\n벌써 매진됐대！{wait}\n정말〜　믿을 수 없어〜！{wait}",
    "orig_len": 65,
    "controls": [
     "{wait}",
@@ -21630,11 +21630,11 @@
   },
   {
    "id": "F1060",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "うみ\n「あっ！{wait}\nそのチケット　どうしたのよ！{wait}\nねぇ　おねがいだからちょうだい♥{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "우미\n「앗！{wait}\n그 티켓　어디서 났어！{wait}\n부탁이니까 나 줘♥{wait}",
+   "text_kr": "우미\n「앗！{wait}\n그 티켓　어디서 났어！{wait}\n부탁이니까 나 줘♥{wait}",
    "orig_len": 43,
    "controls": [
     "{wait}",
@@ -21652,11 +21652,11 @@
   },
   {
    "id": "F1061",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "うみ\n「ちょうだい♥{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "우미\n「나 줘♥{wait}",
+   "text_kr": "우미\n「나 줘♥{wait}",
    "orig_len": 12,
    "controls": [
     "{wait}"
@@ -21672,11 +21672,11 @@
   },
   {
    "id": "F1062",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "うみ\n「ありがとう　やさしいのね♥{wait}\n",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "우미\n「고마워　다정하구나♥{wait}\n",
+   "text_kr": "우미\n「고마워　다정하구나♥{wait}\n",
    "orig_len": 20,
    "controls": [
     "{wait}"
@@ -21692,11 +21692,11 @@
   },
   {
    "id": "F1063",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "うみ\n「ありがとう\nお礼にいいものあげる{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "우미\n「고마워\n보답으로 좋은 걸 줄게{wait}",
+   "text_kr": "우미\n「고마워\n보답으로 좋은 걸 줄게{wait}",
    "orig_len": 23,
    "controls": [
     "{wait}"
@@ -21712,11 +21712,11 @@
   },
   {
    "id": "F1064",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "うみ\n「チケット　ありがとう！{wait}\n",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "우미\n「티켓　고마워！{wait}\n",
+   "text_kr": "우미\n「티켓　고마워！{wait}\n",
    "orig_len": 18,
    "controls": [
     "{wait}"
@@ -21732,11 +21732,11 @@
   },
   {
    "id": "F1065",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "明日は必ず応援にいくからね！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "내일 꼭 응원하러 갈게！",
+   "text_kr": "내일 꼭 응원하러 갈게！",
    "orig_len": 20,
    "controls": [],
    "occurrences": [
@@ -21750,11 +21750,11 @@
   },
   {
    "id": "F1066",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "えいじ\n「今年は新チームが3チーム\n参加しているらしいぞ{wait}\nどんなやつらなんだろうね",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "에이지\n「올해는 새 팀이 세 팀\n참가한다더라{wait}\n어떤 녀석들일까",
+   "text_kr": "에이지\n「올해는 새 팀이 세 팀\n참가한다더라{wait}\n어떤 녀석들일까",
    "orig_len": 48,
    "controls": [
     "{wait}"
@@ -21770,11 +21770,11 @@
   },
   {
    "id": "F1067",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "かずや\n「じつはさぁ…{wait}\n明日の開会武のチケットを\n探してるんだけど\nどこにも売ってないんだ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "카즈야\n「사실은…{wait}\n내일 개막식 티켓을\n찾고 있는데\n어디에도 안 팔아",
+   "text_kr": "카즈야\n「사실은…{wait}\n내일 개막식 티켓을\n찾고 있는데\n어디에도 안 팔아",
    "orig_len": 54,
    "controls": [
     "{wait}"
@@ -21790,11 +21790,11 @@
   },
   {
    "id": "F1068",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "かずや\n「あっ！　開会武のチケット！{wait}\nおねがい！　ちょうだい！！{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "카즈야\n「앗！　개막식 티켓！{wait}\n부탁이야！　나 줘！！{wait}",
+   "text_kr": "카즈야\n「앗！　개막식 티켓！{wait}\n부탁이야！　나 줘！！{wait}",
    "orig_len": 38,
    "controls": [
     "{wait}",
@@ -21811,11 +21811,11 @@
   },
   {
    "id": "F1069",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "かずや\n「え〜っ{wait}\nそんなこと言わないで\nおねがい！　ねっ♥{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "카즈야\n「뭐야〜{wait}\n그러지 말고\n부탁이야！　응♥{wait}",
+   "text_kr": "카즈야\n「뭐야〜{wait}\n그러지 말고\n부탁이야！　응♥{wait}",
    "orig_len": 33,
    "controls": [
     "{wait}",
@@ -21832,11 +21832,11 @@
   },
   {
    "id": "F1070",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "かずや\n「わーい！　ありがとう！！{wait}\n今年はず〜っとビクトリーズを\n応援するからね！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "카즈야\n「와아！　고마워！！{wait}\n올해는 계〜속 빅토리즈를\n응원할게！",
+   "text_kr": "카즈야\n「와아！　고마워！！{wait}\n올해는 계〜속 빅토리즈를\n응원할게！",
    "orig_len": 47,
    "controls": [
     "{wait}"
@@ -21852,11 +21852,11 @@
   },
   {
    "id": "F1071",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "かずや\n「わーい！　ありがとう！！{wait}\nお礼にいいものあげる{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "카즈야\n「와아！　고마워！！{wait}\n보답으로 좋은 걸 줄게{wait}",
+   "text_kr": "카즈야\n「와아！　고마워！！{wait}\n보답으로 좋은 걸 줄게{wait}",
    "orig_len": 32,
    "controls": [
     "{wait}",
@@ -21873,11 +21873,11 @@
   },
   {
    "id": "F1072",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "かずや\n「チケット　ありがとうね",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "카즈야\n「티켓　고마워",
+   "text_kr": "카즈야\n「티켓　고마워",
    "orig_len": 17,
    "controls": [],
    "occurrences": [
@@ -21891,11 +21891,11 @@
   },
   {
    "id": "F1073",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "きよし\n「ジャマイカのクールカリビアンズが\n今年は予選落ちしたらしいよ{wait}\nオレ　あいつら好きだったのになぁ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "키요시\n「자메이카 쿨 캐리비언즈가\n올해는 예선 탈락했대{wait}\n난 그 녀석들 좋아했는데",
+   "text_kr": "키요시\n「자메이카 쿨 캐리비언즈가\n올해는 예선 탈락했대{wait}\n난 그 녀석들 좋아했는데",
    "orig_len": 60,
    "controls": [
     "{wait}"
@@ -21911,11 +21911,11 @@
   },
   {
    "id": "F1074",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "黒沢\n「今年はオレもビクトリーズの\nメンバーになれると\n思っていたんだがな{wait}\n",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "쿠로사와\n「올해는 나도 빅토리즈의\n멤버가 될 수 있다고\n생각했는데{wait}\n",
+   "text_kr": "쿠로사와\n「올해는 나도 빅토리즈의\n멤버가 될 수 있다고\n생각했는데{wait}\n",
    "orig_len": 45,
    "controls": [
     "{wait}"
@@ -21931,11 +21931,11 @@
   },
   {
    "id": "F1075",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "オレ　土屋博士にきらわれて\nいるのかな？",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "나　츠치야 박사에게\n미움받나？",
+   "text_kr": "나　츠치야 박사에게\n미움받나？",
    "orig_len": 25,
    "controls": [],
    "occurrences": [
@@ -21949,11 +21949,11 @@
   },
   {
    "id": "F1076",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "けいこ\n「この町の公園には\nWGPマニアがよく集まるらしいわよ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "케이코\n「이 마을 공원에는\nWGP 마니아가 자주 모인대",
+   "text_kr": "케이코\n「이 마을 공원에는\nWGP 마니아가 자주 모인대",
    "orig_len": 36,
    "controls": [],
    "occurrences": [
@@ -21967,11 +21967,11 @@
   },
   {
    "id": "F1077",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "しんじ\n「明日の開会武のチケット{wait}\nパパにてつ夜でならんで\n取ってもらったんだ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "신지\n「내일 개막식 티켓{wait}\n아빠가 밤새 줄을 서서\n구해 줬어",
+   "text_kr": "신지\n「내일 개막식 티켓{wait}\n아빠가 밤새 줄을 서서\n구해 줬어",
    "orig_len": 47,
    "controls": [
     "{wait}"
@@ -21987,11 +21987,11 @@
   },
   {
    "id": "F1078",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "せいじ\n「この町には\nGPマシンの走れるレース場が\nよっつあるんだけど場所は知ってるか？{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "세이지\n「이 마을에는 GP 머신이 달릴\n레이스장이 네 곳 있는데 알아？{wait}",
+   "text_kr": "세이지\n「이 마을에는 GP 머신이 달릴\n레이스장이 네 곳 있는데 알아？{wait}",
    "orig_len": 52,
    "controls": [
     "{wait}"
@@ -22007,11 +22007,11 @@
   },
   {
    "id": "F1079",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "『知ってる？{c8:07}\n　　知ってる\n　　知らない{c8:00}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "『알고 있어？{c8:07}\n　　알고 있어\n　　몰라{c8:00}",
+   "text_kr": "『알고 있어？{c8:07}\n　　알고 있어\n　　몰라{c8:00}",
    "orig_len": 28,
    "controls": [
     "{c8:07}",
@@ -22028,11 +22028,11 @@
   },
   {
    "id": "F1080",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "せいじ\n「",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "세이지\n「",
+   "text_kr": "세이지\n「",
    "orig_len": 6,
    "controls": [],
    "occurrences": [
@@ -22046,11 +22046,11 @@
   },
   {
    "id": "F1081",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "まずは　風輪サーキットだろ{wait}\nそれから　鷹羽山{wait}\nそして　土屋研究所{wait}\n最後に　学校の体育館だ{wait}\n",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "먼저　후우린 서킷{wait}\n그리고　타카바산{wait}\n그다음　츠치야 연구소{wait}\n마지막은 학교 체육관이야{wait}\n",
+   "text_kr": "먼저　후우린 서킷{wait}\n그리고　타카바산{wait}\n그다음　츠치야 연구소{wait}\n마지막은 학교 체육관이야{wait}\n",
    "orig_len": 67,
    "controls": [
     "{wait}",
@@ -22069,11 +22069,11 @@
   },
   {
    "id": "F1082",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "GPチップをガンガンきたえて\n今年も優勝してくれよな",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "GP칩을 열심히 단련해서\n올해도 우승해 줘",
+   "text_kr": "GP칩을 열심히 단련해서\n올해도 우승해 줘",
    "orig_len": 31,
    "controls": [],
    "occurrences": [
@@ -22087,11 +22087,11 @@
   },
   {
    "id": "F1083",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "つよし\n「たのむ！{wait}\nアストロレンジャーズのジョーに\nサインもらってきてくれ！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "츠요시\n「부탁이야！{wait}\n아스트로 레인저스의 조에게\n사인을 받아 줘！",
+   "text_kr": "츠요시\n「부탁이야！{wait}\n아스트로 레인저스의 조에게\n사인을 받아 줘！",
    "orig_len": 40,
    "controls": [
     "{wait}"
@@ -22107,11 +22107,11 @@
   },
   {
    "id": "F1084",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "としひこ\n「あ〜あ{wait}\nWGPのチケットがうりきれなんだ{wait}\nせっかくビクトリーズを\n応援しようと思ってたのに{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "토시히코\n「아〜{wait}\nWGP 티켓이 매진됐어{wait}\n모처럼 빅토리즈를\n응원하려 했는데{wait}",
+   "text_kr": "토시히코\n「아〜{wait}\nWGP 티켓이 매진됐어{wait}\n모처럼 빅토리즈를\n응원하려 했는데{wait}",
    "orig_len": 58,
    "controls": [
     "{wait}",
@@ -22129,11 +22129,11 @@
   },
   {
    "id": "F1085",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "としひこ\n「…そのチケットはだれかにあげるのが\nいいと思うけど　どうよ？{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "토시히코\n「…그 티켓은 누군가에게 주는 게\n좋을 것 같은데　어때？{wait}",
+   "text_kr": "토시히코\n「…그 티켓은 누군가에게 주는 게\n좋을 것 같은데　어때？{wait}",
    "orig_len": 39,
    "controls": [
     "{wait}"
@@ -22149,11 +22149,11 @@
   },
   {
    "id": "F1086",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "としひこ\n「こうなったらハッキリ言おう！{wait}\nチケットちょうだい{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "토시히코\n「그럼 확실히 말할게！{wait}\n티켓 줘{wait}",
+   "text_kr": "토시히코\n「그럼 확실히 말할게！{wait}\n티켓 줘{wait}",
    "orig_len": 34,
    "controls": [
     "{wait}",
@@ -22170,11 +22170,11 @@
   },
   {
    "id": "F1087",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "としひこ\n「ありがとう！！{wait}\n応援にいくからがんばってくれ！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "토시히코\n「고마워！！{wait}\n응원하러 갈 테니 힘내 줘！",
+   "text_kr": "토시히코\n「고마워！！{wait}\n응원하러 갈 테니 힘내 줘！",
    "orig_len": 33,
    "controls": [
     "{wait}"
@@ -22190,11 +22190,11 @@
   },
   {
    "id": "F1088",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "としひこ\n「ありがとう\nお礼にいいものをあげるよ{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "토시히코\n「고마워\n보답으로 좋은 걸 줄게{wait}",
+   "text_kr": "토시히코\n「고마워\n보답으로 좋은 걸 줄게{wait}",
    "orig_len": 27,
    "controls": [
     "{wait}"
@@ -22210,11 +22210,11 @@
   },
   {
    "id": "F1089",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "としひこ\n「チケット　ありがとう！{wait}\n関係ないけど学校の時計って\n壊れてるよな",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "토시히코\n「티켓　고마워！{wait}\n그건 그렇고 학교 시계는\n고장 났지",
+   "text_kr": "토시히코\n「티켓　고마워！{wait}\n그건 그렇고 학교 시계는\n고장 났지",
    "orig_len": 47,
    "controls": [
     "{wait}"
@@ -22230,11 +22230,11 @@
   },
   {
    "id": "F1090",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "ふみえ\n「今年のWGPももり上がるといいね",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "후미에\n「올해 WGP도 흥하면 좋겠다",
+   "text_kr": "후미에\n「올해 WGP도 흥하면 좋겠다",
    "orig_len": 25,
    "controls": [],
    "occurrences": [
@@ -22248,11 +22248,11 @@
   },
   {
    "id": "F1091",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "まこと\n「開会武のチケットを\nほしがってる人に\n会いましたか？{wait}{clear}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "마코토\n「개막식 티켓을\n원하는 사람을\n만났나요？{wait}{clear}",
+   "text_kr": "마코토\n「개막식 티켓을\n원하는 사람을\n만났나요？{wait}{clear}",
    "orig_len": 38,
    "controls": [
     "{wait}",
@@ -22269,11 +22269,11 @@
   },
   {
    "id": "F1092",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "『会った？{c8:07}\n　　会った\n　　会ってない{c8:00}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "『만났어？{c8:07}\n　　만났어\n　　못 만났어{c8:00}",
+   "text_kr": "『만났어？{c8:07}\n　　만났어\n　　못 만났어{c8:00}",
    "orig_len": 27,
    "controls": [
     "{c8:07}",
@@ -22290,11 +22290,11 @@
   },
   {
    "id": "F1093",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "まこと\n「チケットをあげれば\nきっといいことがありますよ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "마코토\n「티켓을 주면\n분명 좋은 일이 생길 거예요",
+   "text_kr": "마코토\n「티켓을 주면\n분명 좋은 일이 생길 거예요",
    "orig_len": 29,
    "controls": [],
    "occurrences": [
@@ -22308,11 +22308,11 @@
   },
   {
    "id": "F1094",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "まこと\n「ウソはいけませんよ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "마코토\n「거짓말하면 안 돼요",
+   "text_kr": "마코토\n「거짓말하면 안 돼요",
    "orig_len": 15,
    "controls": [],
    "occurrences": [
@@ -22326,11 +22326,11 @@
   },
   {
    "id": "F1095",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "まこと\n「たしか\nいろいろなレース場の\n近くにいたような…",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "마코토\n「분명\n여러 레이스장\n근처에 있었던 듯한데…",
+   "text_kr": "마코토\n「분명\n여러 레이스장\n근처에 있었던 듯한데…",
    "orig_len": 32,
    "controls": [],
    "occurrences": [
@@ -22344,11 +22344,11 @@
   },
   {
    "id": "F1096",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "まこと\n「情報によると",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "마코토\n「정보에 따르면",
+   "text_kr": "마코토\n「정보에 따르면",
    "orig_len": 14,
    "controls": [],
    "occurrences": [
@@ -22404,11 +22404,11 @@
   },
   {
    "id": "F1097",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "藤吉くんの妹　チイコさんが\n明日の開会武のチケットを\nたくさん持っているらしいですよ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "토우키치의 동생 치이코가\n내일 개막식 티켓을\n많이 갖고 있대요",
+   "text_kr": "토우키치의 동생 치이코가\n내일 개막식 티켓을\n많이 갖고 있대요",
    "orig_len": 52,
    "controls": [],
    "occurrences": [
@@ -22422,11 +22422,11 @@
   },
   {
    "id": "F1098",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "アストロレンジャーズの\nバックブレーダーには\nなにか新機能が\nとうさいされているようです{wait}\nくれぐれも気をつけてください",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "아스트로 레인저스의\n벅블레이더에는\n뭔가 새 기능이\n탑재된 것 같아요{wait}\n각별히 조심하세요",
+   "text_kr": "아스트로 레인저스의\n벅블레이더에는\n뭔가 새 기능이\n탑재된 것 같아요{wait}\n각별히 조심하세요",
    "orig_len": 65,
    "controls": [
     "{wait}"
@@ -22442,11 +22442,11 @@
   },
   {
    "id": "F1099",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "めぐみ\n「弟がキミたちの大ファンなのよ{wait}\nわたしも応援してるからね♥",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "메구미\n「동생이 너희의 열성 팬이야{wait}\n나도 응원할게♥",
+   "text_kr": "메구미\n「동생이 너희의 열성 팬이야{wait}\n나도 응원할게♥",
    "orig_len": 39,
    "controls": [
     "{wait}"
@@ -22462,11 +22462,11 @@
   },
   {
    "id": "F1100",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "もえ\n「うちの兄貴もいいトシこいて\nミニ四駆やってるわ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "모에\n「우리 오빠도 나이 먹고\n미니사구를 해",
+   "text_kr": "모에\n「우리 오빠도 나이 먹고\n미니사구를 해",
    "orig_len": 32,
    "controls": [],
    "occurrences": [
@@ -22480,11 +22480,11 @@
   },
   {
    "id": "F1101",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "やえ\n「最近は女の子の間でも\nミニ四駆がはやってるらしいのよ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "야에\n「요즘 여자아이들 사이에서도\n미니사구가 유행인가 봐",
+   "text_kr": "야에\n「요즘 여자아이들 사이에서도\n미니사구가 유행인가 봐",
    "orig_len": 38,
    "controls": [],
    "occurrences": [
@@ -22498,11 +22498,11 @@
   },
   {
    "id": "F1102",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "ゆり\n「ミニ四駆？{wait}\nそういえばきょう\nやよいが買いにいくって言ってたわね",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "유리\n「미니사구？{wait}\n그러고 보니 오늘\n야요이가 사러 간댔어",
+   "text_kr": "유리\n「미니사구？{wait}\n그러고 보니 오늘\n야요이가 사러 간댔어",
    "orig_len": 42,
    "controls": [
     "{wait}"
@@ -22518,11 +22518,11 @@
   },
   {
    "id": "F1103",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "よりこ\n「キミたち　テレビで見たことあるわ！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "요리코\n「너희　TV에서 본 적 있어！",
+   "text_kr": "요리코\n「너희　TV에서 본 적 있어！",
    "orig_len": 24,
    "controls": [],
    "occurrences": [
@@ -22536,11 +22536,11 @@
   },
   {
    "id": "F1104",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "りえ\n「や〜ん♥\nちょ〜かわいい〜！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "리에\n「꺄아♥\n너무 귀여워〜！",
+   "text_kr": "리에\n「꺄아♥\n너무 귀여워〜！",
    "orig_len": 19,
    "controls": [],
    "occurrences": [
@@ -22554,11 +22554,11 @@
   },
   {
    "id": "F1105",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "るみこ\n「ミニヨンクゥ？{wait}\n新しいヘアスタイルかなにかぁ？",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "루미코\n「미니사구우？{wait}\n새 헤어스타일 같은 거야？",
+   "text_kr": "루미코\n「미니사구우？{wait}\n새 헤어스타일 같은 거야？",
    "orig_len": 31,
    "controls": [
     "{wait}"
@@ -22574,11 +22574,11 @@
   },
   {
    "id": "F1106",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "あきら\n「ていぼうがたおれるぞ〜{wait}\n…ドテっ{wait}\nボクのだじゃれセンスって\nキラリと光るものがあるよねっ！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "아키라\n「방파제가 쓰러진다〜{wait}\n…털썩{wait}\n내 말장난 감각에는\n번뜩이는 게 있지！",
+   "text_kr": "아키라\n「방파제가 쓰러진다〜{wait}\n…털썩{wait}\n내 말장난 감각에는\n번뜩이는 게 있지！",
    "orig_len": 54,
    "controls": [
     "{wait}",
@@ -22595,11 +22595,11 @@
   },
   {
    "id": "F1107",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "うみ\n「毎日ギャグばっかり考えてる\n男の子がいるのよ{wait}\nでもそれがつまんないの",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "우미\n「매일 개그만 생각하는\n남자애가 있어{wait}\n그런데 하나도 재미없어",
+   "text_kr": "우미\n「매일 개그만 생각하는\n남자애가 있어{wait}\n그런데 하나도 재미없어",
    "orig_len": 45,
    "controls": [
     "{wait}"
@@ -22615,11 +22615,11 @@
   },
   {
    "id": "F1108",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "きよし\n「なんだ！？{wait}\n今年はオレの2番目に好きな\nオーストラリアのARブーメランズも\n3番目に好きな\nオーディンズもいねーじゃねーか！{wait}\nいったいどこを\n応援したらいいんだよ！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "키요시\n「뭐야！？{wait}\n올해는 두 번째로 좋아하는\n호주 AR 부메랑즈도\n세 번째로 좋아하는\n오딘즈도 없잖아！{wait}\n대체 어디를\n응원하라는 거야！",
+   "text_kr": "키요시\n「뭐야！？{wait}\n올해는 두 번째로 좋아하는\n호주 AR 부메랑즈도\n세 번째로 좋아하는\n오딘즈도 없잖아！{wait}\n대체 어디를\n응원하라는 거야！",
    "orig_len": 100,
    "controls": [
     "{wait}",
@@ -22636,11 +22636,11 @@
   },
   {
    "id": "F1109",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "黒沢\n「土屋博士がオレに\nGPマシンのシャーシを\nくれるって約束してくれたんだ{wait}\n今度　勝負しようぜ！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "쿠로사와\n「츠치야 박사가 내게\nGP 머신 섀시를\n주겠다고 약속했어{wait}\n다음에 승부하자！",
+   "text_kr": "쿠로사와\n「츠치야 박사가 내게\nGP 머신 섀시를\n주겠다고 약속했어{wait}\n다음에 승부하자！",
    "orig_len": 64,
    "controls": [
     "{wait}"
@@ -22656,11 +22656,11 @@
   },
   {
    "id": "F1110",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "けいこ\n「きょう　公園に集まっている\nWGPマニアは男ばっかり{wait}\nなぜ？",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "케이코\n「오늘 공원에 모인\nWGP 마니아는 남자뿐이야{wait}\n왜지？",
+   "text_kr": "케이코\n「오늘 공원에 모인\nWGP 마니아는 남자뿐이야{wait}\n왜지？",
    "orig_len": 41,
    "controls": [
     "{wait}"
@@ -22676,11 +22676,11 @@
   },
   {
    "id": "F1111",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "せいこ\n「きょうは公園には入れないの{wait}\n男だけのロマンなんですって",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "세이코\n「오늘은 공원에 못 들어가{wait}\n남자만의 낭만이래",
+   "text_kr": "세이코\n「오늘은 공원에 못 들어가{wait}\n남자만의 낭만이래",
    "orig_len": 37,
    "controls": [
     "{wait}"
@@ -22696,11 +22696,11 @@
   },
   {
    "id": "F1112",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "せいじ\n「今度テレビに映った時に\n『せいじ見てるか！』って言ってくれ！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "세이지\n「다음에 TV에 나오면\n『세이지　보고 있냐！』 해 줘！",
+   "text_kr": "세이지\n「다음에 TV에 나오면\n『세이지　보고 있냐！』 해 줘！",
    "orig_len": 42,
    "controls": [],
    "occurrences": [
@@ -22714,11 +22714,11 @@
   },
   {
    "id": "F1113",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "そのこ\n「エンシェントフォースの連中って\nみんな目が死んでてこわいわよね",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "소노코\n「엔션트 포스 녀석들은\n모두 눈이 죽어서 무서워",
+   "text_kr": "소노코\n「엔션트 포스 녀석들은\n모두 눈이 죽어서 무서워",
    "orig_len": 41,
    "controls": [],
    "occurrences": [
@@ -22732,11 +22732,11 @@
   },
   {
    "id": "F1114",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "たえこ\n「サバンナソルジャーズって\n女ばかりなの…{wait}\nつまんないの",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "타에코\n「사반나 솔져스는\n여자뿐이야…{wait}\n재미없어",
+   "text_kr": "타에코\n「사반나 솔져스는\n여자뿐이야…{wait}\n재미없어",
    "orig_len": 35,
    "controls": [
     "{wait}"
@@ -22752,11 +22752,11 @@
   },
   {
    "id": "F1115",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "つよし\n「たのむ！{wait}\nサバンナソルジャーズのジュリアナに\nサインもらってきてくれ！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "츠요시\n「부탁이야！{wait}\n사반나 솔져스의 쥴리아나에게\n사인을 받아 줘！",
+   "text_kr": "츠요시\n「부탁이야！{wait}\n사반나 솔져스의 쥴리아나에게\n사인을 받아 줘！",
    "orig_len": 42,
    "controls": [
     "{wait}"
@@ -22772,11 +22772,11 @@
   },
   {
    "id": "F1116",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "なつみ\n「思い出した！{wait}\nあのターバンの男の子{wait}\nどこかで見たと思ったら\nテレビで見たんだわ！{wait}\n確かミニ四レーサーだったのよね…",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "나츠미\n「생각났어！{wait}\n그 터번 쓴 남자아이{wait}\n어디서 봤나 했더니\nTV에서 봤어！{wait}\n분명 미니사구 레이서였지…",
+   "text_kr": "나츠미\n「생각났어！{wait}\n그 터번 쓴 남자아이{wait}\n어디서 봤나 했더니\nTV에서 봤어！{wait}\n분명 미니사구 레이서였지…",
    "orig_len": 75,
    "controls": [
     "{wait}",
@@ -22794,11 +22794,11 @@
   },
   {
    "id": "F1117",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "なつみ\n「さっき　ターバンをまいた\n暗そうな子がここを歩いて行ったわ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "나츠미\n「아까　터번을 두른\n어두운 아이가 지나갔어",
+   "text_kr": "나츠미\n「아까　터번을 두른\n어두운 아이가 지나갔어",
    "orig_len": 39,
    "controls": [],
    "occurrences": [
@@ -22812,11 +22812,11 @@
   },
   {
    "id": "F1118",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "ふみえ\n「パンフレットで\n今年の出場チームをチェックしているの{wait}\nふうん…　この人ちょっと美形ね…",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "후미에\n「팸플릿으로\n올해 출전 팀을 확인하고 있어{wait}\n흐음…　이 사람 좀 잘생겼네…",
+   "text_kr": "후미에\n「팸플릿으로\n올해 출전 팀을 확인하고 있어{wait}\n흐음…　이 사람 좀 잘생겼네…",
    "orig_len": 56,
    "controls": [
     "{wait}"
@@ -22832,11 +22832,11 @@
   },
   {
    "id": "F1119",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "まこと\n「あっ\n例のアンケート結果ですか？{wait}\n",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "마코토\n「앗\n그 설문 결과인가요？{wait}\n",
+   "text_kr": "마코토\n「앗\n그 설문 결과인가요？{wait}\n",
    "orig_len": 27,
    "controls": [
     "{wait}"
@@ -22852,11 +22852,11 @@
   },
   {
    "id": "F1120",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "とってもマニアックな回答が\nたくさん取れたと\nおつたえください",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "아주 마니악한 답변을\n많이 얻었다고\n전해 주세요",
+   "text_kr": "아주 마니악한 답변을\n많이 얻었다고\n전해 주세요",
    "orig_len": 35,
    "controls": [],
    "occurrences": [
@@ -22870,11 +22870,11 @@
   },
   {
    "id": "F1121",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "イベントアイテム\n『アンケート結果』を手に入れた！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "이벤트 아이템\n『설문 결과』를 손에 넣었다！",
+   "text_kr": "이벤트 아이템\n『설문 결과』를 손에 넣었다！",
    "orig_len": 29,
    "controls": [],
    "occurrences": [
@@ -22888,11 +22888,11 @@
   },
   {
    "id": "F1122",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "サバンナソルジャーズは\nかなりのレベルアップを\nしたらしいですよ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "사반나 솔져스는\n상당히 수준이\n올랐다고 해요",
+   "text_kr": "사반나 솔져스는\n상당히 수준이\n올랐다고 해요",
    "orig_len": 33,
    "controls": [],
    "occurrences": [
@@ -22906,11 +22906,11 @@
   },
   {
    "id": "F1123",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "めぐみ\n「弟といっしょに開会武を\nみに行ったわよ{wait}\nけっこうカッコいい子が多くて\nドキドキしちゃった♥",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "메구미\n「동생과 함께 개막식을\n보러 갔어{wait}\n멋진 아이가 많아서\n두근거렸어♥",
+   "text_kr": "메구미\n「동생과 함께 개막식을\n보러 갔어{wait}\n멋진 아이가 많아서\n두근거렸어♥",
    "orig_len": 59,
    "controls": [
     "{wait}"
@@ -22926,11 +22926,11 @@
   },
   {
    "id": "F1124",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "もえ\n「うちの兄貴ったらね{wait}\n自分でZMCをつくるんだって\nかまどで焼物を始めたの{wait}\nバッカみたい",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "모에\n「우리 오빠가 말이야{wait}\n직접 ZMC를 만든다면서\n가마에서 도자기를 굽기 시작했어{wait}\n바보 같아",
+   "text_kr": "모에\n「우리 오빠가 말이야{wait}\n직접 ZMC를 만든다면서\n가마에서 도자기를 굽기 시작했어{wait}\n바보 같아",
    "orig_len": 57,
    "controls": [
     "{wait}",
@@ -22947,11 +22947,11 @@
   },
   {
    "id": "F1125",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "やえ\n「ミニ四駆かあ\nやってみたいなあ{wait}\nだれか教えてくれないかなあ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "야에\n「미니사구라\n해 보고 싶다{wait}\n누가 가르쳐 주지 않을까",
+   "text_kr": "야에\n「미니사구라\n해 보고 싶다{wait}\n누가 가르쳐 주지 않을까",
    "orig_len": 38,
    "controls": [
     "{wait}"
@@ -22967,11 +22967,11 @@
   },
   {
    "id": "F1126",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "ゆり\n「やよいがミニ四駆にハマッてから\nつきあいが悪くなったわ{wait}\nそんなにおもしろいのかしら",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "유리\n「야요이가 미니사구에 빠진 뒤로\n잘 만나 주지 않아{wait}\n그렇게 재미있나",
+   "text_kr": "유리\n「야요이가 미니사구에 빠진 뒤로\n잘 만나 주지 않아{wait}\n그렇게 재미있나",
    "orig_len": 50,
    "controls": [
     "{wait}"
@@ -22987,11 +22987,11 @@
   },
   {
    "id": "F1127",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "よりこ\n「見た！　見た！{wait}\nまたテレビ出てたわよね？{wait}\nあれってインラインローラーの\n世界グランプリよね？",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "요리코\n「봤어！　봤어！{wait}\n또 TV에 나왔지？{wait}\n그거 인라인 롤러\n세계 그랑프리지？",
+   "text_kr": "요리코\n「봤어！　봤어！{wait}\n또 TV에 나왔지？{wait}\n그거 인라인 롤러\n세계 그랑프리지？",
    "orig_len": 59,
    "controls": [
     "{wait}",
@@ -23008,11 +23008,11 @@
   },
   {
    "id": "F1128",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "りえ\n「ねえ♥{wait}\nお姉さんとどっか遊びに行かない？",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "리에\n「있잖아♥{wait}\n누나와 어디 놀러 가지 않을래？",
+   "text_kr": "리에\n「있잖아♥{wait}\n누나와 어디 놀러 가지 않을래？",
    "orig_len": 29,
    "controls": [
     "{wait}"
@@ -23028,11 +23028,11 @@
   },
   {
    "id": "F1129",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "るみこ\n「わかった！{wait}\nミニヨンクって新しいタイプの\nヘアカラーなんでしょ！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "루미코\n「알겠다！{wait}\n미니사구는 새로운\n헤어 컬러지！",
+   "text_kr": "루미코\n「알겠다！{wait}\n미니사구는 새로운\n헤어 컬러지！",
    "orig_len": 40,
    "controls": [
     "{wait}"
@@ -23048,11 +23048,11 @@
   },
   {
    "id": "F1130",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "あきら\n「日本人が川に飛びこんだぞ〜{wait}\n…ジャパーン！{wait}\nね　いけてるでしょ？",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "아키라\n「일본인이 강에 뛰어들었어〜{wait}\n…재팬！{wait}\n어때　끝내주지？",
+   "text_kr": "아키라\n「일본인이 강에 뛰어들었어〜{wait}\n…재팬！{wait}\n어때　끝내주지？",
    "orig_len": 44,
    "controls": [
     "{wait}",
@@ -23069,11 +23069,11 @@
   },
   {
    "id": "F1131",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "うみ\n「毎日ギャグばっかり考えてる\n男の子がいるのよ{wait}\nきょうのは前にもましてつまらなかったわ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "우미\n「매일 개그만 생각하는\n남자애가 있어{wait}\n오늘 건 평소보다 더 재미없었어",
+   "text_kr": "우미\n「매일 개그만 생각하는\n남자애가 있어{wait}\n오늘 건 평소보다 더 재미없었어",
    "orig_len": 54,
    "controls": [
     "{wait}"
@@ -23089,11 +23089,11 @@
   },
   {
    "id": "F1132",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "えいじ\n「なあなあ{wait}\nインターナショナルスクールに行ったら\nグランプリレーサーに\n会わせてもらえるのか？",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "에이지\n「있잖아{wait}\n국제학교에 가면\n그랑프리 레이서를\n만나게 해 주려나？",
+   "text_kr": "에이지\n「있잖아{wait}\n국제학교에 가면\n그랑프리 레이서를\n만나게 해 주려나？",
    "orig_len": 55,
    "controls": [
     "{wait}"
@@ -23109,11 +23109,11 @@
   },
   {
    "id": "F1133",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "かずや\n「土屋研究所で働いてる\nボクの兄ちゃん　元気でやってる？",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "카즈야\n「츠치야 연구소에서 일하는\n우리 형　잘 지내？",
+   "text_kr": "카즈야\n「츠치야 연구소에서 일하는\n우리 형　잘 지내？",
    "orig_len": 42,
    "controls": [],
    "occurrences": [
@@ -23127,11 +23127,11 @@
   },
   {
    "id": "F1134",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "きよし\n「今年はビクトリーズを\n応援することに決めたよ{wait}\nやっぱオレも日本人だしな",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "키요시\n「올해는 빅토리즈를\n응원하기로 했어{wait}\n나도 일본인이니까",
+   "text_kr": "키요시\n「올해는 빅토리즈를\n응원하기로 했어{wait}\n나도 일본인이니까",
    "orig_len": 49,
    "controls": [
     "{wait}"
@@ -23147,11 +23147,11 @@
   },
   {
    "id": "F1135",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "黒沢\n「約束どおり\n土屋博士にGPマシンの\nシャーシをもらったぜ{wait}\nでもGPチップがなけりゃ\n意味ねぇよな{wait}\nまた今度ねだってみるか！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "쿠로사와\n「약속대로\n츠치야 박사에게 GP 머신\n섀시를 받았어{wait}\n하지만 GP칩이 없으면\n소용없지{wait}\n다음에 또 졸라 볼까！",
+   "text_kr": "쿠로사와\n「약속대로\n츠치야 박사에게 GP 머신\n섀시를 받았어{wait}\n하지만 GP칩이 없으면\n소용없지{wait}\n다음에 또 졸라 볼까！",
    "orig_len": 80,
    "controls": [
     "{wait}",
@@ -23168,11 +23168,11 @@
   },
   {
    "id": "F1136",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "けいこ\n「きょう　公園に集まっている\nWGPマニアは\nシルバーフォックスファンばかり",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "케이코\n「오늘 공원에 모인\nWGP 마니아는\n실버 폭스 팬뿐이야",
+   "text_kr": "케이코\n「오늘 공원에 모인\nWGP 마니아는\n실버 폭스 팬뿐이야",
    "orig_len": 46,
    "controls": [],
    "occurrences": [
@@ -23186,11 +23186,11 @@
   },
   {
    "id": "F1137",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "しんじ\n「明日の試合のチケット\n取れなかったんだ…{wait}\nチキショー",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "신지\n「내일 경기 티켓을\n못 구했어…{wait}\n제길",
+   "text_kr": "신지\n「내일 경기 티켓을\n못 구했어…{wait}\n제길",
    "orig_len": 38,
    "controls": [
     "{wait}"
@@ -23206,11 +23206,11 @@
   },
   {
    "id": "F1138",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "せいじ\n「オレ　明日の試合みにいくからさ{wait}\nスタンドのオレをテレビに映すように\nカメラマンに言っといてよ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "세이지\n「나　내일 경기 보러 가니까{wait}\n관중석의 날 TV에 비추라고\n카메라맨에게 말해 줘",
+   "text_kr": "세이지\n「나　내일 경기 보러 가니까{wait}\n관중석의 날 TV에 비추라고\n카메라맨에게 말해 줘",
    "orig_len": 59,
    "controls": [
     "{wait}"
@@ -23226,11 +23226,11 @@
   },
   {
    "id": "F1139",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "つよし\n「たのむ！{wait}\nシルバーフォックスのユーリの\n妹のサインをもらってきてくれ！{wait}\nえ？　妹なんていない？",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "츠요시\n「부탁이야！{wait}\n실버 폭스 유리의\n여동생 사인을 받아 줘！{wait}\n뭐？　여동생은 없어？",
+   "text_kr": "츠요시\n「부탁이야！{wait}\n실버 폭스 유리의\n여동생 사인을 받아 줘！{wait}\n뭐？　여동생은 없어？",
    "orig_len": 57,
    "controls": [
     "{wait}",
@@ -23247,11 +23247,11 @@
   },
   {
    "id": "F1140",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "としひこ\n「おい！{wait}\n学校に校長先生がいるんだけど\nもういってみたか？",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "토시히코\n「야！{wait}\n학교에 교장 선생님이 계신데\n벌써 가 봤어？",
+   "text_kr": "토시히코\n「야！{wait}\n학교에 교장 선생님이 계신데\n벌써 가 봤어？",
    "orig_len": 42,
    "controls": [
     "{wait}"
@@ -23273,11 +23273,11 @@
   },
   {
    "id": "F1141",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "としひこ\n「ロシアを応援しようと思って\nコサックダンスを練習したんだ{wait}\nそしたら　ギックリごしになっちゃった",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "토시히코\n「러시아를 응원하려고\n코사크 댄스를 연습했어{wait}\n그랬더니 허리를 삐었어",
+   "text_kr": "토시히코\n「러시아를 응원하려고\n코사크 댄스를 연습했어{wait}\n그랬더니 허리를 삐었어",
    "orig_len": 60,
    "controls": [
     "{wait}"
@@ -23293,11 +23293,11 @@
   },
   {
    "id": "F1142",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "ふみえ\n「わたしね{wait}\n今回のWGPで目をつけている\nレーサーがいるのよ{wait}\nえっ　だれかって？{wait}\n教えて{c8:02}あ・げ・な・い♥{c8:00}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "후미에\n「있잖아{wait}\n이번 WGP에서 눈여겨보는\n레이서가 있어{wait}\n뭐　누구냐고？{wait}\n안 {c8:02}알・려・줘♥{c8:00}",
+   "text_kr": "후미에\n「있잖아{wait}\n이번 WGP에서 눈여겨보는\n레이서가 있어{wait}\n뭐　누구냐고？{wait}\n안 {c8:02}알・려・줘♥{c8:00}",
    "orig_len": 68,
    "controls": [
     "{wait}",
@@ -23317,11 +23317,11 @@
   },
   {
    "id": "F1143",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "シルバーフォックスは\nシベリアで血のにじむような\n特訓をしたそうですよ{wait}\nそれに\n新型モーターの開発にも\n成功したとか…{wait}\nあなどれませんよ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "실버 폭스는\n시베리아에서 피나는\n특훈을 했대요{wait}\n게다가\n신형 모터 개발에도\n성공했다던데…{wait}\n얕볼 수 없어요",
+   "text_kr": "실버 폭스는\n시베리아에서 피나는\n특훈을 했대요{wait}\n게다가\n신형 모터 개발에도\n성공했다던데…{wait}\n얕볼 수 없어요",
    "orig_len": 80,
    "controls": [
     "{wait}",
@@ -23338,11 +23338,11 @@
   },
   {
    "id": "F1144",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "めぐみ\n「ねえねえ{wait}\n弟がミニ四駆レーサーになるんだって\n言ってきかないのよ\nどうすればなれるのかしら？{wait}\n…えっ　弟は何才かって？{wait}\n4才よ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "메구미\n「있잖아{wait}\n동생이 미니사구 레이서가 되겠대\n아무리 말려도 안 들어\n어떻게 하면 될까？{wait}\n…뭐　몇 살이냐고？{wait}\n네 살이야",
+   "text_kr": "메구미\n「있잖아{wait}\n동생이 미니사구 레이서가 되겠대\n아무리 말려도 안 들어\n어떻게 하면 될까？{wait}\n…뭐　몇 살이냐고？{wait}\n네 살이야",
    "orig_len": 80,
    "controls": [
     "{wait}",
@@ -23360,11 +23360,11 @@
   },
   {
    "id": "F1145",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "もえ\n「うちの兄貴ったらね{wait}\nかまどでZMCをつくっているうちに\n焼き物に目覚めたらしいの{wait}\nほら　あのツボとかつくるやつよ{wait}\nもうわけわかんないわ！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "모에\n「우리 오빠가 말이야{wait}\n가마에서 ZMC를 만들다\n도자기에 눈을 떴나 봐{wait}\n저런 항아리 만드는 거 있잖아{wait}\n이젠 영문을 모르겠어！",
+   "text_kr": "모에\n「우리 오빠가 말이야{wait}\n가마에서 ZMC를 만들다\n도자기에 눈을 떴나 봐{wait}\n저런 항아리 만드는 거 있잖아{wait}\n이젠 영문을 모르겠어！",
    "orig_len": 82,
    "controls": [
     "{wait}",
@@ -23382,11 +23382,11 @@
   },
   {
    "id": "F1146",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "やえ\n「ねえ{wait}\n今度わたしにもミニ四駆教えてよ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "야에\n「있잖아{wait}\n다음엔 나도 미니사구를 가르쳐 줘",
+   "text_kr": "야에\n「있잖아{wait}\n다음엔 나도 미니사구를 가르쳐 줘",
    "orig_len": 29,
    "controls": [
     "{wait}"
@@ -23402,11 +23402,11 @@
   },
   {
    "id": "F1147",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "あきら\n「このぼうしドイツんだ？{wait}\nあっ　それオランダ{wait}\nどこのドイツだ！{wait}\nミハエルだ！{wait}\nぎゃははは！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "아키라\n「이 모자　누구 거야？{wait}\n앗　오란다{wait}\n어떤 녀석 거야！{wait}\n미하엘 거야！{wait}\n갸하하하！",
+   "text_kr": "아키라\n「이 모자　누구 거야？{wait}\n앗　오란다{wait}\n어떤 녀석 거야！{wait}\n미하엘 거야！{wait}\n갸하하하！",
    "orig_len": 54,
    "controls": [
     "{wait}",
@@ -23425,11 +23425,11 @@
   },
   {
    "id": "F1148",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "うみ\n「あの男の子{wait}\n毎日あんなつまらないギャグばっかり\n考えてて楽しいのかしら？{wait}\nホントにもうヘタなシャレは\nやめなしゃれって言いたいわよ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "우미\n「저 남자애{wait}\n매일 저런 시시한 개그만\n생각해서 즐거울까？{wait}\n정말 썰렁한 농담은\n그만하라고 하고 싶어",
+   "text_kr": "우미\n「저 남자애{wait}\n매일 저런 시시한 개그만\n생각해서 즐거울까？{wait}\n정말 썰렁한 농담은\n그만하라고 하고 싶어",
    "orig_len": 79,
    "controls": [
     "{wait}",
@@ -23446,11 +23446,11 @@
   },
   {
    "id": "F1149",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "えいじ\n「なあなあ{wait}\nいくらグランプリレーサーだって\nトイレくらいいくんだろ？",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "에이지\n「있잖아{wait}\n그랑프리 레이서도\n화장실은 가겠지？",
+   "text_kr": "에이지\n「있잖아{wait}\n그랑프리 레이서도\n화장실은 가겠지？",
    "orig_len": 40,
    "controls": [
     "{wait}"
@@ -23466,11 +23466,11 @@
   },
   {
    "id": "F1150",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "かずみ\n「ねえジュン{wait}\nいいかげんミニ四駆以外の\n話題でもりあがろうよ〜",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "카즈미\n「있잖아　준{wait}\n이제 미니사구 말고\n다른 얘기도 하자〜",
+   "text_kr": "카즈미\n「있잖아　준{wait}\n이제 미니사구 말고\n다른 얘기도 하자〜",
    "orig_len": 43,
    "controls": [
     "{wait}"
@@ -23486,11 +23486,11 @@
   },
   {
    "id": "F1151",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "かずや\n「最近　土屋研究所で働いてる\nボクの兄ちゃんの元気がないんだ{wait}\nいつまでたっても\nレース場でコースタイムの記録ばっかりで\n土屋博士にきらわれてるのかなぁって…{wait}\nそんなことないよね！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "카즈야\n「요즘 츠치야 연구소에서 일하는\n우리 형이 기운이 없어{wait}\n언제나 레이스장에서\n코스 기록만 재고 있어서\n박사님이 싫어하나 고민하거든…{wait}\n그럴 리 없지！",
+   "text_kr": "카즈야\n「요즘 츠치야 연구소에서 일하는\n우리 형이 기운이 없어{wait}\n언제나 레이스장에서\n코스 기록만 재고 있어서\n박사님이 싫어하나 고민하거든…{wait}\n그럴 리 없지！",
    "orig_len": 114,
    "controls": [
     "{wait}",
@@ -23507,11 +23507,11 @@
   },
   {
    "id": "F1152",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "きよし\n「明日の対戦相手って\n新チームのリボルバーズなんだろ{wait}\nがんばれよ！{wait}\nでも　オレが応援するチームって\nなぜかいつも最下位になるんだ…",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "키요시\n「내일 상대는\n새 팀 리볼버즈라며{wait}\n힘내！{wait}\n그런데 내가 응원하는 팀은\n왠지 늘 꼴찌가 돼…",
+   "text_kr": "키요시\n「내일 상대는\n새 팀 리볼버즈라며{wait}\n힘내！{wait}\n그런데 내가 응원하는 팀은\n왠지 늘 꼴찌가 돼…",
    "orig_len": 83,
    "controls": [
     "{wait}",
@@ -23528,11 +23528,11 @@
   },
   {
    "id": "F1153",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "黒沢\n「よお…{wait}{clear}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "쿠로사와\n「여어…{wait}{clear}",
+   "text_kr": "쿠로사와\n「여어…{wait}{clear}",
    "orig_len": 12,
    "controls": [
     "{wait}",
@@ -23549,11 +23549,11 @@
   },
   {
    "id": "F1154",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "烈\n「黒沢くん\n元気がないみたいだけど\nどうしたの？{wait}{clear}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "레츠\n「쿠로사와\n기운이 없어 보이는데\n무슨 일이야？{wait}{clear}",
+   "text_kr": "레츠\n「쿠로사와\n기운이 없어 보이는데\n무슨 일이야？{wait}{clear}",
    "orig_len": 34,
    "controls": [
     "{wait}",
@@ -23570,11 +23570,11 @@
   },
   {
    "id": "F1155",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "黒沢\n「いやな…{wait}\nさっき土屋博士んとこへ\nGPチップをもらいに\n行ったんだけど\nまだ完成してなくてな{wait}\n楽しみにしていたから\nさすがにショックだったぜ{wait}{clear}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "쿠로사와\n「그게…{wait}\n아까 츠치야 박사에게\nGP칩을 받으러\n갔는데\n아직 완성되지 않았대{wait}\n기대했던 만큼\n충격이 컸어{wait}{clear}",
+   "text_kr": "쿠로사와\n「그게…{wait}\n아까 츠치야 박사에게\nGP칩을 받으러\n갔는데\n아직 완성되지 않았대{wait}\n기대했던 만큼\n충격이 컸어{wait}{clear}",
    "orig_len": 89,
    "controls": [
     "{wait}",
@@ -23593,11 +23593,11 @@
   },
   {
    "id": "F1156",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "J\n「やくそくにおくれるなんて\n土屋博士にしては\nめずらしいね{wait}\nどうしたんだろう？{wait}{clear}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "제이\n「약속에 늦다니\n츠치야 박사님답지\n않은데{wait}\n무슨 일일까？{wait}{clear}",
+   "text_kr": "제이\n「약속에 늦다니\n츠치야 박사님답지\n않은데{wait}\n무슨 일일까？{wait}{clear}",
    "orig_len": 49,
    "controls": [
     "{wait}",
@@ -23615,11 +23615,11 @@
   },
   {
    "id": "F1157",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "黒沢\n「そうだな…{wait}\nそう言えば理由を聞いて\nなかったな{wait}\nなぁ　おめぇら\n土屋研究所にいくんなら\n理由を聞いといてくれねぇか？{wait}{clear}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "쿠로사와\n「그러게…{wait}\n그러고 보니 이유를\n안 물어봤어{wait}\n너희 츠치야 연구소에 가면\n이유를 물어봐 줄래？{wait}{clear}",
+   "text_kr": "쿠로사와\n「그러게…{wait}\n그러고 보니 이유를\n안 물어봤어{wait}\n너희 츠치야 연구소에 가면\n이유를 물어봐 줄래？{wait}{clear}",
    "orig_len": 81,
    "controls": [
     "{wait}",
@@ -23638,11 +23638,11 @@
   },
   {
    "id": "F1158",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "烈\n「わかった　聞いておくよ{wait}{clear}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "레츠\n「알았어　물어볼게{wait}{clear}",
+   "text_kr": "레츠\n「알았어　물어볼게{wait}{clear}",
    "orig_len": 19,
    "controls": [
     "{wait}",
@@ -23659,11 +23659,11 @@
   },
   {
    "id": "F1159",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "黒沢\n「すまねぇがよろしくたのむ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "쿠로사와\n「미안하지만 부탁해",
+   "text_kr": "쿠로사와\n「미안하지만 부탁해",
    "orig_len": 19,
    "controls": [],
    "occurrences": [
@@ -23677,11 +23677,11 @@
   },
   {
    "id": "F1160",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "烈\n「黒沢くん　ハイこれ{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "레츠\n「쿠로사와　자　이거{wait}",
+   "text_kr": "레츠\n「쿠로사와　자　이거{wait}",
    "orig_len": 17,
    "controls": [
     "{wait}"
@@ -23697,11 +23697,11 @@
   },
   {
    "id": "F1161",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "イベントアイテム\n『GPチップ　BLACK』をわたした",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "이벤트 아이템\n『GP칩　BLACK』을 건넸다",
+   "text_kr": "이벤트 아이템\n『GP칩　BLACK』을 건넸다",
    "orig_len": 28,
    "controls": [],
    "occurrences": [
@@ -23715,11 +23715,11 @@
   },
   {
    "id": "F1162",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "黒沢\n「こっ　これは！？{wait}\n",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "쿠로사와\n「이　이건！？{wait}\n",
+   "text_kr": "쿠로사와\n「이　이건！？{wait}\n",
    "orig_len": 17,
    "controls": [
     "{wait}"
@@ -23735,11 +23735,11 @@
   },
   {
    "id": "F1163",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "へっ　ありがとうよ{wait}\nかわりといっちゃなんだが\n明日のWGPでは応援\nしてやるぜ{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "헤　고마워{wait}\n답례라고 하긴 뭐하지만\n내일 WGP에서는\n응원해 주지{wait}",
+   "text_kr": "헤　고마워{wait}\n답례라고 하긴 뭐하지만\n내일 WGP에서는\n응원해 주지{wait}",
    "orig_len": 46,
    "controls": [
     "{wait}",
@@ -23756,11 +23756,11 @@
   },
   {
    "id": "F1164",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "レースアイテム\n『黒沢のさけび』を手に入れた",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "레이스 아이템\n『쿠로사와의 함성』 획득",
+   "text_kr": "레이스 아이템\n『쿠로사와의 함성』 획득",
    "orig_len": 26,
    "controls": [],
    "occurrences": [
@@ -23774,11 +23774,11 @@
   },
   {
    "id": "F1165",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "黒沢\n「ちっくしょ〜{wait}\nGPチップさえあれば\n完成なのによ{wait}\nこれじゃ生殺しだぜ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "쿠로사와\n「제기랄〜{wait}\nGP칩만 있으면\n완성인데{wait}\n이건 사람 애태우잖아",
+   "text_kr": "쿠로사와\n「제기랄〜{wait}\nGP칩만 있으면\n완성인데{wait}\n이건 사람 애태우잖아",
    "orig_len": 47,
    "controls": [
     "{wait}",
@@ -23795,11 +23795,11 @@
   },
   {
    "id": "F1166",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "黒沢\n「よお！{wait}\n",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "쿠로사와\n「여어！{wait}\n",
+   "text_kr": "쿠로사와\n「여어！{wait}\n",
    "orig_len": 12,
    "controls": [
     "{wait}"
@@ -23815,11 +23815,11 @@
   },
   {
    "id": "F1167",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "GPチップありがとよ！{wait}\n",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "GP칩　고마워！{wait}\n",
+   "text_kr": "GP칩　고마워！{wait}\n",
    "orig_len": 14,
    "controls": [
     "{wait}"
@@ -23835,11 +23835,11 @@
   },
   {
    "id": "F1168",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "でもグランプリマシンって\nふつうの電池じゃ\n動かねぇんだな{wait}\nまったく　土屋博士もそれくらい\n先に言ってほしいぜ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "그런데 그랑프리 머신은\n보통 건전지로는\n안 움직이는구나{wait}\n정말　츠치야 박사도 그 정도는\n미리 말해 줬어야지",
+   "text_kr": "그런데 그랑프리 머신은\n보통 건전지로는\n안 움직이는구나{wait}\n정말　츠치야 박사도 그 정도는\n미리 말해 줬어야지",
    "orig_len": 66,
    "controls": [
     "{wait}"
@@ -23855,11 +23855,11 @@
   },
   {
    "id": "F1169",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "黒沢\n「よお！{wait}\nついにGPチップが手に入るんだ{wait}\nこれでやっとマシンが\n完成するぜ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "쿠로사와\n「여어！{wait}\n드디어 GP칩을 받을 거야{wait}\n이걸로 겨우 머신이\n완성되겠어",
+   "text_kr": "쿠로사와\n「여어！{wait}\n드디어 GP칩을 받을 거야{wait}\n이걸로 겨우 머신이\n완성되겠어",
    "orig_len": 48,
    "controls": [
     "{wait}",
@@ -23876,11 +23876,11 @@
   },
   {
    "id": "F1170",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "けいこ\n「きょう　公園に集まっている\nWGPマニアは\nリボルバーズのファンばかり",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "케이코\n「오늘 공원에 모인\nWGP 마니아는\n리볼버즈 팬뿐이야",
+   "text_kr": "케이코\n「오늘 공원에 모인\nWGP 마니아는\n리볼버즈 팬뿐이야",
    "orig_len": 44,
    "controls": [],
    "occurrences": [
@@ -23894,11 +23894,11 @@
   },
   {
    "id": "F1171",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "しんじ\n「WGPって今すごい人気だろ？{wait}\nそれで試合のチケットが\n取りにくくなってるんだ{wait}\nなあ　こっそり1まいわけてよ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "신지\n「WGP는 지금 인기 많잖아？{wait}\n그래서 경기 티켓을\n구하기 어려워{wait}\n있잖아　몰래 한 장만 줘",
+   "text_kr": "신지\n「WGP는 지금 인기 많잖아？{wait}\n그래서 경기 티켓을\n구하기 어려워{wait}\n있잖아　몰래 한 장만 줘",
    "orig_len": 66,
    "controls": [
     "{wait}",
@@ -23915,11 +23915,11 @@
   },
   {
    "id": "F1172",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "せいじ\n「はぁ…　オレもテレビに出たいなぁ{wait}\n『明日のスターはキミだ！』ってのに\nおうぼしようかなぁ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "세이지\n「하아…　TV에 나가고 싶다{wait}\n『내일의 스타는 너다！』에\n응모해 볼까",
+   "text_kr": "세이지\n「하아…　TV에 나가고 싶다{wait}\n『내일의 스타는 너다！』에\n응모해 볼까",
    "orig_len": 54,
    "controls": [
     "{wait}"
@@ -23935,11 +23935,11 @@
   },
   {
    "id": "F1173",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "つよし\n「たのむ！{wait}\nリボルバーズのシアンのサインを\nもらってきてくれ！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "츠요시\n「부탁이야！{wait}\n리볼버즈 시안의 사인을\n받아 줘！",
+   "text_kr": "츠요시\n「부탁이야！{wait}\n리볼버즈 시안의 사인을\n받아 줘！",
    "orig_len": 37,
    "controls": [
     "{wait}"
@@ -23955,11 +23955,11 @@
   },
   {
    "id": "F1174",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "としひこ\n「リボルバーズを応援するために\n南米の音楽を練習してるんだ{wait}\nコンドルも飛んで行っちまいそうだぜ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "토시히코\n「리볼버즈를 응원하려고\n남미 음악을 연습하고 있어{wait}\n콘도르도 날아가 버리겠어",
+   "text_kr": "토시히코\n「리볼버즈를 응원하려고\n남미 음악을 연습하고 있어{wait}\n콘도르도 날아가 버리겠어",
    "orig_len": 64,
    "controls": [
     "{wait}"
@@ -23975,11 +23975,11 @@
   },
   {
    "id": "F1175",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "ふみえ\n「やっぱりレーサーは\nパツキンにかぎるわね{wait}\nだからJくんってちょっとステキよね♥",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "후미에\n「역시 레이서는\n금발이 최고야{wait}\n그래서 제이도 좀 멋져♥",
+   "text_kr": "후미에\n「역시 레이서는\n금발이 최고야{wait}\n그래서 제이도 좀 멋져♥",
    "orig_len": 46,
    "controls": [
     "{wait}"
@@ -23995,11 +23995,11 @@
   },
   {
    "id": "F1176",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "リボルバーズのマシンからは\n例のあくしつな\n電波を発生する{wait}\nGPチップ『タイプガンマ』は\n外されたそうですよ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "리볼버즈의 머신에서\n그 악질적인\n전파를 내보내던{wait}\nGP칩 『타입 감마』는\n제거됐다고 해요",
+   "text_kr": "리볼버즈의 머신에서\n그 악질적인\n전파를 내보내던{wait}\nGP칩 『타입 감마』는\n제거됐다고 해요",
    "orig_len": 62,
    "controls": [
     "{wait}"
@@ -24015,11 +24015,11 @@
   },
   {
    "id": "F1177",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "めぐみ\n「ミニ四駆ってラジコンじゃないの？\nおかしいなあ{wait}\nテレビだとレーサーが自由に\n動かしてるように見えるんだけど…",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "메구미\n「미니사구는 무선조종이 아냐？\n이상하네{wait}\nTV에선 레이서가 자유롭게\n움직이는 것 같은데…",
+   "text_kr": "메구미\n「미니사구는 무선조종이 아냐？\n이상하네{wait}\nTV에선 레이서가 자유롭게\n움직이는 것 같은데…",
    "orig_len": 67,
    "controls": [
     "{wait}"
@@ -24035,11 +24035,11 @@
   },
   {
    "id": "F1178",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "もえ\n「うちの兄貴ったらね{wait}\n焼き物を極めるには\n良い土がいるんだって\n土探しの旅に出ちゃったの{wait}\nなんなのよ　もう",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "모에\n「우리 오빠가 말이야{wait}\n도자기를 완성하려면\n좋은 흙이 필요하다며\n흙을 찾으러 여행을 떠났어{wait}\n정말 뭐 하는 거야",
+   "text_kr": "모에\n「우리 오빠가 말이야{wait}\n도자기를 완성하려면\n좋은 흙이 필요하다며\n흙을 찾으러 여행을 떠났어{wait}\n정말 뭐 하는 거야",
    "orig_len": 70,
    "controls": [
     "{wait}",
@@ -24056,11 +24056,11 @@
   },
   {
    "id": "F1179",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "やえ\n「最近　佐上模型店に\n女の子レーサーがいるって本当？{wait}\nあたしも仲間に入れてもらおっかなぁ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "야에\n「요즘 사가미 모형점에\n여자 레이서들이 있다며？{wait}\n나도 끼워 달라고 할까",
+   "text_kr": "야에\n「요즘 사가미 모형점에\n여자 레이서들이 있다며？{wait}\n나도 끼워 달라고 할까",
    "orig_len": 62,
    "controls": [
     "{wait}"
@@ -24076,11 +24076,11 @@
   },
   {
    "id": "F1180",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "ジュン\n「やよい姉ちゃんたちのせいで\nパパに店がせまいって\n追い出されちゃったのよ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "준\n「야요이 언니들 때문에\n아빠가 가게가 좁다며\n날 내쫓았어",
+   "text_kr": "준\n「야요이 언니들 때문에\n아빠가 가게가 좁다며\n날 내쫓았어",
    "orig_len": 46,
    "controls": [],
    "occurrences": [
@@ -24094,11 +24094,11 @@
   },
   {
    "id": "F1181",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "あきら\n「1＋1＝？{wait}\n答え。漢字の『田』{wait}\nぷっぷぷぷ！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "아키라\n「1＋1＝？{wait}\n정답은 한자 『논 전』{wait}\n푸푸푸！",
+   "text_kr": "아키라\n「1＋1＝？{wait}\n정답은 한자 『논 전』{wait}\n푸푸푸！",
    "orig_len": 34,
    "controls": [
     "{wait}",
@@ -24115,11 +24115,11 @@
   },
   {
    "id": "F1182",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "うみ\n「あの男の子\nきょうは算数ネタでいくらしいわ{wait}\nでもあいかわらずつまんないわね",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "우미\n「저 남자애\n오늘은 산수 소재인가 봐{wait}\n그래도 여전히 재미없네",
+   "text_kr": "우미\n「저 남자애\n오늘은 산수 소재인가 봐{wait}\n그래도 여전히 재미없네",
    "orig_len": 47,
    "controls": [
     "{wait}"
@@ -24135,11 +24135,11 @@
   },
   {
    "id": "F1183",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "えいじ\n「いいよなあ　お前たちは{wait}\nあんなにいっぱい\n外国人の友達ができて",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "에이지\n「좋겠다　너희는{wait}\n그렇게 많은\n외국인 친구가 생겨서",
+   "text_kr": "에이지\n「좋겠다　너희는{wait}\n그렇게 많은\n외국인 친구가 생겨서",
    "orig_len": 43,
    "controls": [
     "{wait}"
@@ -24155,11 +24155,11 @@
   },
   {
    "id": "F1184",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "かずみ\n「せっかくV9のライブチケットが\n手に入ったのに{wait}\nジュンったら\nあいかわらずお店の心配ばっかり{wait}\nほんと　いいおくさんになれるわ…",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "카즈미\n「모처럼 V9 라이브 티켓을\n구했는데{wait}\n준은 여전히\n가게 걱정만 해{wait}\n정말 좋은 아내가 되겠어…",
+   "text_kr": "카즈미\n「모처럼 V9 라이브 티켓을\n구했는데{wait}\n준은 여전히\n가게 걱정만 해{wait}\n정말 좋은 아내가 되겠어…",
    "orig_len": 75,
    "controls": [
     "{wait}",
@@ -24176,11 +24176,11 @@
   },
   {
    "id": "F1185",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "かずや\n「土屋研究所で働いてる\nボクの兄ちゃんが元気になったんだ{wait}\n今週から土屋博士と同じ研究室で\n働くことになったんだって{wait}\nそのかわり　もともと研究室にいた人が\nコースタイムをはかることになったから\nちょっと気まずいって{wait}\nおとなの世界って　むずかしいね！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "카즈야\n「연구소에서 일하는\n우리 형이 기운을 차렸어{wait}\n이번 주부터 박사님과 같은 방에서\n일하게 됐대{wait}\n대신 원래 방에 있던 사람이\n코스 기록을 재게 돼서\n좀 어색하다더라{wait}\n어른 세계는 어렵네！",
+   "text_kr": "카즈야\n「연구소에서 일하는\n우리 형이 기운을 차렸어{wait}\n이번 주부터 박사님과 같은 방에서\n일하게 됐대{wait}\n대신 원래 방에 있던 사람이\n코스 기록을 재게 돼서\n좀 어색하다더라{wait}\n어른 세계는 어렵네！",
    "orig_len": 157,
    "controls": [
     "{wait}",
@@ -24198,11 +24198,11 @@
   },
   {
    "id": "F1186",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "きよし\n「シャイニングドラゴンっていう名前を\n小耳にはさんだんだけど{wait}\nこれって中国チームのニューマシンの\nことなんだろ？{wait}\nオレ個人的には　去年のマシンの\nクーロンって好きだったんだけどなぁ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "키요시\n「샤이닝 드래곤이란 이름을\n얼핏 들었는데{wait}\n중국 팀의 새 머신\n말이지？{wait}\n난 작년 머신인\n쿠론을 좋아했는데",
+   "text_kr": "키요시\n「샤이닝 드래곤이란 이름을\n얼핏 들었는데{wait}\n중국 팀의 새 머신\n말이지？{wait}\n난 작년 머신인\n쿠론을 좋아했는데",
    "orig_len": 108,
    "controls": [
     "{wait}",
@@ -24219,11 +24219,11 @@
   },
   {
    "id": "F1187",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "黒沢\n「ようやく完成したぜ\nブラックセイバーGP！{wait}\n今　GPチップをきたえてる\nところなんだ{wait}\nリタイアした選手がでたら\nいつでもかわってやるぜ！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "쿠로사와\n「드디어 완성했어\n블랙 세이버 GP！{wait}\n지금 GP칩을 단련하고\n있어{wait}\n은퇴 선수가 나오면\n언제든 대신 뛰어 주지！",
+   "text_kr": "쿠로사와\n「드디어 완성했어\n블랙 세이버 GP！{wait}\n지금 GP칩을 단련하고\n있어{wait}\n은퇴 선수가 나오면\n언제든 대신 뛰어 주지！",
    "orig_len": 82,
    "controls": [
     "{wait}",
@@ -24240,11 +24240,11 @@
   },
   {
    "id": "F1188",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "けいこ\n「きょう　公園に集まっている\nWGPマニアは\n光蝦のファンばかり",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "케이코\n「오늘 공원에 모인\nWGP 마니아는\n공키 팬뿐이야",
+   "text_kr": "케이코\n「오늘 공원에 모인\nWGP 마니아는\n공키 팬뿐이야",
    "orig_len": 42,
    "controls": [],
    "occurrences": [
@@ -24258,11 +24258,11 @@
   },
   {
    "id": "F1189",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "しんじ\n「ふう{wait}\n毎週毎週　日曜日に\nレースを応援してると\nこっちまでつかれるよ{wait}\nでも　選手のキミたちは\nもっと大変なんだろうな",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "신지\n「후우{wait}\n매주 일요일마다\n레이스를 응원하니\n나까지 피곤해{wait}\n하지만 선수인 너희는\n더 힘들겠지",
+   "text_kr": "신지\n「후우{wait}\n매주 일요일마다\n레이스를 응원하니\n나까지 피곤해{wait}\n하지만 선수인 너희는\n더 힘들겠지",
    "orig_len": 79,
    "controls": [
     "{wait}",
@@ -24279,11 +24279,11 @@
   },
   {
    "id": "F1190",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "せいじ\n「なあなあ　聞いてくれ！{wait}\nオレ\n『明日のスターはキミだ！』の\n第一次選考に合格しちまったんだ！{wait}\nサインなら今のうちだぜ！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "세이지\n「있잖아　들어 봐！{wait}\n나\n『내일의 스타는 너다！』의\n1차 심사에 합격했어！{wait}\n사인은 지금 받아 둬！",
+   "text_kr": "세이지\n「있잖아　들어 봐！{wait}\n나\n『내일의 스타는 너다！』의\n1차 심사에 합격했어！{wait}\n사인은 지금 받아 둬！",
    "orig_len": 77,
    "controls": [
     "{wait}",
@@ -24300,11 +24300,11 @@
   },
   {
    "id": "F1191",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "つよし\n「たのむ！{wait}\n光蝦のリーチのサインをもらってきてくれ！{wait}\nすっげえかわいいじゃんあの子！{wait}\n…えっ　リーチは男でポンが女？{wait}\nガーン",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "츠요시\n「부탁이야！{wait}\n공키의 리치 사인을 받아 줘！{wait}\n엄청 귀엽잖아！{wait}\n…뭐　리치는 남자고 폰이 여자？{wait}\n충격이야",
+   "text_kr": "츠요시\n「부탁이야！{wait}\n공키의 리치 사인을 받아 줘！{wait}\n엄청 귀엽잖아！{wait}\n…뭐　리치는 남자고 폰이 여자？{wait}\n충격이야",
    "orig_len": 76,
    "controls": [
     "{wait}",
@@ -24323,11 +24323,11 @@
   },
   {
    "id": "F1192",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "つよし\n「なぁなぁ！{wait}\nいま　インターナショナルスクールに\nアイゼンヴォルフがいるぜ！{wait}\nでも　あのチームは男ばっかりだしなぁ{wait}\nやっぱりここはミハエルのサイン？",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "츠요시\n「있잖아！{wait}\n지금 국제학교에\n아이젠 볼프가 있어！{wait}\n하지만 남자뿐이니까{wait}\n역시 미하엘 사인이나 받을까？",
+   "text_kr": "츠요시\n「있잖아！{wait}\n지금 국제학교에\n아이젠 볼프가 있어！{wait}\n하지만 남자뿐이니까{wait}\n역시 미하엘 사인이나 받을까？",
    "orig_len": 83,
    "controls": [
     "{wait}",
@@ -24345,11 +24345,11 @@
   },
   {
    "id": "F1193",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "としひこ\n「中国と言えば雑技団だよな{wait}\n昨日マネしてたら\nまた　ギックリごしになっちゃってさ{wait}\nそういえば\n光蝦もすげぇ身軽なレースを\nするから気をつけな",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "토시히코\n「중국 하면 기예단이지{wait}\n어제 따라 하다가\n또 허리를 삐었어{wait}\n공키도 엄청 날렵한\n레이스를 하니 조심해",
+   "text_kr": "토시히코\n「중국 하면 기예단이지{wait}\n어제 따라 하다가\n또 허리를 삐었어{wait}\n공키도 엄청 날렵한\n레이스를 하니 조심해",
    "orig_len": 91,
    "controls": [
     "{wait}",
@@ -24366,11 +24366,11 @@
   },
   {
    "id": "F1194",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "ふみえ\n「きんぱつの\nしかも　くるくるまき毛ってサイコー♥",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "후미에\n「금발에\n곱슬머리라니 최고야♥",
+   "text_kr": "후미에\n「금발에\n곱슬머리라니 최고야♥",
    "orig_len": 31,
    "controls": [],
    "occurrences": [
@@ -24384,11 +24384,11 @@
   },
   {
    "id": "F1195",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "光蝦は今年\nシャイニングスコーピオンの\nレプリカマシンを\n用意しているそうですよ{wait}\nしかもそのマシンを\nつくったのは\nあの　岡田鉄心博士だとか！{wait}\n…えっ　もう知ってる？{wait}\nどうして知ってるんです？\nさっきパソコン通信で\n見つけたばかりの\n最新情報なのに！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "공키는 올해\n샤이닝 스콜피온의\n복제 머신을\n준비했대요{wait}\n게다가 그 머신을\n만든 사람은\n오카다 텟신 박사래요！{wait}\n…뭐　벌써 안다고요？{wait}\n어떻게 알았어요？\n방금 PC 통신에서\n찾아낸\n최신 정보인데！",
+   "text_kr": "공키는 올해\n샤이닝 스콜피온의\n복제 머신을\n준비했대요{wait}\n게다가 그 머신을\n만든 사람은\n오카다 텟신 박사래요！{wait}\n…뭐　벌써 안다고요？{wait}\n어떻게 알았어요？\n방금 PC 통신에서\n찾아낸\n최신 정보인데！",
    "orig_len": 150,
    "controls": [
     "{wait}",
@@ -24406,11 +24406,11 @@
   },
   {
    "id": "F1196",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "まこと\n「烈くんと豪くんのお父さんが\n昨日の夜　どこにいたかは{wait}\nこどもに聞いても\nわからないでしょう{wait}\n夜おそくまで起きていそうな\nおとなに聞いては\nいかがですか？",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "마코토\n「레츠와 고의 아버지가\n어젯밤 어디 있었는지는{wait}\n아이에게 물어도\n모를 거예요{wait}\n밤늦게까지 깨어 있을\n어른에게 물어보면\n어떨까요？",
+   "text_kr": "마코토\n「레츠와 고의 아버지가\n어젯밤 어디 있었는지는{wait}\n아이에게 물어도\n모를 거예요{wait}\n밤늦게까지 깨어 있을\n어른에게 물어보면\n어떨까요？",
    "orig_len": 94,
    "controls": [
     "{wait}",
@@ -24427,11 +24427,11 @@
   },
   {
    "id": "F1197",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "烈くんと豪くんのお父さんが\nお二人を探しているらしい\nですよ{wait}\n一度　家にもどられたら\nいかがですか？",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "레츠와 고의 아버지가\n두 사람을 찾고\n있대요{wait}\n한 번 집에 돌아가 보는 게\n어때요？",
+   "text_kr": "레츠와 고의 아버지가\n두 사람을 찾고\n있대요{wait}\n한 번 집에 돌아가 보는 게\n어때요？",
    "orig_len": 58,
    "controls": [
     "{wait}"
@@ -24447,11 +24447,11 @@
   },
   {
    "id": "F1198",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "めぐみ\n「弟がさ{wait}\nキミたちとロシアとのレースを\nテレビでみて感動したって{wait}\nわたしもちょっと感動しちゃった♥",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "메구미\n「동생이 말이야{wait}\n너희와 러시아의 레이스를\nTV로 보고 감동했대{wait}\n나도 조금 감동했어♥",
+   "text_kr": "메구미\n「동생이 말이야{wait}\n너희와 러시아의 레이스를\nTV로 보고 감동했대{wait}\n나도 조금 감동했어♥",
    "orig_len": 61,
    "controls": [
     "{wait}",
@@ -24468,11 +24468,11 @@
   },
   {
    "id": "F1199",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "もえ\n「うちの兄貴ったらね{wait}\n土探しの旅をしているうちに\n登山に目覚めたらしくってね\n今は北アルプスに登っているんだって{wait}\nナニ考えてるのかしら",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "모에\n「우리 오빠가 말이야{wait}\n흙을 찾아 여행하다\n등산에 눈을 떴나 봐\n지금은 북알프스에 올랐대{wait}\n무슨 생각인지 몰라",
+   "text_kr": "모에\n「우리 오빠가 말이야{wait}\n흙을 찾아 여행하다\n등산에 눈을 떴나 봐\n지금은 북알프스에 올랐대{wait}\n무슨 생각인지 몰라",
    "orig_len": 86,
    "controls": [
     "{wait}",
@@ -24489,11 +24489,11 @@
   },
   {
    "id": "F1200",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "ジュン\n「あの女子中学生軍団{wait}\nついにウチのお店の\nじょうれん客になっちゃったわ{wait}\nまっ　いいけどね{wait}\nパーツもいっぱい買ってくれて\n商売はんじょうだから",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "준\n「그 여중생 군단{wait}\n드디어 우리 가게의\n단골이 됐어{wait}\n뭐　괜찮지만{wait}\n파츠를 잔뜩 사 줘서\n장사가 잘되거든",
+   "text_kr": "준\n「그 여중생 군단{wait}\n드디어 우리 가게의\n단골이 됐어{wait}\n뭐　괜찮지만{wait}\n파츠를 잔뜩 사 줘서\n장사가 잘되거든",
    "orig_len": 90,
    "controls": [
     "{wait}",
@@ -24511,11 +24511,11 @@
   },
   {
    "id": "F1201",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "あきら\n「あなをホール{wait}\nなんつってな　ひゃはははは！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "아키라\n「구멍을 홀{wait}\n이라고 하지　햐하하하！",
+   "text_kr": "아키라\n「구멍을 홀{wait}\n이라고 하지　햐하하하！",
    "orig_len": 28,
    "controls": [
     "{wait}"
@@ -24531,11 +24531,11 @@
   },
   {
    "id": "F1202",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "うみ\n「あの男の子\nきょうのネタは英語まじりね{wait}\n算数　英語ときたから次は理科かしら？{wait}\nまあ　つまらないことには\nかわりないけどね",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "우미\n「저 남자애\n오늘은 영어를 섞었네{wait}\n산수　영어 다음엔 과학인가？{wait}\n뭐　재미없는 건\n마찬가지지만",
+   "text_kr": "우미\n「저 남자애\n오늘은 영어를 섞었네{wait}\n산수　영어 다음엔 과학인가？{wait}\n뭐　재미없는 건\n마찬가지지만",
    "orig_len": 78,
    "controls": [
     "{wait}",
@@ -24552,11 +24552,11 @@
   },
   {
    "id": "F1203",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "えいじ\n「知ってるか？{wait}\nエクレアってお某子があるよな\nあのシュークリームの兄弟みたいなヤツ{wait}\nあれってさ　フランス語のイナズマって\n意味なんだってよ{wait}\nてことは\nスピンコブラのサンダードリフトは\nさしずめエクレアドリフトだな！{wait}\nわはははは…！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "에이지\n「알고 있어？{wait}\n에클레어라는 과자가 있잖아\n슈크림의 형제 같은 거{wait}\n그게 프랑스어로 번개라는\n뜻이래{wait}\n그럼 선더 드리프트는\n에클레어 드리프트네！{wait}\n와하하하…！",
+   "text_kr": "에이지\n「알고 있어？{wait}\n에클레어라는 과자가 있잖아\n슈크림의 형제 같은 거{wait}\n그게 프랑스어로 번개라는\n뜻이래{wait}\n그럼 선더 드리프트는\n에클레어 드리프트네！{wait}\n와하하하…！",
    "orig_len": 132,
    "controls": [
     "{wait}",
@@ -24575,11 +24575,11 @@
   },
   {
    "id": "F1204",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "かずみ\n「よく見るとあの仮面の男も\nけっこういい感じじゃない？",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "카즈미\n「자세히 보니 저 가면 남자도\n제법 괜찮지 않아？",
+   "text_kr": "카즈미\n「자세히 보니 저 가면 남자도\n제법 괜찮지 않아？",
    "orig_len": 37,
    "controls": [],
    "occurrences": [
@@ -24593,11 +24593,11 @@
   },
   {
    "id": "F1205",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "かずや\n「土屋研究所で働いてる\nボクの兄ちゃんがね{wait}\n新しいパーツのアイデアを\n思いついたって喜んでたよ{wait}\nそのうち完成したら\nキミたちの役に立つかもね",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "카즈야\n「연구소에서 일하는\n우리 형이 말이야{wait}\n새 파츠 아이디어가\n떠올랐다며 좋아했어{wait}\n완성되면\n너희에게 도움이 될지도 몰라",
+   "text_kr": "카즈야\n「연구소에서 일하는\n우리 형이 말이야{wait}\n새 파츠 아이디어가\n떠올랐다며 좋아했어{wait}\n완성되면\n너희에게 도움이 될지도 몰라",
    "orig_len": 91,
    "controls": [
     "{wait}",
@@ -24614,11 +24614,11 @@
   },
   {
    "id": "F1206",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "きよし\n「オレの妹がさ{wait}\n今朝からいっしょうけんめい\nトイレットペーパーで\nバラの花をつくってるんだ{wait}\n明日の試合で\nフランスチームの上にばらまくんだって{wait}\nケッ\nやってらんねぇぜ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "키요시\n「내 여동생이 말이야{wait}\n아침부터 열심히\n화장지로\n장미꽃을 만들고 있어{wait}\n내일 경기에서 프랑스 팀 위에\n뿌릴 거래{wait}\n쳇\n못 해 먹겠어",
+   "text_kr": "키요시\n「내 여동생이 말이야{wait}\n아침부터 열심히\n화장지로\n장미꽃을 만들고 있어{wait}\n내일 경기에서 프랑스 팀 위에\n뿌릴 거래{wait}\n쳇\n못 해 먹겠어",
    "orig_len": 100,
    "controls": [
     "{wait}",
@@ -24636,11 +24636,11 @@
   },
   {
    "id": "F1207",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "黒沢\n「GPマシンって\nおもしれえよな！{wait}\n走れば走るほど\nテクニックを覚えていくんだ{wait}\nオレのブラックセイバーGPも\nだいぶ成長したぜぇ！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "쿠로사와\n「GP 머신은\n재미있다니까！{wait}\n달리면 달릴수록\n기술을 익혀{wait}\n내 블랙 세이버 GP도\n많이 성장했어！",
+   "text_kr": "쿠로사와\n「GP 머신은\n재미있다니까！{wait}\n달리면 달릴수록\n기술을 익혀{wait}\n내 블랙 세이버 GP도\n많이 성장했어！",
    "orig_len": 78,
    "controls": [
     "{wait}",
@@ -24657,11 +24657,11 @@
   },
   {
    "id": "F1208",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "けいこ\n「きょう　公園に集まっている\nWGPマニアは…{wait}\nえっ？　ぜんぜん集まってないの！？",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "케이코\n「오늘 공원에 모인\nWGP 마니아는…{wait}\n뭐？　아무도 안 모였어！？",
+   "text_kr": "케이코\n「오늘 공원에 모인\nWGP 마니아는…{wait}\n뭐？　아무도 안 모였어！？",
    "orig_len": 51,
    "controls": [
     "{wait}"
@@ -24677,11 +24677,11 @@
   },
   {
    "id": "F1209",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "けいこ\n「きょう　公園に集まっている\nWGPマニアは\nレ・ヴァンクールのファンばかり",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "케이코\n「오늘 공원에 모인\nWGP 마니아는\n레 방쿠르 팬뿐이야",
+   "text_kr": "케이코\n「오늘 공원에 모인\nWGP 마니아는\n레 방쿠르 팬뿐이야",
    "orig_len": 46,
    "controls": [],
    "occurrences": [
@@ -24695,11 +24695,11 @@
   },
   {
    "id": "F1210",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "こうじ\n「だいぶ前なんだけど{wait}\nBS放送でヨーロッパ予選をみたんだ{wait}\nレ・ヴァンクールってチームは\n前半は負けてても\n最後には必ず逆転してるんだ{wait}\nなにかひみつがあるに連いないね",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "코우지\n「꽤 오래전인데{wait}\n위성 방송으로 유럽 예선을 봤어{wait}\n레 방쿠르는\n전반에 지고 있어도\n마지막엔 꼭 역전해{wait}\n뭔가 비밀이 있을 거야",
+   "text_kr": "코우지\n「꽤 오래전인데{wait}\n위성 방송으로 유럽 예선을 봤어{wait}\n레 방쿠르는\n전반에 지고 있어도\n마지막엔 꼭 역전해{wait}\n뭔가 비밀이 있을 거야",
    "orig_len": 104,
    "controls": [
     "{wait}",
@@ -24717,11 +24717,11 @@
   },
   {
    "id": "F1211",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "さとし\n「なんだか…{wait}\n人が少ないような気がするぞ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "사토시\n「왠지…{wait}\n사람이 적은 것 같아",
+   "text_kr": "사토시\n「왠지…{wait}\n사람이 적은 것 같아",
    "orig_len": 28,
    "controls": [
     "{wait}"
@@ -24737,11 +24737,11 @@
   },
   {
    "id": "F1212",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "さとし\n「『レ・ヴァンクールファンのつどい』に\n行きたいんだけど男子禁制なんだ…{wait}\n",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "사토시\n「『레 방쿠르 팬 모임』에\n가고 싶은데 남자는 못 들어가…{wait}\n",
+   "text_kr": "사토시\n「『레 방쿠르 팬 모임』에\n가고 싶은데 남자는 못 들어가…{wait}\n",
    "orig_len": 48,
    "controls": [
     "{wait}"
@@ -24757,11 +24757,11 @@
   },
   {
    "id": "F1213",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "くそぉ！　差別じゃねぇか！！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "제길！　차별이잖아！！",
+   "text_kr": "제길！　차별이잖아！！",
    "orig_len": 17,
    "controls": [],
    "occurrences": [
@@ -24775,11 +24775,11 @@
   },
   {
    "id": "F1214",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "せいじ\n「聞いてくれ！{wait}\nついに明日\n『明日のスターはキミだ！』の\n第二次選考なんだ{wait}\nなにを著ていこっかなあ！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "세이지\n「들어 봐！{wait}\n드디어 내일\n『내일의 스타는 너다！』\n2차 심사야{wait}\n뭘 입고 갈까！",
+   "text_kr": "세이지\n「들어 봐！{wait}\n드디어 내일\n『내일의 스타는 너다！』\n2차 심사야{wait}\n뭘 입고 갈까！",
    "orig_len": 67,
    "controls": [
     "{wait}",
@@ -24796,11 +24796,11 @@
   },
   {
    "id": "F1215",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "つよし\n「たのむ！{wait}\nレ・ヴァンクールのディアナの\nサインをもらってきてくれ！{wait}\nえっ！？　もらいにいくのか！{wait}\nオレの分もたのむ！！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "츠요시\n「부탁이야！{wait}\n레 방쿠르 디아나의\n사인을 받아 줘！{wait}\n뭐！？　받으러 갈 거야！{wait}\n내 것도 부탁해！！",
+   "text_kr": "츠요시\n「부탁이야！{wait}\n레 방쿠르 디아나의\n사인을 받아 줘！{wait}\n뭐！？　받으러 갈 거야！{wait}\n내 것도 부탁해！！",
    "orig_len": 69,
    "controls": [
     "{wait}",
@@ -24818,11 +24818,11 @@
   },
   {
    "id": "F1216",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "つよし\n「えっ！？\nキミたちでもサインもらえないの！{wait}\nくそ〜！　やっぱり男じゃだめか\n女に変身できればなあ…{wait}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "츠요시\n「뭐！？\n너희도 사인을 못 받아！{wait}\n제길〜！　역시 남자는 안 되나\n여자로 변신할 수 있다면…{wait}",
+   "text_kr": "츠요시\n「뭐！？\n너희도 사인을 못 받아！{wait}\n제길〜！　역시 남자는 안 되나\n여자로 변신할 수 있다면…{wait}",
    "orig_len": 61,
    "controls": [
     "{wait}",
@@ -24839,11 +24839,11 @@
   },
   {
    "id": "F1217",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "藤吉\n「女に変身でゲスか…{wait}\nん！！{wait}\n",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "토우키치\n「여자로 변신이라…{wait}\n음！！{wait}\n",
+   "text_kr": "토우키치\n「여자로 변신이라…{wait}\n음！！{wait}\n",
    "orig_len": 26,
    "controls": [
     "{wait}",
@@ -24860,11 +24860,11 @@
   },
   {
    "id": "F1218",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "ひょっとしたらマキにたのめば\nなんとかなるかも\nしれないでゲス{wait}{clear}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "어쩌면 마키에게 부탁하면\n어떻게든 될지도\n모르겠사옵니다{wait}{clear}",
+   "text_kr": "어쩌면 마키에게 부탁하면\n어떻게든 될지도\n모르겠사옵니다{wait}{clear}",
    "orig_len": 34,
    "controls": [
     "{wait}",
@@ -24881,11 +24881,11 @@
   },
   {
    "id": "F1219",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "J\n「マキさんって\nチイコちゃんの世話役の？{wait}{clear}",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "제이\n「마키 씨라면\n치이코의 시중을 드는 분？{wait}{clear}",
+   "text_kr": "제이\n「마키 씨라면\n치이코의 시중을 드는 분？{wait}{clear}",
    "orig_len": 28,
    "controls": [
     "{wait}",
@@ -24902,11 +24902,11 @@
   },
   {
    "id": "F1220",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "藤吉\n「そうでゲス{wait}\nたしかスタイリストの経験が\nあったはずでゲス{wait}\n今ならワテのやしきに\nいるでゲスよ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "토우키치\n「그렇사옵니다{wait}\n분명 스타일리스트 경험이\n있을 것이옵니다{wait}\n지금은 내 저택에\n있사옵니다",
+   "text_kr": "토우키치\n「그렇사옵니다{wait}\n분명 스타일리스트 경험이\n있을 것이옵니다{wait}\n지금은 내 저택에\n있사옵니다",
    "orig_len": 58,
    "controls": [
     "{wait}",
@@ -24923,11 +24923,11 @@
   },
   {
    "id": "F1221",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "つよし\n「さっきカワイイ女の子に\nディアナのサインをもらったんだ！{wait}\nとうとうボクにも春が\nやってきたみたいだよ♥",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "츠요시\n「아까 귀여운 여자아이에게\n디아나 사인을 받았어！{wait}\n드디어 내게도 봄이\n온 것 같아♥",
+   "text_kr": "츠요시\n「아까 귀여운 여자아이에게\n디아나 사인을 받았어！{wait}\n드디어 내게도 봄이\n온 것 같아♥",
    "orig_len": 61,
    "controls": [
     "{wait}"
@@ -24943,11 +24943,11 @@
   },
   {
    "id": "F1222",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "つよし\n「たのむ！{wait}\nレ・ヴァンクールのディアナの\nサインをもらってきてくれ！{wait}\nでもあいつ\nなんか男にはきょうみなさそうだよな",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "츠요시\n「부탁이야！{wait}\n레 방쿠르 디아나의\n사인을 받아 줘！{wait}\n그래도 그 사람\n남자엔 관심 없어 보여",
+   "text_kr": "츠요시\n「부탁이야！{wait}\n레 방쿠르 디아나의\n사인을 받아 줘！{wait}\n그래도 그 사람\n남자엔 관심 없어 보여",
    "orig_len": 66,
    "controls": [
     "{wait}",
@@ -24964,11 +24964,11 @@
   },
   {
    "id": "F1223",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "としひこ\n「レ・ヴァンクールって\n毎日フランス料理ばっかし\n食ってんのかな{wait}\nイヤミなやつらだぜ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "토시히코\n「레 방쿠르는\n매일 프랑스 요리만\n먹으려나{wait}\n재수 없는 녀석들이야",
+   "text_kr": "토시히코\n「레 방쿠르는\n매일 프랑스 요리만\n먹으려나{wait}\n재수 없는 녀석들이야",
    "orig_len": 54,
    "controls": [
     "{wait}"
@@ -24984,11 +24984,11 @@
   },
   {
    "id": "F1224",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "ふみえ\n「死んでおられるディアナ様もステキ！",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "후미에\n「죽어 계시는 디아나 님도 멋져！",
+   "text_kr": "후미에\n「죽어 계시는 디아나 님도 멋져！",
    "orig_len": 25,
    "controls": [],
    "occurrences": [
@@ -25002,11 +25002,11 @@
   },
   {
    "id": "F1225",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "まこと\n「情報によると{wait}\n",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "마코토\n「정보에 따르면{wait}\n",
+   "text_kr": "마코토\n「정보에 따르면{wait}\n",
    "orig_len": 16,
    "controls": [
     "{wait}"
@@ -25022,11 +25022,11 @@
   },
   {
    "id": "F1226",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "鉄心先生が佐上模型店に\nいるそうですよ",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "텟신 선생님이 사가미 모형점에\n계신대요",
+   "text_kr": "텟신 선생님이 사가미 모형점에\n계신대요",
    "orig_len": 29,
    "controls": [],
    "occurrences": [
@@ -25040,11 +25040,11 @@
   },
   {
    "id": "F1227",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "まこと\n「鉄心先生以外に\nディアナさんのサインを\nほしがってる人がいたような…",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "마코토\n「텟신 선생님 말고도\n디아나의 사인을\n원하는 사람이 있었는데…",
+   "text_kr": "마코토\n「텟신 선생님 말고도\n디아나의 사인을\n원하는 사람이 있었는데…",
    "orig_len": 46,
    "controls": [],
    "occurrences": [
@@ -25058,11 +25058,11 @@
   },
   {
    "id": "F1228",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "まこと\n「あるスジからの情報です",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "마코토\n「믿을 만한 곳에서 얻은 정보예요",
+   "text_kr": "마코토\n「믿을 만한 곳에서 얻은 정보예요",
    "orig_len": 19,
    "controls": [],
    "occurrences": [
@@ -25076,11 +25076,11 @@
   },
   {
    "id": "F1229",
-   "status": "pending",
-   "translation_source": "",
+   "status": "translated",
+   "translation_source": "codex_manual",
    "text_jp": "レ・ヴァンクールのマシン\n『シュヴァリエ・ド・ローズ』には\nレース中に相手のマシンの\n能力を…{wait}\nすいません\nここまでしか知らないんです",
-   "text_kr_full": "",
-   "text_kr": "",
+   "text_kr_full": "레 방쿠르의 머신\n『슈발리에 드 로즈』에는\n레이스 중 상대 머신의\n능력을…{wait}\n죄송해요\n여기까지만 알아요",
+   "text_kr": "레 방쿠르의 머신\n『슈발리에 드 로즈』에는\n레이스 중 상대 머신의\n능력을…{wait}\n죄송해요\n여기까지만 알아요",
    "orig_len": 74,
    "controls": [
     "{wait}"
