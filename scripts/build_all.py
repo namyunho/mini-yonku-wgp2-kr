@@ -60,10 +60,12 @@ def main():
     open(OUT, 'wb').write(rom)
     print(f"\nSJIS 패치 {n}B 통합 (충돌 0)")
 
+    run(["scripts/build_setbox.py"])   # 7b 수동 세팅 X메뉴 한글화(공유 $D9 자원 relocate, docs/20)
+
     # 7: BPS
     if os.path.exists(FLIPS):
         subprocess.run([FLIPS, "--create", ORIG, OUT, BPS])
-    data = bytes(rom)
+    data = open(OUT, 'rb').read()   # build_setbox가 파일을 추가 패치하므로 파일에서 재독(스테일 CRC 방지)
     print(f"\n=== 통합 ROM 완성: {OUT} ===")
     print(f"크기 {len(data)}B  CRC32 {zlib.crc32(data) & 0xffffffff:08X}  MD5 {hashlib.md5(data).hexdigest()}")
 
