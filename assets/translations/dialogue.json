@@ -31,7 +31,7 @@
    "desc": "c1 클러스터1: 세팅 세이브/로드 UI",
    "file_start": "0x01C868",
    "file_end": "0x01C980",
-   "messages": 11,
+   "messages": 18,
    "suspect_entries": 0,
    "pointers_found": null,
    "pointers_off_boundary": null
@@ -71,7 +71,7 @@
   }
  ],
  "stats": {
-  "total_messages": 674,
+  "total_messages": 681,
   "total_suspect": 0
  },
  "entries": [
@@ -9995,6 +9995,118 @@
     "gap_recovered_C1CFAF"
    ],
    "text_kr": "머신을 골라 배치하자{nl}환한 구슬을 고르면{nl}포메이션을 짤 수 있어{end}"
+  },
+  {
+   "entry_id": 674,
+   "table_id": "c1_setting",
+   "addr": "$C1:C80B",
+   "file_offset": "0x01C80B",
+   "raw_hex": "01B4025B7D9E82A09DAC0500",
+   "n_bytes": 12,
+   "n_glyphs": 8,
+   "text": "[1A4][24B][06D][08E][072][090][08D][09C]{nl}{end}",
+   "text_jp": "高速セッティング{nl}{end}",
+   "referenced_by": [],
+   "flags": [
+    "gap_recovered_c1_C501_table"
+   ],
+   "text_kr": "고속 세팅{nl}{end}"
+  },
+  {
+   "entry_id": 675,
+   "table_id": "c1_setting",
+   "addr": "$C1:C817",
+   "file_offset": "0x01C817",
+   "raw_hex": "79C584979DAC7D9E82A09DAC0500",
+   "n_bytes": 14,
+   "n_glyphs": 12,
+   "text": "[069][0B5][074][087][08D][09C][06D][08E][072][090][08D][09C]{nl}{end}",
+   "text_jp": "コーナリングセッティング{nl}{end}",
+   "referenced_by": [],
+   "flags": [
+    "gap_recovered_c1_C501_table"
+   ],
+   "text_kr": "코너링 세팅{nl}{end}"
+  },
+  {
+   "entry_id": 676,
+   "table_id": "c1_setting",
+   "addr": "$C1:C825",
+   "file_offset": "0x01C825",
+   "raw_hex": "B9969D7C7D9E82A09DAC0500",
+   "n_bytes": 12,
+   "n_glyphs": 10,
+   "text": "[0A9][086][08D][06C][06D][08E][072][090][08D][09C]{nl}{end}",
+   "text_jp": "バランスセッティング{nl}{end}",
+   "referenced_by": [],
+   "flags": [
+    "gap_recovered_c1_C501_table"
+   ],
+   "text_kr": "균형 세팅{nl}{end}"
+  },
+  {
+   "entry_id": 677,
+   "table_id": "c1_setting",
+   "addr": "$C1:C831",
+   "file_offset": "0x01C831",
+   "raw_hex": "01FA022703967D9E82A09DAC0500",
+   "n_bytes": 14,
+   "n_glyphs": 9,
+   "text": "[1EA][217][386][06D][08E][072][090][08D][09C]{nl}{end}",
+   "text_jp": "安定性セッティング{nl}{end}",
+   "referenced_by": [],
+   "flags": [
+    "gap_recovered_c1_C501_table"
+   ],
+   "text_kr": "안정성 세팅{nl}{end}"
+  },
+  {
+   "entry_id": 678,
+   "table_id": "c1_setting",
+   "addr": "$C1:C83F",
+   "file_offset": "0x01C83F",
+   "raw_hex": "B99E80973401ED010457476100",
+   "n_bytes": 13,
+   "n_glyphs": 10,
+   "text": "[0A9][08E][070][087][024][1DD][0F4][047][037][051]{end}",
+   "text_jp": "バッチリな仕上がりだ{end}",
+   "referenced_by": [],
+   "flags": [
+    "gap_recovered_c1_C501_table"
+   ],
+   "text_kr": "완벽한 완성도야{end}"
+  },
+  {
+   "entry_id": 679,
+   "table_id": "c1_setting",
+   "addr": "$C1:C84C",
+   "file_offset": "0x01C84C",
+   "raw_hex": "3425342502E12101ED010457476100",
+   "n_bytes": 15,
+   "n_glyphs": 11,
+   "text": "[024][015][024][015][2D1][011][1DD][0F4][047][037][051]{end}",
+   "text_jp": "なかなか良い仕上がりだ{end}",
+   "referenced_by": [],
+   "flags": [
+    "gap_recovered_c1_C501_table"
+   ],
+   "text_kr": "꽤 좋은 완성도야{end}"
+  },
+  {
+   "entry_id": 680,
+   "table_id": "c1_setting",
+   "addr": "$C1:C85B",
+   "file_offset": "0x01C85B",
+   "raw_hex": "3E203E203801ED010457476100",
+   "n_bytes": 13,
+   "n_glyphs": 10,
+   "text": "[02E][010][02E][010][028][1DD][0F4][047][037][051]{end}",
+   "text_jp": "まあまあの仕上がりだ{end}",
+   "referenced_by": [],
+   "flags": [
+    "gap_recovered_c1_C501_table"
+   ],
+   "text_kr": "그럭저럭이야{end}"
   }
  ]
 }
