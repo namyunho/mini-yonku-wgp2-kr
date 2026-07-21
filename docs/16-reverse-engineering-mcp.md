@@ -62,13 +62,35 @@ MCP 등록은 프로젝트 루트 [`.mcp.json`](../.mcp.json)(project scope). **
 
 > **폴백**: 12.1.2에서 플러그인이 런타임에 로드 실패하면(콘솔 오류), 버전 정합을 위해 **Ghidra 11.3.2를 별도 설치**하고 확장을 무패치로 넣는다. GhidraMCP는 HTTP 기반이라 브리지는 버전 무관하게 동일.
 
+### 65816/SNES 확장 (ghidra-snes v1.3.2) — 2026-07-21 설치 (디컴파일 언락)
+
+기본 Ghidra엔 65816 프로세서·SNES 로더가 **없다**(6502만) → 우리 ROM 디컴파일 불가였음. 커뮤니티 확장 [`joshleaves/ghidra-snes`](https://github.com/joshleaves/ghidra-snes)로 해결:
+- 한 확장에 **SNES 로더 + 65816 SLEIGH + 메모리헬퍼(MMIO/WRAM/미러)**. **HiROM `C0–FF:0000–FFFF` 매핑**(우리 ROM 일치), LoROM/HiROM 스코어 자동판정, SMC 헤더 옵션.
+- 소스: `~/tools/ghidra-snes/`. 빌드 `GHIDRA_INSTALL_DIR=/opt/homebrew/opt/ghidra/libexec ./gradlew clean buildExtension` → `dist/*.zip`.
+- ⚠️ 저장소 compat=12.0.4 → `gradle.properties`·`extension.properties`의 `version`을 **12.1.2로 수정 후 재빌드**(GhidraMCP와 동일 패치 패턴, 안 하면 로드 거부). 설치 = zip을 유저 확장 디렉토리에 unzip.
+- ROM import 시 로더 포맷 **"SNES ROM Loader"** 선택.
+
+### ⚠️ Ghidra 경로 정정 (2026-07-21)
+
+- **실제 설치(GHIDRA_INSTALL_DIR) = `/opt/homebrew/opt/ghidra/libexec`**(brew Cellar; `support/buildExtension.gradle`·`Ghidra/Processors/`·`ghidraRun` 여기). 확장 빌드 시 이 경로 지정.
+- **유저 확장/설정 디렉토리 = `~/Library/ghidra/ghidra_12.1.2_PUBLIC/`**(`Extensions/`·로그). GhidraMCP·ghidra-snes 확장은 여기 `Extensions/`에 설치됨. (위 §GhidraMCP "설치 위치"는 이 유저 확장 디렉토리를 가리킨 것 — 빌드용 설치 경로와 구분.)
+
 ### GhidraMCP 사용 순서
-1. `ghidraRun`으로 Ghidra 실행 → 프로젝트에 ROM import·분석.
-2. CodeBrowser에서 프로그램 열고 GhidraMCP 플러그인 활성화(File→Configure→Miscellaneous, 또는 자동) → HTTP 8080 기동.
+1. `ghidraRun`으로 Ghidra 실행 → 프로젝트에 ROM import(**"SNES ROM Loader"** 포맷)·분석.
+2. CodeBrowser에서 프로그램 열고 GhidraMCP 플러그인 활성화(File→Configure→Miscellaneous, 또는 자동) → HTTP 8080 기동. (신설치 확장은 File→Install Extensions에서 체크·재시작 필요할 수 있음.)
 3. Claude Code(재시작 후)에서 `ghidra` MCP 도구 사용.
 
 ### SNES 이점
 Ghidra는 커뮤니티 65816/SNES 프로세서·로더가 있어(별도 확장) HiROM 매핑 분석에 IDA보다 진입장벽이 낮을 수 있음.
+
+## ★ 도구 선택 원칙 (Claude·Codex 공통 — 2026-07-21 사용자 지침)
+
+IDA와 Ghidra는 **대체가 아니라 상보**다. 에이전트(Claude·Codex 공통)는 **태스크별로 유리한 도구를 스스로 판단해 선택**한다. 기준:
+
+- **IDA + idalib-mcp = 주력** — 빠른 disasm·xref·`get_bytes`·`define_func`·에이전트 자동화(headless). SNES `$BB:aaaa` = `0xBBaaaa` 직접. 짧은 루틴·데이터표·바이트 질의·대량 반복은 IDA가 빠르고 자동화에 유리.
+- **Ghidra + GhidraMCP = 디컴파일이 필요할 때 투입** — **IDA는 65816 Hex-Rays 미지원**(`hexrays_ready=false`)이라 의사-C가 아예 안 나옴. 긴/꼬인 게임로직, base·포인터·스택프레임 전달이 복잡한 루틴, SPC700(사운드)·압축코덱은 Ghidra 디컴파일로 크로스체크. GhidraMCP는 GUI+HTTP 8080 선기동 필요(§2 절차).
+- ⚠️ **공통 함정 = M/X 플래그 폭(REP/SEP, 8↔16bit)**: 둘 다 문맥 추적이 불완전해 폭 오싱크 시 **그럴듯하게 틀린** 디스어셈블/디컴파일을 낸다. 애매하면 다른 도구로 교차검증하고, 필요하면 폭을 수동 지정.
+- **실전 패턴**: IDA로 빠르게 뜨다가 "이 루틴 로직이 안 읽힌다" 싶으면 그 함수 하나만 Ghidra로 디컴파일해 대조. Codex도 동일하게 판단·선택할 것.
 
 ## 3. asar 1.91
 - `brew install asar` — RPGHacker의 SNES 65816 어셈블러(⚠️ npm/Electron `asar`과 이름만 같지만, **Homebrew core `asar`는 올바른 SNES 어셈블러**로 확인됨).
