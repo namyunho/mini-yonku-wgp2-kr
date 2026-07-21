@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""한글 대사 재삽입 빌드 (재실행 가능·자동).
-입력: dialogue.json(text_kr) + glyph_table.tsv + 한글 bin 폰트 + pointer_map.json.
-과정: 동적 글리프 할당 → 폰트 시트 주입 → 메시지 재인코딩 → 자유공간 재배치 → 포인터 패치 → 역검증.
-번역을 고치면 dialogue.json만 바꾸고 재실행하면 전부 자동 재생성된다.
+"""한글 대사·스테이지 제목 재삽입 빌드 (재실행 가능·자동).
+입력: dialogue.json(text_kr) + stage_titles.json(text_kr) + glyph_table.tsv
+      + 한글 bin 폰트 + pointer_map.json.
+과정: 동적 글리프 할당 → 폰트 시트 주입 → 메시지/제목 재인코딩
+      → 자유공간 재배치 → 포인터 패치 → 역검증.
+번역을 고치면 번역 JSON만 바꾸고 재실행하면 전부 자동 재생성된다.
 
 Phase 1 = c7_race + c1_ui (동일 뱅크 재배치, DBR 패치 불필요).
 """
@@ -12,6 +14,7 @@ sys.path.insert(0, 'scripts')
 from decode_script import decode, render, encode, load_tbl
 
 ROMPATH = "roms/Mini Yonku Let's & Go!! - Power WGP 2 (J) (NP).smc"
+STAGE_TITLE_PATH = "assets/translations/stage_titles.json"
 FONT_BASE = 0x0A1137      # $CA:1137 폰트 시트
 WIDTH_BASE = 0x0A9137     # $CA:9137 폭 테이블
 MAX_GLYPH = 0x400         # 0x000..0x3FF (시트↔폭테이블 경계)
@@ -79,6 +82,7 @@ def main():
 
     rom = bytearray(open(ROMPATH, 'rb').read())
     D = json.load(open('assets/translations/dialogue.json', encoding='utf-8'))
+    ST = json.load(open(STAGE_TITLE_PATH, encoding='utf-8'))
     tbl = load_tbl('assets/translation_guide/glyph_table.tsv')          # idx -> char (게임)
     ch2idx_game = {}
     for i, c in tbl.items():
@@ -93,10 +97,35 @@ def main():
         blocks[bid] = [x for x in D['entries']
                        if x['table_id'] == bid or (bid == 'c1_ui' and x['table_id'].startswith('c1_'))]
 
+    # ---- 스테이지 제목 원본·포인터 테이블 불변식 ----
+    stage_titles = ST['entries']
+    if len(stage_titles) != 10 or [x['stage'] for x in stage_titles] != list(range(1, 11)):
+        sys.exit(f"{STAGE_TITLE_PATH}: stage 1..10 순서의 엔트리 10개가 필요")
+    pt = ST['pointer_table']
+    if pt['count'] != 10 or pt['entry_size'] != 2:
+        sys.exit(f"{STAGE_TITLE_PATH}: 포인터 테이블 규격 불일치")
+    pt_off = int(pt['file_offset'], 16)
+    for i, x in enumerate(stage_titles):
+        raw = bytes.fromhex(x['raw_hex'])
+        off = int(x['file_offset'], 16)
+        addr = int(x['addr'].split(':')[1], 16)
+        if len(raw) != x['n_bytes']:
+            sys.exit(f"stage {x['stage']}: raw 길이 {len(raw)} != n_bytes {x['n_bytes']}")
+        if rom[off:off + len(raw)] != raw:
+            sys.exit(f"stage {x['stage']}: raw_hex != 원본 ROM @0x{off:06X}")
+        if struct.unpack_from('<H', rom, pt_off + i * 2)[0] != addr:
+            sys.exit(f"stage {x['stage']}: 포인터 테이블 값 != {x['addr']}")
+
     # ---- 대상 블록 text_kr에 실제 쓰인 문자 수집 ----
     import re
     def strip_tok(s): return re.sub(r'\{[^}]*\}', '', s)
-    freq = Counter(); used_other = set()
+    freq_titles = Counter(); freq = Counter(); used_other = set()
+    for x in stage_titles:
+        for c in strip_tok(x['text_kr']):
+            if 0xAC00 <= ord(c) <= 0xD7A3:
+                freq_titles[c] += 1
+            elif c not in (' ', '　'):
+                used_other.add(c)
     for bid, es in blocks.items():
         for x in es:
             for c in strip_tok(x['text_kr']):
@@ -106,8 +135,8 @@ def main():
                     used_other.add(c)
 
     # ---- 어드벤처 음절도 같은 할당에 포함(폰트 시트 $CA 전역 공유) ----
-    # ⚠️ 단, **1바이트 슬롯 우선권은 673에 준다**(아래 alloc 참조):
-    #    673 대사는 원본 슬롯에 갇혀(in-place) 1바이트 글리프가 초과 여부를 좌우하지만,
+    # ⚠️ 단, **1바이트 슬롯 우선권은 정적 대사에 준다**(아래 alloc 참조):
+    #    정적 대사는 원본 슬롯에 갇혀(in-place) 1바이트 글리프가 초과 여부를 좌우하지만,
     #    어드벤처는 씬 통째로 재배치하므로 1/2바이트는 압축률(~10%)에만 영향한다.
     #    전역 빈도로 섞어 배정하면 분량 큰 어드벤처가 1바이트 슬롯을 잠식해 673 초과가 늘어난다.
     freq_adv = Counter()
@@ -134,10 +163,14 @@ def main():
             sys.exit(f"게임 글리프에 없는 유지 문자: {c!r} (U+{ord(c):04X})")
         keep_map[c] = ch2idx_game[c]
     kept_indices = set(keep_map.values())
-    # 673 음절(빈도순) 먼저 → 그 다음 어드벤처 전용 음절(빈도순).
+    # 정적 대사 음절(빈도순) → 어드벤처 전용 음절 → 제목 전용 음절 순.
+    # 기존 두 영역의 글리프 인덱스를 절대 흔들지 않는 것이 우선이다. 제목에만 새로
+    # 등장하는 음절은 마지막에 추가하며, 실제 슬롯 적합 여부는 아래에서 엄격히 검사한다.
     # alloc = one_byte + two_byte 이므로 이 순서가 곧 **1바이트 슬롯 우선권**이 된다.
     syllables = [c for c, _ in freq.most_common()]
     syllables += [c for c, _ in freq_adv.most_common() if c not in freq]
+    syllables += [c for c, _ in freq_titles.most_common()
+                  if c not in freq and c not in freq_adv]
 
     # ---- 동적 글리프 할당: 자유 슬롯 = 0..0x3FF - kept ----
     free_slots = [i for i in range(MAX_GLYPH) if i not in kept_indices]
@@ -203,6 +236,26 @@ def main():
         for x in es:
             enc[x['entry_id']] = encode(to_tokens(x['text_kr']))
 
+    # ---- 스테이지 제목 10개 동일 영역 재패킹 ----
+    # 원본 10개 문자열이 연속으로 차지한 $C0:8234..$C0:82C8(149B) 안에서만
+    # 다시 패킹하고 $C0:830F의 첫 10개 포인터를 갱신한다. 뒤따르는 별도
+    # 문자열($C0:82C9~)과 포인터 테이블의 나머지 항목은 건드리지 않는다.
+    stage_verify = []
+    stage_start = int(stage_titles[0]['file_offset'], 16)
+    stage_end = int(stage_titles[-1]['file_offset'], 16) + stage_titles[-1]['n_bytes']
+    stage_cap = stage_end - stage_start
+    stage_encoded = [(x, encode(to_tokens(x['text_kr']))) for x in stage_titles]
+    stage_used = sum(len(b) for _, b in stage_encoded)
+    if stage_used > stage_cap:
+        sys.exit(f"스테이지 제목 영역 부족: {stage_used} > {stage_cap}B")
+    cur = stage_start
+    for i, (x, b) in enumerate(stage_encoded):
+        addr = cur & 0xFFFF
+        rom[cur:cur + len(b)] = b
+        struct.pack_into('<H', rom, pt_off + i * 2, addr)
+        stage_verify.append((x, len(b), addr))
+        cur += len(b)
+
     # ---- 하이브리드 삽입: 제자리(fit) + 자유공간 재배치(초과·커버된 것) ----
     # 원칙: 원본 포인터를 최대한 그대로 둠(주소 고정) → 미커버 포인터도 안전.
     #  - fit(한글 ≤ 원본 slot): 원래 주소에 그대로 덮어씀. 포인터 손 안 댐.
@@ -259,6 +312,16 @@ def main():
         return render(decode(rom[s:o + 1]), idx2char)
     vloc = {eid: (bk, ad) for bk, ad, eid in verify}
     print(f"\n=== 폰트: 한글 {inj} 글리프 주입 (자유슬롯 {len(alloc)}, 음절 {len(syllables)}) ===")
+    stage_ok = 0
+    for x, nenc, addr in stage_verify:
+        got = decode_at(0xC0, addr)
+        exp = x['text_kr'] if x['text_kr'].endswith('{end}') else x['text_kr'] + '{end}'
+        stage_ok += (got == exp)
+        print(f"stage {x['stage']:2d}: ${addr:04X} {nenc:2d}B | {got}")
+    print(f"스테이지 제목 역검증: {stage_ok}/{len(stage_verify)} "
+          f"| 영역 {stage_used}/{stage_cap}B")
+    if stage_ok != len(stage_verify):
+        sys.exit("스테이지 제목 역검증 실패")
     total_ok = total_ins = total = 0
     for bid, (nmsg, written, reloc, ov, bank, rused, rcap) in report.items():
         ok = 0; ins = written + reloc

@@ -1,0 +1,102 @@
+{
+  "description": "게임 시작/세이브 로드 뒤 표시되는 스테이지 1~10 시나리오 제목. $C0:830F의 첫 10개 포인터가 원본 $C0:8234~$C0:82C8 문자열을 가리키며, 빌드 시 같은 149바이트 영역에 다시 패킹된다.",
+  "encoding": "CA variable-length glyph stream, 00=end",
+  "pointer_table": {
+    "addr": "$C0:830F",
+    "file_offset": "0x00830F",
+    "count": 10,
+    "entry_size": 2
+  },
+  "entries": [
+    {
+      "stage": 1,
+      "addr": "$C0:8234",
+      "file_offset": "0x008234",
+      "n_bytes": 20,
+      "raw_hex": "026F14016A9BC598B8AC969DC097027A03ADE400",
+      "text_jp": "第2回ワールドグランプリ開幕！{end}",
+      "text_kr": "제2회 월드 그랑프리 개막！{end}"
+    },
+    {
+      "stage": 2,
+      "addr": "$C0:8248",
+      "file_offset": "0x008248",
+      "n_bytes": 14,
+      "raw_hex": "739D7BA29D838BA3C57C3803AE00",
+      "text_jp": "エンシェントフォースの謎{end}",
+      "text_kr": "엔션트 포스의 수수께끼{end}"
+    },
+    {
+      "stage": 3,
+      "addr": "$C0:8256",
+      "file_offset": "0x008256",
+      "n_bytes": 17,
+      "raw_hex": "C09A837D71B9C501F601ACFD3803542100",
+      "text_jp": "プロトセイバー氷点下の戦い{end}",
+      "text_kr": "프로토 세이버 영하의 대결{end}"
+    },
+    {
+      "stage": 4,
+      "addr": "$C0:8267",
+      "file_offset": "0x008267",
+      "n_bytes": 14,
+      "raw_hex": "0211020CE4E511DFE7DBE7D6E400",
+      "text_jp": "対決！？　X・T・O！{end}",
+      "text_kr": "대결！？　XTO！{end}"
+    },
+    {
+      "stage": 5,
+      "addr": "$C0:8275",
+      "file_offset": "0x008275",
+      "n_bytes": 15,
+      "raw_hex": "01F303AFE41102CB0360388E7B9D00",
+      "text_jp": "打倒！　伝説のマシン{end}",
+      "text_kr": "타도！　전설의 머신{end}"
+    },
+    {
+      "stage": 6,
+      "addr": "$C0:8284",
+      "file_offset": "0x008284",
+      "n_bytes": 21,
+      "raw_hex": "8B969D7C2546434E32018C2F03B0022F02D7E4E500",
+      "text_jp": "フランスからやって来た革命児！？{end}",
+      "text_kr": "프랑스에서 온 혁명아！？{end}"
+    },
+    {
+      "stage": 7,
+      "addr": "$C0:8299",
+      "file_offset": "0x008299",
+      "n_bytes": 12,
+      "raw_hex": "B876B87696BB997FC5E4E500",
+      "text_jp": "ドキドキラブレター！？{end}",
+      "text_kr": "두근두근 러브레터！？{end}"
+    },
+    {
+      "stage": 8,
+      "addr": "$C0:82A5",
+      "file_offset": "0x0082A5",
+      "n_bytes": 15,
+      "raw_hex": "031E0310E411BAC5777CBE71B4C500",
+      "text_jp": "特訓！　ビークスパイダー{end}",
+      "text_kr": "특훈！　비크 스파이더{end}"
+    },
+    {
+      "stage": 9,
+      "addr": "$C0:82B4",
+      "file_offset": "0x0082B4",
+      "n_bytes": 7,
+      "raw_hex": "3C4D2B4DE4E500",
+      "text_jp": "へんしん！？{end}",
+      "text_kr": "변신！？{end}"
+    },
+    {
+      "stage": 10,
+      "addr": "$C0:82BB",
+      "file_offset": "0x0082BB",
+      "n_bytes": 14,
+      "raw_hex": "0211020CE4E511BA778397C5B100",
+      "text_jp": "対決！？　ビクトリーズ{end}",
+      "text_kr": "대결！？　빅토리즈{end}"
+    }
+  ]
+}

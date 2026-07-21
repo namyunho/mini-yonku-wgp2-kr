@@ -2,7 +2,8 @@
 """전체 한글패치 통합 빌드 — 모든 작업을 반영한 단일 ROM 생성.
 
 순서:
- 1. build_patch.py       대사 673 한글 + **어드벤처 음절도 같은 글리프 할당에 포함**
+ 1. build_patch.py       정적 대사 681 + 스테이지 제목 10개 한글
+                         + **어드벤처 음절도 같은 글리프 할당에 포함**
                          (--adv-json → 폰트 시트 $CA 전역 공유, out/glyph_map.json 산출)
  2. build_credit_kr.py   크레딧 화면 스프라이트 편집본(tmp/gfx_edit/vram_7000.bin)
  3. build_gfx.py         크레딧 화면 그래픽 LZSS 재삽입(out in-place)
