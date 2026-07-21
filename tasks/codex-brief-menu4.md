@@ -1,6 +1,6 @@
 # Codex 배치 브리핑 — System ④ 메뉴 소형폰트 라벨 한글화 (월드맵 X메뉴·조작방법)
 
-> 작성: Claude, 2026-07-21. 규명·설계·정본 = **docs/17**(먼저 읽을 것) + docs/11(폰트/렌더러)·docs/12(SJIS 한글 인프라)·`assets/translation_guide/glossary.md`(용어). **정본 코드/커밋은 Claude가 소유**(handoff 규약). Codex는 아래 스펙+게이트 범위만 수행하고 산출을 Claude에 반환한다.
+> 작성: Claude, 2026-07-21. 규명·설계·정본 = **docs/18**(먼저 읽을 것) + docs/11(폰트/렌더러)·docs/12(SJIS 한글 인프라)·`assets/translation_guide/glossary.md`(용어). **정본 코드/커밋은 Claude가 소유**(handoff 규약). Codex는 아래 스펙+게이트 범위만 수행하고 산출을 Claude에 반환한다.
 
 ## 배경 (규명 완료 사실)
 
