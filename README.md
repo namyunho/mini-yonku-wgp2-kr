@@ -140,6 +140,7 @@ python3 scripts/test_roundtrip.py    # 정적 대사 681/681 무손실
 - **Rust**(kr-patch-wgp2) — ROM 정보/무결성.
 - **역공학**: **IDA Pro 9.4**(`ida-pro-mcp` GUI 브리지 + `idalib-mcp` 헤드리스) · **Ghidra 12.1.2**(GhidraMCP, 디컴파일 크로스체크) · **asar 1.91**(65816 어셈블러, ASM 훅·패치) — 셋업 [docs/16](docs/16-reverse-engineering-mcp.md).
 - **Mesen2**(arm64 macOS/Windows) — Lua 스크립팅 QA·트레이싱.
+- **OPTPiX ImageStudio** - 색상 보존 감색, 색상 팔레트 관리
 - **Flips** — BPS 차분 배포(선택, 통합 빌드가 감지 시 자동 생성).
 
 ## 기여·에이전트 협업
