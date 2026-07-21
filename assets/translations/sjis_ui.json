@@ -879,5 +879,112 @@
       "kr": "엔션트　포스",
       "mode": "inplace"
     }
+  ],
+  "tierF_options": [
+    {
+      "bank": "C0",
+      "addr": "EE28",
+      "jp": "なし",
+      "kr": "없음",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EE2D",
+      "jp": "アストロウイング",
+      "kr": "아스트로　윙",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EE3E",
+      "jp": "ビークプロテクター",
+      "kr": "비크　프로텍터",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EE51",
+      "jp": "ミステリーウェイト",
+      "kr": "미스터리　웨이트",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EE64",
+      "jp": "ＭＧコーティングローラー",
+      "kr": "ＭＧ　코팅　롤러",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EE7D",
+      "jp": "ＧＰチップアクセラレーター",
+      "kr": "ＧＰ칩　액셀러레이터",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EE98",
+      "jp": "でんせつのシャフト",
+      "kr": "전설의　샤프트",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EEAB",
+      "jp": "ブラックサスペンション",
+      "kr": "블랙　서스펜션",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EEC2",
+      "jp": "ドラクゥーンエンブレム",
+      "kr": "드라군　엠블럼",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EED9",
+      "jp": "ゴッドベアリング",
+      "kr": "갓　베어링",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EEEA",
+      "jp": "レディーターミナル",
+      "kr": "레이디　터미널",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EEFD",
+      "jp": "バイパーホイールＭＫ２",
+      "kr": "바이퍼　휠　ＭＫ２",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EF14",
+      "jp": "ルーズウイング",
+      "kr": "루즈　윙",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EF23",
+      "jp": "アトミックブースター",
+      "kr": "아토믹　부스터",
+      "mode": "inplace"
+    },
+    {
+      "bank": "C0",
+      "addr": "EF38",
+      "jp": "エアロウイング",
+      "kr": "에어로　윙",
+      "mode": "inplace"
+    }
   ]
 }

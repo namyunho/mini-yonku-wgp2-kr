@@ -25,6 +25,11 @@ TBL         = 0x01D1C3   # 변환표 파일오프셋
 TBL_BLOCK   = 0xD679     # $C1:D679 새 189슬롯 블록 (rowbase = D679-D1C3 = 0x04B6).
                          # ⚠️ build_adv가 $C1:D5CB를 씀 → 그 뒤 자유런. build_all 충돌가드가 회귀 감시.
 KLEAD       = 0x85       # 한글 전용 SJIS 리드바이트(미정의)
+KLEAD2      = 0x86       # 2차 한글 리드바이트 — 0x85 블록(189) 초과분. 게임은 0x86을 리드로
+                         #  안 씀(실측: 발견 0x86은 전부 트레일/포인터데이터) → 리다이렉트 안전.
+SLOT1       = 189        # 리드 0x85 슬롯 수(SJIS trail 0x40+i, i=0..188)
+VRAM_CAP    = 224        # VRAM 한글 타일 여유(800..1023) = 총 음절 하드 상한
+TBL_BLOCK2  = 0xD7F3     # $C1:D7F3 2차 변환블록(block1 D679+189*2=D7F3 직후, 자유런). 0x86 → block2.
 VRAM_KOR_TILE = 800      # 한글 VRAM 시작타일
 MARKER      = 0xFE
 KOR_ADD     = 0x0220     # 렌더러 ext: VRAM타일 = low + 0x220 + base(0x2100) = 800+low
@@ -74,7 +79,10 @@ def sjis_bytes(ch, kmap):
     ⚠️ 렌더러 $C1:965E는 항상 2바이트 페어로 읽으므로 모든 문자는 반드시 2바이트여야 함
     (반각 ASCII 공백 0x20은 디싱크 유발 → 전각공백 　만 허용)."""
     if '가' <= ch <= '힣':
-        return bytes([KLEAD, 0x40 + kmap[ch]])
+        i = kmap[ch]
+        if i < SLOT1:
+            return bytes([KLEAD, 0x40 + i])          # 리드 0x85, 슬롯 0..188
+        return bytes([KLEAD2, 0x40 + (i - SLOT1)])   # 리드 0x86, 슬롯 189..
     b = ch.encode('cp932')
     if len(b) != 2:
         raise SystemExit(f"2바이트 아닌 문자 금지(반각?): {ch!r} → {b.hex()}. 전각으로 교체(공백=　, ！？〜).")
@@ -115,8 +123,9 @@ def build():
         for it in items:
             add_syls(it["kr"])
             strings.append((int(it["bank"],16), int(it["addr"],16), it["jp"], it["kr"], it.get("mode","inplace")))
-    assert len(syls) <= 189, f"음절 {len(syls)} > 189슬롯"
-    assert len(syls) <= 224, f"음절 {len(syls)} > VRAM 여유"
+    # 리드 0x85 블록 189 + 리드 0x86 블록 → 총 상한 = VRAM 여유(224).
+    assert len(syls) <= VRAM_CAP, f"음절 {len(syls)} > VRAM 여유 {VRAM_CAP}"
+    assert len(syls) - SLOT1 <= (VRAM_CAP - SLOT1), "block2 초과"
     kmap = {ch: i for i, ch in enumerate(syls)}
 
     # 2) 한글 타일뱅크 → $C1:9A00
@@ -197,6 +206,18 @@ def build():
         v = ((MARKER << 8) | i) if i < len(syls) else 0x0000
         rom[blk+i*2] = v & 0xFF; rom[blk+i*2+1] = (v >> 8) & 0xFF
 
+    # 5b) 리드 0x86 → 2차 블록(슬롯 189..). block2[j] = 0xFE00|(189+j) → 렌더러가 VRAM 800+(189+j).
+    n2 = max(0, len(syls) - SLOT1)
+    if n2 > 0:
+        roff2 = TBL + (KLEAD2 & 0x7F) * 2
+        rb2 = (TBL_BLOCK2 - 0xD1C3) & 0xFFFF
+        rom[roff2] = rb2 & 0xFF; rom[roff2+1] = (rb2 >> 8) & 0xFF
+        blk2 = fo_c1(TBL_BLOCK2)
+        assert all(b == 0xFF for b in rom[blk2:blk2 + n2*2]), "표 블록2 영역 비어있지 않음"
+        for j in range(n2):
+            v = (MARKER << 8) | (SLOT1 + j)
+            rom[blk2+j*2] = v & 0xFF; rom[blk2+j*2+1] = (v >> 8) & 0xFF
+
     # 6) 문자열 재작성 (모든 초과를 모아 한 번에 보고)
     report = []; overflows = []
     def slot_of(bank, addr):
@@ -229,6 +250,8 @@ def build():
         while rom[o] != 0:
             if rom[o] == KLEAD:
                 out += syls[rom[o+1]-0x40]; o += 2
+            elif rom[o] == KLEAD2:
+                out += syls[SLOT1 + rom[o+1]-0x40]; o += 2
             else:
                 out += rom[o:o+2].decode('cp932'); o += 2
         return out
@@ -240,7 +263,9 @@ def build():
     open(ROM_OUT, "wb").write(rom)
     print(f"완료: {ROM_OUT}")
     print(f"  고유 음절 {len(syls)}개 → VRAM 타일 {VRAM_KOR_TILE}..{VRAM_KOR_TILE+len(syls)-1}, 뱅크 {len(kdata)}B @ $C1:{KBANK:04X}")
-    print(f"  변환표 리드 0x{KLEAD:02X} → 블록 $C1:{TBL_BLOCK:04X} ({len(syls)}슬롯)")
+    n1 = min(len(syls), SLOT1); n2 = max(0, len(syls) - SLOT1)
+    print(f"  변환표 리드 0x{KLEAD:02X} → 블록 $C1:{TBL_BLOCK:04X} ({n1}슬롯)"
+          + (f" + 리드 0x{KLEAD2:02X} → 블록 $C1:{TBL_BLOCK2:04X} ({n2}슬롯)" if n2 else ""))
     print(f"  문자열 {len(report)}개 재작성, 라운드트립 OK")
     for tag, mode, n, slot in report:
         flag = "  ⚠️초과" if n > slot else ""
