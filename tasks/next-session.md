@@ -32,9 +32,13 @@
 - **렌더 방식 확정(사용자)** = docs/12 8pt 한글 재사용 + **$C0:1B4B에 0xFE 마커 훅**(SJIS $C1:965E 훅과 동형, KOR_ADD=0x220). ASM 설계 완료(docs/18).
 - **VRAM 예산 = 정확히 224**(현 SJIS UI 200 + 라벨 순증 24, 여유 0). 라벨 타이트 유지 필수. ⚠️ $CA(어드벤처)와 무관 → 어드벤처 회귀 없음(이건 $D9 풀).
 - **세팅 서브메뉴는 "이지/매뉴얼 세팅" 원문 유지**(사용자 지시).
-- **남은 구현 2블로커**: (a) **라벨 테이블 레코드 포맷 RE**($C0:1B4B 호출부 = 좌표+문자열포인터 구조, 디코드 시 좌표바이트 인터리브 확인 — 편집 전 규명 필요). (b) **폰트로더 DMA**: 조작방법 화면이 docs/12 훅된 로더($C0:6F93·$C1:1EFB·$C1:307F) 중 하나 쓰는지 미검증 → **실기 게이트에서 확인**(라벨 빈칸/깨지면 그 화면 로더 추가훅).
-- 트레이스 준비: 소형폰트 VRAM 덤프는 기존 `scripts/lua/dump_menufont.lua`(Win경로→맥 수정 필요)·과거 산출 `tmp/trace/menu/·menu2/`. IDA 세션 열림(`$C0:1B4B` 코드 정의됨).
-- 참조: [[menu-small-font-subsystem]]·[[sjis-0x86-expansion-suspect]], docs/11·12·17.
+- **Codex RE 완료(collab)**: 호출부 10곳·calling convention 규명 = `tasks/menu4_caller_re.md`. base=A레지스터 전달(PEA로 포인터+base). C7 튜토리얼은 **6바이트 디스크립터**(op/addr-lo/hi/bank/overlay/base-hi) 워커 `$C3:8B04` 경유 = **length-prefixed 페이로드**(마커 OK). X메뉴는 **inline 프로그램**(`00 94`=탁점·`00 95`=반탁점·`00 01/02`=행·`00 00`=복귀 이스케이프 → 마커 충돌). **$CE:46xx=그래픽(라벨표 아님, 내 브리핑 주소 오류 정정), $C1:C6xx=패치대상 없음**.
+- **라벨 재인코딩 산출 = `assets/translations/menu4_labels.json`**(untracked; 생성기 `scripts/menu4_labels.py`). 48항목: **inplace 22·overflow 25·baseswap 1**. 순증 24음절(목차맵변경출동얼윈환택성능운내력종체톱회템작법용)=200+24=224(VRAM 상한). ⚠️ Codex 파일들이 `docs/17-menu-tile-font` 참조 → **커밋 시 docs/18로 고칠 것**.
+- **내 독립 검증(gate 재검)**: C7 length-prefixed **inplace 19개 = 디코드==kr·fit 통과 → Phase1 안전 대상**. ⚠️ **C3 X메뉴 inline 3개(세팅 $C3:95BE·조작방법 $C3:9208·용어집 $C3:9212)는 per-label mode 모순**(같은 프로그램에 마커+baseswap 혼재 불가; 세팅은 남은 탁점escape `0094` 위험) → **Phase2 그룹 재인코딩**으로. overflow 25는 마커 2B>원본 → **Phase3 재배치**(디스크립터 포인터 bytes1-3 리포인트, 포맷은 menu4_caller_re.md).
+- **★ Phase 1 (새 세션 착수)**: `$C0:1B4B` **0xFE 마커 훅**(docs/18에 31B ASM 확정, `$C0:1B64`의 8바이트 `C9 FF 00 D0 03 A9 00 00`→`JML 훅+NOP`, 훅은 자유ROM $C1) — **asar로 어셈블 권장** + build_sjis 음절풀 24 확장(append) + **C7 clean 19라벨 in-place 패치** → ROM → **실기 검증**. ⚠️ **폰트로더 DMA 미검증**: 조작방법 화면이 docs/12 훅 로더($C0:6F93·$C1:1EFB·$C1:307F) 쓰는지 불명 → 라벨 빈칸/깨지면 그 화면 로더 추가훅(트레이스 `dump_menufont.lua` 맥 경로수정·과거산출 `tmp/trace/menu/`).
+- **Phase 2/3**: X메뉴 그룹 base-스왑 재인코딩(세팅/그리드변경/아이템·조작방법/용어집/지도, base $2100→$2320 + FF 블랭크 특례) / overflow 25 재배치. 반복은 Codex 분산.
+- **도구**: RE 애매하면 Ghidra 디컴파일 크로스체크 가능(ghidra-snes 확장 설치됨, docs/16 §도구선택원칙). ⚠️ `git stash`에 CRLF 아티팩트(build_patch 등) — **pop 금지**(Codex가 build_patch 수정한 최신본이 트리에 반영됨).
+- 참조: [[menu-small-font-subsystem]]·[[sjis-0x86-expansion-suspect]], docs/11·12·**18**, tasks/codex-brief-menu4.md·menu4_caller_re.md.
 
 ## 🔴 다음 최우선
 4. **광역 "월드맵/맵 NPC 대사"** (Task 4 잔여) — $C1 개러지 서브시스템 밖 **별도 표시경로**. 방법=맵에서 NPC 대화 화면 띄우고 `trace_field_src.lua` 무장 → P/S/D+소스주소 캡처 → 역디코드/오프라인 디코드 → 갭 열거·번역([[npc-field-dialogue-gap]]). 대량이면 Codex 분산.
