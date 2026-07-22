@@ -106,6 +106,7 @@ roms/ out/ tmp/   비커밋 (원본 ROM·산출물·임시 파일)
 - [docs/19-worldmap-quiz-text](docs/19-worldmap-quiz-text.md) — 월드맵 퀴즈/정보 DB 70문항 추출·번역·재삽입
 - [docs/20-field-npc-hidden-records](docs/20-field-npc-hidden-records.md) — 장소별 필드/NPC 숨은 압축 레코드 전수 조사
 - [docs/21-field-position-preserving-translation](docs/21-field-position-preserving-translation.md) — 필드/NPC 위치보존 번역·재삽입 설계
+- [docs/22-shortened-translation-comparison](docs/22-shortened-translation-comparison.md) — 완역문과 실제 ROM 삽입 축약문 751건 전수 비교
 
 ## 번역 용어집 (고유명사·용어 통일)
 

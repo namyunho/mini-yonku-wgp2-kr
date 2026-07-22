@@ -535,10 +535,10 @@
    "system": "field",
    "entry_id": "F0168",
    "before_kr": "파이터\n「하지만　잘 생각해 보니\n커플룩이잖아\n데헤헤♥{wait}{clear}",
-   "after_kr": "파이터\n「생각해 보니\n커플룩이잖아\n데헤헤♥{wait}{clear}",
+   "after_kr": "파이터\n「생각해 보니\n같은 옷이잖아\n데헤헤♥{wait}{clear}",
    "orig_bytes": 35,
    "after_bytes": 32,
-   "reason": "전역 글리프 수용량 및 필드 런 위치보존 바이트 상한 조정",
+   "reason": "전역 글리프 수용량 및 필드 런 위치보존 바이트 상한 조정 + 1회 사용 '룩' 슬롯을 '넵'에 승계",
    "status": "done",
    "date": "2026-07-22"
   },

@@ -6,6 +6,8 @@
 - **기계용 SSOT**: [`assets/translations/shortening_ledger.json`](../assets/translations/shortening_ledger.json)
   (`done`=완료 before→after 확정, `pending`=축약 대기·`before_kr` 스냅샷 보존, Codex가 `after_kr` 채움).
 - 이 문서 = 사람이 읽는 뷰(완료 테이블) + 형식·워크플로 설명.
+- **현재 전 시스템 통합 비교표**: [22-shortened-translation-comparison.md](22-shortened-translation-comparison.md)
+  — 어드벤처·정적·필드/NPC의 완역문과 현재 실제 삽입문이 다른 **751건 전량**을 나란히 수록한다.
 
 ## 왜 축약하나 — 두 시스템·두 이유
 

@@ -2,6 +2,7 @@
 """한글 대사·스테이지 제목 재삽입 빌드 (재실행 가능·자동).
 입력: dialogue.json(text_kr) + stage_titles.json(text_kr) + worldmap_text.json(kr)
       + field_kr.json(text_kr)
+      + adv_parts_fragments.json(text_kr)
       + glyph_table.tsv
       + 한글 bin 폰트 + pointer_map.json.
 과정: 동적 글리프 할당 → 폰트 시트 주입 → 메시지/제목 재인코딩
@@ -98,6 +99,9 @@ def main():
     ap.add_argument('--field-json', default=None,
                     help='필드/NPC 번역 원장. 기존 정적/어드벤처/월드맵 글리프 인덱스를 '
                          '보존한 채 신규 음절·기호를 할당 끝에만 추가한다.')
+    ap.add_argument('--adv-parts-json', default=None,
+                    help='어드벤처 파츠 획득용 동적 이름 조각 원장. 기존 필드까지의 '
+                         '글리프 인덱스를 보존한 채 신규 음절·기호를 끝에만 추가한다.')
     ap.add_argument('--glyph-map-out', default='out/glyph_map.json',
                     help='char->글리프인덱스 매핑 산출(어드벤처 빌더가 재사용)')
     a = ap.parse_args()
@@ -197,15 +201,37 @@ def main():
 
     # ---- 필드/NPC 코퍼스: 월드맵 뒤 append-only 입력 ----
     freq_field = Counter()
+    freq_field_actual = Counter()
     other_field = Counter()
     if a.field_json:
         FD = json.load(open(a.field_json, encoding='utf-8'))
         for x in FD['entries']:
-            for c in strip_tok(x['text_kr']):
+            # glyph_allocation_text는 포화된 폰트 슬롯을 1:1 승계할 때만 쓰는 이전 할당 코퍼스다.
+            # 실제 재삽입문은 항상 text_kr이며 build_field.py도 그것만 소비한다.
+            alloc_text = x.get('glyph_allocation_text', x['text_kr'])
+            for c in strip_tok(alloc_text):
                 if 0xAC00 <= ord(c) <= 0xD7A3:
                     freq_field[c] += 1
                 elif c not in (' ', '　', '\n'):
                     other_field[c] += 1
+            for c in strip_tok(x['text_kr']):
+                if 0xAC00 <= ord(c) <= 0xD7A3:
+                    freq_field_actual[c] += 1
+
+    # ---- 파츠 획득 동적 이름 조각: 필드 뒤 append-only 입력 ----
+    freq_parts = Counter()
+    other_parts = Counter()
+    glyph_slot_replacements = []
+    if a.adv_parts_json:
+        PD = json.load(open(a.adv_parts_json, encoding='utf-8'))
+        glyph_slot_replacements = PD.get('glyph_slot_replacements', [])
+        for table in PD['tables']:
+            for x in table['entries']:
+                for c in strip_tok(x['text_kr']):
+                    if 0xAC00 <= ord(c) <= 0xD7A3:
+                        freq_parts[c] += 1
+                    elif c not in (' ', '　', '\n'):
+                        other_parts[c] += 1
 
     # ---- 유지 문자 → 기존 게임 인덱스 (실제 쓰인 것만) ----
     keep_map = {'　': 0x001, ' ': 0x000}   # 전각공백 8px / 반각 4px
@@ -227,11 +253,40 @@ def main():
     syllables += world_syllables
     field_syllables = [c for c, _ in freq_field.most_common() if c not in syllables]
     syllables += field_syllables
+    parts_syllables = [c for c, _ in freq_parts.most_common() if c not in syllables]
+    syllables += parts_syllables
+
+    # ---- 포화 폰트 슬롯의 검증된 1:1 승계 ----
+    # 신규 음절은 append-only 끝에 단 하나만 있어야 하며, donor는 실제 삽입문 어디에도 남아 있지
+    # 않아야 한다. donor가 차지하던 기존 위치를 신규 음절로 바꾸고 끝 슬롯을 제거하면 나머지
+    # 모든 글리프 인덱스가 바이트 단위로 보존된다.
+    applied_slot_replacements = []
+    for rep in glyph_slot_replacements:
+        donor, target = rep['from'], rep['to']
+        if donor not in syllables or target not in syllables:
+            sys.exit(f"글리프 슬롯 승계 대상 누락: {donor!r} -> {target!r}")
+        donor_actual = (freq.get(donor, 0) + freq_adv.get(donor, 0)
+                        + freq_titles.get(donor, 0) + freq_world.get(donor, 0)
+                        + freq_field_actual.get(donor, 0) + freq_parts.get(donor, 0))
+        target_actual = (freq.get(target, 0) + freq_adv.get(target, 0)
+                         + freq_titles.get(target, 0) + freq_world.get(target, 0)
+                         + freq_field_actual.get(target, 0) + freq_parts.get(target, 0))
+        if donor_actual != 0 or target_actual == 0:
+            sys.exit(f"글리프 슬롯 승계 코퍼스 위반: {donor!r} 실제 {donor_actual}회, "
+                     f"{target!r} 실제 {target_actual}회")
+        donor_pos = syllables.index(donor)
+        target_pos = syllables.index(target)
+        if target_pos != len(syllables) - 1:
+            sys.exit(f"글리프 슬롯 승계는 append-only 마지막 신규 음절만 허용: "
+                     f"{target!r} pos={target_pos}/{len(syllables) - 1}")
+        syllables.pop()
+        syllables[donor_pos] = target
+        applied_slot_replacements.append((donor, target, donor_pos))
 
     # 월드맵에서만 쓰이며 기존 keep_map에 없던 비한글 글리프는 원본 타일을
     # 새 슬롯으로 복제한다. 기존 슬롯을 뒤늦게 kept_indices에 넣지 않으므로
     # 정적/어드벤처 char2idx가 바뀌지 않는다.
-    append_other = other_world + other_field
+    append_other = other_world + other_field + other_parts
     world_copy_chars = []
     for c, _ in append_other.most_common():
         if c in keep_map:
@@ -388,8 +443,12 @@ def main():
         return render(decode(rom[s:o + 1]), idx2char)
     vloc = {eid: (bk, ad) for bk, ad, eid in verify}
     print(f"\n=== 폰트: 한글 {inj} 글리프 주입 "
-          f"(기존코퍼스 {base_syllable_count} + 월드맵 신규 {len(world_syllables)}), "
-          f"월드맵 원본기호 복제 {len(world_other2idx)}, 자유슬롯 {len(alloc)} ===")
+          f"(기존코퍼스 {base_syllable_count} + 월드맵 신규 {len(world_syllables)} "
+          f"+ 필드 신규 {len(field_syllables)} + 파츠 신규 {len(parts_syllables)}), "
+          f"append-only 원본기호 복제 {len(world_other2idx)}, 자유슬롯 {len(alloc)} ===")
+    if applied_slot_replacements:
+        print("글리프 슬롯 1:1 승계: " + ", ".join(
+            f"{src}->{dst} (할당순번 {pos})" for src, dst, pos in applied_slot_replacements))
     stage_ok = 0
     for x, nenc, addr in stage_verify:
         got = decode_at(0xC0, addr)

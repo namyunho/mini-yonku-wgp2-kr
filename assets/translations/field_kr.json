@@ -3325,7 +3325,8 @@
    "translation_source": "codex_manual",
    "text_jp": "ファイター\n「でも　よく考えたら\nペアルックじゃないか\nでへへ♥{wait}{clear}",
    "text_kr_full": "파이터\n「하지만　잘 생각해 보니\n커플룩이잖아\n데헤헤♥{wait}{clear}",
-   "text_kr": "파이터\n「생각해 보니\n커플룩이잖아\n데헤헤♥{wait}{clear}",
+   "text_kr": "파이터\n「생각해 보니\n같은 옷이잖아\n데헤헤♥{wait}{clear}",
+   "glyph_allocation_text": "파이터\n「생각해 보니\n커플룩이잖아\n데헤헤♥{wait}{clear}",
    "orig_len": 36,
    "controls": [
     "{wait}",

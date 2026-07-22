@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "description": "어드벤처 cmd0x20의 {c7:00} 동적 파츠명 조각. 획득 메시지(씬 0x6F)가 $C0:627E 표현식 서브옵 0x56을 통해 네 로컬 포인터 테이블을 조합한다. 메뉴/SJIS 파츠명과는 별도 경로다.",
+  "encoding": "1-byte length prefix + CA variable-length glyph stream (terminator 없음)",
+  "source": {
+    "expression_handler": "$C0:627E",
+    "text_buffer_writer": "$C0:4185",
+    "acquisition_scene": "0x6F",
+    "acquisition_run_at": "0x0040"
+  },
+  "glyph_slot_replacements": [
+    {
+      "from": "룩",
+      "to": "넵",
+      "donor": "field_kr:F0168",
+      "reason": "공유 16x16 폰트 시트가 1008/1008 슬롯을 사용 중이다. 전체 실삽입 코퍼스에서 1회만 쓰이는 '룩'을 F0168의 축약문에서 제거하고, 그 2바이트 슬롯을 같은 2바이트 음절 '넵'에 승계한다."
+    }
+  ],
+  "region": {
+    "start": "$C0:62EE",
+    "file_offset": "0x0062EE",
+    "payload_start": "$C0:6324",
+    "payload_file_offset": "0x006324",
+    "end_exclusive": "$C0:6399",
+    "end_file_offset": "0x006399",
+    "capacity": 171,
+    "payload_capacity": 117
+  },
+  "tables": [
+    {
+      "id": "planet",
+      "description": "파츠 레코드 +4 선택값",
+      "pointer_table": "$C0:62EE",
+      "file_offset": "0x0062EE",
+      "count": 11,
+      "entries": [
+        {"index": 0, "pointer": "$C0:6324", "length": 6, "raw_hex": "8ec576a797c5", "text_jp": "マーキュリー", "text_kr_full": "머큐리", "text_kr": "머큐리"},
+        {"index": 1, "pointer": "$C0:632B", "length": 5, "raw_hex": "a9a0c5847c", "text_jp": "ヴィーナス", "text_kr_full": "비너스", "text_kr": "비너스"},
+        {"index": 2, "pointer": "$C0:6331", "length": 3, "raw_hex": "70c57c", "text_jp": "アース", "text_kr_full": "어스", "text_kr": "어스"},
+        {"index": 3, "pointer": "$C0:6335", "length": 3, "raw_hex": "8ec5b1", "text_jp": "マーズ", "text_kr_full": "마즈", "text_kr": "마즈"},
+        {"index": 4, "pointer": "$C0:6339", "length": 5, "raw_hex": "b0a7bf7fc5", "text_jp": "ジュピター", "text_kr_full": "주피터", "text_kr": "주피터"},
+        {"index": 5, "pointer": "$C0:633F", "length": 3, "raw_hex": "7a7f9d", "text_jp": "サタン", "text_kr_full": "새턴", "text_kr": "새턴"},
+        {"index": 6, "pointer": "$C0:6343", "length": 4, "raw_hex": "7296867c", "text_jp": "ウラヌス", "text_kr_full": "우라누스", "text_kr": "우라누스"},
+        {"index": 7, "pointer": "$C0:6348", "length": 6, "raw_hex": "87c080a7c59d", "text_jp": "ネプチューン", "text_kr_full": "넵튠", "text_kr": "넵튠"},
+        {"index": 8, "pointer": "$C0:634F", "length": 4, "raw_hex": "c098c583", "text_jp": "プルート", "text_kr_full": "플루토", "text_kr": "플루토"},
+        {"index": 9, "pointer": "$C0:6354", "length": 2, "raw_hex": "7a9d", "text_jp": "サン", "text_kr_full": "선", "text_kr": "선"},
+        {"index": 10, "pointer": "$C0:6357", "length": 3, "raw_hex": "88a99f", "text_jp": "ノヴァ", "text_kr_full": "노바", "text_kr": "노바"}
+      ]
+    },
+    {
+      "id": "category",
+      "description": "파츠 레코드 +2 선택값",
+      "pointer_table": "$C0:6304",
+      "file_offset": "0x006304",
+      "count": 7,
+      "entries": [
+        {"index": 0, "pointer": "$C0:635B", "length": 3, "raw_hex": "8e7b9d", "text_jp": "マシン", "text_kr_full": "머신", "text_kr": "머신"},
+        {"index": 1, "pointer": "$C0:635F", "length": 4, "raw_hex": "92c57fc5", "text_jp": "モーター", "text_kr_full": "모터", "text_kr": "모터"},
+        {"index": 2, "pointer": "$C0:6364", "length": 3, "raw_hex": "ab93c5", "text_jp": "ギヤー", "text_kr_full": "기어", "text_kr": "기어"},
+        {"index": 3, "pointer": "$C0:6368", "length": 3, "raw_hex": "7f7193", "text_jp": "タイヤ", "text_kr_full": "타이어", "text_kr": "타이어"},
+        {"index": 4, "pointer": "$C0:636C", "length": 5, "raw_hex": "b99e8297c5", "text_jp": "バッテリー", "text_kr_full": "배터리", "text_kr": "배터리"},
+        {"index": 5, "pointer": "$C0:6372", "length": 4, "raw_hex": "b99dbec5", "text_jp": "バンパー", "text_kr_full": "범퍼", "text_kr": "범퍼"},
+        {"index": 6, "pointer": "$C0:6377", "length": 5, "raw_hex": "74c07ba89d", "text_jp": "オプション", "text_kr_full": "옵션", "text_kr": "옵션"}
+      ]
+    },
+    {
+      "id": "grade",
+      "description": "파츠 레코드 +6 선택값",
+      "pointer_table": "$C0:6312",
+      "file_offset": "0x006312",
+      "count": 5,
+      "entries": [
+        {"index": 0, "pointer": "$C0:637D", "length": 2, "raw_hex": "dad7", "text_jp": "SP", "text_kr_full": "SP", "text_kr": "SP"},
+        {"index": 1, "pointer": "$C0:6380", "length": 2, "raw_hex": "cad5", "text_jp": "CN", "text_kr_full": "CN", "text_kr": "CN"},
+        {"index": 2, "pointer": "$C0:6383", "length": 2, "raw_hex": "d7de", "text_jp": "PW", "text_kr_full": "PW", "text_kr": "PW"},
+        {"index": 3, "pointer": "$C0:6386", "length": 2, "raw_hex": "cbcd", "text_jp": "DF", "text_kr_full": "DF", "text_kr": "DF"},
+        {"index": 4, "pointer": "$C0:6389", "length": 3, "raw_hex": "c8d3d3", "text_jp": "ALL", "text_kr_full": "ALL", "text_kr": "ALL"}
+      ]
+    },
+    {
+      "id": "level",
+      "description": "파츠 레코드 +8 선택값",
+      "pointer_table": "$C0:631C",
+      "file_offset": "0x00631C",
+      "count": 4,
+      "entries": [
+        {"index": 0, "pointer": "$C0:638D", "length": 2, "raw_hex": "eb13", "text_jp": "＋1", "text_kr_full": "＋1", "text_kr": "＋1"},
+        {"index": 1, "pointer": "$C0:6390", "length": 2, "raw_hex": "eb14", "text_jp": "＋2", "text_kr_full": "＋2", "text_kr": "＋2"},
+        {"index": 2, "pointer": "$C0:6393", "length": 2, "raw_hex": "eb15", "text_jp": "＋3", "text_kr_full": "＋3", "text_kr": "＋3"},
+        {"index": 3, "pointer": "$C0:6396", "length": 2, "raw_hex": "eb16", "text_jp": "＋4", "text_kr_full": "＋4", "text_kr": "＋4"}
+      ]
+    }
+  ]
+}
