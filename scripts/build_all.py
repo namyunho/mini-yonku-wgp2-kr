@@ -16,9 +16,11 @@
  9. build_worldmap.py    월드맵 퀴즈 70문항(350문자열) $C6 in-bank 재배치+포인터 패치
 10. build_sjis.py        SJIS UI(→out/menu_test.smc) → 원본 대비 차분 통합
 11. build_menu4_reclean.py 월드맵 X메뉴·튜토리얼·용어집·지도 → 원본 대비 차분 통합
-12. build_setbox.py      수동 세팅 X메뉴를 현재 통합 ROM 위에 적용
-13. verify_field_build.py 최종 병합 뒤 필드 원본·목적지·포인터 무결성 재검증
-14. 헤더 체크섬 갱신 + BPS 배포 패치 생성(flips)
+12. build_setbox.py      이지·수동 세팅 X메뉴·다음 LV를 현재 통합 ROM 위에 적용
+13. build_pause_menu.py  경기 일시정지 `이어하기/리타이어` 전용 4bpp 그래픽
+14. verify_menu_extra_build.py 추가 소형 메뉴 3종 최종 ROM 무결성 검증
+15. verify_field_build.py 최종 병합 뒤 필드 원본·목적지·포인터 무결성 재검증
+16. 헤더 체크섬 갱신 + BPS 배포 패치 생성(flips)
 
 산출: out/wgp2_kr.smc (통합 ROM), out/wgp2_kr.bps (배포용 차분)
 ※ ROM은 비커밋. 이 스크립트+에셋으로 원본에서 재생성.
@@ -108,9 +110,12 @@ def main():
     open(OUT, 'wb').write(rom)
     snapshot("11-menu4")
 
-    run(["scripts/build_setbox.py"])                                   # 12 수동 세팅 X메뉴 → OUT
+    run(["scripts/build_setbox.py"])                                   # 12 이지·수동 세팅 → OUT
     snapshot("12-setbox")
-    run(["scripts/verify_field_build.py"])                             # 13 후속 덮어쓰기·원본 변경 방지
+    run(["scripts/build_pause_menu.py"])                               # 13 경기 일시정지 메뉴 → OUT
+    snapshot("13-pause-menu")
+    run(["scripts/verify_menu_extra_build.py"])                        # 14 추가 메뉴 3종 무결성
+    run(["scripts/verify_field_build.py"])                             # 15 후속 덮어쓰기·원본 변경 방지
     rom = bytearray(open(OUT, 'rb').read())
 
     # 원본 2MB HiROM 크기·헤더는 유지하고 체크섬만 갱신한다.
@@ -126,7 +131,7 @@ def main():
     open(OUT, 'wb').write(rom)
     snapshot("14-final")
 
-    # 14: BPS
+    # 16: BPS
     if os.path.exists(FLIPS):
         subprocess.run([FLIPS, "--create", ORIG, OUT, BPS])
     data = bytes(rom)

@@ -54,6 +54,7 @@ def main() -> None:
     adventure = load("adventure_kr.json")
     field = load("field_kr.json")
     parts = load("adv_parts_fragments.json")
+    menu_extra = load("menu_extra_labels.json")
     ledger = load("shortening_ledger.json")
     field_ledger = load("field_shortening_ledger.json")
 
@@ -161,10 +162,27 @@ def main() -> None:
                     full, inserted, (table["id"], entry["index"]),
                 )
 
+    # 소형 메뉴의 직접 타일·내장 그래픽도 원문/완역/실삽입 3본을 같은 표에서 감사한다.
+    for entry in menu_extra["entries"]:
+        full = entry.get("text_kr_full")
+        inserted = entry.get("text_kr")
+        if isinstance(full, str) and isinstance(inserted, str) and full != inserted:
+            add(
+                "menu_extra", entry["id"],
+                f"{entry['id']} / {entry['source']}",
+                full, inserted, (entry["id"],),
+            )
+
     counts = {system: sum(r.system == system for r in rows.values())
-              for system in ("adventure", "dialogue", "field", "parts")}
-    expected = {"adventure": 449, "dialogue": 22, "field": 280, "parts": 0}
-    if counts != expected or len(rows) != 751:
+              for system in ("adventure", "dialogue", "field", "parts", "menu_extra")}
+    expected = {
+        "adventure": 449,
+        "dialogue": 22,
+        "field": 280,
+        "parts": 0,
+        "menu_extra": 1,
+    }
+    if counts != expected or len(rows) != 752:
         raise SystemExit(f"축약 목록 규모 불일치: {counts}, total={len(rows)}")
 
     inputs = [
@@ -174,6 +192,7 @@ def main() -> None:
         TRANS / "adventure_kr.json",
         TRANS / "field_kr.json",
         TRANS / "adv_parts_fragments.json",
+        TRANS / "menu_extra_labels.json",
     ]
     lines = [
         "# 22 · 완역문–실삽입 축약문 전수 비교",
@@ -202,6 +221,7 @@ def main() -> None:
         f"| 정적 대사 | {counts['dialogue']} | `shortening_ledger.json:before_kr` 또는 `dialogue.json:text_kr_full` | `dialogue.json:text_kr` |",
         f"| 필드/NPC | {counts['field']} | `field_kr.json:text_kr_full` | `field_kr.json:text_kr` |",
         f"| 파츠 획득 동적 이름 | {counts['parts']} | `adv_parts_fragments.json:text_kr_full` | `adv_parts_fragments.json:text_kr` |",
+        f"| 소형 메뉴 직접 타일·그래픽 | {counts['menu_extra']} | `menu_extra_labels.json:text_kr_full` | `menu_extra_labels.json:text_kr` |",
         f"| **합계** | **{len(rows)}** |  |  |",
         "",
     ]
@@ -210,8 +230,9 @@ def main() -> None:
         "adventure": "어드벤처 씬",
         "dialogue": "정적 대사",
         "field": "필드/NPC",
+        "menu_extra": "소형 메뉴 직접 타일·그래픽",
     }
-    for system in ("adventure", "dialogue", "field"):
+    for system in ("adventure", "dialogue", "field", "menu_extra"):
         selected = sorted((r for r in rows.values() if r.system == system),
                           key=lambda r: r.sort_key)
         lines.extend([
@@ -237,7 +258,7 @@ def main() -> None:
     lines.extend([
         "",
         "이 문서는 위 입력에서 다시 생성할 수 있다. 생성기는 두 축약 원장의 완료/대기 수, 현재 빌드 키 존재 여부,",
-        "필드 `before_kr == text_kr_full`, 중복 키, 시스템별 예상 건수(449/22/280/0)를 검사하고 하나라도",
+        "필드 `before_kr == text_kr_full`, 중복 키, 시스템별 예상 건수(449/22/280/0/1)를 검사하고 하나라도",
         "어긋나면 문서를 쓰지 않고 실패한다.",
         "",
     ])
@@ -245,7 +266,8 @@ def main() -> None:
     OUT.write_text("\n".join(lines), encoding="utf-8")
     print(f"축약 비교 문서 생성: {OUT.relative_to(ROOT)}")
     print(f"  어드벤처 {counts['adventure']} / 정적 {counts['dialogue']} / "
-          f"필드 {counts['field']} / 파츠 {counts['parts']} / 합계 {len(rows)}")
+          f"필드 {counts['field']} / 파츠 {counts['parts']} / "
+          f"소형 메뉴 {counts['menu_extra']} / 합계 {len(rows)}")
 
 
 if __name__ == "__main__":

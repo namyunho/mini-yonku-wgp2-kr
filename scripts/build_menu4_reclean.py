@@ -22,6 +22,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from lzss import compress, decompress  # noqa: E402
+from small_font_graphics import pack_tight_2bpp_label  # noqa: E402
 
 
 ORIGINAL_ROM = ROOT / "roms/Mini Yonku Let's & Go!! - Power WGP 2 (J) (NP).smc"
@@ -29,6 +30,7 @@ DEFAULT_OUT = ROOT / "out/menu4_reclean.smc"
 DEFAULT_MAP = ROOT / "out/menu4_reclean_glyph_map.json"
 FONT_BIN = ROOT / "8pt_font/font-007242d37349daf3.bin"
 FONT_MAP = ROOT / "8pt_font/font-007242d37349daf3_glyph_map.json"
+EXTRA_TRANSLATIONS = ROOT / "assets/translations/menu_extra_labels.json"
 
 ORIGINAL_SIZE = 0x200000
 ORIGINAL_CRC32 = 0x4459D4D0
@@ -39,30 +41,54 @@ ORIGINAL_FONT = (0xD9, 0x0000)
 ORIGINAL_FONT_RAW_SIZE = 0x1760
 ORIGINAL_FONT_RAW_SHA256 = "78dfbb47aff74d3d6ccfa055ab0cb5975cdf779fcc617edb9db2ebf266bb43dd"
 ORIGINAL_TILE_PAGE_SHA256 = "9f84cb8c101db514d4c4f6218099d1a90b95daea24d4d1c1fc2ce340986bd155"
+NEXT_LEVEL_TILE_SPAN = (0xF4, 0xF9)
+NEXT_LEVEL_ORIGINAL_SHA256 = "bb42ce52659d6e4545a0bbf7f6d8b4948b8481e267cf177363fcee8d70ebdc2b"
 
 # 원본 $C7:B49B 이후의 0xFF 자유 영역 안쪽. 최대 8KB를 넘지 않는다.
 NEW_FONT = (0xC7, 0xE000)
 NEW_FONT_CAPACITY = 0x2000
+
+# 저장 파일 삭제·덮어쓰기 확인창은 월드맵 로더가 아니라 $C0:6F4B의
+# 별도 $D9 로더를 사용한다. 저장 화면의 다른 직접 프로그램과 겹치지 않는
+# 8타일만 바꾼 문맥 전용 자원을 $C7:C000에 둔다.
+SAVE_CONFIRM_FONT = (0xC7, 0xC000)
+SAVE_CONFIRM_FONT_CAPACITY = 0x1000
+SAVE_CONFIRM_LOADER = (0xC0, 0x6F4B)
+SAVE_CONFIRM_SYLLABLES = "괜찮습니까예아오"
+SAVE_CONFIRM_TILE_CODES = bytes(range(0x3F, 0x47))
+SAVE_CONFIRM_CHAR_TO_TILE = dict(
+    zip(SAVE_CONFIRM_SYLLABLES, SAVE_CONFIRM_TILE_CODES, strict=True)
+)
+SAVE_SCREEN_DIRECT_RANGES = (
+    (0x00720B, 0x007255),
+    (0x007841, 0x007859),
+    (0x007A5A, 0x007AAB),
+    (0x007C5C, 0x007C69),
+)
 
 # 용어집·지도는 각각 별도로 $D9:0000을 불러오므로, 문맥 전용
 # 폰트 두 개를 $C2:D448~FFFF의 원본 0xFF 자유 영역에 순차 배치한다.
 CONTEXT_FONT_POOL = (0xC2, 0xD448)
 CONTEXT_FONT_POOL_CAPACITY = 0x2BB8
 
-# 72개 음절은 대상 일본어 라벨이 쓰던 가나 타일과 원본 빈 타일 FC~FE를
-# 재사용한다.
+# 기존 72개 음절은 대상 일본어 라벨이 쓰던 가나 타일과 원본 빈 타일
+# FC~FE를 재사용한다. 뒤의 7개는 확인창 원문을 패치해 비는 26/2B/0D와
+# 기존 대상·보존 직접 프로그램 어느 쪽에서도 쓰지 않는 11/15/17/18이다.
+# 앞 72개 순서는 실기 검증된 매핑이므로 절대 재정렬하지 않는다.
 # 라틴/숫자/공백/행 제어 타일은 보존한다.
 KOREAN_TILE_CODES = bytes.fromhex(
     "02 03 04 05 06 07 08 09 0A 0B 0C 0E 0F 10 12 13 14 16 "
     "19 1A 1C 1D 23 28 2E 2F 36 37 38 39 3A 3B 3E 3F 41 43 "
     "44 45 47 48 49 4A 4B 4C 4D 51 52 53 55 56 58 59 5A 5E "
-    "5F 60 61 63 65 67 69 6A 6B 6C 6D 6E 6F 94 95 FC FD FE"
+    "5F 60 61 63 65 67 69 6A 6B 6C 6D 6E 6F 94 95 FC FD FE "
+    "26 2B 0D 11 15 17 18"
 )
 
 SMALL_LITERAL_TILES = {
     "A": 0x70, "C": 0x72, "F": 0x75, "G": 0x76, "I": 0x78,
     "J": 0x79, "M": 0x7C, "N": 0x7D, "O": 0x7E, "P": 0x7F,
     "R": 0x81, "T": 0x83, "W": 0x86, "X": 0x87, "4": 0x8E,
+    "？": 0x9C,
 }
 
 GLOSSARY_POINTER_BLOCK = (0x03A142, 0x03A1C5)
@@ -121,6 +147,30 @@ def tr(
     prefix: str = "",
 ) -> TutorialRecord:
     return TutorialRecord(top, bottom, hex_bytes(original), korean, hex_bytes(prefix))
+
+
+def load_extra_translations() -> dict[str, dict[str, object]]:
+    data = json.loads(EXTRA_TRANSLATIONS.read_text(encoding="utf-8"))
+    entries = data.get("entries")
+    assert isinstance(entries, list), "추가 메뉴 번역 원장 entries 누락"
+    by_id: dict[str, dict[str, object]] = {}
+    for entry in entries:
+        assert isinstance(entry, dict) and isinstance(entry.get("id"), str)
+        entry_id = entry["id"]
+        assert entry_id not in by_id, f"추가 메뉴 번역 ID 중복: {entry_id}"
+        for field in ("text_jp", "text_kr_full", "text_kr"):
+            assert isinstance(entry.get(field), str), f"{entry_id}: {field} 누락"
+        by_id[entry_id] = entry
+    return by_id
+
+
+EXTRA_LABELS = load_extra_translations()
+
+
+def extra_kr(entry_id: str) -> str:
+    entry = EXTRA_LABELS[entry_id]
+    assert entry["status"] == "implemented", f"미구현 메뉴 번역 참조: {entry_id}"
+    return str(entry["text_kr"])
 
 
 # 각 주소는 원본 ROM 읽기와 Mesen 실행 추적으로 독립 확인한 길이 레코드다.
@@ -206,6 +256,20 @@ DIRECT_PROGRAMS = [
     DirectProgram(0x0399C0, (
         DirectRow(hex_bytes("39 6F 00 94 43 6F"), "쉬운조작", hex_bytes("00 02 00 02")),
         DirectRow(hex_bytes("56 4D 6C 38 60"), "수동조작", hex_bytes("00 00")),
+    )),
+    # 월드맵 계열 공통 확인창. 기존 72음절 뒤에 새 음절이 배정되도록
+    # 반드시 실기 검증된 기존 프로그램들보다 뒤에 둔다.
+    DirectProgram(0x007841, (
+        DirectRow(
+            hex_bytes("26 2B 0C 02 00 94 13 0D 06 9C"),
+            extra_kr("confirm_question"),
+            hex_bytes("00 02 00 02"),
+        ),
+        DirectRow(
+            hex_bytes("FF 1A 02 FF FF 02 02 04"),
+            f" {extra_kr('confirm_yes')}   {extra_kr('confirm_no')}",
+            hex_bytes("00 00"),
+        ),
     )),
 ]
 
@@ -327,6 +391,21 @@ def encode_text(text: str, char_to_tile: dict[str, int]) -> bytes:
     return bytes(out)
 
 
+def encode_direct_text(text: str, char_to_tile: dict[str, int]) -> bytes:
+    """00이 제어 접두사인 $C0:1B4B 직접 프로그램용 인코딩."""
+    out = bytearray()
+    for ch in text:
+        if ch == " ":
+            out.append(0xFF)
+        elif "가" <= ch <= "힣":
+            out.append(char_to_tile[ch])
+        elif ch in SMALL_LITERAL_TILES:
+            out.append(SMALL_LITERAL_TILES[ch])
+        else:
+            raise AssertionError(f"지원하지 않는 직접 타일 문자: {ch!r}")
+    return bytes(out)
+
+
 def encode_packed_text(text: str, char_to_tile: dict[str, int]) -> bytes:
     """00 제어를 쓰는 직접 렌더러가 아닌 고정 타일 문자열 인코딩."""
     out = bytearray()
@@ -388,7 +467,7 @@ def encode_program(program: DirectProgram, char_to_tile: dict[str, int]) -> byte
     out = bytearray()
     for row in program.rows:
         width = direct_display_width(row.original)
-        encoded = encode_text(row.korean, char_to_tile)
+        encoded = encode_direct_text(row.korean, char_to_tile)
         assert len(encoded) <= width, (
             f"직접 라벨 슬롯 초과 PC ${program.addr:06X}: {row.korean} "
             f"{len(encoded)}>{width}셀"
@@ -410,7 +489,12 @@ def patch_direct(rom: bytearray, char_to_tile: dict[str, int]) -> None:
         assert rom[program.addr:end] == original, (
             f"직접 메뉴 프로그램 원본 불일치 PC ${program.addr:06X}"
         )
-        rom[program.addr:end] = encode_program(program, char_to_tile)
+        mapping = (
+            SAVE_CONFIRM_CHAR_TO_TILE
+            if program.addr == 0x007841
+            else char_to_tile
+        )
+        rom[program.addr:end] = encode_program(program, mapping)
 
 
 def read_packed_label(rom: bytes | bytearray, addr: int, block_end: int) -> bytes:
@@ -555,7 +639,12 @@ def verify_patched_records(rom: bytes, char_to_tile: dict[str, int]) -> None:
         assert rom[bottom + 1:bottom + 1 + len(encoded)] == encoded
         assert rom[bottom + 1 + len(encoded):bottom + 1 + size] == bytes(size - len(encoded))
     for program in DIRECT_PROGRAMS:
-        expected = encode_program(program, char_to_tile)
+        mapping = (
+            SAVE_CONFIRM_CHAR_TO_TILE
+            if program.addr == 0x007841
+            else char_to_tile
+        )
+        expected = encode_program(program, mapping)
         span = rom[program.addr:program.addr + len(expected)]
         assert span == expected
 
@@ -568,8 +657,19 @@ def build(input_path: Path, output_path: Path, map_path: Path) -> None:
     assert crc == ORIGINAL_CRC32, f"원본 CRC32 불일치: {crc:08X}"
     assert md5 == ORIGINAL_MD5, f"원본 MD5 불일치: {md5}"
 
+    # 저장 관리 화면의 다른 직접 프로그램이 전용 8타일을 참조하면
+    # 배경/아이콘까지 한글로 바뀌므로 빌드를 중단한다.
+    save_screen_tiles = {
+        value
+        for start, end in SAVE_SCREEN_DIRECT_RANGES
+        for value in original[start:end]
+    }
+    assert not (save_screen_tiles & set(SAVE_CONFIRM_TILE_CODES)), (
+        "저장 확인창 전용 타일이 기존 저장 화면 프로그램과 충돌"
+    )
+
     syllables = collect_syllables()
-    assert len(KOREAN_TILE_CODES) == len(set(KOREAN_TILE_CODES)) == 72
+    assert len(KOREAN_TILE_CODES) == len(set(KOREAN_TILE_CODES)) == 79
     assert len(syllables) == len(KOREAN_TILE_CODES), (
         f"한글 음절 수가 설계와 달라짐: {len(syllables)} != {len(KOREAN_TILE_CODES)}"
     )
@@ -597,8 +697,27 @@ def build(input_path: Path, output_path: Path, map_path: Path) -> None:
     assert hashlib.sha256(raw_font).hexdigest() == ORIGINAL_FONT_RAW_SHA256
     assert hashlib.sha256(raw_font[:0x1000]).hexdigest() == ORIGINAL_TILE_PAGE_SHA256
 
+    next_start = NEXT_LEVEL_TILE_SPAN[0] * 16
+    next_end = NEXT_LEVEL_TILE_SPAN[1] * 16
+    assert hashlib.sha256(raw_font[next_start:next_end]).hexdigest() == (
+        NEXT_LEVEL_ORIGINAL_SHA256
+    )
+    world_raw_font = bytearray(raw_font)
+    next_level_tiles = pack_tight_2bpp_label(
+        raw_font,
+        font,
+        glyph_map,
+        extra_kr("next_level"),
+        {"L": 0x7B, "V": 0x85},
+        NEXT_LEVEL_TILE_SPAN[1] - NEXT_LEVEL_TILE_SPAN[0],
+    )
+    world_raw_font[next_start:next_end] = next_level_tiles
+
     world_resource, world_font = make_font_resource(
-        raw_font, raw_size, font, glyph_map, char_to_tile,
+        bytes(world_raw_font), raw_size, font, glyph_map, char_to_tile,
+    )
+    save_confirm_resource, save_confirm_font = make_font_resource(
+        raw_font, raw_size, font, glyph_map, SAVE_CONFIRM_CHAR_TO_TILE,
     )
     glossary_resource, glossary_font = make_font_resource(
         raw_font, raw_size, font, glyph_map, glossary_char_to_tile,
@@ -606,8 +725,13 @@ def build(input_path: Path, output_path: Path, map_path: Path) -> None:
     map_resource, map_font = make_font_resource(
         raw_font, raw_size, font, glyph_map, map_char_to_tile,
     )
+    assert world_font[next_start:next_end] == next_level_tiles
     assert len(world_resource) <= NEW_FONT_CAPACITY, (
         f"월드 폰트 자원 {len(world_resource)}B > 자유 슬롯 {NEW_FONT_CAPACITY}B"
+    )
+    assert len(save_confirm_resource) <= SAVE_CONFIRM_FONT_CAPACITY, (
+        f"저장 확인창 폰트 {len(save_confirm_resource)}B > "
+        f"자유 슬롯 {SAVE_CONFIRM_FONT_CAPACITY}B"
     )
 
     rom = bytearray(original)
@@ -616,6 +740,14 @@ def build(input_path: Path, output_path: Path, map_path: Path) -> None:
         "$C7:E000~FFFF 자유 영역이 0xFF가 아님"
     )
     rom[world_target:world_target + len(world_resource)] = world_resource
+
+    save_confirm_target = pc(*SAVE_CONFIRM_FONT)
+    assert all(b == 0xFF for b in rom[
+        save_confirm_target:save_confirm_target + SAVE_CONFIRM_FONT_CAPACITY
+    ]), "$C7:C000~CFFF 저장 확인창 폰트 영역이 0xFF가 아님"
+    rom[save_confirm_target:save_confirm_target + len(save_confirm_resource)] = (
+        save_confirm_resource
+    )
 
     context_pool = pc(*CONTEXT_FONT_POOL)
     assert all(b == 0xFF for b in rom[
@@ -635,6 +767,15 @@ def build(input_path: Path, output_path: Path, map_path: Path) -> None:
     # 월드맵: PEA #$D9, PEA #$0000 -> PEA #$C7, PEA #$E000
     world_pointer = pc(0xC0, 0x94D4)
     patch_pea_font_pointer(rom, world_pointer, *NEW_FONT)
+
+    # 저장 관리 화면은 DP $01/$03에 자원 주소·뱅크를 넣어 $C0:0D52를
+    # 호출한다. 이 한 곳만 문맥 전용 자원으로 리다이렉트한다.
+    save_loader = pc(*SAVE_CONFIRM_LOADER)
+    original_save_loader = hex_bytes("A9 D9 00 85 03 A9 00 00 85 01 22 52 0D C0")
+    assert rom[save_loader:save_loader + len(original_save_loader)] == original_save_loader
+    rom[save_loader:save_loader + len(original_save_loader)] = hex_bytes(
+        "A9 C7 00 85 03 A9 00 C0 85 01 22 52 0D C0"
+    )
 
     # 튜토리얼 자원 스크립트: $D9:0000 -> $C7:E000
     tutorial_pointer = pc(0xC3, 0x67A8)
@@ -672,6 +813,7 @@ def build(input_path: Path, output_path: Path, map_path: Path) -> None:
     # 출력 ROM 자체에서 세 자원과 모든 문자열을 다시 읽어 검증한다.
     for target, resource, expected_font in (
         (world_target, world_resource, world_font),
+        (save_confirm_target, save_confirm_resource, save_confirm_font),
         (glossary_target, glossary_resource, glossary_font),
         (map_target, map_resource, map_font),
     ):
@@ -695,6 +837,16 @@ def build(input_path: Path, output_path: Path, map_path: Path) -> None:
                 "syllable_count": len(syllables),
                 "syllables": "".join(syllables),
                 "char_to_tile": {ch: f"{tile:02X}" for ch, tile in char_to_tile.items()},
+            },
+            "save_confirm": {
+                "address": "$C7:C000",
+                "size": len(save_confirm_resource),
+                "syllable_count": len(SAVE_CONFIRM_SYLLABLES),
+                "syllables": SAVE_CONFIRM_SYLLABLES,
+                "char_to_tile": {
+                    ch: f"{tile:02X}"
+                    for ch, tile in SAVE_CONFIRM_CHAR_TO_TILE.items()
+                },
             },
             "glossary": {
                 "address": f"$C2:{glossary_font_addr:04X}",
@@ -741,6 +893,10 @@ def build(input_path: Path, output_path: Path, map_path: Path) -> None:
     print(f"원본 검증: CRC32 {crc:08X} / MD5 {md5}")
     print(f"공통 폰트: $D9:0000 {raw_size}B 해제, 원본 압축 {original_used + 2}B")
     print(f"월드 폰트: $C7:E000 {len(world_resource)}B, LZSS 왕복 PASS")
+    print(
+        f"저장 확인창 폰트: $C7:C000 {len(save_confirm_resource)}B, "
+        "$C0:6F4B 전용 리다이렉트"
+    )
     print(f"용어집 폰트: $C2:{glossary_font_addr:04X} {len(glossary_resource)}B")
     print(f"지도 폰트:   $C2:{map_font_addr:04X} {len(map_resource)}B")
     direct_count = sum(len(program.rows) for program in DIRECT_PROGRAMS)

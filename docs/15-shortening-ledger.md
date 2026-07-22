@@ -7,14 +7,16 @@
   (`done`=완료 before→after 확정, `pending`=축약 대기·`before_kr` 스냅샷 보존, Codex가 `after_kr` 채움).
 - 이 문서 = 사람이 읽는 뷰(완료 테이블) + 형식·워크플로 설명.
 - **현재 전 시스템 통합 비교표**: [22-shortened-translation-comparison.md](22-shortened-translation-comparison.md)
-  — 어드벤처·정적·필드/NPC의 완역문과 현재 실제 삽입문이 다른 **751건 전량**을 나란히 수록한다.
+  — 어드벤처·정적·필드/NPC·소형 메뉴 그래픽의 완역문과 현재 실제 삽입문이 다른 **752건 전량**을 나란히 수록한다.
 
-## 왜 축약하나 — 두 시스템·두 이유
+## 왜 축약하나 — 시스템별 제약
 
 | 시스템 | 키 | 축약 이유 |
 |--------|-----|-----------|
 | **어드벤처**(`adventure_kr.json`) | `scene`(hex)·`at` | **위치보존**(docs/14): cmd0x20/0x21 런을 원본 바이트 이하로 축약해야 말미 공백 패딩으로 런 길이를 원본과 일치시켜 VM offset(조건분기·컨테이너)을 보존한다. 한글이 원본보다 길면 패딩 불가 → 축약 필수. |
 | **673 정적대사**(`dialogue.json`) | `entry_id` | **결합(coupling) 축약**(docs/08): 폰트시트 $CA를 어드벤처와 공유. 어드벤처 음절 확대로 673 in-place 대사가 글리프 슬롯을 초과 → 해당 673 대사를 1음절 축약해 슬롯에 맞춤. |
+| **필드/NPC**(`field_kr.json`) | `entry_id` | **위치보존**(docs/21): 압축 레코드와 후속 데이터의 주소를 바꾸지 않도록 원본 슬롯 상한 안에 삽입한다. |
+| **소형 메뉴 그래픽**(`menu_extra_labels.json`) | `id` | **고정 타일폭**: 원본 타일맵과 주변 그래픽을 건드리지 않고 지정된 8×8 타일 수 안에 픽셀을 패킹한다. |
 
 바이트 카운트는 `adv_codec` 인코딩 기준(1바이트 슬롯 글리프=1B, 2바이트 슬롯=2B, 제어마커 `{wait}`/`{clear}`/`\n`=1B).
 
@@ -54,6 +56,14 @@
 
 > before는 glossary·git 이력 기준 구절 단위 재구성(정확한 원문은 dialogue.json git 이력). 어드벤처 확대 시점(2026-07-16)에 슬롯 초과 해소용.
 
+### D. 소형 메뉴 그래픽 고정폭 축약
+
+| id | 원문 | 완역 | 실제 삽입문 | 제약 |
+|---|---|---|---|---|
+| `next_level` | 次のLVまで | 다음 레벨까지 | 다음LV까지 | 원본 5타일(40px) 위치 보존 |
+
+원문·완역·실제 삽입문과 대상 자원 해시는 `assets/translations/menu_extra_labels.json`에 분리 보존한다.
+
 ## 대기 축약
 
 없음. `pending_count=0`, 통합 빌드의 `out/retranslate_longer.json`도 0런이다.
@@ -62,7 +72,7 @@
 
 축약을 새로 할 때마다 **반드시 원장에 before→after를 남긴다**(before 유실 금지):
 
-1. **before 확보**: 어드벤처는 축약 전 `adventure_kr.json`의 현재 `text_kr`(=`shortening_ledger.json` pending의 `before_kr`, 또는 `out/retranslate_longer.json`). 673은 dialogue.json git 이력.
+1. **before 확보**: 어드벤처는 축약 전 `adventure_kr.json`의 현재 `text_kr`(=`shortening_ledger.json` pending의 `before_kr`, 또는 `out/retranslate_longer.json`). 673은 dialogue.json git 이력. 소형 메뉴는 `menu_extra_labels.json:text_kr_full`에 보존한다.
 2. **after 기입**: 축약안을 `after_kr`에 기록, `status`를 `done`으로. (Codex 배치 산출을 병합할 때 함께.)
 3. **게이트**: after 바이트길이 ≤ `orig_bytes`(어드벤처)/슬롯(673) 확인 후 `adventure_kr.json`·`dialogue.json`에 반영.
 4. 이 문서의 완료 테이블도 갱신(사람용 뷰).

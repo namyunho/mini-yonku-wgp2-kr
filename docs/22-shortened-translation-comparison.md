@@ -24,7 +24,8 @@
 | 정적 대사 | 22 | `shortening_ledger.json:before_kr` 또는 `dialogue.json:text_kr_full` | `dialogue.json:text_kr` |
 | 필드/NPC | 280 | `field_kr.json:text_kr_full` | `field_kr.json:text_kr` |
 | 파츠 획득 동적 이름 | 0 | `adv_parts_fragments.json:text_kr_full` | `adv_parts_fragments.json:text_kr` |
-| **합계** | **751** |  |  |
+| 소형 메뉴 직접 타일·그래픽 | 1 | `menu_extra_labels.json:text_kr_full` | `menu_extra_labels.json:text_kr` |
+| **합계** | **752** |  |  |
 
 ## 어드벤처 씬 (449건)
 
@@ -792,6 +793,12 @@
 | 279 | `F1331` | <code>마코토</code><br><code>「그럼 시작합니다！{wait}</code> | <code>마코토</code><br><code>「그럼 시작해요！{wait}</code> |
 | 280 | `F1334` | <code>레이스 아이템</code><br><code>『뜨거운 응원』을 손에 넣었다！</code> | <code>레이스 아이템</code><br><code>『뜨거운 응원』 획득！</code> |
 
+## 소형 메뉴 직접 타일·그래픽 (1건)
+
+| # | 식별자 | 완역문 | 실제 삽입문 |
+|---:|---|---|---|
+| 1 | `next_level / $D9:0000 decompressed tiles $F4-$F8` | <code>다음 레벨까지</code> | <code>다음LV까지</code> |
+
 ## 생성 입력 무결성
 
 | 파일 | SHA-256 |
@@ -802,7 +809,8 @@
 | `assets/translations/adventure_kr.json` | `9ba186a1eb310cee9bff804f38c47937445c1452d598eeb10fd2fd655774584e` |
 | `assets/translations/field_kr.json` | `a3760e3794f8d8c3facfdde703e5f1cb2ab1426849f83f6d62618b0c5531ec6b` |
 | `assets/translations/adv_parts_fragments.json` | `f8317732117bb90fa3533bd2b859ee359ad241ab8c25182c4c6f219b855e3774` |
+| `assets/translations/menu_extra_labels.json` | `45bac1360d539a5d534de5e8f1c42f1b08a823dff5dafad5b4adf61a94c6a2e1` |
 
 이 문서는 위 입력에서 다시 생성할 수 있다. 생성기는 두 축약 원장의 완료/대기 수, 현재 빌드 키 존재 여부,
-필드 `before_kr == text_kr_full`, 중복 키, 시스템별 예상 건수(449/22/280/0)를 검사하고 하나라도
+필드 `before_kr == text_kr_full`, 중복 키, 시스템별 예상 건수(449/22/280/0/1)를 검사하고 하나라도
 어긋나면 문서를 쓰지 않고 실패한다.
