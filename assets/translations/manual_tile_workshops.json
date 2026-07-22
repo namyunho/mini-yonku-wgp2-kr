@@ -1,0 +1,50 @@
+{
+  "description": "사용자 타일 캡처에서 분리한 포메이션 선택지 4개와 기기 능력치 7개. 원문/완역/실제 표시문을 분리 보존한다.",
+  "palette": {
+    "transparent": "#FF00FF",
+    "ink": "#FFFFFF",
+    "black": "#000000"
+  },
+  "groups": [
+    {
+      "id": "formation_labels",
+      "source": "out/포메이션_타일/formation.png",
+      "source_note": "formation.png과 팀러닝_포메이션_타일.png은 동일하며, 레이스전_포메이션.png의 하단 4개 라벨도 픽셀 단위로 동일하다.",
+      "labels": [
+        {"id": "setting", "screen_crop_px": [16, 80, 48, 8], "text_jp": "セッティング", "text_kr_full": "세팅", "text_kr_display": "세팅", "abbreviated": false},
+        {"id": "easy_setting", "screen_crop_px": [64, 80, 72, 8], "text_jp": "イージーセッティング", "text_kr_full": "이지 세팅", "text_kr_display": "이지 세팅", "abbreviated": false},
+        {"id": "test_run", "screen_crop_px": [136, 80, 56, 8], "text_jp": "テストそうこう", "text_kr_full": "테스트 주행", "text_kr_display": "테스트 주행", "abbreviated": false},
+        {"id": "course_check", "screen_crop_px": [192, 80, 48, 8], "text_jp": "コースチェック", "text_kr_full": "코스 체크", "text_kr_display": "코스 체크", "abbreviated": false}
+      ]
+    },
+    {
+      "id": "machine_stats",
+      "source": "out/기기능력치.png",
+      "source_note": "능력치명만 분리하며 오른쪽 약어와 수치는 보존한다.",
+      "labels": [
+        {"id": "speed", "screen_crop_px": [16, 64, 48, 8], "text_jp": "スピード", "text_kr_full": "스피드", "text_kr_display": "스피드", "abbreviated": false},
+        {"id": "cornering", "screen_crop_px": [16, 80, 48, 8], "text_jp": "コーナリング", "text_kr_full": "코너링", "text_kr_display": "코너링", "abbreviated": false},
+        {"id": "power", "screen_crop_px": [16, 96, 48, 8], "text_jp": "パワー", "text_kr_full": "파워", "text_kr_display": "파워", "abbreviated": false},
+        {"id": "downforce", "screen_crop_px": [16, 112, 48, 8], "text_jp": "ダウンフォース", "text_kr_full": "다운포스", "text_kr_display": "다운포스", "abbreviated": false},
+        {"id": "weight", "screen_crop_px": [16, 128, 48, 8], "text_jp": "おもさ", "text_kr_full": "무게", "text_kr_display": "무게", "abbreviated": false},
+        {"id": "dash", "screen_crop_px": [16, 144, 48, 8], "text_jp": "ダッシュ", "text_kr_full": "대시", "text_kr_display": "대시", "abbreviated": false},
+        {"id": "berserk", "screen_crop_px": [16, 160, 48, 8], "text_jp": "ばくそう", "text_kr_full": "폭주", "text_kr_display": "폭주", "abbreviated": false}
+      ]
+    },
+    {
+      "id": "garage_categories",
+      "source": "out/번역데이터참고용/슬라이스1/wgp2_kr_001_cat4x.png",
+      "source_note": "사용자 첨부 화면과 픽셀 패턴이 일치하는 확대 캡처. 흰색/검정 라벨 픽셀은 4x4 블록이며 배경 텍스처를 투명으로 제거해 원래 8px 높이로 복원한다. 옵션은 캡처에 없어 빈 편집 영역으로 제공한다.",
+      "rom_insertion_note": "추적 확정: 왼쪽 분류명은 $D9:0000 파생 2bpp 자원의 전용 raw 타일 $C0-$D7(VRAM $1C0-$1D7)이다. BUMPER 마지막 칸은 GEAR 마지막 $C9를 공유한다. $C0:EBE8-$C0:EC1A SJIS는 오른쪽 부품 설명이므로 이 작업본을 연결하면 안 된다.",
+      "labels": [
+        {"id": "machine", "raw_tiles": ["$C0", "$C1", "$C2"], "right_descriptor_sjis_addr": "$C0:EBE8", "capture_crop_px": [96, 91, 96, 32], "edit_size_px": [24, 8], "text_jp": "マシン", "text_kr_full": "머신", "text_kr_display": "머신", "abbreviated": false},
+        {"id": "motor", "raw_tiles": ["$C3", "$C4", "$C5", "$C6"], "right_descriptor_sjis_addr": "$C0:EBEF", "capture_crop_px": [96, 155, 128, 32], "edit_size_px": [32, 8], "text_jp": "モーター", "text_kr_full": "모터", "text_kr_display": "모터", "abbreviated": false},
+        {"id": "gear", "raw_tiles": ["$C7", "$C8", "$C9"], "right_descriptor_sjis_addr": "$C0:EBF8", "capture_crop_px": [96, 218, 96, 32], "edit_size_px": [24, 8], "text_jp": "ギヤー", "text_kr_full": "기어", "text_kr_display": "기어", "abbreviated": false},
+        {"id": "tire", "raw_tiles": ["$CA", "$CB", "$CC"], "right_descriptor_sjis_addr": "$C0:EBFF", "capture_crop_px": [96, 282, 96, 32], "edit_size_px": [24, 8], "text_jp": "タイヤ", "text_kr_full": "타이어", "text_kr_display": "타이어", "abbreviated": false},
+        {"id": "battery", "raw_tiles": ["$CD", "$CE", "$CF", "$D0"], "right_descriptor_sjis_addr": "$C0:EC06", "capture_crop_px": [96, 345, 128, 32], "edit_size_px": [32, 8], "text_jp": "バッテリー", "text_kr_full": "배터리", "text_kr_display": "배터리", "abbreviated": false},
+        {"id": "bumper", "raw_tiles": ["$D1", "$D2", "$D3", "$C9"], "right_descriptor_sjis_addr": "$C0:EC11", "capture_crop_px": [96, 409, 128, 32], "edit_size_px": [32, 8], "text_jp": "バンパー", "text_kr_full": "범퍼", "text_kr_display": "범퍼", "abbreviated": false},
+        {"id": "option", "raw_tiles": ["$D4", "$D5", "$D6", "$D7"], "right_descriptor_sjis_addr": "$C0:EC1A", "capture_crop_px": null, "edit_size_px": [32, 8], "text_jp": "オプション", "text_kr_full": "옵션", "text_kr_display": "옵션", "abbreviated": false}
+      ]
+    }
+  ]
+}

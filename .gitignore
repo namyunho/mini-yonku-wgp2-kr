@@ -10,6 +10,7 @@ out/
 *.smc
 *.gen
 *.bin
+!8pt_font/*.bin
 *.gg
 *.pce
 *.sms
@@ -44,6 +45,14 @@ tmp/
 target/
 work/
 *.log
+
+# Codex 로컬 작업공간 / 머신별 MCP 설정
+_codex_workspace/
+.codex/
+
+# ROM에서 재생성 가능한 그래픽 덤프·로컬 참고 캡처
+img_tile/extract/
+img_tile/*.png
 
 # Python 캐시
 __pycache__/

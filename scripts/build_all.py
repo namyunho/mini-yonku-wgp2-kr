@@ -2,7 +2,7 @@
 """전체 한글패치 통합 빌드 — 모든 작업을 반영한 단일 ROM 생성.
 
 순서:
- 1. build_patch.py       정적 대사 681 + 스테이지 제목 10개 한글
+ 1. build_patch.py       정적 대사 681 + 세이브 선택용 스테이지 제목 10개 한글
                          + **어드벤처·월드맵 음절도 같은 글리프 할당에 포함**
                          (--adv-json/--worldmap-json → $CA 전역 공유, out/glyph_map.json 산출)
  2. build_credit_kr.py   크레딧 화면 스프라이트 편집본(tmp/gfx_edit/vram_7000.bin)
@@ -18,9 +18,13 @@
 11. build_menu4_reclean.py 월드맵 X메뉴·튜토리얼·용어집·지도 → 원본 대비 차분 통합
 12. build_setbox.py      이지·수동 세팅 X메뉴·다음 LV를 현재 통합 ROM 위에 적용
 13. build_pause_menu.py  경기 일시정지 `이어하기/리타이어` 전용 4bpp 그래픽
-14. verify_menu_extra_build.py 추가 소형 메뉴 3종 최종 ROM 무결성 검증
-15. verify_field_build.py 최종 병합 뒤 필드 원본·목적지·포인터 무결성 재검증
-16. 헤더 체크섬 갱신 + BPS 배포 패치 생성(flips)
+14. build_result_courses.py Result/Best 경기장명 승인 2bpp 작업본
+15. build_result_names.py Result 선수명 승인 2bpp 작업본
+16. build_stage_intro_titles.py 챕터 시작 인트로 승인 2bpp 제목 10개
+17. build_manual_workshops.py 포메이션(BG·선택 OBJ)·능력치·개러지 승인 작업본
+18. verify_menu_extra_build.py 추가 소형 메뉴 3종 최종 ROM 무결성 검증
+19. verify_field_build.py 최종 병합 뒤 필드 원본·목적지·포인터 무결성 재검증
+20. 헤더 체크섬 갱신 + BPS 배포 패치 생성(flips)
 
 산출: out/wgp2_kr.smc (통합 ROM), out/wgp2_kr.bps (배포용 차분)
 ※ ROM은 비커밋. 이 스크립트+에셋으로 원본에서 재생성.
@@ -114,8 +118,23 @@ def main():
     snapshot("12-setbox")
     run(["scripts/build_pause_menu.py"])                               # 13 경기 일시정지 메뉴 → OUT
     snapshot("13-pause-menu")
-    run(["scripts/verify_menu_extra_build.py"])                        # 14 추가 메뉴 3종 무결성
-    run(["scripts/verify_field_build.py"])                             # 15 후속 덮어쓰기·원본 변경 방지
+    run([
+        "scripts/build_result_courses.py",
+        "--workshop-png", "assets/result_courses/result_courses_workshop_approved.png",
+    ])                                                                 # 14 Result/Best 경기장명 → OUT
+    snapshot("14-result-courses")
+    run([
+        "scripts/build_result_names.py",
+        "--workshop-png", "assets/result_names/result_names_workshop_approved.png",
+    ])                                                                 # 15 Result 선수명 → OUT
+    snapshot("15-result-names")
+    run(["scripts/build_stage_intro_titles.py"])                      # 16 챕터 인트로 승인 제목
+    snapshot("16-stage-intro-titles")
+    run(["scripts/build_manual_workshops.py"])                         # 17 승인 타일 작업본 3종
+    snapshot("17-manual-workshops")
+    run(["scripts/test_stage_intro_titles.py"])                       # 최종 인트로 10개·보존 타일 검증
+    run(["scripts/verify_menu_extra_build.py"])                        # 18 추가 메뉴 3종 무결성
+    run(["scripts/verify_field_build.py"])                             # 19 후속 덮어쓰기·원본 변경 방지
     rom = bytearray(open(OUT, 'rb').read())
 
     # 원본 2MB HiROM 크기·헤더는 유지하고 체크섬만 갱신한다.
@@ -129,9 +148,9 @@ def main():
     if (sum(rom) & 0xFFFF) != checksum:
         sys.exit("SNES 체크섬 자기검증 실패")
     open(OUT, 'wb').write(rom)
-    snapshot("14-final")
+    snapshot("20-final")
 
-    # 16: BPS
+    # 20: BPS
     if os.path.exists(FLIPS):
         subprocess.run([FLIPS, "--create", ORIG, OUT, BPS])
     data = bytes(rom)

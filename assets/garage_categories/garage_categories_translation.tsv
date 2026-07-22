@@ -1,0 +1,8 @@
+id	screen_crop_px	workshop_crop_px	tile_capacity	original_jp	translation_kr_full	translation_kr_display	abbreviated
+machine	x96,y91,w96,h32	x4,y14,w24,h8	3	マシン	머신	머신	false
+motor	x96,y155,w128,h32	x4,y46,w32,h8	4	モーター	모터	모터	false
+gear	x96,y218,w96,h32	x4,y78,w24,h8	3	ギヤー	기어	기어	false
+tire	x96,y282,w96,h32	x4,y110,w24,h8	3	タイヤ	타이어	타이어	false
+battery	x96,y345,w128,h32	x4,y142,w32,h8	4	バッテリー	배터리	배터리	false
+bumper	x96,y409,w128,h32	x4,y174,w32,h8	4	バンパー	범퍼	범퍼	false
+option	(캡처 없음/빈칸)	x4,y206,w32,h8	4	オプション	옵션	옵션	false

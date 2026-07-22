@@ -30,6 +30,8 @@ BUILT = ROOT / "out/wgp2_kr.smc"
 TRANSLATIONS = ROOT / "assets/translations/menu_extra_labels.json"
 FONT_BIN = ROOT / "8pt_font/font-007242d37349daf3.bin"
 FONT_MAP = ROOT / "8pt_font/font-007242d37349daf3_glyph_map.json"
+MANUAL_SETBOX_RELOC = (0xC1, 0xD900)
+MANUAL_ALLOWED_TILES = set(range(0xC0, 0xD8)) | set(range(0x140, 0x160))
 
 
 def pc(bank: int, address: int) -> int:
@@ -121,13 +123,33 @@ def main() -> None:
 
     next_tiles = expected_next_level(original_font)
     start, end = 0xF4 * 16, 0xF9 * 16
-    for label, address in (("월드맵", 0xE000), ("수동 세팅", 0xD000)):
-        derived, _ = resource(built, 0xC7, address)
-        assert derived[start:end] == next_tiles, f"{label} 다음 LV 타일 불일치"
+    world_font, _ = resource(built, 0xC7, 0xE000)
+    assert world_font[start:end] == next_tiles, "월드맵 다음 LV 타일 불일치"
 
-    built_setbox, _ = resource(built, *setbox.RELOC)
-    assert built_setbox == expected_setbox(original_font), \
-        "수동 세팅 자원의 허용 밖 타일 변경"
+    expected_setbox_raw = expected_setbox(original_font)
+    intermediate_setbox, _ = resource(built, *setbox.RELOC)
+    assert intermediate_setbox == expected_setbox_raw, \
+        "수동 세팅 중간 자원의 허용 밖 타일 변경"
+
+    manual_source = bytes([
+        0xF4, MANUAL_SETBOX_RELOC[0], 0x00,
+        0xF4, MANUAL_SETBOX_RELOC[1] & 0xFF, MANUAL_SETBOX_RELOC[1] >> 8,
+    ])
+    first_loader_pc = pc(*next(iter(setbox.FONT_SOURCE_LOADERS.values()))[0])
+    manual_mode = built[first_loader_pc:first_loader_pc + 6] == manual_source
+    if manual_mode:
+        built_setbox, _ = resource(built, *MANUAL_SETBOX_RELOC)
+        assert len(built_setbox) == len(expected_setbox_raw)
+        changed_tiles = {
+            tile for tile in range(len(built_setbox) // 16)
+            if built_setbox[tile * 16:(tile + 1) * 16]
+            != expected_setbox_raw[tile * 16:(tile + 1) * 16]
+        }
+        assert changed_tiles <= MANUAL_ALLOWED_TILES, \
+            f"승인 능력치/개러지 외 세팅 타일 변경: {sorted(changed_tiles - MANUAL_ALLOWED_TILES)}"
+    else:
+        built_setbox = intermediate_setbox
+    assert built_setbox[start:end] == next_tiles, "이지·수동 세팅 다음 LV 타일 불일치"
     assert set(setbox.OFFS) <= setbox.RECLAIMED_LABEL_TILES
     assert set(setbox.OFFS).isdisjoint(setbox.PROTECTED_ALPHANUMERIC_TILES)
     for tile in setbox.PROTECTED_ALPHANUMERIC_TILES:
@@ -140,11 +162,12 @@ def main() -> None:
         0xF4, setbox.RELOC[0], 0x00,
         0xF4, setbox.RELOC[1] & 0xFF, setbox.RELOC[1] >> 8,
     ])
+    active_source = manual_source if manual_mode else relocated_source
     for label, (loader, dma_size) in setbox.FONT_SOURCE_LOADERS.items():
         loader_pc = pc(*loader)
         assert original[loader_pc:loader_pc + 6] == original_source, \
             f"{label} 원본 폰트 포인터 불일치"
-        assert built[loader_pc:loader_pc + 6] == relocated_source, \
+        assert built[loader_pc:loader_pc + 6] == active_source, \
             f"{label} 폰트 리다이렉트 누락"
         assert built[loader_pc + 0x35:loader_pc + 0x38] == bytes([
             0xA9, dma_size & 0xFF, dma_size >> 8
@@ -162,7 +185,8 @@ def main() -> None:
         "  확인문: 괜찮습니까？ / 예 / 아니오 "
         f"(저장 화면 전용 폰트 {built_save_used}B·직접 프로그램 일치)"
     )
-    print("  다음 LV: 월드맵 + 이지·수동 세팅 $F4-$F8 자원·로더 일치")
+    active_label = "$C1:D900 승인 파생" if manual_mode else "$C7:D000 세팅 파생"
+    print(f"  다음 LV: 월드맵 + 이지·수동 세팅 $F4-$F8 자원·로더 일치 ({active_label})")
     print("  세팅: 교체 원문 가나 14타일만 재사용, 영문·숫자 $70-$9F 원본 일치")
     print(
         "  일시정지: 이어하기 / 리타이어, "
