@@ -100,6 +100,94 @@ def compress(data, use_matches=True):
             put_literal()
     return bytes(out)
 
+
+def compress_optimal(data):
+    """토큰·플래그 바이트 합계가 최소인 호환 LZSS 스트림을 만든다.
+
+    링버퍼의 내용은 토큰 분할 방식과 무관하게 이미 출력한 원문 바이트로
+    결정된다. 따라서 각 출력 위치의 최대 매치를 먼저 구하고, 출력 위치와
+    현재 플래그 비트(0~7)를 상태로 동적 계획법을 적용할 수 있다.
+    그래픽 소수 타일 편집처럼 greedy 결과가 원래 슬롯을 조금 넘을 때 쓴다.
+    """
+    n = len(data)
+    max_match = [0] * n
+    match_pos = [0] * n
+    ring = bytearray(4096)
+    r = 0xFEE
+
+    # 위치 i 직전의 링버퍼는 data[:i]를 순서대로 쓴 결과와 항상 같다.
+    for i in range(n):
+        max_len = min(18, n - i)
+        best_len = 0
+        best_pos = 0
+        if max_len >= 3:
+            for pos in range(4096):
+                distance = (r - pos) & 0xFFF
+                if distance == 0:
+                    continue
+                length = 0
+                while length < max_len:
+                    source = (
+                        ring[(pos + length) & 0xFFF]
+                        if length < distance
+                        else data[i + length - distance]
+                    )
+                    if source != data[i + length]:
+                        break
+                    length += 1
+                if length > best_len:
+                    best_len = length
+                    best_pos = pos
+                    if length == max_len:
+                        break
+        max_match[i] = best_len
+        match_pos[i] = best_pos
+        ring[r] = data[i]
+        r = (r + 1) & 0xFFF
+
+    # dp[i][bit] = data[i:]를 인코딩할 최소 바이트 수. bit==0이면 다음
+    # 토큰 앞에 새 플래그 바이트 1개가 필요하다.
+    infinity = 1 << 60
+    dp = [[infinity] * 8 for _ in range(n + 1)]
+    choice = [[None] * 8 for _ in range(n)]
+    for bit in range(8):
+        dp[n][bit] = 0
+    for i in range(n - 1, -1, -1):
+        for bit in range(8):
+            next_bit = (bit + 1) & 7
+            flag_cost = 1 if bit == 0 else 0
+            best_cost = flag_cost + 1 + dp[i + 1][next_bit]
+            best_choice = (1, 0)  # literal
+            for length in range(3, max_match[i] + 1):
+                cost = flag_cost + 2 + dp[i + length][next_bit]
+                if cost < best_cost:
+                    best_cost = cost
+                    best_choice = (length, match_pos[i])
+            dp[i][bit] = best_cost
+            choice[i][bit] = best_choice
+
+    output = bytearray()
+    i = 0
+    bit = 0
+    flag_position = 0
+    while i < n:
+        if bit == 0:
+            output.append(0)
+            flag_position = len(output) - 1
+        length, pos = choice[i][bit]
+        if length == 1:
+            output[flag_position] |= 1 << bit
+            output.append(data[i])
+            i += 1
+        else:
+            word = (pos << 4) | (length - 3)
+            output.extend((word & 0xFF, (word >> 8) & 0xFF))
+            i += length
+        bit = (bit + 1) & 7
+
+    assert len(output) == dp[0][0]
+    return bytes(output)
+
 SOURCES = [   # (name, bank, addr, out_len, vram)
     ('main_0000', 0xC7, 0x1574, 12800, 0x0000),
     ('vram_3000', 0xC7, 0x347C, 2048,  0x3000),

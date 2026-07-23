@@ -22,9 +22,11 @@
 15. build_result_names.py Result 선수명 승인 2bpp 작업본
 16. build_stage_intro_titles.py 챕터 시작 인트로 승인 2bpp 제목 10개
 17. build_manual_workshops.py 포메이션(BG·선택 OBJ)·능력치·개러지 승인 작업본
-18. verify_menu_extra_build.py 추가 소형 메뉴 3종 최종 ROM 무결성 검증
-19. verify_field_build.py 최종 병합 뒤 필드 원본·목적지·포인터 무결성 재검증
-20. 헤더 체크섬 갱신 + BPS 배포 패치 생성(flips)
+18. build_race_hud_labels.py 경기 HUD DAMAGE·BOOST 승인 2bpp 작업본
+19. build_ending_logo.py VICTORYS 엔딩 하단 승인 4bpp 로고
+20. verify_menu_extra_build.py 추가 소형 메뉴 3종 최종 ROM 무결성 검증
+21. verify_field_build.py 최종 병합 뒤 필드 원본·목적지·포인터 무결성 재검증
+22. 헤더 체크섬 갱신 + BPS 배포 패치 생성(flips)
 
 산출: out/wgp2_kr.smc (통합 ROM), out/wgp2_kr.bps (배포용 차분)
 ※ ROM은 비커밋. 이 스크립트+에셋으로 원본에서 재생성.
@@ -132,9 +134,15 @@ def main():
     snapshot("16-stage-intro-titles")
     run(["scripts/build_manual_workshops.py"])                         # 17 승인 타일 작업본 3종
     snapshot("17-manual-workshops")
+    run(["scripts/build_race_hud_labels.py"])                         # 18 경기 HUD 승인 라벨
+    snapshot("18-race-hud-labels")
+    run(["scripts/build_ending_logo.py"])                            # 19 VICTORYS 엔딩 승인 로고
+    snapshot("19-ending-logo")
     run(["scripts/test_stage_intro_titles.py"])                       # 최종 인트로 10개·보존 타일 검증
-    run(["scripts/verify_menu_extra_build.py"])                        # 18 추가 메뉴 3종 무결성
-    run(["scripts/verify_field_build.py"])                             # 19 후속 덮어쓰기·원본 변경 방지
+    run(["scripts/test_race_hud_labels.py"])                           # 최종 경기 HUD 라벨 7 + 윗행 4타일 검증
+    run(["scripts/test_ending_logo.py"])                              # 최종 엔딩 로고·로더·LZSS 검증
+    run(["scripts/verify_menu_extra_build.py"])                        # 20 추가 메뉴 3종 무결성
+    run(["scripts/verify_field_build.py"])                             # 21 후속 덮어쓰기·원본 변경 방지
     rom = bytearray(open(OUT, 'rb').read())
 
     # 원본 2MB HiROM 크기·헤더는 유지하고 체크섬만 갱신한다.
@@ -148,9 +156,9 @@ def main():
     if (sum(rom) & 0xFFFF) != checksum:
         sys.exit("SNES 체크섬 자기검증 실패")
     open(OUT, 'wb').write(rom)
-    snapshot("20-final")
+    snapshot("22-final")
 
-    # 20: BPS
+    # 22: BPS
     if os.path.exists(FLIPS):
         subprocess.run([FLIPS, "--create", ORIG, OUT, BPS])
     data = bytes(rom)

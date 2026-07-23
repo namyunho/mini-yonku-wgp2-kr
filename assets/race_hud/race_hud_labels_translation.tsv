@@ -1,0 +1,3 @@
+id	source	bg3_tile_ids	screen_crop_px	workshop_crop_px	tile_capacity	original_jp	translation_kr_full	translation_kr_display	abbreviated
+damage	$D5:4EC3	$1D1,$1D2,$1D3,$1D4	x64,y160,w32,h8	x4,y14,w32,h8	4	ダメージ	데미지	DAMAGE	true
+berserk	$D5:4EC3	$121,$122,$123	x72,y168,w24,h8	x4,y46,w24,h8	3	爆走	폭주	BOOST	true

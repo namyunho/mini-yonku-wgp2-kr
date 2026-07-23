@@ -1,0 +1,56 @@
+{
+  "context": "VICTORYS 엔딩 장면 하단 로고",
+  "trace": {
+    "script": "scripts/lua/trace_ending_logo.lua",
+    "run": "tmp/ending_logo_trace/run_20260723_031802",
+    "screen": "wgp2_kr_011.png",
+    "verified_frame": 50371,
+    "layer": "BG1",
+    "tilemap_word_address": "$7000",
+    "tileset_word_address": "$0000",
+    "tile_format": "SNES 4bpp",
+    "canvas_px": [256, 256]
+  },
+  "translation": {
+    "text_jp": "ミニ四駆 レッツ&ゴー!! POWER WGP2",
+    "text_kr_full": "미니욘쿠 렛츠&고!! POWER WGP2",
+    "text_kr_display": "미니욘쿠 렛츠&고!! POWER WGP2",
+    "abbreviated": false
+  },
+  "approved_image": {
+    "path": "assets/ending_logo/ending_logo_workshop_approved.bmp",
+    "sha256": "82c258648c7e2bc56fe01327ec4ce9a4586148ff3ba4c183e6f42740756663b3",
+    "background_rgb": [74, 107, 255]
+  },
+  "resources": {
+    "chr": {
+      "snes_address": "$D9:A5B1",
+      "pc_offset": "0x19A5B1",
+      "raw_size": 3072,
+      "original_stream_size": 1996,
+      "raw_sha256": "4b197b27546cdec43e820986b71127cf5214dc129ab9b81f2aa419f2293364f0",
+      "vram_word_address": "$0000"
+    },
+    "tilemap": {
+      "snes_address": "$D9:B078",
+      "pc_offset": "0x19B078",
+      "raw_size": 2048,
+      "original_stream_size": 427,
+      "raw_sha256": "60e066f18ebd0d2fd686254e5d17883ddc8304b88db0bf985bc535dc72034aa8",
+      "vram_word_address": "$7000"
+    }
+  },
+  "relocation": {
+    "snes_address": "$D9:D239",
+    "pc_offset": "0x19D239",
+    "capacity": 11719,
+    "reason": "승인 CHR/타일맵의 최적 LZSS가 원래 인접 슬롯을 각각 132B/7B 초과",
+    "loader_chr_sequence_pc": "0x0192F9",
+    "loader_tilemap_sequence_pc": "0x0193CB"
+  },
+  "palettes": {
+    "0": [[74, 106, 255], [255, 255, 255], [172, 156, 156], [0, 0, 0], [0, 0, 0], [90, 57, 57], [57, 32, 32], [24, 8, 8], [65, 41, 41], [57, 32, 32], [49, 24, 24], [32, 16, 16], [49, 24, 24], [41, 16, 16], [24, 8, 8], [16, 0, 0]],
+    "6": [[0, 0, 115], [255, 255, 255], [172, 172, 172], [65, 65, 65], [41, 74, 213], [0, 164, 131], [57, 222, 189], [222, 0, 0], [230, 41, 0], [230, 74, 0], [238, 115, 0], [246, 148, 0], [255, 189, 0], [255, 222, 0], [255, 255, 0], [0, 0, 0]],
+    "7": [[0, 0, 115], [255, 255, 255], [172, 172, 172], [65, 65, 65], [41, 74, 222], [24, 49, 148], [16, 24, 74], [0, 172, 49], [41, 180, 41], [74, 197, 32], [115, 213, 32], [148, 222, 24], [189, 238, 16], [222, 246, 8], [255, 255, 0], [0, 0, 0]]
+  }
+}

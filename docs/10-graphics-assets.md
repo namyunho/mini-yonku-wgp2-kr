@@ -164,6 +164,32 @@ python scripts/build_gfx.py --rom out/wgp2_kr.smc --out out/wgp2_kr.smc
 - **방식**: 각 고유타일을 credit.bmp에서 repaint(2bpp, un-flip) + **마스킹 8칸**(한글이 일본어보다 조밀, ty25 tx16/18/19/23/24/29/30/31이 원래 빈칸) → 자유타일(64중 미사용 11개) 할당 + 타일맵 $C7:63A3에 8엔트리 추가(원행 상위비트 복사).
 - **재삽입**: chr in-place($C7:593D, 683≤697B). 타일맵 초과(376>362B)→**재배치 $C6:E000** + 참조 2곳 패치(ROM 0x35BE5·0x35E8C = JSL$C353C7 뒤 인라인). 역검증 OK. 실기: 크레딧줄 한글 정상.
 
+## ✅ VICTORYS 엔딩 하단 로고 4bpp 한글화 (2026-07-23)
+
+- 대상은 달리는 캐릭터 아래의 「ミニ四駆 レッツ&ゴー!! POWER WGP2」 로고다.
+  **PUSH START 타이틀의 BG1 로고와는 별개의 자원·로더**이며, 타이틀 자원
+  `$C3:0E2F/$C7:5BF8`은 변경하지 않는다.
+- `scripts/lua/trace_ending_logo.lua`의 frame 50371 실측에서 BG1 chr VRAM word
+  `$0000`, tilemap word `$7000`, 32×32, 4bpp를 확인했다. DMA 직전 LZSS 소스와
+  VRAM 덤프는 각각 3072/3072B, 2048/2048B 완전 일치한다.
+- 원본 chr는 `$D9:A5B1`(raw 3072B, stream 1996B), 타일맵은 `$D9:B078`
+  (raw 2048B, stream 427B)이다. 승인 BMP는
+  `assets/ending_logo/ending_logo_workshop_approved.bmp`이며 256×256 전체 화면에서
+  파랑 `(74,107,255)`을 투명 배경으로 사용한다.
+- 원문·완역·표시문은 `assets/translations/ending_logo.json`에 각각
+  `ミニ四駆 レッツ&ゴー!! POWER WGP2`,
+  `미니욘쿠 렛츠&고!! POWER WGP2`, 동일 표시문으로 분리 보존한다. 축약은 없다.
+- `scripts/build_ending_logo.py`는 화면을 8×8 셀로 다시 인코딩하고 팔레트
+  0/6/7과 H/V flip 디듀프를 적용한다. 고유타일은 95/96이며 오프라인 프리뷰는
+  `out/ending_logo_preview.png`다.
+- 승인 결과의 최적 LZSS는 chr 2128B, 타일맵 434B로 원래 인접 슬롯을
+  각각 132B/7B 초과한다. 원본 2MB 안의 검증된 FF 영역 `$D9:D239`에 두 자원을
+  연속 재배치하고, 엔딩 로더 `$C1:92F9/$C1:93CB`의 D9 소스 주소 두 곳만
+  갱신한다. 빌더는 목적지가 FF 또는 같은 승인 blob인지 검사하고 허용 범위
+  밖의 변경이 한 바이트라도 있으면 중단한다.
+- `scripts/test_ending_logo.py`가 최종 ROM에서 로더 주소, LZSS 해제 왕복,
+  고유타일 한도와 승인 raw를 재검증한다. ROM 크기는 원본과 같은 2MB다.
+
 ## ✅ 경기 중 일시정지 메뉴 8×8 한글화 (2026-07-22)
 
 - Start 입력 경로 `$D0:068E`에서 상태 8로 전환하며, 초기화 `$D0:15E4`·프레임 처리 `$D0:153D`를 거쳐 합성 스프라이트 `$CF:8C57/$CF:8C73`을 표시한다.
@@ -178,3 +204,25 @@ python scripts/build_gfx.py --rom out/wgp2_kr.smc --out out/wgp2_kr.smc
 2. 크레딧 문구 미세조정: screen.bmp/credit.bmp 수정 후 재빌드.
 3. (후순위) 타이틀 로고 WGP2 네이비 복원 품질개선.
 4. 다른 화면 그래픽(사용자 지정 시).
+
+## ✅ 경기 HUD `DAMAGE / BOOST` 2bpp 라벨 (2026-07-23)
+
+- Mesen 실측: Mode 1 **BG3**, chr base VRAM word `$2000`, tilemap word `$3800`.
+- 소스: **`$D5:4EC3`** LZSS, 해제 0x2000B, 원본 stream 2811B. 해제 결과는
+  VRAM byte `$4000-$5FFF`에 올라간다.
+- `ダメージ`: 화면 `x64,y160,w32,h8`, 타일 `$1D1-$1D4` → `DAMAGE`.
+  일본어 상단 조각이 남아 있던 바로 윗행 `x64,y152,w32,h8`의
+  `$193/$194/$195/$1D0`은 정상 상단 테두리 타일 `$131`과 상단 3픽셀 행이
+  바이트 단위로 동일하다. 네 타일을 `$131`로 복원해 테두리를 유지하면서
+  탁점·글자 잔재만 제거한다.
+- `爆走`: 화면 `x72,y168,w24,h8`, 타일 `$121-$123` → `BOOST`.
+- 두 묶음은 캡처 BG3 타일맵에서 각 타일이 한 번만 참조되고, 해제 자원에도
+  같은 16바이트 타일 복제가 없다. 승인 작업지는
+  `assets/race_hud/race_hud_labels_workshop_approved.png`이며
+  `scripts/build_race_hud_labels.py`가 라벨 일곱 타일을 교체하고 윗행 네 타일을
+  정상 테두리로 복원한다. 나머지 501타일은 원본과 같아야 한다.
+- 일반 greedy 재압축은 원본 슬롯을 넘지만, 출력 위치와 플래그 비트 상태를
+  함께 최적화하는 `lzss.compress_optimal()`은 윗행 복원까지 포함해 2791B다.
+  따라서 재배치·포인터 변경·ROM 확장 없이 원래 2811B 슬롯에 들어간다.
+- 원문·완역·표시문은 `assets/translations/race_hud_labels.json`에 각각
+  `ダメージ/爆走`, `데미지/폭주`, `DAMAGE/BOOST`로 분리 보존한다.
