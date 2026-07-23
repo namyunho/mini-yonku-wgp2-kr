@@ -39,7 +39,22 @@ CTRL = re.compile(r"\{[^}]*\}")
 LEADING = re.compile(r"(^|\n)[ 　]+(?=\S)")
 TERMINAL = set("!?！？。.…〜♥♪」』）")
 OPENERS = set("「『（【〈《")
-EXPECTED_COUNTS = {"dialogue": 6, "adventure": 140, "field": 83}
+EXPECTED_COUNTS = {"dialogue": 6, "adventure": 142, "field": 83}
+EXPECTED_CHOICE_COUNTS = {
+    "adventure": (19, 45),
+    "field": (27, 57),
+}
+
+# A8:0223은 결혼반지 탐색 장면에서 화자명이 앞 런에 있는 연속 대사다.
+# 일반 16단위 검사는 통과했지만 실기에서 오른쪽 테두리를 넘었다. 개행을
+# 옮긴 수정본의 최대 12.5단위를 기준으로 13단위 상한을 별도 고정한다.
+# 75:0410은 제8전 카이전 뒤 츠치야 브리핑 분기다. 14단위였던 한 행이
+# 초상화 뒤 본문 영역을 넘은 실측에 따라 개행을 옮겼고, 수정본의 최대
+# 13.5단위를 회귀 상한으로 고정한다.
+ADVENTURE_LINE_LIMIT_OVERRIDES = {
+    "75:0410": 13.5,
+    "A8:0223": 13,
+}
 
 # 튜토리얼의 괄호 안내문은 중앙 정렬된 별도 UI다.
 DIALOGUE_LEADING_EXCEPTIONS = {
@@ -240,11 +255,13 @@ def assert_widths(dialogue: dict, adventure: dict, field: dict) -> None:
                 )
     for scene in adventure["scenes"]:
         for run in scene["runs"]:
+            key = f"{scene['scene']:02X}:{run['at']:04X}"
+            limit = ADVENTURE_LINE_LIMIT_OVERRIDES.get(key, 16)
             for line in run["text_kr"].split("\n"):
-                if line_units(line) > 16:
+                if line_units(line) > limit:
                     raise SystemExit(
                         f"어드벤처 {scene['scene']:02X}:{run['at']:04X} "
-                        f"줄 폭 {line_units(line)}>16: {line!r}"
+                        f"줄 폭 {line_units(line)}>{limit}: {line!r}"
                     )
     for entry in field["entries"]:
         for line in entry["text_kr"].split("\n"):
@@ -252,6 +269,55 @@ def assert_widths(dialogue: dict, adventure: dict, field: dict) -> None:
                 raise SystemExit(
                     f"필드 {entry['id']} 줄 폭 {line_units(line)}>16: {line!r}"
                 )
+
+
+def choice_option_lines(text: str, where: str) -> list[str]:
+    if "{c8:07}" not in text:
+        return []
+    if text.count("{c8:07}") != 1 or text.count("{c8:00}") != 1:
+        raise SystemExit(f"{where}: 선택지 제어 마커 개수 불일치")
+    body = text.split("{c8:07}", 1)[1].split("{c8:00}", 1)[0]
+    options = [line for line in body.split("\n") if line]
+    if not options:
+        raise SystemExit(f"{where}: 선택지 본문 없음")
+    return options
+
+
+def assert_choice_indents(adventure: dict, field: dict) -> dict[str, tuple[int, int]]:
+    """선택 커서가 첫 글자를 가리지 않도록 모든 선택지 앞 1칸 이상을 보장."""
+    counts: dict[str, tuple[int, int]] = {}
+    adventure_blocks = adventure_options = 0
+    for scene in adventure["scenes"]:
+        for run in scene["runs"]:
+            key = f"어드벤처 {scene['scene']:02X}:{run['at']:04X}"
+            options = choice_option_lines(run["text_kr"], key)
+            if not options:
+                continue
+            adventure_blocks += 1
+            adventure_options += len(options)
+            for option in options:
+                if not option.startswith((" ", "　")):
+                    raise SystemExit(f"{key}: 선택지 선행 공백 0칸: {option!r}")
+    counts["adventure"] = (adventure_blocks, adventure_options)
+
+    field_blocks = field_options = 0
+    for entry in field["entries"]:
+        key = f"필드 {entry['id']}"
+        options = choice_option_lines(entry["text_kr"], key)
+        if not options:
+            continue
+        field_blocks += 1
+        field_options += len(options)
+        for option in options:
+            if not option.startswith((" ", "　")):
+                raise SystemExit(f"{key}: 선택지 선행 공백 0칸: {option!r}")
+    counts["field"] = (field_blocks, field_options)
+
+    if counts != EXPECTED_CHOICE_COUNTS:
+        raise SystemExit(
+            f"선택지 모집단 변경: {counts!r} != {EXPECTED_CHOICE_COUNTS!r}"
+        )
+    return counts
 
 
 def assert_leading_spaces(dialogue: dict, adventure: dict, field: dict) -> None:
@@ -346,12 +412,15 @@ def check(
             raise SystemExit(f"레이아웃 정리 중 가시문자/제어 토큰 변경: {key}")
 
     assert_leading_spaces(dialogue, adventure, field)
+    choice_counts = assert_choice_indents(adventure, field)
     assert_fixed_point(dialogue, adventure, field)
     assert_widths(dialogue, adventure, field)
     print(
         "전체 대사 레이아웃 PASS: "
         f"정적 {counts['dialogue']} / 어드벤처 {counts['adventure']} / "
-        f"필드 {counts['field']} / 선행 공백 0(기능성 UI 제외)"
+        f"필드 {counts['field']} / 선행 공백 0(기능성 UI 제외) / "
+        f"선택지 들여쓰기 어드벤처 {choice_counts['adventure'][1]}·"
+        f"필드 {choice_counts['field'][1]}"
     )
 
 
@@ -476,6 +545,7 @@ def apply() -> None:
             "adventure_field_max_units": 16,
             "candidate_short_side_max_units": 3,
             "functional_choice_indent_preserved": True,
+            "functional_choice_min_indent_tiles": 1,
             "non_newline_controls_preserved": True,
         },
         "entry_count": len(records),

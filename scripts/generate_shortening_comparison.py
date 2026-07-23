@@ -67,7 +67,7 @@ def main() -> None:
             or field_ledger["pending_count"] != 0):
         raise SystemExit("field_shortening_ledger count/pending 불변식 위반")
     if (layout_ledger["entry_count"] != len(layout_ledger["entries"])
-            or layout_ledger["entry_count"] != 229):
+            or layout_ledger["entry_count"] != 231):
         raise SystemExit("dialogue_layout_ledger count 불변식 위반")
 
     dialogue_by_id = {x["entry_id"]: x for x in dialogue["entries"]}
@@ -231,14 +231,14 @@ def main() -> None:
                   "adventure", "dialogue", "field", "parts", "menu_extra", "worldmap"
               )}
     expected = {
-        "adventure": 566,
+        "adventure": 567,
         "dialogue": 27,
         "field": 351,
         "parts": 0,
         "menu_extra": 1,
         "worldmap": 13,
     }
-    if counts != expected or len(rows) != 958:
+    if counts != expected or len(rows) != 959:
         raise SystemExit(f"축약 목록 규모 불일치: {counts}, total={len(rows)}")
 
     inputs = [
@@ -317,9 +317,9 @@ def main() -> None:
         lines.append(f"| `{path.relative_to(ROOT)}` | `{digest(path)}` |")
     lines.extend([
         "",
-        "이 문서는 위 입력에서 다시 생성할 수 있다. 생성기는 두 축약 원장의 완료/대기 수, 레이아웃 원장 229건,",
+        "이 문서는 위 입력에서 다시 생성할 수 있다. 생성기는 두 축약 원장의 완료/대기 수, 레이아웃 원장 231건,",
         "현재 빌드 키 존재 여부, 필드 `before_kr == text_kr_full`, 중복 키, 시스템별 예상 건수",
-        "(566/27/351/0/1/13)를 검사하고 하나라도",
+        "(567/27/351/0/1/13)를 검사하고 하나라도",
         "어긋나면 문서를 쓰지 않고 실패한다.",
         "",
     ])

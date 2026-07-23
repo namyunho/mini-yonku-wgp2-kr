@@ -6,9 +6,10 @@
   "adventure_field_max_units": 16,
   "candidate_short_side_max_units": 3,
   "functional_choice_indent_preserved": true,
+  "functional_choice_min_indent_tiles": 1,
   "non_newline_controls_preserved": true
  },
- "entry_count": 229,
+ "entry_count": 231,
  "entries": [
   {
    "id": "adventure:12:0005",
@@ -121,6 +122,20 @@
    "date": "2026-07-23",
    "scene": 100,
    "at": 62
+  },
+  {
+   "id": "adventure:75:0410",
+   "system": "adventure",
+   "before_kr": "박사\n「매우 말하기 어렵지만\n여기까지 빅토리즈 성적은\n빈말로도 좋다곤 못 한다…{wait}\n이대로면\n후반 힘든 시합의 연속이 되어\n우승을 놓칠 수도 있어{wait}\n그리 안 되려면\n다음엔 꼭 이겨 줘{wait}\n이기지 않으면 우리 WGP는\n여기서 끝날\n듯하구나…{wait}",
+   "after_kr": "박사\n「매우 말하기 어렵지만\n여기까지 빅토리즈 성적은\n빈말로도 좋다곤 못 한다…{wait}\n이대로면 후반\n힘든 시합의 연속이 되어\n우승을 놓칠 수도 있어{wait}\n그리 안 되려면\n다음엔 꼭 이겨 줘{wait}\n이기지 않으면 우리 WGP는\n여기서 끝날\n듯하구나…{wait}",
+   "text_kr_full": "츠치야 박사\n「매우 말하기 어렵지만\n여기까지 빅토리즈 성적은\n빈말로도 좋다곤 못 한다…{wait}\n이대로면\n후반 힘든 시합의 연속이 되어\n우승을 놓칠 수도 있어{wait}\n그렇게 안 되려면\n다음엔 반드시 이겨 줘{wait}\n이기지 않으면 우리 WGP는\n여기서 끝나 버릴 것\n같은 기분이 들어…{wait}",
+   "joined_line_breaks": 0,
+   "leading_spaces_removed": 0,
+   "reason": "실기 줄넘침 수정: 가시문자·제어 토큰을 보존하고 개행 1개 재배치",
+   "status": "done",
+   "date": "2026-07-23",
+   "scene": 117,
+   "at": 1040
   },
   {
    "id": "adventure:75:04D2",
@@ -709,6 +724,20 @@
    "date": "2026-07-23",
    "scene": 165,
    "at": 444
+  },
+  {
+   "id": "adventure:A8:0223",
+   "system": "adventure",
+   "before_kr": "아빠는　집 안을 찾을 테니 너희는\n밖을 찾아봐줘{wait}{clear}",
+   "after_kr": "아빠는　집 안을 찾을 테니\n너희는 밖을 찾아봐줘{wait}{clear}",
+   "text_kr_full": "아빠는　집 안을 찾을 테니 너희는\n밖을 찾아봐줘{wait}{clear}",
+   "joined_line_breaks": 0,
+   "leading_spaces_removed": 0,
+   "reason": "실기 줄넘침 수정: 가시문자·제어 토큰을 보존하고 개행 1개 재배치",
+   "status": "done",
+   "date": "2026-07-23",
+   "scene": 168,
+   "at": 547
   },
   {
    "id": "adventure:AB:00D7",

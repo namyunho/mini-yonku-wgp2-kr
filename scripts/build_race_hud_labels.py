@@ -24,6 +24,8 @@ from export_race_hud_workshop import (
     ORIGINAL_STREAM_SIZE,
     RAW_SIZE,
     RESOURCE_OFFSET,
+    decode_tile,
+    encode_tile,
     import_workshop,
     load_corpus,
     load_original_resource,
@@ -99,6 +101,7 @@ def expected_resource(
     corpus: dict,
     *,
     remove_upper_remnants: bool = True,
+    remove_right_protrusion: bool = True,
 ) -> tuple[bytes, set[int]]:
     edited = bytearray(original_raw)
     cursor = 0
@@ -117,6 +120,29 @@ def expected_resource(
         cursor += size
     if cursor != len(art):
         raise SystemExit(f"승인 2bpp 데이터 잉여: {len(art) - cursor}B")
+
+    if remove_right_protrusion:
+        cleanup = corpus["pixel_cleanup"]
+        tile_id = cleanup["tile_id"]
+        if tile_id not in target_tiles:
+            raise SystemExit("DAMAGE 우측 돌출 정리 타일이 승인 라벨 대상 밖임")
+        begin = tile_id * 16
+        pixels = decode_tile(bytes(edited[begin:begin + 16]))
+        occupied: set[tuple[int, int]] = set()
+        for change in cleanup["tile_local_pixels"]:
+            x, y = change["x"], change["y"]
+            if not (0 <= x < 8 and 0 <= y < 8):
+                raise SystemExit(f"DAMAGE 우측 돌출 정리 좌표 범위 오류: ({x}, {y})")
+            if (x, y) in occupied:
+                raise SystemExit(f"DAMAGE 우측 돌출 정리 좌표 중복: ({x}, {y})")
+            occupied.add((x, y))
+            if pixels[y][x] != change["from"]:
+                raise SystemExit(
+                    "DAMAGE 우측 돌출 승인 픽셀 불일치: "
+                    f"({x}, {y})={pixels[y][x]} != {change['from']}"
+                )
+            pixels[y][x] = change["to"]
+        edited[begin:begin + 16] = encode_tile(pixels)
 
     if remove_upper_remnants:
         cleanup = corpus["cleanup"]
@@ -165,10 +191,28 @@ def build(rom_path: Path, out_path: Path, approved: Path) -> None:
     labels_only, _ = expected_resource(
         original_raw, art, corpus, remove_upper_remnants=False
     )
+    previous_labels_only, _ = expected_resource(
+        original_raw,
+        art,
+        corpus,
+        remove_upper_remnants=False,
+        remove_right_protrusion=False,
+    )
+    previous_wanted, _ = expected_resource(
+        original_raw, art, corpus, remove_right_protrusion=False
+    )
     wanted, target_tiles = expected_resource(original_raw, art, corpus)
     current, _ = decompress(rom, RESOURCE_OFFSET + 2, RAW_SIZE)
-    if current not in (original_raw, labels_only, wanted):
-        raise SystemExit("$D5:4EC3 자원이 원본·이전 라벨본·승인본 중 어느 것도 아님")
+    if current not in (
+        original_raw,
+        previous_labels_only,
+        labels_only,
+        previous_wanted,
+        wanted,
+    ):
+        raise SystemExit(
+            "$D5:4EC3 자원이 원본·이전 라벨본·돌출 정리 승인본 중 어느 것도 아님"
+        )
 
     for tile in range(RAW_SIZE // 16):
         if tile in target_tiles:
@@ -191,7 +235,7 @@ def build(rom_path: Path, out_path: Path, approved: Path) -> None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_bytes(rom)
     print(
-        "경기 HUD DAMAGE / BOOST + 데미지 변형 타일맵 통일 "
+        "경기 HUD DAMAGE / BOOST + DAMAGE 우측 하단 돌출 제거 + 데미지 변형 타일맵 통일 "
         f"+ 일본어 윗행 잔재 제거 완료 → {out_path}"
     )
     print(

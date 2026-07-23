@@ -20,6 +20,7 @@ from export_race_hud_workshop import (
     DEFAULT_ART,
     DEFAULT_MANIFEST,
     ORIGINAL_ROM,
+    decode_tile,
     import_workshop,
     load_corpus,
     load_original_resource,
@@ -54,6 +55,17 @@ def main() -> int:
         begin = tile_id * 16
         if actual[begin:begin + 16] != replacement:
             failures.append(f"일본어 윗행 잔재 복원 실패: ${tile_id:03X}")
+    pixel_cleanup = corpus["pixel_cleanup"]
+    pixel_tile_id = pixel_cleanup["tile_id"]
+    pixel_begin = pixel_tile_id * 16
+    cleaned_pixels = decode_tile(actual[pixel_begin:pixel_begin + 16])
+    for change in pixel_cleanup["tile_local_pixels"]:
+        x, y = change["x"], change["y"]
+        if cleaned_pixels[y][x] != change["to"]:
+            failures.append(
+                f"DAMAGE 우측 하단 돌출 제거 실패: "
+                f"${pixel_tile_id:03X} ({x},{y})={cleaned_pixels[y][x]}"
+            )
     verified_variants = []
     for variant in damage_tilemap_variants(corpus):
         offset = int(variant["file_offset"], 0)
@@ -78,7 +90,8 @@ def main() -> int:
         return 1
     print(
         "경기 HUD 승인 그래픽: PASS "
-        f"DAMAGE/BOOST + 윗행 잔재 제거 + 타일맵 {len(verified_variants)}형 통일, "
+        f"DAMAGE/BOOST + 우측 하단 돌출 제거 + 윗행 잔재 제거 "
+        f"+ 타일맵 {len(verified_variants)}형 통일, "
         f"LZSS {used}/{ORIGINAL_STREAM_SIZE}B, "
         f"실제 변경 {len(changed)}타일/허용 {len(target_tiles)}타일"
     )

@@ -23,6 +23,17 @@
     "replacement_tile_sha256": "547d20ecf92ae2fc12c58c406cc2a4263f650c2d2ba94f198414d383903a5f1b",
     "restored_sha256": "317f4ec37d9eb78165e30b545c46cc41de9ddc87279783fb1519ae01c4abf04e"
   },
+  "pixel_cleanup": {
+    "id": "damage_right_bottom_protrusion",
+    "description": "DAMAGE 오른쪽 끝에서 게이지 아래로 한 행 돌출된 검정-흰색-검정 3픽셀을 투명화",
+    "tile_id": 468,
+    "tile_local_pixels": [
+      {"x": 5, "y": 7, "from": 3, "to": 0},
+      {"x": 6, "y": 7, "from": 1, "to": 0},
+      {"x": 7, "y": 7, "from": 3, "to": 0}
+    ],
+    "screen_pixels": [[93, 167], [94, 167], [95, 167]]
+  },
   "entries": [
     {
       "id": "damage",
