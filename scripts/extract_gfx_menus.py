@@ -7,7 +7,7 @@
 - 8×8 타일을 16타일폭 팩드 그리드로 렌더(재주입도 이 순서 그대로).
 - bpp 미상이라 2bpp·4bpp 둘 다 렌더 → 글자 판독되는 쪽이 정답.
 - OptPix로 색감소하므로 팔레트는 인덱스 구분용 디버그색.
-산출: img_tile/extract/<bank><addr>_<bpp>.png
+산출: assets/graphics/title_credits/extract/<bank><addr>_<bpp>.png
 """
 import os, sys, re
 sys.path.insert(0, os.path.dirname(__file__))
@@ -15,7 +15,7 @@ import lzss
 from PIL import Image
 
 ROM = "roms/Mini Yonku Let's & Go!! - Power WGP 2 (J) (NP).smc"
-OUTDIR = "img_tile/extract"
+OUTDIR = "assets/graphics/title_credits/extract"
 MAGENTA = (255, 0, 255)
 PAL2 = [MAGENTA, (255,255,255), (150,150,150), (30,30,30)]
 PAL4 = [MAGENTA] + [(v,v,v) for v in (255,220,190,160,130,100,70,40,20)] + \

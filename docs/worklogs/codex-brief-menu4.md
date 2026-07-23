@@ -98,7 +98,7 @@ docs/12가 **8pt 한글 200음절을 VRAM 800~999**에 올리고 SJIS 렌더러 
 2. **오프코드/구조 보존**: 문자열 타일 외 모든 바이트(0x05/0x94/0x97/좌표/오버레이/0x00 종료·박스 $E0~$E7)가 원본과 **완전 동일** 위치.
 3. **byte-fit**: new span byte ≤ orig span byte(in-place). 초과분은 mode=abbrev/baseswap/overflow로 **명시 플래그**(임의 절단 금지).
 4. **음절 상한**: 순증 음절 + SJIS UI 200 ≤ **224**. 초과 시 중단·보고.
-5. **폰트 커버리지**: 모든 한글 음절이 `8pt_font/*.bin`(glyph_map)에 존재(없으면 거부).
+5. **폰트 커버리지**: 모든 한글 음절이 `assets/fonts/small/*.bin`(glyph_map)에 존재(없으면 거부).
 6. **누락 0**: 위 번역표 전 항목 산출.
 
 ## Claude(내) 담당 (Codex 산출 후)

@@ -26,9 +26,9 @@ from lzss import compress_optimal, decompress
 ROOT = Path(__file__).resolve().parents[1]
 ORIGINAL_ROM = ROOT / "roms/Mini Yonku Let's & Go!! - Power WGP 2 (J) (NP).smc"
 DEFAULT_ROM = ROOT / "out/wgp2_kr.smc"
-CORPUS = ROOT / "assets/translations/ending_logo.json"
-DEFAULT_PREVIEW = ROOT / "out/ending_logo_preview.png"
-DEFAULT_MANIFEST = ROOT / "out/ending_logo_manifest.json"
+CORPUS = ROOT / "assets/translations/intermission_logo.json"
+DEFAULT_PREVIEW = ROOT / "out/intermission_logo_preview.png"
+DEFAULT_MANIFEST = ROOT / "out/intermission_logo_manifest.json"
 ROM_SIZE = 0x200000
 ORIGINAL_CRC32 = 0x4459D4D0
 ORIGINAL_MD5 = "acdeb2ee6ef7b460c5dfed6957f8581a"

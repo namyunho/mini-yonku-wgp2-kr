@@ -17,7 +17,7 @@
 시작하는 `$C0:82C9`와 포인터 테이블의 나머지 항목은 변경하지 않는다.
 
 인트로는 사용자 승인본
-`assets/stage_titles/stage_titles_workshop_approved.png`의 192x64 영역을
+`assets/graphics/stage_titles/stage_titles_workshop_approved.png`의 192x64 영역을
 `scripts/build_stage_intro_titles.py`가 원본 자원의 제목 전용 192타일에
 인코딩한다. 원문 제목 타일맵은 화면 좌우로 2타일씩 더 넓으므로 이 32타일은
 투명화한다. `STAGE n`을 포함한 나머지 32타일과 포인터는 보존한다.

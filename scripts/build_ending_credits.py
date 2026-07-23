@@ -27,8 +27,8 @@ from lzss import compress, decompress  # noqa: E402
 ORIGINAL_ROM = ROOT / "roms/Mini Yonku Let's & Go!! - Power WGP 2 (J) (NP).smc"
 DEFAULT_ROM = ROOT / "out/wgp2_kr.smc"
 TRANSLATIONS = ROOT / "assets/translations/ending_credits.json"
-FONT_BIN = ROOT / "8pt_font/font-007242d37349daf3.bin"
-FONT_MAP = ROOT / "8pt_font/font-007242d37349daf3_glyph_map.json"
+FONT_BIN = ROOT / "assets/fonts/small/font-007242d37349daf3.bin"
+FONT_MAP = ROOT / "assets/fonts/small/font-007242d37349daf3_glyph_map.json"
 DEFAULT_MAP = ROOT / "out/ending_credits_glyph_map.json"
 DEFAULT_PREVIEW = ROOT / "out/ending_credits_preview.png"
 

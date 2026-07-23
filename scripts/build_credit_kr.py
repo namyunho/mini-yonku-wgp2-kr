@@ -15,7 +15,7 @@ from PIL import Image
 DRY = '--dry' in sys.argv
 BLOB = 'tmp/gfx/vram_7000.bin'
 OUT  = 'tmp/gfx_edit/vram_7000.bin'
-SCREEN = 'img_tile/screen.bmp'
+SCREEN = 'assets/graphics/title_credits/screen.bmp'
 OAM = 'tmp/trace/credit2/oam.bin'
 CG  = 'tmp/trace/credit2/cgram.bin'
 EDIT_LINES = {39, 55, 71, 183}   # 전 줄 screen.bmp 베이킹(1줄 영어 포함 — 잉여 점 제거, 전체 정합)

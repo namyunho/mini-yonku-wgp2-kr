@@ -40,8 +40,8 @@ DEFAULT_ROM = ROOT / "out/wgp2_kr.smc"
 TRANSLATIONS = ROOT / "assets/translations/result_courses.json"
 DEFAULT_PREVIEW = ROOT / "out/result_courses_preview.png"
 DEFAULT_MANIFEST = ROOT / "out/result_courses_manifest.json"
-DEFAULT_TEMPLATE = ROOT / "assets/result_courses/result_courses_workshop_256px.png"
-DEFAULT_GUIDE = ROOT / "assets/result_courses/result_courses_translation.tsv"
+DEFAULT_TEMPLATE = ROOT / "assets/graphics/result/courses/result_courses_workshop_256px.png"
+DEFAULT_GUIDE = ROOT / "assets/graphics/result/courses/result_courses_translation.tsv"
 
 ASSET_OFFSET = 0x19444A       # $D9:444A, 2-byte decompressed-length header
 NEXT_ASSET_OFFSET = 0x194867  # $D9:4867, verified next LZSS source

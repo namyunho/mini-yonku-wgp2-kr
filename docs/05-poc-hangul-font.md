@@ -32,7 +32,7 @@
 
 ```
 cargo run -- poc-font \
-  --rom "roms/<원본>.smc" --font "assets/fonts/x12y12pxMaruMinyaHangul.ttf" \
+  --rom "roms/<원본>.smc" --font "assets/fonts/body/x12y12pxMaruMinyaHangul.ttf" \
   --output "out/poc_hangul.smc" \
   --map "2ED=부:13,15C=천:13,028=:6,09E=레:13,0B5=트:13,088=로:13,02E=:6,054=흥:13,010=해:13,023=라:13,03B=:0,04E=:0,015=:0,051=:0,0D4=:0" \
   --px 12 --thr 128 --xoff 1 --yoff 1
@@ -60,9 +60,9 @@ cargo run -- poc-font \
 
 ## 재현 (frame 진행)
 
-- **트레이스/샷 스크립트**: `scripts/lua/poc_shot.lua` — Start 펄스로 타이틀→모드선택→레이스 진행 후 frame 1150/1180/1205 스크린샷.
+- **트레이스/샷 스크립트**: `scripts/lua/capture/poc_shot.lua` — Start 펄스로 타이틀→모드선택→레이스 진행 후 frame 1150/1180/1205 스크린샷.
 - 레이스 대사 「栄光のゴールまであとわずかだ！」(=교체 대상 15슬롯)는 frame ~1087–1102에 타자되어 ~1203까지 표시. **frame 1180 샷이 완성 표시 상태.**
-- Mesen2 실행: `Mesen.exe "<rom>" "scripts/lua/poc_shot.lua"` (설정 `AllowIoOsAccess=true`). PowerShell `Start-Process -PassThru` + `WaitForExit` + `Stop-Process`로 종료(GUI 안 닫힘 회피).
+- Mesen2 실행: `Mesen.exe "<rom>" "scripts/lua/capture/poc_shot.lua"` (설정 `AllowIoOsAccess=true`). PowerShell `Start-Process -PassThru` + `WaitForExit` + `Stop-Process`로 종료(GUI 안 닫힘 회피).
 
 ## 미해결 / 다음 단계 (본 구현)
 

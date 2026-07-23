@@ -27,7 +27,7 @@ from build_result_names import (
 
 DEFAULT_APPROVED = (
     Path(__file__).resolve().parents[1]
-    / "assets/result_names/result_names_workshop_approved.png"
+    / "assets/graphics/result/names/result_names_workshop_approved.png"
 )
 
 

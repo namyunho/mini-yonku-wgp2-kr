@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """System ④ direct-tile label extractor/encoder.
 
-SSOT: tasks/codex-brief-menu4.md and docs/17-menu-tile-font-labels.md.
+SSOT: docs/worklogs/codex-brief-menu4.md and docs/18-menu-tile-font-labels.md.
 
 The tutorial table at $C7:B180 is a sequence of length-prefixed tile
 payloads mixed with page/control data.  The X-menu strings at $C3:9201 and
@@ -29,7 +29,7 @@ VRAM_CAP = 224
 SLOT1 = 189
 
 
-# Translation order is locked to tasks/codex-brief-menu4.md.
+# Translation order is locked to docs/worklogs/codex-brief-menu4.md.
 C7_SPECS = [
     ("toc_title", "もくじ", "목차"),
     ("toc_p2", "マップ モード", "맵 모드"),
@@ -295,7 +295,7 @@ def build(rom_path: Path, out_path: Path) -> dict:
     assert len(syllables) <= VRAM_CAP
     kmap = {ch: i for i, ch in enumerate(syllables)}
 
-    glyph_map = json.loads((ROOT / "8pt_font/font-007242d37349daf3_glyph_map.json").read_text(encoding="utf-8"))
+    glyph_map = json.loads((ROOT / "assets/fonts/small/font-007242d37349daf3_glyph_map.json").read_text(encoding="utf-8"))
     needed_hangul = {ch for _, kr in all_translation_rows() for ch in kr if "가" <= ch <= "힣"}
     missing_glyphs = sorted(needed_hangul - glyph_map.keys())
     assert not missing_glyphs, f"8pt font coverage missing: {missing_glyphs}"
@@ -409,7 +409,7 @@ def build(rom_path: Path, out_path: Path) -> dict:
     modes = Counter(item["mode"] for item in labels)
     result = {
         "_meta": {
-            "ssot": "tasks/codex-brief-menu4.md",
+            "ssot": "docs/worklogs/codex-brief-menu4.md",
             "rom": str(rom_path.relative_to(ROOT)),
             "format": "addr identifies the first byte of the exact contiguous orig_span_hex patch span",
             "existing_syllable_count": len(old_syllables),

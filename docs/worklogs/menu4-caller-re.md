@@ -1,6 +1,6 @@
 # System ④ `$C0:1B4B` caller RE and menu4 label handoff
 
-SSOT: `tasks/codex-brief-menu4.md`, `docs/17-menu-tile-font-labels.md`,
+SSOT: `docs/worklogs/codex-brief-menu4.md`, `docs/17-menu-tile-font-labels.md`,
 `docs/11-sjis-menu.md`, `docs/12-sjis-ui-hangul.md`.
 
 Analysis input was the isolated Codex copy only:

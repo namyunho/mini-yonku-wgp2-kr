@@ -19,8 +19,8 @@ from lzss import decompress, compress, foff
 ROM = "roms/Mini Yonku Let's & Go!! - Power WGP 2 (J) (NP).smc"
 CHR_SRC = (0xC3, 0x0E2F)      # 로고 chr (12800B)
 TM_SRC  = (0xC7, 0x5BF8)      # 로고 타일맵 (2048B, 32×32)
-ORIG = 'img_tile/credit_logo.png'
-KR   = 'img_tile/credit_logo.bmp'
+ORIG = 'assets/graphics/title_credits/credit_logo.png'
+KR   = 'assets/graphics/title_credits/credit_logo.bmp'
 CG   = 'tmp/trace/live/cgram.bin'
 BLUE = (74, 107, 255)
 NTILE = 400                   # chr 12800B / 32

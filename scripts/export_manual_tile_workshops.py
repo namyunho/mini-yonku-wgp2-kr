@@ -22,15 +22,15 @@ from build_result_names import (  # noqa: E402
 
 
 CORPUS = ROOT / "assets/translations/manual_tile_workshops.json"
-FORMATION_TEMPLATE = ROOT / "assets/formation_tiles/formation_labels_workshop_256px.png"
-FORMATION_GUIDE = ROOT / "assets/formation_tiles/formation_labels_translation.tsv"
-FORMATION_CROPS = ROOT / "assets/formation_tiles/crops"
-STATS_TEMPLATE = ROOT / "assets/machine_stats/machine_stats_workshop_256px.png"
-STATS_GUIDE = ROOT / "assets/machine_stats/machine_stats_translation.tsv"
-STATS_CROPS = ROOT / "assets/machine_stats/crops"
-GARAGE_TEMPLATE = ROOT / "assets/garage_categories/garage_categories_workshop_256px.png"
-GARAGE_GUIDE = ROOT / "assets/garage_categories/garage_categories_translation.tsv"
-GARAGE_CROPS = ROOT / "assets/garage_categories/crops"
+FORMATION_TEMPLATE = ROOT / "assets/graphics/formation/formation_labels_workshop_256px.png"
+FORMATION_GUIDE = ROOT / "assets/graphics/formation/formation_labels_translation.tsv"
+FORMATION_CROPS = ROOT / "assets/graphics/formation/crops"
+STATS_TEMPLATE = ROOT / "assets/graphics/machine_stats/machine_stats_workshop_256px.png"
+STATS_GUIDE = ROOT / "assets/graphics/machine_stats/machine_stats_translation.tsv"
+STATS_CROPS = ROOT / "assets/graphics/machine_stats/crops"
+GARAGE_TEMPLATE = ROOT / "assets/graphics/garage/garage_categories_workshop_256px.png"
+GARAGE_GUIDE = ROOT / "assets/graphics/garage/garage_categories_translation.tsv"
+GARAGE_CROPS = ROOT / "assets/graphics/garage/crops"
 
 PALETTE_RGB = (
     (255, 0, 255),

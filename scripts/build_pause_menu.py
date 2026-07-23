@@ -26,8 +26,8 @@ import lzss  # noqa: E402
 
 ORIGINAL_ROM = ROOT / "roms/Mini Yonku Let's & Go!! - Power WGP 2 (J) (NP).smc"
 ROM = ROOT / "out/wgp2_kr.smc"
-FONT_BIN = ROOT / "8pt_font/font-007242d37349daf3.bin"
-FONT_MAP = ROOT / "8pt_font/font-007242d37349daf3_glyph_map.json"
+FONT_BIN = ROOT / "assets/fonts/small/font-007242d37349daf3.bin"
+FONT_MAP = ROOT / "assets/fonts/small/font-007242d37349daf3_glyph_map.json"
 TRANSLATIONS = ROOT / "assets/translations/menu_extra_labels.json"
 
 RESOURCE = (0xD4, 0x6630)

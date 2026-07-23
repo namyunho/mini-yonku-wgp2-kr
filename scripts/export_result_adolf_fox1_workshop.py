@@ -35,7 +35,7 @@ from build_result_names import (  # noqa: E402
 DEFAULT_ROM = ROOT / "out/wgp2_kr.smc"
 DEFAULT_IMAGE = ROOT / "out/result_adolf_fox1_overlap_workshop_256px.png"
 DEFAULT_MANIFEST = ROOT / "out/result_adolf_fox1_overlap_workshop.json"
-DEFAULT_APPROVED = ROOT / "assets/result_names/result_names_workshop_approved.png"
+DEFAULT_APPROVED = ROOT / "assets/graphics/result/names/result_names_workshop_approved.png"
 TRANSLATIONS = ROOT / "assets/translations/result_names.json"
 
 ADOLF_TOP = [0x007F, 0x0080, 0x0081, 0x0082, 0x0083, 0x0084]

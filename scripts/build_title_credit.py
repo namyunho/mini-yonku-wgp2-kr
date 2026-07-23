@@ -20,8 +20,8 @@ TM_SRC = (0xC7, 0x63A3)    # BG3 타일맵 소스 (2112B, LZSS+헤더). ty23(PUS
 VRAM = 'tmp/trace/title/vram.bin'
 CG = 'tmp/trace/title/cgram.bin'
 TM_OFF = 0xB800            # 라이브 VRAM의 BG3 타일맵(word$5C00) — 셀→타일 매핑 참조
-ORIG = 'img_tile/credit.png'
-KR = 'img_tile/credit.bmp'
+ORIG = 'assets/graphics/title_credits/credit.png'
+KR = 'assets/graphics/title_credits/credit.bmp'
 BLUE = (74, 107, 255)
 NTILE = 64
 

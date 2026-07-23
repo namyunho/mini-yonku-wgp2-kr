@@ -1,6 +1,6 @@
 # 다음 세션 이어하기 — 미니욘쿠 WGP2 한글패치
 
-> 갱신: 2026-07-20. docs/14(위치보존)·docs/13·docs/15(축약원장)·docs/16(RE MCP)·tasks/lessons.md·메모리 먼저 읽고 시작.
+> 갱신: 2026-07-20. docs/14(위치보존)·docs/13·docs/15(축약원장)·docs/16(RE MCP)·docs/worklogs/lessons.md·메모리 먼저 읽고 시작.
 
 ## ✅ 완료 (2026-07-20) — 크래시 원천차단 + 어드벤처 번역 복구
 - **위치보존 전 씬 확대**(런 단위 원본유지 + `pad_kr` 말미패딩): 스크립트 길이 불변 → VM offset 보존 →
@@ -19,11 +19,11 @@
 
 ## ✅ 완료 (2026-07-21 세션 B) — UI 갭 발굴·복구 4건 (푸시됨 origin/master 766b63b)
 - **역디코드 기법 확립**: 깨진 한글 → (out/glyph_map char2idx) 글리프인덱스 → (glyph_table.tsv) 원문. 트레이스 없이 갭 내용 복원. 소스 바이트 재구성→ROM 검색으로 주소도 특정.
-- **트레이스 도구** `scripts/lua/trace_field_src.lua`: 파서$C1:9554/씬표$C6:9C57/디코더$C0:39D5 동시 후킹, 화면 P/S/D 카운터로 엔진 육안판별. **맵 NPC 갭에 재사용**.
+- **트레이스 도구** `scripts/lua/traces/trace_field_src.lua`: 파서$C1:9554/씬표$C6:9C57/디코더$C0:39D5 동시 후킹, 화면 P/S/D 카운터로 엔진 육안판별. **맵 NPC 갭에 재사용**.
 - **포메이션 안내** `$C1:CFAF`(파서, 포인터카탈로거 분기 미탐 고아) → dialogue.json id673 + pointer_map. 커밋 9bea57e.
 - **세팅 프리셋4+평가문3** `$C1:C501` 테이블 후미 7엔트리(앞 6개 머신명만 캡처됐던 것) → in-place 삽입. 커밋 fe971bf.
 - **옵션 부품 14종**(SJIS $C0:EE28~) + **SJIS 슬롯 0x86 확장(189→224)**: 리드바이트 0x86 도입(2차 변환블록 $C1:D7F3). **남은 대형 SJIS 작업 unblock**. 커밋 766b63b. ⚠️ **회귀 의심 1순위 단서 = docs/12 §"0x86 확장"·[[sjis-0x86-expansion-suspect]]**.
-- ⚠️ **결합 회귀 주의(재확인)**: 673 대사 추가/수정 시 어드벤처 글리프 할당 흔들려 긴 런↑ → **build_adv까지 돌려 긴 런 baseline 비교**, 회귀 시 글리프-중립 재작성(tasks/lessons.md). 현 ROM: 681 정적·1715 어드벤처·긴 런 0.
+- ⚠️ **결합 회귀 주의(재확인)**: 673 대사 추가/수정 시 어드벤처 글리프 할당 흔들려 긴 런↑ → **build_adv까지 돌려 긴 런 baseline 비교**, 회귀 시 글리프-중립 재작성(docs/worklogs/lessons.md). 현 ROM: 681 정적·1715 어드벤처·긴 런 0.
 
 ## 🟡 진행중 (2026-07-21 세션 C) — 월드맵 X메뉴·조작방법 라벨 (System ④ 규명 완료, 구현 대기)
 - **규명 완료·문서화 = docs/18**. 월드맵 X메뉴·조작방법 튜토리얼 라벨 = **네 번째 텍스트 경로 System ④**:
@@ -32,13 +32,13 @@
 - **렌더 방식 확정(사용자)** = docs/12 8pt 한글 재사용 + **$C0:1B4B에 0xFE 마커 훅**(SJIS $C1:965E 훅과 동형, KOR_ADD=0x220). ASM 설계 완료(docs/18).
 - **VRAM 예산 = 정확히 224**(현 SJIS UI 200 + 라벨 순증 24, 여유 0). 라벨 타이트 유지 필수. ⚠️ $CA(어드벤처)와 무관 → 어드벤처 회귀 없음(이건 $D9 풀).
 - **세팅 서브메뉴는 "이지/매뉴얼 세팅" 원문 유지**(사용자 지시).
-- **Codex RE 완료(collab)**: 호출부 10곳·calling convention 규명 = `tasks/menu4_caller_re.md`. base=A레지스터 전달(PEA로 포인터+base). C7 튜토리얼은 **6바이트 디스크립터**(op/addr-lo/hi/bank/overlay/base-hi) 워커 `$C3:8B04` 경유 = **length-prefixed 페이로드**(마커 OK). X메뉴는 **inline 프로그램**(`00 94`=탁점·`00 95`=반탁점·`00 01/02`=행·`00 00`=복귀 이스케이프 → 마커 충돌). **$CE:46xx=그래픽(라벨표 아님, 내 브리핑 주소 오류 정정), $C1:C6xx=패치대상 없음**.
+- **Codex RE 완료(collab)**: 호출부 10곳·calling convention 규명 = `docs/worklogs/menu4-caller-re.md`. base=A레지스터 전달(PEA로 포인터+base). C7 튜토리얼은 **6바이트 디스크립터**(op/addr-lo/hi/bank/overlay/base-hi) 워커 `$C3:8B04` 경유 = **length-prefixed 페이로드**(마커 OK). X메뉴는 **inline 프로그램**(`00 94`=탁점·`00 95`=반탁점·`00 01/02`=행·`00 00`=복귀 이스케이프 → 마커 충돌). **$CE:46xx=그래픽(라벨표 아님, 내 브리핑 주소 오류 정정), $C1:C6xx=패치대상 없음**.
 - **라벨 재인코딩 산출 = `assets/translations/menu4_labels.json`**(untracked; 생성기 `scripts/menu4_labels.py`). 48항목: **inplace 22·overflow 25·baseswap 1**. 순증 24음절(목차맵변경출동얼윈환택성능운내력종체톱회템작법용)=200+24=224(VRAM 상한). ⚠️ Codex 파일들이 `docs/17-menu-tile-font` 참조 → **커밋 시 docs/18로 고칠 것**.
-- **내 독립 검증(gate 재검)**: C7 length-prefixed **inplace 19개 = 디코드==kr·fit 통과 → Phase1 안전 대상**. ⚠️ **C3 X메뉴 inline 3개(세팅 $C3:95BE·조작방법 $C3:9208·용어집 $C3:9212)는 per-label mode 모순**(같은 프로그램에 마커+baseswap 혼재 불가; 세팅은 남은 탁점escape `0094` 위험) → **Phase2 그룹 재인코딩**으로. overflow 25는 마커 2B>원본 → **Phase3 재배치**(디스크립터 포인터 bytes1-3 리포인트, 포맷은 menu4_caller_re.md).
+- **내 독립 검증(gate 재검)**: C7 length-prefixed **inplace 19개 = 디코드==kr·fit 통과 → Phase1 안전 대상**. ⚠️ **C3 X메뉴 inline 3개(세팅 $C3:95BE·조작방법 $C3:9208·용어집 $C3:9212)는 per-label mode 모순**(같은 프로그램에 마커+baseswap 혼재 불가; 세팅은 남은 탁점escape `0094` 위험) → **Phase2 그룹 재인코딩**으로. overflow 25는 마커 2B>원본 → **Phase3 재배치**(디스크립터 포인터 bytes1-3 리포인트, 포맷은 menu4-caller-re.md).
 - **★ Phase 1 (새 세션 착수)**: `$C0:1B4B` **0xFE 마커 훅**(docs/18에 31B ASM 확정, `$C0:1B64`의 8바이트 `C9 FF 00 D0 03 A9 00 00`→`JML 훅+NOP`, 훅은 자유ROM $C1) — **asar로 어셈블 권장** + build_sjis 음절풀 24 확장(append) + **C7 clean 19라벨 in-place 패치** → ROM → **실기 검증**. ⚠️ **폰트로더 DMA 미검증**: 조작방법 화면이 docs/12 훅 로더($C0:6F93·$C1:1EFB·$C1:307F) 쓰는지 불명 → 라벨 빈칸/깨지면 그 화면 로더 추가훅(트레이스 `dump_menufont.lua` 맥 경로수정·과거산출 `tmp/trace/menu/`).
 - **Phase 2/3**: X메뉴 그룹 base-스왑 재인코딩(세팅/그리드변경/아이템·조작방법/용어집/지도, base $2100→$2320 + FF 블랭크 특례) / overflow 25 재배치. 반복은 Codex 분산.
 - **도구**: RE 애매하면 Ghidra 디컴파일 크로스체크 가능(ghidra-snes 확장 설치됨, docs/16 §도구선택원칙). ⚠️ `git stash`에 CRLF 아티팩트(build_patch 등) — **pop 금지**(Codex가 build_patch 수정한 최신본이 트리에 반영됨).
-- 참조: [[menu-small-font-subsystem]]·[[sjis-0x86-expansion-suspect]], docs/11·12·**18**, tasks/codex-brief-menu4.md·menu4_caller_re.md.
+- 참조: [[menu-small-font-subsystem]]·[[sjis-0x86-expansion-suspect]], docs/11·12·**18**, docs/worklogs/codex-brief-menu4.md·menu4-caller-re.md.
 
 ## 🔴 다음 최우선
 4. **광역 "월드맵/맵 NPC 대사"** (Task 4 잔여) — $C1 개러지 서브시스템 밖 **별도 표시경로**. 방법=맵에서 NPC 대화 화면 띄우고 `trace_field_src.lua` 무장 → P/S/D+소스주소 캡처 → 역디코드/오프라인 디코드 → 갭 열거·번역([[npc-field-dialogue-gap]]). 대량이면 Codex 분산.
@@ -57,7 +57,7 @@
 - ✅ **SJIS UI 한글화 완료**(메뉴·이름·머신·팀·행성·다이얼로그) + VRAM 로더 커버리지 + 글리프정렬.
 - ✅ **어드벤처 치명 크래시 임시안정화**: 리셋 3종(레벨업 0x69 등)·프리즈(0xB0) 해결 —
   단 **"일본어로 롤백"한 것**(cmd0x20 16 + desync 2 + 0xB0 = **19씬 원본유지**, 번역 미적용). 진짜 번역 아님.
-- ✅ 그래픽 추출도구(LZSS 23블롭 → `img_tile/extract/`), 크레딧·타이틀 로고 한글화.
+- ✅ 그래픽 추출도구(LZSS 23블롭 → `assets/graphics/title_credits/extract/`), 크레딧·타이틀 로고 한글화.
 - ⚠️ **`out/wgp2_kr.smc`는 디버깅 중 테스트 빌드로 덮여 있을 수 있음** → 새 세션 시작 시
   `python3 scripts/build_all.py`로 정식 재빌드(정상 CRC는 build_all 출력 확인).
 
@@ -113,8 +113,8 @@ Team Running Formation 메뉴 스프라이트 깨짐(BG 정상·OBJ만)이 **202
   `ScriptTimeout` 상향, `AutoStartScriptOnLoad=true`.
 - **⚠️ 세이브 스테이트는 파일명(`wgp2_kr.smc`)에 묶임** → 테스트 ROM도 반드시 `out/wgp2_kr.smc` 파일명 유지해야
   사용자 세이브 로드됨(다른 파일명이면 세이브 안 됨). 이게 프리즈 지점 빠른 재현의 핵심.
-- 트레이서: `scripts/lua/trace_scene_id.lua`(씬표 읽기 후킹→현재 씬 id, 프리즈 순간 범인 특정),
-  `scripts/lua/trace_garage_vram.lua`(VRAM DMA·khook2 exec·자동스샷).
+- 트레이서: `scripts/lua/traces/trace_scene_id.lua`(씬표 읽기 후킹→현재 씬 id, 프리즈 순간 범인 특정),
+  `scripts/lua/traces/trace_garage_vram.lua`(VRAM DMA·khook2 exec·자동스샷).
 - 빌드: `python3 scripts/build_all.py`(전체) / `scripts/test_roundtrip.py`(673 무손실) /
   `scripts/build_adv.py`(어드벤처만, `--rom`/`--out`/`--base`).
 - 커밋: CRLF 오염 파일(adventure.json·pointer_*·일부 스크립트) **명시적 git add 제외**, `git commit -a` 금지.

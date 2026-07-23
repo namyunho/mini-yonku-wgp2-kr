@@ -13,8 +13,8 @@ import json, sys, os
 
 ROM_IN  = "roms/Mini Yonku Let's & Go!! - Power WGP 2 (J) (NP).smc"
 ROM_OUT = "out/menu_test.smc"     # build_all.py가 이 diff를 통합 ROM에 병합
-BIN     = "8pt_font/font-007242d37349daf3.bin"
-GMAP    = "8pt_font/font-007242d37349daf3_glyph_map.json"
+BIN     = "assets/fonts/small/font-007242d37349daf3.bin"
+GMAP    = "assets/fonts/small/font-007242d37349daf3_glyph_map.json"
 CORPUS  = "assets/translations/sjis_ui.json"
 
 # --- 자유 ROM/VRAM 배치 (docs/12) ---

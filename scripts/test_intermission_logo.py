@@ -6,7 +6,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from build_ending_logo import (
+from build_intermission_logo import (
     DEFAULT_ROM,
     ROM_SIZE,
     TILE_CAPACITY,

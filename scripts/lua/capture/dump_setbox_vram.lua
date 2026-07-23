@@ -1,7 +1,7 @@
 -- dump_setbox_vram.lua : 수동 세팅 X메뉴가 뜬 순간의 VRAM 전체 덤프.
 --   목적(docs/20 §Claude 통합 계획 step1~2): 공유 타일256 페이지에서 파츠/옵션/팀/인물명이
 --   실제 쓰는 타일 오프셋을 실측 → X메뉴 한글 14음절용 "미사용 예약 슬롯" 안전 확보.
---   사용법(맥): Mesen out/wgp2_kr.smc scripts/lua/dump_setbox_vram.lua →
+--   사용법(맥): Mesen out/wgp2_kr.smc scripts/lua/capture/dump_setbox_vram.lua →
 --     개러지 수동 세팅 진입 → X로 팝업 메뉴 연 상태에서 **L 버튼(왼쪽 숄더)을 누르고 있기**.
 --     그 프레임의 VRAM 64KB가 tmp/trace/setbox_vram.bin 에 저장됨(누를 때마다 덮어씀).
 local OUT = "/Users/namyunho/Developer/mini-yonku-wgp2-kr/tmp/trace/setbox_vram.bin"

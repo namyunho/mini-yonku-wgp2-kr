@@ -23,8 +23,8 @@ from small_font_graphics import load_translation, pack_tight_2bpp_label
 
 ROM = "out/wgp2_kr.smc"   # build_all 산출물에 layering (없으면 원본에서)
 ROM_IN = "roms/Mini Yonku Let's & Go!! - Power WGP 2 (J) (NP).smc"
-BIN  = "8pt_font/font-007242d37349daf3.bin"
-GMAP = "8pt_font/font-007242d37349daf3_glyph_map.json"
+BIN  = "assets/fonts/small/font-007242d37349daf3.bin"
+GMAP = "assets/fonts/small/font-007242d37349daf3_glyph_map.json"
 EXTRA_TRANSLATIONS = "assets/translations/menu_extra_labels.json"
 
 def fo(bank, a): return ((bank & 0x3F) << 16) | (a & 0xFFFF)

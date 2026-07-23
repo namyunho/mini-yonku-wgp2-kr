@@ -35,7 +35,7 @@ from lzss import compress_optimal, decompress
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_ROM = ROOT / "out/wgp2_kr.smc"
-DEFAULT_APPROVED = ROOT / "assets/race_hud/race_hud_labels_workshop_approved.png"
+DEFAULT_APPROVED = ROOT / "assets/graphics/race_hud/race_hud_labels_workshop_approved.png"
 ROM_SIZE = 0x200000
 
 

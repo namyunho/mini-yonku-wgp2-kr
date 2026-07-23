@@ -114,8 +114,8 @@ def main():
     ch2idx_game = {}
     for i, c in tbl.items():
         ch2idx_game.setdefault(c, i)
-    binf = open('assets/fonts/x12y12pxMaruMinyaHangul_2350.bin', 'rb').read()
-    gm = json.load(open('assets/fonts/x12y12pxMaruMinyaHangul_glyphmap.json', encoding='utf-8'))
+    binf = open('assets/fonts/body/x12y12pxMaruMinyaHangul_2350.bin', 'rb').read()
+    gm = json.load(open('assets/fonts/body/x12y12pxMaruMinyaHangul_glyphmap.json', encoding='utf-8'))
     pmap = json.load(open('assets/translations/pointer_map.json', encoding='utf-8'))
 
     entries = {x['entry_id']: x for x in D['entries']}

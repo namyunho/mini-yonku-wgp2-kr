@@ -12,10 +12,10 @@ description: 월드맵 X버튼 메뉴 + 아이템·조작방법 서브메뉴 한
 - **파츠 화면에서 쓰던 "작은 폰트"를 활용해 번역**해달라(옵션부품 등 SJIS 8pt 계열일 가능성 — 먼저 규명).
 
 ## 먼저 할 일 (규명)
-1. **세션 시작 리딩**: `tasks/next-session.md`·`tasks/lessons.md`·`docs/12`(SJIS)·`docs/16`(RE MCP)·`assets/translation_guide/glossary.md`·메모리 전체(특히 [[sjis-0x86-expansion-suspect]]·[[npc-field-dialogue-gap]]).
+1. **세션 시작 리딩**: `docs/worklogs/2026-07-20-next-session.md`·`docs/worklogs/lessons.md`·`docs/12`(SJIS)·`docs/16`(RE MCP)·`assets/translation_guide/glossary.md`·메모리 전체(특히 [[sjis-0x86-expansion-suspect]]·[[npc-field-dialogue-gap]]).
 2. **렌더/폰트 경로 규명**: 월드맵에서 X버튼 메뉴가 **어느 폰트·어느 렌더 시스템**을 타는지 확정.
    - 후보: ① SJIS(System②, $D9 8pt, `build_sjis`/`sjis_ui.json`) — 파츠 옵션부품과 같은 경로면 가장 쉬움 ② 압축글리프(System①, $CA) ③ 별도 소형 타일 폰트.
-   - 도구: `scripts/lua/trace_field_src.lua`(파서/씬표/디코더 동시 후킹, 화면 P/S/D 카운터) + 필요시 그래픽/VRAM 트레이스. **역디코드 기법**(깨진 한글→글리프인덱스→원문)도 활용.
+   - 도구: `scripts/lua/traces/trace_field_src.lua`(파서/씬표/디코더 동시 후킹, 화면 P/S/D 카운터) + 필요시 그래픽/VRAM 트레이스. **역디코드 기법**(깨진 한글→글리프인덱스→원문)도 활용.
    - "파츠에서 썼던 작은 폰트"가 무엇인지 특정(예: SJIS $D9 8pt면 `sjis_ui.json` 티어 추가로 해결).
 3. **번역·재삽입**: 규명된 시스템의 파이프라인으로. SJIS면 `sjis_ui.json` 티어 추가(전각 표기·전각공백·슬롯/용량 확인 — 0x86 확장 반영됨, VRAM 224 상한 유의). 압축글리프면 `dialogue.json`+포인터.
 
@@ -55,7 +55,7 @@ description: 월드맵 X버튼 메뉴 + 아이템·조작방법 서브메뉴 한
 - せんたく / けってい / キャンセル
 
 ## 검증·마감 (프로젝트 게이트)
-- 빌드 후 **round-trip**(`test_roundtrip.py`) + **어드벤처 위치보존/긴 런 baseline 비교**(673/SJIS 변경이 $CA 공유 글리프 할당 흔들면 회귀 — `build_adv` 긴 런 확인, 회귀 시 글리프-중립 재작성. tasks/lessons.md).
+- 빌드 후 **round-trip**(`test_roundtrip.py`) + **어드벤처 위치보존/긴 런 baseline 비교**(673/SJIS 변경이 $CA 공유 글리프 할당 흔들면 회귀 — `build_adv` 긴 런 확인, 회귀 시 글리프-중립 재작성. docs/worklogs/lessons.md).
 - SJIS 변경이면 **`build_all` 충돌가드 0**·음절 VRAM 224 이내 확인. 0x86 확장 회귀 단서 = docs/12.
 - **실기 검증 게이트 필수**(월드맵 X메뉴·조작방법 화면에서 한글 렌더 확인) — 통과 전 커밋 금지.
 - 커밋 시: **README·glossary·docs 갱신**, **CRLF 오염 파일 명시적 제외**(adventure_poc.json·pointer_catalog.json 등 사전 M 파일 add 금지), 푸시는 사용자 요청 시.

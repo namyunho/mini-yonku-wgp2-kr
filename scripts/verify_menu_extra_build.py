@@ -28,8 +28,8 @@ from small_font_graphics import load_translation, pack_tight_2bpp_label  # noqa:
 ORIGINAL = ROOT / "roms/Mini Yonku Let's & Go!! - Power WGP 2 (J) (NP).smc"
 BUILT = ROOT / "out/wgp2_kr.smc"
 TRANSLATIONS = ROOT / "assets/translations/menu_extra_labels.json"
-FONT_BIN = ROOT / "8pt_font/font-007242d37349daf3.bin"
-FONT_MAP = ROOT / "8pt_font/font-007242d37349daf3_glyph_map.json"
+FONT_BIN = ROOT / "assets/fonts/small/font-007242d37349daf3.bin"
+FONT_MAP = ROOT / "assets/fonts/small/font-007242d37349daf3_glyph_map.json"
 MANUAL_SETBOX_RELOC = (0xC1, 0xD900)
 MANUAL_ALLOWED_TILES = set(range(0xC0, 0xD8)) | set(range(0x140, 0x160))
 

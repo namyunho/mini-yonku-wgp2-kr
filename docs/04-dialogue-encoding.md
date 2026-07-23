@@ -113,8 +113,8 @@ $C3:789E  TAY / BNE       ; 반환 1이면 다음 글리프 루프
 ## 재현 (도구)
 
 - **디스어셈블러**: `scripts/disasm.py <rom> <file_off> <count> [--m 0|1] [--x 0|1]` — 최소 65816 선형 디스어셈블(M/X 추적). 파서 `python scripts/disasm.py <rom> 0x019554 0xE0 --m 0 --x 0`.
-- **스크립트 위치 트레이스**: `scripts/lua/script_trace.lua` — 뱅크 $C7 CPU버스 읽기 후킹 → 스크립트 addr·바이트를 소비 순서로 덤프(`tmp/trace/script_trace.txt`).
-- **호출자 트레이스**: `scripts/lua/parser_caller.lua` — 파서 진입 후킹, 복귀주소·Y·DBR·counter 포착(`tmp/trace/parser_caller.txt`).
+- **스크립트 위치 트레이스**: `scripts/lua/traces/script_trace.lua` — 뱅크 $C7 CPU버스 읽기 후킹 → 스크립트 addr·바이트를 소비 순서로 덤프(`tmp/trace/script_trace.txt`).
+- **호출자 트레이스**: `scripts/lua/traces/parser_caller.lua` — 파서 진입 후킹, 복귀주소·Y·DBR·counter 포착(`tmp/trace/parser_caller.txt`).
 - **디코더**: `scripts/decode_script.py` — 위 인코딩 모델 구현. `--tbl glyph_index<TAB>char`로 문자 표 적용. 라운드트립 인코더는 재삽입 단계에서 추가.
 - Mesen2 실행: `Mesen.exe "<rom>" "<script.lua>"` (설정 `AllowIoOsAccess=true`, `ScriptTimeout` 상향 — 반영됨). Start 펄스로 타이틀→모드선택→레이스 진행 후 frame~1087에 대사 렌더.
 

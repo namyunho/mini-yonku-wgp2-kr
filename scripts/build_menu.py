@@ -17,8 +17,8 @@ import json, sys, os
 
 ROM_IN = "roms/Mini Yonku Let's & Go!! - Power WGP 2 (J) (NP).smc"
 ROM_OUT = "out/menu_test.smc"
-BIN = "8pt_font/font-007242d37349daf3.bin"
-GMAP = "8pt_font/font-007242d37349daf3_glyph_map.json"
+BIN = "assets/fonts/small/font-007242d37349daf3.bin"
+GMAP = "assets/fonts/small/font-007242d37349daf3_glyph_map.json"
 
 # --- 자유 ROM/VRAM 배치 상수 ---
 HOOK_RENDER = 0x9843      # $C1:9843 렌더러 훅 루틴

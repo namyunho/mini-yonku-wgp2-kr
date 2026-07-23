@@ -1,8 +1,8 @@
 {
   "context": "VICTORYS 에피소드 인터미션 장면 하단 로고",
   "trace": {
-    "script": "scripts/lua/trace_ending_logo.lua",
-    "run": "tmp/ending_logo_trace/run_20260723_031802",
+    "script": "scripts/lua/traces/trace_intermission_logo.lua",
+    "run": "tmp/intermission_logo_trace/run_20260723_031802",
     "screen": "wgp2_kr_011.png",
     "verified_frame": 50371,
     "layer": "BG1",
@@ -18,7 +18,7 @@
     "abbreviated": false
   },
   "approved_image": {
-    "path": "assets/ending_logo/ending_logo_workshop_approved.bmp",
+    "path": "assets/graphics/intermission_logo/intermission_logo_workshop_approved.bmp",
     "sha256": "82c258648c7e2bc56fe01327ec4ce9a4586148ff3ba4c183e6f42740756663b3",
     "background_rgb": [74, 107, 255]
   },

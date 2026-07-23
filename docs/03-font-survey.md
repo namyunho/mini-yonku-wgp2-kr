@@ -43,7 +43,7 @@ Mesen2 Lua 동적 트레이싱으로 **본문(레이스/스토리 대사) 폰트
 
 ## 재현 (도구)
 
-- **동적 트레이스**: `scripts/lua/dma_trace.lua`(모든 GP-DMA 로깅), `scripts/lua/render_trace.lua`(라인버퍼 쓰기 PC·레지스터 집계), `scripts/lua/dump_mem.lua`(WRAM/VRAM/CGRAM 덤프). Mesen2 실행: `Mesen.exe "<rom>" "<script.lua>"` (설정 `AllowIoOsAccess=true`, `ScriptTimeout=30` 필요 — 반영 완료). 스크립트가 Start 펄스로 타이틀→모드선택→레이스까지 진행 후 frame 1200에 산출.
+- **동적 트레이스**: `scripts/lua/traces/dma_trace.lua`(모든 GP-DMA 로깅), `scripts/lua/traces/render_trace.lua`(라인버퍼 쓰기 PC·레지스터 집계), `scripts/lua/capture/dump_mem.lua`(WRAM/VRAM/CGRAM 덤프). Mesen2 실행: `Mesen.exe "<rom>" "<script.lua>"` (설정 `AllowIoOsAccess=true`, `ScriptTimeout=30` 필요 — 반영 완료). 스크립트가 Start 펄스로 타이틀→모드선택→레이스까지 진행 후 frame 1200에 산출.
 - **폰트 렌더(정본 디코드)**: `scripts/render_font.py` — `off(n)=0x0A1137+16*((n&~7)*2+(n&7))`, 16B 인터리브 2bpp. 산출: `tmp/trace/img/font_full_*.png`(카나·라틴·한자 육안 확인 완료).
 - 기존 `render-tiles`(선형 인터리브)는 base03 비선형 배열 때문에 이 폰트를 **선형으로 렌더하면 스크램블**된다 — 폰트 렌더엔 base03 매핑을 쓴 `render_font.py`를 사용.
 

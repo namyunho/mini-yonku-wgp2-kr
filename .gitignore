@@ -10,7 +10,7 @@ out/
 *.smc
 *.gen
 *.bin
-!8pt_font/*.bin
+!assets/fonts/small/*.bin
 *.gg
 *.pce
 *.sms
@@ -51,8 +51,10 @@ _codex_workspace/
 .codex/
 
 # ROM에서 재생성 가능한 그래픽 덤프·로컬 참고 캡처
-img_tile/extract/
-img_tile/*.png
+assets/graphics/title_credits/extract/
+assets/graphics/title_credits/*.png
+!assets/graphics/title_credits/credit.png
+!assets/graphics/title_credits/credit_logo.png
 
 # Python 캐시
 __pycache__/

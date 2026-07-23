@@ -6,10 +6,13 @@
 
 | 파일 | 내용 | 용도 |
 |------|------|------|
-| `x12y12pxMaruMinyaHangul_2350.bin` | **KS X 1001 완성형 한글 2350자, 16×16 1bpp, 32B/글리프** 사전 렌더 | **주력 주입 소스** — 게임 폰트 포맷과 동일 |
-| `x12y12pxMaruMinyaHangul_glyphmap.json` | 문자→인덱스 맵 `{"가":0,"각":1,…}` (유니코드/KS 순, 2350 엔트리) | `.bin` 글리프 색인 |
-| `x12y12pxMaruMinyaHangul_preview.png` | 폰트 프리뷰(480×360) | 육안 확인 |
-| `x12y12pxMaruMinyaHangul.ttf` | 원본 아웃라인 TTF | fontdue 래스터화(대안), 신규 글자 생성 |
+| `body/x12y12pxMaruMinyaHangul_2350.bin` | **KS X 1001 완성형 한글 2350자, 16×16 1bpp, 32B/글리프** 사전 렌더 | **주력 본문 주입 소스** — 로컬 배치, gitignore |
+| `body/x12y12pxMaruMinyaHangul_glyphmap.json` | 문자→인덱스 맵 `{"가":0,"각":1,…}` (유니코드/KS 순, 2350 엔트리) | 본문 `.bin` 글리프 색인 |
+| `body/x12y12pxMaruMinyaHangul_preview.png` | 본문 폰트 프리뷰(480×360) | 육안 확인 |
+| `body/x12y12pxMaruMinyaHangul.ttf` | 원본 아웃라인 TTF | fontdue 래스터화(대안), 신규 글자 생성 |
+| `small/font-007242d37349daf3.bin` | 8×8 1bpp 소형 한글 글리프 | 메뉴·엔딩 전용 글꼴 생성 |
+| `small/font-007242d37349daf3_glyph_map.json` | 소형 글꼴 문자→인덱스 맵 | 메뉴·엔딩 인코딩 |
+| `small/font-007242d37349daf3.ttf` | 소형 글꼴 원본 TTF | 소형 글리프 재생성 |
 
 ### `.bin` 포맷 (실측 확정)
 
@@ -19,7 +22,9 @@
 - **세로 정렬 필수**: 이 `.bin`은 전 2350자가 **일률적으로 잉크 행 2~12**(상단 2px 여백)다. 게임 원본 규약은 상단 정렬(잉크 행 0~10, 하단 ~5px=줄간격). 그대로 주입하면 하단 ~2px가 줄간격 영역으로 밀려 화면에서 잘린다 → 주입 시 **`--binyshift -2`**(2px 위로)로 행0~10에 맞춘다.
 - 인덱스↔문자는 `_glyphmap.json`으로 얻는다(예: '골' → `map["골"]`=80 → `bin[80*32:]`).
 
-> 다음 세션 작업 예정: `poc-font`에 `--bin/--glyphmap` 입력 모드를 추가해 TTF 대신 이 사전 렌더 세트를 쓰도록. 상세는 `docs/05-poc-hangul-font.md`.
+현재 통합 빌드는 본문 사전 렌더와 소형 글꼴을 각 소비 경로에 직접 연결한다. 구현 상세는
+`docs/03-font-survey.md`, `docs/05-poc-hangul-font.md`, `docs/11-sjis-menu.md`,
+`docs/18-menu-tile-font-labels.md`, `docs/24-ending-credits-analysis.md`를 따른다.
 
 ## 폰트: x12y12pxMaruMinyaHangul
 
@@ -38,5 +43,6 @@
 
 ## OFL 준수 / 커밋 정책
 
-- 재배포(패치 동봉) 시 OFL 전문(`OFL.txt`)과 위 저작권 고지를 함께 포함하고, 예약 폰트명(Reserved Font Name)을 변형본에 그대로 쓰지 않는다. ROM에 글리프 임베드는 OFL 허용 범위(문서/소프트웨어 임베딩). 배포 패키지 작성 시 `OFL.txt`를 이 디렉토리에 추가할 것(현재 미포함 — 출처에서 취득).
-- OFL 자산이라 저장소 커밋 가능(원본 ROM과 달리 저작 제약 없음). `.gitignore`는 폰트를 제외하지 않는다(의도적). 커밋하지 않을 경우 위 출처에서 재취득.
+- 재배포(패치 동봉) 시 OFL 전문(`OFL.txt`)과 위 저작권 고지를 함께 포함하고, 예약 폰트명(Reserved Font Name)을 변형본에 그대로 쓰지 않는다. ROM에 글리프 임베드는 OFL 허용 범위(문서/소프트웨어 임베딩).
+- OFL TTF·맵·프리뷰와 소형 글꼴 자산은 커밋한다. 용량이 큰
+  `body/x12y12pxMaruMinyaHangul_2350.bin`만 로컬 빌드 입력으로 두며 `.gitignore`로 제외한다.

@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "ssot": "tasks/codex-brief-menu4.md",
+    "ssot": "docs/worklogs/codex-brief-menu4.md",
     "rom": "roms/re_codex.smc",
     "format": "addr identifies the first byte of the exact contiguous orig_span_hex patch span",
     "existing_syllable_count": 200,

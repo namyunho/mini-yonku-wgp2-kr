@@ -29,11 +29,11 @@ from lzss import decompress  # noqa: E402
 
 ORIGINAL_ROM = ROOT / "roms/Mini Yonku Let's & Go!! - Power WGP 2 (J) (NP).smc"
 CORPUS = ROOT / "assets/translations/race_hud_labels.json"
-FONT_BIN = ROOT / "8pt_font/font-007242d37349daf3.bin"
-FONT_MAP = ROOT / "8pt_font/font-007242d37349daf3_glyph_map.json"
-DEFAULT_TEMPLATE = ROOT / "assets/race_hud/race_hud_labels_workshop_256px.png"
-DEFAULT_GUIDE = ROOT / "assets/race_hud/race_hud_labels_translation.tsv"
-DEFAULT_CROPS = ROOT / "assets/race_hud/crops"
+FONT_BIN = ROOT / "assets/fonts/small/font-007242d37349daf3.bin"
+FONT_MAP = ROOT / "assets/fonts/small/font-007242d37349daf3_glyph_map.json"
+DEFAULT_TEMPLATE = ROOT / "assets/graphics/race_hud/race_hud_labels_workshop_256px.png"
+DEFAULT_GUIDE = ROOT / "assets/graphics/race_hud/race_hud_labels_translation.tsv"
+DEFAULT_CROPS = ROOT / "assets/graphics/race_hud/crops"
 DEFAULT_ART = ROOT / "out/race_hud_labels_2bpp.bin"
 DEFAULT_MANIFEST = ROOT / "out/race_hud_labels_manifest.json"
 

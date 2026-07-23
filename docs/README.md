@@ -45,8 +45,8 @@
 - [`12-sjis-ui-hangul.md`](12-sjis-ui-hangul.md) — SJIS UI 전체.
 - [`17-stage-title-localization.md`](17-stage-title-localization.md) — 세이브 제목과 챕터 인트로.
 - [`18-menu-tile-font-labels.md`](18-menu-tile-font-labels.md) — 소형 직접타일 메뉴. 앞부분의 마커 훅은 폐기된 설계이며 후반의 문맥별 글꼴 재압축이 현재 구현이다.
-- [`19-menu4-context-font.md`](19-menu4-context-font.md) — 하위 브랜치에서 처음 문맥 글꼴을 안정화한 역사 기록.
-- [`20-manual-setting-xmenu-handoff.md`](20-manual-setting-xmenu-handoff.md) — 수동 세팅 공유 글꼴 실패 실험·초기 인계 기록.
+- [`history/menu4-context-font.md`](history/menu4-context-font.md) — 하위 브랜치에서 처음 문맥 글꼴을 안정화한 역사 기록.
+- [`history/manual-setting-xmenu-handoff.md`](history/manual-setting-xmenu-handoff.md) — 수동 세팅 공유 글꼴 실패 실험·초기 인계 기록.
 - [`24-ending-credits-analysis.md`](24-ending-credits-analysis.md) — 실제 엔딩 크레딧·베스트타임·현지화 메시지.
 
 ### 월드맵·필드·검수 산출물
@@ -72,3 +72,11 @@
 
 새로운 수치나 번역은 기계 판독 가능한 `assets/translations/`에 먼저 반영하고, 자동 생성 문서는
 생성 스크립트로 갱신한다. 역사 문서의 과거 수치를 현재 수치로 소급 변경하지 않는다.
+
+## 보존 기록 디렉터리
+
+- [`history/`](history/README.md) — 현재 빌드가 더 이상 사용하지 않는 설계와 병합 전 구현 기록.
+- [`worklogs/`](worklogs/README.md) — 특정 시점의 작업 지시, 세션 인계, 시행착오 원장.
+
+두 디렉터리의 문서는 당시 판단을 재현하기 위한 자료다. 현재 상태와 충돌하면 이 문서 지도,
+루트 `README.md`, `CLAUDE.md`, 그리고 기계 판독 가능한 `assets/translations/`를 우선한다.

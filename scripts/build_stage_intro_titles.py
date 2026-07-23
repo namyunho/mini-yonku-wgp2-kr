@@ -31,7 +31,7 @@ from lzss import compress, decompress  # noqa: E402
 
 ORIGINAL_ROM = ROOT / "roms/Mini Yonku Let's & Go!! - Power WGP 2 (J) (NP).smc"
 DEFAULT_ROM = ROOT / "out/wgp2_kr.smc"
-DEFAULT_WORKSHOP = ROOT / "assets/stage_titles/stage_titles_workshop_approved.png"
+DEFAULT_WORKSHOP = ROOT / "assets/graphics/stage_titles/stage_titles_workshop_approved.png"
 DEFAULT_MANIFEST = ROOT / "out/stage_intro_titles_manifest.json"
 
 ROM_SIZE = 0x200000

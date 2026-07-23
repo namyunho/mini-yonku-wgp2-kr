@@ -1,4 +1,4 @@
--- trace_ending_logo.lua
+-- trace_intermission_logo.lua
 --
 -- 엔딩 VICTORYS 장면 하단의 일본어 WGP2 로고 소스를 찾는다.
 -- 사용법:
@@ -14,10 +14,10 @@
 --   * 목표 BG1 상태의 VRAM/WRAM/CGRAM/OAM/스크린샷
 --
 -- 산출:
---   tmp/ending_logo_trace/LATEST.txt
---   tmp/ending_logo_trace/run_YYYYMMDD_HHMMSS/
+--   tmp/intermission_logo_trace/LATEST.txt
+--   tmp/intermission_logo_trace/run_YYYYMMDD_HHMMSS/
 
-local TRACE_ROOT = "/Users/namyunho/Developer/mini-yonku-wgp2-kr/tmp/ending_logo_trace/"
+local TRACE_ROOT = "/Users/namyunho/Developer/mini-yonku-wgp2-kr/tmp/intermission_logo_trace/"
 local RUN_ID = os.date("%Y%m%d_%H%M%S")
 local ROOT = TRACE_ROOT .. "run_" .. RUN_ID .. "/"
 os.execute('mkdir -p "' .. ROOT .. '"')

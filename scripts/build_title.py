@@ -3,9 +3,9 @@
 
 타이틀 = 겹친 BG 레이어. 번역 대상 2개(공통 하늘색 74,107,255 = 투명):
  - logo   : BG1(4bpp), chr=main_0000 블롭, 타일맵 word0x5000(byte0xA000, doubleH 32×64).
-            img_tile/credit_logo.png(원본) vs credit_logo.bmp(번역) 셀 diff → 바뀐 타일만 기록.
+            assets/graphics/title_credits/credit_logo.png(원본) vs credit_logo.bmp(번역) 셀 diff → 바뀐 타일만 기록.
  - credit : BG3(2bpp), chr=vram_4000 블롭, 타일맵 word0x5C00(byte0xB800, 32×32).
-            img_tile/credit.png vs credit.bmp.
+            assets/graphics/title_credits/credit.png vs credit.bmp.
 BG chr base=DMA dest → blob 타일인덱스 = 타일맵 tileno. 셀 flip(hf/vf)은 언플립해 기록.
 변경셀만 해당 타일 재작성(미변경 타일·arch·구름 유지). 타일 재사용 충돌 검출.
 → 이후 build_gfx.py 재압축 in-place(초과 시 재배치 필요 경고).
@@ -21,9 +21,9 @@ CG = 'tmp/trace/live/cgram.bin'
 
 ASSETS = {
     'logo':   dict(blob='main_0000', bpp=4, tm=0xA000, cols=32, rows=64, doubleH=True,
-                   orig='img_tile/credit_logo.png', kr='img_tile/credit_logo.bmp'),
+                   orig='assets/graphics/title_credits/credit_logo.png', kr='assets/graphics/title_credits/credit_logo.bmp'),
     'credit': dict(blob='vram_4000', bpp=2, tm=0xB800, cols=32, rows=32, doubleH=False,
-                   orig='img_tile/credit.png', kr='img_tile/credit.bmp'),
+                   orig='assets/graphics/title_credits/credit.png', kr='assets/graphics/title_credits/credit.bmp'),
 }
 
 def load_pal(cg, bpp):

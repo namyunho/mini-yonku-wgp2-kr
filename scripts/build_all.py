@@ -23,7 +23,7 @@
 16. build_stage_intro_titles.py 챕터 시작 인트로 승인 2bpp 제목 10개
 17. build_manual_workshops.py 포메이션(BG·선택 OBJ)·능력치·개러지 승인 작업본
 18. build_race_hud_labels.py 경기 HUD DAMAGE·BOOST 승인 2bpp 작업본
-19. build_ending_logo.py VICTORYS 인터미션 하단 승인 4bpp 로고
+19. build_intermission_logo.py VICTORYS 인터미션 하단 승인 4bpp 로고
 20. build_ending_credits.py 실제 최종 엔딩 크레딧·베스트타임 전용 2bpp 한글
 21. verify_menu_extra_build.py 추가 소형 메뉴 3종 최종 ROM 무결성 검증
 22. verify_field_build.py 최종 병합 뒤 필드 원본·목적지·포인터 무결성 재검증
@@ -123,12 +123,12 @@ def main():
     snapshot("13-pause-menu")
     run([
         "scripts/build_result_courses.py",
-        "--workshop-png", "assets/result_courses/result_courses_workshop_approved.png",
+        "--workshop-png", "assets/graphics/result/courses/result_courses_workshop_approved.png",
     ])                                                                 # 14 Result/Best 경기장명 → OUT
     snapshot("14-result-courses")
     run([
         "scripts/build_result_names.py",
-        "--workshop-png", "assets/result_names/result_names_workshop_approved.png",
+        "--workshop-png", "assets/graphics/result/names/result_names_workshop_approved.png",
     ])                                                                 # 15 Result 선수명 → OUT
     snapshot("15-result-names")
     run(["scripts/build_stage_intro_titles.py"])                      # 16 챕터 인트로 승인 제목
@@ -137,14 +137,14 @@ def main():
     snapshot("17-manual-workshops")
     run(["scripts/build_race_hud_labels.py"])                         # 18 경기 HUD 승인 라벨
     snapshot("18-race-hud-labels")
-    run(["scripts/build_ending_logo.py"])                            # 19 VICTORYS 인터미션 승인 로고
+    run(["scripts/build_intermission_logo.py"])                            # 19 VICTORYS 인터미션 승인 로고
     snapshot("19-ending-logo")
     run(["scripts/build_ending_credits.py"])                         # 20 실제 최종 엔딩 크레딧
     snapshot("20-ending-credits")
     run(["scripts/test_result_names.py"])                              # 최종 Result 선수명·범위표·타일 공유 검증
     run(["scripts/test_stage_intro_titles.py"])                       # 최종 인트로 10개·보존 타일 검증
     run(["scripts/test_race_hud_labels.py"])                           # 최종 경기 HUD 라벨 7 + 윗행 4타일 검증
-    run(["scripts/test_ending_logo.py"])                              # 최종 인터미션 로고·로더·LZSS 검증
+    run(["scripts/test_intermission_logo.py"])                              # 최종 인터미션 로고·로더·LZSS 검증
     run(["scripts/test_ending_credits.py"])                           # 최종 엔딩 45행·폰트·숫자 필드 검증
     run(["scripts/test_glossary_layout.py"])                           # 용어집 치이코 소개 개행·최종 ROM 검증
     run(["scripts/test_worldmap_quiz.py"])                             # 퀴즈 70문항·고정 UI·정답·실측 폭

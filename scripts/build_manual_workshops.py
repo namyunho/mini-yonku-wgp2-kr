@@ -35,9 +35,9 @@ from lzss import compress, decompress  # noqa: E402
 
 ORIGINAL_ROM = ROOT / "roms/Mini Yonku Let's & Go!! - Power WGP 2 (J) (NP).smc"
 DEFAULT_ROM = ROOT / "out/wgp2_kr.smc"
-FORMATION_WORKSHOP = ROOT / "assets/formation_tiles/formation_labels_workshop_approved.png"
-STATS_WORKSHOP = ROOT / "assets/machine_stats/machine_stats_workshop_approved.png"
-GARAGE_WORKSHOP = ROOT / "assets/garage_categories/garage_categories_workshop_approved.png"
+FORMATION_WORKSHOP = ROOT / "assets/graphics/formation/formation_labels_workshop_approved.png"
+STATS_WORKSHOP = ROOT / "assets/graphics/machine_stats/machine_stats_workshop_approved.png"
+GARAGE_WORKSHOP = ROOT / "assets/graphics/garage/garage_categories_workshop_approved.png"
 DEFAULT_MANIFEST = ROOT / "out/manual_workshops_manifest.json"
 
 ROM_SIZE = 0x200000

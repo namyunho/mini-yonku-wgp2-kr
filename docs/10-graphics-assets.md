@@ -8,7 +8,7 @@
 ## 판별: 텍스트 아님 = 그래픽
 오프닝 크레딧(`©1998 Nintendo・JUPITER CORP.` / `©こしたてつひろ・小学館・テレビ東京` / `©タミヤ` / `ミニ四駆は、田宮模型の登録商標です。`)의 문자열을 ROM에서 SJIS·ASCII로 검색 → **0건**(심지어 "1998","Nintendo"도 없음). → **그래픽(2bpp 타일)로 렌더**되는 화면 확정.
 
-## 압축 여부 (DMA 트레이스 `scripts/lua/dma_trace.lua`)
+## 압축 여부 (DMA 트레이스 `scripts/lua/traces/dma_trace.lua`)
 | 에셋 | 소스 | 압축? | 편집 |
 |---|---|---|---|
 | 인트로·크레딧 타일 (vmadd $0000/$3000/$4000/$7000, tilemap $5C00) | **WRAM $7F:1000 / $7E:6000** | **압축**(ROM→해제→WRAM→DMA) | 해제→편집→재압축 필요 |
@@ -17,7 +17,7 @@
 → 압축 에셋은 **디컴프레서·코덱 역공학** 후에야 편집 가능. 비압축 에셋은 ROM 오프셋만 알면 바로 편집.
 
 ## VRAM 덤프·렌더 (확인용)
-- `scripts/lua/trace_credits.lua` : 크레딧 화면(부팅 ~f420)에서 VRAM(64KB)·CGRAM·PPU 레지스터·스크린샷 덤프 → `tmp/trace/credits/`.
+- `scripts/lua/traces/trace_credits.lua` : 크레딧 화면(부팅 ~f420)에서 VRAM(64KB)·CGRAM·PPU 레지스터·스크린샷 덤프 → `tmp/trace/credits/`.
 - `scripts/render_credits.py` : BG 레이어별 PNG 렌더(BG mode1: BG1/2=4bpp, BG3=2bpp).
 - 전체 VRAM 타일시트(2bpp/4bpp, 이진) 렌더로 글리프 위치 확인 가능. 크레딧 글자 = **2bpp 타일**(팔레트 pal0: 색1=흰색 텍스트).
 - CGRAM: pal0 = [검정, 흰(248), 회(136), 암(32)] — 텍스트는 색1(흰).
@@ -90,7 +90,7 @@
 - 각 줄 첫 스프라이트(타일 0x15F=블롭 95)=공유 「©」 기호(한글화 시 유지).
 
 ### ✅ 한글화 워크플로 (`scripts/build_credit_kr.py`, 실기 검증)
-1. **목표 이미지 `img_tile/screen.bmp`**(256×224, 사용자가 게임 정확 팔레트로 한글 크레딧 디자인: 검정0·흰255·진회57).
+1. **목표 이미지 `assets/graphics/title_credits/screen.bmp`**(256×224, 사용자가 게임 정확 팔레트로 한글 크레딧 디자인: 검정0·흰255·진회57).
 2. `build_credit_kr.py`: OAM 파싱 → **전 줄(Y=39/55/71/183)** 각 스프라이트 위치의 screen.bmp 16×16을 4bpp(0/1/3, 검정→투명 인덱스0)로 변환 → `vram_7000.bin` 해당 타일블록에 기록(© 타일 95만 유지). 산출 `tmp/gfx_edit/vram_7000.bin`(해제길이 불변) + 프리뷰 `tmp/gfx_edit/credit_preview.png`. `--dry`=ROM 미기록.
    - ⚠️ **1줄(영어)도 반드시 screen.bmp에서 베이킹**: 1줄 원본 유지 시 영어 글자 맨 아랫줄 픽셀(y=53,54)이 2줄 위에 **잉여 점**으로 남아 깨져 보임(사용자 발견). 전 줄을 screen.bmp로 베이킹하면 검정=투명으로 전체 정합.
 3. `python scripts/build_gfx.py --rom out/wgp2_kr.smc --out out/wgp2_kr.smc` → LZSS 재압축(2844/2851B) in-place·역검증.
@@ -121,7 +121,7 @@ python scripts/build_gfx.py --rom out/wgp2_kr.smc --out out/wgp2_kr.smc
 **에셋 레지스트리**(`ASSETS`): 블롭·bpp·팔레트·셀유도(`cells_from`)·keep_tiles·black_transparent. 현재 `credit`(OAM 스프라이트 셀). 신규 에셋은 셀유도 방식 추가(BG는 tilemap 기반 — BG 타일은 겹침없어 screen 모드 무손실).
 
 ## ✅ 타이틀 화면(PUSH START) — 코덱 RE 완료 (2026-07-15)
-타이틀 = 겹친 BG 레이어(라이브 덤프 frame3428, bgMode1). 번역대상 2개(공통 **하늘색 74,107,255=투명**, 사용자 제공 `img_tile/`):
+타이틀 = 겹친 BG 레이어(라이브 덤프 frame3428, bgMode1). 번역대상 2개(공통 **하늘색 74,107,255=투명**, 사용자 제공 `assets/graphics/title_credits/`):
 - **BG1(4bpp)** = 로고 「미니사구 렛츠&고 WGP2」+Nintendo아치. `credit_logo.png`(원본)/`credit_logo.bmp`(번역).
 - **BG3(2bpp)** = PUSH START(영어유지)+하단 크레딧줄. `credit.png`/`credit.bmp`.
 - BG2=구름·스프라이트96=TRF캐릭터: 번역 불필요.
@@ -178,7 +178,7 @@ python scripts/build_gfx.py --rom out/wgp2_kr.smc --out out/wgp2_kr.smc
 - 사용자가 승인한 아돌프 그림은 40px 안에 들어가므로 아돌프의 범위표만
   `$0080-$0084`로 줄였다. 이에 따라 아돌프는 물리 타일 `$0090-$0094`,
   FOX1은 `$008F/$00A0-$00A4`를 사용하며 공유 타일이 0개가 된다.
-- 정본 이미지는 `assets/result_names/result_names_workshop_approved.png`,
+- 정본 이미지는 `assets/graphics/result/names/result_names_workshop_approved.png`,
   번역·범위 정본은 `assets/translations/result_names.json`이다.
   `scripts/build_result_names.py`는 원본 범위표를 엄격히 확인한 뒤 승인된
   ID 16 변경만 적용한다.
@@ -199,25 +199,25 @@ python scripts/build_gfx.py --rom out/wgp2_kr.smc --out out/wgp2_kr.smc
 - 대상은 달리는 캐릭터 아래의 「ミニ四駆 レッツ&ゴー!! POWER WGP2」 로고다.
   **PUSH START 타이틀의 BG1 로고와는 별개의 자원·로더**이며, 타이틀 자원
   `$C3:0E2F/$C7:5BF8`은 변경하지 않는다.
-- `scripts/lua/trace_ending_logo.lua`의 frame 50371 실측에서 BG1 chr VRAM word
+- `scripts/lua/traces/trace_intermission_logo.lua`의 frame 50371 실측에서 BG1 chr VRAM word
   `$0000`, tilemap word `$7000`, 32×32, 4bpp를 확인했다. DMA 직전 LZSS 소스와
   VRAM 덤프는 각각 3072/3072B, 2048/2048B 완전 일치한다.
 - 원본 chr는 `$D9:A5B1`(raw 3072B, stream 1996B), 타일맵은 `$D9:B078`
   (raw 2048B, stream 427B)이다. 승인 BMP는
-  `assets/ending_logo/ending_logo_workshop_approved.bmp`이며 256×256 전체 화면에서
+  `assets/graphics/intermission_logo/intermission_logo_workshop_approved.bmp`이며 256×256 전체 화면에서
   파랑 `(74,107,255)`을 투명 배경으로 사용한다.
-- 원문·완역·표시문은 `assets/translations/ending_logo.json`에 각각
+- 원문·완역·표시문은 `assets/translations/intermission_logo.json`에 각각
   `ミニ四駆 レッツ&ゴー!! POWER WGP2`,
   `미니욘쿠 렛츠&고!! POWER WGP2`, 동일 표시문으로 분리 보존한다. 축약은 없다.
-- `scripts/build_ending_logo.py`는 화면을 8×8 셀로 다시 인코딩하고 팔레트
+- `scripts/build_intermission_logo.py`는 화면을 8×8 셀로 다시 인코딩하고 팔레트
   0/6/7과 H/V flip 디듀프를 적용한다. 고유타일은 95/96이며 오프라인 프리뷰는
-  `out/ending_logo_preview.png`다.
+  `out/intermission_logo_preview.png`다.
 - 승인 결과의 최적 LZSS는 chr 2128B, 타일맵 434B로 원래 인접 슬롯을
   각각 132B/7B 초과한다. 원본 2MB 안의 검증된 FF 영역 `$D9:D239`에 두 자원을
   연속 재배치하고, 인터미션 로더 `$C1:92F9/$C1:93CB`의 D9 소스 주소 두 곳만
   갱신한다. 빌더는 목적지가 FF 또는 같은 승인 blob인지 검사하고 허용 범위
   밖의 변경이 한 바이트라도 있으면 중단한다.
-- `scripts/test_ending_logo.py`가 최종 ROM에서 로더 주소, LZSS 해제 왕복,
+- `scripts/test_intermission_logo.py`가 최종 ROM에서 로더 주소, LZSS 해제 왕복,
   고유타일 한도와 승인 raw를 재검증한다. ROM 크기는 원본과 같은 2MB다.
 
 ## ✅ 경기 중 일시정지 메뉴 8×8 한글화 (2026-07-22)
@@ -257,7 +257,7 @@ python scripts/build_gfx.py --rom out/wgp2_kr.smc --out out/wgp2_kr.smc
 - `爆走`: 화면 `x72,y168,w24,h8`, 타일 `$121-$123` → `BOOST`.
 - 두 묶음은 캡처 BG3 타일맵에서 각 타일이 한 번만 참조되고, 해제 자원에도
   같은 16바이트 타일 복제가 없다. 승인 작업지는
-  `assets/race_hud/race_hud_labels_workshop_approved.png`이며
+  `assets/graphics/race_hud/race_hud_labels_workshop_approved.png`이며
   `scripts/build_race_hud_labels.py`가 라벨 일곱 타일을 교체하고 윗행 네 타일을
   정상 테두리로 복원하고 `$1D4` 돌출 픽셀을 정리하며, 두 데미지 타일맵
   변형을 같은 승인 라벨로 통일한다.
