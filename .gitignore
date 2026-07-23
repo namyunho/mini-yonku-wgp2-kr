@@ -50,6 +50,11 @@ work/
 _codex_workspace/
 .codex/
 
+# AI별 로컬 명령·설정
+# 공유해야 할 지침은 루트 AGENTS.md·CLAUDE.md 또는 docs/에 기록한다.
+.agents/
+.claude/
+
 # ROM에서 재생성 가능한 그래픽 덤프·로컬 참고 캡처
 assets/graphics/title_credits/extract/
 assets/graphics/title_credits/*.png
