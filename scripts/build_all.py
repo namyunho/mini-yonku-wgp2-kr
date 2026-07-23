@@ -173,7 +173,7 @@ def main():
     # 24: BPS
     if os.path.exists(FLIPS):
         subprocess.run([FLIPS, "--create", ORIG, OUT, BPS])
-    data = bytes(rom)
+    data = open(OUT, 'rb').read()   # build_setbox가 파일을 추가 패치하므로 파일에서 재독(스테일 CRC 방지)
     print(f"\n=== 통합 ROM 완성: {OUT} ===")
     print(f"크기 {len(data)}B  CRC32 {zlib.crc32(data) & 0xffffffff:08X}  MD5 {hashlib.md5(data).hexdigest()}")
 
