@@ -8,10 +8,71 @@
     "physical_record_count": 154
   },
   "policy": {
-    "preserve_record_lengths": true,
+    "preserve_source_record_order": true,
+    "insert_localization_logical_rows": 0,
+    "preserve_existing_nonblank_record_lengths": true,
     "preserve_horizontal_slots": true,
     "preserve_best_time_runtime_fields": true,
-    "blank_logical_rows": 31
+    "blank_logical_rows": 31,
+    "relocate_stream_for_localization_message": true
+  },
+  "localization_message": {
+    "source_type": "user_authored",
+    "text_jp": null,
+    "text_kr_full": "한글번역 피아\n\nSPECIAL THANKS TO\n날아라 부메랑, 우리는 챔피언, 폭주형제 WGP·MAX...\n미니카 하나로 밤새 가슴 설레어하던\n그 시절의 우리들.\n세월이 흘러 어른이 되어버린\n세상의 모든 챔피언들에게 이 번역을 바칩니다.\n부천 레트로게임 수다방,\n한마루에서 응원해주신 분들\n이 게임을 처음 하게 해줬던 성현이\n모두 감사드립니다.",
+    "text_kr": "한글번역 피아\n\nSPECIAL THANKS TO\n날아라 부메랑, 우리는 챔피언,\n폭주형제 WGP·MAX...\n미니카 하나로 밤새 가슴 설레어하던\n그 시절의 우리들.\n세월이 흘러 어른이 되어버린\n세상의 모든 챔피언들에게 이 번역을 바칩니다.\n부천 레트로게임 수다방,\n한마루에서 응원해주신 분들\n이 게임을 처음 하게 해줬던 성현이\n모두 감사드립니다.",
+    "abbreviated": false,
+    "layout_note": "33타일 작품명 행만 의미 축약 없이 쉼표 뒤에서 개행",
+    "lines": [
+      {
+        "pair": 49,
+        "text": "한글번역 피아"
+      },
+      {
+        "pair": 51,
+        "text": "SPECIAL THANKS TO"
+      },
+      {
+        "pair": 52,
+        "text": "날아라 부메랑, 우리는 챔피언,"
+      },
+      {
+        "pair": 53,
+        "text": "폭주형제 WGP·MAX..."
+      },
+      {
+        "pair": 54,
+        "text": "미니카 하나로 밤새 가슴 설레어하던"
+      },
+      {
+        "pair": 55,
+        "text": "그 시절의 우리들."
+      },
+      {
+        "pair": 56,
+        "text": "세월이 흘러 어른이 되어버린"
+      },
+      {
+        "pair": 57,
+        "text": "세상의 모든 챔피언들에게 이 번역을 바칩니다."
+      },
+      {
+        "pair": 58,
+        "text": "부천 레트로게임 수다방,"
+      },
+      {
+        "pair": 59,
+        "text": "한마루에서 응원해주신 분들"
+      },
+      {
+        "pair": 60,
+        "text": "이 게임을 처음 하게 해줬던 성현이"
+      },
+      {
+        "pair": 61,
+        "text": "모두 감사드립니다."
+      }
+    ]
   },
   "entries": [
     {

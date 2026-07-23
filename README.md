@@ -10,7 +10,7 @@ SNES(Super Famicom) 게임 **「ミニ四駆 レッツ&ゴー!! POWER WGP2」**(
 한글 팬 번역 패치 프로젝트. 레트로 게임 한글화 파이프라인(ROM 분석 → 역공학 → 폰트 → 추출·번역 → 재삽입 → 빌드)을 따른다.
 
 > ⚠️ **법적 고지**: 이 저장소에는 **원본 ROM이 포함되지 않는다.** 도구·역공학 문서·번역 데이터만 둔다.
-> 배포는 완성 시 **BPS 차분 패치**(원본 소지자가 직접 적용)로만 이뤄진다. 원본 ROM은 각자 합법적으로 확보할 것.
+> 배포는 **xdelta/BPS 차분 패치**(원본 소지자가 직접 적용)로만 이뤄진다. 원본 ROM은 각자 합법적으로 확보할 것.
 
 ## 대상 ROM
 
@@ -19,6 +19,12 @@ SNES(Super Famicom) 게임 **「ミニ四駆 レッツ&ゴー!! POWER WGP2」**(
 | 매퍼 | HiROM + FastROM (헤더리스 2MB) |
 | CRC32 / MD5 | `4459D4D0` / `acdeb2ee6ef7b460c5dfed6957f8581a` |
 | HiROM 주소 변환 | `PC = ((bank & 0x3F) << 16) \| addr` |
+
+## v0.9 배포
+
+- [GitHub Release v0.9](https://github.com/namyunho/mini-yonku-wgp2-kr/releases/tag/v0.9)
+- [v0.9 패치 적용법·작업 내용·축약 조정 통계](release/v0.9/README.md)
+- 배포 파일은 `wgp2_kr_v0.9.xdelta`이며 원본 ROM과 패치 적용 ROM은 포함하지 않는다.
 
 ## 진행 상태
 
@@ -33,13 +39,13 @@ SNES(Super Famicom) 게임 **「ミニ四駆 レッツ&ゴー!! POWER WGP2」**(
 | **어드벤처 스토리 번역·재삽입** | ✅ **완료** — 엄격 VM 재감사로 분기·목록 뒤 숨은 대사 58개를 복구해 **235씬·1,782메시지 전량 반영**. 위치보존 크래시 원천차단(런 단위 패딩 → 디컴프 스크립트 길이·VM offset 불변, [docs/14](docs/14-position-preserving-translation.md)). cmd0x20은 2바이트 오퍼랜드를 보존하고 본문만 같은 길이로 치환. 기존 오프닝~엔딩 전편 실기 완주(크래시 0), 신규 복구분 실기 QA 진행 |
 | **월드맵 퀴즈·정보 DB** | ✅ 70문항·350문자열 추출/번역/재삽입 완료 (`$C6:A08D` 포인터표, 350/350 왕복·역디코드 — [docs/19](docs/19-worldmap-quiz-text.md)) |
 | **장소별 필드/NPC 숨은 레코드** | ✅ 전수 발굴·번역·**위치보존 재삽입 완료** (**1,207레코드**, C2 참조 1,290개+패턴 오탐 10개 제외, 텍스트런 1,411/고유 **1,340 전량 번역**; 텍스트 레코드 685개 역검증·타일/OBJ 실기 정상, [docs/20](docs/20-field-npc-hidden-records.md)·[docs/21](docs/21-field-position-preserving-translation.md)) |
-| **그래픽 한글화**(타이틀·일시정지·Result·포메이션·능력치·개러지·경기 HUD·챕터 인트로·에피소드 인터미션) | ✅ 통합 완료, 실기 QA 진행 (LZSS·스프라이트·타일맵 재삽입, [docs/10](docs/10-graphics-assets.md)) |
+| **그래픽 한글화**(타이틀·일시정지·Result·포메이션·능력치·개러지·경기 HUD·챕터 인트로·에피소드 인터미션·엔딩 크레딧) | ✅ 통합 완료, 실기 QA 진행 (LZSS·스프라이트·타일맵 재삽입, [docs/10](docs/10-graphics-assets.md)·[docs/24](docs/24-ending-credits-analysis.md)) |
 | **시작 저장메뉴**(SJIS) | ✅ 완료 (처음부터/이어하기/복사/삭제, `build_menu.py`) |
 | **SJIS 메뉴/UI 텍스트**(레이서명·팀명·머신/파츠명·행성·옵션부품·시작/저장메뉴) | ✅ **완료** (비압축 SJIS 한글화 + 슬롯 `0x86` 확장 189→224, `build_sjis.py`) |
 | **소형 타일폰트 메뉴**(월드맵 X메뉴·조작방법 튜토리얼·용어집·지도·이지·수동 세팅 X메뉴·확인 대화문·다음 LV — System④) | ✅ **완료** — 원본 소형폰트 자원(`$D9`)을 문맥별 한글 글꼴로 재압축·포인터 리다이렉트(코드 훅/NMI 없음). 이지·수동 세팅은 교체된 원문 가나 타일만 회수하며 영문·숫자는 원본 보존(`build_setbox.py`) |
-| 인게임 QA·BPS 배포 | 🟡 진행 (메인스토리 **오프닝~엔딩 전편 실기 완주·크래시 0** 확인, 통합 빌드에서 Flips 감지 시 BPS 자동 생성) |
+| 인게임 QA·차분 패치 배포 | 🟡 **v0.9 xdelta 배포** (메인스토리 **오프닝~엔딩 전편 실기 완주·크래시 0** 확인, 통합 빌드에서 Flips 감지 시 BPS도 자동 생성) |
 
-> **번역 현황 요약**: 정적 대사·어드벤처 스토리(오프닝~엔딩 전편)·월드맵 퀴즈/정보 DB·**장소별 필드/NPC 대사 1,340종**·비압축 **SJIS 메뉴/UI**·**소형 타일폰트 메뉴**와 지정된 그래픽 텍스트의 번역·통합 재삽입이 완료됐다. Result는 선수 ID 110개·표시 이름 61종을 반영했으며 물리 타일 공유가 없도록 검증한다. 필드/NPC 대표 장소와 승인 그래픽의 실기 QA, 실제 엔딩 크레딧 번역이 아래 [남은 작업](#남은-작업)과 같이 남아 있다.
+> **번역 현황 요약**: 정적 대사·어드벤처 스토리(오프닝~엔딩 전편)·월드맵 퀴즈/정보 DB·**장소별 필드/NPC 대사 1,340종**·비압축 **SJIS 메뉴/UI**·**소형 타일폰트 메뉴**·지정 그래픽과 **실제 엔딩 크레딧·베스트타임**의 번역·통합 재삽입이 완료됐다. Result는 선수 ID 범위표 110개·표시 이름 61종을 반영했으며 물리 타일 공유가 없도록 검증한다. v0.9 이후에도 필드/NPC 대표 장소와 승인 그래픽의 실기 QA를 이어 간다.
 
 통합 빌드는 번역 카탈로그와 실제 치환 항목을 대조한다. 어드벤처 미반영 항목, 정적 대사 미커버 초과,
 필드 위치보존 상한 초과가 하나라도 생기면 ROM 생성을 실패시켜 번역문이 조용히 원문으로 되돌아가지 않게 한다.
@@ -54,6 +60,7 @@ SNES(Super Famicom) 게임 **「ミニ四駆 レッツ&ゴー!! POWER WGP2」**(
 | 장소별 필드/NPC | **텍스트런 1,411 / 고유 1,340** | `text_kr_full` 완역본과 `text_kr` 삽입본(축약 280) 분리 보존, 685개 압축 레코드 재삽입·위치/렌더 역검증 통과 |
 | Result 선수명 | **선수 ID 110 / 표시 이름 61종** | `$D9:1DDC` 아틀라스와 `$C1:CBAF` 범위표 재삽입, 물리 타일 공유 0개 검증 |
 | 그래픽 | 타이틀 화면·경기 일시정지·포메이션·능력치·개러지 분류·경기장명·챕터 인트로 10종·경기 HUD·VICTORYS 에피소드 인터미션 | 타일/스프라이트/타일맵 재삽입 |
+| 실제 엔딩 | **크레딧·베스트타임 45행 + 현지화 메시지 12행** | 엔딩 전용 8×8 글꼴과 C7 명령열 재배치, 런타임 기록 필드 보존 |
 | SJIS UI(전체) | 레이서 57·팀 10·머신 22·행성 11·옵션 15 + 시작/저장메뉴 | 비압축 SJIS 한글화 + 슬롯 **0x86 확장(189→224)** — [docs/12](docs/12-sjis-ui-hangul.md) |
 | 소형 타일폰트 메뉴(System④) | 월드맵 X메뉴·조작방법 튜토리얼·용어집·지도·수동 세팅 X메뉴·확인 대화문·`다음LV까지` | 원본 `$D9` 소형폰트를 문맥별 한글 글꼴로 재압축·포인터 리다이렉트(코드 훅/NMI 없음) |
 
@@ -65,9 +72,6 @@ SNES(Super Famicom) 게임 **「ミニ四駆 レッツ&ゴー!! POWER WGP2」**(
 **실기 QA**
 - **장소별 필드/NPC 대표 장소 실기 QA** — C4/C5/C6 씬간 압축 팩의 **1,340 고유문자열**은 `build_field.py`로 통합됐다. 연구소·학교·미쿠니가·각 팀 숙소 등에서 동선·분기·선택지를 확인할 것([docs/21](docs/21-field-position-preserving-translation.md)).
 - **승인 그래픽 실기 QA** — Result 선수명의 정렬 통일, 챕터·경기장별 그래픽과 특수 경기 HUD 변형을 실제 진행 경로에서 확인.
-
-**남은 그래픽 번역**
-- **엔딩 크레딧** 롤 번역.
 
 ## 저장소 구조
 
@@ -101,7 +105,8 @@ roms/ out/ tmp/   비커밋 (원본 ROM·산출물·임시 파일)
 - [docs/19-worldmap-quiz-text](docs/19-worldmap-quiz-text.md) — 월드맵 퀴즈/정보 DB 70문항 추출·번역·재삽입
 - [docs/20-field-npc-hidden-records](docs/20-field-npc-hidden-records.md) — 장소별 필드/NPC 숨은 압축 레코드 전수 조사
 - [docs/21-field-position-preserving-translation](docs/21-field-position-preserving-translation.md) — 필드/NPC 위치보존 번역·재삽입 설계
-- [docs/22-shortened-translation-comparison](docs/22-shortened-translation-comparison.md) — 완역문과 실제 ROM 삽입 조정문 958건 전수 비교
+- [docs/22-shortened-translation-comparison](docs/22-shortened-translation-comparison.md) — 완역문과 실제 ROM 삽입 조정문 959건 전수 비교
+- [docs/24-ending-credits-analysis](docs/24-ending-credits-analysis.md) — 실제 엔딩 크레딧·베스트타임·현지화 메시지 분석과 재삽입
 
 ## 번역 용어집 (고유명사·용어 통일)
 
@@ -143,6 +148,7 @@ python3 scripts/test_roundtrip.py    # 정적 대사 681/681 무손실
 - **Rust**(kr-patch-wgp2) — ROM 정보/무결성.
 - **역공학**: **IDA Pro 9.4**(`ida-pro-mcp` GUI 브리지 + `idalib-mcp` 헤드리스) · **Ghidra 12.1.2**(GhidraMCP, 디컴파일 크로스체크) · **asar 1.91**(65816 어셈블러, ASM 훅·패치) — 셋업 [docs/16](docs/16-reverse-engineering-mcp.md).
 - **Mesen2**(arm64 macOS/Windows) — Lua 스크립팅 QA·트레이싱.
+- **xdelta3** — v0.9 xdelta 차분 생성·역적용 검증.
 - **Flips** — BPS 차분 배포(선택, 통합 빌드가 감지 시 자동 생성).
 
 ## 기여·에이전트 협업
