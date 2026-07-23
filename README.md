@@ -76,7 +76,7 @@ SNES(Super Famicom) 게임 **「ミニ四駆 レッツ&ゴー!! POWER WGP2」**(
 ## 저장소 구조
 
 ```
-docs/        역공학 결과 정본(SSOT) — 단계별 01~20
+docs/        역공학·구현·감사 문서 — 역할 구분은 docs/README.md
 assets/
   fonts/            한글 TTF·비트맵 폰트 + 라이선스
   translations/     dialogue.json(681) · adventure_kr.json · worldmap_{kr,text}.json · field_text.json
@@ -88,25 +88,10 @@ roms/ out/ tmp/   비커밋 (원본 ROM·산출물·임시 파일)
 
 ## 문서 (정본)
 
-- [docs/01-media-survey](docs/01-media-survey.md) — 매체 식별·무결성
-- [docs/02-text-survey](docs/02-text-survey.md) — 텍스트 위치(SJIS 메뉴/인명 포함)
-- [docs/03-font-survey](docs/03-font-survey.md) — 폰트 트레이싱
-- [docs/04-dialogue-encoding](docs/04-dialogue-encoding.md) — 대사 인코딩 역공학
-- [docs/05-poc-hangul-font](docs/05-poc-hangul-font.md) — PoC(한글 렌더)
-- [docs/06-dialogue-extraction](docs/06-dialogue-extraction.md) — 추출·라운드트립
-- [docs/07-dialogue-completeness](docs/07-dialogue-completeness.md) — 파서 대사 완전성 + 포인터 카탈로그
-- [docs/08-adventure-text-engine](docs/08-adventure-text-engine.md) — 어드벤처/스토리 텍스트 엔진(씬 VM·코덱) 완전 해독 + 번역·재삽입
-- [docs/09-textbox-clip-investigation](docs/09-textbox-clip-investigation.md) — 대화창 클리핑·줄폭 조사
-- [docs/10-graphics-assets](docs/10-graphics-assets.md) — 그래픽 에셋(크레딧·로고) 한글화
-- [docs/13-adventure-reverted-scenes](docs/13-adventure-reverted-scenes.md) — 원본유지/재번역 추적(cmd0x20·desync)
-- [docs/14-position-preserving-translation](docs/14-position-preserving-translation.md) — 위치보존 번역(VM 크래시 원천차단)
-- [docs/15-shortening-ledger](docs/15-shortening-ledger.md) — 축약 원장(before→after, 배포 설명용)
-- [docs/16-reverse-engineering-mcp](docs/16-reverse-engineering-mcp.md) — 역공학 MCP(IDA·Ghidra) 셋업
-- [docs/19-worldmap-quiz-text](docs/19-worldmap-quiz-text.md) — 월드맵 퀴즈/정보 DB 70문항 추출·번역·재삽입
-- [docs/20-field-npc-hidden-records](docs/20-field-npc-hidden-records.md) — 장소별 필드/NPC 숨은 압축 레코드 전수 조사
-- [docs/21-field-position-preserving-translation](docs/21-field-position-preserving-translation.md) — 필드/NPC 위치보존 번역·재삽입 설계
-- [docs/22-shortened-translation-comparison](docs/22-shortened-translation-comparison.md) — 완역문과 실제 ROM 삽입 조정문 959건 전수 비교
-- [docs/24-ending-credits-analysis](docs/24-ending-credits-analysis.md) — 실제 엔딩 크레딧·베스트타임·현지화 메시지 분석과 재삽입
+문서 01–24의 역할과 최신 정본·역사 기록·자동 생성 감사의 관계는
+**[docs 문서 지도](docs/README.md)**에서 관리한다. 특히 초기 추출(06)과 현재 완전성(07),
+원복 사건(13)과 위치보존 구현(14), 축약 정책(15)과 959건 전수 비교(22),
+퀴즈 구현(19)과 문항 감사(23)를 구분해 읽어야 한다.
 
 ## 번역 용어집 (고유명사·용어 통일)
 
@@ -150,6 +135,7 @@ python3 scripts/test_roundtrip.py    # 정적 대사 681/681 무손실
 - **Mesen2**(arm64 macOS/Windows) — Lua 스크립팅 QA·트레이싱.
 - **xdelta3** — v0.9 xdelta 차분 생성·역적용 검증.
 - **Flips** — BPS 차분 배포(선택, 통합 빌드가 감지 시 자동 생성).
+- **OPTPiX ImageStudio** — 색상 보존 감색, 색상 팔레트 관리.
 
 ## 기여·에이전트 협업
 
@@ -157,7 +143,7 @@ python3 scripts/test_roundtrip.py    # 정적 대사 681/681 무손실
 핵심 불변식: **원본 ROM 비커밋 · 라운드트립 우선 · HiROM 변환 공식 하나만 사용.**
 
 - **어드벤처 번역**은 서사 클러스터 단위로 나눠 Claude+Codex 두 AI가 분담, 4중 게이트(마커·줄수·전각공백·줄폭≤16)로 교차 검수하는 방식으로 진행됐다.
-- **결합(coupling) 주의**: 어드벤처 음절이 늘면 폰트시트 `$CA` 공유로 673 대사가 슬롯을 초과할 수 있다. `build_patch`가 초과 id를 출력하면 해당 673 대사를 1음절 축약한다.
+- **결합(coupling) 주의**: 어드벤처 음절이 늘면 폰트시트 `$CA` 공유로 정적 대사 681개 중 일부가 슬롯을 초과할 수 있다. `build_patch`가 초과 id를 출력하면 해당 대사를 최소 범위로 조정하고 완역과 삽입문을 분리 보존한다.
 - **문장부호**는 전각만 사용(`！？〜…。「」『』・`). 반각 `! ? ~ , . ; :` 는 게임 폰트에 없다.
 
 ## 라이선스
