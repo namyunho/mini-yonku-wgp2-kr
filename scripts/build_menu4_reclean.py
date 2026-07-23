@@ -31,6 +31,7 @@ DEFAULT_MAP = ROOT / "out/menu4_reclean_glyph_map.json"
 FONT_BIN = ROOT / "8pt_font/font-007242d37349daf3.bin"
 FONT_MAP = ROOT / "8pt_font/font-007242d37349daf3_glyph_map.json"
 EXTRA_TRANSLATIONS = ROOT / "assets/translations/menu_extra_labels.json"
+WORLD_QUIZ_TEXT = ROOT / "assets/translations/worldmap_text.json"
 
 ORIGINAL_SIZE = 0x200000
 ORIGINAL_CRC32 = 0x4459D4D0
@@ -43,6 +44,11 @@ ORIGINAL_FONT_RAW_SHA256 = "78dfbb47aff74d3d6ccfa055ab0cb5975cdf779fcc617edb9db2
 ORIGINAL_TILE_PAGE_SHA256 = "9f84cb8c101db514d4c4f6218099d1a90b95daea24d4d1c1fc2ce340986bd155"
 NEXT_LEVEL_TILE_SPAN = (0xF4, 0xF9)
 NEXT_LEVEL_ORIGINAL_SHA256 = "bb42ce52659d6e4545a0bbf7f6d8b4948b8481e267cf177363fcee8d70ebdc2b"
+QUIZ_STATUS_PROGRAM = 0x008D8A
+QUIZ_STATUS_ORIGINAL = bytes.fromhex(
+    "FF FF 01 14 FF FF 23 2E FF FF 47 39 58 FF FF 9A "
+    "FF FF FF FF 05 13 12 07 FF FF FF FF 00"
+)
 
 # 원본 $C7:B49B 이후의 0xFF 자유 영역 안쪽. 최대 8KB를 넘지 않는다.
 NEW_FONT = (0xC7, 0xE000)
@@ -74,6 +80,9 @@ CONTEXT_FONT_POOL_CAPACITY = 0x2BB8
 # 기존 72개 음절은 대상 일본어 라벨이 쓰던 가나 타일과 원본 빈 타일
 # FC~FE를 재사용한다. 뒤의 7개는 확인창 원문을 패치해 비는 26/2B/0D와
 # 기존 대상·보존 직접 프로그램 어느 쪽에서도 쓰지 않는 11/15/17/18이다.
+# 마지막 01은 퀴즈 상태줄 원문 `あ`를 지우며 비는 타일을 `간`에 재사용한다.
+# 1B/1E는 조사된 월드맵·튜토리얼 대상/보존 직접 프로그램에서 사용하지 않는
+# 가나 타일이며 상태줄 `문제`에만 사용한다.
 # 앞 72개 순서는 실기 검증된 매핑이므로 절대 재정렬하지 않는다.
 # 라틴/숫자/공백/행 제어 타일은 보존한다.
 KOREAN_TILE_CODES = bytes.fromhex(
@@ -81,8 +90,9 @@ KOREAN_TILE_CODES = bytes.fromhex(
     "19 1A 1C 1D 23 28 2E 2F 36 37 38 39 3A 3B 3E 3F 41 43 "
     "44 45 47 48 49 4A 4B 4C 4D 51 52 53 55 56 58 59 5A 5E "
     "5F 60 61 63 65 67 69 6A 6B 6C 6D 6E 6F 94 95 FC FD FE "
-    "26 2B 0D 11 15 17 18"
+    "26 2B 0D 11 15 17 18 01 1B 1E"
 )
+QUIZ_STATUS_NEW_TILE_CODES = bytes.fromhex("1B 1E")
 
 SMALL_LITERAL_TILES = {
     "A": 0x70, "C": 0x72, "F": 0x75, "G": 0x76, "I": 0x78,
@@ -347,7 +357,12 @@ MAP_LABELS = (
 def collect_syllables() -> list[str]:
     syllables: list[str] = []
     direct_text = [row.korean for program in DIRECT_PROGRAMS for row in program.rows]
-    for text in [r.korean for r in TUTORIAL_RECORDS] + direct_text:
+    worldmap = json.loads(WORLD_QUIZ_TEXT.read_text(encoding="utf-8"))
+    status_text = str(worldmap["status_line"]["text_kr"])
+    # 상태줄 1차 구현에서 실기 검증 대상으로 만든 `간=$01`을 먼저 유지한 뒤
+    # 후속 `문/제`만 뒤에 append한다. 원장의 문장 순서가 매핑을 흔들면 안 된다.
+    texts = [r.korean for r in TUTORIAL_RECORDS] + direct_text + ["간", status_text]
+    for text in texts:
         for ch in text:
             if "가" <= ch <= "힣" and ch not in syllables:
                 syllables.append(ch)
@@ -495,6 +510,37 @@ def patch_direct(rom: bytearray, char_to_tile: dict[str, int]) -> None:
             else char_to_tile
         )
         rom[program.addr:end] = encode_program(program, mapping)
+
+
+def patch_quiz_status(rom: bytearray, char_to_tile: dict[str, int]) -> bytes:
+    """퀴즈의 동적 문제 수·시간은 그대로 두고 깨진 고정 가나만 교체한다."""
+    worldmap = json.loads(WORLD_QUIZ_TEXT.read_text(encoding="utf-8"))
+    status = worldmap.get("status_line", {})
+    assert status.get("program_addr") == "$C0:8D8A"
+    assert status.get("raw_hex") == QUIZ_STATUS_ORIGINAL.hex().upper()
+    assert status.get("text_kr") == "문제 {remaining}　시간 {time}"
+    assert status.get("abbreviated") is True
+
+    start = QUIZ_STATUS_PROGRAM
+    end = start + len(QUIZ_STATUS_ORIGINAL)
+    assert rom[start:end] == QUIZ_STATUS_ORIGINAL, "퀴즈 상태줄 원본 불일치"
+    patched = bytearray(QUIZ_STATUS_ORIGINAL)
+
+    # 화면상 위치:
+    # +4/+5 = 남은 문제 수(동적), +13/+14·+16/+17 = 시간(동적),
+    # +15 = 소수점. 앞의 선행 여백 한 칸을 사용해 `문제 `를 놓고,
+    # 나머지 일본어 고정 라벨은 지운 뒤 뒤쪽에 `시간 `을 놓는다.
+    for offset in (0, 1, 2, 3, 6, 7, 10, 11, 12):
+        patched[offset] = 0xFF
+    patched[1] = char_to_tile["문"]
+    patched[2] = char_to_tile["제"]
+    patched[10] = char_to_tile["시"]
+    patched[11] = char_to_tile["간"]
+
+    assert patched[4:6] == b"\xFF\xFF"
+    assert patched[13:18] == bytes.fromhex("FF FF 9A FF FF")
+    rom[start:end] = patched
+    return bytes(patched)
 
 
 def read_packed_label(rom: bytes | bytearray, addr: int, block_end: int) -> bytes:
@@ -669,11 +715,32 @@ def build(input_path: Path, output_path: Path, map_path: Path) -> None:
     )
 
     syllables = collect_syllables()
-    assert len(KOREAN_TILE_CODES) == len(set(KOREAN_TILE_CODES)) == 79
+    assert len(KOREAN_TILE_CODES) == len(set(KOREAN_TILE_CODES)) == 82
     assert len(syllables) == len(KOREAN_TILE_CODES), (
         f"한글 음절 수가 설계와 달라짐: {len(syllables)} != {len(KOREAN_TILE_CODES)}"
     )
     char_to_tile = dict(zip(syllables, KOREAN_TILE_CODES, strict=True))
+    assert char_to_tile["간"] == 0x01, "퀴즈 상태줄 `간` 타일 할당 회귀"
+    assert char_to_tile["문"] == 0x1B, "퀴즈 상태줄 `문` 타일 할당 회귀"
+    assert char_to_tile["제"] == 0x1E, "퀴즈 상태줄 `제` 타일 할당 회귀"
+
+    # 새 상태줄 전용 타일은 이미 조사·번역한 월드맵/튜토리얼 레코드와
+    # 직접 프로그램의 원문·제어 바이트 어느 쪽에서도 쓰이지 않아야 한다.
+    catalog_tiles = {
+        value
+        for record in TUTORIAL_RECORDS
+        for value in record.original_bottom + record.prefix
+    }
+    catalog_tiles.update(
+        value
+        for program in DIRECT_PROGRAMS
+        if program.addr != 0x007841
+        for row in program.rows
+        for value in row.original + row.control
+    )
+    assert not (set(QUIZ_STATUS_NEW_TILE_CODES) & catalog_tiles), (
+        "퀴즈 상태줄 `문/제` 전용 타일이 기존 월드맵·튜토리얼 레코드와 충돌"
+    )
 
     glossary_syllables, glossary_char_to_tile, glossary_candidates = context_mapping(
         original,
@@ -788,6 +855,7 @@ def build(input_path: Path, output_path: Path, map_path: Path) -> None:
 
     patch_tutorial(rom, char_to_tile)
     patch_direct(rom, char_to_tile)
+    quiz_status_patch = patch_quiz_status(rom, char_to_tile)
     glossary_addrs = patch_packed_labels(
         rom,
         GLOSSARY_LABELS,
@@ -823,6 +891,9 @@ def build(input_path: Path, output_path: Path, map_path: Path) -> None:
         assert rebuilt_used == len(resource) - 2
         assert rebuilt_font == expected_font
     verify_patched_records(rom, char_to_tile)
+    assert rom[
+        QUIZ_STATUS_PROGRAM:QUIZ_STATUS_PROGRAM + len(quiz_status_patch)
+    ] == quiz_status_patch
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_bytes(rom)
@@ -872,6 +943,11 @@ def build(input_path: Path, output_path: Path, map_path: Path) -> None:
         "original_compressed_size": original_used + 2,
         "tutorial_record_count": len(TUTORIAL_RECORDS),
         "direct_label_count": sum(len(program.rows) for program in DIRECT_PROGRAMS),
+        "quiz_status": {
+            "address": "$C0:8D8A",
+            "original": QUIZ_STATUS_ORIGINAL.hex().upper(),
+            "patched": quiz_status_patch.hex().upper(),
+        },
         "glossary_label_count": len(GLOSSARY_LABELS),
         "glossary_packed_bytes": (
             glossary_addrs[-1]
@@ -906,7 +982,7 @@ def build(input_path: Path, output_path: Path, map_path: Path) -> None:
     )
     print(
         f"라벨: 튜토리얼 {len(TUTORIAL_RECORDS)} / 메뉴 {direct_count} / "
-        f"용어집 {len(GLOSSARY_LABELS)} / 지도 {len(MAP_LABELS)}"
+        f"용어집 {len(GLOSSARY_LABELS)} / 지도 {len(MAP_LABELS)} / 퀴즈 상태줄 1"
     )
     print("코드 훅/NMI/WRAM 플래그/추가 DMA: 없음")
     print(f"SNES 체크섬: {checksum:04X} / 보수 {complement:04X}")

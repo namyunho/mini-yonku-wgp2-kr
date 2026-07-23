@@ -55,6 +55,7 @@ def main() -> None:
     field = load("field_kr.json")
     parts = load("adv_parts_fragments.json")
     menu_extra = load("menu_extra_labels.json")
+    worldmap = load("worldmap_text.json")
     ledger = load("shortening_ledger.json")
     field_ledger = load("field_shortening_ledger.json")
 
@@ -173,16 +174,46 @@ def main() -> None:
                 full, inserted, (entry["id"],),
             )
 
+    # 월드맵 퀴즈는 350개 DB와 DB 밖 고정 UI·상태줄을 한 원장에서 감사한다.
+    for entry in worldmap["entries"]:
+        full = entry.get("kr_full")
+        inserted = entry.get("kr")
+        if isinstance(full, str) and isinstance(inserted, str) and full != inserted:
+            add(
+                "worldmap", ("entry", entry["entry_id"]),
+                f"quiz entry {entry['entry_id']} / {entry['addr']}",
+                full, inserted, (0, entry["entry_id"]),
+            )
+    for message in worldmap["fixed_messages"]:
+        full = message.get("kr_full")
+        inserted = message.get("kr")
+        if isinstance(full, str) and isinstance(inserted, str) and full != inserted:
+            add(
+                "worldmap", ("fixed", message["id"]),
+                f"quiz UI {message['id']} / {message['addr']}",
+                full, inserted, (1, message["id"]),
+            )
+    status = worldmap["status_line"]
+    if status["text_kr_full"] != status["text_kr"]:
+        add(
+            "worldmap", ("status", status["program_addr"]),
+            f"quiz status / {status['program_addr']}",
+            status["text_kr_full"], status["text_kr"], (2, status["program_addr"]),
+        )
+
     counts = {system: sum(r.system == system for r in rows.values())
-              for system in ("adventure", "dialogue", "field", "parts", "menu_extra")}
+              for system in (
+                  "adventure", "dialogue", "field", "parts", "menu_extra", "worldmap"
+              )}
     expected = {
         "adventure": 449,
         "dialogue": 22,
         "field": 280,
         "parts": 0,
         "menu_extra": 1,
+        "worldmap": 8,
     }
-    if counts != expected or len(rows) != 752:
+    if counts != expected or len(rows) != 760:
         raise SystemExit(f"축약 목록 규모 불일치: {counts}, total={len(rows)}")
 
     inputs = [
@@ -193,11 +224,12 @@ def main() -> None:
         TRANS / "field_kr.json",
         TRANS / "adv_parts_fragments.json",
         TRANS / "menu_extra_labels.json",
+        TRANS / "worldmap_text.json",
     ]
     lines = [
         "# 22 · 완역문–실삽입 축약문 전수 비교",
         "",
-        "> 생성일: 2026-07-22",
+        "> 생성일: 2026-07-23",
         "> 생성 명령: `python3 scripts/generate_shortening_comparison.py`",
         "",
         "현재 통합 빌드의 번역 입력을 기준으로 **완역문과 실제 ROM 삽입문이 다른 항목만** 모은 사람용 비교표다.",
@@ -222,6 +254,7 @@ def main() -> None:
         f"| 필드/NPC | {counts['field']} | `field_kr.json:text_kr_full` | `field_kr.json:text_kr` |",
         f"| 파츠 획득 동적 이름 | {counts['parts']} | `adv_parts_fragments.json:text_kr_full` | `adv_parts_fragments.json:text_kr` |",
         f"| 소형 메뉴 직접 타일·그래픽 | {counts['menu_extra']} | `menu_extra_labels.json:text_kr_full` | `menu_extra_labels.json:text_kr` |",
+        f"| 월드맵 퀴즈·고정 UI | {counts['worldmap']} | `worldmap_text.json:kr_full/text_kr_full` | `worldmap_text.json:kr/text_kr` |",
         f"| **합계** | **{len(rows)}** |  |  |",
         "",
     ]
@@ -231,8 +264,9 @@ def main() -> None:
         "dialogue": "정적 대사",
         "field": "필드/NPC",
         "menu_extra": "소형 메뉴 직접 타일·그래픽",
+        "worldmap": "월드맵 퀴즈·고정 UI",
     }
-    for system in ("adventure", "dialogue", "field", "menu_extra"):
+    for system in ("adventure", "dialogue", "field", "menu_extra", "worldmap"):
         selected = sorted((r for r in rows.values() if r.system == system),
                           key=lambda r: r.sort_key)
         lines.extend([
@@ -258,7 +292,7 @@ def main() -> None:
     lines.extend([
         "",
         "이 문서는 위 입력에서 다시 생성할 수 있다. 생성기는 두 축약 원장의 완료/대기 수, 현재 빌드 키 존재 여부,",
-        "필드 `before_kr == text_kr_full`, 중복 키, 시스템별 예상 건수(449/22/280/0/1)를 검사하고 하나라도",
+        "필드 `before_kr == text_kr_full`, 중복 키, 시스템별 예상 건수(449/22/280/0/1/8)를 검사하고 하나라도",
         "어긋나면 문서를 쓰지 않고 실패한다.",
         "",
     ])
@@ -267,7 +301,8 @@ def main() -> None:
     print(f"축약 비교 문서 생성: {OUT.relative_to(ROOT)}")
     print(f"  어드벤처 {counts['adventure']} / 정적 {counts['dialogue']} / "
           f"필드 {counts['field']} / 파츠 {counts['parts']} / "
-          f"소형 메뉴 {counts['menu_extra']} / 합계 {len(rows)}")
+          f"소형 메뉴 {counts['menu_extra']} / 월드맵 {counts['worldmap']} / "
+          f"합계 {len(rows)}")
 
 
 if __name__ == "__main__":

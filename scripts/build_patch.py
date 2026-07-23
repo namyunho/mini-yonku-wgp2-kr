@@ -192,7 +192,8 @@ def main():
     other_world = Counter()
     if a.worldmap_json:
         WD = json.load(open(a.worldmap_json, encoding='utf-8'))
-        for x in WD['entries']:
+        world_text_records = list(WD['entries']) + list(WD.get('fixed_messages', []))
+        for x in world_text_records:
             for c in strip_tok(x['kr']):
                 if 0xAC00 <= ord(c) <= 0xD7A3:
                     freq_world[c] += 1

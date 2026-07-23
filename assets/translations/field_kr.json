@@ -17216,8 +17216,8 @@
    "status": "translated",
    "translation_source": "codex_manual",
    "text_jp": "ふじた\n「ついにぼくのニューパーツ\n『サタン』が完成したんだ",
-   "text_kr_full": "후지타\n「드디어 내 새 파츠\n『사탄』이 완성됐어",
-   "text_kr": "후지타\n「드디어 내 새 파츠\n『사탄』이 완성됐어",
+   "text_kr_full": "후지타\n「드디어 내 새 파츠\n『새턴』이 완성됐어",
+   "text_kr": "후지타\n「드디어 내 새 파츠\n『새턴』이 완성됐어",
    "orig_len": 33,
    "controls": [],
    "occurrences": [
@@ -17338,8 +17338,8 @@
    "status": "translated",
    "translation_source": "codex_manual",
    "text_jp": "ふじた\n「ぼくのサタンはサイコーだろ？",
-   "text_kr_full": "후지타\n「내 사탄은 최고지？",
-   "text_kr": "후지타\n「내 사탄은 최고지？",
+   "text_kr_full": "후지타\n「내 새턴은 최고지？",
+   "text_kr": "후지타\n「내 새턴은 최고지？",
    "orig_len": 20,
    "controls": [],
    "occurrences": [
@@ -18153,8 +18153,8 @@
    "status": "translated",
    "translation_source": "codex_manual",
    "text_jp": "まえだ\n「5Fの開発プロジェクトが\nパーツの開発を完了したんだ{wait}\nジュピターの上位パーツ\nコードネーム『サタン』だ{wait}\nもちろん　エレベーターは\n使えるようにしてあるから\nいってみるといいよ{wait}",
-   "text_kr_full": "마에다\n「5층 개발 프로젝트가\n파츠 개발을 끝냈어{wait}\n주피터의 상위 파츠\n코드 네임 『사탄』이야{wait}\n물론 엘리베이터도\n쓸 수 있으니\n가 보면 좋아{wait}",
-   "text_kr": "마에다\n「5층 개발 프로젝트가\n파츠 개발을 끝냈어{wait}\n주피터의 상위 파츠\n코드 네임 『사탄』이야{wait}\n물론 엘리베이터도\n쓸 수 있으니\n가 보면 좋아{wait}",
+   "text_kr_full": "마에다\n「5층 개발 프로젝트가\n파츠 개발을 끝냈어{wait}\n주피터의 상위 파츠\n코드 네임 『새턴』이야{wait}\n물론 엘리베이터도\n쓸 수 있으니\n가 보면 좋아{wait}",
+   "text_kr": "마에다\n「5층 개발 프로젝트가\n파츠 개발을 끝냈어{wait}\n주피터의 상위 파츠\n코드 네임 『새턴』이야{wait}\n물론 엘리베이터도\n쓸 수 있으니\n가 보면 좋아{wait}",
    "orig_len": 105,
    "controls": [
     "{wait}",
@@ -25925,8 +25925,8 @@
    "status": "translated",
    "translation_source": "codex_manual",
    "text_jp": "かずや\n「土屋研究所で働いてる\nボクの兄ちゃんがね{wait}\nニューパーツのプロトタイプが\nできそうだって言ってたよ{wait}\n確か名前は『サタン』とかなんとか…",
-   "text_kr_full": "카즈야\n「연구소에서 일하는\n우리 형이 말이야{wait}\n새 파츠의 시제품이\n곧 완성된대{wait}\n이름은 『사탄』이라던가…",
-   "text_kr": "카즈야\n「연구소에서 일하는\n우리 형이 말이야{wait}\n새 파츠의 시제품이\n곧 완성된대{wait}\n이름은 『사탄』이라던가…",
+   "text_kr_full": "카즈야\n「연구소에서 일하는\n우리 형이 말이야{wait}\n새 파츠의 시제품이\n곧 완성된대{wait}\n이름은 『새턴』이라던가…",
+   "text_kr": "카즈야\n「연구소에서 일하는\n우리 형이 말이야{wait}\n새 파츠의 시제품이\n곧 완성된대{wait}\n이름은 『새턴』이라던가…",
    "orig_len": 85,
    "controls": [
     "{wait}",

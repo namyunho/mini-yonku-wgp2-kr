@@ -56,9 +56,14 @@ PAD_CHAR = ' '   # 반각 공백(글리프 idx0 → 1바이트 0x10, 블랭크).
 
 
 _PAD_TAIL = re.compile(r'(?:\{[^}]*\}|\n)+\Z')   # 말미의 마커({..})·개행(\n) 연속
+_SPLIT_PREFIX = re.compile(r'\n[「『（【〈《]\Z')
 
 def pad_kr(kr, pad):
     """위치보존 패딩: **마지막 가시 글리프 뒤**(말미 마커·개행 블록 '앞')에 공백 pad개 삽입.
+    - `화자명\n「`처럼 다음 텍스트 런이 대사를 이어 쓰는 접두 런은 예외다. `「` 뒤에
+      패딩하면 다음 런 첫 글자가 들여쓰기되므로, 화자명 행 끝(마지막 개행 직전)에 넣는다.
+      런 바이트 길이는 그대로이며 개행이 펜 X좌표를 초기화하므로 다음 대사는 `「` 바로
+      뒤에서 시작한다.
     - trailing `\\n`으로 끝나는 런(예 `…！{wait}\\n`)에 패딩을 '맨 끝'에 붙이면 패딩이 개행 뒤
       새 줄에 찍혀 **다음 런이 들여쓰기**된다(2026-07-21 사용자 실측: 츠치야 「뭐 뭐라고！/그럼…」).
       → 말미 마커·개행 블록 앞(가시 텍스트 줄 끝)에 넣어 개행 뒤엔 아무것도 안 남게 한다.
@@ -66,6 +71,10 @@ def pad_kr(kr, pad):
     - 마커 없이 글리프로 끝나면 말미에 덧붙임(트레일링 공백)."""
     if pad <= 0:
         return kr
+    split = _SPLIT_PREFIX.search(kr)
+    if split:
+        i = split.start()                   # 화자명 마지막 글자 뒤, 마지막 개행 앞
+        return kr[:i] + PAD_CHAR * pad + kr[i:]
     m = _PAD_TAIL.search(kr)
     i = m.start() if m else len(kr)       # 마지막 가시 글리프 뒤 위치
     return kr[:i] + PAD_CHAR * pad + kr[i:]

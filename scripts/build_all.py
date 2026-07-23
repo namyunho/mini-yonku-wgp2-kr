@@ -141,6 +141,10 @@ def main():
     run(["scripts/test_stage_intro_titles.py"])                       # 최종 인트로 10개·보존 타일 검증
     run(["scripts/test_race_hud_labels.py"])                           # 최종 경기 HUD 라벨 7 + 윗행 4타일 검증
     run(["scripts/test_ending_logo.py"])                              # 최종 엔딩 로고·로더·LZSS 검증
+    run(["scripts/test_glossary_layout.py"])                           # 용어집 치이코 소개 개행·최종 ROM 검증
+    run(["scripts/test_worldmap_quiz.py"])                             # 퀴즈 70문항·고정 UI·정답·실측 폭
+    run(["scripts/test_small_font_tile_safety.py"])                    # 직접 타일 제어값·공유 폰트 충돌 검증
+    run(["scripts/test_position_padding.py"])                          # 분할 대사 접두 런 들여쓰기 패딩 방지
     run(["scripts/verify_menu_extra_build.py"])                        # 20 추가 메뉴 3종 무결성
     run(["scripts/verify_field_build.py"])                             # 21 후속 덮어쓰기·원본 변경 방지
     rom = bytearray(open(OUT, 'rb').read())

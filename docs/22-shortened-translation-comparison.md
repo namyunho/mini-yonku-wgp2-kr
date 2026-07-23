@@ -1,6 +1,6 @@
 # 22 · 완역문–실삽입 축약문 전수 비교
 
-> 생성일: 2026-07-22
+> 생성일: 2026-07-23
 > 생성 명령: `python3 scripts/generate_shortening_comparison.py`
 
 현재 통합 빌드의 번역 입력을 기준으로 **완역문과 실제 ROM 삽입문이 다른 항목만** 모은 사람용 비교표다.
@@ -25,7 +25,8 @@
 | 필드/NPC | 280 | `field_kr.json:text_kr_full` | `field_kr.json:text_kr` |
 | 파츠 획득 동적 이름 | 0 | `adv_parts_fragments.json:text_kr_full` | `adv_parts_fragments.json:text_kr` |
 | 소형 메뉴 직접 타일·그래픽 | 1 | `menu_extra_labels.json:text_kr_full` | `menu_extra_labels.json:text_kr` |
-| **합계** | **752** |  |  |
+| 월드맵 퀴즈·고정 UI | 8 | `worldmap_text.json:kr_full/text_kr_full` | `worldmap_text.json:kr/text_kr` |
+| **합계** | **760** |  |  |
 
 ## 어드벤처 씬 (449건)
 
@@ -799,6 +800,19 @@
 |---:|---|---|---|
 | 1 | `next_level / $D9:0000 decompressed tiles $F4-$F8` | <code>다음 레벨까지</code> | <code>다음LV까지</code> |
 
+## 월드맵 퀴즈·고정 UI (8건)
+
+| # | 식별자 | 완역문 | 실제 삽입문 |
+|---:|---|---|---|
+| 1 | `quiz entry 210 / $C6:A6A1` | <code>츠치야 연구소에서 마에다가{nl}</code><br><code>주는 파츠는？{end}</code> | <code>츠치야 연구소의 마에다가{nl}</code><br><code>주는 파츠는？{end}</code> |
+| 2 | `quiz entry 260 / $C6:A83C` | <code>야에가 지로마루에게 몇 연승했을까？{end}</code> | <code>야에는 지로마루에게{nl}</code><br><code>몇 연승했을까？{end}</code> |
+| 3 | `quiz entry 270 / $C6:A88E` | <code>미니욘 파이터가{nl}</code><br><code>츠치야 박사에게 받은 것은？{end}</code> | <code>미니욘 파이터가{nl}</code><br><code>츠치야에게 받은 것은？{end}</code> |
+| 4 | `quiz entry 285 / $C6:A907` | <code>레츠와 고의 아빠가 잃어버린 것은？{end}</code> | <code>레츠와 고의 아빠가{nl}</code><br><code>잃어버린 것은？{end}</code> |
+| 5 | `quiz entry 300 / $C6:A97B` | <code>고에게 러브레터를 준 사람은 누구？{end}</code> | <code>고에게 러브레터를{nl}</code><br><code>준 사람은 누구？{end}</code> |
+| 6 | `quiz UI lore_prompt / $C6:A04D` | <code>정답 버튼은 아래와 같습니다{nl}</code><br><code>아무 버튼이나 누르면 시작합니다{end}</code> | <code>정답 버튼은 아래와 같습니다{nl}</code><br><code>버튼을 누르면 시작합니다{end}</code> |
+| 7 | `quiz UI math_prompt / $C6:A017` | <code>정답 버튼은 아래에 있다{nl}</code><br><code>아무 버튼이나 누르면 시작한다{end}</code> | <code>정답 버튼은 아래에 있다{nl}</code><br><code>버튼을 누르면 시작한다{end}</code> |
+| 8 | `quiz status / $C0:8D8A` | <code>남은 문제 {remaining}개␠남은 시간 {time}</code> | <code>문제 {remaining}␠시간 {time}</code> |
+
 ## 생성 입력 무결성
 
 | 파일 | SHA-256 |
@@ -806,11 +820,12 @@
 | `assets/translations/shortening_ledger.json` | `7cbe8401ee3da63c0bf3c07f98fe05cb739bf62af612d4f7a44a6f3c52b0c993` |
 | `assets/translations/field_shortening_ledger.json` | `e26374783c86525c1c891b15e1849a46b9c9e59d69d0a6f70bdcc29da097b49c` |
 | `assets/translations/dialogue.json` | `a0d1f424bf9b0fac727433b6892e360f17600b93e36b76f5ccc4876d000062b6` |
-| `assets/translations/adventure_kr.json` | `9ba186a1eb310cee9bff804f38c47937445c1452d598eeb10fd2fd655774584e` |
-| `assets/translations/field_kr.json` | `a3760e3794f8d8c3facfdde703e5f1cb2ab1426849f83f6d62618b0c5531ec6b` |
+| `assets/translations/adventure_kr.json` | `6d437cab3f7f91e1b320f28542641274fcf04906196b203c0a1a226d0721318a` |
+| `assets/translations/field_kr.json` | `ff1c186556e691654f4029296f91394aa0f327fadce84fd7c9172b968b7b6aea` |
 | `assets/translations/adv_parts_fragments.json` | `f8317732117bb90fa3533bd2b859ee359ad241ab8c25182c4c6f219b855e3774` |
 | `assets/translations/menu_extra_labels.json` | `45bac1360d539a5d534de5e8f1c42f1b08a823dff5dafad5b4adf61a94c6a2e1` |
+| `assets/translations/worldmap_text.json` | `85592386ad14e6dcc64eadccd2b80050c872e4c1ffaf1f270d9ca5f72192fcbe` |
 
 이 문서는 위 입력에서 다시 생성할 수 있다. 생성기는 두 축약 원장의 완료/대기 수, 현재 빌드 키 존재 여부,
-필드 `before_kr == text_kr_full`, 중복 키, 시스템별 예상 건수(449/22/280/0/1)를 검사하고 하나라도
+필드 `before_kr == text_kr_full`, 중복 키, 시스템별 예상 건수(449/22/280/0/1/8)를 검사하고 하나라도
 어긋나면 문서를 쓰지 않고 실패한다.
