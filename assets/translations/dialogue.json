@@ -587,7 +587,8 @@
    "flags": [
     "no_pointer_ref"
    ],
-   "text_kr": "아이코{nl}이 버튼은 안 써{end}"
+   "text_kr": "아이코 이 버튼은 안 써{end}",
+   "text_kr_full": "아이코{nl}이 버튼은 안 써{end}"
   },
   {
    "entry_id": 32,
@@ -2318,7 +2319,8 @@
     "0x03F2D9:$CBEF"
    ],
    "flags": [],
-   "text_kr": "배틀 레이스를 할 것도 없이{nl}우리는{nl}졌을지도 모른다{end}"
+   "text_kr": "배틀 레이스를 할 것도 없이{nl}우리는 졌을지도 모른다{end}",
+   "text_kr_full": "배틀 레이스를 할 것도 없이{nl}우리는{nl}졌을지도 모른다{end}"
   },
   {
    "entry_id": 140,
@@ -5864,7 +5866,8 @@
    "text_jp": "フッ{nl}必ず勝ってみせますよ！{end}",
    "referenced_by": [],
    "flags": [],
-   "text_kr": "흥{nl}반드시 이겨 보이죠！{end}"
+   "text_kr": "흥 반드시 이겨 보이죠！{end}",
+   "text_kr_full": "흥{nl}반드시 이겨 보이죠！{end}"
   },
   {
    "entry_id": 380,
@@ -5878,7 +5881,8 @@
    "text_jp": "フフッ{nl}よ〜し　みんながんばろう！{end}",
    "referenced_by": [],
    "flags": [],
-   "text_kr": "후훗{nl}좋〜아 다들 힘내자！{end}"
+   "text_kr": "후훗 좋〜아 다들 힘내자！{end}",
+   "text_kr_full": "후훗{nl}좋〜아 다들 힘내자！{end}"
   },
   {
    "entry_id": 381,
@@ -6032,7 +6036,8 @@
    "text_jp": "フッ{nl}パワーがみなぎってきたぜ！{end}",
    "referenced_by": [],
    "flags": [],
-   "text_kr": "흥{nl}파워가 넘쳐난다！{end}"
+   "text_kr": "흥 파워가 넘쳐난다！{end}",
+   "text_kr_full": "흥{nl}파워가 넘쳐난다！{end}"
   },
   {
    "entry_id": 392,
@@ -6046,7 +6051,8 @@
    "text_jp": "フフッ{nl}勇気がわいてきたよ！{end}",
    "referenced_by": [],
    "flags": [],
-   "text_kr": "후훗{nl}용기가 솟는다！{end}"
+   "text_kr": "후훗 용기가 솟는다！{end}",
+   "text_kr_full": "후훗{nl}용기가 솟아난다！{end}"
   },
   {
    "entry_id": 393,
@@ -6356,7 +6362,7 @@
    "text_jp": "校長先生{nl}「ビクトリーズ！{nl}ワシのハダカおどりを{nl}見るのじゃ〜！！{end}",
    "referenced_by": [],
    "flags": [],
-   "text_kr": "교장 선생님{nl}「빅토리즈！{nl}내 알몸 댄스를{nl}보아라〜！！{end}"
+   "text_kr": "교장 선생님{nl}「빅토리즈！{nl}내 알몸춤을{nl}보아라〜！！{end}"
   },
   {
    "entry_id": 415,

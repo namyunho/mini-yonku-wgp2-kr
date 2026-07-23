@@ -1,0 +1,11 @@
+stage	screen_crop_px	workshop_crop_px	canvas_px	capture	jp_render_width_px	kr_render_width_px	original_jp	translation_kr
+1	x32,y80,w192,h64	x4,y24,w192,h64	192x64	(캡처 없음/빈칸)	165	158	第2回ワールドグランプリ開幕！	제2회 월드 그랑프리 개막！
+2	x32,y80,w192,h64	x4,y112,w192,h64	192x64	/Users/namyunho/Developer/mini-yonku-wgp2-kr/out/스테이지_타이틀/스테이지2_타이틀.png	129	138	エンシェントフォースの謎	엔션트 포스의 수수께끼
+3	x32,y80,w192,h64	x4,y200,w192,h64	192x64	/Users/namyunho/Developer/mini-yonku-wgp2-kr/out/스테이지_타이틀/스테이지3_타이틀.png	153	155	プロトセイバー氷点下の戦い	프로토 세이버 영하의 대결
+4	x32,y80,w192,h64	x4,y288,w192,h64	192x64	(캡처 없음/빈칸)	97	87	対決！？　X・T・O！	대결！？　XTO！
+5	x32,y80,w192,h64	x4,y376,w192,h64	192x64	(캡처 없음/빈칸)	112	110	打倒！　伝説のマシン	타도！　전설의 머신
+6	x32,y80,w192,h64	x4,y464,w192,h64	192x64	(캡처 없음/빈칸)	176	142	フランスからやって来た革命児！？	프랑스에서 온 혁명아！？
+7	x32,y80,w192,h64	x4,y552,w192,h64	192x64	/Users/namyunho/Developer/mini-yonku-wgp2-kr/out/스테이지_타이틀/스테이지7_타이틀_타일맵.png	108	125	ドキドキラブレター！？	두근두근 러브레터！？
+8	x32,y80,w192,h64	x4,y640,w192,h64	192x64	/Users/namyunho/Developer/mini-yonku-wgp2-kr/out/스테이지_타이틀/스테이지8_타이틀_타일맵.png	131	123	特訓！　ビークスパイダー	특훈！　비크 스파이더
+9	x32,y80,w192,h64	x4,y728,w192,h64	192x64	/Users/namyunho/Developer/mini-yonku-wgp2-kr/out/스테이지_타이틀/스테이지9_타일맵뷰어.png	61	43	へんしん！？	변신！？
+10	x32,y80,w192,h64	x4,y816,w192,h64	192x64	/Users/namyunho/Developer/mini-yonku-wgp2-kr/out/스테이지_타이틀/스테이지10_타이틀.png	114	103	対決！？　ビクトリーズ	대결！？　빅토리즈

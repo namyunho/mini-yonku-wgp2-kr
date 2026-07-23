@@ -1,5 +1,51 @@
 {
- "schema": 1,
+ "schema": 2,
+ "quiz_ui": {
+  "fixed_messages": [
+   {
+    "id": "math_prompt",
+    "text_kr_full": "정답 버튼은 아래에 있다{nl}아무 버튼이나 누르면 시작한다{end}",
+    "text_kr": "정답 버튼은 아래에 있다{nl}버튼을 누르면 시작한다{end}"
+   },
+   {
+    "id": "math_correct",
+    "text_kr_full": "오오！　잘했구나{end}",
+    "text_kr": "오오！　잘했구나{end}"
+   },
+   {
+    "id": "math_mul_correct",
+    "text_kr_full": "………{end}",
+    "text_kr": "………{end}"
+   },
+   {
+    "id": "math_wrong",
+    "text_kr_full": "이럴 수가{end}",
+    "text_kr": "이럴 수가{end}"
+   },
+   {
+    "id": "lore_prompt",
+    "text_kr_full": "정답 버튼은 아래와 같습니다{nl}아무 버튼이나 누르면 시작합니다{end}",
+    "text_kr": "정답 버튼은 아래와 같습니다{nl}버튼을 누르면 시작합니다{end}"
+   },
+   {
+    "id": "lore_correct",
+    "text_kr_full": "역시 대단하군요{end}",
+    "text_kr": "역시 대단하군요{end}"
+   },
+   {
+    "id": "lore_wrong",
+    "text_kr_full": "틀렸군요…{end}",
+    "text_kr": "틀렸군요…{end}"
+   }
+  ],
+  "status_line": {
+   "text_jp_full": "あと{remaining}もん　のこり{time}",
+   "text_kr_full": "남은 문제 {remaining}개　남은 시간 {time}",
+   "text_kr": "문제 {remaining}　시간 {time}",
+   "abbreviated": true,
+   "note": "직접 타일 프로그램의 동적 숫자 칸은 보존한다. 원문 상태줄을 지우며 비는 $01 타일을 '간'으로, 조사된 월드맵·튜토리얼 직접 프로그램에서 사용하지 않는 $1B/$1E를 '문/제'로 추가한다."
+  }
+ },
  "lore_sets": [
   {
    "addr": "$C6:A646",
@@ -8,12 +54,14 @@
   },
   {
    "addr": "$C6:A672",
-   "question": "레이스장 개장 티셔츠를{nl}늘 입는 아이는？{end}",
+   "question_full": "레이스장 개장 기념 티셔츠를{nl}늘 입는 아이는？{end}",
+   "question": "레이스장 개장 기념{nl}티셔츠를 늘 입는 아이는？{end}",
    "choices": ["에리카{end}", "이요{end}", "야요이{end}", "우미{end}"]
   },
   {
    "addr": "$C6:A6A1",
-   "question": "츠치야 연구소에서 마에다가{nl}주는 파츠는？{end}",
+   "question_full": "츠치야 연구소에서 마에다가{nl}주는 파츠는？{end}",
+   "question": "츠치야 연구소의 마에다가{nl}주는 파츠는？{end}",
    "choices": ["모터{end}", "기어{end}", "타이어{end}", "범퍼{end}"]
   },
   {
@@ -28,7 +76,7 @@
   },
   {
    "addr": "$C6:A72C",
-   "question": "리치와 폰을{nl}구별하는 특징은？{end}",
+   "question": "공키의 리치와 폰을{nl}구별하는 특징은？{end}",
    "choices": ["립스틱{end}", "머리 모양{end}", "속눈썹{end}", "귀걸이{end}"]
   },
   {
@@ -63,7 +111,8 @@
   },
   {
    "addr": "$C6:A83C",
-   "question": "야에가 지로마루에게 몇 연승？{end}",
+   "question_full": "야에가 지로마루에게 몇 연승했을까？{end}",
+   "question": "야에는 지로마루에게{nl}몇 연승했을까？{end}",
    "choices": ["20연승{end}", "15연승{end}", "10연승{end}", "5연승{end}"]
   },
   {
@@ -73,8 +122,9 @@
   },
   {
    "addr": "$C6:A88E",
-   "question": "미니욘 파이터가{nl}츠치야 박사에게 받은 것은？{end}",
-   "choices": ["고기 호빵{end}", "군고구마{end}", "교자{end}", "슈마이{end}"]
+   "question_full": "미니욘 파이터가{nl}츠치야 박사에게 받은 것은？{end}",
+   "question": "미니욘 파이터가{nl}츠치야에게 받은 것은？{end}",
+   "choices": ["고기만두{end}", "군고구마{end}", "교자{end}", "슈마이{end}"]
   },
   {
    "addr": "$C6:A8C1",
@@ -88,7 +138,8 @@
   },
   {
    "addr": "$C6:A907",
-   "question": "레츠와 고의 아빠가 잃은 것？{end}",
+   "question_full": "레츠와 고의 아빠가 잃어버린 것은？{end}",
+   "question": "레츠와 고의 아빠가{nl}잃어버린 것은？{end}",
    "choices": ["반지{end}", "지갑{end}", "머신{end}", "안경{end}"]
   },
   {
@@ -103,7 +154,8 @@
   },
   {
    "addr": "$C6:A97B",
-   "question": "고에게 러브레터를 준 사람？{end}",
+   "question_full": "고에게 러브레터를 준 사람은 누구？{end}",
+   "question": "고에게 러브레터를{nl}준 사람은 누구？{end}",
    "choices": ["줄리오{end}", "준{end}", "타마미{end}", "텟신{end}"]
   },
   {
@@ -114,7 +166,7 @@
   {
    "addr": "$C6:A9C9",
    "question": "교장 선생님이 춘 춤은？{end}",
-   "choices": ["알몸 춤{end}", "삼바{end}", "마카레나{end}", "람바다{end}"]
+   "choices": ["알몸춤{end}", "삼바{end}", "마카레나{end}", "람바다{end}"]
   },
   {
    "addr": "$C6:A9F1",
@@ -124,7 +176,8 @@
   {
    "addr": "$C6:AA1E",
    "question": "미쿠니가 앞 석상의{nl}가운데 원숭이는？{end}",
-   "choices": ["말하지 않는 원숭이{end}", "듣지 않는 원숭이{end}", "보지 않는 원숭이{end}", "미쿠니 토우키치{end}"]
+   "choices_full": ["입 막은 원숭이{end}", "귀 막은 원숭이{end}", "눈 가린 원숭이{end}", "미쿠니 토우키치{end}"],
+   "choices": ["입 막은{end}", "귀 막은{end}", "눈 가린{end}", "토우키치{end}"]
   },
   {
    "addr": "$C6:AA50",

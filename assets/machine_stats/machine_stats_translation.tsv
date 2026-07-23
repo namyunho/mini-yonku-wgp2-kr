@@ -1,0 +1,8 @@
+id	screen_crop_px	workshop_crop_px	tile_capacity	original_jp	translation_kr_full	translation_kr_display	abbreviated
+speed	x16,y64,w48,h8	x4,y14,w48,h8	6	スピード	스피드	스피드	false
+cornering	x16,y80,w48,h8	x4,y46,w48,h8	6	コーナリング	코너링	코너링	false
+power	x16,y96,w48,h8	x4,y78,w48,h8	6	パワー	파워	파워	false
+downforce	x16,y112,w48,h8	x4,y110,w48,h8	6	ダウンフォース	다운포스	다운포스	false
+weight	x16,y128,w48,h8	x4,y142,w48,h8	6	おもさ	무게	무게	false
+dash	x16,y144,w48,h8	x4,y174,w48,h8	6	ダッシュ	대시	대시	false
+berserk	x16,y160,w48,h8	x4,y206,w48,h8	6	ばくそう	폭주	폭주	false

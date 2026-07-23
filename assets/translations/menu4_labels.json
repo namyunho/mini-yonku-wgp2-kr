@@ -1,0 +1,538 @@
+{
+  "_meta": {
+    "ssot": "tasks/codex-brief-menu4.md",
+    "rom": "roms/re_codex.smc",
+    "format": "addr identifies the first byte of the exact contiguous orig_span_hex patch span",
+    "existing_syllable_count": 200,
+    "added_syllables": [
+      "목",
+      "차",
+      "맵",
+      "변",
+      "경",
+      "출",
+      "동",
+      "얼",
+      "윈",
+      "환",
+      "택",
+      "성",
+      "능",
+      "운",
+      "내",
+      "력",
+      "종",
+      "체",
+      "톱",
+      "회",
+      "템",
+      "작",
+      "법",
+      "용"
+    ],
+    "added_syllable_count": 24,
+    "total_syllable_count": 224,
+    "vram_cap": 224,
+    "mode_counts": {
+      "baseswap": 1,
+      "inplace": 22,
+      "overflow": 25
+    },
+    "source_inventory": {
+      "c7_length_payload_occurrences": 42,
+      "c3_xmenu_direct_spans": 6,
+      "c1_c6d0_c7a0": "boxed direct-tile data inspected; no standalone SSOT target row (Easy/Manual setting excluded)",
+      "ce_46xx": "no parseable direct-tile label table; bytes are repeating 2bpp-looking graphics data, so no patch span emitted"
+    },
+    "gates": {
+      "decode_match": "PASS (48/48)",
+      "structure_preserved": "PASS for inplace spans; overflow/baseswap rows are explicitly non-applied plans",
+      "byte_fit_flagged": "PASS (no truncation)",
+      "syllable_cap": "PASS (200+24=224 <= 224)",
+      "font_coverage": "PASS",
+      "missing_translation_rows": "PASS (0)"
+    }
+  },
+  "labels": [
+    {
+      "table": "c7_tutorial:toc_title",
+      "addr": "$C7:B188",
+      "jp": "もくじ",
+      "kr": "목차",
+      "orig_span_hex": "23080C",
+      "new_bytes_hex": "FEC8FEC9",
+      "mode": "overflow",
+      "note": "marker 4B > main span 3B by 1B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:toc_p2",
+      "addr": "$C7:B1E8",
+      "jp": "マップ モード",
+      "kr": "맵 모드",
+      "orig_span_hex": "566E53005A6F4B",
+      "new_bytes_hex": "FECA00FE12FE24",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B1E7 size=7; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "c7_tutorial:toc_p3",
+      "addr": "$C7:B24B",
+      "jp": "セッティング モード",
+      "kr": "세팅 모드",
+      "orig_span_hex": "456E4A67653F005A6F4B",
+      "new_bytes_hex": "FE27FE2800FE12FE24FF",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B24A size=10; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "c7_tutorial:toc_p4",
+      "addr": "$C7:B2B2",
+      "jp": "パラメータについて",
+      "kr": "파라미터",
+      "orig_span_hex": "515E596F4716120213",
+      "new_bytes_hex": "FE68FE49FE2DFE03FF",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B2B1 size=9; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "c7_tutorial:toc_p5",
+      "addr": "$C7:B36F",
+      "jp": "グリッドへんこう モード",
+      "kr": "그리드변경 모드",
+      "orig_span_hex": "3F5F6E4B1D2E0A03005A6F4B",
+      "new_bytes_hex": "FE55FE15FE24FECBFECC00FE12FE24",
+      "mode": "overflow",
+      "note": "marker 15B > main span 12B by 3B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:toc_p6",
+      "addr": "$C7:B3C4",
+      "jp": "レース モード",
+      "kr": "레이스 모드",
+      "orig_span_hex": "616F44005A6F4B",
+      "new_bytes_hex": "FE60FE04FE4100FE12FE24",
+      "mode": "overflow",
+      "note": "marker 11B > main span 7B by 4B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:toc_p7",
+      "addr": "$C7:B43B",
+      "jp": "WGPエントリー モード",
+      "kr": "WGP출전 모드",
+      "orig_span_hex": "86767F3B654B5F6F005A6F4B",
+      "new_bytes_hex": "86767FFECDFEBC00FE12FE24",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B43A size=12; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "c7_tutorial:map_button",
+      "addr": "$C7:B1F6",
+      "jp": "アクション",
+      "kr": "액션",
+      "orig_span_hex": "383F436D65",
+      "new_bytes_hex": "FEBAFE19FF",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B1F5 size=5; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "c7_tutorial:map_button",
+      "addr": "$C7:B222",
+      "jp": "アクション",
+      "kr": "액션",
+      "orig_span_hex": "383F436D65",
+      "new_bytes_hex": "FEBAFE19FF",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B221 size=5; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "c7_tutorial:map_button",
+      "addr": "$C7:B200",
+      "jp": "いどう",
+      "kr": "이동",
+      "orig_span_hex": "021403",
+      "new_bytes_hex": "FE04FECE",
+      "mode": "overflow",
+      "note": "marker 4B > main span 3B by 1B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:map_button",
+      "addr": "$C7:B20A",
+      "jp": "マニュアル",
+      "kr": "매뉴얼",
+      "orig_span_hex": "564D6C3860",
+      "new_bytes_hex": "FE54FE1BFECF",
+      "mode": "overflow",
+      "note": "marker 6B > main span 5B by 1B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:map_button",
+      "addr": "$C7:B3B6",
+      "jp": "マニュアル",
+      "kr": "매뉴얼",
+      "orig_span_hex": "564D6C3860",
+      "new_bytes_hex": "FE54FE1BFECF",
+      "mode": "overflow",
+      "note": "marker 6B > main span 5B by 1B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:map_button",
+      "addr": "$C7:B216",
+      "jp": "ウィンドウ",
+      "kr": "윈도우",
+      "orig_span_hex": "3A67654B3A",
+      "new_bytes_hex": "FED0FE77FE48",
+      "mode": "overflow",
+      "note": "marker 6B > main span 5B by 1B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:map_button",
+      "addr": "$C7:B2A2",
+      "jp": "ウィンドウ",
+      "kr": "윈도우",
+      "orig_span_hex": "3A67654B3A",
+      "new_bytes_hex": "FED0FE77FE48",
+      "mode": "overflow",
+      "note": "marker 6B > main span 5B by 1B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:map_button",
+      "addr": "$C7:B22D",
+      "jp": "ダッシュ",
+      "kr": "대시",
+      "orig_span_hex": "476E436C",
+      "new_bytes_hex": "FE5AFE99",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B22C size=4; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "c7_tutorial:map_button",
+      "addr": "$C7:B239",
+      "jp": "セッティング",
+      "kr": "세팅",
+      "orig_span_hex": "456E4A67653F",
+      "new_bytes_hex": "FE27FE28FFFF",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B238 size=6; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "c7_tutorial:setting_button",
+      "addr": "$C7:B25E",
+      "jp": "マシンきりかえ",
+      "kr": "머신전환",
+      "orig_span_hex": "56436507280604",
+      "new_bytes_hex": "FE10FE11FEBCFED1",
+      "mode": "overflow",
+      "note": "marker 8B > main span 7B by 1B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:setting_button",
+      "addr": "$C7:B26E",
+      "jp": "マシンきりかえ",
+      "kr": "머신전환",
+      "orig_span_hex": "56436507280604",
+      "new_bytes_hex": "FE10FE11FEBCFED1",
+      "mode": "overflow",
+      "note": "marker 8B > main span 7B by 1B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:setting_button",
+      "addr": "$C7:B27E",
+      "jp": "パーツせんたく",
+      "kr": "파츠선택",
+      "orig_span_hex": "516F490E2E1008",
+      "new_bytes_hex": "FE68FE78FE50FED2",
+      "mode": "overflow",
+      "note": "marker 8B > main span 7B by 1B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:setting_button",
+      "addr": "$C7:B28B",
+      "jp": "けってい",
+      "kr": "결정",
+      "orig_span_hex": "092F1302",
+      "new_bytes_hex": "FE1CFE1D",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B28A size=4; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "c7_tutorial:setting_button",
+      "addr": "$C7:B391",
+      "jp": "けってい",
+      "kr": "결정",
+      "orig_span_hex": "092F1302",
+      "new_bytes_hex": "FE1CFE1D",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B390 size=4; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "c7_tutorial:setting_button",
+      "addr": "$C7:B457",
+      "jp": "けってい",
+      "kr": "결정",
+      "orig_span_hex": "092F1302",
+      "new_bytes_hex": "FE1CFE1D",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B456 size=4; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "c7_tutorial:setting_button",
+      "addr": "$C7:B296",
+      "jp": "キャンセル",
+      "kr": "취소",
+      "orig_span_hex": "3E6B654560",
+      "new_bytes_hex": "FE22FE23FF",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B295 size=5; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "c7_tutorial:setting_button",
+      "addr": "$C7:B39C",
+      "jp": "キャンセル",
+      "kr": "취소",
+      "orig_span_hex": "3E6B654560",
+      "new_bytes_hex": "FE22FE23FF",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B39B size=5; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "c7_tutorial:parameter",
+      "addr": "$C7:B2CB",
+      "jp": "スピードせいのう",
+      "kr": "스피드성능",
+      "orig_span_hex": "44526F4B0E021903",
+      "new_bytes_hex": "FE41FE45FE24FED3FED4",
+      "mode": "overflow",
+      "note": "marker 10B > main span 8B by 2B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:parameter",
+      "addr": "$C7:B2E5",
+      "jp": "コーナリングせいのう",
+      "kr": "코너링성능",
+      "orig_span_hex": "416F4C5F653F0E021903",
+      "new_bytes_hex": "FEA0FE40FEC4FED3FED4",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B2E1 size=13; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "c7_tutorial:parameter",
+      "addr": "$C7:B2FE",
+      "jp": "パワーせいのう",
+      "kr": "파워성능",
+      "orig_span_hex": "51636F0E021903",
+      "new_bytes_hex": "FE68FE33FED3FED4",
+      "mode": "overflow",
+      "note": "marker 8B > main span 7B by 1B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:parameter",
+      "addr": "$C7:B318",
+      "jp": "ダウンフォースせいのう",
+      "kr": "다운포스성능",
+      "orig_span_hex": "473A65536A6F440E021903",
+      "new_bytes_hex": "FE32FED5FEB4FE41FED3FED4",
+      "mode": "overflow",
+      "note": "marker 12B > main span 11B by 1B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:parameter",
+      "addr": "$C7:B32E",
+      "jp": "おもさ",
+      "kr": "무게",
+      "orig_span_hex": "05230B",
+      "new_bytes_hex": "FE9BFE9E",
+      "mode": "overflow",
+      "note": "marker 4B > main span 3B by 1B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:parameter",
+      "addr": "$C7:B341",
+      "jp": "たいきゅうりょく",
+      "kr": "내구력",
+      "orig_span_hex": "1002073603283708",
+      "new_bytes_hex": "FED6FEA4FED7FFFF",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B33D size=11; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "c7_tutorial:parameter",
+      "addr": "$C7:B359",
+      "jp": "ばくそうポイント",
+      "kr": "폭주포인트",
+      "orig_span_hex": "1A080F035539654B",
+      "new_bytes_hex": "FEABFE44FEB4FEA7FE53",
+      "mode": "overflow",
+      "note": "marker 10B > main span 8B by 2B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:grid_button",
+      "addr": "$C7:B384",
+      "jp": "マシンせんたく",
+      "kr": "머신선택",
+      "orig_span_hex": "5643650E2E1008",
+      "new_bytes_hex": "FE10FE11FE50FED2",
+      "mode": "overflow",
+      "note": "marker 8B > main span 7B by 1B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:grid_button",
+      "addr": "$C7:B3A9",
+      "jp": "しゅうりょう",
+      "kr": "종료",
+      "orig_span_hex": "0C3603283703",
+      "new_bytes_hex": "FED8FE7AFFFF",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B3A8 size=6; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "c7_tutorial:race_button",
+      "addr": "$C7:B417",
+      "jp": "チェンジ",
+      "kr": "체인지",
+      "orig_span_hex": "48696543",
+      "new_bytes_hex": "FED9FEA7FE25",
+      "mode": "overflow",
+      "note": "marker 6B > main span 4B by 2B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:race_button",
+      "addr": "$C7:B421",
+      "jp": "チェンジ",
+      "kr": "체인지",
+      "orig_span_hex": "48696543",
+      "new_bytes_hex": "FED9FEA7FE25",
+      "mode": "overflow",
+      "note": "marker 6B > main span 4B by 2B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:race_button",
+      "addr": "$C7:B3D3",
+      "jp": "ステアリング",
+      "kr": "스티어링",
+      "orig_span_hex": "444A385F653F",
+      "new_bytes_hex": "FE41FE8FFE05FEC4",
+      "mode": "overflow",
+      "note": "marker 8B > main span 6B by 2B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:race_button",
+      "addr": "$C7:B42A",
+      "jp": "ポーズ",
+      "kr": "포즈",
+      "orig_span_hex": "556F44",
+      "new_bytes_hex": "FEB4FE43",
+      "mode": "overflow",
+      "note": "marker 4B > main span 3B by 1B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:race_button",
+      "addr": "$C7:B3FA",
+      "jp": "トップチェンジ",
+      "kr": "톱체인지",
+      "orig_span_hex": "4B6E5348696543",
+      "new_bytes_hex": "FEDAFED9FEA7FE25",
+      "mode": "overflow",
+      "note": "marker 8B > main span 7B by 1B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:race_button",
+      "addr": "$C7:B3E1",
+      "jp": "BPかいふく",
+      "kr": "BP회복",
+      "orig_span_hex": "717F06021C08",
+      "new_bytes_hex": "717FFEDBFE08",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B3E0 size=6; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "c7_tutorial:race_button",
+      "addr": "$C7:B3ED",
+      "jp": "ばくそう",
+      "kr": "폭주",
+      "orig_span_hex": "1A080F03",
+      "new_bytes_hex": "FEABFE44",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B3EC size=4; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "c7_tutorial:race_button",
+      "addr": "$C7:B40A",
+      "jp": "レースアイテム",
+      "kr": "레이스아이템",
+      "orig_span_hex": "616F4438394A58",
+      "new_bytes_hex": "FE60FE04FE41FE1FFE04FEDC",
+      "mode": "overflow",
+      "note": "marker 12B > main span 7B by 5B; no truncation; C38B descriptor exposes only base high byte, so per-label +0x0220 base swap is unavailable"
+    },
+    {
+      "table": "c7_tutorial:wgp_entry",
+      "addr": "$C7:B44D",
+      "jp": "せんたく",
+      "kr": "선택",
+      "orig_span_hex": "0E2E1008",
+      "new_bytes_hex": "FE50FED2",
+      "mode": "inplace",
+      "note": "C7 length record $C7:B44C size=4; main-tile subspan only; length/opcodes/coordinates/overlay records unchanged"
+    },
+    {
+      "table": "xmenu",
+      "addr": "$C3:95BE",
+      "jp": "セッティング",
+      "kr": "세팅",
+      "orig_span_hex": "456E4A676500943F",
+      "new_bytes_hex": "FE27FE28FF0094FF",
+      "mode": "inplace",
+      "note": "direct-render span; preserved 1 inline overlay escape(s) at exact offsets; row terminator/control bytes immediately after span unchanged"
+    },
+    {
+      "table": "xmenu",
+      "addr": "$C3:95CA",
+      "jp": "グリッドへんこう",
+      "kr": "그리드변경",
+      "orig_span_hex": "00943F5F6E00944B1D2E0A03",
+      "new_bytes_hex": "FE55FE15FE24FECBFECC",
+      "mode": "overflow",
+      "note": "canonical marker 10B cannot fit immutable direct-render runs (8 body bytes split by overlay escapes); no truncation"
+    },
+    {
+      "table": "xmenu",
+      "addr": "$C3:95DA",
+      "jp": "アイテム",
+      "kr": "아이템",
+      "orig_span_hex": "38394A58",
+      "new_bytes_hex": "1F04DCFF",
+      "mode": "baseswap",
+      "note": "marker 6B > 4B; fixed caller $C3:95A4 can change base $2100->$2320 only for the entire $C3:95BE program; requires group re-encode and FF blank special-case"
+    },
+    {
+      "table": "xmenu",
+      "addr": "$C3:9201",
+      "jp": "マップ",
+      "kr": "지도",
+      "orig_span_hex": "566E009553",
+      "new_bytes_hex": "FE25FE77",
+      "mode": "overflow",
+      "note": "canonical marker 4B cannot fit immutable direct-render runs (3 body bytes split by overlay escapes); no truncation"
+    },
+    {
+      "table": "xmenu",
+      "addr": "$C3:9208",
+      "jp": "そうさマニュアル",
+      "kr": "조작방법",
+      "orig_span_hex": "0F030B564D6C3860",
+      "new_bytes_hex": "FE80FEDDFE70FEDE",
+      "mode": "inplace",
+      "note": "direct-render span; preserved 0 inline overlay escape(s) at exact offsets; row terminator/control bytes immediately after span unchanged"
+    },
+    {
+      "table": "xmenu",
+      "addr": "$C3:9212",
+      "jp": "ようごしゅう",
+      "kr": "용어집",
+      "orig_span_hex": "260300940A0C3603",
+      "new_bytes_hex": "FEDF0094FE05FE3B",
+      "mode": "inplace",
+      "note": "direct-render span; preserved 1 inline overlay escape(s) at exact offsets; row terminator/control bytes immediately after span unchanged"
+    }
+  ]
+}

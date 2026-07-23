@@ -58,7 +58,11 @@ CMD_PROG = {
     # 선형 디스어셈블에는 JSR $5B4A가 7회 보이지만 두 분기는 상호배타라 직렬화 인자는 총 4식이다.
     0x58: [('expr',), ('expr',), ('expr',), ('expr',)],
     0x59: [('b', 1), ('expr',), ('expr',)], 0x5A: [('b', 1), ('b', 1)],
-    0x5D: [('expr',), ('expr',)], 0x5E: [('b', 1), ('expr',)], 0x5F: [('b', 1)],
+    0x5D: [('expr',), ('expr',)], 0x5E: [('b', 1), ('expr',)],
+    # cmd 0x5F ($C0:530B): 0x00을 만날 때까지 객체 ID를 읽고 각 객체의 상태 비트 0x08을
+    # 내린다. 단일 1바이트 인자로 처리하면 scene 0xF7이 0x0004에서 desync하며 뒤쪽의
+    # 정상 대사 14런 전체를 놓친다.
+    0x5F: [('list0',)],
     0x80: [('b', 1)],
 }
 
@@ -97,6 +101,14 @@ LEGACY_EXPR_ARG = {
     0x58: 2, 0x5C: 2, 0x5F: 2, 0x62: 1, 0x63: 1, 0x64: 2, 0x67: 4,
 }
 TEXT_CMDS = (0x20, 0x21)
+
+# 기존 평면 표현식 워커보다 실제 재귀 문법 워커가 모든 기존 런을 보존하면서, 분기 뒤에
+# 숨었던 정상 텍스트런까지 완주하는 것으로 확인된 씬. 전 씬 일괄 전환은 0x54/0x61 등
+# 기존 카탈로그 주소를 잃으므로, 엄격 파서가 기존 런의 진상위집합인 장면만 선택한다.
+STRICT_SCENES = frozenset({
+    0x7A, 0x8B, 0x99, 0xA8, 0xBE,
+    0xC5, 0xC6, 0xE5, 0xE6, 0xF7,
+})
 
 # 오퍼랜드 크기가 조건부인 명령 (핸들러가 JSR $C0:5AC6 으로 판정 — ROM 전역 2곳뿐):
 #   $5AC6: op바이트≠0 → 캐리SET → 워드 2바이트 추가소비(총 3)
@@ -241,6 +253,16 @@ def walk(buf, start=0, limit=None, strict=False):
                 stats['desync'] += 1
                 return runs, stats, exc.at
     return runs, stats, p
+
+
+def walk_catalog_scene(buf, scene_id, start=0, limit=None):
+    """번역 SSOT와 빌드가 공유하는 씬별 호환 파서 선택."""
+    return walk(
+        buf,
+        start=start,
+        limit=limit,
+        strict=scene_id in STRICT_SCENES,
+    )
 
 
 def main():

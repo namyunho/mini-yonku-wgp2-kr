@@ -15,7 +15,7 @@
 import sys, json
 sys.path.insert(0, 'scripts')
 from adv_codec import decompress_scene, scene_src, foff, ROM, DICT_SNES, N_SCENES
-from adv_scene import walk, render, read_text_run
+from adv_scene import walk_catalog_scene, render, read_text_run
 from decode_script import load_tbl
 
 OUT = 'assets/translations/adventure.json'
@@ -43,7 +43,7 @@ def main():
             buf, olen, _ = decompress_scene(rom, bank, addr, dic)
         except Exception:
             continue
-        runs, stats, endp = walk(buf)
+        runs, stats, endp = walk_catalog_scene(buf, sid)
         clean = (not stats['desync']) and endp >= len(buf) - 1
         n_clean += clean
         out_runs = []

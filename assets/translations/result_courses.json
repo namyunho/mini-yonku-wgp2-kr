@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "description": "Result/Best 화면 경기장명 그래픽 원장",
+    "source_asset": "$D9:444A (LZSS, decompressed 0x0C00 bytes, 2bpp)",
+    "index_table": "$C3:C12E-$C3:C14D (8 course IDs, start/end tile pair per ID)",
+    "renderer": "$C3:0B47, current course ID at $09AB, VRAM word $0180",
+    "note": "팀명 자산 $D9:30B1과 독립된 경기장명 전용 자산이다. 원문/완역/표시문을 분리하며 현재 8개 모두 축약하지 않는다."
+  },
+  "labels": [
+    {"course_id":0,"tile_span":"0000-0007","text_jp":"GPドーム","text_kr_full":"GP 돔","text_kr_display":"GP 돔","abbreviated":false},
+    {"course_id":1,"tile_span":"0008-0021","text_jp":"アストロドーム","text_kr_full":"아스트로 돔","text_kr_display":"아스트로 돔","abbreviated":false},
+    {"course_id":2,"tile_span":"0022-002B","text_jp":"オーロラドーム","text_kr_full":"오로라 돔","text_kr_display":"오로라 돔","abbreviated":false},
+    {"course_id":3,"tile_span":"002C-0047","text_jp":"サバンナスタジアム","text_kr_full":"사반나 스타디움","text_kr_display":"사반나 스타디움","abbreviated":false},
+    {"course_id":4,"tile_span":"0048-0067","text_jp":"長城園サーキット","text_kr_full":"장성원 서킷","text_kr_display":"장성원 서킷","abbreviated":false},
+    {"course_id":5,"tile_span":"0068-0085","text_jp":"地中海サーキット","text_kr_full":"지중해 서킷","text_kr_display":"지중해 서킷","abbreviated":false},
+    {"course_id":6,"tile_span":"0086-00A3","text_jp":"キャッスルスタジアム","text_kr_full":"캐슬 스타디움","text_kr_display":"캐슬 스타디움","abbreviated":false},
+    {"course_id":7,"tile_span":"00A4-00AF","text_jp":"富士ノ湖サーキット","text_kr_full":"후지노코 서킷","text_kr_display":"후지노코 서킷","abbreviated":false}
+  ]
+}

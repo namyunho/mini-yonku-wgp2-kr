@@ -34,7 +34,128 @@
   "entries": 350,
   "questions": 70,
   "roundtrip_ok": 350,
-  "translated_lore_entries": 150
+  "translated_lore_entries": 150,
+  "fixed_messages": 7,
+  "fixed_roundtrip_ok": 7
+ },
+ "fixed_messages": [
+  {
+   "id": "math_prompt",
+   "addr": "$C6:A017",
+   "file_offset": "0x06A017",
+   "pointer_fields": [
+    "$C6:9F92",
+    "$C6:9FD0"
+   ],
+   "n_bytes": 30,
+   "raw_hex": "292F23BD7F9D39FD356432244805017C25BD7F9D4C242D66021E41486000",
+   "text": "[019][01F][013][0AD][06F][08D][029][0ED][025][054][022][014][038]{nl}[16C][015][0AD][06F][08D][03C][014][01D][056][20E][031][038][050]{end}",
+   "jp": "こたえボタンは下にでておる{nl}何かボタンをおせば始めるぞ{end}",
+   "kr_full": "정답 버튼은 아래에 있다{nl}아무 버튼이나 누르면 시작한다{end}",
+   "kr": "정답 버튼은 아래에 있다{nl}버튼을 누르면 시작한다{end}",
+   "abbreviated": true
+  },
+  {
+   "id": "math_correct",
+   "addr": "$C6:A035",
+   "file_offset": "0x06A035",
+   "pointer_fields": [
+    "$C6:9F95"
+   ],
+   "n_bytes": 11,
+   "raw_hex": "2424E4114347244E2F3400",
+   "text": "[014][014][0D4][001][033][037][014][03E][01F][024]{end}",
+   "jp": "おお！　やりおったな{end}",
+   "kr_full": "오오！　잘했구나{end}",
+   "kr": "오오！　잘했구나{end}",
+   "abbreviated": false
+  },
+  {
+   "id": "math_mul_correct",
+   "addr": "$C6:A040",
+   "file_offset": "0x06A040",
+   "pointer_fields": [
+    "$C6:9FD3"
+   ],
+   "n_bytes": 4,
+   "raw_hex": "C7C7C700",
+   "text": "[0B7][0B7][0B7]{end}",
+   "jp": "………{end}",
+   "kr_full": "………{end}",
+   "kr": "………{end}",
+   "abbreviated": false
+  },
+  {
+   "id": "math_wrong",
+   "addr": "$C6:A044",
+   "file_offset": "0x06A044",
+   "pointer_fields": [
+    "$C6:9F98",
+    "$C6:9FD6"
+   ],
+   "n_bytes": 9,
+   "raw_hex": "344D2F4829335D5400",
+   "text": "[024][03D][01F][038][019][023][04D][044]{end}",
+   "jp": "なんたることじゃ{end}",
+   "kr_full": "이럴 수가{end}",
+   "kr": "이럴 수가{end}",
+   "abbreviated": false
+  },
+  {
+   "id": "lore_prompt",
+   "addr": "$C6:A04D",
+   "file_offset": "0x06A04D",
+   "pointer_fields": [
+    "$C6:A00E"
+   ],
+   "n_bytes": 31,
+   "raw_hex": "292F23BD7F9D39FD38332447642C05017C25BD7F9D4C242D66021E413E2C00",
+   "text": "[019][01F][013][0AD][06F][08D][029][0ED][028][023][014][037][054][01C]{nl}[16C][015][0AD][06F][08D][03C][014][01D][056][20E][031][02E][01C]{end}",
+   "jp": "こたえボタンは下のとおりです{nl}何かボタンをおせば始めます{end}",
+   "kr_full": "정답 버튼은 아래와 같습니다{nl}아무 버튼이나 누르면 시작합니다{end}",
+   "kr": "정답 버튼은 아래와 같습니다{nl}버튼을 누르면 시작합니다{end}",
+   "abbreviated": true
+  },
+  {
+   "id": "lore_correct",
+   "addr": "$C6:A06C",
+   "file_offset": "0x06A06C",
+   "pointer_fields": [
+    "$C6:A011"
+   ],
+   "n_bytes": 7,
+   "raw_hex": "2A2C57642C3700",
+   "text": "[01A][01C][047][054][01C][027]{end}",
+   "jp": "さすがですね{end}",
+   "kr_full": "역시 대단하군요{end}",
+   "kr": "역시 대단하군요{end}",
+   "abbreviated": false
+  },
+  {
+   "id": "lore_wrong",
+   "addr": "$C6:A073",
+   "file_offset": "0x06A073",
+   "pointer_fields": [
+    "$C6:A014"
+   ],
+   "n_bytes": 8,
+   "raw_hex": "B491642B2F25C700",
+   "text": "[0A4][081][054][01B][01F][015][0B7]{end}",
+   "jp": "ダメでしたか…{end}",
+   "kr_full": "틀렸군요…{end}",
+   "kr": "틀렸군요…{end}",
+   "abbreviated": false
+  }
+ ],
+ "status_line": {
+  "program_addr": "$C0:8D8A",
+  "file_offset": "0x008D8A",
+  "raw_hex": "FFFF0114FFFF232EFFFF473958FFFF9AFFFFFFFF05131207FFFFFFFF00",
+  "text_jp_full": "あと{remaining}もん　のこり{time}",
+  "text_kr_full": "남은 문제 {remaining}개　남은 시간 {time}",
+  "text_kr": "문제 {remaining}　시간 {time}",
+  "abbreviated": true,
+  "note": "직접 타일 프로그램의 동적 숫자 칸은 보존한다. 원문 상태줄을 지우며 비는 $01 타일을 '간'으로, 조사된 월드맵·튜토리얼 직접 프로그램에서 사용하지 않는 $1B/$1E를 '문/제'로 추가한다."
  },
  "entries": [
   {
@@ -49,7 +170,9 @@
    "raw_hex": "15EB17F200",
    "text": "[005][0DB][007][0E2]{end}",
    "jp": "3＋5＝{end}",
-   "kr": "3＋5＝{end}"
+   "kr_full": "3＋5＝{end}",
+   "kr": "3＋5＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 1,
@@ -63,7 +186,9 @@
    "raw_hex": "1A00",
    "text": "[00A]{end}",
    "jp": "8{end}",
-   "kr": "8{end}"
+   "kr_full": "8{end}",
+   "kr": "8{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 2,
@@ -77,7 +202,9 @@
    "raw_hex": "1900",
    "text": "[009]{end}",
    "jp": "7{end}",
-   "kr": "7{end}"
+   "kr_full": "7{end}",
+   "kr": "7{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 3,
@@ -91,7 +218,9 @@
    "raw_hex": "1B00",
    "text": "[00B]{end}",
    "jp": "9{end}",
-   "kr": "9{end}"
+   "kr_full": "9{end}",
+   "kr": "9{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 4,
@@ -105,7 +234,9 @@
    "raw_hex": "131700",
    "text": "[003][007]{end}",
    "jp": "15{end}",
-   "kr": "15{end}"
+   "kr_full": "15{end}",
+   "kr": "15{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 5,
@@ -119,7 +250,9 @@
    "raw_hex": "1AEB16F200",
    "text": "[00A][0DB][006][0E2]{end}",
    "jp": "8＋4＝{end}",
-   "kr": "8＋4＝{end}"
+   "kr_full": "8＋4＝{end}",
+   "kr": "8＋4＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 6,
@@ -133,7 +266,9 @@
    "raw_hex": "131400",
    "text": "[003][004]{end}",
    "jp": "12{end}",
-   "kr": "12{end}"
+   "kr_full": "12{end}",
+   "kr": "12{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 7,
@@ -147,7 +282,9 @@
    "raw_hex": "131500",
    "text": "[003][005]{end}",
    "jp": "13{end}",
-   "kr": "13{end}"
+   "kr_full": "13{end}",
+   "kr": "13{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 8,
@@ -161,7 +298,9 @@
    "raw_hex": "1600",
    "text": "[006]{end}",
    "jp": "4{end}",
-   "kr": "4{end}"
+   "kr_full": "4{end}",
+   "kr": "4{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 9,
@@ -175,7 +314,9 @@
    "raw_hex": "141400",
    "text": "[004][004]{end}",
    "jp": "22{end}",
-   "kr": "22{end}"
+   "kr_full": "22{end}",
+   "kr": "22{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 10,
@@ -189,7 +330,9 @@
    "raw_hex": "1BEC16F200",
    "text": "[00B][0DC][006][0E2]{end}",
    "jp": "9－4＝{end}",
-   "kr": "9－4＝{end}"
+   "kr_full": "9－4＝{end}",
+   "kr": "9－4＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 11,
@@ -203,7 +346,9 @@
    "raw_hex": "1700",
    "text": "[007]{end}",
    "jp": "5{end}",
-   "kr": "5{end}"
+   "kr_full": "5{end}",
+   "kr": "5{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 12,
@@ -217,7 +362,9 @@
    "raw_hex": "131500",
    "text": "[003][005]{end}",
    "jp": "13{end}",
-   "kr": "13{end}"
+   "kr_full": "13{end}",
+   "kr": "13{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 13,
@@ -231,7 +378,9 @@
    "raw_hex": "1400",
    "text": "[004]{end}",
    "jp": "2{end}",
-   "kr": "2{end}"
+   "kr_full": "2{end}",
+   "kr": "2{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 14,
@@ -245,7 +394,9 @@
    "raw_hex": "1600",
    "text": "[006]{end}",
    "jp": "4{end}",
-   "kr": "4{end}"
+   "kr_full": "4{end}",
+   "kr": "4{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 15,
@@ -259,7 +410,9 @@
    "raw_hex": "1BEB16F200",
    "text": "[00B][0DB][006][0E2]{end}",
    "jp": "9＋4＝{end}",
-   "kr": "9＋4＝{end}"
+   "kr_full": "9＋4＝{end}",
+   "kr": "9＋4＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 16,
@@ -273,7 +426,9 @@
    "raw_hex": "131500",
    "text": "[003][005]{end}",
    "jp": "13{end}",
-   "kr": "13{end}"
+   "kr_full": "13{end}",
+   "kr": "13{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 17,
@@ -287,7 +442,9 @@
    "raw_hex": "1700",
    "text": "[007]{end}",
    "jp": "5{end}",
-   "kr": "5{end}"
+   "kr_full": "5{end}",
+   "kr": "5{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 18,
@@ -301,7 +458,9 @@
    "raw_hex": "1B00",
    "text": "[00B]{end}",
    "jp": "9{end}",
-   "kr": "9{end}"
+   "kr_full": "9{end}",
+   "kr": "9{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 19,
@@ -315,7 +474,9 @@
    "raw_hex": "1300",
    "text": "[003]{end}",
    "jp": "1{end}",
-   "kr": "1{end}"
+   "kr_full": "1{end}",
+   "kr": "1{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 20,
@@ -329,7 +490,9 @@
    "raw_hex": "19EB18F200",
    "text": "[009][0DB][008][0E2]{end}",
    "jp": "7＋6＝{end}",
-   "kr": "7＋6＝{end}"
+   "kr_full": "7＋6＝{end}",
+   "kr": "7＋6＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 21,
@@ -343,7 +506,9 @@
    "raw_hex": "131500",
    "text": "[003][005]{end}",
    "jp": "13{end}",
-   "kr": "13{end}"
+   "kr_full": "13{end}",
+   "kr": "13{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 22,
@@ -357,7 +522,9 @@
    "raw_hex": "131400",
    "text": "[003][004]{end}",
    "jp": "12{end}",
-   "kr": "12{end}"
+   "kr_full": "12{end}",
+   "kr": "12{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 23,
@@ -371,7 +538,9 @@
    "raw_hex": "1300",
    "text": "[003]{end}",
    "jp": "1{end}",
-   "kr": "1{end}"
+   "kr_full": "1{end}",
+   "kr": "1{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 24,
@@ -385,7 +554,9 @@
    "raw_hex": "161400",
    "text": "[006][004]{end}",
    "jp": "42{end}",
-   "kr": "42{end}"
+   "kr_full": "42{end}",
+   "kr": "42{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 25,
@@ -399,7 +570,9 @@
    "raw_hex": "14EB18F200",
    "text": "[004][0DB][008][0E2]{end}",
    "jp": "2＋6＝{end}",
-   "kr": "2＋6＝{end}"
+   "kr_full": "2＋6＝{end}",
+   "kr": "2＋6＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 26,
@@ -413,7 +586,9 @@
    "raw_hex": "1A00",
    "text": "[00A]{end}",
    "jp": "8{end}",
-   "kr": "8{end}"
+   "kr_full": "8{end}",
+   "kr": "8{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 27,
@@ -427,7 +602,9 @@
    "raw_hex": "1900",
    "text": "[009]{end}",
    "jp": "7{end}",
-   "kr": "7{end}"
+   "kr_full": "7{end}",
+   "kr": "7{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 28,
@@ -441,7 +618,9 @@
    "raw_hex": "1B00",
    "text": "[00B]{end}",
    "jp": "9{end}",
-   "kr": "9{end}"
+   "kr_full": "9{end}",
+   "kr": "9{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 29,
@@ -455,7 +634,9 @@
    "raw_hex": "131700",
    "text": "[003][007]{end}",
    "jp": "15{end}",
-   "kr": "15{end}"
+   "kr_full": "15{end}",
+   "kr": "15{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 30,
@@ -469,7 +650,9 @@
    "raw_hex": "1BEB15F200",
    "text": "[00B][0DB][005][0E2]{end}",
    "jp": "9＋3＝{end}",
-   "kr": "9＋3＝{end}"
+   "kr_full": "9＋3＝{end}",
+   "kr": "9＋3＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 31,
@@ -483,7 +666,9 @@
    "raw_hex": "131400",
    "text": "[003][004]{end}",
    "jp": "12{end}",
-   "kr": "12{end}"
+   "kr_full": "12{end}",
+   "kr": "12{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 32,
@@ -497,7 +682,9 @@
    "raw_hex": "131500",
    "text": "[003][005]{end}",
    "jp": "13{end}",
-   "kr": "13{end}"
+   "kr_full": "13{end}",
+   "kr": "13{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 33,
@@ -511,7 +698,9 @@
    "raw_hex": "1600",
    "text": "[006]{end}",
    "jp": "4{end}",
-   "kr": "4{end}"
+   "kr_full": "4{end}",
+   "kr": "4{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 34,
@@ -525,7 +714,9 @@
    "raw_hex": "141400",
    "text": "[004][004]{end}",
    "jp": "22{end}",
-   "kr": "22{end}"
+   "kr_full": "22{end}",
+   "kr": "22{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 35,
@@ -539,7 +730,9 @@
    "raw_hex": "19EC14F200",
    "text": "[009][0DC][004][0E2]{end}",
    "jp": "7－2＝{end}",
-   "kr": "7－2＝{end}"
+   "kr_full": "7－2＝{end}",
+   "kr": "7－2＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 36,
@@ -553,7 +746,9 @@
    "raw_hex": "1700",
    "text": "[007]{end}",
    "jp": "5{end}",
-   "kr": "5{end}"
+   "kr_full": "5{end}",
+   "kr": "5{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 37,
@@ -567,7 +762,9 @@
    "raw_hex": "131500",
    "text": "[003][005]{end}",
    "jp": "13{end}",
-   "kr": "13{end}"
+   "kr_full": "13{end}",
+   "kr": "13{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 38,
@@ -581,7 +778,9 @@
    "raw_hex": "1400",
    "text": "[004]{end}",
    "jp": "2{end}",
-   "kr": "2{end}"
+   "kr_full": "2{end}",
+   "kr": "2{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 39,
@@ -595,7 +794,9 @@
    "raw_hex": "1600",
    "text": "[006]{end}",
    "jp": "4{end}",
-   "kr": "4{end}"
+   "kr_full": "4{end}",
+   "kr": "4{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 40,
@@ -609,7 +810,9 @@
    "raw_hex": "19EB14F200",
    "text": "[009][0DB][004][0E2]{end}",
    "jp": "7＋2＝{end}",
-   "kr": "7＋2＝{end}"
+   "kr_full": "7＋2＝{end}",
+   "kr": "7＋2＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 41,
@@ -623,7 +826,9 @@
    "raw_hex": "1B00",
    "text": "[00B]{end}",
    "jp": "9{end}",
-   "kr": "9{end}"
+   "kr_full": "9{end}",
+   "kr": "9{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 42,
@@ -637,7 +842,9 @@
    "raw_hex": "1700",
    "text": "[007]{end}",
    "jp": "5{end}",
-   "kr": "5{end}"
+   "kr_full": "5{end}",
+   "kr": "5{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 43,
@@ -651,7 +858,9 @@
    "raw_hex": "1800",
    "text": "[008]{end}",
    "jp": "6{end}",
-   "kr": "6{end}"
+   "kr_full": "6{end}",
+   "kr": "6{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 44,
@@ -665,7 +874,9 @@
    "raw_hex": "1300",
    "text": "[003]{end}",
    "jp": "1{end}",
-   "kr": "1{end}"
+   "kr_full": "1{end}",
+   "kr": "1{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 45,
@@ -679,7 +890,9 @@
    "raw_hex": "17EB1AF200",
    "text": "[007][0DB][00A][0E2]{end}",
    "jp": "5＋8＝{end}",
-   "kr": "5＋8＝{end}"
+   "kr_full": "5＋8＝{end}",
+   "kr": "5＋8＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 46,
@@ -693,7 +906,9 @@
    "raw_hex": "131500",
    "text": "[003][005]{end}",
    "jp": "13{end}",
-   "kr": "13{end}"
+   "kr_full": "13{end}",
+   "kr": "13{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 47,
@@ -707,7 +922,9 @@
    "raw_hex": "131400",
    "text": "[003][004]{end}",
    "jp": "12{end}",
-   "kr": "12{end}"
+   "kr_full": "12{end}",
+   "kr": "12{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 48,
@@ -721,7 +938,9 @@
    "raw_hex": "1300",
    "text": "[003]{end}",
    "jp": "1{end}",
-   "kr": "1{end}"
+   "kr_full": "1{end}",
+   "kr": "1{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 49,
@@ -735,7 +954,9 @@
    "raw_hex": "161400",
    "text": "[006][004]{end}",
    "jp": "42{end}",
-   "kr": "42{end}"
+   "kr_full": "42{end}",
+   "kr": "42{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 50,
@@ -749,7 +970,9 @@
    "raw_hex": "1315EB1316F200",
    "text": "[003][005][0DB][003][006][0E2]{end}",
    "jp": "13＋14＝{end}",
-   "kr": "13＋14＝{end}"
+   "kr_full": "13＋14＝{end}",
+   "kr": "13＋14＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 51,
@@ -763,7 +986,9 @@
    "raw_hex": "141900",
    "text": "[004][009]{end}",
    "jp": "27{end}",
-   "kr": "27{end}"
+   "kr_full": "27{end}",
+   "kr": "27{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 52,
@@ -777,7 +1002,9 @@
    "raw_hex": "141700",
    "text": "[004][007]{end}",
    "jp": "25{end}",
-   "kr": "25{end}"
+   "kr_full": "25{end}",
+   "kr": "25{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 53,
@@ -791,7 +1018,9 @@
    "raw_hex": "131900",
    "text": "[003][009]{end}",
    "jp": "17{end}",
-   "kr": "17{end}"
+   "kr_full": "17{end}",
+   "kr": "17{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 54,
@@ -805,7 +1034,9 @@
    "raw_hex": "131B00",
    "text": "[003][00B]{end}",
    "jp": "19{end}",
-   "kr": "19{end}"
+   "kr_full": "19{end}",
+   "kr": "19{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 55,
@@ -819,7 +1050,9 @@
    "raw_hex": "131BEB1414F200",
    "text": "[003][00B][0DB][004][004][0E2]{end}",
    "jp": "19＋22＝{end}",
-   "kr": "19＋22＝{end}"
+   "kr_full": "19＋22＝{end}",
+   "kr": "19＋22＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 56,
@@ -833,7 +1066,9 @@
    "raw_hex": "161300",
    "text": "[006][003]{end}",
    "jp": "41{end}",
-   "kr": "41{end}"
+   "kr_full": "41{end}",
+   "kr": "41{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 57,
@@ -847,7 +1082,9 @@
    "raw_hex": "151300",
    "text": "[005][003]{end}",
    "jp": "31{end}",
-   "kr": "31{end}"
+   "kr_full": "31{end}",
+   "kr": "31{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 58,
@@ -861,7 +1098,9 @@
    "raw_hex": "151800",
    "text": "[005][008]{end}",
    "jp": "36{end}",
-   "kr": "36{end}"
+   "kr_full": "36{end}",
+   "kr": "36{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 59,
@@ -875,7 +1114,9 @@
    "raw_hex": "1900",
    "text": "[009]{end}",
    "jp": "7{end}",
-   "kr": "7{end}"
+   "kr_full": "7{end}",
+   "kr": "7{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 60,
@@ -889,7 +1130,9 @@
    "raw_hex": "1318EC14F200",
    "text": "[003][008][0DC][004][0E2]{end}",
    "jp": "16－2＝{end}",
-   "kr": "16－2＝{end}"
+   "kr_full": "16－2＝{end}",
+   "kr": "16－2＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 61,
@@ -903,7 +1146,9 @@
    "raw_hex": "131600",
    "text": "[003][006]{end}",
    "jp": "14{end}",
-   "kr": "14{end}"
+   "kr_full": "14{end}",
+   "kr": "14{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 62,
@@ -917,7 +1162,9 @@
    "raw_hex": "131700",
    "text": "[003][007]{end}",
    "jp": "15{end}",
-   "kr": "15{end}"
+   "kr_full": "15{end}",
+   "kr": "15{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 63,
@@ -931,7 +1178,9 @@
    "raw_hex": "131400",
    "text": "[003][004]{end}",
    "jp": "12{end}",
-   "kr": "12{end}"
+   "kr_full": "12{end}",
+   "kr": "12{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 64,
@@ -945,7 +1194,9 @@
    "raw_hex": "1900",
    "text": "[009]{end}",
    "jp": "7{end}",
-   "kr": "7{end}"
+   "kr_full": "7{end}",
+   "kr": "7{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 65,
@@ -959,7 +1210,9 @@
    "raw_hex": "1314EB1317F200",
    "text": "[003][004][0DB][003][007][0E2]{end}",
    "jp": "12＋15＝{end}",
-   "kr": "12＋15＝{end}"
+   "kr_full": "12＋15＝{end}",
+   "kr": "12＋15＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 66,
@@ -973,7 +1226,9 @@
    "raw_hex": "141900",
    "text": "[004][009]{end}",
    "jp": "27{end}",
-   "kr": "27{end}"
+   "kr_full": "27{end}",
+   "kr": "27{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 67,
@@ -987,7 +1242,9 @@
    "raw_hex": "141700",
    "text": "[004][007]{end}",
    "jp": "25{end}",
-   "kr": "25{end}"
+   "kr_full": "25{end}",
+   "kr": "25{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 68,
@@ -1001,7 +1258,9 @@
    "raw_hex": "131900",
    "text": "[003][009]{end}",
    "jp": "17{end}",
-   "kr": "17{end}"
+   "kr_full": "17{end}",
+   "kr": "17{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 69,
@@ -1015,7 +1274,9 @@
    "raw_hex": "131B00",
    "text": "[003][00B]{end}",
    "jp": "19{end}",
-   "kr": "19{end}"
+   "kr_full": "19{end}",
+   "kr": "19{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 70,
@@ -1029,7 +1290,9 @@
    "raw_hex": "1319EB1416F200",
    "text": "[003][009][0DB][004][006][0E2]{end}",
    "jp": "17＋24＝{end}",
-   "kr": "17＋24＝{end}"
+   "kr_full": "17＋24＝{end}",
+   "kr": "17＋24＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 71,
@@ -1043,7 +1306,9 @@
    "raw_hex": "161300",
    "text": "[006][003]{end}",
    "jp": "41{end}",
-   "kr": "41{end}"
+   "kr_full": "41{end}",
+   "kr": "41{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 72,
@@ -1057,7 +1322,9 @@
    "raw_hex": "151300",
    "text": "[005][003]{end}",
    "jp": "31{end}",
-   "kr": "31{end}"
+   "kr_full": "31{end}",
+   "kr": "31{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 73,
@@ -1071,7 +1338,9 @@
    "raw_hex": "151800",
    "text": "[005][008]{end}",
    "jp": "36{end}",
-   "kr": "36{end}"
+   "kr_full": "36{end}",
+   "kr": "36{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 74,
@@ -1085,7 +1354,9 @@
    "raw_hex": "1900",
    "text": "[009]{end}",
    "jp": "7{end}",
-   "kr": "7{end}"
+   "kr_full": "7{end}",
+   "kr": "7{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 75,
@@ -1099,7 +1370,9 @@
    "raw_hex": "131BEC17F200",
    "text": "[003][00B][0DC][007][0E2]{end}",
    "jp": "19－5＝{end}",
-   "kr": "19－5＝{end}"
+   "kr_full": "19－5＝{end}",
+   "kr": "19－5＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 76,
@@ -1113,7 +1386,9 @@
    "raw_hex": "131600",
    "text": "[003][006]{end}",
    "jp": "14{end}",
-   "kr": "14{end}"
+   "kr_full": "14{end}",
+   "kr": "14{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 77,
@@ -1127,7 +1402,9 @@
    "raw_hex": "131700",
    "text": "[003][007]{end}",
    "jp": "15{end}",
-   "kr": "15{end}"
+   "kr_full": "15{end}",
+   "kr": "15{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 78,
@@ -1141,7 +1418,9 @@
    "raw_hex": "131400",
    "text": "[003][004]{end}",
    "jp": "12{end}",
-   "kr": "12{end}"
+   "kr_full": "12{end}",
+   "kr": "12{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 79,
@@ -1155,7 +1434,9 @@
    "raw_hex": "1900",
    "text": "[009]{end}",
    "jp": "7{end}",
-   "kr": "7{end}"
+   "kr_full": "7{end}",
+   "kr": "7{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 80,
@@ -1169,7 +1450,9 @@
    "raw_hex": "1616EC131BF200",
    "text": "[006][006][0DC][003][00B][0E2]{end}",
    "jp": "44－19＝{end}",
-   "kr": "44－19＝{end}"
+   "kr_full": "44－19＝{end}",
+   "kr": "44－19＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 81,
@@ -1183,7 +1466,9 @@
    "raw_hex": "141700",
    "text": "[004][007]{end}",
    "jp": "25{end}",
-   "kr": "25{end}"
+   "kr_full": "25{end}",
+   "kr": "25{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 82,
@@ -1197,7 +1482,9 @@
    "raw_hex": "151700",
    "text": "[005][007]{end}",
    "jp": "35{end}",
-   "kr": "35{end}"
+   "kr_full": "35{end}",
+   "kr": "35{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 83,
@@ -1211,7 +1498,9 @@
    "raw_hex": "141900",
    "text": "[004][009]{end}",
    "jp": "27{end}",
-   "kr": "27{end}"
+   "kr_full": "27{end}",
+   "kr": "27{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 84,
@@ -1225,7 +1514,9 @@
    "raw_hex": "151500",
    "text": "[005][005]{end}",
    "jp": "33{end}",
-   "kr": "33{end}"
+   "kr_full": "33{end}",
+   "kr": "33{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 85,
@@ -1239,7 +1530,9 @@
    "raw_hex": "1716EC141BF200",
    "text": "[007][006][0DC][004][00B][0E2]{end}",
    "jp": "54－29＝{end}",
-   "kr": "54－29＝{end}"
+   "kr_full": "54－29＝{end}",
+   "kr": "54－29＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 86,
@@ -1253,7 +1546,9 @@
    "raw_hex": "141700",
    "text": "[004][007]{end}",
    "jp": "25{end}",
-   "kr": "25{end}"
+   "kr_full": "25{end}",
+   "kr": "25{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 87,
@@ -1267,7 +1562,9 @@
    "raw_hex": "151700",
    "text": "[005][007]{end}",
    "jp": "35{end}",
-   "kr": "35{end}"
+   "kr_full": "35{end}",
+   "kr": "35{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 88,
@@ -1281,7 +1578,9 @@
    "raw_hex": "141900",
    "text": "[004][009]{end}",
    "jp": "27{end}",
-   "kr": "27{end}"
+   "kr_full": "27{end}",
+   "kr": "27{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 89,
@@ -1295,7 +1594,9 @@
    "raw_hex": "151500",
    "text": "[005][005]{end}",
    "jp": "33{end}",
-   "kr": "33{end}"
+   "kr_full": "33{end}",
+   "kr": "33{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 90,
@@ -1309,7 +1610,9 @@
    "raw_hex": "1417121212EB131412121200",
    "text": "[004][007][002][002][002][0DB][003][004][002][002][002]{end}",
    "jp": "25000＋12000{end}",
-   "kr": "25000＋12000{end}"
+   "kr_full": "25000＋12000{end}",
+   "kr": "25000＋12000{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 91,
@@ -1323,7 +1626,9 @@
    "raw_hex": "151912121200",
    "text": "[005][009][002][002][002]{end}",
    "jp": "37000{end}",
-   "kr": "37000{end}"
+   "kr_full": "37000{end}",
+   "kr": "37000{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 92,
@@ -1337,7 +1642,9 @@
    "raw_hex": "1519121200",
    "text": "[005][009][002][002]{end}",
    "jp": "3700{end}",
-   "kr": "3700{end}"
+   "kr_full": "3700{end}",
+   "kr": "3700{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 93,
@@ -1351,7 +1658,9 @@
    "raw_hex": "131512121200",
    "text": "[003][005][002][002][002]{end}",
    "jp": "13000{end}",
-   "kr": "13000{end}"
+   "kr_full": "13000{end}",
+   "kr": "13000{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 94,
@@ -1365,7 +1674,9 @@
    "raw_hex": "1315121200",
    "text": "[003][005][002][002]{end}",
    "jp": "1300{end}",
-   "kr": "1300{end}"
+   "kr_full": "1300{end}",
+   "kr": "1300{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 95,
@@ -1379,7 +1690,9 @@
    "raw_hex": "1316121212EB1314121212F200",
    "text": "[003][006][002][002][002][0DB][003][004][002][002][002][0E2]{end}",
    "jp": "14000＋12000＝{end}",
-   "kr": "14000＋12000＝{end}"
+   "kr_full": "14000＋12000＝{end}",
+   "kr": "14000＋12000＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 96,
@@ -1393,7 +1706,9 @@
    "raw_hex": "141812121200",
    "text": "[004][008][002][002][002]{end}",
    "jp": "26000{end}",
-   "kr": "26000{end}"
+   "kr_full": "26000{end}",
+   "kr": "26000{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 97,
@@ -1407,7 +1722,9 @@
    "raw_hex": "1418121200",
    "text": "[004][008][002][002]{end}",
    "jp": "2600{end}",
-   "kr": "2600{end}"
+   "kr_full": "2600{end}",
+   "kr": "2600{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 98,
@@ -1421,7 +1738,9 @@
    "raw_hex": "131812121200",
    "text": "[003][008][002][002][002]{end}",
    "jp": "16000{end}",
-   "kr": "16000{end}"
+   "kr_full": "16000{end}",
+   "kr": "16000{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 99,
@@ -1435,7 +1754,9 @@
    "raw_hex": "1318121200",
    "text": "[003][008][002][002]{end}",
    "jp": "1600{end}",
-   "kr": "1600{end}"
+   "kr_full": "1600{end}",
+   "kr": "1600{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 100,
@@ -1449,7 +1770,9 @@
    "raw_hex": "15ED17F200",
    "text": "[005][0DD][007][0E2]{end}",
    "jp": "3×5＝{end}",
-   "kr": "3×5＝{end}"
+   "kr_full": "3×5＝{end}",
+   "kr": "3×5＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 101,
@@ -1463,7 +1786,9 @@
    "raw_hex": "131700",
    "text": "[003][007]{end}",
    "jp": "15{end}",
-   "kr": "15{end}"
+   "kr_full": "15{end}",
+   "kr": "15{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 102,
@@ -1477,7 +1802,9 @@
    "raw_hex": "131A00",
    "text": "[003][00A]{end}",
    "jp": "18{end}",
-   "kr": "18{end}"
+   "kr_full": "18{end}",
+   "kr": "18{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 103,
@@ -1491,7 +1818,9 @@
    "raw_hex": "131400",
    "text": "[003][004]{end}",
    "jp": "12{end}",
-   "kr": "12{end}"
+   "kr_full": "12{end}",
+   "kr": "12{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 104,
@@ -1505,7 +1834,9 @@
    "raw_hex": "141300",
    "text": "[004][003]{end}",
    "jp": "21{end}",
-   "kr": "21{end}"
+   "kr_full": "21{end}",
+   "kr": "21{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 105,
@@ -1519,7 +1850,9 @@
    "raw_hex": "1AED16F200",
    "text": "[00A][0DD][006][0E2]{end}",
    "jp": "8×4＝{end}",
-   "kr": "8×4＝{end}"
+   "kr_full": "8×4＝{end}",
+   "kr": "8×4＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 106,
@@ -1533,7 +1866,9 @@
    "raw_hex": "151400",
    "text": "[005][004]{end}",
    "jp": "32{end}",
-   "kr": "32{end}"
+   "kr_full": "32{end}",
+   "kr": "32{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 107,
@@ -1547,7 +1882,9 @@
    "raw_hex": "141600",
    "text": "[004][006]{end}",
    "jp": "24{end}",
-   "kr": "24{end}"
+   "kr_full": "24{end}",
+   "kr": "24{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 108,
@@ -1561,7 +1898,9 @@
    "raw_hex": "161A00",
    "text": "[006][00A]{end}",
    "jp": "48{end}",
-   "kr": "48{end}"
+   "kr_full": "48{end}",
+   "kr": "48{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 109,
@@ -1575,7 +1914,9 @@
    "raw_hex": "161200",
    "text": "[006][002]{end}",
    "jp": "40{end}",
-   "kr": "40{end}"
+   "kr_full": "40{end}",
+   "kr": "40{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 110,
@@ -1589,7 +1930,9 @@
    "raw_hex": "14ED1AF200",
    "text": "[004][0DD][00A][0E2]{end}",
    "jp": "2×8＝{end}",
-   "kr": "2×8＝{end}"
+   "kr_full": "2×8＝{end}",
+   "kr": "2×8＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 111,
@@ -1603,7 +1946,9 @@
    "raw_hex": "131800",
    "text": "[003][008]{end}",
    "jp": "16{end}",
-   "kr": "16{end}"
+   "kr_full": "16{end}",
+   "kr": "16{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 112,
@@ -1617,7 +1962,9 @@
    "raw_hex": "131600",
    "text": "[003][006]{end}",
    "jp": "14{end}",
-   "kr": "14{end}"
+   "kr_full": "14{end}",
+   "kr": "14{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 113,
@@ -1631,7 +1978,9 @@
    "raw_hex": "131400",
    "text": "[003][004]{end}",
    "jp": "12{end}",
-   "kr": "12{end}"
+   "kr_full": "12{end}",
+   "kr": "12{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 114,
@@ -1645,7 +1994,9 @@
    "raw_hex": "131A00",
    "text": "[003][00A]{end}",
    "jp": "18{end}",
-   "kr": "18{end}"
+   "kr_full": "18{end}",
+   "kr": "18{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 115,
@@ -1659,7 +2010,9 @@
    "raw_hex": "18ED19F200",
    "text": "[008][0DD][009][0E2]{end}",
    "jp": "6×7＝{end}",
-   "kr": "6×7＝{end}"
+   "kr_full": "6×7＝{end}",
+   "kr": "6×7＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 116,
@@ -1673,7 +2026,9 @@
    "raw_hex": "161400",
    "text": "[006][004]{end}",
    "jp": "42{end}",
-   "kr": "42{end}"
+   "kr_full": "42{end}",
+   "kr": "42{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 117,
@@ -1687,7 +2042,9 @@
    "raw_hex": "161300",
    "text": "[006][003]{end}",
    "jp": "41{end}",
-   "kr": "41{end}"
+   "kr_full": "41{end}",
+   "kr": "41{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 118,
@@ -1701,7 +2058,9 @@
    "raw_hex": "161A00",
    "text": "[006][00A]{end}",
    "jp": "48{end}",
-   "kr": "48{end}"
+   "kr_full": "48{end}",
+   "kr": "48{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 119,
@@ -1715,7 +2074,9 @@
    "raw_hex": "151800",
    "text": "[005][008]{end}",
    "jp": "36{end}",
-   "kr": "36{end}"
+   "kr_full": "36{end}",
+   "kr": "36{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 120,
@@ -1729,7 +2090,9 @@
    "raw_hex": "17ED14F200",
    "text": "[007][0DD][004][0E2]{end}",
    "jp": "5×2＝{end}",
-   "kr": "5×2＝{end}"
+   "kr_full": "5×2＝{end}",
+   "kr": "5×2＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 121,
@@ -1743,7 +2106,9 @@
    "raw_hex": "131200",
    "text": "[003][002]{end}",
    "jp": "10{end}",
-   "kr": "10{end}"
+   "kr_full": "10{end}",
+   "kr": "10{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 122,
@@ -1757,7 +2122,9 @@
    "raw_hex": "131700",
    "text": "[003][007]{end}",
    "jp": "15{end}",
-   "kr": "15{end}"
+   "kr_full": "15{end}",
+   "kr": "15{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 123,
@@ -1771,7 +2138,9 @@
    "raw_hex": "141200",
    "text": "[004][002]{end}",
    "jp": "20{end}",
-   "kr": "20{end}"
+   "kr_full": "20{end}",
+   "kr": "20{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 124,
@@ -1785,7 +2154,9 @@
    "raw_hex": "1700",
    "text": "[007]{end}",
    "jp": "5{end}",
-   "kr": "5{end}"
+   "kr_full": "5{end}",
+   "kr": "5{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 125,
@@ -1799,7 +2170,9 @@
    "raw_hex": "13ED1B1AF200",
    "text": "[003][0DD][00B][00A][0E2]{end}",
    "jp": "1×98＝{end}",
-   "kr": "1×98＝{end}"
+   "kr_full": "1×98＝{end}",
+   "kr": "1×98＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 126,
@@ -1813,7 +2186,9 @@
    "raw_hex": "1B1A00",
    "text": "[00B][00A]{end}",
    "jp": "98{end}",
-   "kr": "98{end}"
+   "kr_full": "98{end}",
+   "kr": "98{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 127,
@@ -1827,7 +2202,9 @@
    "raw_hex": "1B1B00",
    "text": "[00B][00B]{end}",
    "jp": "99{end}",
-   "kr": "99{end}"
+   "kr_full": "99{end}",
+   "kr": "99{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 128,
@@ -1841,7 +2218,9 @@
    "raw_hex": "1B1900",
    "text": "[00B][009]{end}",
    "jp": "97{end}",
-   "kr": "97{end}"
+   "kr_full": "97{end}",
+   "kr": "97{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 129,
@@ -1855,7 +2234,9 @@
    "raw_hex": "1B1800",
    "text": "[00B][008]{end}",
    "jp": "96{end}",
-   "kr": "96{end}"
+   "kr_full": "96{end}",
+   "kr": "96{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 130,
@@ -1869,7 +2250,9 @@
    "raw_hex": "1B17ED13F200",
    "text": "[00B][007][0DD][003][0E2]{end}",
    "jp": "95×1＝{end}",
-   "kr": "95×1＝{end}"
+   "kr_full": "95×1＝{end}",
+   "kr": "95×1＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 131,
@@ -1883,7 +2266,9 @@
    "raw_hex": "1B1700",
    "text": "[00B][007]{end}",
    "jp": "95{end}",
-   "kr": "95{end}"
+   "kr_full": "95{end}",
+   "kr": "95{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 132,
@@ -1897,7 +2282,9 @@
    "raw_hex": "1B1800",
    "text": "[00B][008]{end}",
    "jp": "96{end}",
-   "kr": "96{end}"
+   "kr_full": "96{end}",
+   "kr": "96{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 133,
@@ -1911,7 +2298,9 @@
    "raw_hex": "1B1900",
    "text": "[00B][009]{end}",
    "jp": "97{end}",
-   "kr": "97{end}"
+   "kr_full": "97{end}",
+   "kr": "97{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 134,
@@ -1925,7 +2314,9 @@
    "raw_hex": "1B1A00",
    "text": "[00B][00A]{end}",
    "jp": "98{end}",
-   "kr": "98{end}"
+   "kr_full": "98{end}",
+   "kr": "98{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 135,
@@ -1939,7 +2330,9 @@
    "raw_hex": "12ED1919F200",
    "text": "[002][0DD][009][009][0E2]{end}",
    "jp": "0×77＝{end}",
-   "kr": "0×77＝{end}"
+   "kr_full": "0×77＝{end}",
+   "kr": "0×77＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 136,
@@ -1953,7 +2346,9 @@
    "raw_hex": "1200",
    "text": "[002]{end}",
    "jp": "0{end}",
-   "kr": "0{end}"
+   "kr_full": "0{end}",
+   "kr": "0{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 137,
@@ -1967,7 +2362,9 @@
    "raw_hex": "191900",
    "text": "[009][009]{end}",
    "jp": "77{end}",
-   "kr": "77{end}"
+   "kr_full": "77{end}",
+   "kr": "77{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 138,
@@ -1981,7 +2378,9 @@
    "raw_hex": "1300",
    "text": "[003]{end}",
    "jp": "1{end}",
-   "kr": "1{end}"
+   "kr_full": "1{end}",
+   "kr": "1{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 139,
@@ -1995,7 +2394,9 @@
    "raw_hex": "19191900",
    "text": "[009][009][009]{end}",
    "jp": "777{end}",
-   "kr": "777{end}"
+   "kr_full": "777{end}",
+   "kr": "777{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 140,
@@ -2009,7 +2410,9 @@
    "raw_hex": "1A1AED12F200",
    "text": "[00A][00A][0DD][002][0E2]{end}",
    "jp": "88×0＝{end}",
-   "kr": "88×0＝{end}"
+   "kr_full": "88×0＝{end}",
+   "kr": "88×0＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 141,
@@ -2023,7 +2426,9 @@
    "raw_hex": "1200",
    "text": "[002]{end}",
    "jp": "0{end}",
-   "kr": "0{end}"
+   "kr_full": "0{end}",
+   "kr": "0{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 142,
@@ -2037,7 +2442,9 @@
    "raw_hex": "1A1A00",
    "text": "[00A][00A]{end}",
    "jp": "88{end}",
-   "kr": "88{end}"
+   "kr_full": "88{end}",
+   "kr": "88{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 143,
@@ -2051,7 +2458,9 @@
    "raw_hex": "1300",
    "text": "[003]{end}",
    "jp": "1{end}",
-   "kr": "1{end}"
+   "kr_full": "1{end}",
+   "kr": "1{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 144,
@@ -2065,7 +2474,9 @@
    "raw_hex": "1A1A1A00",
    "text": "[00A][00A][00A]{end}",
    "jp": "888{end}",
-   "kr": "888{end}"
+   "kr_full": "888{end}",
+   "kr": "888{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 145,
@@ -2079,7 +2490,9 @@
    "raw_hex": "15EB15F200",
    "text": "[005][0DB][005][0E2]{end}",
    "jp": "3＋3＝{end}",
-   "kr": "3＋3＝{end}"
+   "kr_full": "3＋3＝{end}",
+   "kr": "3＋3＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 146,
@@ -2093,7 +2506,9 @@
    "raw_hex": "1800",
    "text": "[008]{end}",
    "jp": "6{end}",
-   "kr": "6{end}"
+   "kr_full": "6{end}",
+   "kr": "6{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 147,
@@ -2107,7 +2522,9 @@
    "raw_hex": "1B00",
    "text": "[00B]{end}",
    "jp": "9{end}",
-   "kr": "9{end}"
+   "kr_full": "9{end}",
+   "kr": "9{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 148,
@@ -2121,7 +2538,9 @@
    "raw_hex": "131400",
    "text": "[003][004]{end}",
    "jp": "12{end}",
-   "kr": "12{end}"
+   "kr_full": "12{end}",
+   "kr": "12{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 149,
@@ -2135,7 +2554,9 @@
    "raw_hex": "131700",
    "text": "[003][007]{end}",
    "jp": "15{end}",
-   "kr": "15{end}"
+   "kr_full": "15{end}",
+   "kr": "15{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 150,
@@ -2149,7 +2570,9 @@
    "raw_hex": "17EB17F200",
    "text": "[007][0DB][007][0E2]{end}",
    "jp": "5＋5＝{end}",
-   "kr": "5＋5＝{end}"
+   "kr_full": "5＋5＝{end}",
+   "kr": "5＋5＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 151,
@@ -2163,7 +2586,9 @@
    "raw_hex": "131200",
    "text": "[003][002]{end}",
    "jp": "10{end}",
-   "kr": "10{end}"
+   "kr_full": "10{end}",
+   "kr": "10{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 152,
@@ -2177,7 +2602,9 @@
    "raw_hex": "141700",
    "text": "[004][007]{end}",
    "jp": "25{end}",
-   "kr": "25{end}"
+   "kr_full": "25{end}",
+   "kr": "25{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 153,
@@ -2191,7 +2618,9 @@
    "raw_hex": "131700",
    "text": "[003][007]{end}",
    "jp": "15{end}",
-   "kr": "15{end}"
+   "kr_full": "15{end}",
+   "kr": "15{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 154,
@@ -2205,7 +2634,9 @@
    "raw_hex": "141200",
    "text": "[004][002]{end}",
    "jp": "20{end}",
-   "kr": "20{end}"
+   "kr_full": "20{end}",
+   "kr": "20{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 155,
@@ -2219,7 +2650,9 @@
    "raw_hex": "131AEF15F200",
    "text": "[003][00A][0DF][005][0E2]{end}",
    "jp": "18÷3＝{end}",
-   "kr": "18÷3＝{end}"
+   "kr_full": "18÷3＝{end}",
+   "kr": "18÷3＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 156,
@@ -2233,7 +2666,9 @@
    "raw_hex": "1800",
    "text": "[008]{end}",
    "jp": "6{end}",
-   "kr": "6{end}"
+   "kr_full": "6{end}",
+   "kr": "6{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 157,
@@ -2247,7 +2682,9 @@
    "raw_hex": "1B00",
    "text": "[00B]{end}",
    "jp": "9{end}",
-   "kr": "9{end}"
+   "kr_full": "9{end}",
+   "kr": "9{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 158,
@@ -2261,7 +2698,9 @@
    "raw_hex": "141300",
    "text": "[004][003]{end}",
    "jp": "21{end}",
-   "kr": "21{end}"
+   "kr_full": "21{end}",
+   "kr": "21{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 159,
@@ -2275,7 +2714,9 @@
    "raw_hex": "131700",
    "text": "[003][007]{end}",
    "jp": "15{end}",
-   "kr": "15{end}"
+   "kr_full": "15{end}",
+   "kr": "15{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 160,
@@ -2289,7 +2730,9 @@
    "raw_hex": "1317EF17F200",
    "text": "[003][007][0DF][007][0E2]{end}",
    "jp": "15÷5＝{end}",
-   "kr": "15÷5＝{end}"
+   "kr_full": "15÷5＝{end}",
+   "kr": "15÷5＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 161,
@@ -2303,7 +2746,9 @@
    "raw_hex": "1500",
    "text": "[005]{end}",
    "jp": "3{end}",
-   "kr": "3{end}"
+   "kr_full": "3{end}",
+   "kr": "3{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 162,
@@ -2317,7 +2762,9 @@
    "raw_hex": "1700",
    "text": "[007]{end}",
    "jp": "5{end}",
-   "kr": "5{end}"
+   "kr_full": "5{end}",
+   "kr": "5{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 163,
@@ -2331,7 +2778,9 @@
    "raw_hex": "131200",
    "text": "[003][002]{end}",
    "jp": "10{end}",
-   "kr": "10{end}"
+   "kr_full": "10{end}",
+   "kr": "10{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 164,
@@ -2345,7 +2794,9 @@
    "raw_hex": "1400",
    "text": "[004]{end}",
    "jp": "2{end}",
-   "kr": "2{end}"
+   "kr_full": "2{end}",
+   "kr": "2{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 165,
@@ -2359,7 +2810,9 @@
    "raw_hex": "12EF1515F200",
    "text": "[002][0DF][005][005][0E2]{end}",
    "jp": "0÷33＝{end}",
-   "kr": "0÷33＝{end}"
+   "kr_full": "0÷33＝{end}",
+   "kr": "0÷33＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 166,
@@ -2373,7 +2826,9 @@
    "raw_hex": "1200",
    "text": "[002]{end}",
    "jp": "0{end}",
-   "kr": "0{end}"
+   "kr_full": "0{end}",
+   "kr": "0{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 167,
@@ -2387,7 +2842,9 @@
    "raw_hex": "1300",
    "text": "[003]{end}",
    "jp": "1{end}",
-   "kr": "1{end}"
+   "kr_full": "1{end}",
+   "kr": "1{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 168,
@@ -2401,7 +2858,9 @@
    "raw_hex": "151500",
    "text": "[005][005]{end}",
    "jp": "33{end}",
-   "kr": "33{end}"
+   "kr_full": "33{end}",
+   "kr": "33{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 169,
@@ -2415,7 +2874,9 @@
    "raw_hex": "1B1B1B1B1B00",
    "text": "[00B][00B][00B][00B][00B]{end}",
    "jp": "99999{end}",
-   "kr": "99999{end}"
+   "kr_full": "99999{end}",
+   "kr": "99999{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 170,
@@ -2429,7 +2890,9 @@
    "raw_hex": "1514131416EF13F200",
    "text": "[005][004][003][004][006][0DF][003][0E2]{end}",
    "jp": "32124÷1＝{end}",
-   "kr": "32124÷1＝{end}"
+   "kr_full": "32124÷1＝{end}",
+   "kr": "32124÷1＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 171,
@@ -2443,7 +2906,9 @@
    "raw_hex": "151413141600",
    "text": "[005][004][003][004][006]{end}",
    "jp": "32124{end}",
-   "kr": "32124{end}"
+   "kr_full": "32124{end}",
+   "kr": "32124{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 172,
@@ -2457,7 +2922,9 @@
    "raw_hex": "151314131600",
    "text": "[005][003][004][003][006]{end}",
    "jp": "31214{end}",
-   "kr": "31214{end}"
+   "kr_full": "31214{end}",
+   "kr": "31214{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 173,
@@ -2471,7 +2938,9 @@
    "raw_hex": "151613141300",
    "text": "[005][006][003][004][003]{end}",
    "jp": "34121{end}",
-   "kr": "34121{end}"
+   "kr_full": "34121{end}",
+   "kr": "34121{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 174,
@@ -2485,7 +2954,9 @@
    "raw_hex": "151614131300",
    "text": "[005][006][004][003][003]{end}",
    "jp": "34211{end}",
-   "kr": "34211{end}"
+   "kr_full": "34211{end}",
+   "kr": "34211{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 175,
@@ -2499,7 +2970,9 @@
    "raw_hex": "1817131915EF13F200",
    "text": "[008][007][003][009][005][0DF][003][0E2]{end}",
    "jp": "65173÷1＝{end}",
-   "kr": "65173÷1＝{end}"
+   "kr_full": "65173÷1＝{end}",
+   "kr": "65173÷1＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 176,
@@ -2513,7 +2986,9 @@
    "raw_hex": "181713191500",
    "text": "[008][007][003][009][005]{end}",
    "jp": "65173{end}",
-   "kr": "65173{end}"
+   "kr_full": "65173{end}",
+   "kr": "65173{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 177,
@@ -2527,7 +3002,9 @@
    "raw_hex": "181917131500",
    "text": "[008][009][007][003][005]{end}",
    "jp": "67513{end}",
-   "kr": "67513{end}"
+   "kr_full": "67513{end}",
+   "kr": "67513{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 178,
@@ -2541,7 +3018,9 @@
    "raw_hex": "181315191700",
    "text": "[008][003][005][009][007]{end}",
    "jp": "61375{end}",
-   "kr": "61375{end}"
+   "kr_full": "61375{end}",
+   "kr": "61375{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 179,
@@ -2555,7 +3034,9 @@
    "raw_hex": "181513191700",
    "text": "[008][005][003][009][007]{end}",
    "jp": "63175{end}",
-   "kr": "63175{end}"
+   "kr_full": "63175{end}",
+   "kr": "63175{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 180,
@@ -2569,7 +3050,9 @@
    "raw_hex": "161616EF16F200",
    "text": "[006][006][006][0DF][006][0E2]{end}",
    "jp": "444÷4＝{end}",
-   "kr": "444÷4＝{end}"
+   "kr_full": "444÷4＝{end}",
+   "kr": "444÷4＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 181,
@@ -2583,7 +3066,9 @@
    "raw_hex": "13131300",
    "text": "[003][003][003]{end}",
    "jp": "111{end}",
-   "kr": "111{end}"
+   "kr_full": "111{end}",
+   "kr": "111{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 182,
@@ -2597,7 +3082,9 @@
    "raw_hex": "13121200",
    "text": "[003][002][002]{end}",
    "jp": "100{end}",
-   "kr": "100{end}"
+   "kr_full": "100{end}",
+   "kr": "100{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 183,
@@ -2611,7 +3098,9 @@
    "raw_hex": "161600",
    "text": "[006][006]{end}",
    "jp": "44{end}",
-   "kr": "44{end}"
+   "kr_full": "44{end}",
+   "kr": "44{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 184,
@@ -2625,7 +3114,9 @@
    "raw_hex": "131300",
    "text": "[003][003]{end}",
    "jp": "11{end}",
-   "kr": "11{end}"
+   "kr_full": "11{end}",
+   "kr": "11{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 185,
@@ -2639,7 +3130,9 @@
    "raw_hex": "1A1A1AEF1AF200",
    "text": "[00A][00A][00A][0DF][00A][0E2]{end}",
    "jp": "888÷8＝{end}",
-   "kr": "888÷8＝{end}"
+   "kr_full": "888÷8＝{end}",
+   "kr": "888÷8＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 186,
@@ -2653,7 +3146,9 @@
    "raw_hex": "13131300",
    "text": "[003][003][003]{end}",
    "jp": "111{end}",
-   "kr": "111{end}"
+   "kr_full": "111{end}",
+   "kr": "111{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 187,
@@ -2667,7 +3162,9 @@
    "raw_hex": "13121200",
    "text": "[003][002][002]{end}",
    "jp": "100{end}",
-   "kr": "100{end}"
+   "kr_full": "100{end}",
+   "kr": "100{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 188,
@@ -2681,7 +3178,9 @@
    "raw_hex": "161600",
    "text": "[006][006]{end}",
    "jp": "44{end}",
-   "kr": "44{end}"
+   "kr_full": "44{end}",
+   "kr": "44{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 189,
@@ -2695,7 +3194,9 @@
    "raw_hex": "131300",
    "text": "[003][003]{end}",
    "jp": "11{end}",
-   "kr": "11{end}"
+   "kr_full": "11{end}",
+   "kr": "11{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 190,
@@ -2709,7 +3210,9 @@
    "raw_hex": "1716ED141600",
    "text": "[007][006][0DD][004][006]{end}",
    "jp": "54×24{end}",
-   "kr": "54×24{end}"
+   "kr_full": "54×24{end}",
+   "kr": "54×24{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 191,
@@ -2723,7 +3226,9 @@
    "raw_hex": "13141B1800",
    "text": "[003][004][00B][008]{end}",
    "jp": "1296{end}",
-   "kr": "1296{end}"
+   "kr_full": "1296{end}",
+   "kr": "1296{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 192,
@@ -2737,7 +3242,9 @@
    "raw_hex": "1314161700",
    "text": "[003][004][006][007]{end}",
    "jp": "1245{end}",
-   "kr": "1245{end}"
+   "kr_full": "1245{end}",
+   "kr": "1245{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 193,
@@ -2751,7 +3258,9 @@
    "raw_hex": "1314141300",
    "text": "[003][004][004][003]{end}",
    "jp": "1221{end}",
-   "kr": "1221{end}"
+   "kr_full": "1221{end}",
+   "kr": "1221{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 194,
@@ -2765,7 +3274,9 @@
    "raw_hex": "1313141A00",
    "text": "[003][003][004][00A]{end}",
    "jp": "1128{end}",
-   "kr": "1128{end}"
+   "kr_full": "1128{end}",
+   "kr": "1128{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 195,
@@ -2779,7 +3290,9 @@
    "raw_hex": "141718ED141717F200",
    "text": "[004][007][008][0DD][004][007][007][0E2]{end}",
    "jp": "256×255＝{end}",
-   "kr": "256×255＝{end}"
+   "kr_full": "256×255＝{end}",
+   "kr": "256×255＝{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 196,
@@ -2793,7 +3306,9 @@
    "raw_hex": "1817141A1200",
    "text": "[008][007][004][00A][002]{end}",
    "jp": "65280{end}",
-   "kr": "65280{end}"
+   "kr_full": "65280{end}",
+   "kr": "65280{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 197,
@@ -2807,7 +3322,9 @@
    "raw_hex": "181717151800",
    "text": "[008][007][007][005][008]{end}",
    "jp": "65536{end}",
-   "kr": "65536{end}"
+   "kr_full": "65536{end}",
+   "kr": "65536{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 198,
@@ -2821,7 +3338,9 @@
    "raw_hex": "181717171800",
    "text": "[008][007][007][007][008]{end}",
    "jp": "65556{end}",
-   "kr": "65556{end}"
+   "kr_full": "65556{end}",
+   "kr": "65556{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 199,
@@ -2835,7 +3354,9 @@
    "raw_hex": "181417151800",
    "text": "[008][004][007][005][008]{end}",
    "jp": "62536{end}",
-   "kr": "62536{end}"
+   "kr_full": "62536{end}",
+   "kr": "62536{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 200,
@@ -2849,7 +3370,9 @@
    "raw_hex": "027A016902003880789E834C052F272A4D023B4E32212F3839E500",
    "text": "[26A][159][1F0][028][070][068][08E][073][03C]{nl}[01F][017][01A][03D][22B][03E][022][011][01F][028][029][0D5]{end}",
    "jp": "開会式のチケットを{nl}たくさん持っていたのは？{end}",
+   "kr_full": "개회식 티켓을{nl}많이 가진 사람은？{end}",
    "kr": "개회식 티켓을{nl}많이 가진 사람은？{end}",
+   "abbreviated": false,
    "jp_raw_render": "開会武のチケットを{nl}たくさん持っていたのは？{end}"
   },
   {
@@ -2864,7 +3387,9 @@
    "raw_hex": "80717900",
    "text": "[070][061][069]{end}",
    "jp": "チイコ{end}",
-   "kr": "치이코{end}"
+   "kr_full": "치이코{end}",
+   "kr": "치이코{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 202,
@@ -2878,7 +3403,9 @@
    "raw_hex": "0377037800",
    "text": "[367][368]{end}",
    "jp": "藤吉{end}",
-   "kr": "토우키치{end}"
+   "kr_full": "토우키치{end}",
+   "kr": "토우키치{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 203,
@@ -2892,7 +3419,9 @@
    "raw_hex": "3E293300",
    "text": "[02E][019][023]{end}",
    "jp": "まこと{end}",
-   "kr": "마코토{end}"
+   "kr_full": "마코토{end}",
+   "kr": "마코토{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 204,
@@ -2906,7 +3435,9 @@
    "raw_hex": "31452B00",
    "text": "[021][035][01B]{end}",
    "jp": "つよし{end}",
-   "kr": "츠요시{end}"
+   "kr_full": "츠요시{end}",
+   "kr": "츠요시{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 205,
@@ -2920,7 +3451,9 @@
    "raw_hex": "99C57C01CB38027A019601B202F7DB7BA6814C052131420288322148010139E500",
    "text": "[089][0B5][06C][1BB][028][26A][186][1A2][2E7][0CB][06B][096][071][03C]{nl}[011][021][032][278][022][011][038][0F1][029][0D5]{end}",
    "jp": "レース場の開店記念Tシャツを{nl}いつも着ている子は？{end}",
-   "kr": "레이스장 개장 티셔츠를{nl}늘 입는 아이는？{end}",
+   "kr_full": "레이스장 개장 기념 티셔츠를{nl}늘 입는 아이는？{end}",
+   "kr": "레이스장 개장 기념{nl}티셔츠를 늘 입는 아이는？{end}",
+   "abbreviated": true,
    "jp_raw_render": "レース場の開店記念Tシャツを{nl}いつも著ている子は？{end}"
   },
   {
@@ -2935,7 +3468,9 @@
    "raw_hex": "23472500",
    "text": "[013][037][015]{end}",
    "jp": "えりか{end}",
-   "kr": "에리카{end}"
+   "kr_full": "에리카{end}",
+   "kr": "에리카{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 207,
@@ -2949,7 +3484,9 @@
    "raw_hex": "214500",
    "text": "[011][035]{end}",
    "jp": "いよ{end}",
-   "kr": "이요{end}"
+   "kr_full": "이요{end}",
+   "kr": "이요{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 208,
@@ -2963,7 +3500,9 @@
    "raw_hex": "43452100",
    "text": "[033][035][011]{end}",
    "jp": "やよい{end}",
-   "kr": "야요이{end}"
+   "kr_full": "야요이{end}",
+   "kr": "야요이{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 209,
@@ -2977,7 +3516,9 @@
    "raw_hex": "223F00",
    "text": "[012][02F]{end}",
    "jp": "うみ{end}",
-   "kr": "우미{end}"
+   "kr_full": "우미{end}",
+   "kr": "우미{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 210,
@@ -2991,7 +3532,9 @@
    "raw_hex": "010802320238020902246402380209025038053E236157274948BEC58139E500",
    "text": "[0F8][222][228][1F9][214][054][228][1F9][240][028]{nl}[02E][013][051][047][017][039][038][0AE][0B5][071][029][0D5]{end}",
    "jp": "土屋研究所で研究員の{nl}まえだがくれるパーツは？{end}",
-   "kr": "츠치야 연구소에서 마에다가{nl}주는 파츠는？{end}"
+   "kr_full": "츠치야 연구소에서 마에다가{nl}주는 파츠는？{end}",
+   "kr": "츠치야 연구소의 마에다가{nl}주는 파츠는？{end}",
+   "abbreviated": true
   },
   {
    "entry_id": 211,
@@ -3005,7 +3548,9 @@
    "raw_hex": "92C57FC500",
    "text": "[082][0B5][06F][0B5]{end}",
    "jp": "モーター{end}",
-   "kr": "모터{end}"
+   "kr_full": "모터{end}",
+   "kr": "모터{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 212,
@@ -3019,7 +3564,9 @@
    "raw_hex": "AB93C500",
    "text": "[09B][083][0B5]{end}",
    "jp": "ギヤー{end}",
-   "kr": "기어{end}"
+   "kr_full": "기어{end}",
+   "kr": "기어{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 213,
@@ -3033,7 +3580,9 @@
    "raw_hex": "7F719300",
    "text": "[06F][061][083]{end}",
    "jp": "タイヤ{end}",
-   "kr": "타이어{end}"
+   "kr_full": "타이어{end}",
+   "kr": "타이어{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 214,
@@ -3047,7 +3596,9 @@
    "raw_hex": "B99DBEC500",
    "text": "[0A9][08D][0AE][0B5]{end}",
    "jp": "バンパー{end}",
-   "kr": "범퍼{end}"
+   "kr_full": "범퍼{end}",
+   "kr": "범퍼{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 215,
@@ -3061,7 +3612,9 @@
    "raw_hex": "015D57010802320238020902246403582132214805332122010139E500",
    "text": "[14D][047][0F8][222][228][1F9][214][054][348][011][022][011][038]{nl}[023][011][012][0F1][029][0D5]{end}",
    "jp": "兄が土屋研究所で働いている{nl}という子は？{end}",
-   "kr": "오빠가 츠치야 연구소에서{nl}일하는 아이는？{end}"
+   "kr_full": "오빠가 츠치야 연구소에서{nl}일하는 아이는？{end}",
+   "kr": "오빠가 츠치야 연구소에서{nl}일하는 아이는？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 216,
@@ -3075,7 +3628,9 @@
    "raw_hex": "255E4300",
    "text": "[015][04E][033]{end}",
    "jp": "かずや{end}",
-   "kr": "카즈야{end}"
+   "kr_full": "카즈야{end}",
+   "kr": "카즈야{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 217,
@@ -3089,7 +3644,9 @@
    "raw_hex": "31452B00",
    "text": "[021][035][01B]{end}",
    "jp": "つよし{end}",
-   "kr": "츠요시{end}"
+   "kr_full": "츠요시{end}",
+   "kr": "츠요시{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 218,
@@ -3103,7 +3660,9 @@
    "raw_hex": "3B3F2300",
    "text": "[02B][02F][013]{end}",
    "jp": "ふみえ{end}",
-   "kr": "후미에{end}"
+   "kr_full": "후미에{end}",
+   "kr": "후미에{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 219,
@@ -3117,7 +3676,9 @@
    "raw_hex": "20264600",
    "text": "[010][016][036]{end}",
    "jp": "あきら{end}",
-   "kr": "아키라{end}"
+   "kr_full": "아키라{end}",
+   "kr": "아키라{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 220,
@@ -3131,7 +3692,9 @@
    "raw_hex": "2131420241011080C590387A719D4C053D2B574E322148010139E500",
    "text": "[011][021][032][231][100][070][0B5][080][028][06A][061][08D][03C]{nl}[02D][01B][047][03E][022][011][038][0F1][029][0D5]{end}",
    "jp": "いつも相手チームのサインを{nl}ほしがっている子は？{end}",
-   "kr": "상대 팀 사인을 늘{nl}갖고 싶어 하는 아이는？{end}"
+   "kr_full": "상대 팀 사인을 늘{nl}갖고 싶어 하는 아이는？{end}",
+   "kr": "상대 팀 사인을 늘{nl}갖고 싶어 하는 아이는？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 221,
@@ -3145,7 +3708,9 @@
    "raw_hex": "31452B00",
    "text": "[021][035][01B]{end}",
    "jp": "つよし{end}",
-   "kr": "츠요시{end}"
+   "kr_full": "츠요시{end}",
+   "kr": "츠요시{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 222,
@@ -3159,7 +3724,9 @@
    "raw_hex": "2D215D00",
    "text": "[01D][011][04D]{end}",
    "jp": "せいじ{end}",
-   "kr": "세이지{end}"
+   "kr_full": "세이지{end}",
+   "kr": "세이지{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 223,
@@ -3173,7 +3740,9 @@
    "raw_hex": "483F2900",
    "text": "[038][02F][019]{end}",
    "jp": "るみこ{end}",
-   "kr": "루미코{end}"
+   "kr_full": "루미코{end}",
+   "kr": "루미코{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 224,
@@ -3187,7 +3756,9 @@
    "raw_hex": "242A4000",
    "text": "[014][01A][030]{end}",
    "jp": "おさむ{end}",
-   "kr": "오사무{end}"
+   "kr_full": "오사무{end}",
+   "kr": "오사무{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 225,
@@ -3201,7 +3772,9 @@
    "raw_hex": "016C037F3897C58033C29D38050133015828015939E500",
    "text": "[15C][36F][028][087][0B5][070][023][0B2][08D][028]{nl}[123][148][018][149][029][0D5]{end}",
    "jp": "光蝦のリーチとポンの{nl}見分け方は？{end}",
-   "kr": "리치와 폰을{nl}구별하는 특징은？{end}"
+   "kr_full": "공키의 리치와 폰을{nl}구별하는 특징은？{end}",
+   "kr": "공키의 리치와 폰을{nl}구별하는 특징은？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 226,
@@ -3215,7 +3788,9 @@
    "raw_hex": "2730693500",
    "text": "[017][020][059][025]{end}",
    "jp": "くちべに{end}",
-   "kr": "립스틱{end}"
+   "kr_full": "립스틱{end}",
+   "kr": "립스틱{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 227,
@@ -3229,7 +3804,9 @@
    "raw_hex": "8C707C7F719800",
    "text": "[07C][060][06C][06F][061][088]{end}",
    "jp": "ヘアスタイル{end}",
-   "kr": "머리 모양{end}"
+   "kr_full": "머리 모양{end}",
+   "kr": "머리 모양{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 228,
@@ -3243,7 +3820,9 @@
    "raw_hex": "3E315A00",
    "text": "[02E][021][04A]{end}",
    "jp": "まつげ{end}",
-   "kr": "속눈썹{end}"
+   "kr_full": "속눈썹{end}",
+   "kr": "속눈썹{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 229,
@@ -3257,7 +3836,9 @@
    "raw_hex": "BF707C00",
    "text": "[0AF][060][06C]{end}",
    "jp": "ピアス{end}",
-   "kr": "귀걸이{end}"
+   "kr_full": "귀걸이{end}",
+   "kr": "귀걸이{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 230,
@@ -3271,7 +3852,9 @@
    "raw_hex": "016C037F3803C603C738013001A939E500",
    "text": "[15C][36F][028][3B6][3B7][028][120][199][029][0D5]{end}",
    "jp": "光蝦の監督の名前は？{end}",
-   "kr": "공키의 감독 이름은？{end}"
+   "kr_full": "공키의 감독 이름은？{end}",
+   "kr": "공키의 감독 이름은？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 231,
@@ -3285,7 +3868,9 @@
    "raw_hex": "0107FF014C00",
    "text": "[0F7][0EF][13C]{end}",
    "jp": "大三元{end}",
-   "kr": "다이산겐{end}"
+   "kr_full": "다이산겐{end}",
+   "kr": "다이산겐{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 232,
@@ -3299,7 +3884,9 @@
    "raw_hex": "10F4017200",
    "text": "[000][0E4][162]{end}",
    "jp": "　一色{end}",
-   "kr": "잇시키{end}"
+   "kr_full": "잇시키{end}",
+   "kr": "잇시키{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 233,
@@ -3313,7 +3900,9 @@
    "raw_hex": "034B1000",
    "text": "[33B][000]{end}",
    "jp": "満　{end}",
-   "kr": "만{end}"
+   "kr_full": "만{end}",
+   "kr": "만{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 234,
@@ -3327,7 +3916,9 @@
    "raw_hex": "019701AD0173016500",
    "text": "[187][19D][163][155]{end}",
    "jp": "東南西北{end}",
-   "kr": "동남서북{end}"
+   "kr_full": "동남서북{end}",
+   "kr": "동남서북{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 235,
@@ -3341,7 +3932,9 @@
    "raw_hex": "29380112648B969D7C80C590640534213839E500",
    "text": "[019][028][102][054][07B][086][08D][06C][070][0B5][080][054]{nl}[024][011][028][029][0D5]{end}",
    "jp": "この中でフランスチームで{nl}ないのは？{end}",
-   "kr": "프랑스 팀에{nl}속하지 않은 사람은？{end}"
+   "kr_full": "프랑스 팀에{nl}속하지 않은 사람은？{end}",
+   "kr": "프랑스 팀에{nl}속하지 않은 사람은？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 236,
@@ -3355,7 +3948,9 @@
    "raw_hex": "7A978E00",
    "text": "[06A][087][07E]{end}",
    "jp": "サリマ{end}",
-   "kr": "사리마{end}"
+   "kr_full": "사리마{end}",
+   "kr": "사리마{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 237,
@@ -3369,7 +3964,9 @@
    "raw_hex": "B7A0708400",
    "text": "[0A7][090][060][074]{end}",
    "jp": "ディアナ{end}",
-   "kr": "디아나{end}"
+   "kr_full": "디아나{end}",
+   "kr": "디아나{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 238,
@@ -3383,7 +3980,9 @@
    "raw_hex": "7BA6978200",
    "text": "[06B][096][087][072]{end}",
    "jp": "シャリテ{end}",
-   "kr": "샤리테{end}"
+   "kr_full": "샤리테{end}",
+   "kr": "샤리테{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 239,
@@ -3397,7 +3996,9 @@
    "raw_hex": "70C59000",
    "text": "[060][0B5][080]{end}",
    "jp": "アーム{end}",
-   "kr": "아무{end}"
+   "kr_full": "아무{end}",
+   "kr": "아무{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 240,
@@ -3411,7 +4012,9 @@
    "raw_hex": "7A984C8B969D7C01DA6421223300",
    "text": "[06A][088][03C][07B][086][08D][06C][1CA][054][011][012][023]{end}",
    "jp": "サルをフランス語でいうと{end}",
-   "kr": "원숭이는 프랑스어로？{end}"
+   "kr_full": "원숭이는 프랑스어로？{end}",
+   "kr": "원숭이는 프랑스어로？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 241,
@@ -3425,7 +4028,9 @@
    "raw_hex": "7A9DB0A700",
    "text": "[06A][08D][0A0][097]{end}",
    "jp": "サンジュ{end}",
-   "kr": "생주{end}"
+   "kr_full": "생주{end}",
+   "kr": "생주{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 242,
@@ -3439,7 +4044,9 @@
    "raw_hex": "709DB0A700",
    "text": "[060][08D][0A0][097]{end}",
    "jp": "アンジュ{end}",
-   "kr": "앙주{end}"
+   "kr_full": "앙주{end}",
+   "kr": "앙주{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 243,
@@ -3453,7 +4060,9 @@
    "raw_hex": "849DB0A700",
    "text": "[074][08D][0A0][097]{end}",
    "jp": "ナンジュ{end}",
-   "kr": "낭주{end}"
+   "kr_full": "낭주{end}",
+   "kr": "낭주{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 244,
@@ -3467,7 +4076,9 @@
    "raw_hex": "8E9DB0A700",
    "text": "[07E][08D][0A0][097]{end}",
    "jp": "マンジュ{end}",
-   "kr": "망주{end}"
+   "kr_full": "망주{end}",
+   "kr": "망주{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 245,
@@ -3481,7 +4092,9 @@
    "raw_hex": "3A25483875997B35344E2F3839E500",
    "text": "[02A][015][038][028][065][089][06B][025][024][03E][01F][028][029][0D5]{end}",
    "jp": "ひかるのカレシになったのは？{end}",
-   "kr": "히카루의 남친은 누구？{end}"
+   "kr_full": "히카루의 남친은 누구？{end}",
+   "kr": "히카루의 남친은 누구？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 246,
@@ -3495,7 +4108,9 @@
    "raw_hex": "2F314300",
    "text": "[01F][021][033]{end}",
    "jp": "たつや{end}",
-   "kr": "타츠야{end}"
+   "kr_full": "타츠야{end}",
+   "kr": "타츠야{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 247,
@@ -3509,7 +4124,9 @@
    "raw_hex": "284D213000",
    "text": "[018][03D][011][020]{end}",
    "jp": "けんいち{end}",
-   "kr": "켄이치{end}"
+   "kr_full": "켄이치{end}",
+   "kr": "켄이치{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 248,
@@ -3523,7 +4140,9 @@
    "raw_hex": "F90379014500",
    "text": "[0E9][369][135]{end}",
    "jp": "二郎丸{end}",
-   "kr": "지로마루{end}"
+   "kr_full": "지로마루{end}",
+   "kr": "지로마루{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 249,
@@ -3537,7 +4156,9 @@
    "raw_hex": "242A4000",
    "text": "[014][01A][030]{end}",
    "jp": "おさむ{end}",
-   "kr": "오사무{end}"
+   "kr_full": "오사무{end}",
+   "kr": "오사무{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 250,
@@ -3551,7 +4172,9 @@
    "raw_hex": "2F23293802C62634717F977080C5903805919DB9C539E500",
    "text": "[01F][013][019][028][2B6][016][024][061][06F][087][060][070][0B5][080][028]{nl}[081][08D][0A9][0B5][029][0D5]{end}",
    "jp": "たえこの好きなイタリアチームの{nl}メンバーは？{end}",
-   "kr": "타에코가 좋아하는{nl}이탈리아 팀 멤버는？{end}"
+   "kr_full": "타에코가 좋아하는{nl}이탈리아 팀 멤버는？{end}",
+   "kr": "타에코가 좋아하는{nl}이탈리아 팀 멤버는？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 251,
@@ -3565,7 +4188,9 @@
    "raw_hex": "B3C59600",
    "text": "[0A3][0B5][086]{end}",
    "jp": "ゾーラ{end}",
-   "kr": "졸라{end}"
+   "kr_full": "졸라{end}",
+   "kr": "졸라{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 252,
@@ -3579,7 +4204,9 @@
    "raw_hex": "989A00",
    "text": "[088][08A]{end}",
    "jp": "ルロ{end}",
-   "kr": "루로{end}"
+   "kr_full": "루로{end}",
+   "kr": "루로{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 253,
@@ -3593,7 +4220,9 @@
    "raw_hex": "B0A7977400",
    "text": "[0A0][097][087][064]{end}",
    "jp": "ジュリオ{end}",
-   "kr": "줄리오{end}"
+   "kr_full": "줄리오{end}",
+   "kr": "줄리오{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 254,
@@ -3607,7 +4236,9 @@
    "raw_hex": "98768800",
    "text": "[088][066][078]{end}",
    "jp": "ルキノ{end}",
-   "kr": "루키노{end}"
+   "kr_full": "루키노{end}",
+   "kr": "루키노{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 255,
@@ -3621,7 +4252,9 @@
    "raw_hex": "29380112647AB99D847E98B0A6C5B13805919DB9C539E500",
    "text": "[019][028][102][054][06A][0A9][08D][074][06E][088][0A0][096][0B5][0A1][028]{nl}[081][08D][0A9][0B5][029][0D5]{end}",
    "jp": "この中でサバンナソルジャーズの{nl}メンバーは？{end}",
-   "kr": "사반나 솔져스의{nl}멤버는 누구？{end}"
+   "kr_full": "사반나 솔져스의{nl}멤버는 누구？{end}",
+   "kr": "사반나 솔져스의{nl}멤버는 누구？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 256,
@@ -3635,7 +4268,9 @@
    "raw_hex": "8F7BA29800",
    "text": "[07F][06B][092][088]{end}",
    "jp": "ミシェル{end}",
-   "kr": "미셸{end}"
+   "kr_full": "미셸{end}",
+   "kr": "미셸{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 257,
@@ -3649,7 +4284,9 @@
    "raw_hex": "98768800",
    "text": "[088][066][078]{end}",
    "jp": "ルキノ{end}",
-   "kr": "루키노{end}"
+   "kr_full": "루키노{end}",
+   "kr": "루키노{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 258,
@@ -3663,7 +4300,9 @@
    "raw_hex": "B7A0708400",
    "text": "[0A7][090][060][074]{end}",
    "jp": "ディアナ{end}",
-   "kr": "디아나{end}"
+   "kr_full": "디아나{end}",
+   "kr": "디아나{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 259,
@@ -3677,7 +4316,9 @@
    "raw_hex": "B0A79D00",
    "text": "[0A0][097][08D]{end}",
    "jp": "ジュン{end}",
-   "kr": "준{end}"
+   "kr_full": "준{end}",
+   "kr": "준{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 260,
@@ -3691,7 +4332,9 @@
    "raw_hex": "432339F90379014535017C032402852B2FE500",
    "text": "[033][013][029][0E9][369][135][025][16C][314][275][01B][01F][0D5]{end}",
    "jp": "やえは二郎丸に何連勝した？{end}",
-   "kr": "야에가 지로마루에게 몇 연승？{end}"
+   "kr_full": "야에가 지로마루에게 몇 연승했을까？{end}",
+   "kr": "야에는 지로마루에게{nl}몇 연승했을까？{end}",
+   "abbreviated": true
   },
   {
    "entry_id": 261,
@@ -3705,7 +4348,9 @@
    "raw_hex": "14120324028500",
    "text": "[004][002][314][275]{end}",
    "jp": "20連勝{end}",
-   "kr": "20연승{end}"
+   "kr_full": "20연승{end}",
+   "kr": "20연승{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 262,
@@ -3719,7 +4364,9 @@
    "raw_hex": "13170324028500",
    "text": "[003][007][314][275]{end}",
    "jp": "15連勝{end}",
-   "kr": "15연승{end}"
+   "kr_full": "15연승{end}",
+   "kr": "15연승{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 263,
@@ -3733,7 +4380,9 @@
    "raw_hex": "13120324028500",
    "text": "[003][002][314][275]{end}",
    "jp": "10連勝{end}",
-   "kr": "10연승{end}"
+   "kr_full": "10연승{end}",
+   "kr": "10연승{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 264,
@@ -3747,7 +4396,9 @@
    "raw_hex": "170324028500",
    "text": "[007][314][275]{end}",
    "jp": "5連勝{end}",
-   "kr": "5연승{end}"
+   "kr_full": "5연승{end}",
+   "kr": "5연승{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 265,
@@ -3761,7 +4412,9 @@
    "raw_hex": "8071793831274E2F036B0326640580717933FA49254B4E2F3839E500",
    "text": "[070][061][069][028][021][017][03E][01F][35B][316][054]{nl}[070][061][069][023][0EA][039][015][03B][03E][01F][028][029][0D5]{end}",
    "jp": "チイコのつくった機械で{nl}チイコと入れかわったのは？{end}",
-   "kr": "치이코가 만든 기계로{nl}치이코와 바뀐 사람은？{end}"
+   "kr_full": "치이코가 만든 기계로{nl}치이코와 바뀐 사람은？{end}",
+   "kr": "치이코가 만든 기계로{nl}치이코와 바뀐 사람은？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 266,
@@ -3775,7 +4428,9 @@
    "raw_hex": "D100",
    "text": "[0C1]{end}",
    "jp": "J{end}",
-   "kr": "J{end}"
+   "kr_full": "J{end}",
+   "kr": "J{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 267,
@@ -3789,7 +4444,9 @@
    "raw_hex": "2B00",
    "text": "[01B]{end}",
    "jp": "し{end}",
-   "kr": "시{end}"
+   "kr_full": "시{end}",
+   "kr": "시{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 268,
@@ -3803,7 +4460,9 @@
    "raw_hex": "9900",
    "text": "[089]{end}",
    "jp": "レ{end}",
-   "kr": "레{end}"
+   "kr_full": "레{end}",
+   "kr": "레{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 269,
@@ -3817,7 +4476,9 @@
    "raw_hex": "D300",
    "text": "[0C3]{end}",
    "jp": "L{end}",
-   "kr": "L{end}"
+   "kr_full": "L{end}",
+   "kr": "L{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 270,
@@ -3831,7 +4492,9 @@
    "raw_hex": "8F85011C8B9F717FC5570501080232034802AD254642464E2F423839E500",
    "text": "[07F][075][10C][07B][08F][061][06F][0B5][047]{nl}[0F8][222][338][29D][015][036][032][036][03E][01F][032][028][029][0D5]{end}",
    "jp": "ミニ四ファイターが{nl}土屋博士からもらったものは？{end}",
-   "kr": "미니욘 파이터가{nl}츠치야 박사에게 받은 것은？{end}"
+   "kr_full": "미니욘 파이터가{nl}츠치야 박사에게 받은 것은？{end}",
+   "kr": "미니욘 파이터가{nl}츠치야에게 받은 것은？{end}",
+   "abbreviated": true
   },
   {
    "entry_id": 271,
@@ -3845,7 +4508,9 @@
    "raw_hex": "01793E4D00",
    "text": "[169][02E][03D]{end}",
    "jp": "肉まん{end}",
-   "kr": "고기 호빵{end}"
+   "kr_full": "고기만두{end}",
+   "kr": "고기만두{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 272,
@@ -3859,7 +4524,9 @@
    "raw_hex": "9376719200",
    "text": "[083][066][061][082]{end}",
    "jp": "ヤキイモ{end}",
-   "kr": "군고구마{end}"
+   "kr_full": "군고구마{end}",
+   "kr": "군고구마{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 273,
@@ -3873,7 +4540,9 @@
    "raw_hex": "ABA872AF00",
    "text": "[09B][098][062][09F]{end}",
    "jp": "ギョウザ{end}",
-   "kr": "교자{end}"
+   "kr_full": "교자{end}",
+   "kr": "교자{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 274,
@@ -3887,7 +4556,9 @@
    "raw_hex": "7BA7728E7100",
    "text": "[06B][097][062][07E][061]{end}",
    "jp": "シュウマイ{end}",
-   "kr": "슈마이{end}"
+   "kr_full": "슈마이{end}",
+   "kr": "슈마이{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 275,
@@ -3901,7 +4572,9 @@
    "raw_hex": "015D57026335011D322148332122010139E500",
    "text": "[14D][047][253][025][10D][022][011][038][023][011][012][0F1][029][0D5]{end}",
    "jp": "兄が旅に出ているという子は？{end}",
-   "kr": "오빠가 여행 중인 아이는？{end}"
+   "kr_full": "오빠가 여행 중인 아이는？{end}",
+   "kr": "오빠가 여행 중인 아이는？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 276,
@@ -3915,7 +4588,9 @@
    "raw_hex": "422300",
    "text": "[032][013]{end}",
    "jp": "もえ{end}",
-   "kr": "모에{end}"
+   "kr_full": "모에{end}",
+   "kr": "모에{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 277,
@@ -3929,7 +4604,9 @@
    "raw_hex": "432300",
    "text": "[033][013]{end}",
    "jp": "やえ{end}",
-   "kr": "야에{end}"
+   "kr_full": "야에{end}",
+   "kr": "야에{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 278,
@@ -3943,7 +4620,9 @@
    "raw_hex": "255E3F00",
    "text": "[015][04E][02F]{end}",
    "jp": "かずみ{end}",
-   "kr": "카즈미{end}"
+   "kr_full": "카즈미{end}",
+   "kr": "카즈미{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 279,
@@ -3957,7 +4636,9 @@
    "raw_hex": "41593F00",
    "text": "[031][049][02F]{end}",
    "jp": "めぐみ{end}",
-   "kr": "메구미{end}"
+   "kr_full": "메구미{end}",
+   "kr": "메구미{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 280,
@@ -3971,7 +4652,9 @@
    "raw_hex": "99B7A0C57D71B9C5141839056149388E7B9DE500",
    "text": "[089][0A7][090][0B5][06D][061][0A9][0B5][004][008][029]{nl}[051][039][028][07E][06B][08D][0D5]{end}",
    "jp": "レディーセイバー26は{nl}だれのマシン？{end}",
-   "kr": "레이디 세이버 26은{nl}누구의 머신？{end}"
+   "kr_full": "레이디 세이버 26은{nl}누구의 머신？{end}",
+   "kr": "레이디 세이버 26은{nl}누구의 머신？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 281,
@@ -3985,7 +4668,9 @@
    "raw_hex": "2F3E3F00",
    "text": "[01F][02E][02F]{end}",
    "jp": "たまみ{end}",
-   "kr": "타마미{end}"
+   "kr_full": "타마미{end}",
+   "kr": "타마미{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 282,
@@ -3999,7 +4684,9 @@
    "raw_hex": "B0A79D00",
    "text": "[0A0][097][08D]{end}",
    "jp": "ジュン{end}",
-   "kr": "준{end}"
+   "kr_full": "준{end}",
+   "kr": "준{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 283,
@@ -4013,7 +4700,9 @@
    "raw_hex": "80717900",
    "text": "[070][061][069]{end}",
    "jp": "チイコ{end}",
-   "kr": "치이코{end}"
+   "kr_full": "치이코{end}",
+   "kr": "치이코{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 284,
@@ -4027,7 +4716,9 @@
    "raw_hex": "01BF037A00",
    "text": "[1AF][36A]{end}",
    "jp": "黒沢{end}",
-   "kr": "쿠로사와{end}"
+   "kr_full": "쿠로사와{end}",
+   "kr": "쿠로사와{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 285,
@@ -4041,7 +4732,9 @@
    "raw_hex": "0375F103763801575734272B2F423839E500",
    "text": "[365][0E1][366][028][147][047][024][017][01B][01F][032][028][029][0D5]{end}",
    "jp": "烈＆豪の父がなくしたものは？{end}",
-   "kr": "레츠와 고의 아빠가 잃은 것？{end}"
+   "kr_full": "레츠와 고의 아빠가 잃어버린 것은？{end}",
+   "kr": "레츠와 고의 아빠가{nl}잃어버린 것은？{end}",
+   "abbreviated": true
   },
   {
    "entry_id": 286,
@@ -4055,7 +4748,9 @@
    "raw_hex": "023A036A00",
    "text": "[22A][35A]{end}",
    "jp": "指輪{end}",
-   "kr": "반지{end}"
+   "kr_full": "반지{end}",
+   "kr": "반지{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 287,
@@ -4069,7 +4764,9 @@
    "raw_hex": "7A718B00",
    "text": "[06A][061][07B]{end}",
    "jp": "サイフ{end}",
-   "kr": "지갑{end}"
+   "kr_full": "지갑{end}",
+   "kr": "지갑{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 288,
@@ -4083,7 +4780,9 @@
    "raw_hex": "8E7B9D00",
    "text": "[07E][06B][08D]{end}",
    "jp": "マシン{end}",
-   "kr": "머신{end}"
+   "kr_full": "머신{end}",
+   "kr": "머신{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 289,
@@ -4097,7 +4796,9 @@
    "raw_hex": "91AA8700",
    "text": "[081][09A][077]{end}",
    "jp": "メガネ{end}",
-   "kr": "안경{end}"
+   "kr_full": "안경{end}",
+   "kr": "안경{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 290,
@@ -4111,7 +4812,9 @@
    "raw_hex": "739D7BA29D838BA3C57C390565293801913880C590E500",
    "text": "[063][08D][06B][092][08D][073][07B][093][0B5][06C][029]{nl}[055][019][028][181][028][070][0B5][080][0D5]{end}",
    "jp": "エンシェントフォースは{nl}どこの国のチーム？{end}",
-   "kr": "엔션트 포스는{nl}어느 나라 팀？{end}"
+   "kr_full": "엔션트 포스는{nl}어느 나라 팀？{end}",
+   "kr": "엔션트 포스는{nl}어느 나라 팀？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 291,
@@ -4125,7 +4828,9 @@
    "raw_hex": "73B0C08300",
    "text": "[063][0A0][0B0][073]{end}",
    "jp": "エジプト{end}",
-   "kr": "이집트{end}"
+   "kr_full": "이집트{end}",
+   "kr": "이집트{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 292,
@@ -4139,7 +4844,9 @@
    "raw_hex": "71969D00",
    "text": "[061][086][08D]{end}",
    "jp": "イラン{end}",
-   "kr": "이란{end}"
+   "kr_full": "이란{end}",
+   "kr": "이란{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 293,
@@ -4153,7 +4860,9 @@
    "raw_hex": "83987900",
    "text": "[073][088][069]{end}",
    "jp": "トルコ{end}",
-   "kr": "터키{end}"
+   "kr_full": "터키{end}",
+   "kr": "터키{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 294,
@@ -4167,7 +4876,9 @@
    "raw_hex": "C198C500",
    "text": "[0B1][088][0B5]{end}",
    "jp": "ペルー{end}",
-   "kr": "페루{end}"
+   "kr_full": "페루{end}",
+   "kr": "페루{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 295,
@@ -4181,7 +4892,9 @@
    "raw_hex": "DECED7026F180354390565293801913303544E2FE500",
    "text": "[0CE][0BE][0C7][25F][008][344][029]{nl}[055][019][028][181][023][344][03E][01F][0D5]{end}",
    "jp": "WGP第6戦は{nl}どこの国と戦った？{end}",
-   "kr": "WGP 제6전에서{nl}싸운 나라는？{end}"
+   "kr_full": "WGP 제6전에서{nl}싸운 나라는？{end}",
+   "kr": "WGP 제6전에서{nl}싸운 나라는？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 296,
@@ -4195,7 +4908,9 @@
    "raw_hex": "8B969D7C00",
    "text": "[07B][086][08D][06C]{end}",
    "jp": "フランス{end}",
-   "kr": "프랑스{end}"
+   "kr_full": "프랑스{end}",
+   "kr": "프랑스{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 297,
@@ -4209,7 +4924,9 @@
    "raw_hex": "9A7B7000",
    "text": "[08A][06B][060]{end}",
    "jp": "ロシア{end}",
-   "kr": "러시아{end}"
+   "kr_full": "러시아{end}",
+   "kr": "러시아{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 298,
@@ -4223,7 +4940,9 @@
    "raw_hex": "0112019100",
    "text": "[102][181]{end}",
    "jp": "中国{end}",
-   "kr": "중국{end}"
+   "kr_full": "중국{end}",
+   "kr": "중국{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 299,
@@ -4237,7 +4956,9 @@
    "raw_hex": "717F977000",
    "text": "[061][06F][087][060]{end}",
    "jp": "イタリア{end}",
-   "kr": "이탈리아{end}"
+   "kr_full": "이탈리아{end}",
+   "kr": "이탈리아{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 300,
@@ -4251,7 +4972,9 @@
    "raw_hex": "03763596BB997FC54C205A2F0241011039E500",
    "text": "[366][025][086][0AB][089][06F][0B5][03C][010][04A][01F][231][100][029][0D5]{end}",
    "jp": "豪にラブレターをあげた相手は？{end}",
-   "kr": "고에게 러브레터를 준 사람？{end}"
+   "kr_full": "고에게 러브레터를 준 사람은 누구？{end}",
+   "kr": "고에게 러브레터를{nl}준 사람은 누구？{end}",
+   "abbreviated": true
   },
   {
    "entry_id": 301,
@@ -4265,7 +4988,9 @@
    "raw_hex": "B0A7977400",
    "text": "[0A0][097][087][064]{end}",
    "jp": "ジュリオ{end}",
-   "kr": "줄리오{end}"
+   "kr_full": "줄리오{end}",
+   "kr": "줄리오{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 302,
@@ -4279,7 +5004,9 @@
    "raw_hex": "B0A79D00",
    "text": "[0A0][097][08D]{end}",
    "jp": "ジュン{end}",
-   "kr": "준{end}"
+   "kr_full": "준{end}",
+   "kr": "준{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 303,
@@ -4293,7 +5020,9 @@
    "raw_hex": "2F3E3F00",
    "text": "[01F][02E][02F]{end}",
    "jp": "たまみ{end}",
-   "kr": "타마미{end}"
+   "kr_full": "타마미{end}",
+   "kr": "타마미{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 304,
@@ -4307,7 +5036,9 @@
    "raw_hex": "029A015300",
    "text": "[28A][143]{end}",
    "jp": "鉄心{end}",
-   "kr": "텟신{end}"
+   "kr_full": "텟신{end}",
+   "kr": "텟신{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 305,
@@ -4321,7 +5052,9 @@
    "raw_hex": "74C59A96B8C59064390565293801913303544E2FE500",
    "text": "[064][0B5][08A][086][0A8][0B5][080][054][029]{nl}[055][019][028][181][023][344][03E][01F][0D5]{end}",
    "jp": "オーロラドームでは{nl}どこの国と戦った？{end}",
-   "kr": "오로라 돔에서{nl}싸운 나라는？{end}"
+   "kr_full": "오로라 돔에서{nl}싸운 나라는？{end}",
+   "kr": "오로라 돔에서{nl}싸운 나라는？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 306,
@@ -4335,7 +5068,9 @@
    "raw_hex": "9A7B7000",
    "text": "[08A][06B][060]{end}",
    "jp": "ロシア{end}",
-   "kr": "러시아{end}"
+   "kr_full": "러시아{end}",
+   "kr": "러시아{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 307,
@@ -4349,7 +5084,9 @@
    "raw_hex": "0112019100",
    "text": "[102][181]{end}",
    "jp": "中国{end}",
-   "kr": "중국{end}"
+   "kr_full": "중국{end}",
+   "kr": "중국{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 308,
@@ -4363,7 +5100,9 @@
    "raw_hex": "7091977500",
    "text": "[060][081][087][065]{end}",
    "jp": "アメリカ{end}",
-   "kr": "미국{end}"
+   "kr_full": "미국{end}",
+   "kr": "미국{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 309,
@@ -4377,7 +5116,9 @@
    "raw_hex": "8B969D7C00",
    "text": "[07B][086][08D][06C]{end}",
    "jp": "フランス{end}",
-   "kr": "프랑스{end}"
+   "kr_full": "프랑스{end}",
+   "kr": "프랑스{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 310,
@@ -4391,7 +5132,9 @@
    "raw_hex": "01420194012A011F5724654E2F24654739E500",
    "text": "[132][184][11A][10F][047][014][055][03E][01F][014][055][037][029][0D5]{end}",
    "jp": "校長先生がおどったおどりは？{end}",
-   "kr": "교장 선생님이 춘 춤은？{end}"
+   "kr_full": "교장 선생님이 춘 춤은？{end}",
+   "kr": "교장 선생님이 춘 춤은？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 311,
@@ -4405,7 +5148,9 @@
    "raw_hex": "89B47524654700",
    "text": "[079][0A4][065][014][055][037]{end}",
    "jp": "ハダカおどり{end}",
-   "kr": "알몸 춤{end}"
+   "kr_full": "알몸춤{end}",
+   "kr": "알몸춤{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 312,
@@ -4419,7 +5164,9 @@
    "raw_hex": "7A9DB900",
    "text": "[06A][08D][0A9]{end}",
    "jp": "サンバ{end}",
-   "kr": "삼바{end}"
+   "kr_full": "삼바{end}",
+   "kr": "삼바{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 313,
@@ -4433,7 +5180,9 @@
    "raw_hex": "8E75998400",
    "text": "[07E][065][089][074]{end}",
    "jp": "マカレナ{end}",
-   "kr": "마카레나{end}"
+   "kr_full": "마카레나{end}",
+   "kr": "마카레나{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 314,
@@ -4447,7 +5196,9 @@
    "raw_hex": "969DB9B400",
    "text": "[086][08D][0A9][0A4]{end}",
    "jp": "ランバダ{end}",
-   "kr": "람바다{end}"
+   "kr_full": "람바다{end}",
+   "kr": "람바다{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 315,
@@ -4461,7 +5212,9 @@
    "raw_hex": "7AB99D847E98B0A6C5B1380579C58039E500",
    "text": "[06A][0A9][08D][074][06E][088][0A0][096][0B5][0A1][028]{nl}[069][0B5][070][029][0D5]{end}",
    "jp": "サバンナソルジャーズの{nl}コーチは？{end}",
-   "kr": "사반나 솔져스의{nl}코치는 누구？{end}"
+   "kr_full": "사반나 솔져스의{nl}코치는 누구？{end}",
+   "kr": "사반나 솔져스의{nl}코치는 누구？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 316,
@@ -4475,7 +5228,9 @@
    "raw_hex": "03840121757100",
    "text": "[374][111][065][061]{end}",
    "jp": "沖田カイ{end}",
-   "kr": "오키타 카이{end}"
+   "kr_full": "오키타 카이{end}",
+   "kr": "오키타 카이{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 317,
@@ -4489,7 +5244,9 @@
    "raw_hex": "01120121757100",
    "text": "[102][111][065][061]{end}",
    "jp": "中田カイ{end}",
-   "kr": "나카타 카이{end}"
+   "kr_full": "나카타 카이{end}",
+   "kr": "나카타 카이{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 318,
@@ -4503,7 +5260,9 @@
    "raw_hex": "03840121797100",
    "text": "[374][111][069][061]{end}",
    "jp": "沖田コイ{end}",
-   "kr": "오키타 코이{end}"
+   "kr_full": "오키타 코이{end}",
+   "kr": "오키타 코이{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 319,
@@ -4517,7 +5276,9 @@
    "raw_hex": "038410757100",
    "text": "[374][000][065][061]{end}",
    "jp": "沖　カイ{end}",
-   "kr": "오키 카이{end}"
+   "kr_full": "오키 카이{end}",
+   "kr": "오키 카이{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 320,
@@ -4531,7 +5292,9 @@
    "raw_hex": "FF019101B001A9352048012010380502594D0112393435E500",
    "text": "[0EF][181][1A0][199][025][010][038][110][000][028]{nl}[249][03D][102][029][024][025][0D5]{end}",
    "jp": "三国家前にある石像の{nl}真ん中はなに？{end}",
+   "kr_full": "미쿠니가 앞 석상의{nl}가운데 원숭이는？{end}",
    "kr": "미쿠니가 앞 석상의{nl}가운데 원숭이는？{end}",
+   "abbreviated": false,
    "jp_raw_render": "三国家前にある石　の{nl}真ん中はなに？{end}"
   },
   {
@@ -4546,7 +5309,9 @@
    "raw_hex": "01814BAF9800",
    "text": "[171][03B][09F][088]{end}",
    "jp": "言わザル{end}",
-   "kr": "말하지 않는 원숭이{end}"
+   "kr_full": "입 막은 원숭이{end}",
+   "kr": "입 막은{end}",
+   "abbreviated": true
   },
   {
    "entry_id": 322,
@@ -4560,7 +5325,9 @@
    "raw_hex": "01DD25AF9800",
    "text": "[1CD][015][09F][088]{end}",
    "jp": "聞かザル{end}",
-   "kr": "듣지 않는 원숭이{end}"
+   "kr_full": "귀 막은 원숭이{end}",
+   "kr": "귀 막은{end}",
+   "abbreviated": true
   },
   {
    "entry_id": 323,
@@ -4574,7 +5341,9 @@
    "raw_hex": "0133AF9800",
    "text": "[123][09F][088]{end}",
    "jp": "見ザル{end}",
-   "kr": "보지 않는 원숭이{end}"
+   "kr_full": "눈 가린 원숭이{end}",
+   "kr": "눈 가린{end}",
+   "abbreviated": true
   },
   {
    "entry_id": 324,
@@ -4588,7 +5357,9 @@
    "raw_hex": "FF01910377037800",
    "text": "[0EF][181][367][368]{end}",
    "jp": "三国藤吉{end}",
-   "kr": "미쿠니 토우키치{end}"
+   "kr_full": "미쿠니 토우키치{end}",
+   "kr": "토우키치{end}",
+   "abbreviated": true
   },
   {
    "entry_id": 325,
@@ -4602,7 +5373,9 @@
    "raw_hex": "2938011264014F01D23503562132053421423839E500",
    "text": "[019][028][102][054][13F][1C2][025][346][011][022]{nl}[024][011][032][028][029][0D5]{end}",
    "jp": "この中で公園に置いて{nl}ないものは？{end}",
-   "kr": "공원에{nl}없는 것은？{end}"
+   "kr_full": "공원에{nl}없는 것은？{end}",
+   "kr": "공원에{nl}없는 것은？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 326,
@@ -4616,7 +5389,9 @@
    "raw_hex": "32316A2200",
    "text": "[022][021][05A][012]{end}",
    "jp": "てつぼう{end}",
-   "kr": "철봉{end}"
+   "kr_full": "철봉{end}",
+   "kr": "철봉{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 327,
@@ -4630,7 +5405,9 @@
    "raw_hex": "2C6947016100",
    "text": "[01C][059][037][151]{end}",
    "jp": "すべり台{end}",
-   "kr": "미끄럼틀{end}"
+   "kr_full": "미끄럼틀{end}",
+   "kr": "미끄럼틀{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 328,
@@ -4644,7 +5421,9 @@
    "raw_hex": "BC9D8000",
    "text": "[0AC][08D][070]{end}",
    "jp": "ベンチ{end}",
-   "kr": "벤치{end}"
+   "kr_full": "벤치{end}",
+   "kr": "벤치{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 329,
@@ -4658,7 +5437,9 @@
    "raw_hex": "5B3F662900",
    "text": "[04B][02F][056][019]{end}",
    "jp": "ごみばこ{end}",
-   "kr": "쓰레기통{end}"
+   "kr_full": "쓰레기통{end}",
+   "kr": "쓰레기통{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 330,
@@ -4672,7 +5453,9 @@
    "raw_hex": "0376388B839D3803B802A139E500",
    "text": "[366][028][07B][073][08D][028][3A8][291][029][0D5]{end}",
    "jp": "豪のフトンの模様は？{end}",
-   "kr": "고의 이불 무늬는？{end}"
+   "kr_full": "고의 이불 무늬는？{end}",
+   "kr": "고의 이불 무늬는？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 331,
@@ -4686,7 +5469,9 @@
    "raw_hex": "2B3E2B3E00",
    "text": "[01B][02E][01B][02E]{end}",
    "jp": "しましま{end}",
-   "kr": "줄무늬{end}"
+   "kr_full": "줄무늬{end}",
+   "kr": "줄무늬{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 332,
@@ -4700,7 +5485,9 @@
    "raw_hex": "0111011A00",
    "text": "[101][10A]{end}",
    "jp": "水玉{end}",
-   "kr": "물방울무늬{end}"
+   "kr_full": "물방울무늬{end}",
+   "kr": "물방울무늬{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 333,
@@ -4714,7 +5501,9 @@
    "raw_hex": "034C017500",
    "text": "[33C][165]{end}",
    "jp": "無地{end}",
-   "kr": "민무늬{end}"
+   "kr_full": "민무늬{end}",
+   "kr": "민무늬{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 334,
@@ -4728,7 +5517,9 @@
    "raw_hex": "01A800",
    "text": "[198]{end}",
    "jp": "星{end}",
-   "kr": "별{end}"
+   "kr_full": "별{end}",
+   "kr": "별{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 335,
@@ -4742,7 +5533,9 @@
    "raw_hex": "739D7BA29D838BA3C57C380597C5B4C539E500",
    "text": "[063][08D][06B][092][08D][073][07B][093][0B5][06C][028]{nl}[087][0B5][0A4][0B5][029][0D5]{end}",
    "jp": "エンシェントフォースの{nl}リーダーは？{end}",
-   "kr": "엔션트 포스의{nl}리더는 누구？{end}"
+   "kr_full": "엔션트 포스의{nl}리더는 누구？{end}",
+   "kr": "엔션트 포스의{nl}리더는 누구？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 336,
@@ -4756,7 +5549,9 @@
    "raw_hex": "96C500",
    "text": "[086][0B5]{end}",
    "jp": "ラー{end}",
-   "kr": "라{end}"
+   "kr_full": "라{end}",
+   "kr": "라{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 337,
@@ -4770,7 +5565,9 @@
    "raw_hex": "82C500",
    "text": "[072][0B5]{end}",
    "jp": "テー{end}",
-   "kr": "테{end}"
+   "kr_full": "테{end}",
+   "kr": "테{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 338,
@@ -4784,7 +5581,9 @@
    "raw_hex": "22C500",
    "text": "[012][0B5]{end}",
    "jp": "うー{end}",
-   "kr": "히라가나 우{end}"
+   "kr_full": "히라가나 우{end}",
+   "kr": "히라가나 우{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 339,
@@ -4798,7 +5597,9 @@
    "raw_hex": "72C500",
    "text": "[062][0B5]{end}",
    "jp": "ウー{end}",
-   "kr": "가타카나 우{end}"
+   "kr_full": "가타카나 우{end}",
+   "kr": "가타카나 우{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 340,
@@ -4812,7 +5613,9 @@
    "raw_hex": "AA9DBB967C7FC5DFDBD63805DF3339017C38475427E500",
    "text": "[09A][08D][0AB][086][06C][06F][0B5][0CF][0CB][0C6][028]{nl}[0CF][023][029][16C][028][037][044][017][0D5]{end}",
    "jp": "ガンブラスターXTOの{nl}Xとは何のりゃく？{end}",
-   "kr": "건 블래스터 XTO의{nl}X는 무엇의 약자？{end}"
+   "kr_full": "건 블래스터 XTO의{nl}X는 무엇의 약자？{end}",
+   "kr": "건 블래스터 XTO의{nl}X는 무엇의 약자？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 341,
@@ -4826,7 +5629,9 @@
    "raw_hex": "777C7900",
    "text": "[067][06C][069]{end}",
    "jp": "クスコ{end}",
-   "kr": "쿠스코{end}"
+   "kr_full": "쿠스코{end}",
+   "kr": "쿠스코{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 342,
@@ -4840,7 +5645,9 @@
    "raw_hex": "77977C8E7C00",
    "text": "[067][087][06C][07E][06C]{end}",
    "jp": "クリスマス{end}",
-   "kr": "크리스마스{end}"
+   "kr_full": "크리스마스{end}",
+   "kr": "크리스마스{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 343,
@@ -4854,7 +5661,9 @@
    "raw_hex": "B98100",
    "text": "[0A9][071]{end}",
    "jp": "バツ{end}",
-   "kr": "엑스표{end}"
+   "kr_full": "엑스표{end}",
+   "kr": "엑스표{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 344,
@@ -4868,7 +5677,9 @@
    "raw_hex": "02C7F801FD2800",
    "text": "[2B7][0E8][1ED][018]{end}",
    "jp": "成人向け{end}",
-   "kr": "성인용{end}"
+   "kr_full": "성인용{end}",
+   "kr": "성인용{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 345,
@@ -4882,7 +5693,9 @@
    "raw_hex": "B7A0708457244E29302F01CB022439E500",
    "text": "[0A7][090][060][074][047][014][03E][019][020][01F][1BB][214][029][0D5]{end}",
    "jp": "ディアナがおっこちた場所は？{end}",
-   "kr": "디아나가 떨어진 곳은？{end}"
+   "kr_full": "디아나가 떨어진 곳은？{end}",
+   "kr": "디아나가 떨어진 곳은？{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 346,
@@ -4896,7 +5709,9 @@
    "raw_hex": "01CF029D00",
    "text": "[1BF][28D]{end}",
    "jp": "道路{end}",
-   "kr": "도로{end}"
+   "kr_full": "도로{end}",
+   "kr": "도로{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 347,
@@ -4910,7 +5725,9 @@
    "raw_hex": "037C010403B80300019600",
    "text": "[36C][0F4][3A8][2F0][186]{end}",
    "jp": "佐上模型店{end}",
-   "kr": "사가미 모형점{end}"
+   "kr_full": "사가미 모형점{end}",
+   "kr": "사가미 모형점{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 348,
@@ -4924,7 +5741,9 @@
    "raw_hex": "013B014200",
    "text": "[12B][132]{end}",
    "jp": "学校{end}",
-   "kr": "학교{end}"
+   "kr_full": "학교{end}",
+   "kr": "학교{end}",
+   "abbreviated": false
   },
   {
    "entry_id": 349,
@@ -4938,7 +5757,9 @@
    "raw_hex": "03830168010000",
    "text": "[373][158][0F0]{end}",
    "jp": "鷹羽山{end}",
-   "kr": "타카바산{end}"
+   "kr_full": "타카바산{end}",
+   "kr": "타카바산{end}",
+   "abbreviated": false
   }
  ]
 }

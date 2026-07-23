@@ -1,0 +1,463 @@
+{
+  "schema": "wgp2-ending-credits-v1",
+  "source": {
+    "rom_range": "$C7:A2A5-$C7:B182",
+    "stream_size": 3806,
+    "stream_sha256": "82c7fe140fb878cbc0a3b61fa61aac485a98d0b336decfa02d42917dd7ae03b9",
+    "logical_row_count": 77,
+    "physical_record_count": 154
+  },
+  "policy": {
+    "preserve_source_record_order": true,
+    "insert_localization_logical_rows": 0,
+    "preserve_existing_nonblank_record_lengths": true,
+    "preserve_horizontal_slots": true,
+    "preserve_best_time_runtime_fields": true,
+    "blank_logical_rows": 31,
+    "relocate_stream_for_localization_message": true
+  },
+  "localization_message": {
+    "source_type": "user_authored",
+    "text_jp": null,
+    "text_kr_full": "한글번역 피아\n\nSPECIAL THANKS TO\n날아라 부메랑, 우리는 챔피언, 폭주형제 WGP·MAX...\n미니카 하나로 밤새 가슴 설레어하던\n그 시절의 우리들.\n세월이 흘러 어른이 되어버린\n세상의 모든 챔피언들에게 이 번역을 바칩니다.\n부천 레트로게임 수다방,\n한마루에서 응원해주신 분들\n이 게임을 처음 하게 해줬던 성현이\n모두 감사드립니다.",
+    "text_kr": "한글번역 피아\n\nSPECIAL THANKS TO\n날아라 부메랑, 우리는 챔피언,\n폭주형제 WGP·MAX...\n미니카 하나로 밤새 가슴 설레어하던\n그 시절의 우리들.\n세월이 흘러 어른이 되어버린\n세상의 모든 챔피언들에게 이 번역을 바칩니다.\n부천 레트로게임 수다방,\n한마루에서 응원해주신 분들\n이 게임을 처음 하게 해줬던 성현이\n모두 감사드립니다.",
+    "abbreviated": false,
+    "layout_note": "33타일 작품명 행만 의미 축약 없이 쉼표 뒤에서 개행",
+    "lines": [
+      {
+        "pair": 49,
+        "text": "한글번역 피아"
+      },
+      {
+        "pair": 51,
+        "text": "SPECIAL THANKS TO"
+      },
+      {
+        "pair": 52,
+        "text": "날아라 부메랑, 우리는 챔피언,"
+      },
+      {
+        "pair": 53,
+        "text": "폭주형제 WGP·MAX..."
+      },
+      {
+        "pair": 54,
+        "text": "미니카 하나로 밤새 가슴 설레어하던"
+      },
+      {
+        "pair": 55,
+        "text": "그 시절의 우리들."
+      },
+      {
+        "pair": 56,
+        "text": "세월이 흘러 어른이 되어버린"
+      },
+      {
+        "pair": 57,
+        "text": "세상의 모든 챔피언들에게 이 번역을 바칩니다."
+      },
+      {
+        "pair": 58,
+        "text": "부천 레트로게임 수다방,"
+      },
+      {
+        "pair": 59,
+        "text": "한마루에서 응원해주신 분들"
+      },
+      {
+        "pair": 60,
+        "text": "이 게임을 처음 하게 해줬던 성현이"
+      },
+      {
+        "pair": 61,
+        "text": "모두 감사드립니다."
+      }
+    ]
+  },
+  "entries": [
+    {
+      "pair": 0,
+      "kind": "credit",
+      "text_jp": "せいさく",
+      "text_kr_full": "제작",
+      "text_kr": "제작",
+      "abbreviated": false
+    },
+    {
+      "pair": 1,
+      "kind": "credit",
+      "text_jp": "めぐろ のりちか",
+      "text_kr_full": "메구로 노리치카",
+      "text_kr": "메구로 노리치카",
+      "abbreviated": false
+    },
+    {
+      "pair": 3,
+      "kind": "credit",
+      "text_jp": "すずき としあき",
+      "text_kr_full": "스즈키 토시아키",
+      "text_kr": "스즈키 토시아키",
+      "abbreviated": false
+    },
+    {
+      "pair": 4,
+      "kind": "credit",
+      "text_jp": "たわら まさき",
+      "text_kr_full": "타와라 마사키",
+      "text_kr": "타와라 마사키",
+      "abbreviated": false
+    },
+    {
+      "pair": 6,
+      "kind": "credit",
+      "text_jp": "プログラマー",
+      "text_kr_full": "프로그래머",
+      "text_kr": "프로그래머",
+      "abbreviated": false
+    },
+    {
+      "pair": 7,
+      "kind": "credit",
+      "text_jp": "きたわき ひらく",
+      "text_kr_full": "키타와키 히라쿠",
+      "text_kr": "키타와키 히라쿠",
+      "abbreviated": false
+    },
+    {
+      "pair": 8,
+      "kind": "credit",
+      "text_jp": "ふなこし まさのり",
+      "text_kr_full": "후나코시 마사노리",
+      "text_kr": "후나코시 마사노리",
+      "abbreviated": false
+    },
+    {
+      "pair": 9,
+      "kind": "credit",
+      "text_jp": "あべ こういち",
+      "text_kr_full": "아베 코이치",
+      "text_kr": "아베 코이치",
+      "abbreviated": false
+    },
+    {
+      "pair": 10,
+      "kind": "credit",
+      "text_jp": "もり よしかず",
+      "text_kr_full": "모리 요시카즈",
+      "text_kr": "모리 요시카즈",
+      "abbreviated": false
+    },
+    {
+      "pair": 12,
+      "kind": "credit",
+      "text_jp": "デザイナー",
+      "text_kr_full": "디자이너",
+      "text_kr": "디자이너",
+      "abbreviated": false
+    },
+    {
+      "pair": 13,
+      "kind": "credit",
+      "text_jp": "めぐろ のりちか",
+      "text_kr_full": "메구로 노리치카",
+      "text_kr": "메구로 노리치카",
+      "abbreviated": false
+    },
+    {
+      "pair": 14,
+      "kind": "credit",
+      "text_jp": "ごとう ひろゆき",
+      "text_kr_full": "고토 히로유키",
+      "text_kr": "고토 히로유키",
+      "abbreviated": false
+    },
+    {
+      "pair": 15,
+      "kind": "credit",
+      "text_jp": "たなか あぐる",
+      "text_kr_full": "타나카 아구루",
+      "text_kr": "타나카 아구루",
+      "abbreviated": false
+    },
+    {
+      "pair": 16,
+      "kind": "credit",
+      "text_jp": "しぶや のりこ",
+      "text_kr_full": "시부야 노리코",
+      "text_kr": "시부야 노리코",
+      "abbreviated": false
+    },
+    {
+      "pair": 17,
+      "kind": "credit",
+      "text_jp": "ふじた まさき",
+      "text_kr_full": "후지타 마사키",
+      "text_kr": "후지타 마사키",
+      "abbreviated": false
+    },
+    {
+      "pair": 19,
+      "kind": "credit",
+      "text_jp": "サウンド",
+      "text_kr_full": "사운드",
+      "text_kr": "사운드",
+      "abbreviated": false
+    },
+    {
+      "pair": 20,
+      "kind": "credit",
+      "text_jp": "たじま まさる",
+      "text_kr_full": "타지마 마사루",
+      "text_kr": "타지마 마사루",
+      "abbreviated": false
+    },
+    {
+      "pair": 22,
+      "kind": "credit",
+      "text_jp": "せいさくしんこう",
+      "text_kr_full": "제작 진행",
+      "text_kr": "제작 진행",
+      "abbreviated": false
+    },
+    {
+      "pair": 23,
+      "kind": "credit",
+      "text_jp": "おがた はたお",
+      "text_kr_full": "오가타 하타오",
+      "text_kr": "오가타 하타오",
+      "abbreviated": false
+    },
+    {
+      "pair": 25,
+      "kind": "credit",
+      "text_jp": "せいさくきょうりょく",
+      "text_kr_full": "제작 협력",
+      "text_kr": "제작 협력",
+      "abbreviated": false
+    },
+    {
+      "pair": 26,
+      "kind": "credit",
+      "text_jp": "アスキー",
+      "text_kr_full": "아스키",
+      "text_kr": "아스키",
+      "abbreviated": false
+    },
+    {
+      "pair": 27,
+      "kind": "credit",
+      "text_jp": "XEBEC",
+      "text_kr_full": "XEBEC",
+      "text_kr": "XEBEC",
+      "abbreviated": false
+    },
+    {
+      "pair": 29,
+      "kind": "credit",
+      "text_jp": "かんしゅう",
+      "text_kr_full": "감수",
+      "text_kr": "감수",
+      "abbreviated": false
+    },
+    {
+      "pair": 30,
+      "kind": "credit",
+      "text_jp": "さがみ やすゆき",
+      "text_kr_full": "사가미 야스유키",
+      "text_kr": "사가미 야스유키",
+      "abbreviated": false
+    },
+    {
+      "pair": 31,
+      "kind": "credit",
+      "text_jp": "よしかわ ちょうじ",
+      "text_kr_full": "요시카와 초지",
+      "text_kr": "요시카와 초지",
+      "abbreviated": false
+    },
+    {
+      "pair": 32,
+      "kind": "credit",
+      "text_jp": "つちや ひろつぐ",
+      "text_kr_full": "츠치야 히로츠구",
+      "text_kr": "츠치야 히로츠구",
+      "abbreviated": false
+    },
+    {
+      "pair": 34,
+      "kind": "credit",
+      "text_jp": "スペシャルサンクス",
+      "text_kr_full": "특별 감사",
+      "text_kr": "특별 감사",
+      "abbreviated": false
+    },
+    {
+      "pair": 35,
+      "kind": "credit",
+      "text_jp": "くしま かずひと",
+      "text_kr_full": "쿠시마 카즈히토",
+      "text_kr": "쿠시마 카즈히토",
+      "abbreviated": false
+    },
+    {
+      "pair": 36,
+      "kind": "credit",
+      "text_jp": "まきの もりくに",
+      "text_kr_full": "마키노 모리쿠니",
+      "text_kr": "마키노 모리쿠니",
+      "abbreviated": false
+    },
+    {
+      "pair": 37,
+      "kind": "credit",
+      "text_jp": "さとう ひろし",
+      "text_kr_full": "사토 히로시",
+      "text_kr": "사토 히로시",
+      "abbreviated": false
+    },
+    {
+      "pair": 38,
+      "kind": "credit",
+      "text_jp": "かわだ しんや",
+      "text_kr_full": "카와다 신야",
+      "text_kr": "카와다 신야",
+      "abbreviated": false
+    },
+    {
+      "pair": 39,
+      "kind": "credit",
+      "text_jp": "なかむら おじゃろう",
+      "text_kr_full": "나카무라 오자로우",
+      "text_kr": "나카무라 오자로우",
+      "abbreviated": false
+    },
+    {
+      "pair": 40,
+      "kind": "credit",
+      "text_jp": "スーパーマリオクラブ",
+      "text_kr_full": "슈퍼 마리오 클럽",
+      "text_kr": "슈퍼 마리오 클럽",
+      "abbreviated": false
+    },
+    {
+      "pair": 42,
+      "kind": "credit",
+      "text_jp": "プロデューサー",
+      "text_kr_full": "프로듀서",
+      "text_kr": "프로듀서",
+      "abbreviated": false
+    },
+    {
+      "pair": 43,
+      "kind": "credit",
+      "text_jp": "かわぐち こうじ",
+      "text_kr_full": "카와구치 코지",
+      "text_kr": "카와구치 코지",
+      "abbreviated": false
+    },
+    {
+      "pair": 44,
+      "kind": "credit",
+      "text_jp": "なかやま まこと",
+      "text_kr_full": "나카야마 마코토",
+      "text_kr": "나카야마 마코토",
+      "abbreviated": false
+    },
+    {
+      "pair": 45,
+      "kind": "credit",
+      "text_jp": "くぼ まさかず",
+      "text_kr_full": "쿠보 마사카즈",
+      "text_kr": "쿠보 마사카즈",
+      "abbreviated": false
+    },
+    {
+      "pair": 47,
+      "kind": "credit",
+      "text_jp": "エグゼクティブプロデューサー",
+      "text_kr_full": "총괄 프로듀서",
+      "text_kr": "총괄 프로듀서",
+      "abbreviated": false
+    },
+    {
+      "pair": 48,
+      "kind": "credit",
+      "text_jp": "やまうち ひろし",
+      "text_kr_full": "야마우치 히로시",
+      "text_kr": "야마우치 히로시",
+      "abbreviated": false
+    },
+    {
+      "pair": 63,
+      "kind": "credit",
+      "text_jp": "ベストタイム",
+      "text_kr_full": "베스트타임",
+      "text_kr": "베스트타임",
+      "abbreviated": false
+    },
+    {
+      "pair": 65,
+      "kind": "best_time",
+      "label_jp": "あ",
+      "label_kr_full": "가",
+      "label_kr": "가",
+      "course_jp": "たかばやま",
+      "course_kr_full": "타카바 산",
+      "course_kr": "타카바 산",
+      "unit_jp": "びょう",
+      "unit_kr_full": "초",
+      "unit_kr": "초",
+      "abbreviated": false
+    },
+    {
+      "pair": 66,
+      "kind": "best_time",
+      "label_jp": "い",
+      "label_kr_full": "나",
+      "label_kr": "나",
+      "course_jp": "ふうりんサーキット",
+      "course_kr_full": "풍륜 서킷",
+      "course_kr": "풍륜 서킷",
+      "unit_jp": "びょう",
+      "unit_kr_full": "초",
+      "unit_kr": "초",
+      "abbreviated": false
+    },
+    {
+      "pair": 67,
+      "kind": "best_time",
+      "label_jp": "う",
+      "label_kr_full": "다",
+      "label_kr": "다",
+      "course_jp": "しょうがっこう",
+      "course_kr_full": "초등학교",
+      "course_kr": "초등학교",
+      "unit_jp": "びょう",
+      "unit_kr_full": "초",
+      "unit_kr": "초",
+      "abbreviated": false
+    },
+    {
+      "pair": 68,
+      "kind": "best_time",
+      "label_jp": "え",
+      "label_kr_full": "라",
+      "label_kr": "라",
+      "course_jp": "つちやレースじょう",
+      "course_kr_full": "츠치야 경기장",
+      "course_kr": "츠치야 경기장",
+      "unit_jp": "びょう",
+      "unit_kr_full": "초",
+      "unit_kr": "초",
+      "abbreviated": false
+    },
+    {
+      "pair": 73,
+      "kind": "credit",
+      "text_jp": "END",
+      "text_kr_full": "끝",
+      "text_kr": "끝",
+      "abbreviated": false
+    }
+  ]
+}

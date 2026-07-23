@@ -1,0 +1,5 @@
+id	screen_crop_px	workshop_crop_px	tile_capacity	original_jp	translation_kr_full	translation_kr_display	abbreviated
+setting	x16,y80,w48,h8	x4,y14,w48,h8	6	セッティング	세팅	세팅	false
+easy_setting	x64,y80,w72,h8	x4,y46,w72,h8	9	イージーセッティング	이지 세팅	이지 세팅	false
+test_run	x136,y80,w56,h8	x4,y78,w56,h8	7	テストそうこう	테스트 주행	테스트 주행	false
+course_check	x192,y80,w48,h8	x4,y110,w48,h8	6	コースチェック	코스 체크	코스 체크	false

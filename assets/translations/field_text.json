@@ -17,7 +17,20 @@
   "desync": 1,
   "text_runs": 1411,
   "unique_text": 1340,
-  "pointer_refs": 1300
+  "pointer_refs": 1290,
+  "raw_pointer_matches": 1300,
+  "rejected_false_pointer_refs": [
+   "$C2:0977",
+   "$C2:1C9D",
+   "$C2:5AEB",
+   "$C2:87F3",
+   "$C2:8E13",
+   "$C2:92E0",
+   "$C2:A20F",
+   "$C2:A942",
+   "$C2:CD47",
+   "$C2:CD6D"
+  ]
  },
  "regions": [
   {
@@ -1198,13 +1211,8 @@
    "stop_byte": null,
    "unparsed_tail": "",
    "pointer_refs": [
-    "$C2:0977",
-    "$C2:5AEB",
     "$C2:688D",
-    "$C2:87F3",
-    "$C2:89AD",
-    "$C2:92E0",
-    "$C2:A20F"
+    "$C2:89AD"
    ],
    "runs": [
     {
@@ -9616,7 +9624,6 @@
    "stop_byte": null,
    "unparsed_tail": "",
    "pointer_refs": [
-    "$C2:1C9D",
     "$C2:70E5"
    ],
    "runs": [
@@ -11162,8 +11169,7 @@
    "stop_byte": null,
    "unparsed_tail": "",
    "pointer_refs": [
-    "$C2:75D0",
-    "$C2:CD47"
+    "$C2:75D0"
    ],
    "runs": [
     {
@@ -13259,7 +13265,6 @@
    "stop_byte": null,
    "unparsed_tail": "",
    "pointer_refs": [
-    "$C2:8E13",
     "$C2:A30D"
    ],
    "runs": [
@@ -21124,8 +21129,7 @@
    "stop_byte": null,
    "unparsed_tail": "",
    "pointer_refs": [
-    "$C2:C1E1",
-    "$C2:CD6D"
+    "$C2:C1E1"
    ],
    "runs": [
     {
@@ -25570,8 +25574,7 @@
    "stop_byte": null,
    "unparsed_tail": "",
    "pointer_refs": [
-    "$C2:373F",
-    "$C2:A942"
+    "$C2:373F"
    ],
    "runs": [
     {

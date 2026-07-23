@@ -1,0 +1,84 @@
+{
+  "_meta": {
+    "description": "소형 타일 메뉴 추가 번역 원장. text_jp는 원문, text_kr_full은 축약 전 완역, text_kr은 실제 ROM 삽입문이다.",
+    "rules": [
+      "text_jp와 text_kr_full은 재빌드나 축약 과정에서 덮어쓰지 않는다.",
+      "슬롯 제약으로 축약할 때는 text_kr만 바꾸고 shortening_reason을 남긴다.",
+      "source와 raw_hex(대형 그래픽은 원본 자원·대상 타일 SHA-256)는 정적 분석 또는 Mesen 실측으로 확정한 뒤 기록한다."
+    ]
+  },
+  "entries": [
+    {
+      "id": "confirm_question",
+      "source": "$C0:7841",
+      "raw_hex": "26 2B 0C 02 00 94 13 0D 06 9C",
+      "render_path": "$C0:6F4B loads context font $C7:C000 / $C0:1B4B direct tile / base $2100",
+      "slot_cells": 8,
+      "text_jp": "よろしいですか？",
+      "text_kr_full": "괜찮습니까？",
+      "text_kr": "괜찮습니까？",
+      "status": "implemented"
+    },
+    {
+      "id": "confirm_yes",
+      "source": "$C0:7850",
+      "raw_hex": "1A 02",
+      "render_path": "$C0:6F4B loads context font $C7:C000 / $C0:1B4B direct tile / base $2100",
+      "slot_cells": 2,
+      "text_jp": "はい",
+      "text_kr_full": "예",
+      "text_kr": "예",
+      "status": "implemented"
+    },
+    {
+      "id": "confirm_no",
+      "source": "$C0:7854",
+      "raw_hex": "02 02 04",
+      "render_path": "$C0:6F4B loads context font $C7:C000 / $C0:1B4B direct tile / base $2100",
+      "slot_cells": 3,
+      "text_jp": "いいえ",
+      "text_kr_full": "아니오",
+      "text_kr": "아니오",
+      "status": "implemented"
+    },
+    {
+      "id": "next_level",
+      "source": "$D9:0000 decompressed tiles $F4-$F8",
+      "raw_hex": "08004F005100040024004A0051000000 00003C00520052005200520024000000 000088008800880088008500F2000000 0800BE008800BE0098002C003A000000 1400F400200040004000400038000000",
+      "render_path": "BG3 tilemap $21F4-$21F8 / 2bpp embedded graphic; manual/easy setting font loaders $C1:1EBB/$C1:303F -> $C7:D000",
+      "slot_cells": 5,
+      "text_jp": "次のLVまで",
+      "text_kr_full": "다음 레벨까지",
+      "text_kr": "다음LV까지",
+      "shortening_reason": "원본 5타일(40px) 위치를 보존하기 위해 레벨을 화면 원문의 영문 약어 LV로 유지하고, 8pt 글리프의 빈 좌우 열만 제거해 40px에 패킹한다.",
+      "status": "implemented"
+    },
+    {
+      "id": "pause_continue",
+      "source": "$D4:6630 LZSS raw tiles $140-$14B/$150-$15B",
+      "raw_hex": null,
+      "original_resource_sha256": "04aacd601ed745df74f78b0e26f3eb47e3f4a066e290d6688a55609b218c2019",
+      "original_target_tiles_sha256": "f01f7f5a64260d8fe518856a50b1f551816519539fcc688727a353fd3a444991",
+      "render_path": "$D0:1993 DMA to VRAM $6000 / composite $CF:8C57",
+      "slot_cells": 4,
+      "text_jp": "つづける",
+      "text_kr_full": "이어하기",
+      "text_kr": "이어하기",
+      "note": "리포에 남아 있던 2026-07-15 8×8 그래픽 편집 시안과 표기를 통일한다.",
+      "status": "implemented"
+    },
+    {
+      "id": "pause_retire",
+      "source": "$D4:6630 LZSS raw tiles $140-$14B/$150-$15B",
+      "raw_hex": null,
+      "original_resource_sha256": "04aacd601ed745df74f78b0e26f3eb47e3f4a066e290d6688a55609b218c2019",
+      "original_target_tiles_sha256": "f01f7f5a64260d8fe518856a50b1f551816519539fcc688727a353fd3a444991",
+      "render_path": "$D0:1993 DMA to VRAM $6000 / composite $CF:8C73",
+      "slot_cells": 4,
+      "text_jp": "リタイア",
+      "text_kr_full": "리타이어",
+      "text_kr": "리타이어",
+      "status": "implemented"
+    }
+  ]
+}
