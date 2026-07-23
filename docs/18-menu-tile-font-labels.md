@@ -5,9 +5,11 @@
 
 > **폐기된 설계(2026-07-22 정정)**: 아래 FE 마커·VRAM 800·NMI/재DMA 방식은
 > 화면 전환 중 VRAM 수명주기와 충돌해 보라색 화면 깨짐을 일으켰다. 최종 구현은
-> 실행 코드 훅 없이 문맥별 `$D9` 폰트 자원을 교체한다. 새 정본은
-> [docs/19-menu4-context-font.md](19-menu4-context-font.md), 빌더는
-> `scripts/build_menu4_reclean.py`다. 아래 내용은 실패 경로의 역공학 기록으로만 보존한다.
+> 실행 코드 훅 없이 문맥별 `$D9` 폰트 자원을 교체한다. 당시 전환 과정은
+> [문맥 글꼴 역사 기록](19-menu4-context-font.md)과
+> [수동 세팅 인계 기록](20-manual-setting-xmenu-handoff.md)에 보존한다.
+> 현재 정본은 이 문서의 “2026-07-22 실제 구현 정정” 절과 최신
+> `scripts/build_menu4_reclean.py`·`scripts/build_setbox.py`다.
 >
 > 규명 완료 2026-07-21. docs/11(메뉴폰트·렌더러)·docs/12(SJIS 한글 인프라)의 후속. 구현 대상 = 월드맵 X버튼 메뉴 + 조작방법(そうさマニュアル) 튜토리얼 라벨.
 

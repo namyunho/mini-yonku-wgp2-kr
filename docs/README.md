@@ -45,6 +45,8 @@
 - [`12-sjis-ui-hangul.md`](12-sjis-ui-hangul.md) — SJIS UI 전체.
 - [`17-stage-title-localization.md`](17-stage-title-localization.md) — 세이브 제목과 챕터 인트로.
 - [`18-menu-tile-font-labels.md`](18-menu-tile-font-labels.md) — 소형 직접타일 메뉴. 앞부분의 마커 훅은 폐기된 설계이며 후반의 문맥별 글꼴 재압축이 현재 구현이다.
+- [`19-menu4-context-font.md`](19-menu4-context-font.md) — 하위 브랜치에서 처음 문맥 글꼴을 안정화한 역사 기록.
+- [`20-manual-setting-xmenu-handoff.md`](20-manual-setting-xmenu-handoff.md) — 수동 세팅 공유 글꼴 실패 실험·초기 인계 기록.
 - [`24-ending-credits-analysis.md`](24-ending-credits-analysis.md) — 실제 엔딩 크레딧·베스트타임·현지화 메시지.
 
 ### 월드맵·필드·검수 산출물
