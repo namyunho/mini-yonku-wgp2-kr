@@ -54,7 +54,8 @@
   },
   {
    "addr": "$C6:A672",
-   "question": "레이스장 개장 티셔츠를{nl}늘 입는 아이는？{end}",
+   "question_full": "레이스장 개장 기념 티셔츠를{nl}늘 입는 아이는？{end}",
+   "question": "레이스장 개장 기념{nl}티셔츠를 늘 입는 아이는？{end}",
    "choices": ["에리카{end}", "이요{end}", "야요이{end}", "우미{end}"]
   },
   {
@@ -75,7 +76,7 @@
   },
   {
    "addr": "$C6:A72C",
-   "question": "리치와 폰을{nl}구별하는 특징은？{end}",
+   "question": "공키의 리치와 폰을{nl}구별하는 특징은？{end}",
    "choices": ["립스틱{end}", "머리 모양{end}", "속눈썹{end}", "귀걸이{end}"]
   },
   {
@@ -123,7 +124,7 @@
    "addr": "$C6:A88E",
    "question_full": "미니욘 파이터가{nl}츠치야 박사에게 받은 것은？{end}",
    "question": "미니욘 파이터가{nl}츠치야에게 받은 것은？{end}",
-   "choices": ["고기 호빵{end}", "군고구마{end}", "교자{end}", "슈마이{end}"]
+   "choices": ["고기만두{end}", "군고구마{end}", "교자{end}", "슈마이{end}"]
   },
   {
    "addr": "$C6:A8C1",
@@ -165,7 +166,7 @@
   {
    "addr": "$C6:A9C9",
    "question": "교장 선생님이 춘 춤은？{end}",
-   "choices": ["알몸 춤{end}", "삼바{end}", "마카레나{end}", "람바다{end}"]
+   "choices": ["알몸춤{end}", "삼바{end}", "마카레나{end}", "람바다{end}"]
   },
   {
    "addr": "$C6:A9F1",
@@ -175,7 +176,8 @@
   {
    "addr": "$C6:AA1E",
    "question": "미쿠니가 앞 석상의{nl}가운데 원숭이는？{end}",
-   "choices": ["말하지 않는 원숭이{end}", "듣지 않는 원숭이{end}", "보지 않는 원숭이{end}", "미쿠니 토우키치{end}"]
+   "choices_full": ["입 막은 원숭이{end}", "귀 막은 원숭이{end}", "눈 가린 원숭이{end}", "미쿠니 토우키치{end}"],
+   "choices": ["입 막은{end}", "귀 막은{end}", "눈 가린{end}", "토우키치{end}"]
   },
   {
    "addr": "$C6:AA50",

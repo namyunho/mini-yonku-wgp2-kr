@@ -30,7 +30,7 @@ SNES(Super Famicom) 게임 **「ミニ四駆 レッツ&ゴー!! POWER WGP2」**(
 | PoC (한글 화면 표시) | ✅ 통과 (실기 Mesen2 렌더 확인) |
 | **정적 대사 681** 추출·번역·재삽입 | ✅ 완료 (681/681 무손실, `build_patch.py` — 포메이션 안내 `$C1:CFAF` + 세팅 프리셋·평가문 등 `$C1:C501` 테이블 미캡처 고아 문자열 8건 발굴 복구 포함) |
 | **어드벤처 스토리 엔진** 역공학 | ✅ 완료 (씬 VM·압축 코덱·씬표 `$C6:9C57` — [docs/08](docs/08-adventure-text-engine.md)) |
-| **어드벤처 스토리 번역·재삽입** | ✅ **완료** — **231씬·1,724메시지 전량 반영** + 위치보존 크래시 원천차단(런 단위 패딩 → 디컴프 스크립트 길이·VM offset 불변, [docs/14](docs/14-position-preserving-translation.md)). cmd0x20은 2바이트 오퍼랜드를 보존하고 본문만 같은 길이로 치환. **오프닝~엔딩 전편 실기 완주(크래시 0) 확인** |
+| **어드벤처 스토리 번역·재삽입** | ✅ **완료** — 엄격 VM 재감사로 분기·목록 뒤 숨은 대사 58개를 복구해 **235씬·1,782메시지 전량 반영**. 위치보존 크래시 원천차단(런 단위 패딩 → 디컴프 스크립트 길이·VM offset 불변, [docs/14](docs/14-position-preserving-translation.md)). cmd0x20은 2바이트 오퍼랜드를 보존하고 본문만 같은 길이로 치환. 기존 오프닝~엔딩 전편 실기 완주(크래시 0), 신규 복구분 실기 QA 진행 |
 | **월드맵 퀴즈·정보 DB** | ✅ 70문항·350문자열 추출/번역/재삽입 완료 (`$C6:A08D` 포인터표, 350/350 왕복·역디코드 — [docs/19](docs/19-worldmap-quiz-text.md)) |
 | **장소별 필드/NPC 숨은 레코드** | ✅ 전수 발굴·번역·**위치보존 재삽입 완료** (**1,207레코드**, C2 참조 1,290개+패턴 오탐 10개 제외, 텍스트런 1,411/고유 **1,340 전량 번역**; 텍스트 레코드 685개 역검증·타일/OBJ 실기 정상, [docs/20](docs/20-field-npc-hidden-records.md)·[docs/21](docs/21-field-position-preserving-translation.md)) |
 | **그래픽 한글화**(크레딧·타이틀 로고·타이틀 크레딧줄·경기 일시정지 메뉴) | ✅ 완료 (LZSS·스프라이트 재삽입, [docs/10](docs/10-graphics-assets.md)) |
@@ -49,7 +49,7 @@ SNES(Super Famicom) 게임 **「ミニ四駆 レッツ&ゴー!! POWER WGP2」**(
 | 시스템 | 규모 | 내용 |
 |------|------|------|
 | 정적 대사 681 | `c7_race` 232 · `d0_story` 404 · `c1_ui` 45 | 레이스 중계·스토리/배틀 서사·세팅/개러지/포메이션 UI(세팅 프리셋·완성도 평가문 포함) |
-| 어드벤처 스토리 | **씬 232 / 텍스트런 1725** | 오프닝·각국팀 대진·세이바가 일상·인격교환·후일담·백과사전 등 전 스토리 |
+| 어드벤처 스토리 | **번역 씬 235 / 메시지 1,782** | 오프닝·각국팀 대진·세이바가 일상·인격교환·후일담·백과사전 등 전 스토리. 원본 카탈로그 1,798런 중 VM 기능바이트로 확인된 cmd0x20 16런은 비번역 보존 |
 | 월드맵 퀴즈·정보 | **70문항 / 350문자열** | 산수 40문항 + 정보 30문항, 질문 1 + 선택지 4 구조 보존 |
 | 장소별 필드/NPC | **텍스트런 1,411 / 고유 1,340** | `text_kr_full` 완역본과 `text_kr` 삽입본(축약 280) 분리 보존, 685개 압축 레코드 재삽입·위치/렌더 역검증 통과 |
 | 그래픽 | 크레딧 화면·타이틀 로고·하단 상표줄·경기 일시정지 메뉴 | 타일/스프라이트 재삽입 |
@@ -105,7 +105,7 @@ roms/ out/ tmp/   비커밋 (원본 ROM·산출물·임시 파일)
 - [docs/19-worldmap-quiz-text](docs/19-worldmap-quiz-text.md) — 월드맵 퀴즈/정보 DB 70문항 추출·번역·재삽입
 - [docs/20-field-npc-hidden-records](docs/20-field-npc-hidden-records.md) — 장소별 필드/NPC 숨은 압축 레코드 전수 조사
 - [docs/21-field-position-preserving-translation](docs/21-field-position-preserving-translation.md) — 필드/NPC 위치보존 번역·재삽입 설계
-- [docs/22-shortened-translation-comparison](docs/22-shortened-translation-comparison.md) — 완역문과 실제 ROM 삽입 축약문 752건 전수 비교
+- [docs/22-shortened-translation-comparison](docs/22-shortened-translation-comparison.md) — 완역문과 실제 ROM 삽입 조정문 958건 전수 비교
 
 ## 번역 용어집 (고유명사·용어 통일)
 

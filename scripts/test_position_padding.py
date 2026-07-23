@@ -10,7 +10,7 @@ from pathlib import Path
 
 sys.path.insert(0, "scripts")
 from adv_codec import DICT_SNES, decompress_scene, foff, scene_src  # noqa: E402
-from adv_scene import walk  # noqa: E402
+from adv_scene import walk_catalog_scene  # noqa: E402
 from build_adv import encode_text, pad_kr, text_run_bounds  # noqa: E402
 
 
@@ -100,7 +100,7 @@ def main() -> None:
             continue
         bank, addr = scene_src(base, scene["scene"])
         buf, _, _ = decompress_scene(base, bank, addr, dict_pc)
-        runs, stats, _ = walk(buf)
+        runs, stats, _ = walk_catalog_scene(buf, scene["scene"])
         if stats["desync"]:
             continue
         for run in runs:

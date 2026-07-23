@@ -20,7 +20,7 @@ import sys, json, argparse, os, re
 sys.path.insert(0, 'scripts')
 from adv_codec import (decompress_scene, compress_scene, scene_src, foff,
                        DICT_SNES, DICT_LEN, N_SCENES)
-from adv_scene import walk, render, read_text_run
+from adv_scene import walk_catalog_scene, render, read_text_run
 from decode_script import load_tbl
 
 SCENE_TBL = foff(0xC6, 0x9C57)
@@ -218,7 +218,7 @@ def main():
         bank, addr = scene_src(base, sid)                    # ★ 원본 표에서
         buf, olen, endp = decompress_scene(base, bank, addr, D)  # ★ 원본 씬 스크립트
         orig_comp = endp - foff(bank, addr)
-        runs, stats, _ = walk(buf)
+        runs, stats, _ = walk_catalog_scene(buf, sid)
         desync_rebuilt = False
         # ★ desync 씬 원본유지(안전, 2026-07-19): walk가 desync하는 씬(0xA8·0xB2 등)은 워커가
         #  구조를 못 잡은 것 → 앵커 기반 재빌드는 VM 유효성 미보장(round-trip 통과해도 실기 위험).
@@ -329,7 +329,7 @@ def main():
             else:
                 skipped.append((sid, 'desync재빌드 round-trip 실패'))
         else:
-            runs2, st2, endp2 = walk(buf2)
+            runs2, st2, endp2 = walk_catalog_scene(buf2, sid)
             if pospres and [(r['at'], r['cmd']) for r in runs2] != [
                     (r['at'], r['cmd']) for r in runs]:
                 sys.exit("씬 0x%02X 위치보존 런 주소/명령 불일치" % sid)

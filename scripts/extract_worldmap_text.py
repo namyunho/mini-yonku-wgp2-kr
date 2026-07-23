@@ -151,10 +151,14 @@ def main() -> None:
                 raise SystemExit(
                     f"정보 문항 {qidx}: 번역 주소 {expected_addr!r} != {actual_addr}"
                 )
+            choices = trans["choices"]
+            choices_full = trans.get("choices_full", choices)
+            if len(choices) != 4 or len(choices_full) != 4:
+                raise SystemExit(f"정보 문항 {qidx}: 선택지는 완역·삽입본 모두 4개여야 함")
             kr = trans["question"] if slot == 0 else trans["choices"][slot - 1]
             kr_full = (
                 trans.get("question_full", trans["question"])
-                if slot == 0 else kr
+                if slot == 0 else choices_full[slot - 1]
             )
 
         qidx, slot = divmod(local, 5)

@@ -3451,9 +3451,9 @@
    "raw_hex": "99C57C01CB38027A019601B202F7DB7BA6814C052131420288322148010139E500",
    "text": "[089][0B5][06C][1BB][028][26A][186][1A2][2E7][0CB][06B][096][071][03C]{nl}[011][021][032][278][022][011][038][0F1][029][0D5]{end}",
    "jp": "レース場の開店記念Tシャツを{nl}いつも着ている子は？{end}",
-   "kr_full": "레이스장 개장 티셔츠를{nl}늘 입는 아이는？{end}",
-   "kr": "레이스장 개장 티셔츠를{nl}늘 입는 아이는？{end}",
-   "abbreviated": false,
+   "kr_full": "레이스장 개장 기념 티셔츠를{nl}늘 입는 아이는？{end}",
+   "kr": "레이스장 개장 기념{nl}티셔츠를 늘 입는 아이는？{end}",
+   "abbreviated": true,
    "jp_raw_render": "レース場の開店記念Tシャツを{nl}いつも著ている子は？{end}"
   },
   {
@@ -3772,8 +3772,8 @@
    "raw_hex": "016C037F3897C58033C29D38050133015828015939E500",
    "text": "[15C][36F][028][087][0B5][070][023][0B2][08D][028]{nl}[123][148][018][149][029][0D5]{end}",
    "jp": "光蝦のリーチとポンの{nl}見分け方は？{end}",
-   "kr_full": "리치와 폰을{nl}구별하는 특징은？{end}",
-   "kr": "리치와 폰을{nl}구별하는 특징은？{end}",
+   "kr_full": "공키의 리치와 폰을{nl}구별하는 특징은？{end}",
+   "kr": "공키의 리치와 폰을{nl}구별하는 특징은？{end}",
    "abbreviated": false
   },
   {
@@ -4508,8 +4508,8 @@
    "raw_hex": "01793E4D00",
    "text": "[169][02E][03D]{end}",
    "jp": "肉まん{end}",
-   "kr_full": "고기 호빵{end}",
-   "kr": "고기 호빵{end}",
+   "kr_full": "고기만두{end}",
+   "kr": "고기만두{end}",
    "abbreviated": false
   },
   {
@@ -5148,8 +5148,8 @@
    "raw_hex": "89B47524654700",
    "text": "[079][0A4][065][014][055][037]{end}",
    "jp": "ハダカおどり{end}",
-   "kr_full": "알몸 춤{end}",
-   "kr": "알몸 춤{end}",
+   "kr_full": "알몸춤{end}",
+   "kr": "알몸춤{end}",
    "abbreviated": false
   },
   {
@@ -5309,9 +5309,9 @@
    "raw_hex": "01814BAF9800",
    "text": "[171][03B][09F][088]{end}",
    "jp": "言わザル{end}",
-   "kr_full": "말하지 않는 원숭이{end}",
-   "kr": "말하지 않는 원숭이{end}",
-   "abbreviated": false
+   "kr_full": "입 막은 원숭이{end}",
+   "kr": "입 막은{end}",
+   "abbreviated": true
   },
   {
    "entry_id": 322,
@@ -5325,9 +5325,9 @@
    "raw_hex": "01DD25AF9800",
    "text": "[1CD][015][09F][088]{end}",
    "jp": "聞かザル{end}",
-   "kr_full": "듣지 않는 원숭이{end}",
-   "kr": "듣지 않는 원숭이{end}",
-   "abbreviated": false
+   "kr_full": "귀 막은 원숭이{end}",
+   "kr": "귀 막은{end}",
+   "abbreviated": true
   },
   {
    "entry_id": 323,
@@ -5341,9 +5341,9 @@
    "raw_hex": "0133AF9800",
    "text": "[123][09F][088]{end}",
    "jp": "見ザル{end}",
-   "kr_full": "보지 않는 원숭이{end}",
-   "kr": "보지 않는 원숭이{end}",
-   "abbreviated": false
+   "kr_full": "눈 가린 원숭이{end}",
+   "kr": "눈 가린{end}",
+   "abbreviated": true
   },
   {
    "entry_id": 324,
@@ -5358,8 +5358,8 @@
    "text": "[0EF][181][367][368]{end}",
    "jp": "三国藤吉{end}",
    "kr_full": "미쿠니 토우키치{end}",
-   "kr": "미쿠니 토우키치{end}",
-   "abbreviated": false
+   "kr": "토우키치{end}",
+   "abbreviated": true
   },
   {
    "entry_id": 325,

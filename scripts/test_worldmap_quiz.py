@@ -41,6 +41,27 @@ ANSWER_CHECK_SIGNATURE = bytes.fromhex(
 STATUS_EXPECTED_PREFIX = bytes.fromhex(
     "FF 1B 1E FF FF FF FF FF FF FF 2F 01 FF FF FF 9A"
 )
+THREE_MONKEYS_EXPECTED = (
+    ("言わザル{end}", "입 막은 원숭이{end}", "입 막은{end}"),
+    ("聞かザル{end}", "귀 막은 원숭이{end}", "귀 막은{end}"),
+    ("見ザル{end}", "눈 가린 원숭이{end}", "눈 가린{end}"),
+    ("三国藤吉{end}", "미쿠니 토우키치{end}", "토우키치{end}"),
+)
+LORE_TERMINOLOGY_EXPECTED = {
+    205: (
+        "レース場の開店記念Tシャツを{nl}いつも着ている子は？{end}",
+        "레이스장 개장 기념 티셔츠를{nl}늘 입는 아이는？{end}",
+        "레이스장 개장 기념{nl}티셔츠를 늘 입는 아이는？{end}",
+    ),
+    225: (
+        "光蝦のリーチとポンの{nl}見分け方は？{end}",
+        "공키의 리치와 폰을{nl}구별하는 특징은？{end}",
+        "공키의 리치와 폰을{nl}구별하는 특징은？{end}",
+    ),
+    251: ("ゾーラ{end}", "졸라{end}", "졸라{end}"),
+    271: ("肉まん{end}", "고기만두{end}", "고기만두{end}"),
+    311: ("ハダカおどり{end}", "알몸춤{end}", "알몸춤{end}"),
+}
 
 
 def visible(text: str) -> str:
@@ -96,6 +117,26 @@ def main() -> None:
         answer_count += 1
         if group[0]["cluster"].startswith("math_"):
             verify_math_answer(group[0]["kr"], group[1]["kr"])
+
+    monkey_group = entries[320:325]
+    if monkey_group[0]["jp"] != "三国家前にある石像の{nl}真ん中はなに？{end}":
+        raise SystemExit("세 원숭이 문항 원문 불일치")
+    actual_monkeys = tuple(
+        (entry["jp"], entry["kr_full"], entry["kr"])
+        for entry in monkey_group[1:]
+    )
+    if actual_monkeys != THREE_MONKEYS_EXPECTED:
+        raise SystemExit(
+            f"세 원숭이 선택지 원문/완역/삽입본 불일치: {actual_monkeys!r}"
+        )
+    for entry_id, expected in LORE_TERMINOLOGY_EXPECTED.items():
+        entry = entries[entry_id]
+        actual = (entry["jp"], entry["kr_full"], entry["kr"])
+        if actual != expected:
+            raise SystemExit(
+                f"정보 퀴즈 용어 #{entry_id} 원문/완역/삽입본 불일치: "
+                f"{actual!r} != {expected!r}"
+            )
 
     for entry in entries:
         pointer = int.from_bytes(

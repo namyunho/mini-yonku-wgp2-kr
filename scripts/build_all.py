@@ -145,8 +145,11 @@ def main():
     run(["scripts/test_worldmap_quiz.py"])                             # 퀴즈 70문항·고정 UI·정답·실측 폭
     run(["scripts/test_small_font_tile_safety.py"])                    # 직접 타일 제어값·공유 폰트 충돌 검증
     run(["scripts/test_position_padding.py"])                          # 분할 대사 접두 런 들여쓰기 패딩 방지
+    run(["scripts/test_adventure_completeness.py"])                    # 실제 VM 경계·원문·번역 누락 전수검증
+    run(["scripts/normalize_dialogue_layout.py", "--check"])           # 대사 선행 공백·불필요 개행·폭 검증
     run(["scripts/verify_menu_extra_build.py"])                        # 20 추가 메뉴 3종 무결성
     run(["scripts/verify_field_build.py"])                             # 21 후속 덮어쓰기·원본 변경 방지
+    run(["scripts/verify_adventure_build.py"])                         # 22 최종 통합 뒤 어드벤처 전량 역렌더
     rom = bytearray(open(OUT, 'rb').read())
 
     # 원본 2MB HiROM 크기·헤더는 유지하고 체크섬만 갱신한다.
@@ -160,9 +163,9 @@ def main():
     if (sum(rom) & 0xFFFF) != checksum:
         sys.exit("SNES 체크섬 자기검증 실패")
     open(OUT, 'wb').write(rom)
-    snapshot("22-final")
+    snapshot("23-final")
 
-    # 22: BPS
+    # 23: BPS
     if os.path.exists(FLIPS):
         subprocess.run([FLIPS, "--create", ORIG, OUT, BPS])
     data = bytes(rom)

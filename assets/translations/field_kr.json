@@ -6,7 +6,7 @@
   "occurrences": 1411,
   "seeded_from_adventure": 4,
   "translated_existing": 1340,
-  "shortened_existing": 280
+  "shortened_existing": 351
  },
  "entries": [
   {
@@ -116,7 +116,7 @@
    "translation_source": "codex_manual",
    "text_jp": "J\n「ふふっ　負けないよ{wait}\nボクにだって\nミニ四レーサーとしての\n意地があるからね！",
    "text_kr_full": "J\n「후훗　안 질 거야{wait}\n나도\n미니사구 레이서로서\n오기라는 게 있으니까！",
-   "text_kr": "J\n「후훗　안 질 거야{wait}\n나도\n미니사구 레이서로서\n오기라는 게 있으니까！",
+   "text_kr": "J\n「후훗　안 질 거야{wait}\n나도 미니사구 레이서로서\n오기라는 게 있으니까！",
    "orig_len": 47,
    "controls": [
     "{wait}"
@@ -462,7 +462,7 @@
    "translation_source": "codex_manual",
    "text_jp": "FOX3\n「リーダーだけがたよりだった\n去年のシルバーフォックスとは\n連うぞ",
    "text_kr_full": "FOX3\n「리더에게만 의지했던\n작년 실버 폭스와는\n다르다",
-   "text_kr": "FOX3\n「리더에게만 의지했던\n작년 실버 폭스와는\n다르다",
+   "text_kr": "FOX3\n「리더에게만 의지했던\n작년 실버 폭스와는 다르다",
    "orig_len": 42,
    "controls": [],
    "occurrences": [
@@ -633,7 +633,7 @@
    "translation_source": "codex_manual",
    "text_jp": "へスラー\n「キミたちのレースを\nみせてもらったよ{wait}\nモーター音が\n去年と連うようだけど\n新型なのかい？",
    "text_kr_full": "헤슬러\n「너희 레이스를\n봤어{wait}\n모터 소리가\n작년과 다른 것 같은데\n신형인가？",
-   "text_kr": "헤슬러\n「너희 레이스를\n봤어{wait}\n모터 소리가\n작년과 다른 것 같은데\n신형인가？",
+   "text_kr": "헤슬러\n「너희 레이스를 봤어{wait}\n모터 소리가\n작년과 다른 것 같은데\n신형인가？",
    "orig_len": 58,
    "controls": [
     "{wait}"
@@ -1386,8 +1386,8 @@
    "status": "translated",
    "translation_source": "codex_manual",
    "text_jp": "ゾーラ\n「てめぇらのマシンを\n今度こそ…{wait}\n",
-   "text_kr_full": "조라\n「너희 머신을\n이번에야말로…{wait}\n",
-   "text_kr": "조라\n「너희 머신을\n이번에야말로…{wait}\n",
+   "text_kr_full": "졸라\n「너희 머신을\n이번에야말로…{wait}\n",
+   "text_kr": "졸라\n「너희 머신을\n이번에야말로…{wait}\n",
    "orig_len": 25,
    "controls": [
     "{wait}"
@@ -1847,7 +1847,7 @@
    "translation_source": "codex_manual",
    "text_jp": "FOX3\n「失望したよ{wait}\nキミたちが\nそんな人間だったなんて…",
    "text_kr_full": "FOX3\n「실망했어{wait}\n너희가\n그런 사람들이었다니…",
-   "text_kr": "FOX3\n「실망했어{wait}\n너희가\n그런 사람들이었다니…",
+   "text_kr": "FOX3\n「실망했어{wait}\n너희가 그런 사람들이었다니…",
    "orig_len": 35,
    "controls": [
     "{wait}"
@@ -1867,7 +1867,7 @@
    "translation_source": "codex_manual",
    "text_jp": "FOX4\n「さっきはうたがったりして\nゴメン",
    "text_kr_full": "FOX4\n「아깐 의심해서\n미안해",
-   "text_kr": "FOX4\n「아깐 의심해서\n미안해",
+   "text_kr": "FOX4\n「아깐 의심해서 미안해",
    "orig_len": 23,
    "controls": [],
    "occurrences": [
@@ -1926,7 +1926,7 @@
    "translation_source": "codex_manual",
    "text_jp": "でも\n日本観光ができなかったのは\n少々　心残りだよ{wait}{clear}",
    "text_kr_full": "하지만\n일본 관광을 못 한 건\n조금 아쉽네{wait}{clear}",
-   "text_kr": "하지만\n일본 관광을 못 한 건\n조금 아쉽네{wait}{clear}",
+   "text_kr": "하지만 일본 관광을 못 한 건\n조금 아쉽네{wait}{clear}",
    "orig_len": 36,
    "controls": [
     "{wait}",
@@ -2177,7 +2177,7 @@
    "translation_source": "codex_manual",
    "text_jp": "ユーリ\n「おみやげ\n楽しみに待ってるよ",
    "text_kr_full": "유리\n「선물\n기대하며 기다릴게",
-   "text_kr": "유리\n「선물\n기대하며 기다릴게",
+   "text_kr": "유리\n「선물 기대하며 기다릴게",
    "orig_len": 22,
    "controls": [],
    "occurrences": [
@@ -2195,7 +2195,7 @@
    "translation_source": "codex_manual",
    "text_jp": "ユーリ\n「すばらしいおみやげを\nありがとう{wait}\n国に帰ったら\nみんなにじまんするよ",
    "text_kr_full": "유리\n「멋진 선물\n고마워{wait}\n나라로 돌아가면\n모두에게 자랑할게",
-   "text_kr": "유리\n「멋진 선물\n고마워{wait}\n나라로 돌아가면\n모두에게 자랑할게",
+   "text_kr": "유리\n「멋진 선물 고마워{wait}\n나라로 돌아가면\n모두에게 자랑할게",
    "orig_len": 43,
    "controls": [
     "{wait}"
@@ -2605,7 +2605,7 @@
    "translation_source": "codex_manual",
    "text_jp": "エッジ\n「覚悟しておけよ{wait}\nお前らを負かすのは\nオレたち\nアストロレンジャーズだ",
    "text_kr_full": "엣지\n「각오해 둬라{wait}\n너희를 꺾는 건\n우리\n아스트로 레인저스다",
-   "text_kr": "엣지\n「각오해 둬라{wait}\n너희를 꺾는 건\n우리\n아스트로 레인저스다",
+   "text_kr": "엣지\n「각오해 둬라{wait}\n너희를 꺾는 건\n우리 아스트로 레인저스다",
    "orig_len": 45,
    "controls": [
     "{wait}"
@@ -2876,7 +2876,7 @@
    "translation_source": "codex_manual",
    "text_jp": "そうそう{wait}\nこの機械はGPチップの\nデーターを保存できる\n機械なんだ{wait}\nレース場や研究所に\n置いてあるから\nこまめに利用するといいぞ{wait}{clear}",
    "text_kr_full": "그래 그래{wait}\n이 기계는 GP칩의\n데이터를 저장하는\n기계야{wait}\n레이스장이나 연구소에\n있으니까\n자주 이용하면 좋아{wait}{clear}",
-   "text_kr": "그래 그래{wait}\n이 기계는 GP칩의\n데이터를 저장하는\n기계야{wait}\n레이스장이나 연구소에\n있으니까\n자주 이용하면 좋아{wait}{clear}",
+   "text_kr": "그래 그래{wait}\n이 기계는 GP칩의\n데이터를 저장하는 기계야{wait}\n레이스장이나 연구소에\n있으니까\n자주 이용하면 좋아{wait}{clear}",
    "orig_len": 82,
    "controls": [
     "{wait}",
@@ -2964,7 +2964,7 @@
    "translation_source": "codex_manual",
    "text_jp": "ファイター\n「きびしいレースだったね{wait}\nきっと　今のままでは\nアストロレンジャーズに\n勝てないと思うよ{wait}\n土屋研究所にいって\nニューパーツを手に入れたり{wait}\n町のいろいろなコースで\nGPチップをきたえてみたら\nどうだい{wait}",
    "text_kr_full": "파이터\n「힘든 레이스였어{wait}\n지금 이대로는\n아스트로 레인저스를\n이기기 힘들 거야{wait}\n츠치야 연구소에 가서\n새 파츠를 얻거나{wait}\n마을의 여러 코스에서\nGP칩을 단련해 보면\n어때？{wait}",
-   "text_kr": "파이터\n「힘든 레이스였어{wait}\n지금 이대로는\n아스트로 레인저스를\n이기기 힘들 거야{wait}\n츠치야 연구소에 가서\n새 파츠를 얻거나{wait}\n마을의 여러 코스에서\nGP칩을 단련해 보면\n어때？{wait}",
+   "text_kr": "파이터\n「힘든 레이스였어{wait}\n지금 이대로는\n아스트로 레인저스를\n이기기 힘들 거야{wait}\n츠치야 연구소에 가서\n새 파츠를 얻거나{wait}\n마을의 여러 코스에서\nGP칩을 단련해 보면 어때？{wait}",
    "orig_len": 120,
    "controls": [
     "{wait}",
@@ -3185,7 +3185,7 @@
    "translation_source": "codex_manual",
    "text_jp": "いちろう\n「えっ　オレと勝負したい？{wait}\n悪いな　オレのマシン\n今メンテナンス中なんだ{wait}\nきょうこそ世界一の走りを\nみせられると思ったのに\n残念だよ",
    "text_kr_full": "이치로\n「뭐　나와 승부하고 싶어？{wait}\n미안하지만 내 머신은\n지금 정비 중이야{wait}\n오늘이야말로 세계 최고의\n주행을 보여 줄랬는데\n아쉽군",
-   "text_kr": "이치로\n「뭐　나와 승부하고 싶어？{wait}\n미안하지만 내 머신은\n지금 정비 중이야{wait}\n오늘이야말로 세계 최고의\n주행을 보여 줄랬는데\n아쉽군",
+   "text_kr": "이치로\n「뭐　나와 승부하고 싶어？{wait}\n미안하지만 내 머신은\n지금 정비 중이야{wait}\n오늘이야말로 세계 최고의\n주행을 보여 줄랬는데 아쉽군",
    "orig_len": 85,
    "controls": [
     "{wait}",
@@ -3305,7 +3305,7 @@
    "translation_source": "codex_manual",
    "text_jp": "むむむ\n手強いライバル出現だな！{wait}",
    "text_kr_full": "으음\n강력한 라이벌 등장이다！{wait}",
-   "text_kr": "으음\n강력한 라이벌 등장이다！{wait}",
+   "text_kr": "으음 강력한 라이벌 등장이다！{wait}",
    "orig_len": 22,
    "controls": [
     "{wait}"
@@ -3579,7 +3579,7 @@
    "translation_source": "codex_manual",
    "text_jp": "ぼくはもう\nウズウズしてるんだぜ{wait}{clear}",
    "text_kr_full": "난 벌써\n몸이 근질근질하다구{wait}{clear}",
-   "text_kr": "벌써\n근질근질하다구{wait}{clear}",
+   "text_kr": "벌써 근질근질하다구{wait}{clear}",
    "orig_len": 19,
    "controls": [
     "{wait}",
@@ -3643,7 +3643,7 @@
    "translation_source": "codex_manual",
    "text_jp": "ファイター\n「どーうしたんだい！\nそれでも現役レーサー\nなのかい？{wait}\n",
    "text_kr_full": "파이터\n「왜 그러는 거야！\n그래도 현역 레이서\n맞아？{wait}\n",
-   "text_kr": "파이터\n「왜 그러는 거야！\n그래도 현역 레이서\n맞아？{wait}\n",
+   "text_kr": "파이터\n「왜 그러는 거야！\n그래도 현역 레이서 맞아？{wait}\n",
    "orig_len": 38,
    "controls": [
     "{wait}"
@@ -3663,7 +3663,7 @@
    "translation_source": "codex_manual",
    "text_jp": "まあ　あせることはないよ{wait}\nぼくは何回でも\n挑戦を受けるから\n勝てる自信がついたら\nまたおいで{wait}",
    "text_kr_full": "뭐　서두를 것 없어{wait}\n난 몇 번이라도\n도전을 받아 줄 테니\n이길 자신이 생기면\n다시 와{wait}",
-   "text_kr": "뭐　서두를 것 없어{wait}\n난 몇 번이라도\n도전을 받아 줄 테니\n이길 자신이 생기면\n다시와{wait}",
+   "text_kr": "뭐　서두를 것 없어{wait}\n난 몇 번이라도\n도전을 받아 줄 테니\n이길 자신이 생기면 다시와{wait}",
    "orig_len": 57,
    "controls": [
     "{wait}",
@@ -4869,7 +4869,7 @@
    "translation_source": "codex_manual",
    "text_jp": "ファイター\n「結果は黒沢連合の勝ち{wait}\nさすが日本トップクラスの\nレーサーが二人もいる\nチームだよ{wait}{clear}",
    "text_kr_full": "파이터\n「결과는 쿠로사와 연합 승리{wait}\n역시 일본 톱클래스\n레이서가 둘이나 있는\n팀이야{wait}{clear}",
-   "text_kr": "파이터\n「결과는 쿠로사와 연합 승리{wait}\n역시 일본 톱클래스\n레이서가둘이나있는\n팀이야{wait}{clear}",
+   "text_kr": "파이터\n「결과는 쿠로사와 연합 승리{wait}\n역시 일본 톱클래스\n레이서가둘이나있는 팀이야{wait}{clear}",
    "orig_len": 60,
    "controls": [
     "{wait}",
@@ -5224,7 +5224,7 @@
    "translation_source": "codex_manual",
    "text_jp": "ジュン\n「くっっっっっっやしぃー！{wait}\nそうよっ\n負けちゃったのよっ！",
    "text_kr_full": "준\n「너어어어무 분해〜！{wait}\n그래\n져 버렸어！",
-   "text_kr": "준\n「너어어어무 분해〜！{wait}\n그래\n져 버렸어！",
+   "text_kr": "준\n「너어어어무 분해〜！{wait}\n그래 져 버렸어！",
    "orig_len": 36,
    "controls": [
     "{wait}"
@@ -5244,7 +5244,7 @@
    "translation_source": "codex_manual",
    "text_jp": "ジュン\n「ここで負けちゃあ\n模型屋ジュンちゃんの\n名おれよっ！{wait}\nそこよっ\nホームランマンタレイ！",
    "text_kr_full": "준\n「여기서 지면\n모형점 준의\n이름이 울지！{wait}\n거기야\n홈런맨타레이！",
-   "text_kr": "준\n「여기서 지면\n모형점 준의\n이름이 울지！{wait}\n거기야\n홈런맨타레이！",
+   "text_kr": "준\n「여기서 지면\n모형점 준의\n이름이 울지！{wait}\n거기야 홈런맨타레이！",
    "orig_len": 55,
    "controls": [
     "{wait}"
@@ -5513,7 +5513,7 @@
    "translation_source": "codex_manual",
    "text_jp": "チイコ\n「烈様〜♥\nよくいらしてくださいましたわ{wait}\nいよいよ明日は\nWGPの開会武ですわね{wait}\nわたくし\nおうだんまくをはるために\nWGPのチケットをたくさん\n買いましたのよ♥",
    "text_kr_full": "치이코\n「레츠 님〜♥\n잘 오셨어요{wait}\n드디어 내일은\nWGP 개회식이네요{wait}\n저\n현수막을 걸려고\nWGP 티켓을 잔뜩\n샀답니다♥",
-   "text_kr": "치이코\n「레츠 님〜♥\n잘 오셨어요{wait}\n드디어 내일은\nWGP 개회식이네요{wait}\n저\n현수막을 걸려고\nWGP 티켓을 잔뜩\n샀답니다♥",
+   "text_kr": "치이코\n「레츠 님〜♥\n잘 오셨어요{wait}\n드디어 내일은\nWGP 개회식이네요{wait}\n저 현수막을 걸려고\nWGP 티켓을 잔뜩\n샀답니다♥",
    "orig_len": 96,
    "controls": [
     "{wait}",
@@ -5853,7 +5853,7 @@
    "translation_source": "codex_manual",
    "text_jp": "ほのか\n「このレース場は\nスピード性能を上げるのに\nさいてきなんだって{wait}\nたまみ…　いや\nレディーファイターが\nそう言ってたわよ",
    "text_kr_full": "호노카\n「이 레이스장은\n스피드 성능을 올리기에\n딱 좋대{wait}\n타마미…　아니\n레이디 파이터가\n그랬어",
-   "text_kr": "호노카\n「이 레이스장은\n스피드 성능을 올리기에\n딱 좋대{wait}\n타마미…　아니\n레이디 파이터가\n그랬어",
+   "text_kr": "호노카\n「이 레이스장은\n스피드 성능을 올리기에\n딱 좋대{wait}\n타마미…　아니\n레이디 파이터가 그랬어",
    "orig_len": 70,
    "controls": [
     "{wait}"
@@ -6144,7 +6144,7 @@
    "translation_source": "codex_manual",
    "text_jp": "リョウ\n「じゃあ\nオレが受け取ってきますよ",
    "text_kr_full": "료\n「그럼\n제가 받아 오겠습니다",
-   "text_kr": "료\n「그럼\n제가 받아 오겠습니다",
+   "text_kr": "료\n「그럼 제가 받아 오겠습니다",
    "orig_len": 24,
    "controls": [],
    "occurrences": [
@@ -6202,7 +6202,7 @@
    "translation_source": "codex_manual",
    "text_jp": "タモツ\n「おっ！\nすまんな\n助かったよ{wait}\nWGPではせいいっぱい\n応援させて\nもらうからな！！{wait}",
    "text_kr_full": "타모츠\n「오！\n고맙구나\n덕분에 살았어{wait}\nWGP에선 온 힘을 다해\n응원해\n줄 테니까！！{wait}",
-   "text_kr": "타모츠\n「오！\n고맙구나\n덕분에 살았어{wait}\nWGP에선 온힘을다해\n응원해\n줄테니까！！{wait}",
+   "text_kr": "타모츠\n「오！\n고맙구나\n덕분에 살았어{wait}\nWGP에선 온힘을다해\n응원해 줄테니까！！{wait}",
    "orig_len": 52,
    "controls": [
     "{wait}",
@@ -6241,7 +6241,7 @@
    "translation_source": "codex_manual",
    "text_jp": "タモツ\n「WGPではせいいっぱい\n応援させて\nもらうからな！！",
    "text_kr_full": "타모츠\n「WGP에선 온 힘을 다해\n응원해\n줄 테니까！！",
-   "text_kr": "타모츠\n「WGP에선 온 힘을 다해\n응원해\n줄 테니까！！",
+   "text_kr": "타모츠\n「WGP에선 온 힘을 다해\n응원해 줄 테니까！！",
    "orig_len": 34,
    "controls": [],
    "occurrences": [
@@ -6466,7 +6466,7 @@
    "translation_source": "codex_manual",
    "text_jp": "豪\n「そりゃいいけどよ{wait}\nおめぇのマシン\nふつうのミニ四駆じゃねぇか？{wait}\nそんなんじゃ\nオレたちとは勝負になんねぇぜ{wait}{clear}",
    "text_kr_full": "고\n「그건 좋은데{wait}\n네 머신\n보통 미니사구잖아？{wait}\n그걸론\n우리 상대가 안 돼{wait}{clear}",
-   "text_kr": "고\n「그건 좋은데{wait}\n네 머신\n보통 미니사구잖아？{wait}\n그걸론\n우리 상대가 안 돼{wait}{clear}",
+   "text_kr": "고\n「그건 좋은데{wait}\n네 머신\n보통 미니사구잖아？{wait}\n그걸론 우리 상대가 안 돼{wait}{clear}",
    "orig_len": 66,
    "controls": [
     "{wait}",
@@ -6679,7 +6679,7 @@
    "translation_source": "codex_manual",
    "text_jp": "すみれ\n「けっきょくね{wait}\nファイターの服は\n自分で作ることにしたわ{wait}\nでも　おさいほうって\nむずかしいのよね{wait}\nおかげでほら\n指がばんそうこうだらけ！",
    "text_kr_full": "스미레\n「결국 말이야{wait}\n파이터 옷은\n직접 만들기로 했어{wait}\n그런데　바느질은\n어렵네{wait}\n덕분에 봐\n손가락이 반창고투성이야！",
-   "text_kr": "스미레\n「결국 말이야{wait}\n파이터 옷은\n직접 만들기로 했어{wait}\n그런데　바느질은\n어렵네{wait}\n덕분에 봐\n손가락이 반창고투성이야！",
+   "text_kr": "스미레\n「결국 말이야{wait}\n파이터 옷은\n직접 만들기로 했어{wait}\n그런데　바느질은 어렵네{wait}\n덕분에 봐\n손가락이 반창고투성이야！",
    "orig_len": 81,
    "controls": [
     "{wait}",
@@ -7282,7 +7282,7 @@
    "translation_source": "codex_manual",
    "text_jp": "J\n「まっ　まぁまぁ{wait}\nとりあえずアンテナを\n立てようよ{wait}{clear}",
    "text_kr_full": "제이\n「자　진정해{wait}\n일단 안테나부터\n세우자{wait}{clear}",
-   "text_kr": "제이\n「자　진정해{wait}\n일단 안테나부터\n세우자{wait}{clear}",
+   "text_kr": "제이\n「자　진정해{wait}\n일단 안테나부터 세우자{wait}{clear}",
    "orig_len": 32,
    "controls": [
     "{wait}",
@@ -7348,7 +7348,7 @@
    "translation_source": "codex_manual",
    "text_jp": "たまみ先生\n「ハァイ\nいとしのプリティガール\nレディーファイターよ{wait}{clear}",
    "text_kr_full": "타마미 선생님\n「하이\n사랑스러운 프리티 걸\n레이디 파이터야{wait}{clear}",
-   "text_kr": "타마미 선생님\n「하이\n사랑스러운 프리티 걸\n레이디 파이터야{wait}{clear}",
+   "text_kr": "타마미 선생님\n「하이 사랑스러운 프리티 걸\n레이디 파이터야{wait}{clear}",
    "orig_len": 38,
    "controls": [
     "{wait}",
@@ -7433,7 +7433,7 @@
    "translation_source": "codex_manual",
    "text_jp": "豪\n「なぁんだ\n前にも見たぜそれ{wait}{clear}",
    "text_kr_full": "고\n「뭐야\n전에 봤던 거잖아{wait}{clear}",
-   "text_kr": "고\n「뭐야\n전에 봤던 거잖아{wait}{clear}",
+   "text_kr": "고\n「뭐야 전에 봤던 거잖아{wait}{clear}",
    "orig_len": 22,
    "controls": [
     "{wait}",
@@ -7607,7 +7607,7 @@
    "translation_source": "codex_manual",
    "text_jp": "たまみ先生\n「あぁら\nノーマルミニ四駆相手に本気で\n勝負するつもりだったの？{wait}\nもちろん　ハンデをいただくわ\nハンデは…　そうねぇ{wait}\n10秒ってところかしら{wait}\nもちろん\nこれしきのハンデなんか\nチョロいもんよねぇ♥{wait}\nなんたって\nGPレーサーなんだから\n全員がわたしに勝てないと\nはずかしいわよぉ{wait}{clear}",
    "text_kr_full": "타마미 선생님\n「어머\n보통 미니사구 상대로 진심으로\n승부할 생각이었어？{wait}\n물론　핸디캡은 받아야지\n핸디캡은…　글쎄{wait}\n10초쯤이면 될까{wait}\n물론\n이 정도 핸디캡은\n식은 죽 먹기지♥{wait}\n뭐니 뭐니 해도\nGP 레이서니까\n전원이 나를 못 이기면\n창피할 거야{wait}{clear}",
-   "text_kr": "타마미 선생님\n「어머\n보통 미니사구 상대로 진심으로\n승부할 생각이었어？{wait}\n물론　핸디캡은 받아야지\n핸디캡은…　글쎄{wait}\n10초쯤이면 될까{wait}\n물론\n이 정도 핸디캡은\n식은 죽 먹기지♥{wait}\n뭐니 뭐니 해도\nGP 레이서니까\n전원이 나를 못 이기면\n창피할 거야{wait}{clear}",
+   "text_kr": "타마미 선생님\n「어머\n보통 미니사구 상대로 진심으로\n승부할 생각이었어？{wait}\n물론　핸디캡은 받아야지\n핸디캡은…　글쎄{wait}\n10초쯤이면 될까{wait}\n물론 이 정도 핸디캡은\n식은 죽 먹기지♥{wait}\n뭐니 뭐니 해도\nGP 레이서니까\n전원이 나를 못 이기면\n창피할 거야{wait}{clear}",
    "orig_len": 165,
    "controls": [
     "{wait}",
@@ -7654,7 +7654,7 @@
    "translation_source": "codex_manual",
    "text_jp": "たまみ先生\n「何度でも相手になって\nあげるわよ{wait}{clear}",
    "text_kr_full": "타마미 선생님\n「몇 번이든 상대해\n줄게{wait}{clear}",
-   "text_kr": "타마미 선생님\n「몇 번이든 상대해\n줄게{wait}{clear}",
+   "text_kr": "타마미 선생님\n「몇 번이든 상대해 줄게{wait}{clear}",
    "orig_len": 32,
    "controls": [
     "{wait}",
@@ -7964,7 +7964,7 @@
    "translation_source": "codex_manual",
    "text_jp": "たつや\n「ひかるちゃんがさ\nいっしょにミニ四駆をするって\n言ってくれたんだ{wait}\nカレシとかそういうのは\nよくわかんないけど\nミニ四駆ともだちができるのは\nうれしいよね{wait}\n",
    "text_kr_full": "타츠야\n「히카루가\n같이 미니사구를 하겠다고\n했어{wait}\n남자 친구 같은 건\n잘 모르겠지만\n미니사구 친구가 생기는 건\n기쁘지{wait}\n",
-   "text_kr": "타츠야\n「히카루가\n같이 미니사구를 하겠다고\n했어{wait}\n남자 친구 같은 건\n잘 모르겠지만\n미니사구 친구가 생기는 건\n기쁘지{wait}\n",
+   "text_kr": "타츠야\n「히카루가\n같이 미니사구를 하겠다고 했어{wait}\n남자 친구 같은 건\n잘 모르겠지만\n미니사구 친구가 생기는 건 기쁘지{wait}\n",
    "orig_len": 90,
    "controls": [
     "{wait}",
@@ -8410,7 +8410,7 @@
    "translation_source": "codex_manual",
    "text_jp": "たえこ\n「わたし　じつはFOX3くんのファンなのよ{wait}\nでも周りのみんなには\nなんでそんなにマイナーなのが好きなの？\nって言われるの{wait}\nわたし　変なのかなあ？",
    "text_kr_full": "타에코\n「사실 난 FOX3 팬이야{wait}\n하지만 주변에선\n왜 그런 마이너를 좋아하냐고\n해{wait}\n내가 이상한 걸까？",
-   "text_kr": "타에코\n「사실 난 FOX3 팬이야{wait}\n하지만 주변에선\n왜 그런 마이너를 좋아하냐고\n해{wait}\n내가 이상한 걸까？",
+   "text_kr": "타에코\n「사실 난 FOX3 팬이야{wait}\n하지만 주변에선\n왜 그런 마이너를 좋아하냐고 해{wait}\n내가 이상한 걸까？",
    "orig_len": 83,
    "controls": [
     "{wait}",
@@ -8489,7 +8489,7 @@
    "translation_source": "codex_manual",
    "text_jp": "せいこ\n「リオンってさぁ{wait}\n去年の\nロイヤルフェスティバルカップに\n乱入してきたヤツだよね{wait}\n今年もなにか事件をおこすのか\nワクワクしてくるわね！",
    "text_kr_full": "세이코\n「리온 말이야{wait}\n작년\n로열 페스티벌 컵에\n난입한 녀석이지{wait}\n올해도 무슨 사건을 일으킬지\n두근거리네！",
-   "text_kr": "세이코\n「리온 말이야{wait}\n작년\n로열 페스티벌 컵에\n난입한 녀석이지{wait}\n올해도 무슨 사건을 일으킬지\n두근거리네！",
+   "text_kr": "세이코\n「리온 말이야{wait}\n작년 로열 페스티벌 컵에\n난입한 녀석이지{wait}\n올해도 무슨 사건을 일으킬지\n두근거리네！",
    "orig_len": 81,
    "controls": [
     "{wait}",
@@ -8606,7 +8606,7 @@
    "translation_source": "codex_manual",
    "text_jp": "せいこ\n「ミニ四ファイターって\n初代シャイニングスコーピオンを\n持ってるじゃない{wait}\nあれってファイターが小学生のころ\n鉄心博士にもらったものなんだって{wait}\n10年以上前のマシンが今のマシンと\nごかくに走れるんだから\nすごいわよねぇ",
    "text_kr_full": "세이코\n「미니사구 파이터는\n초대 샤이닝 스콜피온을\n갖고 있잖아{wait}\n파이터가 초등학생 때\n텟신 박사에게 받았대{wait}\n10년도 넘은 머신이 지금 머신과\n대등하게 달리다니\n대단해",
-   "text_kr": "세이코\n「미니사구 파이터는\n초대 샤이닝 스콜피온을\n갖고 있잖아{wait}\n파이터가 초등학생 때\n텟신 박사에게 받았대{wait}\n10년도 넘은 머신이 지금 머신과\n대등하게 달리다니\n대단해",
+   "text_kr": "세이코\n「미니사구 파이터는\n초대 샤이닝 스콜피온을\n갖고 있잖아{wait}\n파이터가 초등학생 때\n텟신 박사에게 받았대{wait}\n10년도 넘은 머신이 지금 머신과\n대등하게 달리다니 대단해",
    "orig_len": 132,
    "controls": [
     "{wait}",
@@ -8896,7 +8896,7 @@
    "translation_source": "codex_manual",
    "text_jp": "こうじ\n「ルキノって帰ってきたんだな{wait}\nオレ　ロッソストラーダファンだけど\nあいつだけは好きになれないんだ{wait}\nまたなにかやるかもしれないから\n気をつけろよ",
    "text_kr_full": "코우지\n「루키노가 돌아왔구나{wait}\n나도 롯소 스트라다 팬이지만\n그 녀석만은 싫어해{wait}\n또 무슨 짓을 할지 모르니\n조심해",
-   "text_kr": "코우지\n「루키노가 돌아왔구나{wait}\n나도 롯소 스트라다 팬이지만\n그 녀석만은 싫어해{wait}\n또 무슨 짓을 할지 모르니\n조심해",
+   "text_kr": "코우지\n「루키노가 돌아왔구나{wait}\n나도 롯소 스트라다 팬이지만\n그 녀석만은 싫어해{wait}\n또 무슨 짓을 할지 모르니 조심해",
    "orig_len": 81,
    "controls": [
     "{wait}",
@@ -9693,7 +9693,7 @@
    "translation_source": "codex_manual",
    "text_jp": "じろう\n「ミニ四駆を買ったんだけどさあ{wait}\nこれ　電池って別売りなんだよな\n知らなかったぁ",
    "text_kr_full": "지로\n「미니사구를 샀는데 말이야{wait}\n이거　건전지는 별매더라\n몰랐어",
-   "text_kr": "지로\n「미니사구를 샀는데 말이야{wait}\n이거　건전지는 별매더라\n몰랐어",
+   "text_kr": "지로\n「미니사구를 샀는데 말이야{wait}\n이거　건전지는 별매더라 몰랐어",
    "orig_len": 53,
    "controls": [
     "{wait}"
@@ -9736,7 +9736,7 @@
    "translation_source": "codex_manual",
    "text_jp": "じろう\n「見てくれ\nミニ四駆が走るようになったんだ！{wait}\nでも　お姉ちゃんたちのマシンが\nカッとんでて全く勝負にならないんだ\nなんでだろ？{wait}\nえっ　グレードアップパーツ？{wait}\nへぇ　そんなのがあるんだ",
    "text_kr_full": "지로\n「이것 봐\n미니사구가 달리게 됐어！{wait}\n그런데 누나들 머신은\n쏜살같아서 상대가 안 돼\n왜지？{wait}\n뭐　그레이드업 파츠？{wait}\n그런 것도 있구나",
-   "text_kr": "지로\n「이것 봐\n미니사구가 달리게 됐어！{wait}\n그런데 누나들 머신은\n무척 빨라서 상대가 안 돼\n왜지？{wait}\n뭐　그레이드업 파츠？{wait}\n그런 것도 있구나",
+   "text_kr": "지로\n「이것 봐\n미니사구가 달리게 됐어！{wait}\n그런데 누나들 머신은\n무척 빨라서 상대가 안 돼 왜지？{wait}\n뭐　그레이드업 파츠？{wait}\n그런 것도 있구나",
    "orig_len": 107,
    "controls": [
     "{wait}",
@@ -10687,7 +10687,7 @@
    "translation_source": "codex_manual",
    "text_jp": "よりこ\n「思えばやよいがミニ四駆を\n始めたのよねぇ{wait}\nこんなにハマっちゃうとは\n思わなかったわ",
    "text_kr_full": "요리코\n「생각해 보면 야요이가\n미니사구를 시작했지{wait}\n이렇게 푹 빠질 줄은\n몰랐어",
-   "text_kr": "요리코\n「생각해 보면 야요이가\n미니사구를 시작했지{wait}\n이렇게 푹 빠질 줄은\n몰랐어",
+   "text_kr": "요리코\n「생각해 보면 야요이가\n미니사구를 시작했지{wait}\n이렇게 푹 빠질 줄은 몰랐어",
    "orig_len": 53,
    "controls": [
     "{wait}"
@@ -11625,7 +11625,7 @@
    "translation_source": "codex_manual",
    "text_jp": "ただいま\nチイコお嬢様のお部屋は\n立ち入り禁止だそうです　ハイ",
    "text_kr_full": "지금은\n치이코 아가씨 방에\n출입 금지라 합니다요　네",
-   "text_kr": "지금은\n치이코 아가씨 방에\n출입 금지라 합니다요　네",
+   "text_kr": "지금은 치이코 아가씨 방에\n출입 금지라 합니다요　네",
    "orig_len": 39,
    "controls": [],
    "occurrences": [
@@ -11756,7 +11756,7 @@
    "translation_source": "codex_manual",
    "text_jp": "彦佐\n「ただいま　チイコお嬢様は\nお部屋にいらっしゃいませんです\nハイ{wait}",
    "text_kr_full": "히코사\n「지금 치이코 아가씨는\n방에 안 계십니다요\n네{wait}",
-   "text_kr": "히코사\n「지금 치이코 아가씨는\n방에 안 계십니다요\n네{wait}",
+   "text_kr": "히코사\n「지금 치이코 아가씨는\n방에 안 계십니다요 네{wait}",
    "orig_len": 43,
    "controls": [
     "{wait}"
@@ -12616,7 +12616,7 @@
    "translation_source": "codex_manual",
    "text_jp": "リョウ\n「スピンバイパーを\nストレートに強くする方法？{wait}\nあれはコーナリングマシン\nじゃないか{wait}\nどうしてもというのなら\nスピードボーナスや\nパワーボーナスつきのパーツを\nセッティングするくらいか…",
    "text_kr_full": "료\n「스핀 바이퍼를\n직선에 강하게 만드는 법？{wait}\n그건 코너링 머신\n아닌가{wait}\n꼭 하겠다면\n스피드 보너스나\n파워 보너스가 붙은 파츠를\n세팅하는 정도겠군…",
-   "text_kr": "료\n「스핀 바이퍼를\n직선에 강하게 만드는 법？{wait}\n그건 코너링 머신\n아닌가{wait}\n꼭 하겠다면\n스피드 보너스나\n파워 보너스가 붙은 파츠를\n세팅하는 정도겠군…",
+   "text_kr": "료\n「스핀 바이퍼를\n직선에 강하게 만드는 법？{wait}\n그건 코너링 머신 아닌가{wait}\n꼭 하겠다면\n스피드 보너스나\n파워 보너스가 붙은 파츠를\n세팅하는 정도겠군…",
    "orig_len": 103,
    "controls": [
     "{wait}",
@@ -12637,7 +12637,7 @@
    "translation_source": "codex_manual",
    "text_jp": "リョウ\n「二郎丸のやつ\nやえちゃんに\nゾッコンみたいでな{wait}\nなんだか\n見ているこっちの方が\nはずかしくなるぜ",
    "text_kr_full": "료\n「지로마루 녀석\n야에에게\n푹 빠진 모양이야{wait}\n왠지\n보고 있는 내가\n부끄러워진다",
-   "text_kr": "료\n「지로마루 녀석\n야에에게\n푹 빠진 모양이야{wait}\n왠지\n보고 있는 내가\n부끄러워진다",
+   "text_kr": "료\n「지로마루 녀석\n야에에게\n푹 빠진 모양이야{wait}\n왠지 보고 있는 내가\n부끄러워진다",
    "orig_len": 59,
    "controls": [
     "{wait}"
@@ -12698,7 +12698,7 @@
    "translation_source": "codex_manual",
    "text_jp": "だれにも負けるわけには\nいかない！",
    "text_kr_full": "누구에게도 질 수는\n없어！",
-   "text_kr": "누구에게도 질 수는\n없어！",
+   "text_kr": "누구에게도 질 수는 없어！",
    "orig_len": 19,
    "controls": [],
    "occurrences": [
@@ -13444,7 +13444,7 @@
    "translation_source": "codex_manual",
    "text_jp": "J\n「すごい自信…{wait}\nやっぱり\n昔の豪くんにそっくりだ…！{wait}",
    "text_kr_full": "제이\n「굉장한 자신감…{wait}\n역시\n옛날의 고와 똑같아…！{wait}",
-   "text_kr": "제이\n「굉장한자신감…{wait}\n역시\n옛날의고와똑같아…！{wait}",
+   "text_kr": "제이\n「굉장한자신감…{wait}\n역시 옛날의고와똑같아…！{wait}",
    "orig_len": 35,
    "controls": [
     "{wait}",
@@ -13908,7 +13908,7 @@
    "translation_source": "codex_manual",
    "text_jp": "J\n「応援してるよ\nがんばって！",
    "text_kr_full": "제이\n「응원할게\n힘내！",
-   "text_kr": "제이\n「응원할게\n힘내！",
+   "text_kr": "제이\n「응원할게 힘내！",
    "orig_len": 19,
    "controls": [],
    "occurrences": [
@@ -14604,7 +14604,7 @@
    "translation_source": "codex_manual",
    "text_jp": "豪\n「へっへーん\nオレに勝てると思ってるのか{wait}\nすぐ始めるんだろ？{wait}{clear}",
    "text_kr_full": "고\n「헤헤\n날 이길 수 있을 것 같아？{wait}\n바로 시작할 거지？{wait}{clear}",
-   "text_kr": "고\n「헤헤\n날 이길 수 있을 것 같아？{wait}\n바로시작할거지？{wait}{clear}",
+   "text_kr": "고\n「헤헤 날 이길 수 있을 것 같아？{wait}\n바로시작할거지？{wait}{clear}",
    "orig_len": 40,
    "controls": [
     "{wait}",
@@ -14626,7 +14626,7 @@
    "translation_source": "codex_manual",
    "text_jp": "豪\n「へっへーん\nおめぇ　ウデが落ちてんじゃ\nねぇのか？{wait}",
    "text_kr_full": "고\n「헤헤\n너　실력이 떨어진 거\n아니야？{wait}",
-   "text_kr": "고\n「헤헤\n너　실력이 떨어진 거\n아니야？{wait}",
+   "text_kr": "고\n「헤헤 너　실력이 떨어진 거\n아니야？{wait}",
    "orig_len": 32,
    "controls": [
     "{wait}"
@@ -14811,7 +14811,7 @@
    "translation_source": "codex_manual",
    "text_jp": "烈\n「まだまだだね\nセッティングを変えてみたら\nどうかな？{wait}",
    "text_kr_full": "레츠\n「아직 멀었네\n세팅을 바꿔 보는 건\n어때？{wait}",
-   "text_kr": "레츠\n「아직 멀었네\n세팅을 바꿔 보는 건\n어때？{wait}",
+   "text_kr": "레츠\n「아직 멀었네\n세팅을 바꿔 보는 건 어때？{wait}",
    "orig_len": 33,
    "controls": [
     "{wait}"
@@ -15319,7 +15319,7 @@
    "translation_source": "codex_manual",
    "text_jp": "りえ\n「とうとう\nカレシにふられちゃった…{wait}\nいいもん\nわたしの恋人はミニ四駆だもん",
    "text_kr_full": "리에\n「결국\n남자 친구에게 차였어…{wait}\n괜찮아\n내 연인은 미니사구니까",
-   "text_kr": "리에\n「결국\n남자 친구에게 차였어…{wait}\n괜찮아\n내 연인은미니사구니까",
+   "text_kr": "리에\n「결국 남자 친구에게 차였어…{wait}\n괜찮아\n내 연인은미니사구니까",
    "orig_len": 46,
    "controls": [
     "{wait}"
@@ -15801,7 +15801,7 @@
    "translation_source": "codex_manual",
    "text_jp": "はやし\n「黒沢くんやまことくん{wait}\nその他多くのこどもたちが\nグランプリレーサーを目指して\nいっしょうけんめい努力しているわ{wait}\nキミたちも\nうかうかしていられないかもね",
    "text_kr_full": "하야시\n「쿠로사와와 마코토{wait}\n그 밖의 많은 아이가\n그랑프리 레이서를 꿈꾸며\n열심히 노력하고 있어{wait}\n너희도\n방심할 수 없겠네",
-   "text_kr": "하야시\n「쿠로사와와 마코토{wait}\n그 밖의 많은 아이가\n그랑프리 레이서를 꿈꾸며\n열심히 노력하고 있어{wait}\n너희도\n방심할 수 없겠네",
+   "text_kr": "하야시\n「쿠로사와와 마코토{wait}\n그 밖의 많은 아이가\n그랑프리 레이서를 꿈꾸며\n열심히 노력하고 있어{wait}\n너희도 방심할 수 없겠네",
    "orig_len": 91,
    "controls": [
     "{wait}",
@@ -16239,7 +16239,7 @@
    "translation_source": "codex_manual",
    "text_jp": "J\n「そうだね\n探すしかなさそうだね{wait}",
    "text_kr_full": "제이\n「그렇네\n찾을 수밖에 없겠어{wait}",
-   "text_kr": "제이\n「그래\n찾을 수밖에 없어{wait}",
+   "text_kr": "제이\n「그래 찾을 수밖에 없어{wait}",
    "orig_len": 21,
    "controls": [
     "{wait}"
@@ -16629,7 +16629,7 @@
    "translation_source": "codex_manual",
    "text_jp": "きしかわ\n「光蝦のニューマシン\nシャイニングドラゴンと\n去年のマシンクーロンを比べたザマスが{wait}\n性能はあきらかに\nドラゴンの方が上ザマス{wait}\nさすがのあなたたちでも\n気合いを入れてかからないと\n大変なことになるかも\nしれないザマスわよ",
    "text_kr_full": "키시카와\n「공키의 새 머신\n샤이닝 드래곤과\n작년의 쿠론을 비교했는데{wait}\n성능은 분명\n드래곤 쪽이 위예요{wait}\n너희라도\n마음을 단단히 먹지 않으면\n큰일이 날지도\n몰라요",
-   "text_kr": "키시카와\n「공키의 새 머신\n샤이닝 드래곤과\n작년의 쿠론을 비교했는데{wait}\n성능은 분명\n드래곤 쪽이 위예요{wait}\n너희라도\n마음을 단단히 먹지 않으면\n큰일이 날지도\n몰라요",
+   "text_kr": "키시카와\n「공키의 새 머신\n샤이닝 드래곤과\n작년의 쿠론을 비교했는데{wait}\n성능은 분명\n드래곤 쪽이 위예요{wait}\n너희라도\n마음을 단단히 먹지 않으면\n큰일이 날지도 몰라요",
    "orig_len": 130,
    "controls": [
     "{wait}",
@@ -17375,7 +17375,7 @@
    "translation_source": "codex_manual",
    "text_jp": "まつもと\n「みんなでレースをすることに\nなったんだってね{wait}\nだれか一人を応援する\nわけにはいかないけれど\nがんばれよ！",
    "text_kr_full": "마츠모토\n「모두 함께 레이스하기로\n했다며{wait}\n누구 한 명만\n응원할 순 없지만\n힘내！",
-   "text_kr": "마츠모토\n「모두 함께 레이스하기로\n했다며{wait}\n누구 한 명만\n응원할 순 없지만\n힘내！",
+   "text_kr": "마츠모토\n「모두 함께 레이스하기로 했다며{wait}\n누구 한 명만\n응원할 순 없지만 힘내！",
    "orig_len": 62,
    "controls": [
     "{wait}"
@@ -19335,7 +19335,7 @@
    "translation_source": "codex_manual",
    "text_jp": "研究員\n「ギヤー研究員の\nうめだっちゅうモンやねん{wait}\nウチのつくったギヤー\nごっつええ性能なんやで{wait}\n勝負に勝ったらあげるさかい\nどない？{wait}{clear}",
    "text_kr_full": "연구원\n「기어 연구원\n우메다라고 한다{wait}\n내가 만든 기어\n성능이 엄청 좋데이{wait}\n승부에서 이기면 줄 테니\n어때？{wait}{clear}",
-   "text_kr": "연구원\n「기어 연구원\n우메다라고 한다{wait}\n내가 만든 기어\n성능이 엄청 좋데이{wait}\n승부에서 이기면 줄 테니\n어때？{wait}{clear}",
+   "text_kr": "연구원\n「기어 연구원\n우메다라고 한다{wait}\n내가 만든 기어\n성능이 엄청 좋데이{wait}\n승부에서 이기면 줄 테니 어때？{wait}{clear}",
    "orig_len": 83,
    "controls": [
     "{wait}",
@@ -20287,7 +20287,7 @@
    "translation_source": "codex_manual",
    "text_jp": "マキ\n「それにしても\n見事にチイコお嬢様に\nなられましたわね{wait}\nでもわたしの目は\nごまかせませんわ{wait}\nやっぱり\nみぶりが連いますもの",
    "text_kr_full": "마키\n「그래도 훌륭하게\n치이코 아가씨가 되셨네요{wait}\n하지만 제 눈은\n속일 수 없어요{wait}\n역시\n몸짓이 다르니까요",
-   "text_kr": "마키\n「그래도 훌륭하게\n치이코 아가씨가 되셨네요{wait}\n하지만 제 눈은\n속일 수 없어요{wait}\n역시\n몸짓이 다르니까요",
+   "text_kr": "마키\n「그래도 훌륭하게\n치이코 아가씨가 되셨네요{wait}\n하지만 제 눈은\n속일 수 없어요{wait}\n역시 몸짓이 다르니까요",
    "orig_len": 73,
    "controls": [
     "{wait}",
@@ -20383,7 +20383,7 @@
    "translation_source": "codex_manual",
    "text_jp": "彦佐\n「とにかく無事におさまって\n良かったでございますです\nハイ",
    "text_kr_full": "히코사\n「아무튼 무사히 돌아와\n다행입니다요\n네",
-   "text_kr": "히코사\n「아무튼 무사히 돌아와\n다행입니다요\n네",
+   "text_kr": "히코사\n「아무튼 무사히 돌아와\n다행입니다요 네",
    "orig_len": 38,
    "controls": [],
    "occurrences": [
@@ -20499,7 +20499,7 @@
    "translation_source": "codex_manual",
    "text_jp": "藤吉\n「リョウくんが\nたずねてくるなんて\nめずらしいでゲスね{wait}",
    "text_kr_full": "토우키치\n「료가\n찾아오다니\n드문 일이옵니다{wait}",
-   "text_kr": "토우키치\n「료가\n찾아오다니\n드문 일이옵니다{wait}",
+   "text_kr": "토우키치\n「료가 찾아오다니\n드문 일이옵니다{wait}",
    "orig_len": 34,
    "controls": [
     "{wait}"
@@ -20537,7 +20537,7 @@
    "translation_source": "codex_manual",
    "text_jp": "藤吉\n「Jくん{wait}\nドルフィンシステムが\n作動しないって話\n聞いたでゲスよ{wait}\nセッティングが\nうまくいくよう\nワテもかげながら\n応援してるでゲス",
    "text_kr_full": "토우키치\n「제이{wait}\n돌핀 시스템이\n작동하지 않는다는 얘기를\n들었사옵니다{wait}\n세팅이\n잘되도록\n나도 뒤에서\n응원하겠사옵니다",
-   "text_kr": "토우키치\n「제이{wait}\n돌핀 시스템이\n작동하지 않는다는 얘기를\n들었사옵니다{wait}\n세팅이\n잘되도록\n나도 뒤에서\n응원하겠사옵니다",
+   "text_kr": "토우키치\n「제이{wait}\n돌핀 시스템이\n작동하지 않는다는 얘기를\n들었사옵니다{wait}\n세팅이 잘되도록\n나도 뒤에서\n응원하겠사옵니다",
    "orig_len": 80,
    "controls": [
     "{wait}",
@@ -20654,7 +20654,7 @@
    "translation_source": "codex_manual",
    "text_jp": "彦佐\n「ついにWGPの\n開幕でございますな{wait}\nこの彦佐\nせいいっぱい応援させて\nいただきますです　ハイ",
    "text_kr_full": "히코사\n「드디어 WGP가\n개막하는군요{wait}\n이 히코사\n온 힘을 다해 응원하겠습니다요\n네",
-   "text_kr": "히코사\n「드디어 WGP가\n개막하는군요{wait}\n이 히코사\n온 힘을 다해 응원하겠습니다요\n네",
+   "text_kr": "히코사\n「드디어 WGP가\n개막하는군요{wait}\n이 히코사\n온 힘을 다해 응원하겠습니다요 네",
    "orig_len": 60,
    "controls": [
     "{wait}"
@@ -20692,7 +20692,7 @@
    "translation_source": "codex_manual",
    "text_jp": "彦佐\n「これはリョウ様{wait}\nいつも藤吉ぼっちゃまが\nお世話になっておりますです\nハイ",
    "text_kr_full": "히코사\n「료 님{wait}\n늘 토우키치 도련님이\n신세 지고 있습니다요\n네",
-   "text_kr": "히코사\n「료 님{wait}\n늘 토우키치 도련님이\n신세 지고 있습니다요\n네",
+   "text_kr": "히코사\n「료 님{wait}\n늘 토우키치 도련님이\n신세 지고 있습니다요 네",
    "orig_len": 49,
    "controls": [
     "{wait}"
@@ -20712,7 +20712,7 @@
    "translation_source": "codex_manual",
    "text_jp": "彦佐\n「お帰りなさいませ\nぼっちゃま",
    "text_kr_full": "히코사\n「어서 오십시오\n도련님",
-   "text_kr": "히코사\n「어서 오십시오\n도련님",
+   "text_kr": "히코사\n「어서 오십시오 도련님",
    "orig_len": 22,
    "controls": [],
    "occurrences": [
@@ -20750,7 +20750,7 @@
    "translation_source": "codex_manual",
    "text_jp": "彦佐\n「これは藤吉ぼっちゃま\nお帰りなさいませ{wait}\nお友達のみな様も\nぜひごゆっくりなさいますよう\nハイ",
    "text_kr_full": "히코사\n「토우키치 도련님\n어서 오십시오{wait}\n친구분들도\n부디 편히 쉬다 가십시오\n네",
-   "text_kr": "히코사\n「토우키치 도련님\n어서 오십시오{wait}\n친구분들도\n부디 편히 쉬다 가십시오\n네",
+   "text_kr": "히코사\n「토우키치 도련님\n어서 오십시오{wait}\n친구분들도\n부디 편히 쉬다 가십시오 네",
    "orig_len": 60,
    "controls": [
     "{wait}"
@@ -20860,7 +20860,7 @@
    "translation_source": "codex_manual",
    "text_jp": "様{wait}\n藤吉ぼっちゃまは\n今　お出かけ中で\nございますですよ　ハイ",
    "text_kr_full": "님{wait}\n토우키치 도련님은\n지금 외출 중이십니다요\n네",
-   "text_kr": "님{wait}\n토우키치 도련님은\n지금 외출 중이십니다요\n네",
+   "text_kr": "님{wait}\n토우키치 도련님은\n지금 외출 중이십니다요 네",
    "orig_len": 39,
    "controls": [
     "{wait}"
@@ -21018,7 +21018,7 @@
    "translation_source": "codex_manual",
    "text_jp": "彦佐\n「ぼっちゃま\nお気をつけてくださいませ\nハイ",
    "text_kr_full": "히코사\n「도련님\n조심해서 다녀오십시오\n네",
-   "text_kr": "히코사\n「도련님\n조심해서 다녀오십시오\n네",
+   "text_kr": "히코사\n「도련님\n조심해서 다녀오십시오 네",
    "orig_len": 29,
    "controls": [],
    "occurrences": [
@@ -21036,7 +21036,7 @@
    "translation_source": "codex_manual",
    "text_jp": "彦佐\n「これは豪様{wait}\nいつも藤吉ぼっちゃまが\nお世話になっておりますです\nハイ",
    "text_kr_full": "히코사\n「고 님{wait}\n늘 토우키치 도련님이\n신세 지고 있습니다요\n네",
-   "text_kr": "히코사\n「고 님{wait}\n늘 토우키치 도련님이\n신세 지고 있습니다요\n네",
+   "text_kr": "히코사\n「고 님{wait}\n늘 토우키치 도련님이\n신세 지고 있습니다요 네",
    "orig_len": 48,
    "controls": [
     "{wait}"
@@ -21076,7 +21076,7 @@
    "translation_source": "codex_manual",
    "text_jp": "どうぞ　ゆっくりと\nなさっていってくださいまし\nハイ",
    "text_kr_full": "부디 편히\n쉬다 가십시오\n네",
-   "text_kr": "부디 편히\n쉬다 가십시오\n네",
+   "text_kr": "부디 편히\n쉬다 가십시오 네",
    "orig_len": 27,
    "controls": [],
    "occurrences": [
@@ -22331,7 +22331,7 @@
    "translation_source": "codex_manual",
    "text_jp": "まこと\n「たしか\nいろいろなレース場の\n近くにいたような…",
    "text_kr_full": "마코토\n「분명\n여러 레이스장\n근처에 있었던 듯한데…",
-   "text_kr": "마코토\n「분명\n여러레이스장\n근처에있었던듯한데…",
+   "text_kr": "마코토\n「분명 여러레이스장\n근처에있었던듯한데…",
    "orig_len": 32,
    "controls": [],
    "occurrences": [
@@ -22837,7 +22837,7 @@
    "translation_source": "codex_manual",
    "text_jp": "まこと\n「あっ\n例のアンケート結果ですか？{wait}\n",
    "text_kr_full": "마코토\n「앗\n그 설문 결과인가요？{wait}\n",
-   "text_kr": "마코토\n「앗\n그 설문 결과인가요？{wait}\n",
+   "text_kr": "마코토\n「앗 그 설문 결과인가요？{wait}\n",
    "orig_len": 27,
    "controls": [
     "{wait}"
@@ -23322,7 +23322,7 @@
    "translation_source": "codex_manual",
    "text_jp": "シルバーフォックスは\nシベリアで血のにじむような\n特訓をしたそうですよ{wait}\nそれに\n新型モーターの開発にも\n成功したとか…{wait}\nあなどれませんよ",
    "text_kr_full": "실버 폭스는\n시베리아에서 피나는\n특훈을 했대요{wait}\n게다가\n신형 모터 개발에도\n성공했다던데…{wait}\n얕볼 수 없어요",
-   "text_kr": "실버 폭스는\n시베리아에서 피나는\n특훈을 했대요{wait}\n게다가\n신형 모터 개발에도\n성공했다던데…{wait}\n얕볼 수 없어요",
+   "text_kr": "실버 폭스는\n시베리아에서 피나는\n특훈을 했대요{wait}\n게다가 신형 모터 개발에도\n성공했다던데…{wait}\n얕볼 수 없어요",
    "orig_len": 80,
    "controls": [
     "{wait}",
@@ -23575,7 +23575,7 @@
    "translation_source": "codex_manual",
    "text_jp": "黒沢\n「いやな…{wait}\nさっき土屋博士んとこへ\nGPチップをもらいに\n行ったんだけど\nまだ完成してなくてな{wait}\n楽しみにしていたから\nさすがにショックだったぜ{wait}{clear}",
    "text_kr_full": "쿠로사와\n「그게…{wait}\n아까 츠치야 박사에게\nGP칩을 받으러\n갔는데\n아직 완성되지 않았대{wait}\n기대했던 만큼\n충격이 컸어{wait}{clear}",
-   "text_kr": "쿠로사와\n「그게…{wait}\n아까 츠치야 박사에게\nGP칩을 받으러\n갔는데\n아직 완성되지 않았대{wait}\n기대했던 만큼\n충격이 커{wait}{clear}",
+   "text_kr": "쿠로사와\n「그게…{wait}\n아까 츠치야 박사에게\nGP칩을 받으러 갔는데\n아직 완성되지 않았대{wait}\n기대했던 만큼\n충격이 커{wait}{clear}",
    "orig_len": 89,
    "controls": [
     "{wait}",
@@ -23598,7 +23598,7 @@
    "translation_source": "codex_manual",
    "text_jp": "J\n「やくそくにおくれるなんて\n土屋博士にしては\nめずらしいね{wait}\nどうしたんだろう？{wait}{clear}",
    "text_kr_full": "제이\n「약속에 늦다니\n츠치야 박사님답지\n않은데{wait}\n무슨 일일까？{wait}{clear}",
-   "text_kr": "제이\n「약속에 늦다니\n츠치야 박사님답지\n않은데{wait}\n무슨 일일까？{wait}{clear}",
+   "text_kr": "제이\n「약속에 늦다니\n츠치야 박사님답지 않은데{wait}\n무슨 일일까？{wait}{clear}",
    "orig_len": 49,
    "controls": [
     "{wait}",
@@ -24224,7 +24224,7 @@
    "translation_source": "codex_manual",
    "text_jp": "黒沢\n「ようやく完成したぜ\nブラックセイバーGP！{wait}\n今　GPチップをきたえてる\nところなんだ{wait}\nリタイアした選手がでたら\nいつでもかわってやるぜ！",
    "text_kr_full": "쿠로사와\n「드디어 완성했어\n블랙 세이버 GP！{wait}\n지금 GP칩을 단련하고\n있어{wait}\n은퇴 선수가 나오면\n언제든 대신 뛰어 주지！",
-   "text_kr": "쿠로사와\n「드디어 완성했어\n블랙 세이버 GP！{wait}\n지금 GP칩을 단련하고\n있어{wait}\n은퇴 선수가 나오면\n언제든 대신 뛰어 주지！",
+   "text_kr": "쿠로사와\n「드디어 완성했어\n블랙 세이버 GP！{wait}\n지금 GP칩을 단련하고 있어{wait}\n은퇴 선수가 나오면\n언제든 대신 뛰어 주지！",
    "orig_len": 82,
    "controls": [
     "{wait}",
@@ -24389,7 +24389,7 @@
    "translation_source": "codex_manual",
    "text_jp": "光蝦は今年\nシャイニングスコーピオンの\nレプリカマシンを\n用意しているそうですよ{wait}\nしかもそのマシンを\nつくったのは\nあの　岡田鉄心博士だとか！{wait}\n…えっ　もう知ってる？{wait}\nどうして知ってるんです？\nさっきパソコン通信で\n見つけたばかりの\n最新情報なのに！",
    "text_kr_full": "공키는 올해\n샤이닝 스콜피온의\n복제 머신을\n준비했대요{wait}\n게다가 그 머신을\n만든 사람은\n오카다 텟신 박사래요！{wait}\n…뭐　벌써 안다고요？{wait}\n어떻게 알았어요？\n방금 PC 통신에서\n찾아낸\n최신 정보인데！",
-   "text_kr": "공키는 올해\n샤이닝 스콜피온의\n복제 머신을\n준비했대요{wait}\n게다가 그 머신을\n만든 사람은\n오카다 텟신 박사래요！{wait}\n…뭐　벌써 안다고요？{wait}\n어떻게 알았어요？\n방금 PC 통신에서\n찾아낸\n최신 정보인데！",
+   "text_kr": "공키는 올해\n샤이닝 스콜피온의\n복제 머신을\n준비했대요{wait}\n게다가 그 머신을\n만든 사람은\n오카다 텟신 박사래요！{wait}\n…뭐　벌써 안다고요？{wait}\n어떻게 알았어요？\n방금 PC 통신에서 찾아낸\n최신 정보인데！",
    "orig_len": 150,
    "controls": [
     "{wait}",
@@ -24432,7 +24432,7 @@
    "translation_source": "codex_manual",
    "text_jp": "烈くんと豪くんのお父さんが\nお二人を探しているらしい\nですよ{wait}\n一度　家にもどられたら\nいかがですか？",
    "text_kr_full": "레츠와 고의 아버지가\n두 사람을 찾고\n있대요{wait}\n한 번 집에 돌아가 보는 게\n어때요？",
-   "text_kr": "레츠와 고의 아버지가\n두 사람을 찾고\n있대요{wait}\n한 번 집에 돌아가 보는 게\n어때요？",
+   "text_kr": "레츠와 고의 아버지가\n두 사람을 찾고 있대요{wait}\n한 번 집에 돌아가 보는 게\n어때요？",
    "orig_len": 58,
    "controls": [
     "{wait}"
@@ -24557,7 +24557,7 @@
    "translation_source": "codex_manual",
    "text_jp": "えいじ\n「知ってるか？{wait}\nエクレアってお某子があるよな\nあのシュークリームの兄弟みたいなヤツ{wait}\nあれってさ　フランス語のイナズマって\n意味なんだってよ{wait}\nてことは\nスピンコブラのサンダードリフトは\nさしずめエクレアドリフトだな！{wait}\nわはははは…！",
    "text_kr_full": "에이지\n「알고 있어？{wait}\n에클레어라는 과자가 있잖아\n슈크림의 형제 같은 거{wait}\n그게 프랑스어로 번개라는\n뜻이래{wait}\n그럼 선더 드리프트는\n에클레어 드리프트네！{wait}\n와하하하…！",
-   "text_kr": "에이지\n「알고 있어？{wait}\n에클레어라는 과자가 있잖아\n슈크림의 형제 같은 거{wait}\n그게 프랑스어로 번개라는\n뜻이래{wait}\n그럼 선더 드리프트는\n에클레어 드리프트네！{wait}\n와하하하…！",
+   "text_kr": "에이지\n「알고 있어？{wait}\n에클레어라는 과자가 있잖아\n슈크림의 형제 같은 거{wait}\n그게 프랑스어로 번개라는 뜻이래{wait}\n그럼 선더 드리프트는\n에클레어 드리프트네！{wait}\n와하하하…！",
    "orig_len": 132,
    "controls": [
     "{wait}",
@@ -24619,7 +24619,7 @@
    "translation_source": "codex_manual",
    "text_jp": "きよし\n「オレの妹がさ{wait}\n今朝からいっしょうけんめい\nトイレットペーパーで\nバラの花をつくってるんだ{wait}\n明日の試合で\nフランスチームの上にばらまくんだって{wait}\nケッ\nやってらんねぇぜ",
    "text_kr_full": "키요시\n「내 여동생이 말이야{wait}\n아침부터 열심히\n화장지로\n장미꽃을 만들고 있어{wait}\n내일 경기에서 프랑스 팀 위에\n뿌릴 거래{wait}\n쳇\n못 해 먹겠어",
-   "text_kr": "키요시\n「내 여동생이 말이야{wait}\n아침부터 열심히\n화장지로\n장미꽃을 만들고 있어{wait}\n내일 경기에서 프랑스 팀 위에\n뿌릴 거래{wait}\n쳇\n못 해 먹겠어",
+   "text_kr": "키요시\n「내 여동생이 말이야{wait}\n아침부터 열심히\n화장지로\n장미꽃을 만들고 있어{wait}\n내일 경기에서 프랑스 팀 위에\n뿌릴 거래{wait}\n쳇 못 해 먹겠어",
    "orig_len": 100,
    "controls": [
     "{wait}",
@@ -24865,7 +24865,7 @@
    "translation_source": "codex_manual",
    "text_jp": "ひょっとしたらマキにたのめば\nなんとかなるかも\nしれないでゲス{wait}{clear}",
    "text_kr_full": "어쩌면 마키에게 부탁하면\n어떻게든 될지도\n모르겠사옵니다{wait}{clear}",
-   "text_kr": "마키에게 부탁하면\n될지도\n모르겠사옵니다{wait}{clear}",
+   "text_kr": "마키에게 부탁하면\n될지도 모르겠사옵니다{wait}{clear}",
    "orig_len": 34,
    "controls": [
     "{wait}",
@@ -25455,7 +25455,7 @@
    "translation_source": "codex_manual",
    "text_jp": "えいじ\n「ロッソストラーダのバックには\nオーナーとかいうあやしいヤツが\nいるらしいな{wait}\nほんっっとうに\nうさんくさいチームだよな",
    "text_kr_full": "에이지\n「롯소 스트라다 뒤에는\n오너라는 수상한 녀석이\n있다더라{wait}\n정말로\n미심쩍은 팀이야",
-   "text_kr": "에이지\n「롯소 스트라다 뒤에는\n오너라는 수상한 녀석이\n있다더라{wait}\n정말로\n미심쩍은 팀이야",
+   "text_kr": "에이지\n「롯소 스트라다 뒤에는\n오너라는 수상한 녀석이\n있다더라{wait}\n정말로 미심쩍은 팀이야",
    "orig_len": 65,
    "controls": [
     "{wait}"
@@ -25678,7 +25678,7 @@
    "translation_source": "codex_manual",
    "text_jp": "ヨーロッパ予選での\nロッソストラーダは\nすさまじい試合を\nしていたようですよ{wait}\nラフプレイをやっていた\nというウワサもあります{wait}\n気をつけてください！",
    "text_kr_full": "유럽 예선에서\n롯소 스트라다는\n엄청난 경기를\n했대요{wait}\n거친 플레이를 했다는\n소문도 있어요{wait}\n조심하세요！",
-   "text_kr": "유럽 예선에서\n롯소 스트라다는\n엄청난 경기를\n했대요{wait}\n거친 플레이를 했다는\n소문도 있어요{wait}\n조심하세요！",
+   "text_kr": "유럽 예선에서\n롯소 스트라다는\n엄청난 경기를 했대요{wait}\n거친 플레이를 했다는\n소문도 있어요{wait}\n조심하세요！",
    "orig_len": 81,
    "controls": [
     "{wait}",
@@ -25740,7 +25740,7 @@
    "translation_source": "codex_manual",
    "text_jp": "ジュン\n「明日の相手は\nあのにくったらしい\nロッソストラーダなんだってね{wait}\nギッタンギッタンに\nやっつけちゃってよね！",
    "text_kr_full": "준\n「내일 상대는\n그 얄미운\n롯소 스트라다라며{wait}\n완전히\n박살 내 줘！",
-   "text_kr": "준\n「내일 상대는\n그 얄미운\n롯소 스트라다라며{wait}\n완전히\n박살 내 줘！",
+   "text_kr": "준\n「내일 상대는\n그 얄미운\n롯소 스트라다라며{wait}\n완전히 박살 내 줘！",
    "orig_len": 64,
    "controls": [
     "{wait}"
@@ -26703,7 +26703,7 @@
    "translation_source": "codex_manual",
    "text_jp": "えいじ\n「ファイナルレースは\n5ヵ国たいこうレースが\nあるんだってな{wait}\n今からワクワクするよ",
    "text_kr_full": "에이지\n「파이널 레이스에는\n5개국 대항 레이스가\n있다며{wait}\n벌써 기대돼",
-   "text_kr": "에이지\n「파이널 레이스에는\n5개국 대항 레이스가\n있다며{wait}\n벌써 기대돼",
+   "text_kr": "에이지\n「파이널 레이스에는\n5개국 대항 레이스가 있다며{wait}\n벌써 기대돼",
    "orig_len": 49,
    "controls": [
     "{wait}"
@@ -26957,7 +26957,7 @@
    "translation_source": "codex_manual",
    "text_jp": "まこと\n「きょうはなんの情報も\nないんですよ{wait}\n明日は全力でぶつかって\nくださいとしか言えません{wait}\n",
    "text_kr_full": "마코토\n「오늘은 아무 정보도\n없어요{wait}\n내일은 온 힘을 다하라는\n말밖에 못 드려요{wait}\n",
-   "text_kr": "마코토\n「오늘은 아무 정보도\n없어요{wait}\n내일은 온 힘을 다하라는\n말밖에 못 드려요{wait}\n",
+   "text_kr": "마코토\n「오늘은 아무 정보도 없어요{wait}\n내일은 온 힘을 다하라는\n말밖에 못 드려요{wait}\n",
    "orig_len": 57,
    "controls": [
     "{wait}",

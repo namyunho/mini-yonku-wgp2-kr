@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""현재 빌드 정본의 완역문과 실제 삽입문이 다른 항목만 Markdown으로 목록화한다.
+"""현재 빌드 정본의 완역문과 실제 조정·삽입문이 다른 항목만 Markdown으로 목록화한다.
 
 완역은 text_kr_full 또는 shortening ledger의 before_kr에서 읽고, 실제 삽입문은
 항상 현재 빌드 입력(dialogue/adventure_kr/field_kr)의 text_kr에서 다시 읽는다.
 따라서 과거 ledger의 after_kr 스냅샷보다 현재 ROM에 들어가는 문구가 우선한다.
+바이트 축약뿐 아니라 안전한 줄바꿈·들여쓰기 정리로 달라진 문장도 함께 싣는다.
 """
 from __future__ import annotations
 
@@ -58,12 +59,16 @@ def main() -> None:
     worldmap = load("worldmap_text.json")
     ledger = load("shortening_ledger.json")
     field_ledger = load("field_shortening_ledger.json")
+    layout_ledger = load("dialogue_layout_ledger.json")
 
     if ledger["done_count"] != len(ledger["done"]) or ledger["pending_count"] != 0:
         raise SystemExit("shortening_ledger count/pending 불변식 위반")
     if (field_ledger["done_count"] != len(field_ledger["done"])
             or field_ledger["pending_count"] != 0):
         raise SystemExit("field_shortening_ledger count/pending 불변식 위반")
+    if (layout_ledger["entry_count"] != len(layout_ledger["entries"])
+            or layout_ledger["entry_count"] != 229):
+        raise SystemExit("dialogue_layout_ledger count 불변식 위반")
 
     dialogue_by_id = {x["entry_id"]: x for x in dialogue["entries"]}
     adventure_by_key = {
@@ -72,6 +77,23 @@ def main() -> None:
         for run in scene["runs"]
     }
     field_by_id = {x["id"]: x for x in field["entries"]}
+    layout_by_id = {x["id"]: x for x in layout_ledger["entries"]}
+    if len(layout_by_id) != len(layout_ledger["entries"]):
+        raise SystemExit("dialogue_layout_ledger 중복 키")
+
+    for item in layout_ledger["entries"]:
+        if item["system"] == "dialogue":
+            current = dialogue_by_id[item["entry_id"]]
+        elif item["system"] == "adventure":
+            current = adventure_by_key[(item["scene"], item["at"])]
+        elif item["system"] == "field":
+            current = field_by_id[item["entry_id"]]
+        else:
+            raise SystemExit(f"알 수 없는 layout system: {item['system']}")
+        if current["text_kr"] != item["after_kr"]:
+            raise SystemExit(f"레이아웃 원장 현재 삽입문 불일치: {item['id']}")
+        if current["text_kr_full"] != item["text_kr_full"]:
+            raise SystemExit(f"레이아웃 원장 완역문 불일치: {item['id']}")
 
     rows: dict[tuple, Row] = {}
 
@@ -119,7 +141,10 @@ def main() -> None:
         if item["before_kr"] != entry["text_kr_full"]:
             raise SystemExit(f"필드 완역 원장 불일치: {key}")
         if item["after_kr"] != entry["text_kr"]:
-            raise SystemExit(f"필드 삽입문 원장 불일치: {key}")
+            layout = layout_by_id.get(f"field:{key}")
+            if not layout or (layout["before_kr"] != item["after_kr"]
+                              or layout["after_kr"] != entry["text_kr"]):
+                raise SystemExit(f"필드 축약→레이아웃→삽입 원장 불일치: {key}")
         number = int(re.search(r"\d+", key).group())
         add("field", key, key, entry["text_kr_full"], entry["text_kr"], (number,))
 
@@ -206,19 +231,20 @@ def main() -> None:
                   "adventure", "dialogue", "field", "parts", "menu_extra", "worldmap"
               )}
     expected = {
-        "adventure": 449,
-        "dialogue": 22,
-        "field": 280,
+        "adventure": 566,
+        "dialogue": 27,
+        "field": 351,
         "parts": 0,
         "menu_extra": 1,
-        "worldmap": 8,
+        "worldmap": 13,
     }
-    if counts != expected or len(rows) != 760:
+    if counts != expected or len(rows) != 958:
         raise SystemExit(f"축약 목록 규모 불일치: {counts}, total={len(rows)}")
 
     inputs = [
         TRANS / "shortening_ledger.json",
         TRANS / "field_shortening_ledger.json",
+        TRANS / "dialogue_layout_ledger.json",
         TRANS / "dialogue.json",
         TRANS / "adventure_kr.json",
         TRANS / "field_kr.json",
@@ -227,7 +253,7 @@ def main() -> None:
         TRANS / "worldmap_text.json",
     ]
     lines = [
-        "# 22 · 완역문–실삽입 축약문 전수 비교",
+        "# 22 · 완역문–실삽입 조정문 전수 비교",
         "",
         "> 생성일: 2026-07-23",
         "> 생성 명령: `python3 scripts/generate_shortening_comparison.py`",
@@ -242,7 +268,7 @@ def main() -> None:
         "- `완역문 == 실제 삽입문`인 항목은 싣지 않는다.",
         "- 필드 발생 레코드 `field_text.json` 1,411건은 고유 번역 `field_kr.json` 1,340건의 파생 자료이므로 중복 기재하지 않는다.",
         "- `␠`는 원문 데이터의 전각 공백이다. `{nl}`, `{wait}`, `{clear}`, `{cN:XX}`, `{end}`는 실제 제어마커다.",
-        "- 축약 대기 항목은 두 원장 모두 0건이다.",
+        "- 축약 대기 항목은 두 축약 원장 모두 0건이며, 줄바꿈·들여쓰기 변경은 `dialogue_layout_ledger.json`에 전후 문장을 보존한다.",
         "- 이 목록은 번역 품질 검토용이다. 바이트 상한·위치보존 통과 여부는 각 기계 원장과 빌드 게이트가 담당한다.",
         "",
         "## 요약",
@@ -291,8 +317,9 @@ def main() -> None:
         lines.append(f"| `{path.relative_to(ROOT)}` | `{digest(path)}` |")
     lines.extend([
         "",
-        "이 문서는 위 입력에서 다시 생성할 수 있다. 생성기는 두 축약 원장의 완료/대기 수, 현재 빌드 키 존재 여부,",
-        "필드 `before_kr == text_kr_full`, 중복 키, 시스템별 예상 건수(449/22/280/0/1/8)를 검사하고 하나라도",
+        "이 문서는 위 입력에서 다시 생성할 수 있다. 생성기는 두 축약 원장의 완료/대기 수, 레이아웃 원장 229건,",
+        "현재 빌드 키 존재 여부, 필드 `before_kr == text_kr_full`, 중복 키, 시스템별 예상 건수",
+        "(566/27/351/0/1/13)를 검사하고 하나라도",
         "어긋나면 문서를 쓰지 않고 실패한다.",
         "",
     ])
