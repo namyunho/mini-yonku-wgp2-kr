@@ -12,7 +12,9 @@ from build_race_hud_labels import (
     ORIGINAL_STREAM_SIZE,
     RAW_SIZE,
     RESOURCE_OFFSET,
+    damage_tilemap_variants,
     expected_resource,
+    tilemap_bytes,
 )
 from export_race_hud_workshop import (
     DEFAULT_ART,
@@ -52,6 +54,16 @@ def main() -> int:
         begin = tile_id * 16
         if actual[begin:begin + 16] != replacement:
             failures.append(f"일본어 윗행 잔재 복원 실패: ${tile_id:03X}")
+    verified_variants = []
+    for variant in damage_tilemap_variants(corpus):
+        offset = int(variant["file_offset"], 0)
+        original_entries = tilemap_bytes(variant["original_entries"])
+        patched_entries = tilemap_bytes(variant["patched_entries"])
+        if original[offset:offset + len(original_entries)] != original_entries:
+            failures.append(f"{variant['id']}: 원본 타일맵 불일치")
+        if built[offset:offset + len(patched_entries)] != patched_entries:
+            failures.append(f"{variant['id']}: DAMAGE 타일맵 통일 실패")
+        verified_variants.append(variant["id"])
     changed = set()
     for tile in range(RAW_SIZE // 16):
         begin = tile * 16
@@ -66,7 +78,8 @@ def main() -> int:
         return 1
     print(
         "경기 HUD 승인 그래픽: PASS "
-        f"DAMAGE/BOOST + 윗행 잔재 제거, LZSS {used}/{ORIGINAL_STREAM_SIZE}B, "
+        f"DAMAGE/BOOST + 윗행 잔재 제거 + 타일맵 {len(verified_variants)}형 통일, "
+        f"LZSS {used}/{ORIGINAL_STREAM_SIZE}B, "
         f"실제 변경 {len(changed)}타일/허용 {len(target_tiles)}타일"
     )
     return 0

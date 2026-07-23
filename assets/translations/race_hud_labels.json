@@ -35,6 +35,26 @@
       "screen_crop_px": [64, 160, 32, 8],
       "tile_ids": [465, 466, 467, 468],
       "tilemap_entries": ["$21D1", "$21D2", "$21D3", "$21D4"],
+      "tilemap_variants": [
+        {
+          "id": "damage_only",
+          "description": "부스트 항목이 없는 라운드에서 사용하는 데미지 전용 HUD 행",
+          "file_offset": "0x1447E0",
+          "snes_address": "$D4:47E0",
+          "original_entries": ["$21D1", "$2190", "$2191", "$2192"],
+          "patched_entries": ["$21D1", "$21D2", "$21D3", "$21D4"],
+          "evidence": "wgp2_kr_006.png 화면 픽셀을 현재 VRAM 2bpp 타일과 대조해 4셀 전부 일치"
+        },
+        {
+          "id": "damage_and_boost",
+          "description": "부스트 항목이 함께 표시되는 일반 HUD 행",
+          "file_offset": "0x1449E0",
+          "snes_address": "$D4:49E0",
+          "original_entries": ["$21D1", "$21D2", "$21D3", "$21D4"],
+          "patched_entries": ["$21D1", "$21D2", "$21D3", "$21D4"],
+          "evidence": "기존 일반 HUD 실측 타일맵"
+        }
+      ],
       "target_sha256": "bfe4d18e98438d5958fd359da681684474a28570c1cbb0b18b84ad9a99f1e8be"
     },
     {

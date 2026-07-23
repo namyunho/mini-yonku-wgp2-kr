@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""VICTORYS 엔딩 장면 하단 로고를 승인 256×256 BMP로 교체한다.
+"""VICTORYS 에피소드 인터미션 하단 로고를 승인 256×256 BMP로 교체한다.
 
 타이틀 화면과는 다른 전용 자원이다. Mesen 실측 경로:
   $D9:A5B1 LZSS(raw 3072) -> BG1 4bpp VRAM word $0000
   $D9:B078 LZSS(raw 2048) -> BG1 tilemap VRAM word $7000
 
 승인본은 원래 압축 슬롯을 소폭 초과하므로 확인된 $D9:D239 0xFF 런으로
-두 자원을 함께 재배치하고 엔딩 로더의 PEA 소스 두 곳만 갱신한다.
+두 자원을 함께 재배치하고 인터미션 로더의 PEA 소스 두 곳만 갱신한다.
 """
 
 from __future__ import annotations
@@ -55,7 +55,7 @@ def load_corpus() -> dict:
     if translation["abbreviated"] != (
         translation["text_kr_full"] != translation["text_kr_display"]
     ):
-        raise SystemExit("엔딩 로고 완역/표시문 축약 플래그 불일치")
+        raise SystemExit("인터미션 로고 완역/표시문 축약 플래그 불일치")
     return corpus
 
 
@@ -77,12 +77,12 @@ def load_original(corpus: dict) -> tuple[bytes, dict[str, bytes]]:
         offset = pc_value(record["pc_offset"])
         raw_size = int.from_bytes(rom[offset:offset + 2], "little")
         if raw_size != record["raw_size"]:
-            raise SystemExit(f"엔딩 로고 {name} 원본 해제 크기 불일치")
+            raise SystemExit(f"인터미션 로고 {name} 원본 해제 크기 불일치")
         raw, used = decompress(rom, offset + 2, raw_size)
         if used != record["original_stream_size"]:
-            raise SystemExit(f"엔딩 로고 {name} 원본 LZSS 크기 불일치")
+            raise SystemExit(f"인터미션 로고 {name} 원본 LZSS 크기 불일치")
         if hashlib.sha256(raw).hexdigest() != record["raw_sha256"]:
-            raise SystemExit(f"엔딩 로고 {name} 원본 SHA-256 불일치")
+            raise SystemExit(f"인터미션 로고 {name} 원본 SHA-256 불일치")
         raw_resources[name] = raw
     return rom, raw_resources
 
@@ -154,10 +154,10 @@ def build_assets(corpus: dict) -> BuiltAssets:
     image_path = ROOT / corpus["approved_image"]["path"]
     image_bytes = image_path.read_bytes()
     if hashlib.sha256(image_bytes).hexdigest() != corpus["approved_image"]["sha256"]:
-        raise SystemExit("엔딩 로고 승인 BMP SHA-256 불일치")
+        raise SystemExit("인터미션 로고 승인 BMP SHA-256 불일치")
     approved_image = Image.open(image_path).convert("RGB")
     if approved_image.size != (256, 256):
-        raise SystemExit(f"엔딩 로고 승인 BMP 크기 불일치: {approved_image.size}")
+        raise SystemExit(f"인터미션 로고 승인 BMP 크기 불일치: {approved_image.size}")
     source = approved_image.load()
     background = tuple(corpus["approved_image"]["background_rgb"])
     palettes = {
@@ -202,7 +202,7 @@ def build_assets(corpus: dict) -> BuiltAssets:
             tilemap[offset:offset + 2] = entry.to_bytes(2, "little")
 
     if len(tiles) > TILE_CAPACITY:
-        raise SystemExit(f"엔딩 로고 고유 타일 초과: {len(tiles)}/{TILE_CAPACITY}")
+        raise SystemExit(f"인터미션 로고 고유 타일 초과: {len(tiles)}/{TILE_CAPACITY}")
     chr_raw = bytearray(TILE_CAPACITY * 32)
     for index, tile in enumerate(tiles):
         chr_raw[index * 32:(index + 1) * 32] = tile
@@ -268,9 +268,9 @@ def build(rom_path: Path, out_path: Path) -> None:
     tilemap_blob = len(assets.tilemap_raw).to_bytes(2, "little") + assets.tilemap_compressed
     total_size = len(chr_blob) + len(tilemap_blob)
     if total_size > relocation["capacity"]:
-        raise SystemExit(f"엔딩 로고 재배치 영역 초과: {total_size}/{relocation['capacity']}B")
+        raise SystemExit(f"인터미션 로고 재배치 영역 초과: {total_size}/{relocation['capacity']}B")
     if any(value != 0xFF for value in original_rom[destination:destination + total_size]):
-        raise SystemExit("엔딩 로고 재배치 영역이 원본 ROM의 0xFF 런이 아님")
+        raise SystemExit("인터미션 로고 재배치 영역이 원본 ROM의 0xFF 런이 아님")
 
     chr_ref = pc_value(relocation["loader_chr_sequence_pc"])
     tilemap_ref = pc_value(relocation["loader_tilemap_sequence_pc"])
@@ -283,14 +283,14 @@ def build(rom_path: Path, out_path: Path) -> None:
         ("타일맵", tilemap_ref, old_tilemap_sequence, new_tilemap_sequence),
     ):
         if bytes(rom[offset:offset + 6]) not in (old, new):
-            raise SystemExit(f"엔딩 로고 {label} 로더 원본/승인 시퀀스 불일치")
+            raise SystemExit(f"인터미션 로고 {label} 로더 원본/승인 시퀀스 불일치")
 
     current_destination = bytes(rom[destination:destination + total_size])
     wanted_destination = chr_blob + tilemap_blob
     if current_destination != wanted_destination and any(
         value != 0xFF for value in current_destination
     ):
-        raise SystemExit("엔딩 로고 재배치 목적지가 비어 있지 않고 승인본도 아님")
+        raise SystemExit("인터미션 로고 재배치 목적지가 비어 있지 않고 승인본도 아님")
 
     before = bytes(rom)
     rom[destination:destination + total_size] = wanted_destination
@@ -302,20 +302,20 @@ def build(rom_path: Path, out_path: Path) -> None:
     allowed.update(range(tilemap_ref, tilemap_ref + 6))
     changed = {index for index, (old, new) in enumerate(zip(before, rom)) if old != new}
     if not changed <= allowed:
-        raise SystemExit(f"엔딩 로고 허용 범위 밖 변경 {len(changed - allowed)}B")
+        raise SystemExit(f"인터미션 로고 허용 범위 밖 변경 {len(changed - allowed)}B")
 
     rebuilt_chr, used_chr = decompress(rom, destination + 2, len(assets.chr_raw))
     rebuilt_tilemap, used_tilemap = decompress(
         rom, tilemap_offset + 2, len(assets.tilemap_raw)
     )
     if rebuilt_chr != assets.chr_raw or rebuilt_tilemap != assets.tilemap_raw:
-        raise SystemExit("엔딩 로고 재배치 LZSS 왕복 실패")
+        raise SystemExit("인터미션 로고 재배치 LZSS 왕복 실패")
     for name, raw in original_resources.items():
         record = corpus["resources"][name]
         offset = pc_value(record["pc_offset"])
         current_raw, _ = decompress(rom, offset + 2, record["raw_size"])
         if current_raw != raw:
-            raise SystemExit(f"엔딩 로고 원본 {name} 자원이 선행 변경됨")
+            raise SystemExit(f"인터미션 로고 원본 {name} 자원이 선행 변경됨")
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_bytes(rom)
@@ -334,14 +334,14 @@ def build(rom_path: Path, out_path: Path) -> None:
         "render_changed_pixels": assets.changed_pixels,
         "nonbackground_pixels": assets.nonbackground_pixels,
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"VICTORYS 엔딩 로고 승인 BMP 주입 완료 → {out_path}")
+    print(f"VICTORYS 인터미션 로고 승인 BMP 주입 완료 → {out_path}")
     print(
         f"  CHR $D9:{destination & 0xFFFF:04X} {used_chr}B, "
         f"타일맵 $D9:{tilemap_offset & 0xFFFF:04X} {used_tilemap}B, "
         f"고유타일 {assets.unique_tiles}/{TILE_CAPACITY}, ROM 2MB 유지"
     )
     print(
-        f"  타이틀 자원 무변경 / 엔딩 로더 2곳만 갱신 / "
+        f"  타이틀 자원 무변경 / 인터미션 로더 2곳만 갱신 / "
         f"프리뷰 {DEFAULT_PREVIEW}"
     )
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""최종 통합 ROM의 VICTORYS 엔딩 로고 자원·로더를 역검증한다."""
+"""최종 통합 ROM의 VICTORYS 인터미션 로고 자원·로더를 역검증한다."""
 
 from __future__ import annotations
 
@@ -49,19 +49,19 @@ def main() -> int:
     chr_ref = pc_value(relocation["loader_chr_sequence_pc"])
     tilemap_ref = pc_value(relocation["loader_tilemap_sequence_pc"])
     if rom[chr_ref:chr_ref + 6] != expected_chr_loader:
-        failures.append("엔딩 CHR 로더 포인터 불일치")
+        failures.append("인터미션 CHR 로더 포인터 불일치")
     if rom[tilemap_ref:tilemap_ref + 6] != expected_tilemap_loader:
-        failures.append("엔딩 타일맵 로더 포인터 불일치")
+        failures.append("인터미션 타일맵 로더 포인터 불일치")
     if failures:
-        print("VICTORYS 엔딩 로고: FAIL")
+        print("VICTORYS 인터미션 로고: FAIL")
         for failure in failures:
             print(f"  - {failure}")
         return 1
     print(
-        "VICTORYS 엔딩 로고: PASS "
+        "VICTORYS 인터미션 로고: PASS "
         f"CHR {chr_used}B + 타일맵 {tilemap_used}B, "
         f"고유타일 {assets.unique_tiles}/{TILE_CAPACITY}, "
-        "엔딩 로더 2곳 일치"
+        "인터미션 로더 2곳 일치"
     )
     return 0
 

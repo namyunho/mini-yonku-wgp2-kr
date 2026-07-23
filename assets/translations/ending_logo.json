@@ -1,5 +1,5 @@
 {
-  "context": "VICTORYS 엔딩 장면 하단 로고",
+  "context": "VICTORYS 에피소드 인터미션 장면 하단 로고",
   "trace": {
     "script": "scripts/lua/trace_ending_logo.lua",
     "run": "tmp/ending_logo_trace/run_20260723_031802",

@@ -13,6 +13,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -33,6 +34,9 @@ DEFAULT_PREVIEW = ROOT / "out/result_names_preview.png"
 DEFAULT_MANIFEST = ROOT / "out/result_names_manifest.json"
 DEFAULT_TEMPLATE = ROOT / "assets/result_names/result_names_workshop_256px.png"
 DEFAULT_GUIDE = ROOT / "assets/result_names/result_names_translation.tsv"
+DEFAULT_ALIGNMENT_TEMPLATE = ROOT / "out/result_names_alignment_workshop_256px.png"
+DEFAULT_ALIGNMENT_GUIDE = ROOT / "out/result_names_alignment_guide.tsv"
+DEFAULT_ALIGNMENT_MANIFEST = ROOT / "out/result_names_alignment_manifest.json"
 
 ASSET_OFFSET = 0x191DDC       # $D9:1DDC, 2-byte decompressed-length header
 NEXT_ASSET_OFFSET = 0x1930B1  # $D9:30B1, verified next loader source
@@ -130,15 +134,18 @@ def validate_corpus(corpus: dict, racer_spans: dict[int, tuple[int, int]]) -> li
         if not isinstance(ids, list) or not ids:
             raise SystemExit(f"racer_ids 누락: {entry}")
         span = parse_span(entry["tile_span"])
+        source_span = parse_span(entry.get("original_tile_span", entry["tile_span"]))
         indices = tile_indices(*span)
         for racer_id in ids:
             if racer_id in seen_ids:
                 raise SystemExit(f"racer ID 중복: {racer_id}")
             if racer_id not in racer_spans:
                 raise SystemExit(f"racer ID 범위 초과: {racer_id}")
-            if racer_spans[racer_id] != span:
+            if racer_spans[racer_id] not in (source_span, span):
                 raise SystemExit(
-                    f"ID {racer_id} 타일표 불일치: JSON {span[0]:04X}-{span[1]:04X}, "
+                    f"ID {racer_id} 타일표 불일치: "
+                    f"원본 JSON {source_span[0]:04X}-{source_span[1]:04X}, "
+                    f"표시 JSON {span[0]:04X}-{span[1]:04X}, "
                     f"ROM {racer_spans[racer_id][0]:04X}-{racer_spans[racer_id][1]:04X}"
                 )
             seen_ids.add(racer_id)
@@ -167,6 +174,48 @@ def validate_corpus(corpus: dict, racer_spans: dict[int, tuple[int, int]]) -> li
             f"{RACER_COUNT} ID 커버리지 실패: missing={missing}, extra={extra}"
         )
     return labels
+
+
+def patch_racer_spans(
+    original: bytes,
+    current: bytearray,
+    labels: list[dict],
+) -> list[dict]:
+    """승인된 타일 공유 해소용 범위 변경만 선수 표에 반영한다."""
+    records = []
+    occupied_ids: set[int] = set()
+    for entry in labels:
+        if "original_tile_span" not in entry:
+            continue
+        source_span = parse_span(entry["original_tile_span"])
+        target_span = parse_span(entry["tile_span"])
+        if source_span == target_span:
+            raise SystemExit(f"불필요한 original_tile_span: ID {entry['racer_ids']}")
+        for racer_id in entry["racer_ids"]:
+            if racer_id in occupied_ids:
+                raise SystemExit(f"Result 범위 재정의 ID 중복: {racer_id}")
+            occupied_ids.add(racer_id)
+            pos = RACER_TABLE_OFFSET + racer_id * 4
+            source = (
+                source_span[0].to_bytes(2, "little")
+                + source_span[1].to_bytes(2, "little")
+            )
+            target = (
+                target_span[0].to_bytes(2, "little")
+                + target_span[1].to_bytes(2, "little")
+            )
+            if original[pos:pos + 4] != source:
+                raise SystemExit(f"Result ID {racer_id} 원본 타일 범위 불일치")
+            if current[pos:pos + 4] not in (source, target):
+                raise SystemExit(f"Result ID {racer_id} 타일 범위 선행 변경")
+            current[pos:pos + 4] = target
+            records.append({
+                "racer_id": racer_id,
+                "table_offset": f"0x{pos:06X}",
+                "original_span": f"{source_span[0]:04X}-{source_span[1]:04X}",
+                "patched_span": f"{target_span[0]:04X}-{target_span[1]:04X}",
+            })
+    return records
 
 
 def glyph_mask(font: bytes, glyph_map: dict[str, int], ch: str) -> list[list[int]]:
@@ -404,6 +453,73 @@ def make_workshop_image(data: bytes, labels: list[dict], font: bytes, glyph_map:
     return image
 
 
+def horizontal_padding(pixels: list[list[int]]) -> tuple[int, int]:
+    width = len(pixels[0]) if pixels else 0
+    occupied = [
+        x
+        for x in range(width)
+        if any(pixels[y][x] != 0 for y in range(len(pixels)))
+    ]
+    if not occupied:
+        return width, width
+    return min(occupied), width - 1 - max(occupied)
+
+
+def make_alignment_workshop_image(
+    data: bytes,
+    labels: list[dict],
+    font: bytes,
+    glyph_map: dict[str, int],
+) -> tuple[Image.Image, list[dict]]:
+    """현재 ROM 이름을 같은 시작선·셀 눈금과 함께 1:1 작업지로 만든다."""
+    image = make_workshop_image(data, labels, font, glyph_map)
+    draw = ImageDraw.Draw(image)
+    tiny = ImageFont.load_default(size=6)
+    records = []
+    for number, entry in enumerate(workshop_entries(labels)):
+        indices = tile_indices(*parse_span(entry["tile_span"]))
+        pixels = label_pixels_from_asset(data, indices)
+        leading, trailing = horizontal_padding(pixels)
+        x, y, width, height = workshop_crop(number, len(indices))
+        col_base = number % 2 * 128
+        row_base = number // 2 * 32
+
+        # 편집 영역 바깥에만 시작선·8px 셀 눈금을 그린다. 편집 픽셀은
+        # current ROM에서 추출한 값 그대로이므로 기존 importer를 재사용한다.
+        draw.line((x - 1, y, x - 1, y + height - 1), fill=2)
+        draw.line((x + width, y, x + width, y + height - 1), fill=2)
+        for cell in range(len(indices) + 1):
+            tick_x = x + cell * 8
+            draw.point((tick_x, y - 1), fill=2)
+            if y + height < image.height:
+                draw.point((tick_x, y + height), fill=2)
+
+        # 헤더는 양쪽 칸이 같은 규칙으로 보이도록 번호·ID·범위·leading만 쓴다.
+        draw.rectangle((col_base, row_base, col_base + 127, row_base + 10), fill=3)
+        ids = ",".join(str(racer_id) for racer_id in entry["racer_ids"])
+        draw.text(
+            (col_base + 4, row_base + 2),
+            f"#{number + 1:02d} ID{ids} {entry['tile_span']} L{leading}px",
+            fill=1,
+            font=tiny,
+        )
+        records.append({
+            "number": number + 1,
+            "racer_ids": entry["racer_ids"],
+            "tile_span": entry["tile_span"],
+            "workshop_crop_px": {"x": x, "y": y, "w": width, "h": height},
+            "tile_capacity": len(indices),
+            "leading_transparent_px": leading,
+            "leading_empty_cells": leading // 8,
+            "leading_px_in_next_cell": leading % 8,
+            "trailing_transparent_px": trailing,
+            "text_jp": entry["text_jp"],
+            "text_kr_display": entry["text_kr_display"],
+            "render_mode": entry.get("render_mode", "replace"),
+        })
+    return image, records
+
+
 def workshop_to_asset(image_path: Path, original_data: bytes, labels: list[dict]) -> bytes:
     image = Image.open(image_path).convert("RGB")
     expected_size = (256, ((len(workshop_entries(labels)) + 1) // 2) * 32)
@@ -478,6 +594,96 @@ def export_manual_assets(template_path: Path, guide_path: Path) -> None:
         f"{len(workshop_entries(labels))} unique names)"
     )
     print(f"번역/좌표표: {guide_path} (workshop crop -> ROM atlas segments)")
+
+
+def export_current_alignment_assets(
+    rom_path: Path,
+    template_path: Path,
+    guide_path: Path,
+    manifest_path: Path,
+) -> None:
+    rom = rom_path.read_bytes()
+    if len(rom) != 0x200000:
+        raise SystemExit(f"현재 Result 작업지 ROM 크기 불일치: {len(rom)}")
+    data, used = decode_asset(rom)
+    corpus = json.loads(TRANSLATIONS.read_text(encoding="utf-8"))
+    labels = validate_corpus(corpus, read_racer_spans(rom))
+    current_spans = read_racer_spans(rom)
+    for entry in labels:
+        target = parse_span(entry["tile_span"])
+        for racer_id in entry["racer_ids"]:
+            if current_spans[racer_id] != target:
+                raise SystemExit(
+                    f"현재 ROM ID {racer_id} 범위가 승인값과 다름: "
+                    f"{current_spans[racer_id]} != {target}"
+                )
+    font = FONT_BIN.read_bytes()
+    glyph_map = json.loads(FONT_MAP.read_text(encoding="utf-8"))
+    image, records = make_alignment_workshop_image(data, labels, font, glyph_map)
+    template_path.parent.mkdir(parents=True, exist_ok=True)
+    image.save(template_path)
+
+    lines = [
+        "number\tracer_ids\ttile_span\tworkshop_crop_px\ttile_capacity"
+        "\tleading_transparent_px\tleading_empty_cells\tleading_px_in_next_cell"
+        "\ttrailing_transparent_px\toriginal_jp\ttranslation_kr\tmode"
+    ]
+    for item in records:
+        crop = item["workshop_crop_px"]
+        lines.append("\t".join([
+            str(item["number"]),
+            ",".join(str(racer_id) for racer_id in item["racer_ids"]),
+            item["tile_span"],
+            f"x{crop['x']},y{crop['y']},w{crop['w']},h{crop['h']}",
+            str(item["tile_capacity"]),
+            str(item["leading_transparent_px"]),
+            str(item["leading_empty_cells"]),
+            str(item["leading_px_in_next_cell"]),
+            str(item["trailing_transparent_px"]),
+            item["text_jp"],
+            item["text_kr_display"],
+            item["render_mode"],
+        ]))
+    guide_path.parent.mkdir(parents=True, exist_ok=True)
+    guide_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    empty_cell_summary: dict[str, int] = {}
+    pixel_summary: dict[str, int] = {}
+    column_summary = {"left": {}, "right": {}}
+    for item in records:
+        cell_key = str(item["leading_empty_cells"])
+        pixel_key = str(item["leading_transparent_px"])
+        empty_cell_summary[cell_key] = empty_cell_summary.get(cell_key, 0) + 1
+        pixel_summary[pixel_key] = pixel_summary.get(pixel_key, 0) + 1
+        column = "left" if (item["number"] - 1) % 2 == 0 else "right"
+        column_counts = column_summary[column]
+        column_counts[pixel_key] = column_counts.get(pixel_key, 0) + 1
+    manifest = {
+        "source_rom": str(rom_path),
+        "source_rom_sha256": hashlib.sha256(rom).hexdigest(),
+        "source_asset": "$D9:1DDC",
+        "source_table": "$C1:CBAF",
+        "compressed_size": used,
+        "image": str(template_path),
+        "image_size_px": [image.width, image.height],
+        "entry_count": len(records),
+        "leading_empty_cell_distribution": empty_cell_summary,
+        "leading_transparent_px_distribution": pixel_summary,
+        "leading_transparent_px_by_sheet_column": column_summary,
+        "guide": str(guide_path),
+        "records": records,
+    }
+    manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    manifest_path.write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    print(
+        f"현재 Result 전체 정렬 작업지: {template_path} "
+        f"({image.width}x{image.height}, 1:1, {len(records)}종)"
+    )
+    print(f"첫 픽셀·빈 셀 기록표: {guide_path}")
+    print(f"작업지 매니페스트: {manifest_path}")
 
 
 def patch_label(data: bytearray, indices: list[int], pixels: list[list[int]]) -> None:
@@ -582,6 +788,7 @@ def build(
 
     # 재실행 시에도 같은 바이트가 되도록 소유 구간을 원본으로 복구한 뒤 새 스트림을 쓴다.
     current[ASSET_OFFSET:NEXT_ASSET_OFFSET] = original[ASSET_OFFSET:NEXT_ASSET_OFFSET]
+    span_patches = patch_racer_spans(original, current, labels)
     current[ASSET_OFFSET:ASSET_OFFSET + 2] = DECOMPRESSED_SIZE.to_bytes(2, "little")
     current[ASSET_OFFSET + 2:ASSET_OFFSET + 2 + len(compressed)] = compressed
     verify, _ = decode_asset(bytes(current))
@@ -615,6 +822,7 @@ def build(
         "edited_png": str(edited_png) if edited_png is not None else None,
         "workshop_png": str(workshop_png) if workshop_png is not None else None,
         "preview": str(preview_path),
+        "racer_span_patches": span_patches,
     }
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(
@@ -625,6 +833,15 @@ def build(
         f"LZSS {original_used}B -> {len(compressed)}B "
         f"(여유 {capacity - len(compressed)}B), round-trip PASS"
     )
+    if span_patches:
+        print(
+            "선수 타일 범위 재정의: "
+            + ", ".join(
+                f"ID {item['racer_id']} "
+                f"{item['original_span']}→{item['patched_span']}"
+                for item in span_patches
+            )
+        )
     print(f"ROM {out_path} ({len(current)}B), preview {preview_path}")
 
 
@@ -643,7 +860,31 @@ def main() -> None:
     parser.add_argument("--export-template", action="store_true", help="원본 2bpp 아틀라스와 번역/좌표 TSV 생성 후 종료")
     parser.add_argument("--template", type=Path, default=DEFAULT_TEMPLATE)
     parser.add_argument("--guide", type=Path, default=DEFAULT_GUIDE)
+    parser.add_argument(
+        "--export-current-alignment",
+        action="store_true",
+        help="현재 통합 ROM의 전 선수명을 동일 시작선·셀 눈금 작업지로 내보냄",
+    )
+    parser.add_argument(
+        "--alignment-template",
+        type=Path,
+        default=DEFAULT_ALIGNMENT_TEMPLATE,
+    )
+    parser.add_argument("--alignment-guide", type=Path, default=DEFAULT_ALIGNMENT_GUIDE)
+    parser.add_argument(
+        "--alignment-manifest",
+        type=Path,
+        default=DEFAULT_ALIGNMENT_MANIFEST,
+    )
     args = parser.parse_args()
+    if args.export_current_alignment:
+        export_current_alignment_assets(
+            args.rom.resolve(),
+            args.alignment_template.resolve(),
+            args.alignment_guide.resolve(),
+            args.alignment_manifest.resolve(),
+        )
+        return
     if args.export_template:
         export_manual_assets(args.template.resolve(), args.guide.resolve())
         return

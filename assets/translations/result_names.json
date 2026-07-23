@@ -26,7 +26,7 @@
     {"racer_ids":[13],"tile_span":"004A-0060","text_jp":"ミハエル","text_kr_full":"미하엘","text_kr_display":"미하엘","abbreviated":false},
     {"racer_ids":[14],"tile_span":"0061-0067","text_jp":"シュミット","text_kr_full":"슈미트","text_kr_display":"슈미트","abbreviated":false},
     {"racer_ids":[15],"tile_span":"0068-006E","text_jp":"エーリッヒ","text_kr_full":"에리히","text_kr_display":"에리히","abbreviated":false},
-    {"racer_ids":[16],"tile_span":"007F-0084","text_jp":"アドルフ","text_kr_full":"아돌프","text_kr_display":"아돌프","abbreviated":false},
+    {"racer_ids":[16],"original_tile_span":"007F-0084","tile_span":"0080-0084","span_override_reason":"FOX1과 공유하던 $008F를 피하고 아돌프를 독립된 5셀로 저장","text_jp":"アドルフ","text_kr_full":"아돌프","text_kr_display":"아돌프","abbreviated":false},
     {"racer_ids":[17],"tile_span":"0085-008A","text_jp":"ヘスラー","text_kr_full":"헤슬러","text_kr_display":"헤슬러","abbreviated":false},
     {"racer_ids":[18,23,28],"tile_span":"008B-008E","text_jp":"ユーリ","text_kr_full":"유리","text_kr_display":"유리","abbreviated":false},
     {"racer_ids":[19,24,29],"tile_span":"008F-00A4","text_jp":"ＦＯＸ１","text_kr_full":"FOX1","text_kr_display":"FOX1","abbreviated":false,"render_mode":"preserve"},

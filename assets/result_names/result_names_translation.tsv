@@ -13,7 +13,7 @@ racer_ids	tile_span	workshop_crop_px	atlas_segments_px	tile_capacity	original_jp
 13	004A-0060	x132,y172,w56,h16	x80,y32,w48,h16;x0,y48,w8,h16	7	ミハエル	미하엘	replace
 14	0061-0067	x4,y204,w56,h16	x8,y48,w56,h16	7	シュミット	슈미트	replace
 15	0068-006E	x132,y204,w56,h16	x64,y48,w56,h16	7	エーリッヒ	에리히	replace
-16	007F-0084	x4,y236,w48,h16	x120,y56,w8,h16;x0,y64,w40,h16	6	アドルフ	아돌프	replace
+16	0080-0084	x4,y236,w40,h16	x0,y64,w40,h16	5	アドルフ	아돌프	replace
 17	0085-008A	x132,y236,w48,h16	x40,y64,w48,h16	6	ヘスラー	헤슬러	replace
 18,23,28	008B-008E	x4,y268,w32,h16	x88,y64,w32,h16	4	ユーリ	유리	replace
 19,24,29	008F-00A4	x132,y268,w48,h16	x120,y64,w8,h16;x0,y80,w40,h16	6	ＦＯＸ１	FOX1	preserve
